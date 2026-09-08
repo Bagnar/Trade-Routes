@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Футболки из Китая в Канаду — страница коридора (макет)</title>
+<style>
+  :root{
+    --ink:#1C3A5B; --ink-soft:#4B5D70; --muted:#7A8794;
+    --paper:#FFFFFF; --page:#EEF1F4; --rule:#D5DBE1; --rule-soft:#E8ECF0;
+    --ok:#1F6F4A; --ok-bg:#EAF4EE;
+    --warn:#8F6208; --warn-bg:#FFF3D6;
+    --ban:#A62B26; --ban-bg:#FBEAE8;
+    --none:#5B6470; --none-bg:#F0F2F4;
+    --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+    --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--page)}
+  body{margin:0; color:var(--ink); font-family:var(--serif); font-size:17px; line-height:1.55}
+  a{color:var(--ink)}
+  button, select, input{font-family:var(--sans); font-size:14px; color:var(--ink)}
+  :focus-visible{outline:3px solid #7FB3E8; outline-offset:2px}
+
+  /* ---------- header: the query sentence ---------- */
+  .top{background:var(--paper); border-bottom:1px solid var(--rule)}
+  .top-inner{max-width:1180px; margin:0 auto; padding:14px 28px 20px}
+  .top-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px}
+  .brand{font-family:var(--sans); font-size:13px; color:var(--muted); letter-spacing:.01em}
+  .query{font-size:24px; line-height:1.6; min-width:0}
+  .query select{font-family:var(--serif); font-size:22px; padding:2px 30px 2px 8px; width:auto; border:0; border-bottom:2px solid var(--ink); background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231C3A5B' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 8px center; border-radius:0; appearance:none; -webkit-appearance:none; max-width:100%; cursor:pointer}
+  .query select.product{max-width:100%; width:auto}
+  .query select.country{width:auto}
+  .mode{display:inline-flex; border:1.5px solid var(--ink); border-radius:6px; overflow:hidden; vertical-align:middle; margin-left:4px}
+  .mode button{border:0; background:var(--paper); padding:6px 12px; cursor:pointer; font-size:15px}
+  .mode button[aria-pressed="true"]{background:var(--ink); color:#fff}
+  .langs{display:flex; gap:6px}
+  .langs button{border:1px solid var(--rule); background:var(--paper); border-radius:6px; padding:5px 10px; cursor:pointer}
+  .langs button[aria-current="true"]{border-color:var(--ink); background:var(--ink); color:#fff}
+  .langs button[disabled]{color:var(--muted); cursor:not-allowed}
+
+  /* ---------- status + demo bands ---------- */
+  .band{font-family:var(--sans); font-size:14px; line-height:1.45}
+  .status{background:#F6F8FA; border-bottom:1px solid var(--rule)}
+  .status .in{max-width:1180px; margin:0 auto; padding:10px 28px; color:var(--ink-soft)}
+  .demo{background:var(--warn-bg); border-bottom:1px solid #E9D39B}
+  .demo .in{max-width:1180px; margin:0 auto; padding:9px 28px; color:var(--warn)}
+  .demo strong{font-weight:600}
+
+  /* ---------- layout ---------- */
+  .doc{max-width:1180px; margin:0 auto; padding:28px 28px 60px; display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:48px}
+  main{max-width:860px; min-width:0}
+  aside{position:sticky; top:16px; align-self:start; font-family:var(--sans); font-size:14px}
+
+  h2{font-size:22px; font-weight:normal; margin:44px 0 6px; display:flex; align-items:baseline; gap:12px}
+  h2 .n{font-family:var(--sans); font-size:13px; border:1.5px solid var(--ink); border-radius:4px; padding:1px 7px; line-height:1.4; position:relative; top:-2px}
+  h2:first-of-type{margin-top:4px}
+  h3{font-size:17px; font-weight:normal; font-style:italic; margin:22px 0 4px; color:var(--ink-soft)}
+  .lead{margin:0 0 10px; color:var(--ink-soft)}
+
+  /* ---------- facts with stamps ---------- */
+  .fact{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 18px; align-items:start; padding:12px 0; border-top:1px solid var(--rule-soft)}
+  .fact:last-child{border-bottom:1px solid var(--rule-soft)}
+  .fact p{margin:0}
+  .fact.ban p::before{content:""; display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--ban); margin-right:9px; position:relative; top:-1px}
+
+  .summary .fact{grid-template-columns:130px minmax(0,1fr) auto}
+  .summary .k{font-family:var(--sans); font-size:13px; color:var(--muted); padding-top:4px}
+
+  .stamp{font-family:var(--sans); font-size:12px; line-height:1.25; display:inline-flex; flex-direction:column; gap:2px; padding:5px 8px 5px 24px; border:1.5px solid; border-radius:4px; position:relative; min-width:150px; max-width:200px; white-space:normal}
+  .stamp::before{content:""; position:absolute; left:8px; top:9px; width:9px; height:9px; border-radius:50%}
+  .stamp b{font-weight:600}
+  .stamp.ok{color:var(--ok); border-color:#9CC9B0; background:var(--ok-bg)}   .stamp.ok::before{background:var(--ok)}
+  .stamp.warn{color:var(--warn); border-color:#E1C77F; background:var(--warn-bg)} .stamp.warn::before{background:var(--warn)}
+  .stamp.none{color:var(--none); border-color:#CBD1D8; background:var(--none-bg)} .stamp.none::before{background:var(--ban)}
+  .stamp.ban{color:var(--ban); border-color:#E3A9A5; background:var(--ban-bg)}  .stamp.ban::before{background:var(--ban)}
+  .stamp.note{color:var(--ink-soft); border-color:#CBD1D8; background:#fff; border-style:dashed} .stamp.note::before{background:var(--ink-soft)}
+
+  .hint{font-family:var(--sans); font-size:14px; color:var(--ink-soft); margin:10px 0 0}
+  .inline-select{font-family:var(--sans); font-size:14px; padding:3px 6px; border:1px solid var(--rule); border-radius:4px; background:#fff}
+
+  /* ---------- rating ---------- */
+  .rating{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin:6px 0 20px; font-family:var(--sans)}
+  .rating-head{display:flex; gap:20px; align-items:flex-start; margin-bottom:12px}
+  .rating-total{font-family:var(--serif); line-height:1; white-space:nowrap; padding-top:4px}
+  .rating-total .big{font-size:44px}
+  .rating-total .of{font-size:14px; color:var(--muted); margin-left:6px}
+  .rating-verdict p{margin:8px 0 0; font-size:13.5px; color:var(--ink-soft); line-height:1.45}
+  .parts{list-style:none; padding:0; margin:0}
+  .parts li{display:grid; grid-template-columns:150px 1fr 58px; gap:3px 12px; align-items:center; padding:8px 0; border-top:1px solid var(--rule-soft); font-size:13.5px}
+  .parts .pname{font-weight:600}
+  .parts .bar{height:8px; background:var(--rule-soft); border-radius:4px; overflow:hidden}
+  .parts .bar i{display:block; height:100%; background:var(--ink)}
+  .parts .pscore{text-align:right; white-space:nowrap}
+  .parts .pnote{grid-column:1 / -1; color:var(--ink-soft); font-size:13px}
+
+  /* ---------- decision layer ---------- */
+  .verdict{display:grid; grid-template-columns:1fr 1fr; gap:0 28px; margin-top:6px}
+  .verdict h3{margin:10px 0 6px}
+  .vlist{list-style:none; padding:0; margin:0}
+  .vlist li{padding:9px 12px 9px 14px; margin:0 0 8px; border-left:4px solid; border-radius:0 4px 4px 0; font-size:16px; line-height:1.45}
+  .vlist .pro{border-color:var(--ok); background:var(--ok-bg)}
+  .vlist .pro-check{border-color:var(--ok); background:var(--warn-bg)}
+  .vlist .con{border-color:#D9B44A; background:var(--warn-bg)}
+  .vlist .con-ban{border-color:var(--ban); background:var(--ban-bg)}
+  .compare{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .compare th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .compare td{padding:9px 8px 9px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .compare tr.here td{background:#F6F8FA}
+  .compare td:first-child{font-family:var(--serif); font-size:15.5px; white-space:nowrap}
+  .st.mid{color:var(--ink-soft); background:#EEF2F6; border-color:#CBD1D8}
+  .st{white-space:nowrap}
+  .legend{display:flex; align-items:center; gap:8px; margin:6px 0 0 !important}
+  .sw{display:inline-block; width:14px; height:14px; border-radius:3px; border:1px solid; flex:none}
+  .sw.ban{background:var(--ban-bg); border-color:var(--ban)}
+  .sw.warn{background:var(--warn-bg); border-color:#D9B44A}
+  .sw.ok{background:var(--ok-bg); border-color:var(--ok)}
+
+  /* ---------- calculator ---------- */
+  .calc{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin-top:12px; font-family:var(--sans); font-size:15px}
+  .calc label{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .calc input{width:130px; padding:6px 8px; border:1px solid var(--ink); border-radius:4px; font-size:16px; text-align:right}
+  .calc table{width:100%; border-collapse:collapse; margin-top:12px}
+  .calc td{padding:7px 0; border-top:1px solid var(--rule-soft)}
+  .calc td:last-child{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .calc tr.total td{border-top:2px solid var(--ink); font-weight:600; font-size:17px}
+  .calc .sub{color:var(--muted); font-size:13px}
+
+  /* ---------- checklist ---------- */
+  .check{list-style:none; padding:0; margin:6px 0 0}
+  .check li{display:flex; gap:12px; align-items:flex-start; padding:8px 0; border-top:1px solid var(--rule-soft)}
+  .check li:last-child{border-bottom:1px solid var(--rule-soft)}
+  .check input{width:18px; height:18px; margin-top:5px; accent-color:var(--ink); flex:none}
+  .check label{cursor:pointer}
+  .check li.done label{color:var(--muted); text-decoration:line-through}
+
+  /* ---------- sources table ---------- */
+  .sources{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .sources th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .sources td{padding:8px 8px 8px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .sources td:first-child{white-space:nowrap}
+  .sources-wrap, .compare-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .st{display:inline-block; padding:2px 8px; border-radius:4px; font-size:12px; border:1px solid}
+  .st.ok{color:var(--ok); background:var(--ok-bg); border-color:#9CC9B0}
+  .st.warn{color:var(--warn); background:var(--warn-bg); border-color:#E1C77F}
+  .st.none{color:var(--ban); background:var(--none-bg); border-color:#CBD1D8}
+
+  /* ---------- rail ---------- */
+  .rail-block{border-top:1.5px solid var(--ink); padding:12px 0 18px}
+  .rail-block h4{margin:0 0 8px; font-size:13px; font-weight:600; color:var(--ink-soft)}
+  .toc{list-style:none; padding:0; margin:0}
+  .toc li{padding:4px 0}
+  .toc a{text-decoration:none; color:var(--ink)}
+  .toc a:hover{text-decoration:underline}
+  .toc .n{display:inline-block; width:22px; color:var(--muted)}
+  .report{width:100%; border:1.5px solid var(--ink); background:#fff; border-radius:6px; padding:10px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .report:hover{background:#F6F8FA}
+  .report-done{border:1.5px solid var(--ok); color:var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; font-size:14px}
+  .rail p{margin:8px 0 0; color:var(--ink-soft); line-height:1.45}
+  .rail a.dim{color:var(--muted)}
+
+  footer{font-family:var(--sans); font-size:13px; color:var(--muted); border-top:1px solid var(--rule); background:var(--paper)}
+  footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap:24px; flex-wrap:wrap}
+
+  [hidden]{display:none !important}
+
+  @media (max-width: 900px){
+    .doc{grid-template-columns:1fr; gap:24px; padding:20px 18px 40px}
+    aside{position:static}
+    .rail-block.toc-block{display:none}
+    .sources td:first-child{white-space:normal; word-break:break-all}
+    .verdict{grid-template-columns:1fr}
+    .parts li{grid-template-columns:110px 1fr 52px}
+    .rating-head{flex-direction:column; gap:8px}
+    .compare td:first-child{white-space:normal}
+    .sources{font-size:12.5px}
+    .st{white-space:nowrap}
+    .query{font-size:20px} .query select{font-size:19px}
+    .fact{grid-template-columns:1fr}
+    .summary .fact{grid-template-columns:1fr}
+    .stamp{max-width:none}
+    .top-inner, .status .in, .demo .in, footer .in{padding-left:18px; padding-right:18px}
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .mode button, .langs button, .report{transition:background .15s, color .15s}
+  }
+/* ---------- follow panel ---------- */
+  .follow{width:100%; border:0; background:var(--ink); color:#fff; border-radius:6px; padding:11px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .follow:hover{background:#264B73}
+  .fp{border:1.5px solid var(--ink); border-radius:6px; padding:12px; margin-top:10px; background:#fff}
+  .fp-title{margin:0 0 6px !important; font-weight:600; color:var(--ink) !important}
+  .fp label{display:flex; gap:8px; align-items:flex-start; margin:0 0 6px; color:var(--ink); line-height:1.35; cursor:pointer}
+  .fp input[type=checkbox], .fp input[type=radio]{margin-top:2px; accent-color:var(--ink); flex:none}
+  .fp input[type=email]{width:100%; padding:7px 8px; border:1px solid var(--ink); border-radius:4px; margin:6px 0 8px; font-size:14px}
+  .fp .sub{color:var(--muted) !important; font-size:12.5px !important; margin-top:8px !important}
+  .notice{border:1.5px solid var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; margin-top:10px}
+  .notice p{margin:0 0 6px !important; color:var(--ink) !important}
+  .notice .sample{background:#fff; border:1px dashed #9CC9B0; border-radius:4px; padding:8px 10px; font-size:13px; color:var(--ink-soft) !important; margin:0 !important}
+  .brand a{color:var(--muted); text-decoration:none}
+  .brand a:hover{text-decoration:underline}
+
+  /* ---------- sanctions band ---------- */
+  .sanctions{background:var(--ban-bg); border-bottom:1px solid #E3A9A5}
+  .sanctions .in{max-width:1180px; margin:0 auto; padding:12px 28px; color:var(--ban); display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start}
+  .sanctions .tag{font-weight:600; border:1.5px solid var(--ban); border-radius:4px; padding:2px 8px; white-space:nowrap; margin-top:1px}
+  .sanctions p{margin:0; color:#7A1F1B}
+  .mode button[disabled]{color:var(--muted); cursor:not-allowed; background:#F6F8FA}
+  @media (max-width: 900px){ .sanctions .in{grid-template-columns:1fr; padding-left:18px; padding-right:18px} }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="top-row">
+      <div class="brand"><a href="index.html">[название сайта]</a> — все коридоры</div>
+      <div class="langs" role="group" aria-label="Язык страницы">
+        <button type="button" aria-current="true">RU</button>
+        <button type="button" disabled title="В макете только русский">EN</button>
+        <button type="button" disabled title="В макете только русский">中文</button>
+      </div>
+    </div>
+    <div class="query" role="group" aria-label="Параметры коридора">
+      Везу
+      <select class="product" aria-label="Товар"><option>футболки хлопковые трикотажные, HS 6109.10</option><option disabled>другие группы: в макете нет</option></select>
+      из
+      <select class="country" aria-label="Откуда"><option>Китая</option><option disabled>другие: нет</option></select>
+      в
+      <select class="country" aria-label="Куда"><option>Канаду</option><option disabled>другие: нет</option></select>
+      как
+      <span class="mode" role="group" aria-label="Режим поставки">
+        <button type="button" data-mode="b2b" aria-pressed="true">коммерческую партию</button>
+        <button type="button" data-mode="parcel" aria-pressed="false">посылки покупателям</button>
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="band status"><div class="in">Страница собрана автоматически из 13 официальных источников; один запрошенный источник не найден. Последняя проверка — 5 сентября 2026. Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера.</div></div>
+<div class="band demo"><div class="in"><strong>Демо-макет формата.</strong> Цифры и формулировки иллюстративные и не проверены — в продукте каждую строку заполнит конвейер из источников.</div></div>
+
+<div class="doc">
+<main>
+
+  <h2 id="s0">Коротко</h2>
+  <div class="summary">
+    <div class="fact">
+      <span class="k">Пошлина при ввозе</span>
+      <p>18% от таможенной стоимости — ставка режима наибольшего благоприятствования</p>
+      <span class="stamp ok"><b>tariffinder.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Налог на границе</span>
+      <p data-mode="b2b">GST 5% с суммы «стоимость + пошлина»</p>
+      <p data-mode="parcel" hidden>HST или GST с PST — по провинции получателя</p>
+      <span class="stamp ok"><b>canada.ca, CRA</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Соглашение</span>
+      <p>Между Канадой и Китаем нет соглашения о свободной торговле; льготный тариф GPT для Китая отменён с 2015 года</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Лицензия на экспорт</span>
+      <p>В Китае не требуется для этой товарной группы</p>
+      <span class="stamp warn"><b>mofcom.gov.cn</b>проверено 10 мая 2026, старше 90 дней — требует проверки</span>
+    </div>
+    <div class="fact ban">
+      <span class="k">Ограничения</span>
+      <p>Ввоз товаров, произведённых с принудительным трудом, запрещён; к хлопку из Китая у таможни повышенное внимание</p>
+      <span class="stamp ban"><b>cbsa-asfc.gc.ca</b>запрет, проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Санкции</span>
+      <p>Ограничений для этой товарной группы нет</p>
+      <span class="stamp ok"><b>international.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+  </div>
+
+  <h2 id="sv">Выгодно и что мешает</h2>
+  <p class="lead">Оценка коридора складывается из пяти частей, каждую можно проверить. Запрет или санкции обнулили бы её независимо от остальных.</p>
+  <div class="rating">
+    <div class="rating-head">
+      <div class="rating-total"><span class="big">14</span><span class="of">из 25</span></div>
+      <div class="rating-verdict"><span class="st warn">средне: дороже соседей, но ввоз растёт</span>
+        <p>Пошлины, препятствия и господдержка считаются по правилам из источников. Спрос и логистика — ориентир по статистике и индексам, они никогда не получают статус «проверено».</p></div>
+    </div>
+    <ul class="parts">
+      <li><span class="pname">Пошлины и налоги</span><span class="bar"><i style="width:40%"></i></span><span class="pscore">2 из 5</span><span class="pnote">18% против 0% в Австралии и 12% в ЕС</span></li>
+      <li><span class="pname">Препятствия</span><span class="bar"><i style="width:60%"></i></span><span class="pscore">3 из 5</span><span class="pnote">запрет по принудительному труду — риск задержки партии, а не запрет товара</span></li>
+      <li><span class="pname">Господдержка</span><span class="bar"><i style="width:40%"></i></span><span class="pscore">2 из 5</span><span class="pnote">страхование Sinosure; субсидий на перевозку нет; возврат НДС не подтверждён</span></li>
+      <li><span class="pname">Спрос</span><span class="bar"><i style="width:80%"></i></span><span class="pscore">4 из 5</span><span class="pnote">ввоз футболок в Канаду около 1,4 млрд CAD в год, рост 8% за три года (демо, по торговой статистике)</span></li>
+      <li><span class="pname">Логистика</span><span class="bar"><i style="width:60%"></i></span><span class="pscore">3 из 5</span><span class="pnote">море 3–5 недель, около 3 000 USD за 40-футовый контейнер (демо, индекс недели)</span></li>
+    </ul>
+  </div>
+  <div class="verdict">
+    <div>
+      <h3>Выгодно</h3>
+      <ul class="vlist">
+        <li class="pro">Антидемпинговых мер нет — ставка не вырастет из-за расследований SIMA.</li>
+        <li class="pro">Sinosure страхует риск неоплаты покупателем при отсрочке платежа.</li>
+        <li class="pro">Сертификат происхождения для ставки не нужен — меньше бумаг на границе.</li>
+        <li class="pro" data-mode="parcel" hidden>Посылки дешевле 20 CAD проходят без пошлин и налогов.</li>
+        <li class="pro-check">Возврат экспортного НДС в Китае — выгода есть, но ставка не подтверждена источником.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Мешает</h3>
+      <ul class="vlist">
+        <li class="con-ban">Запрет на товары принудительного труда: партии из хлопка могут задержать до подтверждения происхождения сырья.</li>
+        <li class="con">Пошлина 18% — выше, чем в Австралии (0%) или ЕС (12%) для того же товара.</li>
+        <li class="con">Нет соглашения о свободной торговле — льготной ставки не будет.</li>
+        <li class="con">Субсидий на перевозку по этому коридору не найдено.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="sw">Куда ещё везти этот товар из Китая</h2>
+  <p class="lead">Те же пять частей для соседних рынков, отсортированы по оценке. Спрос и логистика в ней — ориентир, а не проверенный факт.</p>
+  <div class="compare-wrap"><table class="compare">
+    <thead><tr><th>Куда</th><th>Пошлина</th><th>Соглашение</th><th>Санкции</th><th>Поддержка</th><th>Оценка</th></tr></thead>
+    <tbody>
+      <tr><td>Австралия</td><td>0%</td><td>ChAFTA, преференция</td><td>нет</td><td>1 программа</td><td><span class="st ok">19 из 25, выгодно</span></td></tr>
+      <tr><td>Великобритания</td><td>12%</td><td>нет</td><td>нет</td><td>2 программы</td><td><span class="st mid">16 из 25, средне</span></td></tr>
+      <tr><td>ЕС, Германия</td><td>12%</td><td>нет</td><td>нет</td><td>2 программы</td><td><span class="st mid">16 из 25, средне</span></td></tr>
+      <tr class="here"><td>Канада — эта страница</td><td>18%</td><td>нет</td><td>нет</td><td>1 программа</td><td><span class="st warn">14 из 25, дороже соседей</span></td></tr>
+      <tr><td>США</td><td>16,5% и дополнительные тарифы, менялись в 2025–2026</td><td>нет</td><td>нет</td><td>—</td><td><span class="st warn">требует проверки</span></td></tr>
+      <tr><td>Россия</td><td>ставка ЕАЭС по группе</td><td>нет</td><td>расчёты и логистика ограничены санкциями третьих стран</td><td>3 программы</td><td><span class="st warn">11 из 25, препятствия</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s1"><span class="n">1</span>Режим торговли между Китаем и Канадой</h2>
+  <p class="lead">Здесь то, что зависит не от товара, а от пары стран.</p>
+  <div class="facts">
+    <div class="fact">
+      <p>Между Канадой и Китаем нет соглашения о свободной торговле, поэтому пошлина берётся по ставке режима наибольшего благоприятствования — в канадском тарифе она обозначена как MFN.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Общий преференциальный тариф Канады (GPT) на Китай не распространяется с 1 января 2015 года — льготной ставки для китайских товаров нет.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Антидемпинговых и компенсационных мер по закону SIMA на трикотажные футболки из Китая не найдено.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca, SIMA</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact ban">
+      <p>Ввоз товаров, полностью или частично произведённых с использованием принудительного труда, запрещён — тарифная позиция 9897.00.00. Для хлопкового текстиля из Китая таможня может задержать партию до подтверждения происхождения сырья: заранее соберите документы по цепочке поставок хлопка.</p>
+      <span class="stamp ban"><b>cbsa-asfc.gc.ca</b>запрет, проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Канадские санкции торговлю одеждой с Китаем не затрагивают.</p>
+      <span class="stamp ok"><b>international.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+  </div>
+
+  <h2 id="s2"><span class="n">2</span>Вывоз из Китая</h2>
+  <div class="facts">
+    <div class="fact">
+      <p>Экспортная лицензия не требуется: HS 6109 не входит в перечни лицензируемых и контролируемых при экспорте товаров.</p>
+      <span class="stamp warn"><b>mofcom.gov.cn</b>проверено 10 мая 2026, старше 90 дней — требует проверки</span>
+    </div>
+    <div class="fact">
+      <p>Экспортная декларация подаётся через «единое окно» международной торговли; к ней прикладываются контракт, инвойс и упаковочный лист.</p>
+      <span class="stamp ok"><b>customs.gov.cn</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Ставка возврата экспортного НДС для этой группы: официальный источник не найден. Уточните в налоговом органе по месту регистрации экспортёра — страница не подставляет значение по догадке.</p>
+      <span class="stamp none"><b>chinatax.gov.cn</b>источник не найден</span>
+    </div>
+    <div class="fact">
+      <p>Сертификат происхождения выдаёт CCPIT. Для ставки MFN в Канаде он не нужен, но пригодится, если таможня запросит подтверждение происхождения при проверке по принудительному труду.</p>
+      <span class="stamp ok"><b>ccpit.org</b>проверено 5 сен 2026</span>
+    </div>
+  </div>
+  <h3>Что даёт государство экспортёру</h3>
+  <div class="facts">
+    <div class="fact">
+      <p>Страхование экспортных кредитов Sinosure — для экспортёров, отгружающих с отсрочкой платежа; покрывает риск неоплаты покупателем.</p>
+      <span class="stamp ok"><b>sinosure.com.cn</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Региональные программы поддержки экспортёров различаются по провинциям. Укажите провинцию отправителя, чтобы увидеть её программы:
+        <select class="inline-select" aria-label="Провинция отправителя"><option>не указана</option><option disabled>список провинций — в макете недоступен</option></select>
+      </p>
+      <span class="stamp note"><b>зависит от провинции</b>появится после выбора</span>
+    </div>
+    <div class="fact">
+      <p>Субсидий на перевозку по этому коридору не найдено. Такие программы существуют в других странах — например, российским экспортёрам промышленной продукции компенсируют до 60% затрат на транспортировку через РЭЦ — и меняются каждый год, поэтому страница проверяет их отдельной строкой.</p>
+      <span class="stamp none"><b>перевозка</b>программ не найдено, проверено 5 сен 2026</span>
+    </div>
+  </div>
+
+  <h2 id="s3"><span class="n">3</span>Ввоз в Канаду</h2>
+  <div class="facts">
+    <div class="fact">
+      <p>Код товара: 6109.10.00 — футболки и майки трикотажные, хлопковые. Точный десятизначный код и ставку подтверждают таможенный брокер или предварительное решение CBSA о классификации.</p>
+      <span class="stamp note"><b>подтвердите у брокера</b>страница работает на уровне группы HS-6</span>
+    </div>
+    <div class="fact">
+      <p>Пошлина 18% начисляется на таможенную стоимость — цену сделки; стоимость международной перевозки в неё не входит.</p>
+      <span class="stamp ok"><b>tariffinder.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p data-mode="b2b">На границе взимается GST 5% с суммы «стоимость + пошлина». Провинциальная часть HST на коммерческий ввоз не начисляется — она возникает при продаже внутри Канады.</p>
+      <p data-mode="parcel" hidden>На посылки частным лицам на границе начисляют HST или GST с PST по провинции получателя — например, в Онтарио 13%.</p>
+      <span class="stamp ok"><b>canada.ca, CRA</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact" data-mode="b2b">
+      <p>Импортёру нужен Business Number с импортно-экспортным счётом и регистрация в портале CARM таможни — без неё коммерческую партию не выпустят.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca, CARM</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact" data-mode="parcel" hidden>
+      <p>Посылки стоимостью до 20 CAD освобождены от пошлин и налогов.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact" data-mode="parcel" hidden>
+      <p>До 3 300 CAD курьер оформляет посылку по упрощённой процедуре CLVS и берёт брокерский сбор; выше — обычная коммерческая декларация.</p>
+      <span class="stamp ok"><b>cbsa-asfc.gc.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Маркировка по закону о маркировке текстиля: состав волокон, наименование продавца или его CA-номер, на английском и французском. Отдельно на изделии — страна происхождения.</p>
+      <span class="stamp ok"><b>competition-bureau.canada.ca</b>проверено 5 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Футболки должны соответствовать требованиям к воспламеняемости текстиля по закону о безопасности потребительских товаров.</p>
+      <span class="stamp ok"><b>canada.ca, Health Canada</b>проверено 5 сен 2026</span>
+    </div>
+  </div>
+
+  <h2 id="s4"><span class="n">4</span>Сколько платить государству</h2>
+  <p class="lead">Пример расчёта по ставкам выше. Меняйте сумму — расчёт обновится.</p>
+  <div class="calc">
+    <label>Стоимость по инвойсу, CAD <input id="value" type="number" min="0" step="100" value="10000"></label>
+    <label id="prov-row" hidden style="margin-top:10px">Провинция получателя
+      <select id="prov" class="inline-select">
+        <option value="0.13">Онтарио — HST 13%</option>
+        <option value="0.14">Новая Шотландия — HST 14%</option>
+        <option value="0.05">Альберта — GST 5%</option>
+        <option value="0.14975">Квебек — GST 5% и QST 9,975%</option>
+      </select>
+    </label>
+    <table>
+      <tr><td>Пошлина 18%</td><td id="duty">1 800</td></tr>
+      <tr><td id="taxlabel">GST 5% с суммы «стоимость + пошлина»</td><td id="tax">590</td></tr>
+      <tr class="total"><td>Итого государству</td><td id="total">2 390 CAD</td></tr>
+    </table>
+    <p class="sub" style="margin:10px 0 0">Не включено: перевозка, страховка, услуги брокера, сборы курьера, регистрационные пошлины.</p>
+  </div>
+
+  <h2 id="s5"><span class="n">5</span>Как везти</h2>
+  <div class="facts">
+    <div class="fact">
+      <p>Морем, контейнером: 3–5 недель из Шанхая в Ванкувер. Основной способ для партий; субсидий на этот маршрут нет.</p>
+      <span class="stamp note"><b>оценка, не источник</b>по данным перевозчиков</span>
+    </div>
+    <div class="fact">
+      <p>Авиа: 3–7 дней, в разы дороже. Имеет смысл для посылок и срочных партий.</p>
+      <span class="stamp note"><b>оценка, не источник</b>по данным перевозчиков</span>
+    </div>
+    <div class="fact">
+      <p>Железной дорогой маршрута нет. Для сравнения: в коридоре Китай → Европа местные власти китайских городов субсидировали контейнерные поезда — по нескольку тысяч долларов за 40-футовый контейнер; централизованные субсидии сворачиваются с 2022 года. Такие льготы за маршрут страница показывает зелёной строкой там, где они действуют.</p>
+      <span class="stamp note"><b>пример другого коридора</b>здесь не действует</span>
+    </div>
+  </div>
+
+  <h2 id="s6"><span class="n">6</span>Документы</h2>
+  <p class="lead">Отмечайте по мере готовности — список сохраняется только в этом окне.</p>
+  <h3>На вывоз из Китая</h3>
+  <ul class="check">
+    <li><input type="checkbox" id="d1"><label for="d1">Контракт с покупателем</label></li>
+    <li><input type="checkbox" id="d2"><label for="d2">Коммерческий инвойс</label></li>
+    <li><input type="checkbox" id="d3"><label for="d3">Упаковочный лист</label></li>
+    <li><input type="checkbox" id="d4"><label for="d4">Экспортная декларация через «единое окно»</label></li>
+    <li><input type="checkbox" id="d5"><label for="d5">Сертификат происхождения CCPIT — по запросу покупателя</label></li>
+  </ul>
+  <h3>На ввоз в Канаду</h3>
+  <ul class="check" data-mode="b2b">
+    <li><input type="checkbox" id="i1"><label for="i1">Коммерческий инвойс с обязательными полями или Canada Customs Invoice</label></li>
+    <li><input type="checkbox" id="i2"><label for="i2">Коносамент или авианакладная</label></li>
+    <li><input type="checkbox" id="i3"><label for="i3">Декларация ввоза — через CARM или брокера</label></li>
+    <li><input type="checkbox" id="i4"><label for="i4">Документы о происхождении хлопка — на случай проверки по принудительному труду</label></li>
+    <li><input type="checkbox" id="i5"><label for="i5">Фото маркировки на изделии и упаковке</label></li>
+  </ul>
+  <ul class="check" data-mode="parcel" hidden>
+    <li><input type="checkbox" id="p1"><label for="p1">Инвойс внутри посылки</label></li>
+    <li><input type="checkbox" id="p2"><label for="p2">Таможенная декларация перевозчика (для почты — CN22 или CN23)</label></li>
+    <li><input type="checkbox" id="p3"><label for="p3">Подтверждение происхождения — по запросу таможни</label></li>
+    <li><input type="checkbox" id="p4"><label for="p4">Маркировка на изделии — те же требования, что для партий</label></li>
+  </ul>
+
+  <h2 id="s7"><span class="n">7</span>Источники и проверка</h2>
+  <p class="lead">Каждая строка выше опирается на один из этих источников. Статус «требует проверки» ставится автоматически, если источник не перечитывался больше 90 дней.</p>
+  <div class="sources-wrap"><table class="sources">
+    <thead><tr><th>Источник</th><th>Что подтверждает</th><th>Проверено</th><th>Статус</th></tr></thead>
+    <tbody>
+      <tr><td>tariffinder.ca</td><td>ставка MFN 18%, база расчёта</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>cbsa-asfc.gc.ca</td><td>тариф: GPT, позиция 9897.00.00</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>cbsa-asfc.gc.ca</td><td>меры SIMA</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>cbsa-asfc.gc.ca</td><td>регистрация в CARM</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>cbsa-asfc.gc.ca</td><td>посылки: порог 20 CAD, процедура CLVS</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>canada.ca (CRA)</td><td>GST и HST при ввозе</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>competition-bureau.canada.ca</td><td>маркировка текстиля</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>canada.ca (Health Canada)</td><td>воспламеняемость текстиля</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>international.gc.ca</td><td>санкции</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>mofcom.gov.cn</td><td>лицензирование экспорта</td><td>10 мая 2026</td><td><span class="st warn">требует проверки</span></td></tr>
+      <tr><td>customs.gov.cn</td><td>экспортная декларация</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>chinatax.gov.cn</td><td>возврат экспортного НДС</td><td>—</td><td><span class="st none">не найден</span></td></tr>
+      <tr><td>sinosure.com.cn</td><td>страхование экспортных кредитов</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>ccpit.org</td><td>сертификат происхождения</td><td>5 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+    </tbody>
+  </table></div>
+
+</main>
+
+<aside class="rail">
+  <div class="rail-block toc-block">
+    <h4>На этой странице</h4>
+    <ul class="toc">
+      <li><a href="#s0"><span class="n"></span>Коротко</a></li>
+      <li><a href="#sv"><span class="n"></span>Выгодно и что мешает</a></li>
+      <li><a href="#sw"><span class="n"></span>Куда ещё везти</a></li>
+      <li><a href="#s1"><span class="n">1</span>Режим торговли</a></li>
+      <li><a href="#s2"><span class="n">2</span>Вывоз из Китая</a></li>
+      <li><a href="#s3"><span class="n">3</span>Ввоз в Канаду</a></li>
+      <li><a href="#s4"><span class="n">4</span>Сколько платить</a></li>
+      <li><a href="#s5"><span class="n">5</span>Как везти</a></li>
+      <li><a href="#s6"><span class="n">6</span>Документы</a></li>
+      <li><a href="#s7"><span class="n">7</span>Источники</a></li>
+    </ul>
+  </div>
+  <div class="rail-block">
+    <h4>Цвета на странице</h4>
+    <p class="legend"><span class="sw ban"></span>запрет или санкции</p>
+    <p class="legend"><span class="sw warn"></span>препятствие или требует проверки</p>
+    <p class="legend"><span class="sw ok"></span>выгода</p>
+  </div>
+  <div class="rail-block">
+    <div id="follow-wrap">
+      <button type="button" class="follow" id="follow">Следить за коридором</button>
+      <div class="fp" id="follow-panel" hidden>
+        <p class="fp-title">О чём сообщать</p>
+        <label><input type="checkbox" checked> пошлины, налоги и квоты</label>
+        <label><input type="checkbox" checked> санкции и запреты</label>
+        <label><input type="checkbox" checked> новые программы и субсидии</label>
+        <label><input type="checkbox"> дедлайны отборов и заявок</label>
+        <label><input type="checkbox"> изменение оценки коридора</label>
+        <p class="fp-title" style="margin-top:10px">Как часто</p>
+        <label><input type="radio" name="freq" checked> сразу, как обнаружено</label>
+        <label><input type="radio" name="freq"> раз в неделю, сводкой</label>
+        <input type="email" placeholder="ваш email" aria-label="Email для уведомлений">
+        <button type="button" class="report" id="follow-go">Подписаться</button>
+        <p class="sub">Уведомление приходит, когда конвейер перечитал официальный источник и нашёл изменение — со ссылкой на источник и датой. Без изменений писем нет.</p>
+      </div>
+    </div>
+    <p>Подписка — на этот коридор и товар. Другие коридоры добавляются отдельно.</p>
+  </div>
+  <div class="rail-block">
+    <div id="report-wrap"><button type="button" class="report" id="report">Сообщить об ошибке</button></div>
+    <p>Запускает автоматическую перепроверку источников по этой странице. Ответ вернётся сюда же.</p>
+  </div>
+  <div class="rail-block">
+    <p style="margin-top:0">Собрано автоматически из официальных источников. Не консультация. Код товара и ставки подтвердите у таможенного брокера.</p>
+    <p><a class="dim" href="#" title="В макете недоступно">Обратное направление: из Канады в Китай</a></p>
+  </div>
+</aside>
+</div>
+
+<footer><div class="in"><span>Условия использования</span><span>Как собираются страницы</span><span>Источники по странам</span></div></footer>
+
+<script>
+(function(){
+  var mode = 'b2b';
+  var value = document.getElementById('value');
+  var prov = document.getElementById('prov');
+  var provRow = document.getElementById('prov-row');
+
+  function fmt(n){ return Math.round(n).toLocaleString('ru-RU'); }
+
+  function recalc(){
+    var v = parseFloat(value.value) || 0;
+    var duty = v * 0.18;
+    var base = v + duty;
+    var rate = (mode === 'b2b') ? 0.05 : parseFloat(prov.value);
+    var tax = base * rate;
+    document.getElementById('duty').textContent = fmt(duty);
+    document.getElementById('tax').textContent = fmt(tax);
+    document.getElementById('total').textContent = fmt(duty + tax) + ' CAD';
+    document.getElementById('taxlabel').textContent = (mode === 'b2b')
+      ? 'GST 5% с суммы «стоимость + пошлина»'
+      : 'Налог по провинции получателя, ' + prov.options[prov.selectedIndex].text.split(' — ')[1] + ', с суммы «стоимость + пошлина»';
+  }
+
+  function setMode(m){
+    mode = m;
+    document.querySelectorAll('.mode button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.mode === m ? 'true' : 'false'); });
+    document.querySelectorAll('[data-mode]').forEach(function(el){
+      if (el.tagName === 'BUTTON') return;
+      el.hidden = (el.dataset.mode !== m);
+    });
+    provRow.hidden = (m !== 'parcel');
+    recalc();
+  }
+
+  document.querySelectorAll('.mode button').forEach(function(b){ b.addEventListener('click', function(){ setMode(b.dataset.mode); }); });
+  value.addEventListener('input', recalc);
+  prov.addEventListener('change', recalc);
+
+  document.querySelectorAll('.check input').forEach(function(c){
+    c.addEventListener('change', function(){ c.parentElement.classList.toggle('done', c.checked); });
+  });
+
+  document.getElementById('report').addEventListener('click', function(){
+    document.getElementById('report-wrap').innerHTML = '<div class="report-done">Принято. Источники по странице будут перечитаны, изменения появятся здесь.</div>';
+  });
+
+  recalc();
+})();
+</script>
+<script>
+(function(){
+  var btn=document.getElementById('follow'); if(!btn) return;
+  var panel=document.getElementById('follow-panel');
+  btn.addEventListener('click', function(){ panel.hidden=!panel.hidden; btn.textContent = panel.hidden ? 'Следить за коридором' : 'Свернуть'; });
+  document.getElementById('follow-go').addEventListener('click', function(){
+    document.getElementById('follow-wrap').innerHTML = '<div class="notice"><p><b>Подписка оформлена</b> — уведомления по этому коридору будут приходить на указанный адрес (демо).</p><p class="sample">Пример письма: «6 сен 2026: источник mofcom.gov.cn перечитан — строка «экспортная лицензия не требуется» подтверждена, статус изменён с «требует проверки» на «актуально». Оценка коридора не изменилась.»</p></div>';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  web:
+    name: web (typecheck, lint, build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+  pipeline:
+    name: pipeline (syntax, entry point)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m compileall -q pipeline
+      - run: python -m pipeline fetch --corridor cn-ca --hs6 610910 || test $? -eq 2
+
+  schema:
+    name: db/schema.sql applies on PostgreSQL 16
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: trade
+          POSTGRES_PASSWORD: trade
+          POSTGRES_DB: trade
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U trade -d trade" --health-interval 5s --health-timeout 3s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: psql "postgresql://trade:trade@localhost:5432/trade" -v ON_ERROR_STOP=1 -f db/schema.sql

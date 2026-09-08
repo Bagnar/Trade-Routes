@@ -1,0 +1,24 @@
+# web/ — фронтенд
+
+Next.js 16 + TypeScript (App Router). Структура и стиль — из `../mockups/`: `app/globals.css` перенесён из макетов дословно, компоненты повторяют их разметку.
+
+## Запуск
+
+    npm install
+    npm run dev          # http://localhost:3000
+    npm run typecheck    # tsc --noEmit
+    npm run lint         # eslint
+    npm run build        # production build
+
+## Как устроено
+
+- `lib/page-content.ts` — **шаблон страницы коридора как структура данных**: тип `PageContent` описывает содержимое `pages.content` (JSONB). Конвейер (`assemble`) обязан выдавать ровно эту форму; фронтенд факты не собирает.
+- `lib/pages.ts` — хранилище страниц. Этап 0: JSON-фикстуры в `data/pages/` (все `isDemo: true`, взяты из макетов, цифры иллюстративные). Этап 3: те же функции читают таблицу `pages`.
+- `lib/corridors.ts` — читает `../data/corridors.yaml` (единственный источник списка коридоров).
+- `lib/calc.ts` — калькулятор «сколько платить»: выражения из JSON (`mul`, `add`, `div`, `if`, `mode`), без `eval`; ставки приходят из содержимого страницы, не из кода.
+- `app/page.tsx` — стартовая: фраза-запрос, маршрутизация в открытые коридоры, карточки, «как собираются страницы».
+- `app/corridor/[corridor]/[hs6]/page.tsx` — страница коридора; `?mode=parcel` включает режим посылок.
+
+Компоненты (`components/`): `QuerySentence`, `Bands` (StatusBand, DemoBand, SanctionsBand), `SourceStamp`, `FactRow`, `Section`, `Summary`, `RatingCard` (+ `ProsCons`), `CompareTable`, `CostCalculator`, `DocumentChecklist`, `SourcesTable`, `Rail` (оглавление, легенда, `FollowPanel`, `ReportError`), `SiteHeader`/`SiteFooter`, `SearchForm`, `CorridorPage`.
+
+Подписка, «сообщить об ошибке» и запрос коридора пока ничего не сохраняют и говорят об этом на экране — API и таблицы подключаются на этапе 3.

@@ -1,0 +1,24 @@
+# Local PostgreSQL for the trade-rules encyclopedia.
+# First start applies db/schema.sql automatically (docker-entrypoint-initdb.d runs only on an empty volume).
+# Reset: docker compose down -v && docker compose up -d
+services:
+  db:
+    image: postgres:16
+    container_name: trade-db
+    environment:
+      POSTGRES_USER: trade
+      POSTGRES_PASSWORD: trade
+      POSTGRES_DB: trade
+    ports:
+      - "5432:5432"
+    volumes:
+      - trade-pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trade -d trade"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  trade-pgdata:

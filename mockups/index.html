@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Правила торговли между странами — одной страницей (макет)</title>
+<style>
+  :root{
+    --ink:#1C3A5B; --ink-soft:#4B5D70; --muted:#7A8794;
+    --paper:#FFFFFF; --page:#EEF1F4; --rule:#D5DBE1; --rule-soft:#E8ECF0;
+    --ok:#1F6F4A; --ok-bg:#EAF4EE;
+    --warn:#8F6208; --warn-bg:#FFF3D6;
+    --ban:#A62B26; --ban-bg:#FBEAE8;
+    --none:#5B6470; --none-bg:#F0F2F4;
+    --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+    --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--page)}
+  body{margin:0; color:var(--ink); font-family:var(--serif); font-size:17px; line-height:1.55}
+  a{color:var(--ink)}
+  button, select, input{font-family:var(--sans); font-size:14px; color:var(--ink)}
+  :focus-visible{outline:3px solid #7FB3E8; outline-offset:2px}
+
+  /* ---------- header: the query sentence ---------- */
+  .top{background:var(--paper); border-bottom:1px solid var(--rule)}
+  .top-inner{max-width:1180px; margin:0 auto; padding:14px 28px 20px}
+  .top-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px}
+  .brand{font-family:var(--sans); font-size:13px; color:var(--muted); letter-spacing:.01em}
+  .query{font-size:24px; line-height:1.6; min-width:0}
+  .query select{font-family:var(--serif); font-size:22px; padding:2px 30px 2px 8px; width:auto; border:0; border-bottom:2px solid var(--ink); background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231C3A5B' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 8px center; border-radius:0; appearance:none; -webkit-appearance:none; max-width:100%; cursor:pointer}
+  .query select.product{max-width:100%; width:auto}
+  .query select.country{width:auto}
+  .mode{display:inline-flex; border:1.5px solid var(--ink); border-radius:6px; overflow:hidden; vertical-align:middle; margin-left:4px}
+  .mode button{border:0; background:var(--paper); padding:6px 12px; cursor:pointer; font-size:15px}
+  .mode button[aria-pressed="true"]{background:var(--ink); color:#fff}
+  .langs{display:flex; gap:6px}
+  .langs button{border:1px solid var(--rule); background:var(--paper); border-radius:6px; padding:5px 10px; cursor:pointer}
+  .langs button[aria-current="true"]{border-color:var(--ink); background:var(--ink); color:#fff}
+  .langs button[disabled]{color:var(--muted); cursor:not-allowed}
+
+  /* ---------- status + demo bands ---------- */
+  .band{font-family:var(--sans); font-size:14px; line-height:1.45}
+  .status{background:#F6F8FA; border-bottom:1px solid var(--rule)}
+  .status .in{max-width:1180px; margin:0 auto; padding:10px 28px; color:var(--ink-soft)}
+  .demo{background:var(--warn-bg); border-bottom:1px solid #E9D39B}
+  .demo .in{max-width:1180px; margin:0 auto; padding:9px 28px; color:var(--warn)}
+  .demo strong{font-weight:600}
+
+  /* ---------- layout ---------- */
+  .doc{max-width:1180px; margin:0 auto; padding:28px 28px 60px; display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:48px}
+  main{max-width:860px; min-width:0}
+  aside{position:sticky; top:16px; align-self:start; font-family:var(--sans); font-size:14px}
+
+  h2{font-size:22px; font-weight:normal; margin:44px 0 6px; display:flex; align-items:baseline; gap:12px}
+  h2 .n{font-family:var(--sans); font-size:13px; border:1.5px solid var(--ink); border-radius:4px; padding:1px 7px; line-height:1.4; position:relative; top:-2px}
+  h2:first-of-type{margin-top:4px}
+  h3{font-size:17px; font-weight:normal; font-style:italic; margin:22px 0 4px; color:var(--ink-soft)}
+  .lead{margin:0 0 10px; color:var(--ink-soft)}
+
+  /* ---------- facts with stamps ---------- */
+  .fact{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 18px; align-items:start; padding:12px 0; border-top:1px solid var(--rule-soft)}
+  .fact:last-child{border-bottom:1px solid var(--rule-soft)}
+  .fact p{margin:0}
+  .fact.ban p::before{content:""; display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--ban); margin-right:9px; position:relative; top:-1px}
+
+  .summary .fact{grid-template-columns:130px minmax(0,1fr) auto}
+  .summary .k{font-family:var(--sans); font-size:13px; color:var(--muted); padding-top:4px}
+
+  .stamp{font-family:var(--sans); font-size:12px; line-height:1.25; display:inline-flex; flex-direction:column; gap:2px; padding:5px 8px 5px 24px; border:1.5px solid; border-radius:4px; position:relative; min-width:150px; max-width:200px; white-space:normal}
+  .stamp::before{content:""; position:absolute; left:8px; top:9px; width:9px; height:9px; border-radius:50%}
+  .stamp b{font-weight:600}
+  .stamp.ok{color:var(--ok); border-color:#9CC9B0; background:var(--ok-bg)}   .stamp.ok::before{background:var(--ok)}
+  .stamp.warn{color:var(--warn); border-color:#E1C77F; background:var(--warn-bg)} .stamp.warn::before{background:var(--warn)}
+  .stamp.none{color:var(--none); border-color:#CBD1D8; background:var(--none-bg)} .stamp.none::before{background:var(--ban)}
+  .stamp.ban{color:var(--ban); border-color:#E3A9A5; background:var(--ban-bg)}  .stamp.ban::before{background:var(--ban)}
+  .stamp.note{color:var(--ink-soft); border-color:#CBD1D8; background:#fff; border-style:dashed} .stamp.note::before{background:var(--ink-soft)}
+
+  .hint{font-family:var(--sans); font-size:14px; color:var(--ink-soft); margin:10px 0 0}
+  .inline-select{font-family:var(--sans); font-size:14px; padding:3px 6px; border:1px solid var(--rule); border-radius:4px; background:#fff}
+
+  /* ---------- rating ---------- */
+  .rating{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin:6px 0 20px; font-family:var(--sans)}
+  .rating-head{display:flex; gap:20px; align-items:flex-start; margin-bottom:12px}
+  .rating-total{font-family:var(--serif); line-height:1; white-space:nowrap; padding-top:4px}
+  .rating-total .big{font-size:44px}
+  .rating-total .of{font-size:14px; color:var(--muted); margin-left:6px}
+  .rating-verdict p{margin:8px 0 0; font-size:13.5px; color:var(--ink-soft); line-height:1.45}
+  .parts{list-style:none; padding:0; margin:0}
+  .parts li{display:grid; grid-template-columns:150px 1fr 58px; gap:3px 12px; align-items:center; padding:8px 0; border-top:1px solid var(--rule-soft); font-size:13.5px}
+  .parts .pname{font-weight:600}
+  .parts .bar{height:8px; background:var(--rule-soft); border-radius:4px; overflow:hidden}
+  .parts .bar i{display:block; height:100%; background:var(--ink)}
+  .parts .pscore{text-align:right; white-space:nowrap}
+  .parts .pnote{grid-column:1 / -1; color:var(--ink-soft); font-size:13px}
+
+  /* ---------- decision layer ---------- */
+  .verdict{display:grid; grid-template-columns:1fr 1fr; gap:0 28px; margin-top:6px}
+  .verdict h3{margin:10px 0 6px}
+  .vlist{list-style:none; padding:0; margin:0}
+  .vlist li{padding:9px 12px 9px 14px; margin:0 0 8px; border-left:4px solid; border-radius:0 4px 4px 0; font-size:16px; line-height:1.45}
+  .vlist .pro{border-color:var(--ok); background:var(--ok-bg)}
+  .vlist .pro-check{border-color:var(--ok); background:var(--warn-bg)}
+  .vlist .con{border-color:#D9B44A; background:var(--warn-bg)}
+  .vlist .con-ban{border-color:var(--ban); background:var(--ban-bg)}
+  .compare{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .compare th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .compare td{padding:9px 8px 9px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .compare tr.here td{background:#F6F8FA}
+  .compare td:first-child{font-family:var(--serif); font-size:15.5px; white-space:nowrap}
+  .st.mid{color:var(--ink-soft); background:#EEF2F6; border-color:#CBD1D8}
+  .st{white-space:nowrap}
+  .legend{display:flex; align-items:center; gap:8px; margin:6px 0 0 !important}
+  .sw{display:inline-block; width:14px; height:14px; border-radius:3px; border:1px solid; flex:none}
+  .sw.ban{background:var(--ban-bg); border-color:var(--ban)}
+  .sw.warn{background:var(--warn-bg); border-color:#D9B44A}
+  .sw.ok{background:var(--ok-bg); border-color:var(--ok)}
+
+  /* ---------- calculator ---------- */
+  .calc{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin-top:12px; font-family:var(--sans); font-size:15px}
+  .calc label{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .calc input{width:130px; padding:6px 8px; border:1px solid var(--ink); border-radius:4px; font-size:16px; text-align:right}
+  .calc table{width:100%; border-collapse:collapse; margin-top:12px}
+  .calc td{padding:7px 0; border-top:1px solid var(--rule-soft)}
+  .calc td:last-child{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .calc tr.total td{border-top:2px solid var(--ink); font-weight:600; font-size:17px}
+  .calc .sub{color:var(--muted); font-size:13px}
+
+  /* ---------- checklist ---------- */
+  .check{list-style:none; padding:0; margin:6px 0 0}
+  .check li{display:flex; gap:12px; align-items:flex-start; padding:8px 0; border-top:1px solid var(--rule-soft)}
+  .check li:last-child{border-bottom:1px solid var(--rule-soft)}
+  .check input{width:18px; height:18px; margin-top:5px; accent-color:var(--ink); flex:none}
+  .check label{cursor:pointer}
+  .check li.done label{color:var(--muted); text-decoration:line-through}
+
+  /* ---------- sources table ---------- */
+  .sources{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .sources th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .sources td{padding:8px 8px 8px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .sources td:first-child{white-space:nowrap}
+  .sources-wrap, .compare-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .st{display:inline-block; padding:2px 8px; border-radius:4px; font-size:12px; border:1px solid}
+  .st.ok{color:var(--ok); background:var(--ok-bg); border-color:#9CC9B0}
+  .st.warn{color:var(--warn); background:var(--warn-bg); border-color:#E1C77F}
+  .st.none{color:var(--ban); background:var(--none-bg); border-color:#CBD1D8}
+
+  /* ---------- rail ---------- */
+  .rail-block{border-top:1.5px solid var(--ink); padding:12px 0 18px}
+  .rail-block h4{margin:0 0 8px; font-size:13px; font-weight:600; color:var(--ink-soft)}
+  .toc{list-style:none; padding:0; margin:0}
+  .toc li{padding:4px 0}
+  .toc a{text-decoration:none; color:var(--ink)}
+  .toc a:hover{text-decoration:underline}
+  .toc .n{display:inline-block; width:22px; color:var(--muted)}
+  .report{width:100%; border:1.5px solid var(--ink); background:#fff; border-radius:6px; padding:10px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .report:hover{background:#F6F8FA}
+  .report-done{border:1.5px solid var(--ok); color:var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; font-size:14px}
+  .rail p{margin:8px 0 0; color:var(--ink-soft); line-height:1.45}
+  .rail a.dim{color:var(--muted)}
+
+  footer{font-family:var(--sans); font-size:13px; color:var(--muted); border-top:1px solid var(--rule); background:var(--paper)}
+  footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap:24px; flex-wrap:wrap}
+
+  [hidden]{display:none !important}
+
+  @media (max-width: 900px){
+    .doc{grid-template-columns:1fr; gap:24px; padding:20px 18px 40px}
+    aside{position:static}
+    .rail-block.toc-block{display:none}
+    .sources td:first-child{white-space:normal; word-break:break-all}
+    .verdict{grid-template-columns:1fr}
+    .parts li{grid-template-columns:110px 1fr 52px}
+    .rating-head{flex-direction:column; gap:8px}
+    .compare td:first-child{white-space:normal}
+    .sources{font-size:12.5px}
+    .st{white-space:nowrap}
+    .query{font-size:20px} .query select{font-size:19px}
+    .fact{grid-template-columns:1fr}
+    .summary .fact{grid-template-columns:1fr}
+    .stamp{max-width:none}
+    .top-inner, .status .in, .demo .in, footer .in{padding-left:18px; padding-right:18px}
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .mode button, .langs button, .report{transition:background .15s, color .15s}
+  }
+
+  /* ---------- follow panel ---------- */
+  .follow{width:100%; border:0; background:var(--ink); color:#fff; border-radius:6px; padding:11px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .follow:hover{background:#264B73}
+  .fp{border:1.5px solid var(--ink); border-radius:6px; padding:12px; margin-top:10px; background:#fff}
+  .fp-title{margin:0 0 6px !important; font-weight:600; color:var(--ink) !important}
+  .fp label{display:flex; gap:8px; align-items:flex-start; margin:0 0 6px; color:var(--ink); line-height:1.35; cursor:pointer}
+  .fp input[type=checkbox], .fp input[type=radio]{margin-top:2px; accent-color:var(--ink); flex:none}
+  .fp input[type=email]{width:100%; padding:7px 8px; border:1px solid var(--ink); border-radius:4px; margin:6px 0 8px; font-size:14px}
+  .fp .sub{color:var(--muted) !important; font-size:12.5px !important; margin-top:8px !important}
+  .notice{border:1.5px solid var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; margin-top:10px}
+  .notice p{margin:0 0 6px !important; color:var(--ink) !important}
+  .notice .sample{background:#fff; border:1px dashed #9CC9B0; border-radius:4px; padding:8px 10px; font-size:13px; color:var(--ink-soft) !important; margin:0 !important}
+  .brand a{color:var(--muted); text-decoration:none}
+  .brand a:hover{text-decoration:underline}
+
+  /* ---------- sanctions band ---------- */
+  .sanctions{background:var(--ban-bg); border-bottom:1px solid #E3A9A5}
+  .sanctions .in{max-width:1180px; margin:0 auto; padding:12px 28px; color:var(--ban); display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start}
+  .sanctions .tag{font-weight:600; border:1.5px solid var(--ban); border-radius:4px; padding:2px 8px; white-space:nowrap; margin-top:1px}
+  .sanctions p{margin:0; color:#7A1F1B}
+  .mode button[disabled]{color:var(--muted); cursor:not-allowed; background:#F6F8FA}
+  @media (max-width: 900px){ .sanctions .in{grid-template-columns:1fr; padding-left:18px; padding-right:18px} }
+
+  /* ---------- index page ---------- */
+  .hero{max-width:1180px; margin:0 auto; padding:56px 28px 36px}
+  .hero h1{font-weight:normal; font-size:38px; line-height:1.25; margin:0 0 12px; max-width:22ch}
+  .hero .sub{font-size:19px; color:var(--ink-soft); margin:0 0 34px; max-width:60ch}
+  .search{border:1.5px solid var(--ink); border-radius:8px; background:var(--paper); padding:22px 24px}
+  .search .query{font-size:26px}
+  .query input.product{font-family:var(--serif); font-size:22px; padding:2px 8px; border:0; border-bottom:2px solid var(--ink); background:var(--paper); border-radius:0; width:min(100%, 30ch)}
+  .query input.product::placeholder{color:var(--muted)}
+  .go{margin-top:16px; display:flex; gap:14px; align-items:center; flex-wrap:wrap; font-family:var(--sans); font-size:14px}
+  .go button{border:0; background:var(--ink); color:#fff; border-radius:6px; padding:11px 18px; font-size:15px; cursor:pointer}
+  .go button:hover{background:#264B73}
+  .go .alt{color:var(--ink-soft)}
+  .go .alt a{color:var(--ink)}
+  .miss{margin-top:12px; font-family:var(--sans); font-size:14px; color:var(--warn); background:var(--warn-bg); border:1px solid #E1C77F; border-radius:6px; padding:10px 12px}
+  .section{max-width:1180px; margin:0 auto; padding:8px 28px 40px}
+  .section h2{margin-top:28px}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:18px; margin-top:14px}
+  .card{border:1.5px solid var(--rule); border-radius:8px; background:var(--paper); padding:18px 20px; display:flex; flex-direction:column; gap:10px}
+  .card:hover{border-color:var(--ink)}
+  .card .route{font-size:22px; margin:0}
+  .card .prod{font-family:var(--sans); font-size:13.5px; color:var(--ink-soft); margin:0}
+  .card .lines{list-style:none; padding:0; margin:4px 0 0}
+  .card .lines li{padding:6px 10px; margin:0 0 6px; border-left:4px solid; border-radius:0 4px 4px 0; font-size:15px; line-height:1.4}
+  .card .lines .pro{border-color:var(--ok); background:var(--ok-bg)}
+  .card .lines .con{border-color:#D9B44A; background:var(--warn-bg)}
+  .card .lines .con-ban{border-color:var(--ban); background:var(--ban-bg)}
+  .card .open{margin-top:auto; font-family:var(--sans); font-size:14px}
+  .card .open a{color:var(--ink)}
+  .card.soon{border-style:dashed; color:var(--ink-soft)}
+  .card.soon input{width:100%; padding:8px; border:1px solid var(--rule); border-radius:4px; font-size:14px; margin-top:4px}
+  .how{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px 32px; margin-top:12px}
+  .how h3{margin:0 0 4px; font-style:normal; color:var(--ink)}
+  .how p{margin:0; color:var(--ink-soft); font-size:16px}
+  .who{font-family:var(--sans); font-size:14px; color:var(--ink-soft); margin-top:24px}
+  @media (max-width: 900px){
+    .hero{padding:32px 18px 24px} .hero h1{font-size:28px} .hero .sub{font-size:17px}
+    .search{padding:16px} .search .query{font-size:20px} .query input.product{font-size:19px}
+    .section{padding-left:18px; padding-right:18px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="top-row">
+      <div class="brand">[название сайта]</div>
+      <div class="langs" role="group" aria-label="Язык сайта">
+        <button type="button" aria-current="true">RU</button>
+        <button type="button" disabled title="В макете только русский">EN</button>
+        <button type="button" disabled title="В макете только русский">中文</button>
+        <button type="button" disabled title="В макете только русский">فارسی</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="band demo"><div class="in"><strong>Демо-макет.</strong> Открыты два коридора; остальные сочетания стран показывают, как сайт отвечает, когда страницы ещё нет.</div></div>
+
+<section class="hero">
+  <h1>Правила торговли между любыми странами — одной страницей</h1>
+  <p class="sub">Пошлины и налоги с обеих сторон границы, документы, санкции, господдержка и субсидии за маршрут — из официальных источников, с датой проверки у каждой строки. И оценка: выгодно ли, и куда выгоднее.</p>
+  <div class="search">
+    <div class="query" role="group" aria-label="Параметры коридора">
+      Везу
+      <input class="product" id="q-product" placeholder="товар или код HS" value="футболки хлопковые" aria-label="Товар">
+      из
+      <select class="country" id="q-from" aria-label="Откуда">
+        <option value="cn">Китая</option><option value="ru">России</option><option value="tr">Турции</option><option value="vn">Вьетнама</option>
+      </select>
+      в
+      <select class="country" id="q-to" aria-label="Куда">
+        <option value="ca">Канаду</option><option value="ir">Иран</option><option value="de">Германию</option><option value="us">США</option>
+      </select>
+      как
+      <span class="mode" role="group" aria-label="Режим поставки">
+        <button type="button" data-mode="b2b" aria-pressed="true">коммерческую партию</button>
+        <button type="button" data-mode="parcel" aria-pressed="false">посылки покупателям</button>
+      </span>
+    </div>
+    <div class="go">
+      <button type="button" id="go">Показать коридор</button>
+      <span class="alt">или сразу: <a href="#" id="go-compare">куда выгоднее везти этот товар</a></span>
+    </div>
+    <div class="miss" id="miss" hidden></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Открытые коридоры</h2>
+  <div class="cards">
+    <article class="card">
+      <p class="route">Китай → Канада</p>
+      <p class="prod">футболки хлопковые трикотажные, HS 6109.10; партия или посылки</p>
+      <span class="st warn" style="align-self:flex-start">14 из 25 — дороже соседей, но ввоз растёт</span>
+      <ul class="lines">
+        <li class="pro">Антидемпинговых мер нет; для посылок до 20 CAD пошлин и налогов нет</li>
+        <li class="con-ban">Запрет на товары принудительного труда — партии из хлопка могут задержать</li>
+        <li class="con">Пошлина 18% против 0% в Австралии</li>
+      </ul>
+      <p class="open"><a href="corridor-china-canada.html">Открыть страницу коридора</a></p>
+    </article>
+    <article class="card">
+      <p class="route">Россия → Иран</p>
+      <p class="prod">пшеница продовольственная, HS 1001.99; партия</p>
+      <span class="st warn" style="align-self:flex-start">17 из 25 — выгодно по правилам, риски расчётов</span>
+      <ul class="lines">
+        <li class="pro">Пошлина 5% по соглашению ЕАЭС–Иран вместо 20%; компенсация части перевозки</li>
+        <li class="con-ban">Санкционный коридор: контрагента и банк проверять по спискам</li>
+        <li class="con">Плавающая экспортная пошлина России меняется еженедельно</li>
+      </ul>
+      <p class="open"><a href="corridor-russia-iran.html">Открыть страницу коридора</a></p>
+    </article>
+    <article class="card soon">
+      <p class="route">Следующий коридор — ваш</p>
+      <p class="prod">новые коридоры открываются по запросам: страница собирается из источников, когда её спросили</p>
+      <input placeholder="товар, откуда, куда" aria-label="Запрос коридора">
+      <input placeholder="email — сообщим, когда откроем" aria-label="Email">
+      <p class="open"><a href="#" id="ask">Запросить коридор</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Как собираются страницы</h2>
+  <div class="how">
+    <div><h3>Только официальные источники</h3><p>Таможни, министерства торговли, экспортные агентства, налоговые и санкционные органы. Никаких блогов и сайтов перевозчиков.</p></div>
+    <div><h3>Нет цитаты — нет утверждения</h3><p>Каждый факт хранится вместе с фрагментом текста источника и ссылкой. Если источника нет, страница говорит об этом, а не заполняет пробел догадкой.</p></div>
+    <div><h3>Дата и статус у каждой строки</h3><p>Источники перечитываются регулярно. Старше 90 дней — «требует проверки». Подписка сообщает, когда что-то изменилось.</p></div>
+  </div>
+  <p class="who">Для производителей, продавцов маркетплейсов, импортёров и логистов. Не юридическая консультация: код товара и ставки подтверждайте у брокера.</p>
+</section>
+
+<footer><div class="in"><span>Условия использования</span><span>Как собираются страницы</span><span>Санкционная политика сайта</span><span>Источники по странам</span></div></footer>
+
+<script>
+(function(){
+  var mode = 'b2b';
+  document.querySelectorAll('.mode button').forEach(function(b){ b.addEventListener('click', function(){
+    mode = b.dataset.mode;
+    document.querySelectorAll('.mode button').forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.mode === mode ? 'true' : 'false'); });
+  }); });
+  var pages = { 'cn-ca': 'corridor-china-canada.html', 'ru-ir': 'corridor-russia-iran.html' };
+  function names(){ var f=document.getElementById('q-from'), t=document.getElementById('q-to'); return f.options[f.selectedIndex].text + ' → ' + t.options[t.selectedIndex].text; }
+  function route(anchor){
+    var key = document.getElementById('q-from').value + '-' + document.getElementById('q-to').value;
+    var miss = document.getElementById('miss');
+    if (pages[key]) { miss.hidden = true; window.location.href = pages[key] + (anchor || ''); return; }
+    miss.hidden = false;
+    miss.textContent = 'Коридор «' + names() + '» ещё не открыт. В продукте страница соберётся из источников по запросу за несколько минут; в макете — оставьте email в карточке ниже, и мы сообщим.';
+  }
+  document.getElementById('go').addEventListener('click', function(){ route(''); });
+  document.getElementById('go-compare').addEventListener('click', function(e){ e.preventDefault(); route('#sw'); });
+  document.getElementById('ask').addEventListener('click', function(e){ e.preventDefault(); e.target.textContent = 'Запрос принят (демо)'; });
+})();
+</script>
+</body>
+</html>

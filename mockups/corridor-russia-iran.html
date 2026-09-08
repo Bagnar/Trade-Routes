@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пшеница из России в Иран — страница коридора (макет)</title>
+<style>
+  :root{
+    --ink:#1C3A5B; --ink-soft:#4B5D70; --muted:#7A8794;
+    --paper:#FFFFFF; --page:#EEF1F4; --rule:#D5DBE1; --rule-soft:#E8ECF0;
+    --ok:#1F6F4A; --ok-bg:#EAF4EE;
+    --warn:#8F6208; --warn-bg:#FFF3D6;
+    --ban:#A62B26; --ban-bg:#FBEAE8;
+    --none:#5B6470; --none-bg:#F0F2F4;
+    --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+    --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--page)}
+  body{margin:0; color:var(--ink); font-family:var(--serif); font-size:17px; line-height:1.55}
+  a{color:var(--ink)}
+  button, select, input{font-family:var(--sans); font-size:14px; color:var(--ink)}
+  :focus-visible{outline:3px solid #7FB3E8; outline-offset:2px}
+
+  /* ---------- header: the query sentence ---------- */
+  .top{background:var(--paper); border-bottom:1px solid var(--rule)}
+  .top-inner{max-width:1180px; margin:0 auto; padding:14px 28px 20px}
+  .top-row{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px}
+  .brand{font-family:var(--sans); font-size:13px; color:var(--muted); letter-spacing:.01em}
+  .query{font-size:24px; line-height:1.6; min-width:0}
+  .query select{font-family:var(--serif); font-size:22px; padding:2px 30px 2px 8px; width:auto; border:0; border-bottom:2px solid var(--ink); background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%231C3A5B' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 8px center; border-radius:0; appearance:none; -webkit-appearance:none; max-width:100%; cursor:pointer}
+  .query select.product{max-width:100%; width:auto}
+  .query select.country{width:auto}
+  .mode{display:inline-flex; border:1.5px solid var(--ink); border-radius:6px; overflow:hidden; vertical-align:middle; margin-left:4px}
+  .mode button{border:0; background:var(--paper); padding:6px 12px; cursor:pointer; font-size:15px}
+  .mode button[aria-pressed="true"]{background:var(--ink); color:#fff}
+  .langs{display:flex; gap:6px}
+  .langs button{border:1px solid var(--rule); background:var(--paper); border-radius:6px; padding:5px 10px; cursor:pointer}
+  .langs button[aria-current="true"]{border-color:var(--ink); background:var(--ink); color:#fff}
+  .langs button[disabled]{color:var(--muted); cursor:not-allowed}
+
+  /* ---------- status + demo bands ---------- */
+  .band{font-family:var(--sans); font-size:14px; line-height:1.45}
+  .status{background:#F6F8FA; border-bottom:1px solid var(--rule)}
+  .status .in{max-width:1180px; margin:0 auto; padding:10px 28px; color:var(--ink-soft)}
+  .demo{background:var(--warn-bg); border-bottom:1px solid #E9D39B}
+  .demo .in{max-width:1180px; margin:0 auto; padding:9px 28px; color:var(--warn)}
+  .demo strong{font-weight:600}
+
+  /* ---------- layout ---------- */
+  .doc{max-width:1180px; margin:0 auto; padding:28px 28px 60px; display:grid; grid-template-columns:minmax(0,1fr) 260px; gap:48px}
+  main{max-width:860px; min-width:0}
+  aside{position:sticky; top:16px; align-self:start; font-family:var(--sans); font-size:14px}
+
+  h2{font-size:22px; font-weight:normal; margin:44px 0 6px; display:flex; align-items:baseline; gap:12px}
+  h2 .n{font-family:var(--sans); font-size:13px; border:1.5px solid var(--ink); border-radius:4px; padding:1px 7px; line-height:1.4; position:relative; top:-2px}
+  h2:first-of-type{margin-top:4px}
+  h3{font-size:17px; font-weight:normal; font-style:italic; margin:22px 0 4px; color:var(--ink-soft)}
+  .lead{margin:0 0 10px; color:var(--ink-soft)}
+
+  /* ---------- facts with stamps ---------- */
+  .fact{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 18px; align-items:start; padding:12px 0; border-top:1px solid var(--rule-soft)}
+  .fact:last-child{border-bottom:1px solid var(--rule-soft)}
+  .fact p{margin:0}
+  .fact.ban p::before{content:""; display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--ban); margin-right:9px; position:relative; top:-1px}
+
+  .summary .fact{grid-template-columns:130px minmax(0,1fr) auto}
+  .summary .k{font-family:var(--sans); font-size:13px; color:var(--muted); padding-top:4px}
+
+  .stamp{font-family:var(--sans); font-size:12px; line-height:1.25; display:inline-flex; flex-direction:column; gap:2px; padding:5px 8px 5px 24px; border:1.5px solid; border-radius:4px; position:relative; min-width:150px; max-width:200px; white-space:normal}
+  .stamp::before{content:""; position:absolute; left:8px; top:9px; width:9px; height:9px; border-radius:50%}
+  .stamp b{font-weight:600}
+  .stamp.ok{color:var(--ok); border-color:#9CC9B0; background:var(--ok-bg)}   .stamp.ok::before{background:var(--ok)}
+  .stamp.warn{color:var(--warn); border-color:#E1C77F; background:var(--warn-bg)} .stamp.warn::before{background:var(--warn)}
+  .stamp.none{color:var(--none); border-color:#CBD1D8; background:var(--none-bg)} .stamp.none::before{background:var(--ban)}
+  .stamp.ban{color:var(--ban); border-color:#E3A9A5; background:var(--ban-bg)}  .stamp.ban::before{background:var(--ban)}
+  .stamp.note{color:var(--ink-soft); border-color:#CBD1D8; background:#fff; border-style:dashed} .stamp.note::before{background:var(--ink-soft)}
+
+  .hint{font-family:var(--sans); font-size:14px; color:var(--ink-soft); margin:10px 0 0}
+  .inline-select{font-family:var(--sans); font-size:14px; padding:3px 6px; border:1px solid var(--rule); border-radius:4px; background:#fff}
+
+  /* ---------- rating ---------- */
+  .rating{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin:6px 0 20px; font-family:var(--sans)}
+  .rating-head{display:flex; gap:20px; align-items:flex-start; margin-bottom:12px}
+  .rating-total{font-family:var(--serif); line-height:1; white-space:nowrap; padding-top:4px}
+  .rating-total .big{font-size:44px}
+  .rating-total .of{font-size:14px; color:var(--muted); margin-left:6px}
+  .rating-verdict p{margin:8px 0 0; font-size:13.5px; color:var(--ink-soft); line-height:1.45}
+  .parts{list-style:none; padding:0; margin:0}
+  .parts li{display:grid; grid-template-columns:150px 1fr 58px; gap:3px 12px; align-items:center; padding:8px 0; border-top:1px solid var(--rule-soft); font-size:13.5px}
+  .parts .pname{font-weight:600}
+  .parts .bar{height:8px; background:var(--rule-soft); border-radius:4px; overflow:hidden}
+  .parts .bar i{display:block; height:100%; background:var(--ink)}
+  .parts .pscore{text-align:right; white-space:nowrap}
+  .parts .pnote{grid-column:1 / -1; color:var(--ink-soft); font-size:13px}
+
+  /* ---------- decision layer ---------- */
+  .verdict{display:grid; grid-template-columns:1fr 1fr; gap:0 28px; margin-top:6px}
+  .verdict h3{margin:10px 0 6px}
+  .vlist{list-style:none; padding:0; margin:0}
+  .vlist li{padding:9px 12px 9px 14px; margin:0 0 8px; border-left:4px solid; border-radius:0 4px 4px 0; font-size:16px; line-height:1.45}
+  .vlist .pro{border-color:var(--ok); background:var(--ok-bg)}
+  .vlist .pro-check{border-color:var(--ok); background:var(--warn-bg)}
+  .vlist .con{border-color:#D9B44A; background:var(--warn-bg)}
+  .vlist .con-ban{border-color:var(--ban); background:var(--ban-bg)}
+  .compare{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .compare th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .compare td{padding:9px 8px 9px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .compare tr.here td{background:#F6F8FA}
+  .compare td:first-child{font-family:var(--serif); font-size:15.5px; white-space:nowrap}
+  .st.mid{color:var(--ink-soft); background:#EEF2F6; border-color:#CBD1D8}
+  .st{white-space:nowrap}
+  .legend{display:flex; align-items:center; gap:8px; margin:6px 0 0 !important}
+  .sw{display:inline-block; width:14px; height:14px; border-radius:3px; border:1px solid; flex:none}
+  .sw.ban{background:var(--ban-bg); border-color:var(--ban)}
+  .sw.warn{background:var(--warn-bg); border-color:#D9B44A}
+  .sw.ok{background:var(--ok-bg); border-color:var(--ok)}
+
+  /* ---------- calculator ---------- */
+  .calc{border:1.5px solid var(--ink); border-radius:6px; padding:16px 18px; margin-top:12px; font-family:var(--sans); font-size:15px}
+  .calc label{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .calc input{width:130px; padding:6px 8px; border:1px solid var(--ink); border-radius:4px; font-size:16px; text-align:right}
+  .calc table{width:100%; border-collapse:collapse; margin-top:12px}
+  .calc td{padding:7px 0; border-top:1px solid var(--rule-soft)}
+  .calc td:last-child{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .calc tr.total td{border-top:2px solid var(--ink); font-weight:600; font-size:17px}
+  .calc .sub{color:var(--muted); font-size:13px}
+
+  /* ---------- checklist ---------- */
+  .check{list-style:none; padding:0; margin:6px 0 0}
+  .check li{display:flex; gap:12px; align-items:flex-start; padding:8px 0; border-top:1px solid var(--rule-soft)}
+  .check li:last-child{border-bottom:1px solid var(--rule-soft)}
+  .check input{width:18px; height:18px; margin-top:5px; accent-color:var(--ink); flex:none}
+  .check label{cursor:pointer}
+  .check li.done label{color:var(--muted); text-decoration:line-through}
+
+  /* ---------- sources table ---------- */
+  .sources{width:100%; border-collapse:collapse; font-family:var(--sans); font-size:13.5px; margin-top:10px}
+  .sources th{text-align:left; font-weight:600; color:var(--ink-soft); padding:6px 8px 8px 0; border-bottom:1.5px solid var(--ink)}
+  .sources td{padding:8px 8px 8px 0; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  .sources td:first-child{white-space:nowrap}
+  .sources-wrap, .compare-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .st{display:inline-block; padding:2px 8px; border-radius:4px; font-size:12px; border:1px solid}
+  .st.ok{color:var(--ok); background:var(--ok-bg); border-color:#9CC9B0}
+  .st.warn{color:var(--warn); background:var(--warn-bg); border-color:#E1C77F}
+  .st.none{color:var(--ban); background:var(--none-bg); border-color:#CBD1D8}
+
+  /* ---------- rail ---------- */
+  .rail-block{border-top:1.5px solid var(--ink); padding:12px 0 18px}
+  .rail-block h4{margin:0 0 8px; font-size:13px; font-weight:600; color:var(--ink-soft)}
+  .toc{list-style:none; padding:0; margin:0}
+  .toc li{padding:4px 0}
+  .toc a{text-decoration:none; color:var(--ink)}
+  .toc a:hover{text-decoration:underline}
+  .toc .n{display:inline-block; width:22px; color:var(--muted)}
+  .report{width:100%; border:1.5px solid var(--ink); background:#fff; border-radius:6px; padding:10px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .report:hover{background:#F6F8FA}
+  .report-done{border:1.5px solid var(--ok); color:var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; font-size:14px}
+  .rail p{margin:8px 0 0; color:var(--ink-soft); line-height:1.45}
+  .rail a.dim{color:var(--muted)}
+
+  footer{font-family:var(--sans); font-size:13px; color:var(--muted); border-top:1px solid var(--rule); background:var(--paper)}
+  footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap:24px; flex-wrap:wrap}
+
+  [hidden]{display:none !important}
+
+  @media (max-width: 900px){
+    .doc{grid-template-columns:1fr; gap:24px; padding:20px 18px 40px}
+    aside{position:static}
+    .rail-block.toc-block{display:none}
+    .sources td:first-child{white-space:normal; word-break:break-all}
+    .verdict{grid-template-columns:1fr}
+    .parts li{grid-template-columns:110px 1fr 52px}
+    .rating-head{flex-direction:column; gap:8px}
+    .compare td:first-child{white-space:normal}
+    .sources{font-size:12.5px}
+    .st{white-space:nowrap}
+    .query{font-size:20px} .query select{font-size:19px}
+    .fact{grid-template-columns:1fr}
+    .summary .fact{grid-template-columns:1fr}
+    .stamp{max-width:none}
+    .top-inner, .status .in, .demo .in, footer .in{padding-left:18px; padding-right:18px}
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .mode button, .langs button, .report{transition:background .15s, color .15s}
+  }
+
+  /* ---------- follow panel ---------- */
+  .follow{width:100%; border:0; background:var(--ink); color:#fff; border-radius:6px; padding:11px 12px; cursor:pointer; font-size:14px; text-align:left}
+  .follow:hover{background:#264B73}
+  .fp{border:1.5px solid var(--ink); border-radius:6px; padding:12px; margin-top:10px; background:#fff}
+  .fp-title{margin:0 0 6px !important; font-weight:600; color:var(--ink) !important}
+  .fp label{display:flex; gap:8px; align-items:flex-start; margin:0 0 6px; color:var(--ink); line-height:1.35; cursor:pointer}
+  .fp input[type=checkbox], .fp input[type=radio]{margin-top:2px; accent-color:var(--ink); flex:none}
+  .fp input[type=email]{width:100%; padding:7px 8px; border:1px solid var(--ink); border-radius:4px; margin:6px 0 8px; font-size:14px}
+  .fp .sub{color:var(--muted) !important; font-size:12.5px !important; margin-top:8px !important}
+  .notice{border:1.5px solid var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; margin-top:10px}
+  .notice p{margin:0 0 6px !important; color:var(--ink) !important}
+  .notice .sample{background:#fff; border:1px dashed #9CC9B0; border-radius:4px; padding:8px 10px; font-size:13px; color:var(--ink-soft) !important; margin:0 !important}
+  .brand a{color:var(--muted); text-decoration:none}
+  .brand a:hover{text-decoration:underline}
+
+  /* ---------- sanctions band ---------- */
+  .sanctions{background:var(--ban-bg); border-bottom:1px solid #E3A9A5}
+  .sanctions .in{max-width:1180px; margin:0 auto; padding:12px 28px; color:var(--ban); display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start}
+  .sanctions .tag{font-weight:600; border:1.5px solid var(--ban); border-radius:4px; padding:2px 8px; white-space:nowrap; margin-top:1px}
+  .sanctions p{margin:0; color:#7A1F1B}
+  .mode button[disabled]{color:var(--muted); cursor:not-allowed; background:#F6F8FA}
+  @media (max-width: 900px){ .sanctions .in{grid-template-columns:1fr; padding-left:18px; padding-right:18px} }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="top-row">
+      <div class="brand"><a href="index.html">[название сайта]</a> — все коридоры</div>
+      <div class="langs" role="group" aria-label="Язык страницы">
+        <button type="button" aria-current="true">RU</button>
+        <button type="button" disabled title="В макете только русский">فارسی</button>
+        <button type="button" disabled title="В макете только русский">EN</button>
+      </div>
+    </div>
+    <div class="query" role="group" aria-label="Параметры коридора">
+      Везу
+      <select class="product" aria-label="Товар"><option>пшеницу продовольственную, HS 1001.99</option><option disabled>другие группы: в макете нет</option></select>
+      из
+      <select class="country" aria-label="Откуда"><option>России</option><option disabled>другие: нет</option></select>
+      в
+      <select class="country" aria-label="Куда"><option>Иран</option><option disabled>другие: нет</option></select>
+      как
+      <span class="mode" role="group" aria-label="Режим поставки">
+        <button type="button" data-mode="b2b" aria-pressed="true">коммерческую партию</button>
+        <button type="button" data-mode="parcel" aria-pressed="false" disabled title="Для этой товарной группы не применимо">посылки покупателям</button>
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="band status"><div class="in">Страница собрана автоматически из 12 официальных источников; два источника недоступны или старше 90 дней. Последняя проверка — 6 сентября 2026. Это не юридическая консультация: код товара, ставки и санкционный статус контрагента подтвердите у брокера и юриста.</div></div>
+<div class="band demo"><div class="in"><strong>Демо-макет формата.</strong> Цифры и формулировки иллюстративные и не проверены — в продукте каждую строку заполнит конвейер из источников.</div></div>
+<div class="band sanctions"><div class="in">
+  <span class="tag">Санкционный коридор</span>
+  <p>Россия и Иран — под санкциями Канады, США, ЕС и Великобритании. Торговля пшеницей между ними не запрещена ни одной из сторон: продовольствие выведено из-под большинства ограничений. Но расчёты через банки этих стран невозможны, перевозчики и страховщики из третьих стран могут отказать, а контрагента нужно проверить по санкционным спискам. Страница показывает ограничения как есть и не подсказывает, как их обойти.</p>
+</div></div>
+
+<div class="doc">
+<main>
+
+  <h2 id="s0">Коротко</h2>
+  <div class="summary">
+    <div class="fact">
+      <span class="k">Пошлина при ввозе</span>
+      <p>5% по соглашению ЕАЭС–Иран при сертификате происхождения; без него — базовая ставка 20%</p>
+      <span class="stamp ok"><b>eurasiancommission.org</b>тарифное приложение, проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Своему государству</span>
+      <p>Плавающая экспортная пошлина России на пшеницу — пересчитывается каждую неделю; НДС при экспорте 0% после подтверждения вывоза</p>
+      <span class="stamp ok"><b>mcx.gov.ru</b>ставка недели, проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Квота</span>
+      <p>Квота на вывоз зерна вводится правительством на часть года — сверьте текущий период</p>
+      <span class="stamp ok"><b>government.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Соглашение</span>
+      <p>Соглашение о свободной торговле ЕАЭС–Иран, полноформатное, действует с 15 мая 2025</p>
+      <span class="stamp ok"><b>eurasiancommission.org</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact ban">
+      <span class="k">Санкции</span>
+      <p>Обе страны под санкциями; товар не запрещён, ограничены расчёты, страхование и логистика через третьи страны</p>
+      <span class="stamp ban"><b>ofac.treasury.gov, sanctionsmap.eu, international.gc.ca, gov.uk</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <span class="k">Ввоз в Иран</span>
+      <p>Регулируется государством: основные закупки идут через государственную торговую компанию, частный ввоз — по разрешению</p>
+      <span class="stamp warn"><b>mimt.ir</b>проверено 22 мая 2026, старше 90 дней — требует проверки</span>
+    </div>
+  </div>
+
+  <h2 id="sv">Выгодно и что мешает</h2>
+  <p class="lead">Оценка коридора складывается из пяти частей, каждую можно проверить. Запрет на сам товар обнулил бы её — здесь его нет, поэтому санкции считаются препятствием, а не запретом.</p>
+  <div class="rating">
+    <div class="rating-head">
+      <div class="rating-total"><span class="big">17</span><span class="of">из 25</span></div>
+      <div class="rating-verdict"><span class="st warn">выгодно по правилам, но расчёты и логистика — риск</span>
+        <p>Пошлины, препятствия и господдержка считаются по правилам из источников. Спрос и логистика — ориентир по статистике и индексам, они никогда не получают статус «проверено».</p></div>
+    </div>
+    <ul class="parts">
+      <li><span class="pname">Пошлины и налоги</span><span class="bar"><i style="width:80%"></i></span><span class="pscore">4 из 5</span><span class="pnote">преференция ЕАЭС–Иран 5% вместо 20%; минус — собственная экспортная пошлина</span></li>
+      <li><span class="pname">Препятствия</span><span class="bar"><i style="width:20%"></i></span><span class="pscore">1 из 5</span><span class="pnote">санкционные ограничения на расчёты и страхование, разрешение на ввоз, фитосанитарный контроль</span></li>
+      <li><span class="pname">Господдержка</span><span class="bar"><i style="width:80%"></i></span><span class="pscore">4 из 5</span><span class="pnote">компенсация части транспортировки продукции АПК, НДС 0%, страхование ЭКСАР</span></li>
+      <li><span class="pname">Спрос</span><span class="bar"><i style="width:100%"></i></span><span class="pscore">5 из 5</span><span class="pnote">Иран — один из крупнейших импортёров пшеницы, ввоз около 3 млн тонн в год (демо, по торговой статистике)</span></li>
+      <li><span class="pname">Логистика</span><span class="bar"><i style="width:60%"></i></span><span class="pscore">3 из 5</span><span class="pnote">Каспий 3–7 дней морской части, ограниченная пропускная способность портов; около 45 USD за тонну (демо)</span></li>
+    </ul>
+  </div>
+  <div class="verdict">
+    <div>
+      <h3>Выгодно</h3>
+      <ul class="vlist">
+        <li class="pro">Ставка по соглашению ЕАЭС–Иран в четыре раза ниже базовой — при сертификате происхождения.</li>
+        <li class="pro">НДС 0% при экспорте — после подтверждения вывоза документами.</li>
+        <li class="pro">Компенсация части затрат на транспортировку продукции АПК — заявка через РЭЦ.</li>
+        <li class="pro">Страхование ЭКСАР покрывает риск неплатежа там, где западные страховщики недоступны.</li>
+        <li class="pro-check">Субсидия на перевозку по этому маршруту: программа применима, условия отбора на 2026 год не подтверждены.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Мешает</h3>
+      <ul class="vlist">
+        <li class="con-ban">Санкции: контрагента и его банк нужно проверить по спискам; попадание в список делает сделку запрещённой для сторон под соответствующей юрисдикцией.</li>
+        <li class="con">Плавающая экспортная пошлина России меняется каждую неделю и съедает часть маржи.</li>
+        <li class="con">Ввоз в Иран — по разрешению; основной покупатель — государство, частные сделки редки.</li>
+        <li class="con">Расчёты через банки Канады, США, ЕС и Британии невозможны; страховщики и перевозчики третьих стран могут отказать — условия уточняйте в своём банке.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="sw">Куда ещё везти пшеницу из России</h2>
+  <p class="lead">Те же пять частей для других рынков, отсортированы по оценке. Спрос и логистика в ней — ориентир, а не проверенный факт.</p>
+  <div class="compare-wrap"><table class="compare">
+    <thead><tr><th>Куда</th><th>Пошлина</th><th>Соглашение</th><th>Санкции</th><th>Поддержка</th><th>Оценка</th></tr></thead>
+    <tbody>
+      <tr><td>Египет</td><td>0%</td><td>нет</td><td>нет</td><td>3 программы</td><td><span class="st ok">21 из 25, выгодно</span></td></tr>
+      <tr><td>Турция</td><td>по режиму переработки, квоты</td><td>нет</td><td>нет</td><td>3 программы</td><td><span class="st mid">18 из 25, средне</span></td></tr>
+      <tr class="here"><td>Иран — эта страница</td><td>5% по соглашению</td><td>ЕАЭС–Иран</td><td>обе стороны под санкциями, товар не запрещён</td><td>3 программы</td><td><span class="st warn">17 из 25, риски расчётов</span></td></tr>
+      <tr><td>Бангладеш</td><td>0%</td><td>нет</td><td>нет</td><td>3 программы</td><td><span class="st mid">17 из 25, средне</span></td></tr>
+      <tr><td>Саудовская Аравия</td><td>0%</td><td>нет</td><td>нет</td><td>3 программы</td><td><span class="st mid">16 из 25, средне</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s1"><span class="n">1</span>Режим торговли между Россией и Ираном</h2>
+  <p class="lead">Здесь то, что зависит не от товара, а от пары стран — и от третьих стран, чьи санкции действуют на обе.</p>
+  <div class="facts">
+    <div class="fact">
+      <p>Полноформатное соглашение о свободной торговле ЕАЭС–Иран действует с 15 мая 2025 и заменило временное соглашение 2019 года. Преференции покрывают около 90% товарной номенклатуры; средняя пошлина Ирана на товары из ЕАЭС снижается с 20% до 4,5%.</p>
+      <span class="stamp ok"><b>eurasiancommission.org</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Для преференции нужен сертификат происхождения по форме соглашения — выдаёт Торгово-промышленная палата России. Без него применяется базовая ставка.</p>
+      <span class="stamp ok"><b>tpprf.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Канада: санкции против России и Ирана действуют по закону о специальных экономических мерах — списки лиц и отраслевые запреты. Пшеница в запреты не входит; сделки с лицами из списков запрещены.</p>
+      <span class="stamp ok"><b>international.gc.ca</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>США: сельскохозяйственная продукция и продовольствие для Ирана подпадают под общие лицензии, но расчёты через американские банки и в долларах фактически недоступны.</p>
+      <span class="stamp ok"><b>ofac.treasury.gov</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>ЕС и Великобритания: продовольствие исключено из ограничений, но проверка контрагентов по спискам обязательна для компаний под их юрисдикцией — включая перевозчиков и страховщиков.</p>
+      <span class="stamp ok"><b>sanctionsmap.eu, gov.uk</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact ban">
+      <p>Если контрагент, его банк или судно включены в санкционный список, сделка запрещена для всех сторон, подпадающих под соответствующую юрисдикцию. Проверьте списки до подписания контракта и повторно перед каждой отгрузкой.</p>
+      <span class="stamp ban"><b>ofac.treasury.gov, sanctionsmap.eu, international.gc.ca, gov.uk</b>запрет при попадании в список</span>
+    </div>
+    <div class="fact">
+      <p>Каспийский маршрут развивается в рамках международного транспортного коридора Север — Юг; пропускная способность иранских портов и флота река-море ограничена, в сезон возможны очереди.</p>
+      <span class="stamp note"><b>оценка, не источник</b>по данным перевозчиков</span>
+    </div>
+  </div>
+
+  <h2 id="s2"><span class="n">2</span>Вывоз из России</h2>
+  <p class="lead">Здесь — что заплатить своему государству и что получить от него.</p>
+  <div class="facts">
+    <div class="fact">
+      <p>Плавающая экспортная пошлина на пшеницу считается по формуле от индикативной цены и пересчитывается еженедельно; ставку на неделю публикует Минсельхоз. На текущую неделю: 2 610 рублей за тонну (демо).</p>
+      <span class="stamp ok"><b>mcx.gov.ru</b>ставка недели, проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Квота на вывоз зерна вводится постановлением правительства на часть года и распределяется между экспортёрами; вне квоты вывоз ограничен. Сверьте, действует ли квота в период отгрузки.</p>
+      <span class="stamp ok"><b>government.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Фитосанитарный сертификат Россельхознадзора обязателен; Иран предъявляет свои карантинные требования к зерну — сертификат оформляется под них.</p>
+      <span class="stamp ok"><b>fsvps.gov.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Экспортная декларация подаётся в ФТС; НДС 0% подтверждается контрактом, декларацией и транспортными документами в установленный срок.</p>
+      <span class="stamp ok"><b>customs.gov.ru, nalog.gov.ru</b>проверено 6 сен 2026</span>
+    </div>
+  </div>
+  <h3>Что даёт государство экспортёру</h3>
+  <div class="facts">
+    <div class="fact">
+      <p>Компенсация части затрат на транспортировку продукции АПК — заявка подаётся через РЭЦ, решение принимает Минсельхоз.</p>
+      <span class="stamp ok"><b>exportcenter.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Страхование экспортных кредитов и рисков неплатежа — ЭКСАР; для санкционных коридоров часто единственный доступный страховщик.</p>
+      <span class="stamp ok"><b>exiar.ru</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Субсидия на перевозку по этому маршруту: программа применима к продукции АПК; условия и лимиты отбора на 2026 год ещё не опубликованы в источнике.</p>
+      <span class="stamp warn"><b>exportcenter.ru</b>условия отбора не подтверждены</span>
+    </div>
+  </div>
+
+  <h2 id="s3"><span class="n">3</span>Ввоз в Иран</h2>
+  <div class="facts">
+    <div class="fact">
+      <p>Код товара: 1001.99 — пшеница прочая. Десятизначный код и ставку по иранскому тарифу подтверждают таможенный представитель в Иране или запрос в таможенную администрацию.</p>
+      <span class="stamp note"><b>подтвердите у брокера</b>страница работает на уровне группы HS-6</span>
+    </div>
+    <div class="fact">
+      <p>Пошлина: 5% при сертификате происхождения ЕАЭС–Иран, 20% без него (демо-ставки из тарифного приложения к соглашению).</p>
+      <span class="stamp ok"><b>eurasiancommission.org</b>проверено 6 сен 2026</span>
+    </div>
+    <div class="fact">
+      <p>Ввоз пшеницы регулируется государством: основные закупки идут через государственную торговую компанию; частный импорт требует разрешения Министерства промышленности, рудников и торговли и регистрации заказа в единой торговой системе.</p>
+      <span class="stamp warn"><b>mimt.ir</b>проверено 22 мая 2026, старше 90 дней — требует проверки</span>
+    </div>
+    <div class="fact">
+      <p>Распределение валюты на импорт продовольствия по льготному курсу регулирует Центральный банк Ирана; от этого зависит, как и когда импортёр сможет оплатить партию.</p>
+      <span class="stamp none"><b>cbi.ir</b>источник недоступен с 14 авг 2026</span>
+    </div>
+    <div class="fact">
+      <p>Продовольственная пшеница проверяется на соответствие национальному стандарту Ирана при выпуске; расхождение по качеству — самая частая причина задержки груза в порту.</p>
+      <span class="stamp warn"><b>isiri.gov.ir</b>проверено 30 мая 2026, старше 90 дней — требует проверки</span>
+    </div>
+    <div class="fact">
+      <p>Таможенная декларация ввоза подаётся в таможенную администрацию Ирана представителем импортёра.</p>
+      <span class="stamp ok"><b>irica.ir</b>проверено 6 сен 2026</span>
+    </div>
+  </div>
+
+  <h2 id="s4"><span class="n">4</span>Сколько платить государствам</h2>
+  <p class="lead">Пример расчёта на обе стороны границы: пошлину при вывозе платит экспортёр в России, пошлину при ввозе — импортёр в Иране. Меняйте параметры — расчёт обновится.</p>
+  <div class="calc">
+    <label>Стоимость партии по контракту, USD <input id="value" type="number" min="0" step="1000" value="250000"></label>
+    <label style="margin-top:10px">Тонн в партии <input id="tons" type="number" min="1" step="100" value="1000"></label>
+    <label style="margin-top:10px"><input type="checkbox" id="co" checked style="width:18px;height:18px;accent-color:var(--ink)"> есть сертификат происхождения ЕАЭС–Иран</label>
+    <table>
+      <tr><td>Экспортная пошлина России, ставка недели (демо: 2 610 руб/т, курс 90 руб за USD)</td><td id="exduty">29 000</td></tr>
+      <tr><td id="imlabel">Пошлина Ирана 5% по соглашению</td><td id="imduty">12 500</td></tr>
+      <tr class="total"><td>Итого государствам</td><td id="total">41 500 USD</td></tr>
+    </table>
+    <p class="sub" style="margin:10px 0 0">НДС при экспорте — 0% после подтверждения. Не включено: перевозка, страхование, портовые сборы, фитосанитарный контроль, услуги брокеров с обеих сторон.</p>
+  </div>
+
+  <h2 id="s5"><span class="n">5</span>Как везти</h2>
+  <div class="facts">
+    <div class="fact">
+      <p>Каспий: из Астрахани или Махачкалы в Энзели или Амирабад, суда река-море, 3–7 дней морской части. Основной способ для зерна; в сезон — очереди в портах.</p>
+      <span class="stamp note"><b>оценка, не источник</b>по данным перевозчиков</span>
+    </div>
+    <div class="fact">
+      <p>Железная дорога и автотранспорт через Азербайджан: сухопутная ветка коридора Север — Юг, стыковка колеи на границе; для зерна используется реже.</p>
+      <span class="stamp note"><b>оценка, не источник</b>по данным перевозчиков</span>
+    </div>
+    <div class="fact">
+      <p>Льгота за маршрут: компенсация части затрат на транспортировку продукции АПК распространяется и на этот коридор — это зелёная строка выше, пока не подтверждены условия отбора на 2026 год.</p>
+      <span class="stamp warn"><b>exportcenter.ru</b>условия отбора не подтверждены</span>
+    </div>
+  </div>
+
+  <h2 id="s6"><span class="n">6</span>Документы</h2>
+  <p class="lead">Отмечайте по мере готовности — список сохраняется только в этом окне.</p>
+  <h3>На вывоз из России</h3>
+  <ul class="check">
+    <li><input type="checkbox" id="d1"><label for="d1">Контракт с покупателем и подтверждение проверки контрагента по санкционным спискам — для своих файлов</label></li>
+    <li><input type="checkbox" id="d2"><label for="d2">Инвойс и спецификация качества зерна</label></li>
+    <li><input type="checkbox" id="d3"><label for="d3">Экспортная декларация ФТС</label></li>
+    <li><input type="checkbox" id="d4"><label for="d4">Фитосанитарный сертификат Россельхознадзора под требования Ирана</label></li>
+    <li><input type="checkbox" id="d5"><label for="d5">Сертификат происхождения по форме соглашения ЕАЭС–Иран — ТПП РФ</label></li>
+    <li><input type="checkbox" id="d6"><label for="d6">Коносамент или накладная; документы для подтверждения НДС 0%</label></li>
+  </ul>
+  <h3>На ввоз в Иран</h3>
+  <ul class="check">
+    <li><input type="checkbox" id="i1"><label for="i1">Разрешение на ввоз и регистрация заказа в единой торговой системе — оформляет импортёр</label></li>
+    <li><input type="checkbox" id="i2"><label for="i2">Выделение валюты на импорт — через банк импортёра</label></li>
+    <li><input type="checkbox" id="i3"><label for="i3">Таможенная декларация ввоза</label></li>
+    <li><input type="checkbox" id="i4"><label for="i4">Протокол проверки качества по национальному стандарту</label></li>
+  </ul>
+
+  <h2 id="s7"><span class="n">7</span>Источники и проверка</h2>
+  <p class="lead">Каждая строка выше опирается на один из этих источников. Иранские сайты перечитываются нестабильно — там, где источник недоступен, страница говорит об этом прямо, а не заполняет пробел догадкой.</p>
+  <div class="sources-wrap"><table class="sources">
+    <thead><tr><th>Источник</th><th>Что подтверждает</th><th>Проверено</th><th>Статус</th></tr></thead>
+    <tbody>
+      <tr><td>eurasiancommission.org</td><td>соглашение ЕАЭС–Иран, тарифное приложение</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>tpprf.ru</td><td>сертификат происхождения</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>mcx.gov.ru</td><td>ставка экспортной пошлины на неделю</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>government.ru</td><td>квота на вывоз зерна</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>fsvps.gov.ru</td><td>фитосанитарный сертификат</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>customs.gov.ru, nalog.gov.ru</td><td>экспортная декларация, НДС 0%</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>exportcenter.ru</td><td>компенсация транспортировки АПК</td><td>6 сен 2026</td><td><span class="st warn">условия 2026 не подтверждены</span></td></tr>
+      <tr><td>exiar.ru</td><td>страхование</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>international.gc.ca</td><td>санкции Канады</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>ofac.treasury.gov</td><td>санкции США, общие лицензии</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>sanctionsmap.eu, gov.uk</td><td>санкции ЕС и Великобритании</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>irica.ir</td><td>декларация ввоза</td><td>6 сен 2026</td><td><span class="st ok">актуально</span></td></tr>
+      <tr><td>mimt.ir</td><td>разрешение на ввоз</td><td>22 мая 2026</td><td><span class="st warn">требует проверки</span></td></tr>
+      <tr><td>isiri.gov.ir</td><td>национальный стандарт</td><td>30 мая 2026</td><td><span class="st warn">требует проверки</span></td></tr>
+      <tr><td>cbi.ir</td><td>распределение валюты</td><td>—</td><td><span class="st none">недоступен</span></td></tr>
+    </tbody>
+  </table></div>
+
+</main>
+
+<aside class="rail">
+  <div class="rail-block toc-block">
+    <h4>На этой странице</h4>
+    <ul class="toc">
+      <li><a href="#s0"><span class="n"></span>Коротко</a></li>
+      <li><a href="#sv"><span class="n"></span>Выгодно и что мешает</a></li>
+      <li><a href="#sw"><span class="n"></span>Куда ещё везти</a></li>
+      <li><a href="#s1"><span class="n">1</span>Режим торговли</a></li>
+      <li><a href="#s2"><span class="n">2</span>Вывоз из России</a></li>
+      <li><a href="#s3"><span class="n">3</span>Ввоз в Иран</a></li>
+      <li><a href="#s4"><span class="n">4</span>Сколько платить</a></li>
+      <li><a href="#s5"><span class="n">5</span>Как везти</a></li>
+      <li><a href="#s6"><span class="n">6</span>Документы</a></li>
+      <li><a href="#s7"><span class="n">7</span>Источники</a></li>
+    </ul>
+  </div>
+  <div class="rail-block">
+    <h4>Цвета на странице</h4>
+    <p class="legend"><span class="sw ban"></span>запрет или санкции</p>
+    <p class="legend"><span class="sw warn"></span>препятствие или требует проверки</p>
+    <p class="legend"><span class="sw ok"></span>выгода</p>
+  </div>
+  <div class="rail-block">
+    <div id="follow-wrap">
+      <button type="button" class="follow" id="follow">Следить за коридором</button>
+      <div class="fp" id="follow-panel" hidden>
+        <p class="fp-title">О чём сообщать</p>
+        <label><input type="checkbox" checked> пошлины, налоги и квоты</label>
+        <label><input type="checkbox" checked> санкции и запреты</label>
+        <label><input type="checkbox" checked> новые программы и субсидии</label>
+        <label><input type="checkbox"> дедлайны отборов и заявок</label>
+        <label><input type="checkbox"> изменение оценки коридора</label>
+        <p class="fp-title" style="margin-top:10px">Как часто</p>
+        <label><input type="radio" name="freq" checked> сразу, как обнаружено</label>
+        <label><input type="radio" name="freq"> раз в неделю, сводкой</label>
+        <input type="email" placeholder="ваш email" aria-label="Email для уведомлений">
+        <button type="button" class="report" id="follow-go">Подписаться</button>
+        <p class="sub">Уведомление приходит, когда конвейер перечитал официальный источник и нашёл изменение — со ссылкой на источник и датой. Без изменений писем нет.</p>
+      </div>
+    </div>
+    <p>Подписка — на этот коридор и товар. Другие коридоры добавляются отдельно.</p>
+  </div>
+
+  <div class="rail-block">
+    <div id="report-wrap"><button type="button" class="report" id="report">Сообщить об ошибке</button></div>
+    <p>Запускает автоматическую перепроверку источников по этой странице. Ответ вернётся сюда же.</p>
+  </div>
+  <div class="rail-block">
+    <p style="margin-top:0">Собрано автоматически из официальных источников. Не консультация. Код товара, ставки и санкционный статус контрагента подтвердите у брокера и юриста.</p>
+    <p><a class="dim" href="#" title="В макете недоступно">Обратное направление: из Ирана в Россию</a></p>
+  </div>
+</aside>
+</div>
+
+<footer><div class="in"><span>Условия использования</span><span>Как собираются страницы</span><span>Санкционная политика сайта</span><span>Источники по странам</span></div></footer>
+
+<script>
+(function(){
+  var value = document.getElementById('value');
+  var tons = document.getElementById('tons');
+  var co = document.getElementById('co');
+  function fmt(n){ return Math.round(n).toLocaleString('ru-RU'); }
+  function recalc(){
+    var v = parseFloat(value.value) || 0;
+    var t = parseFloat(tons.value) || 0;
+    var ex = t * 2610 / 90;                 // demo: weekly rate 2 610 RUB/t, 90 RUB per USD
+    var rate = co.checked ? 0.05 : 0.20;
+    var im = v * rate;
+    document.getElementById('exduty').textContent = fmt(ex);
+    document.getElementById('imduty').textContent = fmt(im);
+    document.getElementById('imlabel').textContent = co.checked ? 'Пошлина Ирана 5% по соглашению' : 'Пошлина Ирана 20% — базовая ставка без сертификата';
+    document.getElementById('total').textContent = fmt(ex + im) + ' USD';
+  }
+  value.addEventListener('input', recalc); tons.addEventListener('input', recalc); co.addEventListener('change', recalc);
+  document.querySelectorAll('.check input').forEach(function(c){ c.addEventListener('change', function(){ c.parentElement.classList.toggle('done', c.checked); }); });
+  document.getElementById('report').addEventListener('click', function(){
+    document.getElementById('report-wrap').innerHTML = '<div class="report-done">Принято. Источники по странице будут перечитаны, изменения появятся здесь.</div>';
+  });
+  recalc();
+})();
+</script>
+<script>
+(function(){
+  var btn=document.getElementById('follow'); if(!btn) return;
+  var panel=document.getElementById('follow-panel');
+  btn.addEventListener('click', function(){ panel.hidden=!panel.hidden; btn.textContent = panel.hidden ? 'Следить за коридором' : 'Свернуть'; });
+  document.getElementById('follow-go').addEventListener('click', function(){
+    document.getElementById('follow-wrap').innerHTML = '<div class="notice"><p><b>Подписка оформлена</b> — уведомления по этому коридору будут приходить на указанный адрес (демо).</p><p class="sample">Пример письма: «8 сен 2026: mcx.gov.ru опубликовал ставку экспортной пошлины на новую неделю — было 2 610 руб/т, стало 2 540 руб/т. Пример расчёта в разделе 4 пересчитан.»</p></div>';
+  });
+})();
+</script>
+</body>
+</html>

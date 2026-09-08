@@ -1,0 +1,306 @@
+# Реестр официальных источников — белый список конвейера.
+# Это главный актив проекта и единственная постоянная ручная работа.
+# Правила:
+#   - только официальные органы и международные организации; блоги, форумы, брокеры, перевозчики — никогда;
+#   - status: to_verify — запись ещё не открывали руками; verified — домен и роль подтверждены; unstable — доступен нестабильно;
+#   - urls: конкретные страницы по темам, заполняются на этапе 0 (пока пусто — конвейер их не использует);
+#   - priority: 1 — первичный источник по теме, 2 — дополняющий, 3 — справочный.
+# Все записи ниже — предложения, составленные до проверки. Домены и роли подтвердить на этапе 0.
+
+countries:
+
+  CA:
+    name: { ru: Канада, en: Canada }
+    languages: [en, fr]
+    sources:
+      - id: ca-cbsa
+        agency: Canada Border Services Agency (CBSA)
+        domain: cbsa-asfc.gc.ca
+        topics: [customs_tariff, import_procedures, carm, parcels, trade_remedies, forced_labour]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-tariff-finder
+        agency: Canada Tariff Finder (Trade Commissioner Service)
+        domain: tariffinder.ca
+        topics: [tariff_rates]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-cra
+        agency: Canada Revenue Agency
+        domain: canada.ca
+        path_prefix: /en/revenue-agency
+        topics: [gst_hst_import, business_number]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-gac-sanctions
+        agency: Global Affairs Canada — sanctions and import/export controls
+        domain: international.gc.ca
+        topics: [sanctions, export_controls, import_controls]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-cfia
+        agency: Canadian Food Inspection Agency
+        domain: inspection.canada.ca
+        topics: [food_import_requirements, sps]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-health
+        agency: Health Canada — consumer product safety
+        domain: canada.ca
+        path_prefix: /en/health-canada
+        topics: [product_safety, flammability, labelling]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-competition
+        agency: Competition Bureau — labelling (textile, consumer packaging)
+        domain: competition-bureau.canada.ca
+        topics: [labelling]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ca-statcan
+        agency: Statistics Canada — international merchandise trade
+        domain: statcan.gc.ca
+        topics: [trade_stats]
+        priority: 1
+        status: to_verify
+        urls: []
+
+  CN:
+    name: { ru: Китай, en: China, zh: 中国 }
+    languages: [zh, en]
+    sources:
+      - id: cn-mofcom
+        agency: Ministry of Commerce (MOFCOM)
+        domain: mofcom.gov.cn
+        topics: [export_licences, export_controls, trade_policy]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: cn-gacc
+        agency: General Administration of Customs (GACC)
+        domain: customs.gov.cn
+        topics: [export_declaration, customs_procedures, single_window]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: cn-sta
+        agency: State Taxation Administration
+        domain: chinatax.gov.cn
+        topics: [export_vat_rebate]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: cn-sinosure
+        agency: China Export & Credit Insurance Corporation (Sinosure)
+        domain: sinosure.com.cn
+        topics: [export_credit_insurance, support_programs]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: cn-ccpit
+        agency: China Council for the Promotion of International Trade (CCPIT)
+        domain: ccpit.org
+        topics: [certificate_of_origin]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: cn-customs-stats
+        agency: GACC — trade statistics
+        domain: customs.gov.cn
+        topics: [trade_stats]
+        priority: 2
+        status: to_verify
+        urls: []
+
+  RU:
+    name: { ru: Россия, en: Russia }
+    languages: [ru]
+    sources:
+      - id: ru-fts
+        agency: Федеральная таможенная служба
+        domain: customs.gov.ru
+        topics: [export_declaration, customs_procedures, export_duties]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-minpromtorg
+        agency: Минпромторг
+        domain: minpromtorg.gov.ru
+        topics: [support_programs, industrial_export]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-mcx
+        agency: Минсельхоз — экспортные пошлины на зерно, поддержка АПК
+        domain: mcx.gov.ru
+        topics: [export_duties_agri, support_programs_agri]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-rec
+        agency: Российский экспортный центр (РЭЦ)
+        domain: exportcenter.ru
+        topics: [support_programs, transport_compensation, export_services]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-exiar
+        agency: ЭКСАР — страхование экспорта
+        domain: exiar.ru
+        topics: [export_credit_insurance]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: ru-fns
+        agency: ФНС — НДС при экспорте
+        domain: nalog.gov.ru
+        topics: [export_vat]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-fsvps
+        agency: Россельхознадзор — фитосанитарные и ветеринарные сертификаты
+        domain: fsvps.gov.ru
+        topics: [sps_certificates]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: ru-government
+        agency: Правительство России — постановления о квотах и пошлинах
+        domain: government.ru
+        topics: [export_quotas, export_duties]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: ru-tpprf
+        agency: ТПП РФ — сертификаты происхождения
+        domain: tpprf.ru
+        topics: [certificate_of_origin]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: eaeu-eec
+        agency: Евразийская экономическая комиссия — тариф ЕАЭС, соглашения о свободной торговле
+        domain: eec.eaeunion.org
+        aliases: [eurasiancommission.org]
+        topics: [tariff_rates, trade_agreements, rules_of_origin]
+        priority: 1
+        status: to_verify
+        urls: []
+
+  IR:
+    name: { ru: Иран, en: Iran, fa: ایران }
+    languages: [fa, en]
+    notes: Официальные сайты доступны нестабильно; конвейер повторяет попытки и ставит статус unavailable вместо догадки.
+    sources:
+      - id: ir-irica
+        agency: Iran Customs Administration (IRICA)
+        domain: irica.ir
+        topics: [import_procedures, tariff_rates]
+        priority: 1
+        status: unstable
+        urls: []
+      - id: ir-tpo
+        agency: Trade Promotion Organization of Iran
+        domain: tpo.ir
+        topics: [trade_policy, import_regulations, support_programs]
+        priority: 1
+        status: unstable
+        urls: []
+      - id: ir-mimt
+        agency: Ministry of Industry, Mine and Trade
+        domain: mimt.ir
+        topics: [import_permits, order_registration]
+        priority: 1
+        status: unstable
+        urls: []
+      - id: ir-cbi
+        agency: Central Bank of Iran — currency allocation for imports
+        domain: cbi.ir
+        topics: [currency_rules]
+        priority: 2
+        status: unstable
+        urls: []
+      - id: ir-isiri
+        agency: Iranian National Standards Organization
+        domain: isiri.gov.ir
+        topics: [standards, conformity]
+        priority: 2
+        status: unstable
+        urls: []
+
+sanctions_authorities:
+  - id: sanc-ca
+    jurisdiction: CA
+    agency: Global Affairs Canada — Special Economic Measures Act regulations, consolidated list
+    domain: international.gc.ca
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: sanc-us-ofac
+    jurisdiction: US
+    agency: Office of Foreign Assets Control (OFAC) — programs, SDN list, general licences
+    domain: ofac.treasury.gov
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: sanc-eu
+    jurisdiction: EU
+    agency: EU Sanctions Map (Council of the EU / EEAS)
+    domain: sanctionsmap.eu
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: sanc-uk-ofsi
+    jurisdiction: UK
+    agency: Office of Financial Sanctions Implementation; UK sanctions list
+    domain: gov.uk
+    priority: 1
+    status: to_verify
+    urls: []
+
+international:
+  - id: wto-ttd
+    agency: WTO Tariff & Trade Data
+    domain: ttd.wto.org
+    topics: [tariff_rates, trade_stats]
+    priority: 2
+    status: to_verify
+    urls: []
+  - id: itc-gth
+    agency: Global Trade Helpdesk (ITC, UNCTAD, WTO)
+    domain: globaltradehelpdesk.org
+    topics: [tariff_rates, procedures, agreements]
+    priority: 3
+    status: to_verify
+    urls: []
+  - id: un-comtrade
+    agency: UN Comtrade
+    domain: comtradeplus.un.org
+    topics: [trade_stats]
+    priority: 1
+    status: to_verify
+    urls: []
+
+logistics_indices:
+  - id: fbx
+    agency: Freightos Baltic Index — контейнерные ставки по основным маршрутам
+    domain: fbx.freightos.com
+    topics: [freight_indices]
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: drewry-wci
+    agency: Drewry World Container Index
+    domain: drewry.co.uk
+    topics: [freight_indices]
+    priority: 2
+    status: to_verify
+    urls: []

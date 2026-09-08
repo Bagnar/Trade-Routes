@@ -1,0 +1,22 @@
+[project]
+name = "trade-rules-pipeline"
+version = "0.1.0"
+description = "Pipeline of the trade-rules encyclopedia: registry, fetch, extract, rates, validate, assemble, index, monitor."
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "psycopg[binary]>=3.2",
+    "PyYAML>=6.0",
+    "python-dotenv>=1.0",
+    "anthropic>=0.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["pipeline/tests"]
