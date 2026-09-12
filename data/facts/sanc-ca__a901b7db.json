@@ -1,0 +1,280 @@
+{
+  "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng",
+  "source_id": "sanc-ca",
+  "fetched_at": "2026-09-12T14:41:27+00:00",
+  "content_hash": "5aaef2b0a3e73c6878b7e2a484f726903a5232bd9534f7e403f0cce9d41f49e4",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канадские санкции против Ирана введены на основании Закона об ООН и Закона об особых экономических мерах: Положения об осуществлении резолюций ООН по Ирану вступили в силу 22 февраля 2007 года, а Положения об особых экономических мерах (Иран) — 22 июля 2010 года.",
+        "en": "Canada's Iran sanctions rest on two instruments: the Regulations Implementing the United Nations Resolutions on Iran, in force since 22 February 2007, and the Special Economic Measures (Iran) Regulations, in force since 22 July 2010."
+      },
+      "quote": "On February 22, 2007, the Regulations Implementing the United Nations Resolutions on Iran came into force. On July 22, 2010, the Special Economic Measures (Iran) Regulations came into force.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канадский режим санкций по Ирану включает оружейное эмбарго, замораживание активов, экспортные и импортные ограничения, финансовые запреты и запрет на техническую помощь.",
+        "en": "The Canadian sanctions regime on Iran comprises an arms embargo, asset freeze, export and import restrictions, financial prohibitions and a technical assistance prohibition."
+      },
+      "quote": "Types of sanctions\n Arms embargo\n Asset freeze\n Export and import restrictions\n Financial Prohibitions\n Technical assistance prohibition",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Положения ООН по Ирану запрещают экспорт в Иран товаров, материалов, оборудования и технологий, связанных с обогащением урана, переработкой, тяжёлой водой или разработкой систем доставки ядерного оружия, включая позиции из Списка товаров двойного назначения (Группа 1) и Списка боеприпасов (Группа 2) канадского справочника экспортного контроля.",
+        "en": "The Iran UN Regulations prohibit exporting to Iran items, materials, equipment, goods and technology related to uranium enrichment, reprocessing, heavy water activities or nuclear weapon delivery systems, including goods in Group 1 (Dual-Use List) and Group 2 (Munitions List) of A Guide to Canada's Export Controls."
+      },
+      "quote": "items, materials, equipment, goods and technology related to uranium enrichment, reprocessing or heavy water-related activities, or to the development of nuclear weapon delivery systems (products listed in the International Atomic Energy Agency's Information Circulars INFCIRC/254/Rev.12/Part 1 and INFCIRC/254/Rev.9/Part 2 and UN Security Council document S/2015/254, as well as to a number of goods listed in Group 1 (Dual-Use List) and Group 2 (Munitions List) in A Guide to Canada's Export Controls);",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Действуют широкие запреты на экспорт в Иран и импорт из Ирана ядерных, двойного назначения и связанных с баллистическими ракетами материалов, оборудования и технологий, а также комплексное оружейное эмбарго и запрет на оказание услуг иранским судам.",
+        "en": "There are broad prohibitions on exports to and imports from Iran of nuclear, dual-use and ballistic missile-related material, equipment and technology, a comprehensive arms embargo, and services prohibitions for Iranian vessels."
+      },
+      "quote": "broad prohibitions on exports to and imports from Iran: nuclear, dual-use, and ballistic missile-related material, equipment, and technology;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещено предоставлять любому лицу в Иране техническую помощь, финансовые или связанные услуги, а также имущество, финансовую помощь или инвестиции, связанные с поставкой, продажей, передачей, производством или использованием товаров, подпадающих под экспортные запреты.",
+        "en": "It is prohibited to provide any person in Iran with technical assistance, financial or related services, or to make available property, financial assistance or investment, related to the supply, sale, transfer, manufacture or use of goods subject to the export prohibitions."
+      },
+      "quote": "a prohibition on the provision to any person in Iran of technical assistance, financial or related services related to the supply, sale, transfer, manufacture, or use of the products subject to the export prohibitions;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Положения SEMA (Иран) вводят запрет на операции (фактическое замораживание активов) с лицами, указанными в Приложении 1: запрещены сделки с их имуществом, предоставление им товаров и финансовых или иных услуг.",
+        "en": "The Iran SEMA Regulations impose a dealings prohibition (an effective asset freeze) on persons listed in Schedule 1, barring dealings in their property and the provision of goods or any financial or other related services to them."
+      },
+      "quote": "The Special Economic Measures (Iran) Regulations (the Iran SEMA Regulations) impose a dealings prohibition, an effective asset freeze, on designated persons listed in Schedule 1.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт, продажа, поставка или отгрузка в Иран, любому лицу в Иране или лицу для бизнеса, ведущегося из Ирана, товаров, перечисленных в Приложении 2 Положений SEMA (Иран), а также передача или раскрытие связанных с ними технических данных.",
+        "en": "Exporting, selling, supplying or shipping goods listed in Schedule 2 of the Iran SEMA Regulations to Iran or any person in Iran is prohibited, as is transferring or disclosing technical data related to those goods."
+      },
+      "quote": "exporting, selling, supplying, or shipping any goods listed in Schedule 2 of the Iran SEMA Regulations to Iran, to any person in Iran, or to a person for the purpose of a business carried on in or operated from Iran;\n transferring, providing, or disclosing to Iran or any person in Iran any technical data related to the goods listed in Schedule 2;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещены экспорт, продажа, поставка или отгрузка товаров и технологий, связанных со списком Режима контроля за ракетными технологиями, а также боевых танков, бронемашин, крупнокалиберной артиллерии, боевых самолётов, вертолётов, военных корабей, ракет и ракетных систем по Регистру обычных вооружений ООН.",
+        "en": "Export, sale, supply or shipment of Missile Technology Control Regime items, and of battle tanks, armoured combat vehicles, large calibre artillery, combat aircraft, attack helicopters, warships, missiles or missile systems as defined in the UN Registry of Conventional Weapons, is prohibited."
+      },
+      "quote": "items, material, equipment, goods, and technology related to goods listed in the Missile Technology Control Regime (2015/254);\n battle tanks, armoured combat vehicles, large caliber artillery systems, combat aircrafts, attack helicopters, warships, missiles, or missile systems as defined in the United Nations Registry of Conventional Weapons;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Приобретение и импорт из Ирана вооружений и связанных материалов запрещены, равно как и предоставление Ирану технологий, связанных с баллистическими ракетами, способными доставлять ядерное оружие.",
+        "en": "Acquiring and importing arms and related material from Iran is prohibited, as is providing Iran with any technology relating to ballistic missiles capable of delivering nuclear weapons."
+      },
+      "quote": "providing any technology to Iran in respect of any activity related to ballistic missiles capable of delivering nuclear weapons; and\n acquiring and importing from Iran arms and related material.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лица, включённые в списки по Положениям SEMA (Иран), также признаются недопустимыми к въезду в Канаду согласно Закону об иммиграции и защите беженцев.",
+        "en": "Individuals listed under the Iran SEMA Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act."
+      },
+      "quote": "Individuals listed under the Iran SEMA Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 19 июня 2023 года Положения ООН по Ирану содержат гуманитарное изъятие: разрешены платежи, товары и услуги, необходимые для своевременной доставки срочной гуманитарной помощи или обеспечения базовых человеческих потребностей, если они предоставляются определёнными организациями.",
+        "en": "Since 19 June 2023 the Iran UN Regulations include a humanitarian carve-out allowing funds, goods and services necessary for the timely delivery of urgently needed humanitarian assistance or basic human needs, when provided by specified groups."
+      },
+      "quote": "On June 19, 2023, the Regulations Implementing the United Nations Resolutions on Iran were amended to allow the provision, processing or payment of funds, other financial assets, or economic resources, or the provision of goods and services that are necessary to ensure the timely delivery of urgently needed humanitarian assistance, or to support other activities related to basic human needs, if provided by specified groups.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо санкций, Канада ограничивает экспорт в Иран широкого спектра чувствительных товаров из Списка экспортного контроля (ECL) на основании Закона о разрешениях на экспорт и импорт; подробности — в Уведомлении экспортёрам № 196.",
+        "en": "Separately from sanctions, Canada restricts exports to Iran of a wide range of sensitive products on the Export Control List under the Export and Import Permits Act, as set out in Notice to Exporters Serial No. 196."
+      },
+      "quote": "Canada continues to restrict the export to Iran of a wide range of sensitive products listed on the Export Control List (ECL), under the Export and Import Permits Act (EIPA). See Notice to Exporters Serial No. 196 for further information.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "По Положениям ООН по Ирану министр иностранных дел может выдать сертификат, разрешающий ограниченную деятельность в индивидуальном порядке, при строгом соблюдении требований Резолюции 2231, включая возможную необходимость предварительного одобрения Совета Безопасности ООН.",
+        "en": "Under the Iran UN Regulations the Minister of Foreign Affairs may issue a case-by-case certificate authorizing a restricted activity, provided the requirements of Resolution 2231 are strictly respected, which may include prior UN Security Council approval."
+      },
+      "quote": "Under the Iran UN Regulations, the Minister of Foreign Affairs may issue a certificate to authorize an activity restricted by the regulations, on a case-by-case basis, provided that the requirements of Resolution 2231 are strictly respected. The requirements may include obtaining the approval of the United Nations Security Council in advance.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Приказ о разрешениях в рамках особых экономических мер, вступивший в силу 26 февраля 2025 года, даёт министру иностранных дел право выдавать индивидуальные и генеральные разрешения в исключительных случаях; он применяется ко всем положениям, принятым по SEMA, и отменяет предыдущие приказы.",
+        "en": "The Special Economic Measures Permit Authorization Order, in force since 26 February 2025, lets the Minister of Foreign Affairs issue individual and general permits in exceptional cases; it applies to all SEMA Regulations and repeals previous permit orders."
+      },
+      "quote": "The Special Economic Measures Permit Authorization Order came into force on February 26, 2025, and provides the Minister of Foreign Affairs with the authority to issue both individual and general permits in exceptional cases to allow specified activities or transactions that would otherwise be restricted or prohibited under the Special Economic Measures Act (SEMA).",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "30 сентября 2025 года Канада изменила Положения ООН по Ирану, чтобы выполнить решение Совета Безопасности ООН о восстановлении ранее отменённых санкций после активации механизма snapback, запущенного 28 августа 2025 года странами E3; санкции ООН были восстановлены 28 сентября 2025 года.",
+        "en": "On 30 September 2025 Canada amended the UN Iran Regulations to implement the UN Security Council decision to reimpose previously terminated sanctions after the E3 triggered the JCPOA snapback on 28 August 2025, with UN sanctions reimposed on 28 September 2025."
+      },
+      "quote": "On August 28, 2025, France, Germany, and the United Kingdom (collectively the “E3”) triggered the snapback mechanism process under the JCPOA, which led to the reimposition of UN sanctions on Iran on September 28, 2025, which must now be implemented by UN Member States.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "13 августа 2026 года Канада внесла в списки по Положениям SEMA (Иран) пять физических лиц, связанных с усилиями по препятствованию правам судоходства в районе Ормузского пролива.",
+        "en": "On 13 August 2026 Canada listed five individuals under the Special Economic Measures (Iran) Regulations for connections to efforts to obstruct navigation rights in and around the Strait of Hormuz."
+      },
+      "quote": "On August 13, 2026, Canada amended the Special Economic Measures (Iran) Regulations to list five individuals. All five individuals have engaged in activities that undermine international peace, security or stability in a manner that is consistent with the policies of Iran.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "25 марта 2026 года Канада внесла в списки пять физических лиц и четыре организации, связанные с закупочными сетями, поставляющими технологии для производства и передачи вооружений КСИР.",
+        "en": "On 25 March 2026 Canada listed five individuals and four entities assessed to be connected to procurement networks supplying technology for IRGC weapons production and transfers."
+      },
+      "quote": "On March 25, 2026, Canada amended the Special Economic Measures (Iran) Regulations to list five individuals and four entities.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "6 марта 2025 года Канада расширила критерии включения в списки по Положениям об особых экономических мерах (Иран), позволив применять санкции к любым действующим или бывшим высокопоставленным государственным чиновникам, а не только к руководству КСИР.",
+        "en": "On 6 March 2025 Canada broadened the listing criteria in the Special Economic Measures (Iran) Regulations to allow designation of any current or former senior government officials, beyond senior IRGC officials."
+      },
+      "quote": "On March 6, 2025, Canada amended the Special Economic Measures (Iran) Regulations to expand the scope of the listing criteria under the Iran Regulations to allow the imposition of sanctions in response to the evolving threat that Iran poses to peace and security in the region and globally, as well as to designate any current or former senior government officials, beyond senior IRGC officials.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "IR"
+      ]
+    }
+  ],
+  "dropped": 0
+}

@@ -33,10 +33,10 @@
   "lang": "ru",
   "isDemo": true,
   "status": {
-    "sourcesTotal": 10,
+    "sourcesTotal": 15,
     "sourcesMissing": 0,
     "lastChecked": "2026-09-12",
-    "text": "На странице 63 строк из официальных источников с дословной цитатой (10 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
+    "text": "На странице 95 строк из официальных источников с дословной цитатой (15 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
   },
   "summary": {
     "id": "s0",
@@ -113,7 +113,7 @@
       {
         "name": "Препятствия",
         "score": 4,
-        "basis": "проверенные страницы санкционных программ (3) не называют страны пары; полный список режимов не проверен"
+        "basis": "проверенные страницы санкционных программ (6) не называют страны пары; полный список режимов не проверен"
       },
       {
         "name": "Господдержка",
@@ -169,7 +169,7 @@
         "to": "Россия",
         "duty": "9%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: UK, US",
+        "sanctions": "есть: CA, EU, UK, US",
         "support": "5 стр.",
         "score": {
           "text": "9 из 15",
@@ -191,7 +191,7 @@
         "to": "Иран",
         "duty": "21.4286%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: US",
+        "sanctions": "есть: CA, US",
         "support": "5 стр.",
         "score": {
           "text": "7 из 15",
@@ -413,6 +413,34 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Таможенный союз ЕС является основой Европейского союза и необходимым элементом функционирования единого рынка.",
+        "quote": "The Customs Union is a foundation of the European Union and an essential element in the functioning of the single market",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Свободные зоны — это огороженные территории внутри таможенной территории ЕС, куда товары не из ЕС могут ввозиться беспошлинно.",
+        "quote": "Free zones\n Enclosed areas within the EU customs territory where non-EU goods can be introduced free of duty",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },
@@ -1161,6 +1189,90 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "text": "Импорт, покупка или приобретение из России определённых нефтепродуктов, перечисленных в Приложении 5, запрещены для лиц в Канаде и канадцев за рубежом.",
+        "quote": "the import, purchase or acquisition by any person in Canada and any Canadian outside Canada, of specific petroleum products listed in Schedule 5, from Russia or from any person in Russia.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён импорт, покупка или приобретение из России товаров, указанных в колонке 1 Части 1 или 2 Приложения 11, а также товаров, приносящих доход, из колонки 1 Приложения 13.",
+        "quote": "any person in Canada and any Canadian outside Canada to import, purchase or acquire any good referred to in column 1 of Part 1 or 2 of Schedule 11 from Russia or from any person in Russia.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Приказ Special Economic Measures Permit Authorization Order, вступивший в силу 26 февраля 2025 года, даёт министру иностранных дел право выдавать индивидуальные и генеральные разрешения на действия, иначе запрещённые по SEMA, и применяется ко всем положениям, принятым по SEMA.",
+        "quote": "The Special Economic Measures Permit Authorization Order came into force on February 26, 2025, and provides the Minister of Foreign Affairs with the authority to issue both individual and general permits in exceptional cases to allow specified activities or transactions that would otherwise be restricted or prohibited under the Special Economic Measures Act (SEMA).",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Приобретение и импорт из Ирана вооружений и связанных материалов запрещены, равно как и предоставление Ирану технологий, связанных с баллистическими ракетами, способными доставлять ядерное оружие.",
+        "quote": "providing any technology to Iran in respect of any activity related to ballistic missiles capable of delivering nuclear weapons; and\n acquiring and importing from Iran arms and related material.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "По Положениям ООН по Ирану министр иностранных дел может выдать сертификат, разрешающий ограниченную деятельность в индивидуальном порядке, при строгом соблюдении требований Резолюции 2231, включая возможную необходимость предварительного одобрения Совета Безопасности ООН.",
+        "quote": "Under the Iran UN Regulations, the Minister of Foreign Affairs may issue a certificate to authorize an activity restricted by the regulations, on a case-by-case basis, provided that the requirements of Resolution 2231 are strictly respected. The requirements may include obtaining the approval of the United Nations Security Council in advance.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Приказ о разрешениях в рамках особых экономических мер, вступивший в силу 26 февраля 2025 года, даёт министру иностранных дел право выдавать индивидуальные и генеральные разрешения в исключительных случаях; он применяется ко всем положениям, принятым по SEMA, и отменяет предыдущие приказы.",
+        "quote": "The Special Economic Measures Permit Authorization Order came into force on February 26, 2025, and provides the Minister of Foreign Affairs with the authority to issue both individual and general permits in exceptional cases to allow specified activities or transactions that would otherwise be restricted or prohibited under the Special Economic Measures Act (SEMA).",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Код товара: HS 9503.00 — игрушки. Национальный код и ставку подтверждают брокер или предварительное решение таможни.",
         "stamp": {
           "status": "note",
@@ -1221,6 +1333,34 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Проект «электронной таможни» Европейской комиссии направлен на замену бумажных таможенных процедур едиными для ЕС электронными процедурами.",
+        "quote": "The project, initiated by the European Commission, aims to replace paper-format customs procedures with EU-wide electronic procedures to create a more efficient and modern customs environment.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Судам, зарегистрированным в России либо используемым, арендованным или зафрахтованным в интересах России, российского лица или designated person, запрещено заходить в порты Канады и проходить через канадские воды.",
+        "quote": "any ship that is registered in Russia or used, leased or chartered, in whole or in part, by or on behalf of or for the benefit of Russia, a person in Russia or a designated person from docking in Canada or passing through Canadian waters.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },
@@ -1325,6 +1465,16 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "source": "taxation-customs.ec.europa.eu",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "source": "sinosure.com.cn",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
@@ -1335,7 +1485,47 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "source": "exportcontrol.mofcom.gov.cn",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "source": "bafa.de",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "international.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "international.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "wassenaar.org",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
         "status": {
@@ -1469,6 +1659,104 @@
     "lead": "Лицензии на вывоз, списки товаров двойного назначения и стратегических товаров обеих стран показываются как есть. Проверка принадлежности товара к спискам — по национальному коду у брокера.",
     "facts": [
       {
+        "text": "Министерство коммерции КНР ведёт портал «Китайская информационная сеть по экспортному контролю», через который в онлайн-режиме оформляются разрешения на импорт и экспорт товаров и технологий двойного назначения.",
+        "quote": "在线办事\n 两用物项和技术进出口审批",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Правовую основу экспортного контроля КНР составляют Закон об экспортном контроле и Положение об экспортном контроле товаров двойного назначения, опубликованное 23 октября 2024 года.",
+        "quote": "中华人民共和国两用物项出口管制条例2024-10-23\n 中华人民共和国出口管制法2021-12-30",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "К нормативной базе экспортного контроля КНР также отнесены Закон о ядерной безопасности, Закон о биобезопасности и Закон о криптографии.",
+        "quote": "中华人民共和国核安全法2021-12-30\n 中华人民共和国生物安全法2021-12-30\n 中华人民共和国密码法2021-12-30",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "На портале работает база данных контрольного списка товаров двойного назначения, позволяющая проверить, подпадает ли товар под экспортный контроль.",
+        "quote": "两用物项出口管制清单数据库",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Опубликованные кейсы правоприменения касаются экспорта без лицензии (военные тактические жилеты) и сокрытия вольфрамового порошка среди обычных грузов при вывозе.",
+        "quote": "某企业无证出口军用战术背心案2026-05-11\n 某企业将钨粉混藏于普通货物进行违规出口案2026-04-17",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Минкоммерции КНР совершенствует порядок приёма и рассмотрения сообщений о нарушениях экспортного контроля в отношении стратегических минеральных товаров двойного назначения.",
+        "quote": "商务部新闻发言人就进一步完善战略矿产两用物项出口管制违法违规行为举报处理工作答记者问",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Портал предлагает предприятиям услуги по комплаенсу экспортного контроля: учебные материалы, разборы кейсов и рекомендации по созданию внутреннего механизма комплаенса.",
+        "quote": "合规服务 \n 培训资料 \n 合规案例",
+        "quoteLang": "zh",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "exportcontrol.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://exportcontrol.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Европейская комиссия начала процесс оценки Регламента (ЕС) 2021/821 о товарах двойного назначения, предусмотренный ст. 26(4); опросы проводятся до 11 сентября 2026 года.",
         "quote": "Wie in den vergangenen Monaten bereits angekündigt, hat die EU-Kommission den in Art. 26 Abs. 4 der Verordnung (EU) 2021/821 (EU-Dual-Use-VO) vorgesehenen Prozess zur Evaluation gestartet.",
         "quoteLang": "de",
@@ -1479,6 +1767,216 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт, продажа, поставка или отгрузка в Россию товаров из Приложения 4 для использования в разведке и добыче нефти на шельфе глубиной более 500 м, сланцевой и арктической нефти, включая связанные финансовые, технические и иные услуги.",
+        "quote": "the export, sale, supply or shipping of goods listed in Schedule 4, to Russia or to any person in Russia for their use in offshore oil (depth greater than 500m), shale oil or Arctic oil exploration and production. This includes a ban on the provision of any financial, technical or other services related to the goods subject to this prohibition.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт, продажа, поставка или отгрузка в Россию любых товаров и технологий, включённых в Restricted Goods and Technologies List (электроника, компьютеры, телекоммуникации, сенсоры и лазеры, навигация и авионика, морская, аэрокосмическая и транспортная техника).",
+        "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any good, wherever situated, or to provide any technology, to Russia or to any person in Russia, if it is described in the Restricted Goods and Technologies List.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт в Россию любых товаров из колонки 1 Приложения 7, которые могут использоваться для производства вооружений.",
+        "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any good that could be used for the manufacturing weapons referred to in column 1 of Schedule 7, wherever situated, to Russia or to any person in Russia.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт, продажа, поставка или отгрузка в Россию вооружений и связанных материалов, а также предоставление любых финансовых, технических или иных услуг, связанных с их продажей, передачей, производством, обслуживанием или использованием.",
+        "quote": "persons in Canada and Canadians abroad from exporting, selling, supplying or shipping arms and related material, wherever situated, to Russia or to any person in Russia.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт в Россию химикатов и товаров, связанных с химическим и биологическим оружием, перечисленных в колонке 1 Частей 1, 2 и 3 Приложения 10.1.",
+        "quote": "the export, sale, supply or shipping by any person in Canada and any Canadian outside Canada, of chemicals and goods related to chemical and biological weapons referred to in column 1 of Parts 1, 2, and 3 of Schedule 10.1, to Russia or to any person in Russia.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Из запрета на ограниченные и промышленные товары есть исключения, в частности для временного вывоза оборудования СМИ, ядерных гарантий МАГАТЭ, Правительства Канады, Конвенции о химическом оружии, МКС, обновлений ПО, гражданской авиации, судовых и бортовых запасов, потребительских средств связи и личных вещей.",
+        "quote": "There are exceptions from the prohibition on restricted goods and industrial goods relating to:\n Temporary media exports;\n International nuclear safeguards verification;\n The Government of Canada;\n The Chemical Weapons Convention;\n The International Space Station;\n Software updates;\n Civil aircraft;\n Aircraft and ship stores;\n Maintenance, repair or operation of aircraft of Canadian and US air carriers;\n Consumer communication devices;\n Personal effects.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Положения ООН по Ирану запрещают экспорт в Иран товаров, материалов, оборудования и технологий, связанных с обогащением урана, переработкой, тяжёлой водой или разработкой систем доставки ядерного оружия, включая позиции из Списка товаров двойного назначения (Группа 1) и Списка боеприпасов (Группа 2) канадского справочника экспортного контроля.",
+        "quote": "items, materials, equipment, goods and technology related to uranium enrichment, reprocessing or heavy water-related activities, or to the development of nuclear weapon delivery systems (products listed in the International Atomic Energy Agency's Information Circulars INFCIRC/254/Rev.12/Part 1 and INFCIRC/254/Rev.9/Part 2 and UN Security Council document S/2015/254, as well as to a number of goods listed in Group 1 (Dual-Use List) and Group 2 (Munitions List) in A Guide to Canada's Export Controls);",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещён экспорт, продажа, поставка или отгрузка в Иран, любому лицу в Иране или лицу для бизнеса, ведущегося из Ирана, товаров, перечисленных в Приложении 2 Положений SEMA (Иран), а также передача или раскрытие связанных с ними технических данных.",
+        "quote": "exporting, selling, supplying, or shipping any goods listed in Schedule 2 of the Iran SEMA Regulations to Iran, to any person in Iran, or to a person for the purpose of a business carried on in or operated from Iran;\n transferring, providing, or disclosing to Iran or any person in Iran any technical data related to the goods listed in Schedule 2;",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещены экспорт, продажа, поставка или отгрузка товаров и технологий, связанных со списком Режима контроля за ракетными технологиями, а также боевых танков, бронемашин, крупнокалиберной артиллерии, боевых самолётов, вертолётов, военных корабей, ракет и ракетных систем по Регистру обычных вооружений ООН.",
+        "quote": "items, material, equipment, goods, and technology related to goods listed in the Missile Technology Control Regime (2015/254);\n battle tanks, armoured combat vehicles, large caliber artillery systems, combat aircrafts, attack helicopters, warships, missiles, or missile systems as defined in the United Nations Registry of Conventional Weapons;",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Помимо санкций, Канада ограничивает экспорт в Иран широкого спектра чувствительных товаров из Списка экспортного контроля (ECL) на основании Закона о разрешениях на экспорт и импорт; подробности — в Уведомлении экспортёрам № 196.",
+        "quote": "Canada continues to restrict the export to Iran of a wide range of sensitive products listed on the Export Control List (ECL), under the Export and Import Permits Act (EIPA). See Notice to Exporters Serial No. 196 for further information.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Вассенаарские договорённости публикуют текущие контрольные списки в виде «Публичных документов, том II — Список товаров и технологий двойного назначения и Список военных товаров».",
+        "quote": "CURRENT CONTROL LISTS (*)\n Public Documents, Vol II – List of Dual-Use Goods and Technologies and Munitions List",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Списки отражают договорённости, зафиксированные в Приложении 5 к Первоначальным элементам от 19 декабря 1995 года, и все последующие поправки, включая согласованные на Пленарном заседании 2025 года в декабре 2025 года.",
+        "quote": "* These Lists reflect the agreements recorded in Appendix 5 to the Initial Elements, dated 19 December 1995, and all subsequent amendments, including those agreed by the 2025 Plenary in December 2025.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Дата внедрения и вступления списков в силу может различаться в каждом государстве-участнике; следует обращаться к соответствующим национальным контактным органам.",
+        "quote": "Implementation date and entry into effect may vary in each Participating State.\nPlease consult the respective National Contacts.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Существуют формальные критерии отбора товаров двойного назначения, включая чувствительные и особо чувствительные позиции.",
+        "quote": "SELECTION CRITERIA\n Criteria for the Selection of Dual-Use Goods, including Sensitive and Very Sensitive Items",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Список военных товаров публикуется отдельно, чтобы помочь странам, не входящим в Вассенаарские договорённости, разрабатывать или укреплять национальные списки экспортного контроля обычных вооружений; полными и авторитетными текстами остаются текущие контрольные списки.",
+        "quote": "The Wassenaar Arrangement’s Munitions List is published here separately for the specific purpose of informing and assisting non-WA countries which are developing or strengthening their national export control list for conventional arms. For the complete and authoritative texts of the WA Lists, please see the current Control Lists above.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },

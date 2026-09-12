@@ -1,0 +1,345 @@
+{
+  "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en",
+  "source_id": "sanc-eu-commission",
+  "fetched_at": "2026-09-12T14:41:48+00:00",
+  "content_hash": "5cbe559570bb6d3e81def2dbfb8d46d38dc10cd1b3fb8bff994e2072beb53eff",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экономические (секторальные) санкции ЕС против России установлены Решением Совета 2014/512/CFSP и Регламентом Совета (ЕС) № 833/2014 и нацелены на обмен с Россией в отдельных секторах экономики.",
+        "en": "The EU's economic (sectoral) sanctions against Russia target exchanges with Russia in specific economic sectors and are laid down in Council Decision 2014/512/CFSP and Council Regulation (EU) No 833/2014."
+      },
+      "quote": "The economic (or sectoral) sanctions target exchanges with Russia in specific economic sectors. The sanctions regime laying down these measures consists of Council Decision 2014/512/CFSP and Council Regulation (EU) No 833/2014.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Регламенты Совета ЕС о санкциях адресованы всем физическим лицам, организациям и органам, находящимся под юрисдикцией ЕС, и создают для них юридические обязательства.",
+        "en": "The Council Regulations imposing the sanctions are addressed to all individuals, organisations and bodies under EU jurisdiction and create legal obligations for them."
+      },
+      "quote": "The respective Council Regulations identified below are addressed to all individuals, organisations and bodies under EU jurisdiction, for which they create legal obligations.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Финансовые меры включают заморозку резервов и активов Центрального банка России, запрет на финансирование российского правительства и ЦБ, отключение отдельных российских банков от SWIFT, запрет на приём депозитов и на предоставление крипто- и трастовых услуг.",
+        "en": "Financial measures include freezing the Russian Central Bank's reserves and assets, a ban on financing the Russian government and Central Bank, decoupling certain Russian banks from SWIFT, a ban on accepting deposits and on providing crypto and trust services."
+      },
+      "quote": "Blocking of the Russian Central Bank’s reserves and assets, as well as a prohibition on the financing of the Russian government and Central Bank\n Prohibitions on a range of financial interactions, financial rating services and transactions with Russia, as well as prohibitions on the provision of banknotes and sale of securities\n Decoupling of certain Russian banks from the SWIFT messaging system",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_support",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещено государственное финансирование или финансовая помощь для торговли с Россией или инвестиций в Россию; Россия полностью исключена из доступа к публичным контрактам и европейским средствам.",
+        "en": "Public financing or financial assistance for trade with, or investment in, Russia is prohibited, and Russia is fully excluded from public contracts and European money."
+      },
+      "quote": "Prohibition on public financing or financial assistance for trade with, or investment in Russia\n Prohibition on investment and contribution to projects co-financed by the Russian Direct Investment Fund\n Full exclusion of Russia from public contracts and European money",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Действует эмбарго на оружие и запрет экспорта в Россию товаров двойного назначения и передовых технологий (включая квантовые компьютеры, современные полупроводники, электронные компоненты и ПО), а также гражданского огнестрельного оружия.",
+        "en": "An arms embargo applies, together with a ban on exporting to Russia dual-use goods and advanced technology items (including quantum computers, advanced semiconductors, electronic components and software) and civilian firearms."
+      },
+      "quote": "Arms embargo\n Prohibition on exports of Dual-use goods and advanced technology items that can contribute to Russia’s defence and security capabilities (e.g. quantum computers and advanced semiconductors, electronic components and software)",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт в Россию товаров, способствующих усилению российского промышленного потенциала, включая энергетическую отрасль, а также транспортного оборудования и товаров для авиации, космической отрасли и морской навигации.",
+        "en": "Exports to Russia of goods contributing to the enhancement of Russian industrial capacities, including the energy industry, and of transportation equipment and goods used in aviation, space industry and maritime navigation are prohibited."
+      },
+      "quote": "Goods contributing to the enhancement of Russian industrial capacities, including the energy industry\n Transportation equipment, goods used in aviation, space industry and maritime navigation\n Civilian firearms",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "EU",
+      "hs_scope": [
+        "72",
+        "73",
+        "7102",
+        "7108"
+      ],
+      "statement": {
+        "ru": "Запрещён импорт из России чёрных металлов и стали (включая некоторые товары, переработанные в третьих странах с использованием российского сырья), цемента, резиновых изделий, древесины, алюминия, спиртных напитков, высококачественных морепродуктов, золота и алмазов.",
+        "en": "Imports from Russia of iron and steel (including some goods processed in third countries using Russian inputs), cement, rubber products, wood, aluminium, spirits, liquor, high-end seafood, gold and diamonds are prohibited."
+      },
+      "quote": "Prohibition on imports of Iron and steel, including of some goods processed in third countries using Russian inputs\n Cement, rubber products, wood, aluminium spirits, liquor, high-end seafood and other goods generating significant revenues for Russia\n Gold and diamonds",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Введены запреты на транзит некоторых запрещённых товаров через территорию России, на оказание технической помощи и брокерских услуг по запрещённым товарам, а также на продажу, лицензирование или передачу прав интеллектуальной собственности и коммерческих секретов.",
+        "en": "There are transit bans for certain prohibited goods via Russian territory, a ban on providing technical assistance or brokering services for prohibited goods, and a ban on selling, licensing, transferring or referring intellectual property rights and trade secrets."
+      },
+      "quote": "Transit bans for certain prohibited goods via the Russian territory\n Prohibition to provide technical assistance or brokering services for prohibited goods, as well as to sell, license, transfer or refer intellectual property rights and trade secrets",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещено оказание России определённых услуг, включая бизнес-услуги, юридические консультации и ИТ-консалтинг.",
+        "en": "The provision of certain services to Russia is prohibited, including business, legal advisory and IT consultancy services."
+      },
+      "quote": "Prohibition to provide certain services (business, legal advisory, IT consultancy etc.)",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "logistics",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Транспортные меры включают закрытие воздушного пространства, требования уведомления о частных рейсах между ЕС и Россией, запрет на деятельность российских грузовых перевозчиков и использование российских прицепов и полуприцепов, а также запрет доступа в порты и шлюзы ЕС для судов под российским флагом и судов, отключающих навигационные системы при перевозке российской нефти.",
+        "en": "Transport measures include airspace closure, notification requirements for private flights between the EU and Russia, a ban on Russian freight operators and on the use of Russian trailers and semi-trailers, and a ban on access to EU ports and locks for Russian-flagged vessels and vessels manipulating or switching off navigation systems when carrying Russian oil."
+      },
+      "quote": "Prohibition on certain operations in the aviation sector (airspace closure)\n Notification requirements for private flights between the EU and Russia\n Prohibition on Russian freight operators and on the use of Russian trailers and semi-trailers\n Prohibition to access EU ports and locks for Russian-flagged vessels and vessels which manipulate or turn-off navigation systems when transporting Russian oil",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "EU",
+      "hs_scope": [
+        "2701",
+        "2703",
+        "2709",
+        "2711"
+      ],
+      "statement": {
+        "ru": "Запрещён импорт российского угля, торфа, сжиженного нефтяного газа и морской сырой нефти; для некоторых государств-членов действует запрет импорта российской нефти по трубопроводу. Также запрещено оказание услуг по транспортировке нефти.",
+        "en": "Imports of Russian coal, peat, LPG and seaborne crude oil are prohibited, with a pipeline oil import ban for some Member States, and the provision of oil transport services is banned."
+      },
+      "quote": "Prohibition on the import of coal, peat and LPG (liquified petroleum gas) and seaborne crude oil\n Prohibition on providing oil transport services",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещены новые инвестиции в энергетический сектор России и экспорт товаров для использования в нефтяной отрасли; российским гражданам и компаниям запрещено бронировать мощности хранения газа в ЕС.",
+        "en": "New investments in the Russian energy sector and exports of goods for use in the oil industry are prohibited, and Russian nationals and entities may not book gas storage capacity in the Union."
+      },
+      "quote": "Prohibition on new investments in the energy sector\n Prohibition on the export of goods for use in the oil industry",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [
+        "2709",
+        "2710"
+      ],
+      "statement": {
+        "ru": "Операторы ЕС могут оказывать морскую перевозку и связанные услуги для российской сырой нефти и нефтепродуктов только если они продаются по цене не выше установленного потолка: с 5 декабря 2022 года для сырой нефти и с 5 февраля 2023 года для нефтепродуктов.",
+        "en": "EU operators may only provide maritime transport and related services for Russian crude oil and petroleum products if sold at or below the price cap; this applies to crude oil since 5 December 2022 and to petroleum products since 5 February 2023."
+      },
+      "quote": "EU operators are only allowed to provide maritime transport and related services for Russian crude oil and petroleum products if these are sold at or below the relevant price caps. This mechanism has been specifically designed to further reduce Russia's revenues, while keeping global energy markets stable through continued supplies. It is applicable to Russian crude oil since 5 December 2022, and to Russian petroleum products since 5 February 2023.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "logistics",
+      "country": "EU",
+      "hs_scope": [
+        "2709",
+        "2710"
+      ],
+      "statement": {
+        "ru": "Статьи 3eb и 3ec Регламента (ЕС) № 833/2014 запрещают доступ в порты ЕС судам, перевозящим российскую нефть, которые совершали перегрузку с судна на судно или отключали системы AIS во время рейса в государство-член, что даёт основания подозревать нарушение потолка цен или запрета на импорт российской нефти.",
+        "en": "Articles 3eb and 3ec of Regulation (EU) No 833/2014 impose EU port access bans on vessels carrying Russian oil that have conducted ship-to-ship transfers or switched off AIS navigation systems en route to a Member State, giving reason to suspect a breach of the price cap or the oil import ban."
+      },
+      "quote": "Articles 3eb and 3ec of Council Regulation (EU) No 833/2014 set out EU port access bans for vessels which are transporting Russian oil and have conducted ship–to-ship transfers or turned off their AIS navigation systems during the voyage to a Member State, giving reasons to suspect a breach of the price cap or the Russian oil import ban",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [
+        "8901",
+        "8903"
+      ],
+      "statement": {
+        "ru": "Статья 3q Регламента (ЕС) № 833/2014 обязывает уведомлять о продаже танкеров и получать разрешение на такую продажу, если она осуществляется российскому лицу или для использования в России.",
+        "en": "Article 3q of Regulation (EU) No 833/2014 requires notification of the sale of tankers and an authorisation for such sale if it is to a Russian person or for use in Russia."
+      },
+      "quote": "Article 3q of Council Regulation (EU) No 833/2014 sets out an obligation to notify the sale of tankers and seek an authorisation for such sale if to a Russian person or for use in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещена трансляция в ЕС определённых российских государственных медиа.",
+        "en": "The broadcast in the EU of certain Russian state-owned media outlets is prohibited."
+      },
+      "quote": "Prohibition on the broadcast in the EU of certain Russian state-owned media outlets",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Индивидуальные санкции (запрет на въезд, заморозка активов и запрет предоставления средств) охватывают 1 206 физических лиц и более 108 организаций и основаны на Решении 2014/145/CFSP и Регламенте (ЕС) № 269/2014.",
+        "en": "Individual sanctions — travel bans, asset freezes and a ban on making funds available — target 1 206 individuals and over 108 organisations under Council Decision 2014/145/CFSP and Council Regulation (EU) No 269/2014."
+      },
+      "quote": "The measures consist of travel bans and financial measures (asset freezes and a prohibition on making funds or economic resources available) that now target a total of 1 206 individuals and over 108 organisations responsible for undermining Ukraine’s territorial integrity, sovereignty and independence.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 2014 года действуют ограничения на торговлю и инвестиции в отношении Крыма и Севастополя (Решение 2014/386/CFSP, Регламент (ЕС) № 692/2014), а с 2022 года — в отношении неподконтрольных правительству районов Донецкой, Херсонской, Луганской и Запорожской областей Украины (Регламент (ЕС) 2022/263).",
+        "en": "Since 2014 trade and investment restrictions apply to Crimea and Sevastopol (Decision 2014/386/CFSP, Regulation (EU) No 692/2014), and since 2022 similar restrictions apply to the non-government controlled areas of the Donetsk, Kherson, Luhansk and Zaporizhzhia oblasts of Ukraine (Regulation (EU) 2022/263)."
+      },
+      "quote": "Since 2014, restrictions on trade and investment have been imposed regarding to Crimea and Sevastopol. This sanctions regime consists of Council Decision 2014/386/CFSP and Council Regulation (EU) No 692/2014.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "UA",
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 2020 года против Беларуси действует единый режим ограничительных мер, включающий экономические санкции, индивидуальные меры и торговые ограничения, на основе Решения 2012/642/CFSP и Регламента (ЕС) № 765/2006.",
+        "en": "Since 2020 a single sanctions regime against Belarus has applied, including economic sanctions, individual restrictive measures and trade restrictions, based on Council Decision 2012/642/CFSP and Council Regulation (EC) No 765/2006."
+      },
+      "quote": "Since 2020, a wide range of restrictive measures have been imposed regarding Belarus, including economic sanctions, individual restrictive measures and restrictions on trade. All these measures form part of a single sanctions regime consisting of Council Decision 2012/642/CFSP and Council Regulation (EC) No 765/2006.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "BY"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С июля 2023 года ЕС запретил экспорт, передачу, продажу или поставку в Иран или для использования в Иране компонентов, применяемых в производстве беспилотных летательных аппаратов; режим установлен Решением (CFSP) 2023/1532 и Регламентом (ЕС) 2023/1529.",
+        "en": "Since July 2023 the EU prohibits the export, transfer, sale or supply to Iran or for use in Iran of components used in manufacturing UAVs (drones), under Council Decision (CFSP) 2023/1532 and Council Regulation (EU) 2023/1529."
+      },
+      "quote": "In July 2023, the Council prohibited the export, transfer, sale or supply of components used in the manufacturing of UAVs (unmanned aerial vehicles, “drones”) to Iran or for use in Iran.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "IR"
+      ]
+    },
+    {
+      "block": "regime",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "За применение санкций отвечают государства-члены; Комиссия контролирует их реализацию и публикует руководства и более 500 ответов на часто задаваемые вопросы для помощи участникам рынка.",
+        "en": "Member States are responsible for implementing sanctions; the Commission oversees implementation and has published guidance and over 500 FAQs to assist stakeholders in applying the sanctions packages."
+      },
+      "quote": "Member States are responsible for implementing sanctions. The Commission oversees the implementation by Member States and is working closely with them in order to support them on implementation, provide information to stakeholders, and engage in a dialogue to collect feedback on how sanctions are implemented.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    }
+  ],
+  "dropped": 1
+}

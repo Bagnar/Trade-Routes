@@ -11,6 +11,18 @@
    "facts": 166,
    "dropped": 3,
    "note": "stop: reached PIPELINE_MAX_PAGES=40; remaining URLs wait for the next run"
+  },
+  {
+   "date": "2026-09-12",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 31,
+   "input_tokens": 134880,
+   "output_tokens": 49285,
+   "usd": 0.9533,
+   "facts": 139,
+   "dropped": 2,
+   "note": ""
   }
  ],
  "pending_batch": null

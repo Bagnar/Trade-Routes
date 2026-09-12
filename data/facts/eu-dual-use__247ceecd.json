@@ -1,0 +1,194 @@
+{
+  "url": "https://policy.trade.ec.europa.eu/help-exporters-and-importers/exporting-dual-use-items_en",
+  "source_id": "eu-dual-use",
+  "fetched_at": "2026-09-12T14:41:51+00:00",
+  "content_hash": "624a4d3599b513ab310a8573acacd604210c87b8f55e155b2c469ac3beb39351",
+  "topic": "export_control",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ЕС контролирует экспорт, транзит, брокерские услуги и техническую помощь в отношении товаров двойного назначения — товаров, программного обеспечения и технологий, пригодных как для гражданского, так и для военного применения.",
+        "en": "The EU controls the export, transit, brokering and technical assistance of dual-use items — goods, software and technology usable for both civilian and military applications."
+      },
+      "quote": "The EU controls the export, transit, brokering and technical assistance of dual-use items so that it can contribute to international peace and security and prevent the proliferation of Weapons of Mass Destruction (WMD).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Режим экспортного контроля ЕС установлен Регламентом (ЕС) 2021/821, который включает общие правила экспорта, критерии оценки, типы разрешений (индивидуальные, глобальные и генеральные) и единый список товаров двойного назначения ЕС.",
+        "en": "The EU export control regime is governed by Regulation (EU) 2021/821, which includes common export control rules, common assessment criteria, common authorisation types (individual, global and general) and a common EU list of dual-use items."
+      },
+      "quote": "Regulation (EU) 2021/821 governs the EU's export control regime, which includes:\n common export control rules, including a common set of assessment criteria and common types of authorisations (individual, global and general authorisations);\n a common EU list of dual-use items;",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Регламент предусматривает контроль конечного использования и для товаров, не включённых в списки, если они могут быть связаны с программой ОМУ или нарушением прав человека, а также контроль брокерских услуг, технической помощи и транзита через ЕС.",
+        "en": "The Regulation provides end-use controls even for non-listed items that could be used e.g. in connection with a WMD programme or for human rights violations, plus controls on brokering, technical assistance and transit through the EU."
+      },
+      "quote": "common provisions for end-use controls on non-listed items, which could be used for example in connection with a WMD programme or for human rights violations;\n controls on brokering and technical assistance relating to dual-use items and their transit through the EU;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспортёры должны применять специальные меры контроля и комплаенса, в том числе вести учётные записи и регистры.",
+        "en": "Exporters must implement specific control and compliance measures, including record-keeping and registers."
+      },
+      "quote": "specific control measures and compliance to be introduced by exporters, such as record-keeping and registers, and;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Государства-члены ЕС в отдельных случаях могут вводить дополнительный контроль над товарами двойного назначения, не включёнными в списки, по причинам общественной безопасности или защиты прав человека.",
+        "en": "In certain cases EU Member States may impose additional controls on non-listed dual-use items on public security or human rights grounds."
+      },
+      "quote": "In certain cases, EU Member States may introduce additional controls on non-listed dual-use items because of public security or human rights considerations.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Внутри ЕС товары двойного назначения обращаются свободно, за исключением особо чувствительных позиций, перечисленных в Приложении IV Регламента, передача которых внутри ЕС требует предварительного разрешения.",
+        "en": "Dual-use items circulate freely within the EU, except particularly sensitive items listed in Annex IV of the Regulation, whose intra-EU transfer requires prior authorisation."
+      },
+      "quote": "Dual-use items may be traded freely within the EU, except for some particularly sensitive items, whose transfer within the EU remains subject to prior authorisation (see Annex IV of the Regulation).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В режиме экспортного контроля ЕС существуют четыре типа экспортных разрешений: генеральные разрешения ЕС (EUGEA), национальные генеральные разрешения (NGEA), глобальные и индивидуальные лицензии.",
+        "en": "The EU export control regime has four types of export authorisation: EU General Export Authorisations, National General Export Authorisations, global licences and individual licences."
+      },
+      "quote": "There are four types of export authorisations in place in the EU export control regime.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Одно из генеральных разрешений ЕС (Приложение II Регламента) охватывает экспорт в Австралию, Канаду, Исландию, Японию, Новую Зеландию, Норвегию, Швейцарию, Лихтенштейн, Великобританию и США; другие охватывают экспорт после ремонта/замены, временный вывоз на выставки, телекоммуникации, химические вещества, внутригрупповую передачу технологий и шифрование.",
+        "en": "EU General Export Authorisations (Annex II) cover exports to Australia, Canada, Iceland, Japan, New Zealand, Norway, Switzerland, Liechtenstein, the UK and the USA, as well as export after repair/replacement, temporary export for exhibitions, telecommunications, chemicals, intra-group technology transfers and encryption."
+      },
+      "quote": "EU General Export Authorisations (EUGEAs) allow exports of dual-use items to certain destinations under certain conditions (see Annex II of the Regulation). Regulation (EU) 2021/821 provides for the following EUGEAs:\n exports to Australia, Canada, Iceland, Japan, New Zealand, Norway, Switzerland, Liechtenstein, the United Kingdom and the United States of America;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Государства-члены могут выдавать национальные генеральные экспортные разрешения (NGEA), если они совместимы с действующими EUGEA и не касаются товаров, перечисленных в Приложении IIg Регламента.",
+        "en": "Member States may issue National General Export Authorisations if they are consistent with existing EUGEAs and do not cover items listed in Annex IIg of the Regulation."
+      },
+      "quote": "National General Export Authorisations (NGEAs) may be issued by EU Member States if they are consistent with existing EUGEAs and do not refer to items listed in Annex IIg of the Regulation.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Глобальная лицензия выдаётся одному экспортёру и может охватывать несколько товаров, несколько стран назначения или конечных пользователей; индивидуальная лицензия выдаётся одному экспортёру на экспорт одного или нескольких товаров одному конечному пользователю или получателю в третьей стране.",
+        "en": "A global licence is granted to one exporter and may cover multiple items, destinations or end users; an individual licence is granted to one exporter for exports of one or more items to one end-user or consignee in a third country."
+      },
+      "quote": "Global licenses can be granted by competent authorities to one exporter and may cover multiple items to multiple countries of destination or end users.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Список товаров двойного назначения ЕС регулярно обновляется: 8 сентября 2025 года Комиссия приняла Делегированный регламент (ЕС) 2025/2003, изменяющий Приложение I к Регламенту (ЕС) 2021/821.",
+        "en": "The EU dual-use control list is regularly updated: on 8 September 2025 the Commission adopted Delegated Regulation (EU) 2025/2003 amending Annex I to Regulation (EU) 2021/821."
+      },
+      "quote": "On 8 September 2025, the European Commission adopted a Delegated Regulation updating the EU dual-use export control list in Annex I of Regulation (EU) 2021/821.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо режима двойного назначения, к экспорту чувствительных технологий могут применяться дополнительные ограничительные меры (санкции) ЕС, включая меры в связи с действиями России в отношении Украины и список приоритетных товаров боевого применения.",
+        "en": "In addition to the dual-use regime, further EU restrictive measures (sanctions) may apply to exports of dual-use and sensitive technology, including measures linked to Russia's actions in Ukraine and the List of High Priority Battlefield Items."
+      },
+      "quote": "In certain cases, additional EU restrictive measures (’sanctions’) may apply to dual-use exports.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Регламент применяется напрямую во всём ЕС, однако государства-члены должны принимать национальные меры для реализации некоторых его положений, например о правоприменении и наказаниях.",
+        "en": "The Regulation is directly applicable throughout the EU, but Member States must adopt national measures to implement some provisions, such as enforcement and penalties."
+      },
+      "quote": "The regulation is directly applicable throughout the EU. EU countries nevertheless need to take national measures to implement some of its provisions, e.g. enforcement and penalties.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспортный контроль ЕС отражает обязательства, согласованные в многосторонних режимах: Австралийской группе, Вассенаарских договорённостях, Группе ядерных поставщиков и Режиме контроля за ракетными технологиями.",
+        "en": "EU export controls reflect commitments agreed in multilateral export control regimes: the Australia Group, the Wassenaar Arrangement, the Nuclear Suppliers Group and the Missile Technology Control Regime."
+      },
+      "quote": "EU export controls reflect commitments agreed upon in key multilateral export control regimes such as the Australia Group, the Wassenaar Arrangement, the Nuclear Suppliers Group, and the Missile Technology Control Regime.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

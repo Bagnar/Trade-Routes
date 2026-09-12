@@ -1,8 +1,8 @@
 {
   "url": "https://qaztrade.org.kz/",
   "source_id": "kz-qaztrade",
-  "fetched_at": "2026-09-12T14:00:41+00:00",
-  "content_hash": "d382069815b2d349a30f8f3734212aad7f2476a25790634512c71163fca006cf",
+  "fetched_at": "2026-09-12T14:34:47+00:00",
+  "content_hash": "4c6d3017f4aec20d90e056c8556d485da0916b9d21f491297c782cf902311d5a",
   "topic": "export_support",
   "facts": [
     {
@@ -10,8 +10,8 @@
       "country": "KZ",
       "hs_scope": [],
       "statement": {
-        "ru": "АО «Центр развития торговой политики QazTrade» принимает заявки экспортёров на возмещение части их затрат по экспорту.",
-        "en": "JSC \"QazTrade\" Trade Policy Development Center accepts applications from exporters for reimbursement of part of their export-related costs."
+        "ru": "АО «Центр развития торговой политики QazTrade» принимает заявки на возмещение части затрат экспортёров.",
+        "en": "JSC \"QazTrade\" Trade Policy Development Center accepts applications for the reimbursement of part of exporters' costs."
       },
       "quote": "«QazTrade» сауда саясатын дамыту орталығы» АҚ экспорттаушылар шығындарының бір бөлігін өтеуге өтінімдер қабылдау туралы хабарлайды",
       "quote_lang": "kk",
@@ -23,8 +23,8 @@
       "country": "KZ",
       "hs_scope": [],
       "statement": {
-        "ru": "Программа экспортной акселерации QazTrade предназначена для перспективного несырьевого бизнеса и адресована топ-менеджерам компаний-экспортёров: генеральным, производственным, коммерческим директорам и директорам по маркетингу.",
-        "en": "QazTrade's export acceleration programme targets promising non-resource businesses and is designed for top managers of exporting companies: CEOs, production, commercial and marketing directors."
+        "ru": "Программа экспортной акселерации QazTrade предназначена для перспективного несырьевого бизнеса и рассчитана на топ-менеджеров компаний-экспортёров (генеральных, производственных, коммерческих директоров и директоров по маркетингу).",
+        "en": "QazTrade's export acceleration programme targets promising non-commodity businesses and is designed for top managers of exporting companies: CEOs, production, commercial and marketing directors."
       },
       "quote": "Акселерациялық бағдарлама-бұл перспективалы шикізаттық емес бизнеске халықаралық нарықтарға тиімді шығуға көмектесетін бірегей бағдарлама. Бұл бағдарлама перспективалы экспорттаушы компаниялардың топ-менеджерлеріне арналған: бас директорлар, өндіріс директорлары, коммерциялық директорлар, маркетинг директорлары.",
       "quote_lang": "kk",
@@ -36,8 +36,8 @@
       "country": "KZ",
       "hs_scope": [],
       "statement": {
-        "ru": "Участники экспортной акселерации получают доступ к инструментам продвижения продукции на международных рынках, индивидуальным встречам с международными экспертами, шорт-листу потенциальных партнёров и клиентов и дорожной карте выхода на целевые рынки.",
-        "en": "Participants in the export acceleration programme gain access to product promotion tools for international markets, one-on-one meetings with international experts, a short list of potential partners and clients, and a worked-out roadmap for entering target markets."
+        "ru": "Участники программы экспортной акселерации получают доступ к инструментам продвижения продукции, индивидуальным встречам с международными экспертами, шорт-листу потенциальных партнёров и клиентов на целевых рынках и дорожной карте выхода на эти рынки.",
+        "en": "Participants of the export acceleration programme gain access to product promotion tools, one-on-one meetings with international experts, a short list of potential partners and clients in target markets, and a roadmap for entering those markets."
       },
       "quote": "Экспорттық акселерацияға қатысушылар халықаралық нарықтарда өнімді ілгерілетудің жылдам тиімді құралдарына, нысаналы нарықтарға шығу мәселелері бойынша халықаралық сарапшылармен жеке кездесу мүмкіндігіне, нысаналы нарықтардағы әлеуетті әріптестер мен клиенттердің шорт-парағына, нысаналы нарықтарға шығудың пысықталған жол картасына (PwC сарапшыларымен және мамандарымен бірлесіп жасалған) қол жеткізе алады.",
       "quote_lang": "kk",
@@ -45,12 +45,19 @@
       "targets": []
     },
     {
-      "block": "documents",
+      "block": "export",
       "country": "KZ",
-      "hs_scope": [],
+      "hs_scope": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "51",
+        "0101"
+      ],
       "statement": {
-        "ru": "Для экспорта продукции животноводства в Китай предприниматель подаёт запрос в Комитет ветеринарного контроля и надзора МСХ (или его территориальное подразделение) о включении предприятия в реестр зарегистрированных иностранных предприятий Главного таможенного управления КНР.",
-        "en": "To export animal products to China, the entrepreneur applies to the Veterinary Control and Supervision Committee of the Ministry of Agriculture (or its territorial unit) to have the enterprise added to the register of foreign enterprises approved by China's General Administration of Customs."
+        "ru": "Для экспорта продукции животноводства в Китай предприниматель направляет в Комитет ветеринарного контроля и надзора МСХ (или его территориальное подразделение) запрос о включении предприятия в реестр зарегистрированных иностранных предприятий Главного таможенного управления КНР, имеющих право поставлять продукцию в КНР.",
+        "en": "To export animal products to China, the business first applies to the Veterinary Control and Supervision Committee of the Ministry of Agriculture (or its territorial unit) to be added to the register of foreign establishments approved by China's General Administration of Customs for supplying products to the PRC."
       },
       "quote": "1. Кәсіпкер АШМ Ветеринарлық бақылау және қадағалау комитетіне (бұдан әрі-ВБҚК) немесе ВБҚК аумақтық бөлімшесіне кәсіпорынды ҚХР Бас кедендік басқармасының (бұдан әрі - ҚХР БКБ) тізіліміне - ҚХР-ға өнім жеткізуге құқығы бар тіркелген шетелдік кәсіпорындардың тізіміне қосуға сұраныс жібереді.",
       "quote_lang": "kk",
@@ -60,10 +67,17 @@
     {
       "block": "documents",
       "country": "KZ",
-      "hs_scope": [],
+      "hs_scope": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "51",
+        "0101"
+      ],
       "statement": {
-        "ru": "Только предприниматель, предприятие которого внесено в реестр предприятий, имеющих право поставлять продукцию в Китай, получает разрешение на экспорт партии товара и ветеринарный сертификат на экспорт продукции животноводства.",
-        "en": "Only an entrepreneur whose enterprise is entered in the register of establishments allowed to supply China obtains a permit to export a consignment and a veterinary certificate for exporting livestock products."
+        "ru": "Только предприниматель, предприятие которого включено в реестр КНР, получает разрешение на экспорт партии товара и ветеринарный сертификат на экспорт продукции животноводства.",
+        "en": "Only a business whose establishment is listed in the Chinese register obtains the permit to export a consignment and the veterinary certificate for exporting livestock products."
       },
       "quote": "9. Кәсіпорны ТІЗІЛІМГЕ енгізілген кәсіпкер тауар партиясын экспорттауға рұқсат, мал шаруашылығы өнімдерін экспорттауға арналған ветеринарлық сертификат алады.",
       "quote_lang": "kk",
@@ -73,12 +87,19 @@
     {
       "block": "export",
       "country": "KZ",
-      "hs_scope": [],
+      "hs_scope": [
+        "02",
+        "03",
+        "04",
+        "0409",
+        "51",
+        "0101"
+      ],
       "statement": {
-        "ru": "Казахстанские предприятия могут экспортировать в Китай говядину, баранину (китайская сторона ввела временные ограничения), мёд, молоко и молочные продукты, рыбу и рыбопродукты, шерсть, живых лошадей; подписан протокол по экспорту мороженой свинины.",
-        "en": "Kazakh enterprises may export to China beef, mutton (temporarily restricted by the Chinese side), honey, milk and dairy products, fish and fish products, wool and live horses; a protocol on frozen pork exports has been signed."
+        "ru": "Казахстанские предприятия могут экспортировать в Китай говядину, баранину (временно ограничена китайской стороной), мёд, молоко и молочную продукцию, рыбу и рыбную продукцию, шерсть, живых лошадей; по мороженой свинине подписан протокол.",
+        "en": "Kazakh establishments may export to China beef, mutton (temporarily restricted by the Chinese side), honey, milk and dairy products, fish and fish products, wool and live horses; a protocol has been signed on frozen pork."
       },
-      "quote": "Қазақстан кәсіпорындары Қытайға мал шаруашылығы өнімдерінің келесі түрлерін экспорттай алады: \n• Сиыр еті; \n• Қой еті (қытайлық тарап уақытша шектеулер енгізді); \n• Бал; \n• Сүт және сүт өнімдері; \n• Балық және балық өнімдері; \n• Жүн; \n• Тірі жылқылар (асыл тұқымды және пайдаланушылық, сойыс); \n• Мұздатылған шошқа етін экспорттау туралы хаттамаға қол қойылды.",
+      "quote": "• Сиыр еті; \n• Қой еті (қытайлық тарап уақытша шектеулер енгізді); \n• Бал; \n• Сүт және сүт өнімдері; \n• Балық және балық өнімдері; \n• Жүн; \n• Тірі жылқылар (асыл тұқымды және пайдаланушылық, сойыс); \n• Мұздатылған шошқа етін экспорттау туралы хаттамаға қол қойылды.",
       "quote_lang": "kk",
       "has_number": false,
       "targets": []

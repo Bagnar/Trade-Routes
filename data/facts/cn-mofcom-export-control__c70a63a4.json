@@ -1,0 +1,144 @@
+{
+  "url": "http://exportcontrol.mofcom.gov.cn/",
+  "source_id": "cn-mofcom-export-control",
+  "fetched_at": "2026-09-12T14:41:55+00:00",
+  "content_hash": "565b25da87bf20f3d46dd8091aeab501f3475709f42303b2e682cda6ebd27c51",
+  "topic": "export_control",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство коммерции КНР ведёт портал «Китайская информационная сеть по экспортному контролю», через который в онлайн-режиме оформляются разрешения на импорт и экспорт товаров и технологий двойного назначения.",
+        "en": "China's Ministry of Commerce runs the China Export Control Information Network, which provides online handling of import/export licensing for dual-use items and technologies."
+      },
+      "quote": "在线办事\n 两用物项和技术进出口审批",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В рамках процедур экспортного контроля КНР предусмотрены документы «Пояснение о конечном пользователе и конечном использовании», подаваемые через онлайн-сервис портала.",
+        "en": "China's export control procedures require an end-user and end-use statement, which is submitted through the portal's online services."
+      },
+      "quote": "最终用户和最终用途说明",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Правовую основу экспортного контроля КНР составляют Закон об экспортном контроле и Положение об экспортном контроле товаров двойного назначения, опубликованное 23 октября 2024 года.",
+        "en": "China's export control framework rests on the Export Control Law and the Regulations on Export Control of Dual-Use Items, published on 23 October 2024."
+      },
+      "quote": "中华人民共和国两用物项出口管制条例2024-10-23\n 中华人民共和国出口管制法2021-12-30",
+      "quote_lang": "zh",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "К нормативной базе экспортного контроля КНР также отнесены Закон о ядерной безопасности, Закон о биобезопасности и Закон о криптографии.",
+        "en": "China's export control legal base also includes the Nuclear Safety Law, the Biosecurity Law and the Cryptography Law."
+      },
+      "quote": "中华人民共和国核安全法2021-12-30\n 中华人民共和国生物安全法2021-12-30\n 中华人民共和国密码法2021-12-30",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "На портале работает база данных контрольного списка товаров двойного назначения, позволяющая проверить, подпадает ли товар под экспортный контроль.",
+        "en": "The portal hosts a database of the dual-use items export control list, allowing checks of whether goods are subject to export control."
+      },
+      "quote": "两用物项出口管制清单数据库",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Опубликованные кейсы правоприменения касаются экспорта без лицензии (военные тактические жилеты) и сокрытия вольфрамового порошка среди обычных грузов при вывозе.",
+        "en": "Published enforcement cases cover exporting without a licence (military tactical vests) and concealing tungsten powder among ordinary cargo for illegal export."
+      },
+      "quote": "某企业无证出口军用战术背心案2026-05-11\n 某企业将钨粉混藏于普通货物进行违规出口案2026-04-17",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Минкоммерции КНР совершенствует порядок приёма и рассмотрения сообщений о нарушениях экспортного контроля в отношении стратегических минеральных товаров двойного назначения.",
+        "en": "MOFCOM is further improving the handling of reports on violations of export controls covering strategic mineral dual-use items."
+      },
+      "quote": "商务部新闻发言人就进一步完善战略矿产两用物项出口管制违法违规行为举报处理工作答记者问",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Минкоммерции КНР включило 14 организаций из ЕС в контрольный список экспортного контроля.",
+        "en": "China's Ministry of Commerce placed 14 EU entities on its export control watch list."
+      },
+      "quote": "商务部新闻发言人就将14家欧盟实体列入出口管制管控名单答记者问",
+      "quote_lang": "zh",
+      "has_number": true,
+      "targets": [
+        "EU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "КНР объявила о контрмерах в ответ на ряд негативных мер США в отношении Китая, принятых Федеральной комиссией по связи и Министерством внутренней безопасности США.",
+        "en": "China announced countermeasures in response to a series of negative China-related measures by the US Federal Communications Commission and Department of Homeland Security."
+      },
+      "quote": "商务部新闻发言人就对美国联邦通信委员会、美国土安全部系列涉华消极措施实施反制答记者问",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": [
+        "US"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Портал предлагает предприятиям услуги по комплаенсу экспортного контроля: учебные материалы, разборы кейсов и рекомендации по созданию внутреннего механизма комплаенса.",
+        "en": "The portal offers export control compliance services for companies: training materials, case studies and guidance on building an internal compliance mechanism."
+      },
+      "quote": "合规服务 \n 培训资料 \n 合规案例",
+      "quote_lang": "zh",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 1
+}

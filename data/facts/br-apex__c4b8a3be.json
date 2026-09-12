@@ -1,0 +1,114 @@
+{
+  "url": "https://apexbrasil.com.br/",
+  "source_id": "br-apex",
+  "fetched_at": "2026-09-12T14:41:25+00:00",
+  "content_hash": "964d4a32a7f98936197b00cab5f1d3a3b7626c46919b3b31a286abde3ea9fd0b",
+  "topic": "export_support",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ApexBrasil — бразильское государственное агентство по продвижению экспорта и привлечению инвестиций, которое поддерживает бразильские компании в выходе на мировые рынки.",
+        "en": "ApexBrasil is Brazil's agency for export promotion and investment attraction, supporting Brazilian companies in reaching global markets."
+      },
+      "quote": "Com mais de duas décadas de atuação, a ApexBrasil é referência na promoção de exportações e atração de investimentos. Fortalecemos empresas brasileiras e impulsionamos o crescimento econômico do país no cenário global.",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Инструменты поддержки ApexBrasil включают программу PEIEX, обучающие курсы, участие в выставках и мероприятиях, рыночную аналитику и отраслевые проекты.",
+        "en": "ApexBrasil's support instruments include the PEIEX programme, training courses, trade fairs and events, market intelligence and sectoral projects."
+      },
+      "quote": "PEIEX\n Cursos\n Feiras e eventos\n Inteligência de Mercado\n Projeto Setorial",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Поддержка выстроена по этапам экспортной деятельности: начало экспорта (курсы, вебсериалы и практические руководства), поиск новых рынков (панели, исследования и вебинары) и продвижение компании за рубежом (выставки, мероприятия и возможности).",
+        "en": "Support is organised by stage of the export journey: starting to export (courses, web series and practical guides), seeking new markets (dashboards, studies and webinars) and promoting the company abroad (fairs, events and opportunities)."
+      },
+      "quote": "Comece a exportar\n Cursos, webseries e guias práticos\n Busque novos mercados\n Painéis, estudos e webinars\n Promova sua empresa no exterior\n Feiras, eventos e oportunidades",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В 2025 году ApexBrasil оказало услуги более 23 тысячам компаний, из которых более 51% составили микро- и малые предприятия, и поддержало объявление инвестиций на сумму свыше 10 млрд долларов США.",
+        "en": "In 2025 ApexBrasil served more than 23,000 companies, over 51% of them micro and small enterprises, and supported announced investments exceeding US$10 billion."
+      },
+      "quote": "23 mil\n empresas receberam atendimento em 2025\n +\n 51%\n das empresas atendidas foram Micro e Pequenas em 2025\n +\n US$ 10 bi\n investimentos anunciados com nosso apoio em 2025",
+      "quote_lang": "pt",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ApexBrasil ведёт специальные программы, в том числе План диверсификации экспорта, Exporta Mais Brasil, возможности соглашения Меркосур–ЕС, Destino Exportação, Jornada Exportadora, Elas Exportam и Brasil Feito à Mão.",
+        "en": "ApexBrasil runs dedicated programmes including the Export Diversification Plan, Exporta Mais Brasil, Mercosur–EU Agreement opportunities, Destino Exportação, Jornada Exportadora, Elas Exportam and Brasil Feito à Mão."
+      },
+      "quote": "Plano de Diversificação de Exportações\n Exporta Mais Brasil\n Oportunidades do Acordo Mercosul - UE\n E-xport 2026\n Destino Exportação\n Jornada Exportadora\n Mulheres e Negócios Internacionais\n Brasil Feito à Mão\n Elas Exportam",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Решения ApexBrasil сегментированы по секторам (продукты питания и агробизнес, дом и строительство, креативная экономика, игры, машины и оборудование, мода, здравоохранение, ИКТ) и по типу потребности компании.",
+        "en": "ApexBrasil solutions are segmented by sector (food, beverages and agribusiness, home and construction, creative economy, games, machinery and equipment, fashion, health, ICT) and by the company's type of need."
+      },
+      "quote": "Alimentos, Bebidas e Agronegócios \n Casa e Construção \n Economia Criativa \n Jogos Eletrônicos (Games) \n Máquinas e Equipamentos \n Moda \n Não se aplica \n Outros \n Saúde \n Tecnologia da Informação e Comunicação",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ApexBrasil организует участие бразильских компаний в международных выставках, включая Hannover Messe 2026 и Expo Osaka 2025.",
+        "en": "ApexBrasil organises Brazilian company participation in international fairs, including Hannover Messe 2026 and Expo Osaka 2025."
+      },
+      "quote": "Hannover Messe 2026\n Expo Osaka 2025",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "BR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Через PEIEX компании могут начать процесс интернационализации; агентство также предоставляет персонализированное сопровождение для поиска рынков и партнёров.",
+        "en": "Through PEIEX companies can begin their internationalisation process; the agency also provides tailored support to explore markets and find strategic partners."
+      },
+      "quote": "A marca de bolsas artesanais iniciou seu processo de internacionalização após participar do PEIEX.",
+      "quote_lang": "pt",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

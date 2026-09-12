@@ -1,0 +1,75 @@
+{
+  "url": "https://www.wassenaar.org/control-lists/",
+  "source_id": "wassenaar",
+  "fetched_at": "2026-09-12T14:41:51+00:00",
+  "content_hash": "e6374a80dbf6baedf4f5ec109893a298cf058588e40f268d7b378bf423ced3e7",
+  "topic": "export_control",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Вассенаарские договорённости публикуют текущие контрольные списки в виде «Публичных документов, том II — Список товаров и технологий двойного назначения и Список военных товаров».",
+        "en": "The Wassenaar Arrangement publishes its current control lists as 'Public Documents, Vol II – List of Dual-Use Goods and Technologies and Munitions List'."
+      },
+      "quote": "CURRENT CONTROL LISTS (*)\n Public Documents, Vol II – List of Dual-Use Goods and Technologies and Munitions List",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Списки отражают договорённости, зафиксированные в Приложении 5 к Первоначальным элементам от 19 декабря 1995 года, и все последующие поправки, включая согласованные на Пленарном заседании 2025 года в декабре 2025 года.",
+        "en": "The lists reflect the agreements recorded in Appendix 5 to the Initial Elements of 19 December 1995 and all subsequent amendments, including those agreed by the 2025 Plenary in December 2025."
+      },
+      "quote": "* These Lists reflect the agreements recorded in Appendix 5 to the Initial Elements, dated 19 December 1995, and all subsequent amendments, including those agreed by the 2025 Plenary in December 2025.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Дата внедрения и вступления списков в силу может различаться в каждом государстве-участнике; следует обращаться к соответствующим национальным контактным органам.",
+        "en": "The implementation date and entry into effect of the lists may vary in each Participating State, and exporters should consult the respective National Contacts."
+      },
+      "quote": "Implementation date and entry into effect may vary in each Participating State.\nPlease consult the respective National Contacts.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Существуют формальные критерии отбора товаров двойного назначения, включая чувствительные и особо чувствительные позиции.",
+        "en": "There are formal criteria for the selection of dual-use goods, including sensitive and very sensitive items."
+      },
+      "quote": "SELECTION CRITERIA\n Criteria for the Selection of Dual-Use Goods, including Sensitive and Very Sensitive Items",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Список военных товаров публикуется отдельно, чтобы помочь странам, не входящим в Вассенаарские договорённости, разрабатывать или укреплять национальные списки экспортного контроля обычных вооружений; полными и авторитетными текстами остаются текущие контрольные списки.",
+        "en": "The Munitions List is published separately to inform and assist non-WA countries developing or strengthening national export control lists for conventional arms; the current Control Lists remain the complete and authoritative texts."
+      },
+      "quote": "The Wassenaar Arrangement’s Munitions List is published here separately for the specific purpose of informing and assisting non-WA countries which are developing or strengthening their national export control list for conventional arms. For the complete and authoritative texts of the WA Lists, please see the current Control Lists above.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

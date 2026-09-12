@@ -33,10 +33,10 @@
   "lang": "ru",
   "isDemo": true,
   "status": {
-    "sourcesTotal": 8,
+    "sourcesTotal": 13,
     "sourcesMissing": 0,
     "lastChecked": "2026-09-12",
-    "text": "На странице 53 строк из официальных источников с дословной цитатой (8 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
+    "text": "На странице 94 строк из официальных источников с дословной цитатой (13 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
   },
   "sanctions": {
     "tag": "Санкционный коридор",
@@ -117,7 +117,7 @@
       {
         "name": "Препятствия",
         "score": 2,
-        "basis": "санкционные режимы UK, US действуют в отношении одной из стран пары — препятствие (расчёты, логистика, отдельные товарные запреты); запрет именно этой группы источники не называют"
+        "basis": "санкционные режимы CA, EU, UK, US действуют в отношении одной из стран пары — препятствие (расчёты, логистика, отдельные товарные запреты); запрет именно этой группы источники не называют"
       },
       {
         "name": "Господдержка",
@@ -161,7 +161,7 @@
         "to": "Канада",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: UK, US",
+        "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "7 из 10",
@@ -173,7 +173,7 @@
         "here": true,
         "duty": "5%",
         "agreement": "EAEU - Iran",
-        "sanctions": "есть: UK, US",
+        "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "6 из 10",
@@ -184,7 +184,7 @@
         "to": "Турция",
         "duty": "6.5%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: UK, US",
+        "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "5 из 10",
@@ -195,7 +195,7 @@
         "to": "Китай",
         "duty": "27%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: UK, US",
+        "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "3 из 10",
@@ -249,6 +249,34 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Таможенный союз ЕС является основой Европейского союза и необходимым элементом функционирования единого рынка.",
+        "quote": "The Customs Union is a foundation of the European Union and an essential element in the functioning of the single market",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Свободные зоны — это огороженные территории внутри таможенной территории ЕС, куда товары не из ЕС могут ввозиться беспошлинно.",
+        "quote": "Free zones\n Enclosed areas within the EU customs territory where non-EU goods can be introduced free of duty",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },
@@ -431,6 +459,468 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://www.nalog.gov.ru/rn77/taxation/taxes/nds/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Канадские санкции против России введены по Закону о специальных экономических мерах (SEMA); Положения о специальных экономических мерах (Россия) вступили в силу 17 марта 2014 года и включают заморозку активов, экспортно-импортные ограничения и финансовые запреты.",
+        "quote": "On March 17, 2014, the Special Economic Measures (Russia) Regulations (“the Regulations”) came into force.\n Types of sanctions\n Asset freeze\n Export and import restrictions\n Financial prohibitions",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Любому лицу в Канаде и любому канадцу за рубежом запрещено осуществлять операции с имуществом designated persons из Приложения 1, предоставлять им товары и оказывать финансовые или иные связанные услуги.",
+        "quote": "The Regulations impose an asset freeze and dealings prohibition on designated persons listed in Schedule 1, which include both individuals and entities. It is prohibited for any person in Canada and any Canadian outside Canada to:\n deal in any property, wherever situated, held by or on behalf of a designated person whose name is listed in Schedule 1",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещены операции с новым долгом сроком погашения более 30 дней для лиц из Приложения 2 и более 90 дней для лиц из Приложения 3, а также операции с новыми ценными бумагами лиц из Приложения 2.",
+        "quote": "With some exceptions, they prohibit any person in Canada and Canadians abroad from dealing in new debt of longer than 30 days maturity in relation to persons listed in Schedule 2, or 90 days maturity in relation to persons listed in Schedule 3. Additionally, the Regulations prohibit any person in Canada or Canadians abroad from dealing in new securities in relation to persons listed in Schedule 2.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещено оказание финансовых и любых иных услуг лицам за пределами Канады, не являющимся канадцами, если услуги связаны с судном, включённым в Приложение 1.1.",
+        "quote": "the provision of financial services or any other services to any person outside Canada who is not Canadian, where the services relate to a ship listed in Schedule 1.1 of the Regulations.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Услуги из Приложения 10, связанные с морской перевозкой российской сырой нефти и некоторых нефтепродуктов, запрещены, если нефть куплена не по цене на уровне или ниже потолка, указанного в Приложении 10.01.",
+        "quote": "any person in Canada or any Canadian outside Canada from providing any services listed in Schedule 10, in relation to the maritime transport of Russian crude oil and certain petroleum products, unless the oil is purchased at or below the price outlined in Schedule 10.01.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "19 февраля 2026 года Канада снизила потолок цен на российскую сырую нефть в Приложении 10.01 с 47,60 долл. США до 44,10 долл. США за баррель.",
+        "quote": "Canada is also amending Schedule 10.01 to lower the oil price cap (OPC) per barrel on Russian crude oil from US$47.60 to US$44.10.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Лицам и организациям в Канаде запрещено предоставлять любые услуги страхования, перестрахования и андеррайтинга для воздушных судов и авиакосмической продукции, принадлежащих, контролируемых, зарегистрированных, зафрахтованных или эксплуатируемых лицами, находящимися в России.",
+        "quote": "individuals and entities in Canada from providing any and all insurance, reinsurance, and underwriting services for aircraft, and aviation and aerospace products either owned by, controlled by, registered to, chartered by, or operated by entities and individuals resident, incorporated, or domiciled in Russia.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещено оказание услуг, перечисленных в колонке 1 Приложения 8, российским нефтяной, газовой, химической и обрабатывающей отраслям.",
+        "quote": "the provision of any services referred to in column 1 of Schedule 8, to the Russian oil, gas, chemical and manufacturing industries.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Содействие, помощь или поощрение запрещённой деятельности также запрещены; Положения предусматривают механизм пересмотра для исключения имён из перечня по заявлению designated person.",
+        "quote": "Causing, assisting or promoting prohibited activities is likewise prohibited.\n The Regulations provide a review mechanism to remove names from the schedule upon receipt of an application from a designated person.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Лица, включённые в перечень по этим Положениям, также не допускаются в Канаду согласно Закону об иммиграции и защите беженцев.",
+        "quote": "Individuals listed under the Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "В Положениях предусмотрены исключения из всех запретов, в том числе для платежей по ранее заключённым контрактам, пенсионных выплат, дипломатических миссий и международных организаций, юридических услуг и погашения займов.",
+        "quote": "There are exceptions from all prohibitions in the Regulations relating to:\n Payments relating to designated persons relating to prior contracts;\n Pension payments;\n Diplomatic missions and international organizations;\n Prior funds held by a designated person belonging to a Canadian;\n Legal services for a designated person;\n Loan repayments;",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "13 июня 2025 года Канада расширила санкции на суда: были внесены 201 новое судно и запрещены все услуги, связанные с включёнными в перечень судами; введены новые экспортные и импортные запреты с отложенным вступлением в силу и исключениями для ранее заключённых контрактов.",
+        "quote": "In addition, Canada further listed two hundred and one (201) new vessels, and expanded Canada’s vessel sanctions to ban all services related to listed vessels. Furthermore, Canada imposed new export bans on a wide range of items, including industrial goods, goods related to chemical and biological weapons and advanced materials – and imposed new import bans on many other items, including coal, metals and goods from which Russia generates revenue.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "7 декабря 2022 года Канада запретила предоставление 8 видов услуг, связанных с морской перевозкой российской сырой нефти, если нефть не куплена по цене на уровне или ниже потолка коалиции G7+; запрет распространён на некоторые нефтепродукты.",
+        "quote": "On December 7, 2022, Canada further amended the Special Economic Measures (Russia) Regulations to prohibit the provision of 8 services, in relation to the maritime transport of Russian crude oil, unless the oil is purchased at or below the price outlined in the G7+ Coalition Oil Price Cap List.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Существуют исключения из запрета на морскую перевозку сырой нефти и нефтепродуктов — для отдельных государств — членов ЕС, чрезвычайных ситуаций и грузов, погруженных в определённые даты.",
+        "quote": "There are exceptions from the prohibition on maritime transport of crude oil and petroleum products in relation to certain EU Member States, emergency situations, and goods loaded on specific dates.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Канадские санкции против Ирана введены на основании Закона об ООН и Закона об особых экономических мерах: Положения об осуществлении резолюций ООН по Ирану вступили в силу 22 февраля 2007 года, а Положения об особых экономических мерах (Иран) — 22 июля 2010 года.",
+        "quote": "On February 22, 2007, the Regulations Implementing the United Nations Resolutions on Iran came into force. On July 22, 2010, the Special Economic Measures (Iran) Regulations came into force.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Канадский режим санкций по Ирану включает оружейное эмбарго, замораживание активов, экспортные и импортные ограничения, финансовые запреты и запрет на техническую помощь.",
+        "quote": "Types of sanctions\n Arms embargo\n Asset freeze\n Export and import restrictions\n Financial Prohibitions\n Technical assistance prohibition",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Действуют широкие запреты на экспорт в Иран и импорт из Ирана ядерных, двойного назначения и связанных с баллистическими ракетами материалов, оборудования и технологий, а также комплексное оружейное эмбарго и запрет на оказание услуг иранским судам.",
+        "quote": "broad prohibitions on exports to and imports from Iran: nuclear, dual-use, and ballistic missile-related material, equipment, and technology;",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещено предоставлять любому лицу в Иране техническую помощь, финансовые или связанные услуги, а также имущество, финансовую помощь или инвестиции, связанные с поставкой, продажей, передачей, производством или использованием товаров, подпадающих под экспортные запреты.",
+        "quote": "a prohibition on the provision to any person in Iran of technical assistance, financial or related services related to the supply, sale, transfer, manufacture, or use of the products subject to the export prohibitions;",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Положения SEMA (Иран) вводят запрет на операции (фактическое замораживание активов) с лицами, указанными в Приложении 1: запрещены сделки с их имуществом, предоставление им товаров и финансовых или иных услуг.",
+        "quote": "The Special Economic Measures (Iran) Regulations (the Iran SEMA Regulations) impose a dealings prohibition, an effective asset freeze, on designated persons listed in Schedule 1.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "international.gc.ca",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Лица, включённые в списки по Положениям SEMA (Иран), также признаются недопустимыми к въезду в Канаду согласно Закону об иммиграции и защите беженцев.",
+        "quote": "Individuals listed under the Iran SEMA Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 19 июня 2023 года Положения ООН по Ирану содержат гуманитарное изъятие: разрешены платежи, товары и услуги, необходимые для своевременной доставки срочной гуманитарной помощи или обеспечения базовых человеческих потребностей, если они предоставляются определёнными организациями.",
+        "quote": "On June 19, 2023, the Regulations Implementing the United Nations Resolutions on Iran were amended to allow the provision, processing or payment of funds, other financial assets, or economic resources, or the provision of goods and services that are necessary to ensure the timely delivery of urgently needed humanitarian assistance, or to support other activities related to basic human needs, if provided by specified groups.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "30 сентября 2025 года Канада изменила Положения ООН по Ирану, чтобы выполнить решение Совета Безопасности ООН о восстановлении ранее отменённых санкций после активации механизма snapback, запущенного 28 августа 2025 года странами E3; санкции ООН были восстановлены 28 сентября 2025 года.",
+        "quote": "On August 28, 2025, France, Germany, and the United Kingdom (collectively the “E3”) triggered the snapback mechanism process under the JCPOA, which led to the reimposition of UN sanctions on Iran on September 28, 2025, which must now be implemented by UN Member States.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "13 августа 2026 года Канада внесла в списки по Положениям SEMA (Иран) пять физических лиц, связанных с усилиями по препятствованию правам судоходства в районе Ормузского пролива.",
+        "quote": "On August 13, 2026, Canada amended the Special Economic Measures (Iran) Regulations to list five individuals. All five individuals have engaged in activities that undermine international peace, security or stability in a manner that is consistent with the policies of Iran.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "25 марта 2026 года Канада внесла в списки пять физических лиц и четыре организации, связанные с закупочными сетями, поставляющими технологии для производства и передачи вооружений КСИР.",
+        "quote": "On March 25, 2026, Canada amended the Special Economic Measures (Iran) Regulations to list five individuals and four entities.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "6 марта 2025 года Канада расширила критерии включения в списки по Положениям об особых экономических мерах (Иран), позволив применять санкции к любым действующим или бывшим высокопоставленным государственным чиновникам, а не только к руководству КСИР.",
+        "quote": "On March 6, 2025, Canada amended the Special Economic Measures (Iran) Regulations to expand the scope of the listing criteria under the Iran Regulations to allow the imposition of sanctions in response to the evolving threat that Iran poses to peace and security in the region and globally, as well as to designate any current or former senior government officials, beyond senior IRGC officials.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "international.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Экономические (секторальные) санкции ЕС против России установлены Решением Совета 2014/512/CFSP и Регламентом Совета (ЕС) № 833/2014 и нацелены на обмен с Россией в отдельных секторах экономики.",
+        "quote": "The economic (or sectoral) sanctions target exchanges with Russia in specific economic sectors. The sanctions regime laying down these measures consists of Council Decision 2014/512/CFSP and Council Regulation (EU) No 833/2014.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "finance.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Регламенты Совета ЕС о санкциях адресованы всем физическим лицам, организациям и органам, находящимся под юрисдикцией ЕС, и создают для них юридические обязательства.",
+        "quote": "The respective Council Regulations identified below are addressed to all individuals, organisations and bodies under EU jurisdiction, for which they create legal obligations.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "finance.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Финансовые меры включают заморозку резервов и активов Центрального банка России, запрет на финансирование российского правительства и ЦБ, отключение отдельных российских банков от SWIFT, запрет на приём депозитов и на предоставление крипто- и трастовых услуг.",
+        "quote": "Blocking of the Russian Central Bank’s reserves and assets, as well as a prohibition on the financing of the Russian government and Central Bank\n Prohibitions on a range of financial interactions, financial rating services and transactions with Russia, as well as prohibitions on the provision of banknotes and sale of securities\n Decoupling of certain Russian banks from the SWIFT messaging system",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "finance.ec.europa.eu",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Введены запреты на транзит некоторых запрещённых товаров через территорию России, на оказание технической помощи и брокерских услуг по запрещённым товарам, а также на продажу, лицензирование или передачу прав интеллектуальной собственности и коммерческих секретов.",
+        "quote": "Transit bans for certain prohibited goods via the Russian territory\n Prohibition to provide technical assistance or brokering services for prohibited goods, as well as to sell, license, transfer or refer intellectual property rights and trade secrets",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "finance.ec.europa.eu",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещено оказание России определённых услуг, включая бизнес-услуги, юридические консультации и ИТ-консалтинг.",
+        "quote": "Prohibition to provide certain services (business, legal advisory, IT consultancy etc.)",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "finance.ec.europa.eu",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Запрещена трансляция в ЕС определённых российских государственных медиа.",
+        "quote": "Prohibition on the broadcast in the EU of certain Russian state-owned media outlets",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "finance.ec.europa.eu",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Индивидуальные санкции (запрет на въезд, заморозка активов и запрет предоставления средств) охватывают 1 206 физических лиц и более 108 организаций и основаны на Решении 2014/145/CFSP и Регламенте (ЕС) № 269/2014.",
+        "quote": "The measures consist of travel bans and financial measures (asset freezes and a prohibition on making funds or economic resources available) that now target a total of 1 206 individuals and over 108 organisations responsible for undermining Ukraine’s territorial integrity, sovereignty and independence.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "finance.ec.europa.eu",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 2014 года действуют ограничения на торговлю и инвестиции в отношении Крыма и Севастополя (Решение 2014/386/CFSP, Регламент (ЕС) № 692/2014), а с 2022 года — в отношении неподконтрольных правительству районов Донецкой, Херсонской, Луганской и Запорожской областей Украины (Регламент (ЕС) 2022/263).",
+        "quote": "Since 2014, restrictions on trade and investment have been imposed regarding to Crimea and Sevastopol. This sanctions regime consists of Council Decision 2014/386/CFSP and Council Regulation (EU) No 692/2014.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "finance.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },
@@ -1072,6 +1562,20 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "text": "Проект «электронной таможни» Европейской комиссии направлен на замену бумажных таможенных процедур едиными для ЕС электронными процедурами.",
+        "quote": "The project, initiated by the European Commission, aims to replace paper-format customs procedures with EU-wide electronic procedures to create a more efficient and modern customs environment.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "taxation-customs.ec.europa.eu",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://taxation-customs.ec.europa.eu/customs-4_en"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Маршруты, сроки и ориентир стоимости для этой группы не собраны.",
         "stamp": {
           "status": "none",
@@ -1121,6 +1625,16 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "source": "taxation-customs.ec.europa.eu",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "source": "cbi.ir",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
@@ -1132,6 +1646,36 @@
       },
       {
         "source": "nalog.gov.ru",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "international.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "international.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "finance.ec.europa.eu",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
         "status": {
@@ -1172,6 +1716,16 @@
       },
       {
         "source": "bafa.de",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "wassenaar.org",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
         "status": {
@@ -1305,6 +1859,76 @@
           "label": "проверено 12 сен 2026",
           "verifiedAt": "2026-09-12",
           "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Вассенаарские договорённости публикуют текущие контрольные списки в виде «Публичных документов, том II — Список товаров и технологий двойного назначения и Список военных товаров».",
+        "quote": "CURRENT CONTROL LISTS (*)\n Public Documents, Vol II – List of Dual-Use Goods and Technologies and Munitions List",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Списки отражают договорённости, зафиксированные в Приложении 5 к Первоначальным элементам от 19 декабря 1995 года, и все последующие поправки, включая согласованные на Пленарном заседании 2025 года в декабре 2025 года.",
+        "quote": "* These Lists reflect the agreements recorded in Appendix 5 to the Initial Elements, dated 19 December 1995, and all subsequent amendments, including those agreed by the 2025 Plenary in December 2025.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Дата внедрения и вступления списков в силу может различаться в каждом государстве-участнике; следует обращаться к соответствующим национальным контактным органам.",
+        "quote": "Implementation date and entry into effect may vary in each Participating State.\nPlease consult the respective National Contacts.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Существуют формальные критерии отбора товаров двойного назначения, включая чувствительные и особо чувствительные позиции.",
+        "quote": "SELECTION CRITERIA\n Criteria for the Selection of Dual-Use Goods, including Sensitive and Very Sensitive Items",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Список военных товаров публикуется отдельно, чтобы помочь странам, не входящим в Вассенаарские договорённости, разрабатывать или укреплять национальные списки экспортного контроля обычных вооружений; полными и авторитетными текстами остаются текущие контрольные списки.",
+        "quote": "The Wassenaar Arrangement’s Munitions List is published here separately for the specific purpose of informing and assisting non-WA countries which are developing or strengthening their national export control list for conventional arms. For the complete and authoritative texts of the WA Lists, please see the current Control Lists above.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "wassenaar.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.wassenaar.org/control-lists/"
         },
         "_assembled": "assembled by pipeline/assemble.py"
       },

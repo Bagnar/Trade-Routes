@@ -1,0 +1,49 @@
+{
+  "url": "https://trade.ec.europa.eu/access-to-markets/en/home",
+  "source_id": "eu-access2markets",
+  "fetched_at": "2026-09-12T14:41:27+00:00",
+  "content_hash": "26aea5a4d827243127f574afa8be2ee1512b9f4e241be60a4f4ff1fb937c5dd2",
+  "topic": "customs_tariff,rules_of_origin,import_procedures,trade_agreements",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Портал Access2Markets Европейской комиссии предоставляет инструмент My Trade Assistant, позволяющий найти условия торговли конкретным товаром, включая правила происхождения.",
+        "en": "The European Commission's Access2Markets portal provides the My Trade Assistant tool to search the conditions for trading a specific product, including rules of origin."
+      },
+      "quote": "My Trade Assistant \n Search the conditions to trade your product (including Rules of Origin).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Через раздел Single Entry Point портала можно найти информацию о торговых барьерах или сообщить о них.",
+        "en": "The portal's Single Entry Point can be used to find or report a trade barrier."
+      },
+      "quote": "Single Entry Point \n Visit the Single Entry Point to find or report a trade barrier.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "EU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Раздел 'Trade agreements' портала содержит сведения о торговых соглашениях ЕС и соответствующую статистику.",
+        "en": "The portal's 'Trade agreements' section provides information on EU trade agreements and statistics."
+      },
+      "quote": "Trade agreements \n Explore EU trade agreements and statistics.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

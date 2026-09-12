@@ -1,0 +1,520 @@
+{
+  "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng",
+  "source_id": "sanc-ca",
+  "fetched_at": "2026-09-12T14:41:28+00:00",
+  "content_hash": "2fcbdb8c49a23eca7df289e6c88a900a4e30aa332a6ce2b2a05b7e5587970150",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канадские санкции против России введены по Закону о специальных экономических мерах (SEMA); Положения о специальных экономических мерах (Россия) вступили в силу 17 марта 2014 года и включают заморозку активов, экспортно-импортные ограничения и финансовые запреты.",
+        "en": "Canada's Russia sanctions are imposed under the Special Economic Measures Act; the Special Economic Measures (Russia) Regulations came into force on March 17, 2014 and include an asset freeze, export and import restrictions and financial prohibitions."
+      },
+      "quote": "On March 17, 2014, the Special Economic Measures (Russia) Regulations (“the Regulations”) came into force.\n Types of sanctions\n Asset freeze\n Export and import restrictions\n Financial prohibitions",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Любому лицу в Канаде и любому канадцу за рубежом запрещено осуществлять операции с имуществом designated persons из Приложения 1, предоставлять им товары и оказывать финансовые или иные связанные услуги.",
+        "en": "Any person in Canada and any Canadian outside Canada is prohibited from dealing in property of persons designated in Schedule 1, making goods available to them, or providing them any financial or related service."
+      },
+      "quote": "The Regulations impose an asset freeze and dealings prohibition on designated persons listed in Schedule 1, which include both individuals and entities. It is prohibited for any person in Canada and any Canadian outside Canada to:\n deal in any property, wherever situated, held by or on behalf of a designated person whose name is listed in Schedule 1",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещены операции с новым долгом сроком погашения более 30 дней для лиц из Приложения 2 и более 90 дней для лиц из Приложения 3, а также операции с новыми ценными бумагами лиц из Приложения 2.",
+        "en": "Dealing in new debt of longer than 30 days maturity for persons in Schedule 2, or 90 days for persons in Schedule 3, is prohibited, as is dealing in new securities of Schedule 2 persons."
+      },
+      "quote": "With some exceptions, they prohibit any person in Canada and Canadians abroad from dealing in new debt of longer than 30 days maturity in relation to persons listed in Schedule 2, or 90 days maturity in relation to persons listed in Schedule 3. Additionally, the Regulations prohibit any person in Canada or Canadians abroad from dealing in new securities in relation to persons listed in Schedule 2.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "logistics",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Судам, зарегистрированным в России либо используемым, арендованным или зафрахтованным в интересах России, российского лица или designated person, запрещено заходить в порты Канады и проходить через канадские воды.",
+        "en": "Ships registered in Russia, or used, leased or chartered by or for the benefit of Russia, a person in Russia or a designated person, are barred from docking in Canada or passing through Canadian waters."
+      },
+      "quote": "any ship that is registered in Russia or used, leased or chartered, in whole or in part, by or on behalf of or for the benefit of Russia, a person in Russia or a designated person from docking in Canada or passing through Canadian waters.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещено оказание финансовых и любых иных услуг лицам за пределами Канады, не являющимся канадцами, если услуги связаны с судном, включённым в Приложение 1.1.",
+        "en": "Providing financial or any other services to a non-Canadian person outside Canada is prohibited where the services relate to a ship listed in Schedule 1.1 of the Regulations."
+      },
+      "quote": "the provision of financial services or any other services to any person outside Canada who is not Canadian, where the services relate to a ship listed in Schedule 1.1 of the Regulations.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт, продажа, поставка или отгрузка в Россию товаров из Приложения 4 для использования в разведке и добыче нефти на шельфе глубиной более 500 м, сланцевой и арктической нефти, включая связанные финансовые, технические и иные услуги.",
+        "en": "Export, sale, supply or shipping to Russia of Schedule 4 goods for use in offshore (deeper than 500m), shale or Arctic oil exploration and production is banned, including related financial, technical or other services."
+      },
+      "quote": "the export, sale, supply or shipping of goods listed in Schedule 4, to Russia or to any person in Russia for their use in offshore oil (depth greater than 500m), shale oil or Arctic oil exploration and production. This includes a ban on the provision of any financial, technical or other services related to the goods subject to this prohibition.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импорт, покупка или приобретение из России определённых нефтепродуктов, перечисленных в Приложении 5, запрещены для лиц в Канаде и канадцев за рубежом.",
+        "en": "Import, purchase or acquisition of the specific petroleum products listed in Schedule 5 from Russia is prohibited for persons in Canada and Canadians abroad."
+      },
+      "quote": "the import, purchase or acquisition by any person in Canada and any Canadian outside Canada, of specific petroleum products listed in Schedule 5, from Russia or from any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "2701"
+      ],
+      "statement": {
+        "ru": "Запрещён импорт, покупка или приобретение из России угля, указанного в колонке 1 Приложения 5.01.",
+        "en": "Import, purchase or acquisition from Russia of coal referred to in column 1 of Schedule 5.01 is prohibited."
+      },
+      "quote": "the import, purchase or acquisition by any person in Canada and any Canadian outside Canada, of coal referred to in column 1 of Schedule 5.01, from Russia or from any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт, продажа, поставка или отгрузка в Россию авиационного топлива и присадок, указанных в колонке 1 Приложения 5.052.",
+        "en": "Export, sale, supply or shipping to Russia of jet fuel and additives referred to in column 1 of Schedule 5.052 is prohibited."
+      },
+      "quote": "the export, sale, supply or shipping by any person in Canada and any Canadian outside Canada, of jet fuel and additives referred to in column 1 of Schedule 5.052, to Russia or to any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Услуги из Приложения 10, связанные с морской перевозкой российской сырой нефти и некоторых нефтепродуктов, запрещены, если нефть куплена не по цене на уровне или ниже потолка, указанного в Приложении 10.01.",
+        "en": "Services listed in Schedule 10 relating to maritime transport of Russian crude oil and certain petroleum products are prohibited unless the oil is purchased at or below the price cap in Schedule 10.01."
+      },
+      "quote": "any person in Canada or any Canadian outside Canada from providing any services listed in Schedule 10, in relation to the maritime transport of Russian crude oil and certain petroleum products, unless the oil is purchased at or below the price outlined in Schedule 10.01.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "19 февраля 2026 года Канада снизила потолок цен на российскую сырую нефть в Приложении 10.01 с 47,60 долл. США до 44,10 долл. США за баррель.",
+        "en": "On February 19, 2026, Canada amended Schedule 10.01 to lower the oil price cap on Russian crude oil from US$47.60 to US$44.10 per barrel."
+      },
+      "quote": "Canada is also amending Schedule 10.01 to lower the oil price cap (OPC) per barrel on Russian crude oil from US$47.60 to US$44.10.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт, продажа, поставка или отгрузка в Россию любых товаров и технологий, включённых в Restricted Goods and Technologies List (электроника, компьютеры, телекоммуникации, сенсоры и лазеры, навигация и авионика, морская, аэрокосмическая и транспортная техника).",
+        "en": "Exporting, selling, supplying or shipping to Russia any good or technology described in the Restricted Goods and Technologies List is prohibited; the list covers electronics, computers, telecommunications, sensors and lasers, navigation and avionics, marine, aerospace and transportation."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any good, wherever situated, or to provide any technology, to Russia or to any person in Russia, if it is described in the Restricted Goods and Technologies List.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт в Россию предметов роскоши, указанных в колонке 1 Части 1 Приложения 6, а также импорт из России предметов роскоши из колонки 1 Части 2 Приложения 6.",
+        "en": "Export to Russia of luxury goods in column 1 of Part 1 of Schedule 6 is banned, and import from Russia of luxury goods in column 1 of Part 2 of Schedule 6 is also banned."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any luxury good referred to in column 1 of Part 1 to Schedule 6, wherever situated, to Russia or to any person in Russia.\n the import, purchase or acquisition by any person in Canada and any Canadian outside Canada, of any luxury good referred to in column 1 of Part 2 of Schedule 6, wherever situated, from Russia or from any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт в Россию любых товаров из колонки 1 Приложения 7, которые могут использоваться для производства вооружений.",
+        "en": "Exporting to Russia any good that could be used for manufacturing weapons, as referred to in column 1 of Schedule 7, is prohibited."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any good that could be used for the manufacturing weapons referred to in column 1 of Schedule 7, wherever situated, to Russia or to any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лицам и организациям в Канаде запрещено предоставлять любые услуги страхования, перестрахования и андеррайтинга для воздушных судов и авиакосмической продукции, принадлежащих, контролируемых, зарегистрированных, зафрахтованных или эксплуатируемых лицами, находящимися в России.",
+        "en": "Individuals and entities in Canada may not provide any insurance, reinsurance or underwriting services for aircraft and aviation/aerospace products owned, controlled, registered, chartered or operated by persons resident, incorporated or domiciled in Russia."
+      },
+      "quote": "individuals and entities in Canada from providing any and all insurance, reinsurance, and underwriting services for aircraft, and aviation and aerospace products either owned by, controlled by, registered to, chartered by, or operated by entities and individuals resident, incorporated, or domiciled in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещено оказание услуг, перечисленных в колонке 1 Приложения 8, российским нефтяной, газовой, химической и обрабатывающей отраслям.",
+        "en": "Providing any of the services referred to in column 1 of Schedule 8 to the Russian oil, gas, chemical and manufacturing industries is prohibited."
+      },
+      "quote": "the provision of any services referred to in column 1 of Schedule 8, to the Russian oil, gas, chemical and manufacturing industries.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт в Россию товаров и технологий, указанных в Приложении 5.1; запрещён импорт из России товаров, указанных в колонке 1 Приложения 9.",
+        "en": "Export to Russia of goods or technology referred to in Schedule 5.1 is prohibited, and import from Russia of goods referred to in column 1 of Schedule 9 is prohibited."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada from exporting, selling, supplying or shipping any good or technology, wherever situated, to Russia or to any person in Russia if the good or technology is referred to in Schedule 5.1.\n any person in Canada and any Canadian outside Canada to import, purchase or acquire from Russia or from any person in Russia if the good is referred to in column 1 of Schedule 9.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "93"
+      ],
+      "statement": {
+        "ru": "Запрещён ввоз в Канаду любого российского оружия, боеприпасов и иных вооружений, включая охотничьи ножи и пневматические винтовки.",
+        "en": "Importing, purchasing, acquiring or shipping any Russian arms, ammunition and other weapons, including hunting knives and air rifles, into Canada is prohibited."
+      },
+      "quote": "importing, purchasing, acquiring or shipping any and all Russian arms, ammunition and other weapons, including hunting knives and air rifles into Canada.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт, продажа, поставка или отгрузка в Россию вооружений и связанных материалов, а также предоставление любых финансовых, технических или иных услуг, связанных с их продажей, передачей, производством, обслуживанием или использованием.",
+        "en": "Exporting, selling, supplying or shipping arms and related material to Russia is prohibited, as is providing any financial, technical or other services related to their sale, supply, transfer, manufacture, maintenance or use."
+      },
+      "quote": "persons in Canada and Canadians abroad from exporting, selling, supplying or shipping arms and related material, wherever situated, to Russia or to any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён экспорт в Россию химикатов и товаров, связанных с химическим и биологическим оружием, перечисленных в колонке 1 Частей 1, 2 и 3 Приложения 10.1.",
+        "en": "Export to Russia of chemicals and goods related to chemical and biological weapons referred to in column 1 of Parts 1, 2 and 3 of Schedule 10.1 is prohibited."
+      },
+      "quote": "the export, sale, supply or shipping by any person in Canada and any Canadian outside Canada, of chemicals and goods related to chemical and biological weapons referred to in column 1 of Parts 1, 2, and 3 of Schedule 10.1, to Russia or to any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Запрещён импорт, покупка или приобретение из России товаров, указанных в колонке 1 Части 1 или 2 Приложения 11, а также товаров, приносящих доход, из колонки 1 Приложения 13.",
+        "en": "Import, purchase or acquisition from Russia of goods referred to in column 1 of Part 1 or 2 of Schedule 11, and of revenue-generating goods in column 1 of Schedule 13, is prohibited."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada to import, purchase or acquire any good referred to in column 1 of Part 1 or 2 of Schedule 11 from Russia or from any person in Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "7102",
+        "7103"
+      ],
+      "statement": {
+        "ru": "Запрещён импорт из России товаров из колонки 1 Части 1 Приложения 12 (алмазы), если только они не были вывезены из России в третью страну до 1 марта 2024 года для камней весом 1,0 карата и более и до 1 сентября 2024 года для камней от 0,5 до 1,0 карата.",
+        "en": "Import from Russia of goods in column 1 of Part 1 of Schedule 12 is banned unless they were exported from Russia to a third country before March 1, 2024 for goods of 1.0 carat or more, and before September 1, 2024 for goods of 0.5 carat or more but less than 1.0 carat."
+      },
+      "quote": "any person in Canada and any Canadian outside Canada to import, purchase or acquire any good referred to in column 1 of Part 1 of Schedule 12, wherever situated, from Russia or from any person in Russia, unless the goods were exported from Russia to a country other than Canada before March 1, 2024, for goods weighing 1.0 carat or more, and before September 1, 2024, for goods weighing 0.5 carat or more, but less than 1.0 carat.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Содействие, помощь или поощрение запрещённой деятельности также запрещены; Положения предусматривают механизм пересмотра для исключения имён из перечня по заявлению designated person.",
+        "en": "Causing, assisting or promoting prohibited activities is itself prohibited, and the Regulations provide a review mechanism to delist a designated person upon application."
+      },
+      "quote": "Causing, assisting or promoting prohibited activities is likewise prohibited.\n The Regulations provide a review mechanism to remove names from the schedule upon receipt of an application from a designated person.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лица, включённые в перечень по этим Положениям, также не допускаются в Канаду согласно Закону об иммиграции и защите беженцев.",
+        "en": "Individuals listed under the Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act."
+      },
+      "quote": "Individuals listed under the Regulations are also inadmissible to Canada under the Immigration and Refugee Protection Act.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В Положениях предусмотрены исключения из всех запретов, в том числе для платежей по ранее заключённым контрактам, пенсионных выплат, дипломатических миссий и международных организаций, юридических услуг и погашения займов.",
+        "en": "The Regulations contain exceptions from all prohibitions, including for payments under prior contracts, pension payments, diplomatic missions and international organizations, legal services for a designated person, and loan repayments."
+      },
+      "quote": "There are exceptions from all prohibitions in the Regulations relating to:\n Payments relating to designated persons relating to prior contracts;\n Pension payments;\n Diplomatic missions and international organizations;\n Prior funds held by a designated person belonging to a Canadian;\n Legal services for a designated person;\n Loan repayments;",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "export_control",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Из запрета на ограниченные и промышленные товары есть исключения, в частности для временного вывоза оборудования СМИ, ядерных гарантий МАГАТЭ, Правительства Канады, Конвенции о химическом оружии, МКС, обновлений ПО, гражданской авиации, судовых и бортовых запасов, потребительских средств связи и личных вещей.",
+        "en": "Exceptions from the restricted and industrial goods prohibitions cover temporary media exports, international nuclear safeguards verification, the Government of Canada, the Chemical Weapons Convention, the International Space Station, software updates, civil aircraft, aircraft and ship stores, consumer communication devices and personal effects."
+      },
+      "quote": "There are exceptions from the prohibition on restricted goods and industrial goods relating to:\n Temporary media exports;\n International nuclear safeguards verification;\n The Government of Canada;\n The Chemical Weapons Convention;\n The International Space Station;\n Software updates;\n Civil aircraft;\n Aircraft and ship stores;\n Maintenance, repair or operation of aircraft of Canadian and US air carriers;\n Consumer communication devices;\n Personal effects.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Приказ Special Economic Measures Permit Authorization Order, вступивший в силу 26 февраля 2025 года, даёт министру иностранных дел право выдавать индивидуальные и генеральные разрешения на действия, иначе запрещённые по SEMA, и применяется ко всем положениям, принятым по SEMA.",
+        "en": "The Special Economic Measures Permit Authorization Order, in force since February 26, 2025, allows the Minister of Foreign Affairs to issue individual and general permits for otherwise prohibited activities and applies to all Regulations made under SEMA."
+      },
+      "quote": "The Special Economic Measures Permit Authorization Order came into force on February 26, 2025, and provides the Minister of Foreign Affairs with the authority to issue both individual and general permits in exceptional cases to allow specified activities or transactions that would otherwise be restricted or prohibited under the Special Economic Measures Act (SEMA).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "72",
+        "76"
+      ],
+      "statement": {
+        "ru": "С 10 марта 2023 года Канада запретила импорт алюминиевой и стальной продукции российского происхождения.",
+        "en": "On March 10, 2023, Canada amended the Regulations to prohibit the import of aluminum and steel products originating from Russia."
+      },
+      "quote": "On March 10, 2023, Canada further amended the Special Economic Measures (Russia) Regulations to prohibit the import of aluminum and steel products originating from Russia.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "7108",
+        "7113"
+      ],
+      "statement": {
+        "ru": "7 июля 2022 года Канада запретила импорт из России ряда золотых товаров: необработанного золота, полуобработанного золота, золотого порошка, монетарного золота и ювелирных изделий из золота.",
+        "en": "On July 7, 2022, Canada prohibited the import of certain gold products from Russia, including unwrought gold, semi-manufactured gold, gold powder, monetary gold and gold jewelry."
+      },
+      "quote": "Canada also prohibited the import of certain gold products from Russia, including unwrought gold, semi-manufactured gold, gold powder, monetary gold and jewelry made of gold.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "13 июня 2025 года Канада расширила санкции на суда: были внесены 201 новое судно и запрещены все услуги, связанные с включёнными в перечень судами; введены новые экспортные и импортные запреты с отложенным вступлением в силу и исключениями для ранее заключённых контрактов.",
+        "en": "On June 13, 2025, Canada listed 201 new vessels and banned all services related to listed vessels, and imposed new export and import bans with delayed coming-into-force provisions and prior contract exceptions."
+      },
+      "quote": "In addition, Canada further listed two hundred and one (201) new vessels, and expanded Canada’s vessel sanctions to ban all services related to listed vessels. Furthermore, Canada imposed new export bans on a wide range of items, including industrial goods, goods related to chemical and biological weapons and advanced materials – and imposed new import bans on many other items, including coal, metals and goods from which Russia generates revenue.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [
+        "7102"
+      ],
+      "statement": {
+        "ru": "С 1 сентября 2024 года порог запрета на российские алмазы, обработанные в третьих странах, снижен с 1 карата до 0,5 карата; запрет не применяется к алмазам, находившимся вне России до вступления в силу соответствующих этапов запрета G7.",
+        "en": "From September 1, 2024, the size threshold for the ban on Russian diamonds processed in third countries was reduced from 1 carat to 0.5 carats; diamonds outside Russia before the entry into force of the G7 ban stages (legacy diamonds) are not covered."
+      },
+      "quote": "The prohibition reduces the size threshold of diamonds banned from 1 carat and higher to 0.5 carats and higher and applies to any person (individual or entity) in Canada as well as Canadians outside of Canada. The prohibitions do not apply to the import of diamonds if they were outside of Russia before the entry into force of the different stages of the G7 ban (legacy diamonds).",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "7 декабря 2022 года Канада запретила предоставление 8 видов услуг, связанных с морской перевозкой российской сырой нефти, если нефть не куплена по цене на уровне или ниже потолка коалиции G7+; запрет распространён на некоторые нефтепродукты.",
+        "en": "On December 7, 2022, Canada prohibited the provision of 8 services relating to maritime transport of Russian crude oil unless the oil is purchased at or below the G7+ Coalition Oil Price Cap, later extended to certain Russian petroleum products."
+      },
+      "quote": "On December 7, 2022, Canada further amended the Special Economic Measures (Russia) Regulations to prohibit the provision of 8 services, in relation to the maritime transport of Russian crude oil, unless the oil is purchased at or below the price outlined in the G7+ Coalition Oil Price Cap List.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": [
+        "RU"
+      ]
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Существуют исключения из запрета на морскую перевозку сырой нефти и нефтепродуктов — для отдельных государств — членов ЕС, чрезвычайных ситуаций и грузов, погруженных в определённые даты.",
+        "en": "There are exceptions from the prohibition on maritime transport of crude oil and petroleum products for certain EU Member States, emergency situations, and goods loaded on specific dates."
+      },
+      "quote": "There are exceptions from the prohibition on maritime transport of crude oil and petroleum products in relation to certain EU Member States, emergency situations, and goods loaded on specific dates.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": [
+        "RU"
+      ]
+    }
+  ],
+  "dropped": 0
+}

@@ -1,0 +1,49 @@
+{
+  "url": "https://taxation-customs.ec.europa.eu/customs-4_en",
+  "source_id": "eu-taxud",
+  "fetched_at": "2026-09-12T14:41:26+00:00",
+  "content_hash": "e2bd5c47449b950b3ee5c462f21e631138b80ce3fe3dc6f49ab6b74329f09e0f",
+  "topic": "customs_tariff,customs,import_procedures",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Таможенный союз ЕС является основой Европейского союза и необходимым элементом функционирования единого рынка.",
+        "en": "The EU Customs Union is a foundation of the European Union and an essential element in the functioning of the single market."
+      },
+      "quote": "The Customs Union is a foundation of the European Union and an essential element in the functioning of the single market",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Свободные зоны — это огороженные территории внутри таможенной территории ЕС, куда товары не из ЕС могут ввозиться беспошлинно.",
+        "en": "Free zones are enclosed areas within the EU customs territory where non-EU goods can be introduced free of duty."
+      },
+      "quote": "Free zones\n Enclosed areas within the EU customs territory where non-EU goods can be introduced free of duty",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Проект «электронной таможни» Европейской комиссии направлен на замену бумажных таможенных процедур едиными для ЕС электронными процедурами.",
+        "en": "The European Commission's electronic customs project aims to replace paper-format customs procedures with EU-wide electronic procedures for a more modern customs environment."
+      },
+      "quote": "The project, initiated by the European Commission, aims to replace paper-format customs procedures with EU-wide electronic procedures to create a more efficient and modern customs environment.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

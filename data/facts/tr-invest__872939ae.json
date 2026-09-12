@@ -1,34 +1,21 @@
 {
   "url": "https://www.invest.gov.tr/",
   "source_id": "tr-invest",
-  "fetched_at": "2026-09-12T14:00:32+00:00",
-  "content_hash": "67f3ca3d77ff47519739d5dd360769b0c412caf45fcf6fb149d1f4dab15e9789",
+  "fetched_at": "2026-09-12T14:34:28+00:00",
+  "content_hash": "56a307876a819cfe504d05713ac81740bec276e06e02c9816f0f39f42829b7b5",
   "topic": "supply_regions",
   "facts": [
     {
-      "block": "supply",
+      "block": "regime",
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Türkiye позиционируется как хаб с крупным внутренним рынком и доступом через соглашения о свободной торговле к региональным рынкам объёмом около 1 млрд потребителей.",
-        "en": "Türkiye presents itself as a hub with a sizeable domestic market plus regional markets reachable through free trade agreements covering around 1 billion consumers."
+        "ru": "Türkiye имеет соглашения о свободной торговле, обеспечивающие доступ к региональным рынкам общей ёмкостью около 1 млрд потребителей в дополнение к внутреннему рынку.",
+        "en": "Türkiye's free trade agreements give access to regional markets covering around 1 billion consumers, in addition to its own domestic market."
       },
-      "quote": "Large Domestic and Regional Markets\n Sizeable domestic market, plus regional markets with FTAs allowing access to 1 billion consumers",
+      "quote": "Sizeable domestic market, plus regional markets with FTAs allowing access to 1 billion consumers",
       "quote_lang": "en",
       "has_number": true,
-      "targets": []
-    },
-    {
-      "block": "logistics",
-      "country": "TR",
-      "hs_scope": [],
-      "statement": {
-        "ru": "Türkiye продвигается как логистический узел на стыке Европы, Азии и Ближнего Востока с выходом на Восточную Европу, Центральную Азию, Ближний Восток и Северную Африку.",
-        "en": "Türkiye is promoted as a logistics hub at the crossroads of Europe, Asia and the Middle East, offering access to Eastern Europe, Central Asia, the Middle East and North Africa."
-      },
-      "quote": "Positioned at the crossroads of Europe, Asia and the Middle East, Türkiye offers seamless access to key regions including Eastern Europe, Central Asia, the Middle East and North Africa.",
-      "quote_lang": "en",
-      "has_number": false,
       "targets": []
     },
     {
@@ -36,10 +23,10 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "В Türkiye действуют специальные инвестиционные зоны — организованные промышленные зоны, зоны развития технологий и свободные зоны, предоставляющие инвесторам инфраструктуру и преимущества.",
-        "en": "Türkiye operates dedicated investment zones — organized industrial zones, technology development zones and free zones — that provide infrastructure and advantages to investors."
+        "ru": "В Türkiye действуют специальные инвестиционные зоны: организованные промышленные зоны, зоны технологического развития и свободные зоны, предоставляющие инвесторам инфраструктуру и льготы.",
+        "en": "Türkiye offers dedicated investment zones — organized industrial zones, technology development zones and free zones — providing infrastructure and advantages to investors."
       },
-      "quote": "Investment Zones\n The dedicated infrastructure and advantages offered to investors by Türkiye’s organized industrial zones, technology development zones, and free zones.",
+      "quote": "The dedicated infrastructure and advantages offered to investors by Türkiye’s organized industrial zones, technology development zones, and free zones.",
       "quote_lang": "en",
       "has_number": false,
       "targets": []
@@ -49,8 +36,8 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Государственная схема стимулов Türkiye дифференцируется по приоритетным направлениям, регионам, масштабу проекта, стратегическим секторам и типу инвестиций.",
-        "en": "Türkiye's government incentives scheme is based on priority areas, regions, project scale, strategic sectors and the type of investment."
+        "ru": "Турецкая государственная схема стимулов дифференцирована по приоритетным направлениям, регионам, масштабу проекта, стратегическим секторам и типу инвестиций.",
+        "en": "The Turkish government's incentives scheme is structured by priority areas, regions, project scale, strategic sectors and type of investment."
       },
       "quote": "Information about the Turkish government’s incentives scheme based on priority areas, regions, project scale, strategic sectors, and type of investments.",
       "quote_lang": "en",
@@ -62,12 +49,25 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Экспорт из свободных зон Türkiye достиг рекорда в 7,7 млрд долларов США за первые семь месяцев 2026 года.",
+        "ru": "Экспорт из свободных зон Türkiye достиг рекордных 7,7 млрд долларов США за первые семь месяцев 2026 года.",
         "en": "Exports from Türkiye's free zones set a record of USD 7.7 billion in the first seven months of 2026."
       },
       "quote": "Türkiye’s Free Zones Set New Export Record with USD 7.7 Billion in First Seven Months of 2026",
       "quote_lang": "en",
       "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расположение Türkiye на стыке Европы, Азии и Ближнего Востока обеспечивает выход на рынки Восточной Европы, Центральной Азии, Ближнего Востока и Северной Африки.",
+        "en": "Located at the crossroads of Europe, Asia and the Middle East, Türkiye offers access to Eastern Europe, Central Asia, the Middle East and North Africa."
+      },
+      "quote": "Positioned at the crossroads of Europe, Asia and the Middle East, Türkiye offers seamless access to key regions including Eastern Europe, Central Asia, the Middle East and North Africa.",
+      "quote_lang": "en",
+      "has_number": false,
       "targets": []
     }
   ],
