@@ -41,7 +41,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PIPELINE_MODEL: ${{ vars.PIPELINE_MODEL || 'claude-opus-5' }}   # repository variable; claude-sonnet-5 is cheaper
           PIPELINE_MAX_PAGES: ${{ vars.PIPELINE_MAX_PAGES || '40' }}      # hard cap on model calls per run
-        run: python -m pipeline extract --registry
+          PIPELINE_MAX_USD: ${{ vars.PIPELINE_MAX_USD || '5' }}           # estimated dollars per run, from API token counts
+          PIPELINE_MONTHLY_USD: ${{ vars.PIPELINE_MONTHLY_USD || '15' }}  # per calendar month, ledger data/usage.json
+        run: python -m pipeline extract --registry --batch
 
       - name: Assemble pages from facts and rates
         run: python -m pipeline assemble
@@ -57,6 +59,7 @@ jobs:
           git config user.name "trade-rules-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A web/data data/monitor-report.md
+          test -f data/usage.json && git add -A data/usage.json data/extract-report.md
           test -d data/facts && git add -A data/facts
           if git diff --cached --quiet; then
             echo "no changes"
