@@ -49,7 +49,10 @@
     python -m pipeline monitor                                                # перечитать источники, проверить цитаты (без LLM)
     python -m pipeline validate                                               # валидаторы; тесты: python -m pytest pipeline/tests
     python -m pipeline extract --registry                                     # факты с цитатами из urls реестра, нужен ANTHROPIC_API_KEY
-    #   модель вызывается только для изменившихся страниц; лимит вызовов за запуск PIPELINE_MAX_PAGES (40); модель PIPELINE_MODEL
+    #   модель вызывается только для изменившихся страниц; лимиты: PIPELINE_MAX_PAGES (40 страниц за запуск),
+    #   PIPELINE_MAX_USD (5 $ за запуск), PIPELINE_MONTHLY_USD (15 $ в месяц, книга учёта data/usage.json); модель PIPELINE_MODEL
+    python -m pipeline extract --registry --batch                             # то же через пакетный API за полцены (так работает daily-check.yml)
+    #   отчёт о тратах каждого запуска — data/extract-report.md
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка
     python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
     python -m pipeline reference                                              # data/hs6.json из UN Comtrade H6 (сеть: reference-data.yml)
