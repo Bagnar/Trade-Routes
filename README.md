@@ -17,4 +17,4 @@
 - `web/` — Next.js-приложение по макетам: стартовая и страницы коридоров на демо-JSON (`web/README.md`).
 - `mockups/` — три HTML-макета: стартовая, Китай → Канада, Россия → Иран.
 
-Начало работы — `docs/how-to-continue-in-claude-code.md`.
+Начало работы — `docs/how-to-continue-in-claude-code.md`. Быстрый запуск сайта — `./run-web.sh` (Windows: `run-web.cmd`).

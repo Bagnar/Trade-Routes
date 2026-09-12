@@ -40,6 +40,7 @@
     docker compose up -d                      # PostgreSQL 16 на localhost:5432; db/schema.sql применяется при первом старте
     docker compose down -v                    # сброс базы (том удаляется, схема применится заново)
 
+    ./run-web.sh                              # то же одной командой (Windows: двойной клик по run-web.cmd)
     cd web && npm install && npm run dev      # сайт на http://localhost:3000 (демо-JSON из web/data/pages)
     cd web && npm run typecheck && npm run lint && npm run build   # то же гоняет CI (.github/workflows/ci.yml)
 
