@@ -321,7 +321,9 @@ sanctions_authorities:
     domain: international.gc.ca
     priority: 1
     status: to_verify
-    urls: []
+    urls:
+      - { url: "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/iran.aspx?lang=eng", topic: sanctions, targets: [IR] }
+      - { url: "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/russia-russie.aspx?lang=eng", topic: sanctions, targets: [RU] }
   - id: sanc-us-ofac
     jurisdiction: US
     agency: Office of Foreign Assets Control (OFAC) — programs, SDN list, general licences
@@ -329,8 +331,8 @@ sanctions_authorities:
     priority: 1
     status: to_verify
     urls: 
-      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions", topic: sanctions }
-      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions", topic: sanctions }
+      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions", topic: sanctions, targets: [IR] }
+      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions", topic: sanctions, targets: [RU] }
   - id: sanc-eu
     jurisdiction: EU
     agency: EU Sanctions Map (Council of the EU / EEAS)
@@ -338,6 +340,14 @@ sanctions_authorities:
     priority: 1
     status: to_verify
     urls: []
+  - id: sanc-eu-commission
+    jurisdiction: EU
+    agency: European Commission — sanctions (restrictive measures) overview pages
+    domain: finance.ec.europa.eu
+    priority: 1
+    status: to_verify
+    urls:
+      - { url: "https://finance.ec.europa.eu/eu-and-world/sanctions-restrictive-measures/sanctions-adopted-following-russias-military-aggression-against-ukraine_en", topic: sanctions, targets: [RU] }
   - id: sanc-uk-ofsi
     jurisdiction: UK
     agency: Office of Financial Sanctions Implementation; UK sanctions list
@@ -345,8 +355,8 @@ sanctions_authorities:
     priority: 1
     status: to_verify
     urls: 
-      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-russia", topic: sanctions }
-      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-iran", topic: sanctions }
+      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-russia", topic: sanctions, targets: [RU] }
+      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-iran", topic: sanctions, targets: [IR] }
 
 # Export-control regimes (dual-use and strategic goods): multilateral regimes and the national authorities
 # that publish control lists. Facts from these pages go to the `export_control` block of a corridor page.
@@ -397,6 +407,13 @@ export_control_regimes:
     urls: []
 
 international:
+  - id: wto-rtais
+    agency: WTO Regional Trade Agreements Information System (RTA-IS)
+    domain: rtais.wto.org
+    topics: [trade_agreements]
+    priority: 1
+    status: to_verify
+    urls: []   # read by pipeline/agreements.py (list of all RTAs in force), not by the extractor
   - id: wto-ttd
     agency: WTO Tariff & Trade Data
     domain: ttd.wto.org

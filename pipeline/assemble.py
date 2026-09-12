@@ -143,6 +143,7 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
     """Returns the page with sourced lines merged in. Idempotent: previously assembled lines are replaced."""
     fr, to = page["corridor"]["from"]["code"], page["corridor"]["to"]["code"]
     hs6 = page["product"]["hs6"]
+    facts = list(facts)
     by_section: dict[str, list[dict]] = {"regime": [], "export": [], "exportControl": [], "import": [], "logistics": []}
     for fact in facts:
         country = fact.get("country", "")
@@ -194,6 +195,21 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
         for v in urls.values()
     ]
     page["sources"]["rows"] = rows + [r for r in page["sources"]["rows"] if r.get("_assembled") != ASSEMBLED]
+
+    # Rating and "where else": computed by the index layer from structured data only (rates, agreements, sanctions
+    # program pages, support facts). Replaces the demo rating: a part without data shows "нет основания".
+    from . import index  # local import: index imports assemble
+
+    computed = index.compute(fr, to, hs6, facts)
+    page.setdefault("rating", {"id": "sv", "title": "Выгодно и что мешает", "lead": "Оценка коридора складывается из пяти частей, каждую можно проверить. Запрет или санкции обнулили бы её независимо от остальных."})
+    page.setdefault("compare", {"id": "sw", "title": f"Куда ещё везти этот товар {page['corridor']['from'].get('from', '')}".strip(), "lead": "Те же части для других рынков, отсортированы по оценке. Спрос и логистика в ней — ориентир, а не проверенный факт.", "rows": []})
+    page["rating"].update({k: computed[k] for k in ("total", "of", "verdict", "verdictStatus", "parts")})
+    page["rating"]["explanation"] = (
+        "Пошлины, препятствия и господдержка считаются по правилам из структурированных данных (таблица ставок, "
+        "база РТС ВТО, страницы санкционных программ, собранные факты). Спрос и логистика — ориентир; часть без данных "
+        "балла не получает, итог считается из оценённых частей."
+    )
+    page["compare"]["rows"] = index.compare_rows(fr, to, hs6, facts)
 
     sourced = sum(len(by_section[s]) for s in by_section) + (1 if duty else 0)
     page["status"]["sourcesTotal"] = len(urls)

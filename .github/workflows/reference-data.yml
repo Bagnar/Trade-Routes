@@ -3,6 +3,7 @@ name: Reference data
 # Loads reference tables from official databases (no LLM, no cost) and commits them:
 #   data/hs6.json      — HS-6 nomenclature (UN Comtrade reference list H6)
 #   data/rates/*.json  — MFN applied tariffs by HS-6 per importer (World Bank WITS / UNCTAD TRAINS)
+#   data/agreements.json — regional trade agreements in force (WTO RTA-IS)
 # Runs monthly and on demand. Network is open here; it is closed in the Claude Code cloud session.
 
 on:
@@ -37,6 +38,8 @@ jobs:
       - name: MFN rates by HS-6
         if: ${{ github.event.inputs.rates_reporters != '' }}
         run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR' }}"
+      - name: Trade agreements in force (WTO RTA-IS)
+        run: python -m pipeline agreements
       - name: Tests
         run: python -m pytest -q pipeline/tests
       - name: Commit
@@ -44,5 +47,6 @@ jobs:
           git config user.name "trade-rules-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A data/hs6.json
+          test -f data/agreements.json && git add -A data/agreements.json
           test -d data/rates && git add -A data/rates
           if git diff --cached --quiet; then echo "no changes"; else git commit -m "Reference data: $(date -u +%F)"; git push; fi

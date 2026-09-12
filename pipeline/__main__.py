@@ -6,7 +6,7 @@ import sys
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor", "supply", "reference"):
+    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor", "supply", "reference", "agreements"):
         p = sub.add_parser(name)
         p.add_argument("--corridor")
         p.add_argument("--country")
@@ -45,6 +45,14 @@ def main(argv=None):
         from . import assemble
 
         return assemble.main()
+    if args.command == "agreements":
+        from . import agreements
+
+        return agreements.main(argv if argv is not None else sys.argv[2:])
+    if args.command == "index":
+        from . import index
+
+        return index.main(argv if argv is not None else sys.argv[2:])
     if args.command == "reference":
         from . import reference
 

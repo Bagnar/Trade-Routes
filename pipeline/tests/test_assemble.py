@@ -1,6 +1,15 @@
 import json
 
+import pytest
+
 from pipeline import assemble
+
+
+@pytest.fixture(autouse=True)
+def no_rates_on_disk(tmp_path, monkeypatch):
+    # tests must not depend on data/rates/*.json loaded by the reference-data workflow
+    monkeypatch.setattr(assemble.rates, "RATES_DIR", tmp_path)
+
 
 FACTS = [
     {"block": "import", "country": "CA", "hs_scope": ["9897"], "statement": {"ru": "Товары принудительного труда запрещены", "en": ""},

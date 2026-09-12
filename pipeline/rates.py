@@ -199,9 +199,9 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
     return None
 
 
-def get_rate(country: str, hs6: str, rates_dir: Path = RATES_DIR) -> dict | None:
+def get_rate(country: str, hs6: str, rates_dir: Path | None = None) -> dict | None:
     """Returns {"value", "year", "source", "url", "fetched_at"} for a country/HS-6 pair, or None when not loaded."""
-    path = rates_dir / f"{country.upper()}.json"
+    path = (rates_dir or RATES_DIR) / f"{country.upper()}.json"
     if not path.exists():
         return None
     doc = json.loads(path.read_text(encoding="utf8"))
