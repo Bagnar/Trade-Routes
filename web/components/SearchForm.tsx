@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { CountryRef, Mode } from "@/lib/page-content";
+import { ProductSearch, type ProductPick } from "./ProductSearch";
 
 export interface OpenPage {
   hs6: string;
@@ -26,16 +27,15 @@ export interface OpenCorridor {
 export function SearchForm({ countries, corridors }: { countries: CountryRef[]; corridors: OpenCorridor[] }) {
   const router = useRouter();
   const [product, setProduct] = useState(corridors[0]?.pages[0]?.name ?? "");
+  const [pick, setPick] = useState<ProductPick | null>(null);
   const [from, setFrom] = useState(corridors[0]?.from ?? countries[0]?.code ?? "");
   const [to, setTo] = useState(corridors[0]?.to ?? countries[1]?.code ?? "");
   const [mode, setMode] = useState<Mode>("b2b");
   const [miss, setMiss] = useState<React.ReactNode>(null);
 
-  const allProducts = corridors.flatMap((c) => c.pages);
-
   function findPage(corridor: OpenCorridor): OpenPage | undefined {
     const q = product.trim().toLowerCase();
-    const digits = q.replace(/\D/g, "");
+    const digits = pick ? pick.code : q.replace(/\D/g, "");
     return (
       corridor.pages.find((p) => digits.length >= 4 && p.hs6.startsWith(digits.slice(0, 6))) ??
       corridor.pages.find((p) => p.name.toLowerCase() === q) ??
@@ -79,22 +79,14 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
     <div className="search">
       <div className="query" role="group" aria-label="Параметры коридора">
         Везу{" "}
-        <input
-          className="product"
-          list="products"
-          placeholder="товар или код HS"
-          aria-label="Товар"
+        <ProductSearch
+          id="q-product"
           value={product}
-          onChange={(e) => setProduct(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && go("")}
-        />
-        <datalist id="products">
-          {allProducts.map((p) => (
-            <option key={`${p.href}`} value={p.name}>
-              {p.hsLabel}
-            </option>
-          ))}
-        </datalist>{" "}
+          onPick={(p, text) => {
+            setPick(p);
+            setProduct(text);
+          }}
+        />{" "}
         <select className="country" aria-label="Откуда" value={from} onChange={(e) => setFrom(e.target.value)}>
           {countries.map((c) => (
             <option key={c.code} value={c.code}>

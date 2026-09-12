@@ -249,3 +249,10 @@ footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap
 .links li{display:block; padding:8px 0}
 .links .dim{color:var(--muted)}
 .section .lead{font-family:var(--sans); font-size:15px; margin:0 0 14px}
+
+/* ---------- product search suggestions ---------- */
+.suggest{position:absolute; left:0; top:100%; z-index:20; margin:4px 0 0; padding:4px 0; list-style:none; min-width:min(640px, 90vw); max-height:360px; overflow:auto; background:var(--paper); border:1.5px solid var(--ink); border-radius:6px; box-shadow:0 8px 24px rgba(28,58,91,.12); font-family:var(--sans); font-size:14px; text-align:left}
+.suggest li button{display:block; width:100%; text-align:left; border:0; background:none; padding:8px 12px; cursor:pointer; line-height:1.35; color:var(--ink)}
+.suggest li button:hover, .suggest li button:focus{background:#F6F8FA}
+.suggest b{font-weight:600; margin-right:6px}
+.suggest .en{color:var(--muted)}

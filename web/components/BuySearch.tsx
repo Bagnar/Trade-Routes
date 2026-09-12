@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { CountryRef } from "@/lib/page-content";
+import { ProductSearch, type ProductPick } from "./ProductSearch";
 
 export interface BuyOption {
   country: string;
@@ -17,12 +18,13 @@ export interface BuyOption {
 export function BuySearch({ countries, options }: { countries: CountryRef[]; options: BuyOption[] }) {
   const router = useRouter();
   const [product, setProduct] = useState(options[0]?.name ?? "");
+  const [pick, setPick] = useState<ProductPick | null>(null);
   const [country, setCountry] = useState(options[0]?.country ?? countries[0]?.code ?? "");
   const [miss, setMiss] = useState<React.ReactNode>(null);
 
   function go() {
     const q = product.trim().toLowerCase();
-    const digits = q.replace(/\D/g, "");
+    const digits = pick ? pick.code : q.replace(/\D/g, "");
     const inCountry = options.filter((o) => o.country === country);
     const found =
       inCountry.find((o) => digits.length >= 4 && digits.startsWith(o.hs)) ??
@@ -58,22 +60,14 @@ export function BuySearch({ countries, options }: { countries: CountryRef[]; opt
     <div className="search">
       <div className="query" role="group" aria-label="Параметры запроса">
         Покупаю{" "}
-        <input
-          className="product"
-          list="buy-products"
-          placeholder="товар или код HS"
-          aria-label="Товар"
+        <ProductSearch
+          id="buy-product"
           value={product}
-          onChange={(e) => setProduct(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && go()}
-        />
-        <datalist id="buy-products">
-          {options.map((o) => (
-            <option key={o.href} value={o.name}>
-              {o.hsLabel}
-            </option>
-          ))}
-        </datalist>{" "}
+          onPick={(p, text) => {
+            setPick(p);
+            setProduct(text);
+          }}
+        />{" "}
         <select className="country" aria-label="Страна" value={country} onChange={(e) => setCountry(e.target.value)}>
           {countries.map((c) => (
             <option key={c.code} value={c.code}>
