@@ -2,7 +2,7 @@
 "source": "WTO RTA-IS",
 "url": "https://rtais.wto.org/UI/PublicAllRTAList.aspx",
 "export": "https://rtais.wto.org/UI/ExportAllRTAList.aspx",
-"fetched_at": "2026-09-12T13:09:07+00:00",
+"fetched_at": "2026-09-12T13:13:22+00:00",
 "in_force_reported": 388,
 "agreements": [
 {
@@ -165,6 +165,7 @@
 "ET",
 "DJ",
 "GA",
+"GM",
 "GH",
 "GN",
 "CI",
@@ -1156,6 +1157,48 @@
 ]
 },
 {
+"name": "EAEU - Iran",
+"type": "FTA",
+"in_force": "45792",
+"status": "In Force",
+"members": [
+"IR",
+"RU",
+"BY",
+"KZ",
+"AM",
+"KG"
+]
+},
+{
+"name": "EAEU - Serbia",
+"type": "FTA",
+"in_force": "44387",
+"status": "In Force",
+"members": [
+"RS",
+"RU",
+"BY",
+"KZ",
+"AM",
+"KG"
+]
+},
+{
+"name": "EAEU - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "42648",
+"status": "In Force",
+"members": [
+"VN",
+"RU",
+"BY",
+"KZ",
+"AM",
+"KG"
+]
+},
+{
 "name": "East African Community (EAC)",
 "type": "CU & EIA",
 "in_force": "36714",
@@ -1328,6 +1371,7 @@
 "members": [
 "CV",
 "BJ",
+"GM",
 "GH",
 "GN",
 "CI",
@@ -1376,13 +1420,414 @@
 ]
 },
 {
+"name": "EFTA - Albania",
+"type": "FTA",
+"in_force": "40483",
+"status": "In Force",
+"members": [
+"AL",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Bosnia and Herzegovina",
+"type": "FTA",
+"in_force": "42005",
+"status": "In Force",
+"members": [
+"BA",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Canada",
+"type": "FTA",
+"in_force": "39995",
+"status": "In Force",
+"members": [
+"CA",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
 "name": "EFTA - Central America (Costa Rica and Panama)",
 "type": "FTA & EIA",
 "in_force": "41870",
 "status": "In Force",
 "members": [
 "CR",
-"PA"
+"PA",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Chile",
+"type": "FTA & EIA",
+"in_force": "38322",
+"status": "In Force",
+"members": [
+"CL",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Colombia",
+"type": "FTA & EIA",
+"in_force": "40725",
+"status": "In Force",
+"members": [
+"CO",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Ecuador",
+"type": "FTA & EIA",
+"in_force": "44136",
+"status": "In Force",
+"members": [
+"EC",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Egypt",
+"type": "FTA",
+"in_force": "39295",
+"status": "In Force",
+"members": [
+"EG",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - GCC",
+"type": "FTA & EIA",
+"in_force": "41821",
+"status": "In Force",
+"members": [
+"CH",
+"NO",
+"IS",
+"LI",
+"SA",
+"AE",
+"QA",
+"KW",
+"OM",
+"BH"
+]
+},
+{
+"name": "EFTA - Georgia",
+"type": "FTA & EIA",
+"in_force": "42979",
+"status": "In Force",
+"members": [
+"GE",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Hong Kong, China",
+"type": "FTA & EIA",
+"in_force": "41183",
+"status": "In Force",
+"members": [
+"HK",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - India",
+"type": "FTA & EIA",
+"in_force": "45931",
+"status": "In Force",
+"members": [
+"IN",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Indonesia",
+"type": "FTA & EIA",
+"in_force": "44501",
+"status": "In Force",
+"members": [
+"ID",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Israel",
+"type": "FTA",
+"in_force": "33970",
+"status": "In Force",
+"members": [
+"IL",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Jordan",
+"type": "FTA",
+"in_force": "37500",
+"status": "In Force",
+"members": [
+"JO",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "38961",
+"status": "In Force",
+"members": [
+"KR",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Lebanon",
+"type": "FTA",
+"in_force": "39083",
+"status": "In Force",
+"members": [
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Mexico",
+"type": "FTA & EIA",
+"in_force": "37073",
+"status": "In Force",
+"members": [
+"MX",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Moldova, Republic of",
+"type": "FTA & EIA",
+"in_force": "45536",
+"status": "In Force",
+"members": [
+"MD",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Montenegro",
+"type": "FTA",
+"in_force": "41153",
+"status": "In Force",
+"members": [
+"ME",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Morocco",
+"type": "FTA",
+"in_force": "36495",
+"status": "In Force",
+"members": [
+"MA",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - North Macedonia",
+"type": "FTA",
+"in_force": "37377",
+"status": "In Force",
+"members": [
+"MK",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Palestine",
+"type": "FTA",
+"in_force": "36342",
+"status": "In Force",
+"members": [
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Peru",
+"type": "FTA",
+"in_force": "40725",
+"status": "In Force",
+"members": [
+"PE",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Philippines",
+"type": "FTA & EIA",
+"in_force": "43252",
+"status": "In Force",
+"members": [
+"PH",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - SACU",
+"type": "FTA",
+"in_force": "39569",
+"status": "In Force",
+"members": [
+"CH",
+"NO",
+"IS",
+"LI",
+"BW",
+"LS",
+"NA",
+"ZA",
+"SZ"
+]
+},
+{
+"name": "EFTA - Serbia",
+"type": "FTA",
+"in_force": "40452",
+"status": "In Force",
+"members": [
+"RS",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Singapore",
+"type": "FTA & EIA",
+"in_force": "37622",
+"status": "In Force",
+"members": [
+"SG",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Tunisia",
+"type": "FTA",
+"in_force": "38504",
+"status": "In Force",
+"members": [
+"TN",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Türkiye",
+"type": "FTA & EIA",
+"in_force": "44470",
+"status": "In Force",
+"members": [
+"TR",
+"CH",
+"NO",
+"IS",
+"LI"
+]
+},
+{
+"name": "EFTA - Ukraine",
+"type": "FTA & EIA",
+"in_force": "41061",
+"status": "In Force",
+"members": [
+"UA",
+"CH",
+"NO",
+"IS",
+"LI"
 ]
 },
 {
@@ -2592,6 +3037,7 @@
 "BM",
 "IO",
 "KY",
+"FK",
 "GS",
 "PF",
 "TF",
@@ -3369,6 +3815,21 @@
 "FO",
 "LI",
 "CH"
+]
+},
+{
+"name": "GCC - Singapore",
+"type": "FTA & EIA",
+"in_force": "41518",
+"status": "In Force",
+"members": [
+"SG",
+"SA",
+"AE",
+"QA",
+"KW",
+"OM",
+"BH"
 ]
 },
 {
@@ -4171,6 +4632,62 @@
 "FJ",
 "VU",
 "PG"
+]
+},
+{
+"name": "MERCOSUR - Egypt",
+"type": "FTA",
+"in_force": "42979",
+"status": "In Force",
+"members": [
+"EG",
+"AR",
+"BR",
+"PY",
+"UY"
+]
+},
+{
+"name": "MERCOSUR - India",
+"type": "PSA",
+"in_force": "39965",
+"status": "In Force",
+"members": [
+"IN",
+"AR",
+"BR",
+"PY",
+"UY"
+]
+},
+{
+"name": "MERCOSUR - Israel",
+"type": "FTA",
+"in_force": "40170",
+"status": "In Force",
+"members": [
+"IL",
+"AR",
+"BR",
+"PY",
+"UY"
+]
+},
+{
+"name": "MERCOSUR - SACU",
+"type": "PSA",
+"in_force": "42461",
+"status": "In Force",
+"members": [
+"AR",
+"BR",
+"PY",
+"UY",
+"BW",
+"LS",
+"NA",
+"ZA",
+"SZ"
 ]
 },
 {
@@ -5435,7 +5952,12 @@
 "status": "In Force",
 "members": [
 "MZ",
-"GB"
+"GB",
+"BW",
+"LS",
+"NA",
+"ZA",
+"SZ"
 ]
 },
 {
