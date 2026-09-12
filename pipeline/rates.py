@@ -116,6 +116,32 @@ def probe(iso2: str) -> None:
             print(f"HTTP {snap.http_status}  {url}\n    {body}")
         except Exception as exc:
             print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
+    # Structure of a successful reply: first bytes plus the distinct element names and Value ids seen.
+    for y in (year, year - 1):
+        url = WITS_URL.format(reporter=m49, year=y)
+        try:
+            snap = fetch.fetch_url(url, save=False, timeout=180.0)
+        except Exception as exc:
+            print(f"ERR  {url}: {exc}")
+            continue
+        print(f"--- {url}: HTTP {snap.http_status}, {len(snap.text)} chars")
+        print(snap.text[:2500])
+        if snap.http_status == 200 and snap.text.lstrip().startswith("<"):
+            try:
+                root = ElementTree.fromstring(snap.text)
+                tags: dict[str, int] = {}
+                ids: dict[str, set[str]] = {}
+                for el in root.iter():
+                    tag = el.tag.rsplit("}", 1)[-1]
+                    tags[tag] = tags.get(tag, 0) + 1
+                    if el.get("id"):
+                        ids.setdefault(el.get("id", ""), set()).add(el.get("value", "")[:20])
+                print("TAGS:", sorted(tags.items(), key=lambda kv: -kv[1])[:25])
+                for k, v in list(ids.items())[:30]:
+                    print(f"ID {k}: {sorted(v)[:8]} ({len(v)} distinct)")
+            except ElementTree.ParseError as exc:
+                print("XML parse error:", exc)
+            break
 
 
 def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> Path | None:
