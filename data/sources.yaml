@@ -21,11 +21,11 @@ countries:
         priority: 1
         status: to_verify
         urls: 
-          - { url: https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html, topic: forced_labour }
-          - { url: https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html, topic: customs_tariff }
-          - { url: https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html, topic: carm }
-          - { url: https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html, topic: parcels }
-          - { url: https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html, topic: trade_remedies }
+          - { url: "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html", topic: forced_labour }
+          - { url: "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html", topic: customs_tariff }
+          - { url: "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html", topic: carm }
+          - { url: "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html", topic: parcels }
+          - { url: "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html", topic: trade_remedies }
       - id: ca-tariff-finder
         agency: Canada Tariff Finder (Trade Commissioner Service)
         domain: tariffinder.ca
@@ -41,7 +41,7 @@ countries:
         priority: 1
         status: to_verify
         urls: 
-          - { url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html, topic: gst_hst_import }
+          - { url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html", topic: gst_hst_import }
       - id: ca-gac-sanctions
         agency: Global Affairs Canada — sanctions and import/export controls
         domain: international.gc.ca
@@ -49,7 +49,7 @@ countries:
         priority: 1
         status: to_verify
         urls: 
-          - { url: https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/current-actuelles.aspx?lang=eng, topic: sanctions }
+          - { url: "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/current-actuelles.aspx?lang=eng", topic: sanctions }
       - id: ca-cfia
         agency: Canadian Food Inspection Agency
         domain: inspection.canada.ca
@@ -328,8 +328,8 @@ sanctions_authorities:
     priority: 1
     status: to_verify
     urls: 
-      - { url: https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions, topic: sanctions }
-      - { url: https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions, topic: sanctions }
+      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions", topic: sanctions }
+      - { url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions", topic: sanctions }
   - id: sanc-eu
     jurisdiction: EU
     agency: EU Sanctions Map (Council of the EU / EEAS)
@@ -344,8 +344,8 @@ sanctions_authorities:
     priority: 1
     status: to_verify
     urls: 
-      - { url: https://www.gov.uk/government/collections/uk-sanctions-on-russia, topic: sanctions }
-      - { url: https://www.gov.uk/government/collections/uk-sanctions-on-iran, topic: sanctions }
+      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-russia", topic: sanctions }
+      - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-iran", topic: sanctions }
 
 international:
   - id: wto-ttd
