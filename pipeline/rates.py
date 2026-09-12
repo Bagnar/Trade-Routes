@@ -23,7 +23,19 @@ from . import fetch
 
 ROOT = Path(__file__).resolve().parent.parent
 RATES_DIR = ROOT / "data" / "rates"
-WITS_URL = "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/{iso3}/partner/000/product/all/year/{year}/datatype/reported"
+WITS_URL = "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/{reporter}/partner/000/product/all/year/{year}/datatype/reported"
+WITS_AVAILABILITY = "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/{reporter}/year/{year}?format=JSON"
+
+# UN M49 numeric codes as used by WITS/UNCTAD TRAINS (Comtrade-style codes for FR/IT/CH/NO/BE).
+M49 = {
+    "CA": "124", "CN": "156", "RU": "643", "IR": "364", "TR": "792", "US": "840", "DE": "276", "KZ": "398", "UZ": "860",
+    "AE": "784", "IN": "356", "VN": "704", "BR": "076", "EG": "818", "JP": "392", "KR": "410", "GB": "826", "AU": "036",
+    "MX": "484", "ID": "360", "SA": "682", "ZA": "710", "AR": "032", "PL": "616", "FR": "251", "IT": "381", "ES": "724",
+    "NL": "528", "BE": "056", "SE": "752", "CH": "757", "NO": "579", "UA": "804", "BY": "112", "GE": "268", "AM": "051",
+    "AZ": "031", "KG": "417", "TJ": "762", "MN": "496", "PK": "586", "BD": "050", "TH": "764", "MY": "458", "SG": "702",
+    "PH": "608", "NG": "566", "KE": "404", "ET": "231", "MA": "504", "DZ": "012", "TN": "788", "IQ": "368", "QA": "634",
+    "KW": "414", "OM": "512", "IL": "376", "JO": "400", "LB": "422", "CL": "152", "CO": "170", "PE": "604", "NZ": "554",
+}
 
 # ISO2 -> ISO3 for the reporters we load first; extend as countries are added.
 ISO3 = {
@@ -84,48 +96,71 @@ def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
     return rates, year
 
 
+def probe(iso2: str) -> None:
+    """Diagnostics for the WITS endpoint: prints status and the first bytes of the reply for several URL shapes."""
+    iso3, m49 = ISO3.get(iso2.upper(), ""), M49.get(iso2.upper(), "")
+    year = date.today().year - 2
+    candidates = [
+        WITS_AVAILABILITY.format(reporter=m49, year=year),
+        WITS_URL.format(reporter=m49, year=year),
+        WITS_URL.format(reporter=iso3, year=year),
+        WITS_URL.format(reporter=m49, year=year).replace("/product/all/", "/product/Total/"),
+        WITS_URL.format(reporter=m49, year=year).replace("/product/all/", "/product/010121/"),
+        f"https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/{m49}/partner/000/product/all/year/{year}/datatype/reported?format=JSON",
+        f"https://wits.worldbank.org/API/V1/SDMX/V21/rest/data/DF_WITS_Tariff_TRAINS/A.{m49}.000.all.reported/?startPeriod={year}&endPeriod={year}",
+    ]
+    for url in candidates:
+        try:
+            snap = fetch.fetch_url(url, save=False, timeout=120.0)
+            body = snap.text.replace("\n", " ")[:300]
+            print(f"HTTP {snap.http_status}  {url}\n    {body}")
+        except Exception as exc:
+            print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
+
+
 def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> Path | None:
-    iso3 = ISO3.get(iso2.upper())
-    if not iso3:
-        print(f"skip {iso2}: no ISO3 mapping yet")
+    reporters = [c for c in (M49.get(iso2.upper()), ISO3.get(iso2.upper())) if c]
+    if not reporters:
+        print(f"skip {iso2}: no reporter code mapping yet")
         return None
     years = [year] if year else [date.today().year - 1, date.today().year - 2, date.today().year - 3]
     for y in years:
-        url = WITS_URL.format(iso3=iso3, year=y)
-        try:
-            snap = fetch.fetch_url(url, save=False, timeout=120.0)
-        except Exception as exc:
-            print(f"skip {iso2} {y}: {exc.__class__.__name__}: {str(exc)[:120]}")
-            continue
-        if snap.http_status != 200 or "<" not in snap.text[:10]:
-            print(f"skip {iso2} {y}: HTTP {snap.http_status}")
-            continue
-        rates, data_year = parse_wits_sdmx(snap.text)
-        if not rates:
-            print(f"skip {iso2} {y}: no HS-6 MFN series in response")
-            continue
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out = out_dir / f"{iso2.upper()}.json"
-        out.write_text(
-            json.dumps(
-                {
-                    "country": iso2.upper(),
-                    "source": "World Bank WITS / UNCTAD TRAINS",
-                    "url": url,
-                    "year": data_year or y,
-                    "fetched_at": snap.fetched_at,
-                    "kind": "import_mfn",
-                    "unit": "percent",
-                    "rates": dict(sorted(rates.items())),
-                },
-                ensure_ascii=False,
-                indent=0,
+        for reporter in reporters:
+            url = WITS_URL.format(reporter=reporter, year=y)
+            try:
+                snap = fetch.fetch_url(url, save=False, timeout=180.0)
+            except Exception as exc:
+                print(f"skip {iso2} {y} ({reporter}): {exc.__class__.__name__}: {str(exc)[:120]}")
+                continue
+            if snap.http_status != 200 or "<" not in snap.text[:10]:
+                print(f"skip {iso2} {y} ({reporter}): HTTP {snap.http_status} {snap.text[:160]!r}")
+                continue
+            rates, data_year = parse_wits_sdmx(snap.text)
+            if not rates:
+                print(f"skip {iso2} {y} ({reporter}): no HS-6 MFN series in response")
+                continue
+            out_dir.mkdir(parents=True, exist_ok=True)
+            out = out_dir / f"{iso2.upper()}.json"
+            out.write_text(
+                json.dumps(
+                    {
+                        "country": iso2.upper(),
+                        "source": "World Bank WITS / UNCTAD TRAINS",
+                        "url": url,
+                        "year": data_year or y,
+                        "fetched_at": snap.fetched_at,
+                        "kind": "import_mfn",
+                        "unit": "percent",
+                        "rates": dict(sorted(rates.items())),
+                    },
+                    ensure_ascii=False,
+                    indent=0,
+                )
+                + "\n",
+                encoding="utf8",
             )
-            + "\n",
-            encoding="utf8",
-        )
-        print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y} -> {out}")
-        return out
+            print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y} -> {out}")
+            return out
     return None
 
 
@@ -147,7 +182,11 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="pipeline rates")
     parser.add_argument("--wits", help="comma-separated ISO2 importers to load MFN rates for")
     parser.add_argument("--year", type=int)
+    parser.add_argument("--probe", help="diagnostics: try several WITS URL shapes for one ISO2 and print replies")
     args, _ = parser.parse_known_args(argv)
+    if args.probe:
+        probe(args.probe)
+        return 0
     if not args.wits:
         parser.error("use --wits CA,CN,...")
     written = [load_wits(c.strip(), args.year) for c in args.wits.split(",") if c.strip()]

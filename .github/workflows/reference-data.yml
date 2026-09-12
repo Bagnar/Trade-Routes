@@ -13,6 +13,9 @@ on:
       rates_reporters:
         description: "ISO codes of importers to load MFN rates for (comma-separated), empty = skip"
         default: "CA,CN,RU,IR,TR"
+      probe:
+        description: "Diagnostics: ISO2 of one country to probe WITS URL shapes for (empty = off)"
+        default: ""
 
 permissions:
   contents: write
@@ -28,6 +31,9 @@ jobs:
       - run: pip install -e ".[dev]"
       - name: HS-6 nomenclature
         run: python -m pipeline reference
+      - name: Probe WITS endpoint (diagnostics)
+        if: ${{ github.event.inputs.probe != '' }}
+        run: python -m pipeline rates --probe "${{ github.event.inputs.probe }}"
       - name: MFN rates by HS-6
         if: ${{ github.event.inputs.rates_reporters != '' }}
         run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR' }}"
