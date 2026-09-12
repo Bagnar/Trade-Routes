@@ -41,6 +41,17 @@ USMCA = ["US", "MX", "CA"]
 CIS_FTA = ["AM", "BY", "KZ", "KG", "MD", "RU", "TJ", "UZ"]
 ANDEAN = ["BO", "CO", "EC", "PE"]
 CACM = ["CR", "SV", "GT", "HN", "NI"]
+APTA = ["BD", "CN", "IN", "KR", "LA", "LK", "MN"]
+ECO = ["AF", "AZ", "IR", "KZ", "KG", "PK", "TJ", "TR", "TM", "UZ"]
+COMESA = ["BI", "KM", "CD", "DJ", "EG", "ER", "SZ", "ET", "KE", "LY", "MG", "MW", "MU", "RW", "SC", "SO", "SD", "TN", "UG", "ZM", "ZW"]
+ECOWAS = ["BJ", "BF", "CV", "CI", "GM", "GH", "GN", "GW", "LR", "ML", "NE", "NG", "SN", "SL", "TG"]
+EAC = ["BI", "CD", "KE", "RW", "SO", "SS", "TZ", "UG"]
+SADC = ["AO", "BW", "KM", "CD", "SZ", "LS", "MG", "MW", "MU", "MZ", "NA", "SC", "ZA", "TZ", "ZM", "ZW"]
+CEMAC = ["CM", "CF", "TD", "CG", "GQ", "GA"]
+WAEMU = ["BJ", "BF", "CI", "GW", "ML", "NE", "SN", "TG"]
+CARICOM = ["AG", "BS", "BB", "BZ", "DM", "GD", "GY", "HT", "JM", "KN", "LC", "VC", "SR", "TT"]
+CEFTA = ["AL", "BA", "MD", "ME", "MK", "RS"]
+AGADIR = ["EG", "JO", "MA", "TN"]
 
 # Names as RTA-IS writes them -> ISO2 (or a group). Everything not listed here falls back to data/countries.json.
 ALIASES: dict[str, list[str]] = {
@@ -63,6 +74,12 @@ ALIASES: dict[str, list[str]] = {
     "united states - mexico - canada agreement": USMCA, "north american free trade agreement": USMCA, "nafta": USMCA,
     "cis": CIS_FTA, "commonwealth of independent states": CIS_FTA, "treaty on a free trade area between members of the cis": CIS_FTA,
     "andean community": ANDEAN, "can": ANDEAN, "central american common market": CACM, "cacm": CACM,
+    "central america": CACM, "apta": APTA, "asia pacific trade agreement": APTA, "eco": ECO, "economic cooperation organization": ECO,
+    "comesa": COMESA, "common market for eastern and southern africa": COMESA, "ecowas": ECOWAS, "economic community of west african states": ECOWAS,
+    "eac": EAC, "east african community": EAC, "sadc": SADC, "southern african development community": SADC, "cemac": CEMAC,
+    "economic and monetary community of central africa": CEMAC, "waemu": WAEMU, "uemoa": WAEMU, "west african economic and monetary union": WAEMU,
+    "caricom": CARICOM, "caribbean community and common market": CARICOM, "cefta": CEFTA, "central european free trade agreement": CEFTA,
+    "agadir agreement": AGADIR, "european free trade association": EFTA_MEMBERS, "eu treaty": EU_MEMBERS,
     "eu - efta": EU_MEMBERS + EFTA_MEMBERS, "european economic area": EU_MEMBERS + ["NO", "IS", "LI"], "eea": EU_MEMBERS + ["NO", "IS", "LI"],
 }
 
@@ -81,12 +98,28 @@ def names_to_iso2(text: str, index: dict[str, list[str]] | None = None) -> list[
     """'European Union; Viet Nam' -> ['AT', ..., 'VN']. Unknown names are dropped (never guessed)."""
     index = index or _country_index()
     out: list[str] = []
-    for raw in re.split(r"\s*[;|\n]\s*", text):
-        name = raw.strip().strip(".").lower()
+
+    def lookup(name: str) -> list[str] | None:
+        name = name.strip(" .").lower()
         if not name:
-            continue
-        codes = index.get(name) or index.get(name.replace(" (the)", "")) or index.get(name.split(",")[0].strip())
-        for code in codes or []:
+            return None
+        name = re.sub(r"^(accession of|the)\s+", "", name)
+        name = re.sub(r"^(accession of|the)\s+", "", name)
+        candidates = [name, name.replace(" (the)", ""), name.split(",")[0].strip()]
+        m = re.match(r"^(.*?)\s*\(([^)]*)\)\s*(\d{4})?$", name)  # "Eurasian Economic Union (EAEU)" -> both parts
+        if m:
+            candidates += [m.group(1).strip(), m.group(2).strip()]
+        candidates.append(re.sub(r"\s*\([^)]*\)?\s*", " ", name).strip())  # "Costa Rica (Chile" -> "Costa Rica"
+        for c in candidates:
+            if c in index:
+                return index[c]
+        if " and " in name:  # "Colombia and Peru"
+            found = [code for part in name.split(" and ") for code in (lookup(part) or [])]
+            return found or None
+        return None
+
+    for raw in re.split(r"\s*[;|\n]\s*", text):
+        for code in lookup(raw) or []:
             if code not in out:
                 out.append(code)
     return out

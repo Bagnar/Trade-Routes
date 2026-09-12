@@ -64,3 +64,13 @@ def test_xlsx_export_is_parsed(tmp_path):
     rows = agreements.parse_xlsx_rows(buf.getvalue())
     assert rows == [["RTA Name", "Status"], ["Canada - Ukraine", "In Force"]]
     assert agreements.rows_to_agreements(rows)[0]["members"] == ["CA", "UA"]
+
+
+def test_rta_is_name_forms():
+    n = agreements.names_to_iso2
+    assert set(n("Eurasian Economic Union (EAEU)")) == {"RU", "BY", "KZ", "AM", "KG"}
+    assert n("EAEU - Accession of Armenia".replace(" - ", ";"))[:1] == ["RU"] and "AM" in n("Accession of Armenia")
+    assert n("Central America;Korea, Republic of") == ["CR", "SV", "GT", "HN", "NI", "KR"]
+    assert n("Colombia and Peru") == ["CO", "PE"]
+    assert n("Costa Rica (Chile") == ["CR"] and n("Central European Free Trade Agreement (CEFTA) 2006")[:1] == ["AL"]
+    assert n("Accession of the United Kingdom") == ["GB"]
