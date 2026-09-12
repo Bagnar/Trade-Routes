@@ -1,0 +1,250 @@
+{
+  "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+  "source_id": "sanc-us-ofac",
+  "fetched_at": "2026-09-12T11:48:15+00:00",
+  "content_hash": "82bfb5297d01b7ba0553a851a0599419a9b1b4c20b894ca6d97e01fcd6169787",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC выдает генеральные лицензии, которые разрешают операции с Ираном, в остальном запрещенные; все лица США могут пользоваться ими без подачи заявления на специальную лицензию.",
+        "en": "OFAC issues general licenses authorizing Iran-related activity that is otherwise prohibited; all U.S. persons may rely on them without applying for a specific license."
+      },
+      "quote": "OFAC issues general licenses in order to authorize activities that would otherwise be prohibited with regard to Iran. General licenses allow all U.S. persons to engage in the activity described in the general license without needing to apply for a specific license.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельные операции с Ираном возможны при наличии специальной лицензии OFAC, за которой подается заявление онлайн.",
+        "en": "Certain Iran-related transactions may be carried out only under a specific OFAC license, applied for online."
+      },
+      "quote": "Apply for an OFAC License Online - Authorization from OFAC to engage in a transaction that otherwise would be prohibited",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспорт сельскохозяйственных товаров, медикаментов и медицинских изделий в Иран лицензируется по программе TSRA (Закон о реформе торговых санкций и расширении экспорта 2000 года).",
+        "en": "Exports of agricultural commodities, medicine and medical devices to Iran are licensed under the Trade Sanctions Reform and Export Enhancement Act of 2000 (TSRA) program."
+      },
+      "quote": "Trade Sanctions Reform and Export Enhancement Act of 2000 (TSRA) Program Information and TSRA License Application Process - Guidance and licensing information for exports of agricultural commodities, medicine, and medical devices",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC опубликовал перечень медицинских изделий, для поставки которых в Иран требуется специальное разрешение (специальная лицензия).",
+        "en": "OFAC publishes a list of medical devices that require specific authorization for export to Iran."
+      },
+      "quote": "List of Medical Devices Requiring Specific Authorization (February 27, 2017)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импорт товаров из Ирана в США запрещен указом 12613, вступившим в силу 29 октября 1987 года.",
+        "en": "Imports from Iran into the United States are prohibited under Executive Order 12613, effective October 29, 1987."
+      },
+      "quote": "12613 - Prohibiting Imports From Iran (Effective Date - October 29, 1987)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Указ 13599 блокирует имущество правительства Ирана и иранских финансовых учреждений (в силе с 6 февраля 2012 года).",
+        "en": "Executive Order 13599 blocks property of the Government of Iran and Iranian financial institutions, effective February 6, 2012."
+      },
+      "quote": "13599 - Blocking Property of the Government of Iran and Iranian Financial Institutions (Effective Date - February 06, 2012)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Указ 13871 вводит санкции в отношении секторов черной металлургии, стали, алюминия и меди Ирана.",
+        "en": "Executive Order 13871 imposes sanctions with respect to the iron, steel, aluminum, and copper sectors of Iran."
+      },
+      "quote": "13871 - Imposing Sanctions with Respect to the Iron, Steel, Aluminum, and Copper Sectors of Iran",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Определением по разделу 1(a)(i) указа 13902 санкции распространены на нефтяной и нефтехимический секторы экономики Ирана с 11 октября 2024 года.",
+        "en": "A determination under section 1(a)(i) of E.O. 13902 extended sanctions to the petroleum and petrochemical sectors of Iran's economy, effective October 11, 2024."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(i) of Executive Order 13902 - Petroleum and Petrochemical Sectors of the Iranian Economy (Effective October 11, 2024)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Определением по указу 13902 санкции распространены на авиационный, цифровых активов, золотодобывающий, судоходный и технологический секторы экономики Ирана с 24 августа 2026 года.",
+        "en": "A determination under E.O. 13902 extended sanctions to the aviation, digital asset, gold, shipping, and technology sectors of Iran's economy, effective August 24, 2026."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(1) of Executive Order 13902 - Aviation, Digital Asset, Gold, Shipping, and Technology Sectors of the Iranian Economy (Effective August 24, 2026)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Определением по указу 13902 санкции распространены на финансовый сектор экономики Ирана с 8 октября 2020 года.",
+        "en": "A determination under E.O. 13902 extended sanctions to the financial sector of Iran's economy, effective October 8, 2020."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(i) of Executive Order 13902 - Financial Sector of the Iranian Economy (Effective October 08, 2020)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральная лицензия 8A разрешает определенные гуманитарные торговые операции с участием Центрального банка Ирана или Иранской национальной нефтяной компании.",
+        "en": "Iran General License 8A authorizes certain humanitarian trade transactions involving the Central Bank of Iran or the National Iranian Oil Company."
+      },
+      "quote": "Iran General License 8A - Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company (October 26, 2020)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральная лицензия E разрешает определенные услуги в поддержку деятельности неправительственных организаций в Иране.",
+        "en": "Iran General License E authorizes certain services in support of nongovernmental organizations' activities in Iran."
+      },
+      "quote": "Iran General License E - Authorizing Certain Services in Support of Nongovernmental Organizations' Activities in Iran (September 10, 2023)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральные лицензии F (спорт) и G (академические обмены и образовательные услуги) приостановлены с 24 августа 2026 года.",
+        "en": "Iran General Licenses F (sports activities) and G (academic exchanges and educational services) are suspended as of August 24, 2026."
+      },
+      "quote": "Iran General License G - Related to Academic Exchanges and the Exportation or Importation of Certain Educational Services - Suspended as of August 24, 2026",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральная лицензия J-1, разрешавшая реэкспорт некоторых гражданских воздушных судов в Иран с временной остановкой, приостановлена с 8 сентября 2026 года.",
+        "en": "Iran General License J-1, which authorized the reexportation of certain civil aircraft to Iran on temporary sojourn, is suspended as of September 8, 2026."
+      },
+      "quote": "Iran General License J-1 - Authorizing the Reexportation of Certain Civil Aircraft to Iran on Temporary Sojourn and Related Transactions - Suspended as of September 08, 2026",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральная лицензия DD разрешает сворачивание ранее разрешенных операций в сфере гражданской авиации и иных сделок по Правилам иранских транзакций и санкций (8 сентября 2026 года).",
+        "en": "Iran General License DD authorizes the wind down of certain civil aviation-related and other transactions previously authorized under the Iranian Transactions and Sanctions Regulations (September 8, 2026)."
+      },
+      "quote": "Iran General License DD - Authorizing the Wind Down of Certain Civil Aviation-Related and Other Transactions Previously Authorized Under the Iranian Transactions and Sanctions Regulations (September 08, 2026)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Иранская санкционная программа США кодифицирована в 31 CFR: часть 535 (контроль иранских активов), 560 (транзакции и санкции), 561 (финансовые санкции), 562 (нарушения прав человека).",
+        "en": "The U.S. Iran sanctions program is codified in 31 CFR Parts 535, 560, 561 and 562."
+      },
+      "quote": "31 CFR Part 560 - Iranian Transactions and Sanctions Regulations\n 31 CFR Part 561 - Iranian Financial Sanctions Regulations",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "logistics",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC предупредил о санкционных рисках при работе с китайскими малыми НПЗ («teapot») и о рисках, связанных с требованиями Ирана о проходе через Ормузский пролив.",
+        "en": "OFAC issued alerts on the sanctions risks of dealing with teapot oil refineries and on Iranian demands for Strait of Hormuz passage."
+      },
+      "quote": "OFAC Alert: Sanctions Risks of Iranian Demands for Strait of Hormuz Passage (August 24, 2026)\n OFAC Alert: Sanctions Risk of Dealing with Teapot Oil Refineries (April 28, 2026)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "supply",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC издал руководство по финансовым каналам для гуманитарной торговли с Ираном и связанным с ней требованиям должной осмотрительности и отчетности.",
+        "en": "OFAC issued guidance on financial channels to facilitate humanitarian trade with Iran and related due diligence and reporting expectations."
+      },
+      "quote": "Financial Channels to Facilitate Humanitarian Trade with Iran and Related Due Diligence and Reporting Expectations (October 25, 2019)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC выпустил отдельное руководство о продаже продовольствия, сельскохозяйственных товаров, медикаментов и медицинских изделий в Иран лицами, не являющимися лицами США, а также о перевалке грузов в Иран.",
+        "en": "OFAC provides specific guidance on the sale of food, agricultural commodities, medicine, and medical devices to Iran by non-U.S. persons, and on transshipments to Iran."
+      },
+      "quote": "Guidance on the Sale of Food, Agricultural Commodities, Medicine, and Medical Devices by Non-U.S. Persons to Iran",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Санкции в отношении Ирана, снятые или приостановленные в рамках СВПД, были вновь введены; OFAC опубликовал соответствующее уведомление от 4 ноября 2018 года.",
+        "en": "Sanctions on Iran that had been lifted or waived under the JCPOA were re-imposed, as set out in OFAC's notice of November 4, 2018."
+      },
+      "quote": "Notice on the Re-imposition of the Sanctions on Iran that had Been Lifted or Waived Under the JCPOA (November 04, 2018)",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 1
+}

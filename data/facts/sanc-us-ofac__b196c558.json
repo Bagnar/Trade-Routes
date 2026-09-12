@@ -1,0 +1,211 @@
+{
+  "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
+  "source_id": "sanc-us-ofac",
+  "fetched_at": "2026-09-12T11:49:26+00:00",
+  "content_hash": "9e15a4620b517ac6ad2e57f421149ebd7f4fcc37256fe550a6c4c9d420ee6af9",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "7108"
+      ],
+      "statement": {
+        "ru": "США запретили импорт золота российского происхождения на основании определения по Указу 14068, вступившего в силу 28 июня 2022 года.",
+        "en": "The United States prohibits imports of gold of Russian Federation origin under a determination pursuant to Executive Order 14068, effective June 28, 2022."
+      },
+      "quote": "Determination Pursuant to Sections 1(a)(i)(A), 1(b) and 5 of Executive Order 14068 (Effective June 28, 2022) - Prohibitions Related to Imports of Gold of Russian Federation Origin (As Amended)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "76",
+        "74",
+        "75"
+      ],
+      "statement": {
+        "ru": "С 12 апреля 2024 года запрещён импорт в США алюминия, меди и никеля российского происхождения; отдельным определением также запрещены определённые услуги по приобретению этих металлов.",
+        "en": "Effective April 12, 2024, imports of aluminum, copper, and nickel of Russian Federation origin are prohibited, and a separate determination bans certain services for the acquisition of those metals."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(i)(A) of Executive Order 14068 (Effective April 12, 2024) - Prohibitions Related to Imports of Aluminum, Copper, and Nickel of Russian Federation Origin\n Determination Pursuant to Section 1(a)(ii) of Executive Order 14071 (Effective April 12, 2024) - Prohibitions on Certain Services for the Acquisition of Aluminum, Copper, or Nickel of Russian Federation Origin",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "7102",
+        "7103",
+        "7113"
+      ],
+      "statement": {
+        "ru": "С 1 марта 2024 года запрещён импорт в США бриллиантовых украшений и несортированных алмазов российского происхождения либо экспортированных из России, а также отдельных категорий алмазов.",
+        "en": "Effective March 1, 2024, the U.S. prohibits imports of diamond jewelry and unsorted diamonds of Russian Federation origin or exported from Russia, as well as certain categories of diamonds."
+      },
+      "quote": "Determinations pursuant to Sections 1(a)(i)(A) and 1(a)(i)(D) of Executive Order 14068 (Effective March 01, 2024) - Prohibitions Related to Imports of Diamond Jewelry and Unsorted Diamonds of Russian Federation Origin and Diamond Jewelry and Unsorted Diamonds Exported From the Russian Federation",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "03",
+        "1604",
+        "1605"
+      ],
+      "statement": {
+        "ru": "С 22 декабря 2023 года действует запрет на импорт в США отдельных категорий рыбы, морепродуктов и продуктов из них российского происхождения.",
+        "en": "Effective December 22, 2023, imports into the U.S. of certain categories of fish, seafood, and preparations thereof are prohibited."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(i)(B) of E.O. 14068 (Effective December 22, 2023) - Prohibitions Related to Imports of Certain Categories of Fish, Seafood, and Preparations Thereof",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "2709"
+      ],
+      "statement": {
+        "ru": "С 5 декабря 2022 года действуют ценовой потолок на сырую нефть российского происхождения и запрет на отдельные услуги, связанные с её морской перевозкой.",
+        "en": "Effective December 5, 2022, a price cap applies to crude oil of Russian Federation origin and certain services related to its maritime transport are prohibited."
+      },
+      "quote": "Determination Pursuant to Sections 1(a)(ii), 1(b), and 5 of Executive Order 14071 (Effective December 05, 2022) - Price Cap on Crude Oil of Russian Federation Origin\n Determination Pursuant to Sections 1(a)(ii), 1(b), and 5 of Executive Order 14071 (Effective December 05, 2022) - Prohibitions on Certain Services as They Relate to the Maritime Transport of Crude Oil of Russian Federation Origin",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "2710"
+      ],
+      "statement": {
+        "ru": "С 5 февраля 2023 года действует ценовой потолок на нефтепродукты российского происхождения и запрет на определённые услуги, связанные с их морской перевозкой.",
+        "en": "Effective February 5, 2023, a price cap applies to petroleum products of Russian Federation origin, with a prohibition on certain services relating to their maritime transport."
+      },
+      "quote": "Determination Pursuant to Sections 1(a)(ii), 1(b), and 5 of Executive Order 14071 (Effective February 05, 2023) - Price Cap on Petroleum Products of Russian Federation Origin\n Determination Pursuant to Sections 1(a)(ii), 1(b) and 5 of Executive Order 14071 (Effective February 05, 2023) - Prohibition on Certain Services as They Relate to the Maritime Transport of Petroleum Products of Russian Federation Origin",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC опубликовало руководство по применению политики ценового потолка для сырой нефти и нефтепродуктов российского происхождения (обновлено 20 декабря 2023 года).",
+        "en": "OFAC has published guidance on implementation of the price cap policy for crude oil and petroleum products of Russian Federation origin, updated December 20, 2023."
+      },
+      "quote": "OFAC Guidance on Implementation of the Price Cap Policy for Crude Oil and Petroleum Products of Russian Federation Origin (Updated on December 20, 2023)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 27 февраля 2025 года действует определение по Указу 14071, запрещающее оказание нефтяных услуг (petroleum services).",
+        "en": "A determination under Executive Order 14071, effective February 27, 2025, prohibits the provision of petroleum services."
+      },
+      "quote": "Determination Pursuant to Section 1(a)(ii) of Executive Order 14071 (Effective February 27, 2025) - Prohibition on Petroleum Services",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 12 сентября 2024 года запрещено оказание отдельных ИТ-услуг и услуг по программному обеспечению лицам в России.",
+        "en": "Effective September 12, 2024, the provision of certain information technology and software services is prohibited under Executive Order 14071."
+      },
+      "quote": "Determination Pursuant to Section 1 (a)(ii) of Executive Order 14071 (Effective September 12, 2024) - Prohibition on Certain Information Technology and Software Services",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Четыре директивы OFAC запрещают операции с суверенным долгом России, корреспондентские счета отдельных иностранных финансовых учреждений, новые долговые и долевые инструменты ряда российских компаний и операции с Центробанком, ФНБ и Минфином России.",
+        "en": "OFAC directives prohibit dealings in certain Russian sovereign debt, correspondent/payable-through accounts for certain foreign financial institutions, new debt and equity of certain Russia-related entities, and transactions involving the Central Bank, National Wealth Fund and Ministry of Finance of Russia."
+      },
+      "quote": "Directive 2 - Prohibitions Related to Correspondent or Payable-Through Accounts and Processing of Transactions Involving Certain Foreign Financial Institutions (February 24, 2022)\n Directive 3 - Prohibitions Related to New Debt and Equity of Certain Russia-related Entities (February 24, 2022)\n Directive 4 - Prohibitions Related to Transactions Involving the Central Bank of the Russian Federation, the National Wealth Fund of the Russian Federation, and the Ministry of Finance of the Russian Federation (May 19, 2023)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Генеральная лицензия 6D разрешает операции, связанные с сельскохозяйственными товарами, лекарствами, медицинскими изделиями, запасными частями и обновлениями ПО, а также с COVID-19 и клиническими исследованиями.",
+        "en": "General License 6D authorizes transactions related to agricultural commodities, medicine, medical devices, replacement parts and components, software updates, the COVID-19 pandemic, or clinical trials."
+      },
+      "quote": "Russia-related General License 6D - Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials (June 12, 2024)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [
+        "7102",
+        "7113"
+      ],
+      "statement": {
+        "ru": "Генеральные лицензии 103 и 104B разрешают отдельные операции по импорту определённых бриллиантовых украшений и алмазов, запрещённых Указом 14068.",
+        "en": "General Licenses 103 and 104B authorize transactions related to imports of certain diamond jewelry and certain diamonds otherwise prohibited by Executive Order 14068."
+      },
+      "quote": "Russia-related General License 103 - Authorizing Transactions Related to Imports of Certain Diamond Jewelry Prohibited by Executive Order 14068 (August 23, 2024)\n Russia-related General License 104B - Authorizing Transactions Related to Imports of Certain Diamonds Prohibited by Executive Order 14068 (August 26, 2026)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельные операции, запрещённые санкциями, могут быть разрешены специальной лицензией OFAC, заявку на которую подают онлайн.",
+        "en": "Certain activities otherwise prohibited under the Russian Harmful Foreign Activities Sanctions may be permitted if licensed by OFAC, with applications submitted online."
+      },
+      "quote": "Certain activities related to the Russian Harmful Foreign Activities Sanctions may be allowed if they are licensed by OFAC. Visit the link below to apply for an OFAC license.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "OFAC предупреждает о санкционных рисках для иностранных финансовых учреждений, подключающихся к российской Системе передачи финансовых сообщений (СПФС).",
+        "en": "OFAC warns of sanctions risk for foreign financial institutions that join Russia's System for Transfer of Financial Messages."
+      },
+      "quote": "OFAC Alert: Sanctions Risk for Foreign Financial Institutions that Join Russian Financial Messaging System, System for Transfer of Financial Messages (November 21, 2024)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Российская санкционная программа кодифицирована в 31 CFR Part 587 и опирается на указы президента (14024, 14066, 14068, 14071, 14114) и законы, включая IEEPA и NEA.",
+        "en": "The Russia program is codified at 31 CFR Part 587 and rests on executive orders (14024, 14066, 14068, 14071, 14114) and statutes such as IEEPA and the National Emergencies Act."
+      },
+      "quote": "31 CFR Part 587 - Russian Harmful Foreign Activities Sanctions Regulations",
+      "quote_lang": "en",
+      "has_number": true
+    }
+  ],
+  "dropped": 0
+}

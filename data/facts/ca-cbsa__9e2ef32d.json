@@ -1,0 +1,9 @@
+{
+  "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html",
+  "source_id": "ca-cbsa",
+  "fetched_at": "2026-09-12T11:44:51+00:00",
+  "content_hash": "67412dbdc5644adde772a3fadf6b84d4dea8bfd8e1152daae51feda5d2490b76",
+  "topic": "customs_tariff,import_procedures,carm,parcels,trade_remedies,forced_labour",
+  "facts": [],
+  "dropped": 25
+}

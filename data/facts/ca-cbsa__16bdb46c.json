@@ -1,0 +1,120 @@
+{
+  "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html",
+  "source_id": "ca-cbsa",
+  "fetched_at": "2026-09-12T11:43:01+00:00",
+  "content_hash": "8a189410239b1a13bd2d1d765f5a2b33361eebfbbd138cb1d1fb1a33d85bea75",
+  "topic": "customs_tariff,import_procedures,carm,parcels,trade_remedies,forced_labour",
+  "facts": [
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "9897"
+      ],
+      "statement": {
+        "ru": "Товары, добытые, изготовленные или произведенные полностью или частично принудительным трудом, запрещены к ввозу в Канаду по тарифной позиции 9897.00.00 Таможенного тарифа.",
+        "en": "Goods mined, manufactured or produced wholly or in part by forced labour are prohibited from entering Canada under tariff item No. 9897.00.00 of the Customs Tariff."
+      },
+      "quote": "1. Goods that are mined, manufactured or produced wholly or in part by forced labour are prohibited from entering Canada pursuant to tariff item No. 9897.00.00 of the Customs Tariff.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "9897"
+      ],
+      "statement": {
+        "ru": "Товары, изготовленные или произведенные полностью или частично трудом заключенных, также запрещены к ввозу по тарифной позиции 9897.00.00.",
+        "en": "Goods manufactured or produced wholly or in part by prison labour are likewise prohibited from entering Canada under tariff item No. 9897.00.00."
+      },
+      "quote": "2. Goods manufactured or produced wholly or in part by prison labour are prohibited from entering Canada pursuant to tariff item No. 9897.00.00 of the Customs Tariff.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "9897",
+        "9898",
+        "9899"
+      ],
+      "statement": {
+        "ru": "Ввоз товаров, классифицируемых по тарифным позициям 9897.00.00, 9898.00.00 или 9899.00.00, запрещен согласно статье 136(1) Таможенного тарифа.",
+        "en": "Section 136(1) of the Customs Tariff prohibits the importation of goods of tariff item No. 9897.00.00, 9898.00.00 or 9899.00.00."
+      },
+      "quote": "Section 136. (1) The importation of goods of tariff item No. 9897.00.00, 9898.00.00 or 9899.00.00 is prohibited.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "9897"
+      ],
+      "statement": {
+        "ru": "Товары, произведенные трудом заключенных, исключаются из действия позиции 9897.00.00, если ввозятся исключительно для личного пользования, а не для продажи или коммерческого/профессионального использования — нерезидентом Канады или резидентом, декларирующим их при возвращении в Канаду.",
+        "en": "Goods made wholly or in part by prison labour are excluded from tariff item 9897.00.00 when imported solely for personal use and not for sale or any business or occupational use, by a non-resident of Canada or by a resident reporting the goods on return to Canada."
+      },
+      "quote": "1. Tariff item 9897.00.00 of the Customs Tariff is amended to exclude goods manufactured or produced wholly or in part by prison labour, on the condition that the goods are imported solely for personal use and not for sale or for any business or occupational use, by:\n (a) a non-resident of Canada or\n (b) a resident of Canada, reporting the goods at the time of his or her return to Canada",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "9897"
+      ],
+      "statement": {
+        "ru": "Получив уведомление по подразделу 59(2) Таможенного закона, лицо может запросить пересмотр классификации по статье 60; товары, отнесенные к позиции 9897.00.00, также могут быть вывезены согласно экспортному законодательству или оставлены (abandoned) по статье 36 Таможенного закона.",
+        "en": "A person receiving a notice under subsection 59(2) of the Customs Act may request a review of the tariff classification under section 60; goods classified under tariff item 9897.00.00 may also be exported under applicable export law or abandoned under section 36 of the Customs Act."
+      },
+      "quote": "4. A person who receives a notice under subsection 59(2) of the Customs Act may seek review of the determination or re-determination of tariff classification under section 60 of the Customs Act. Goods classified under tariff item No. 9897.00.00 may also be exported in accordance with applicable export law, or abandoned in accordance with section 36 of the Customs Act.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "supply",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Программа труда ESDC исследует проблемные цепочки поставок и готовит отчеты о товарах, вероятно произведенных принудительным трудом; CBSA использует эту информацию для выявления и задержания подозрительных товаров при ввозе.",
+        "en": "ESDC's Labour Program researches problematic supply chains and prepares reports flagging goods likely produced by forced labour, which are shared with the CBSA so it can identify and detain suspected goods on importation."
+      },
+      "quote": "The Labour Program of ESDC researches relevant facts related to problematic supply chains and prepares reports signalling when goods are likely mined, manufactured or produced by forced labour. These reports are shared with the CBSA. The CBSA may use this information to identify and detain, upon importation, suspected goods produced by prison or forced labour, the importation of which is prohibited under tariff item No. 9897.00.00.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "supply",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импортер обязан обеспечить соответствие ввозимых товаров канадскому законодательству и провести должную проверку (due diligence) своих цепочек поставок, чтобы товары не были произведены принудительным трудом.",
+        "en": "Importers are responsible for ensuring imported goods comply with Canadian law and must conduct due diligence on their supply chains so that goods are not mined, manufactured or produced wholly or in part by forced labour."
+      },
+      "quote": "10. Importers are responsible for ensuring that any goods that they are importing into Canada are compliant with Canadian law. It is the responsibility of the importer to conduct due diligence on its supply chains to ensure that goods it imports into Canada are not mined, manufactured or produced wholly or in part by forced labour.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [
+        "9897"
+      ],
+      "statement": {
+        "ru": "Запрет на импорт товаров, произведенных полностью или частично принудительным трудом, введен в Канаде Законом об имплементации Соглашения Канада–США–Мексика (CUSMA).",
+        "en": "Canada's import prohibition on goods produced wholly or in part by forced labour was established by the Canada–United States–Mexico Agreement Implementation Act."
+      },
+      "quote": "1. This Memorandum has been updated to include information on Canada’s import prohibition on goods mined, manufactured or produced wholly or in part by forced labour as established by the Canada–United States–Mexico Agreement Implementation Act.",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 0
+}

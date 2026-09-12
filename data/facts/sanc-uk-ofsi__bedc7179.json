@@ -1,0 +1,129 @@
+{
+  "url": "https://www.gov.uk/government/collections/uk-sanctions-on-russia",
+  "source_id": "sanc-uk-ofsi",
+  "fetched_at": "2026-09-12T11:50:18+00:00",
+  "content_hash": "05d95c749f344b9c1fe89edd06ca7c295fa62e525a9248df499bc693b0f21bc4",
+  "topic": "",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Режим санкций Великобритании в отношении России направлен на то, чтобы побудить Россию прекратить действия, дестабилизирующие Украину, и содействовать выплате компенсации за ущерб, причинённый Украине с 24 февраля 2022 года.",
+        "en": "The UK Russia sanctions regime aims to encourage Russia to cease actions destabilising Ukraine and to promote payment of compensation by Russia for damage suffered by Ukraine on or after 24 February 2022."
+      },
+      "quote": "encouraging Russia to cease actions destabilising Ukraine or undermining or threatening the territorial integrity, sovereignty or independence of Ukraine",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "logistics",
+      "country": "GB",
+      "hs_scope": [
+        "2709",
+        "2710"
+      ],
+      "statement": {
+        "ru": "Запрет на морские услуги запрещает перевозку судами российской нефти и нефтепродуктов из России в третью страну или между третьими странами, а также связанные с такой перевозкой услуги.",
+        "en": "The Maritime Services Ban prohibits shipping Russian oil and oil products from Russia to a third country or between third countries, and bans certain associated services."
+      },
+      "quote": "The Maritime Services Ban prohibits the transportation by ship of Russian oil and oil products from a place in Russia to a third country, or from one third country to another. It also bans certain services associated with such transportation.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "GB",
+      "hs_scope": [
+        "2709",
+        "2710"
+      ],
+      "statement": {
+        "ru": "Исключение по потолку цен (OPC) позволяет поставку российской нефти и нефтепродуктов морем и связанные услуги при условии, что уплаченная цена не превышает соответствующий потолок цен.",
+        "en": "The Oil Price Cap exception permits seaborne supply or delivery of Russian oil and oil products, and associated services, provided the price paid is at or below the relevant price cap."
+      },
+      "quote": "The OPC exception allows the supply or delivery of Russian oil and oil products by ship, as well as provision of associated services – so long as the price paid for Russian oil or oil products is at or below the relevant price cap.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Великобритания запрещает предоставление ряда самостоятельных услуг лицам, связанным с Россией, включая бухгалтерские и аудиторские, рекламные и PR, архитектурные и инженерные, консалтинговые, ИТ-консультации и дизайн, а также юридические консультации.",
+        "en": "The UK prohibits the provision of a range of standalone services to persons connected with Russia, including accounting and auditing, advertising and PR, architectural and engineering, business and management consulting, IT consultancy and design, and legal advisory services."
+      },
+      "quote": "The statutory guidance explains the prohibitions and requirements that apply to providing services to persons connected with Russia , including:\n accounting and auditing\n advertising and public relations\n architectural and engineering\n business and management consulting\n IT consultancy and design\n legal advisory",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "На товары происхождением из России и Беларуси в Великобритании применяются дополнительные пошлины согласно Customs (Additional Duty) (Russia and Belarus) Regulations 2022.",
+        "en": "Additional customs duties apply in the UK to goods originating in Russia and Belarus under the Customs (Additional Duty) (Russia and Belarus) Regulations 2022."
+      },
+      "quote": "Additional duties on goods originating in Russia and Belarus\n 27 June 2025\n Guidance\n Reference documents for Customs (Additional Duty) (Russia and Belarus) Regulations 2022",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Великобритания ввела импортные санкции в отношении России; порядок изложен в Уведомлении импортёрам 2953 «Russia import sanctions».",
+        "en": "The UK applies import sanctions on Russia, set out in Notice to Importers 2953: Russia import sanctions."
+      },
+      "quote": "Notice to Importers 2953: Russia import sanctions\n 12 June 2026\n Notice",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "documents",
+      "country": "GB",
+      "hs_scope": [
+        "2710",
+        "7102",
+        "72",
+        "73"
+      ],
+      "statement": {
+        "ru": "Действуют генеральные торговые лицензии по санкциям против России, в том числе на подсанкционные переработанные нефтепродукты, удобрения, российские алмазы, обработанные в третьих странах, и подсанкционные чугун и сталь.",
+        "en": "General trade licences are available under the Russia sanctions, including for sanctioned processed oil products, fertilisers, Russian diamonds processed in third countries, and sanctioned iron and steel."
+      },
+      "quote": "General Trade Licence for sanctioned processed oil products\n 12 June 2026\n Notice\n General trade licence Russia sanctions – fertilisers",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "documents",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для осуществления подсанкционной торговли можно подать заявление на лицензию через OTSI (Office of Trade Sanctions Implementation).",
+        "en": "Businesses can apply for a licence to carry out sanctioned trade through OTSI."
+      },
+      "quote": "Apply for a licence to carry out sanctioned trade through OTSI\n 20 May 2026\n Guidance",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "GB",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Опубликовано руководство для неброитанских компаний, работающих за пределами Великобритании, объясняющее применение британских санкций и практические шаги по управлению санкционными рисками.",
+        "en": "Guidance is published to help non-UK businesses operating outside the UK understand UK sanctions and manage sanctions risks."
+      },
+      "quote": "Guidance to help non-UK businesses understand UK sanctions and how they may impact on their business operations outside the UK. Includes practical steps for businesses to manage sanctions risks and increase compliance.",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 1
+}

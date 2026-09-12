@@ -1,0 +1,82 @@
+{
+  "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/current-actuelles.aspx?lang=eng",
+  "source_id": "ca-gac-sanctions",
+  "fetched_at": "2026-09-12T11:47:45+00:00",
+  "content_hash": "11227efd844a340cf633da4d45d9ed049287ce06ca57cda240eb2d1bd302a8a7",
+  "topic": "sanctions,export_controls,import_controls",
+  "facts": [
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канадские санкции вводятся на основании трёх законов: Закона об ООН (UNA), Закона о специальных экономических мерах (SEMA) и Закона о правосудии для жертв коррумпированных иностранных должностных лиц (JVCFOA).",
+        "en": "Canadian sanctions are imposed under three statutes: the United Nations Act (UNA), the Special Economic Measures Act (SEMA), and the Justice for Victims of Corrupt Foreign Officials Act (JVCFOA)."
+      },
+      "quote": "Canadian sanctions are imposed under the:\n United Nations Act (UNA);\n Special Economic Measures Act (SEMA); or\n Justice for Victims of Corrupt Foreign Officials Act (JVCFOA).",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канада ввела санкции в рамках UNA и SEMA в отношении ряда стран, включая Беларусь, Китай, КНДР, Иран, Ирак, Ливию, Мьянму, Россию, Сирию, Украину (в связи с действиями России), Венесуэлу, Зимбабве и другие.",
+        "en": "Canada has imposed country sanctions under the UNA and SEMA in relation to a list of countries including Belarus, China, North Korea, Iran, Iraq, Libya, Myanmar, Russia, Syria, Ukraine (linked to Russia), Venezuela and Zimbabwe."
+      },
+      "quote": "Canada has imposed sanctions under the UNA and the SEMA in relation to the following countries:\n Belarus\n Central African Republic\n China\n Democratic People’s Republic of Korea (North Korea)\n Democratic Republic of the Congo\n Guatemala\n Haiti\n Iran\n Iraq\n Lebanon\n Libya\n Moldova\n Myanmar\n Nicaragua\n Russia\n Somalia\n South Sudan\n Sri Lanka\n Sudan\n Syria\n Ukraine (linked to Russia’s ongoing violations of Ukraine’s sovereignty and territorial integrity)\n Venezuela\n Yemen\n Zimbabwe",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "По Закону JVCFOA Канада вводит санкции против отдельных физических лиц независимо от страновых санкционных режимов.",
+        "en": "Under the JVCFOA, Canada imposes sanctions against certain individuals, independent of state-related sanctions."
+      },
+      "quote": "Canada has imposed sanctions under the JVCFOA against certain individuals, independent of state-related sanctions:",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо страновых режимов, Канада ввела тематические санкции, связанные с терроризмом и с насилием со стороны экстремистски настроенных поселенцев на Западном берегу, в Газе и Восточном Иерусалиме.",
+        "en": "Beyond country regimes, Canada has imposed thematic sanctions relating to terrorism and to extremist settler violence in the West Bank, Gaza and East Jerusalem."
+      },
+      "quote": "Canada has imposed sanctions in relation to the following issues: \n Terrorism\n Extremist Settler Violence in the West Bank, Gaza, and East Jerusalem (occupied Palestinian territories/oPt)",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо мер по UNA, SEMA и JVCFOA, Канада применяет меры против отдельных лиц в соответствии с Законом о замораживании активов коррумпированных иностранных должностных лиц.",
+        "en": "In addition to measures under the UNA, SEMA and JVCFOA, Canada has imposed measures against individuals under the Freezing Assets of Corrupt Foreign Officials Act."
+      },
+      "quote": "In addition to sanctions imposed under the UNA, the SEMA, and the JVCFOA, Canada has imposed measures against individuals under the Freezing Assets of Corrupt Foreign Officials Act.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "sanctions",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Ряд ранее действовавших санкционных режимов Канады отменён: Кот-д'Ивуар, Эритрея, Либерия, Мали, Руанда, Сьерра-Леоне и Югославия.",
+        "en": "Several previously imposed Canadian sanctions regimes have been repealed: Côte d'Ivoire, Eritrea, Liberia, Mali, Rwanda, Sierra Leone and Yugoslavia."
+      },
+      "quote": "The following sanctions regimes, brought into force since 1992, have since been repealed:\n Côte d'Ivoire\n Eritrea\n Liberia\n Mali\n Rwanda\n Sierra Leone\n Yugoslavia",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 0
+}

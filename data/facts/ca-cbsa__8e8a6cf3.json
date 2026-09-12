@@ -1,0 +1,94 @@
+{
+  "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html",
+  "source_id": "ca-cbsa",
+  "fetched_at": "2026-09-12T11:43:55+00:00",
+  "content_hash": "bb8e845f7402d5274c24d2efcfc8357ef20e9f683682882b53d8b502ef97f323",
+  "topic": "customs_tariff,import_procedures,carm,parcels,trade_remedies,forced_labour",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Управление пограничной службы Канады (CBSA) начисляет и взимает пошлины и налоги на коммерческие товары, ввозимые в Канаду, через систему CARM (CBSA Assessment and Revenue Management).",
+        "en": "The Canada Border Services Agency assesses and collects duties and taxes on commercial goods imported into Canada through the CARM (CBSA Assessment and Revenue Management) system."
+      },
+      "quote": "The Canada Border Services Agency (CBSA) assesses and collects duties and taxes on commercial goods imported into Canada using the CBSA Assessment and Revenue Management (CARM) system.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Перед ввозом или вывозом товаров необходимо иметь бизнес-номер и программный счёт импорта-экспорта (RM).",
+        "en": "A business number and an import-export (RM) program account are required before importing or exporting goods."
+      },
+      "quote": "You need a business number and an import-export program (RM) account before you import or export goods.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Чтобы получать товары до уплаты пошлин, импортёр должен записаться в подпрограмму Release Prior to Payment (RPP) и внести требуемое финансовое обеспечение.",
+        "en": "To obtain release of goods before payment, importers must enrol in the Release Prior to Payment (RPP) sub-program and post the required financial security."
+      },
+      "quote": "Enrol in the Release Prior to Payment (RPP) sub-program and post the required financial security.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Регистрация бизнеса в портале CARM начинается с выбора основного пользователя: роль business account manager автоматически присваивается тому, кто регистрирует бизнес-счёт.",
+        "en": "Registering a business in the CARM Client Portal starts with choosing a primary user; the business account manager role is automatically assigned to whoever registers the business account."
+      },
+      "quote": "Before you register to the CARM Client Portal, decide who in your business will be the primary user that runs the business’s account. The business account manager role is automatically assigned to the user that registers the business account in CARM.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Вход в портал CARM осуществляется через GCKey (имя пользователя и пароль) либо через партнёра Interac Sign-in; при каждом входе нужно использовать тот же способ, что и при регистрации.",
+        "en": "Sign-in to the CARM Client Portal is via a GCKey username and password or an Interac Sign-in Partner, and the same option used at registration must be used every time."
+      },
+      "quote": "Choose one of the 2 sign-in options available and create a username and password. Every time you sign in moving forward you must use the same option that you used when registering.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Сотрудники запрашивают доступ к бизнес-счёту работодателя в портале CARM, указав 9-значный бизнес-номер работодателя и причину запроса; доступ делегирует business account manager.",
+        "en": "Employees request access to their employer's CARM business account by entering the employer's 9-digit business number and a reason for the request; the business account manager delegates access."
+      },
+      "quote": "Enter your employer’s 9-digit business number and click Search\n Enter a reason for requesting access",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В системе CARM используется автоматизация на основе правил (алгоритмы) для начисления пошлин и налогов и выявления проблем.",
+        "en": "Rule-based automation (algorithms) in the CARM system is used to assess duties and taxes and to identify issues."
+      },
+      "quote": "See how rule-based automation, or algorithms, in the CARM system are used to assess duties and taxes and to identify issues.",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 0
+}

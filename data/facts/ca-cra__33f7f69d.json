@@ -1,0 +1,262 @@
+{
+  "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html",
+  "source_id": "ca-cra",
+  "fetched_at": "2026-09-12T11:46:19+00:00",
+  "content_hash": "4e1c088126b9e85be9a8d1682ad76a024abae09e8dfc26429ab41110e17ffda6",
+  "topic": "gst_hst_import,business_number",
+  "facts": [
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Товары, ввозимые в Канаду, облагаются GST или федеральной частью HST, за исключением товаров, отнесённых к необлагаемому импорту; налог исчисляется от стоимости товаров в канадских долларах, включая пошлину и акциз, и взимается в момент импорта одновременно с пошлиной и акцизом.",
+        "en": "Goods imported into Canada are subject to the GST or the federal part of the HST, except for non-taxable importations; the tax is calculated on the Canadian dollar value including duty and excise tax and is collected at the time of importation."
+      },
+      "quote": "Goods you import into Canada are subject to the GST or the federal part of the HST, except for items specified as non-taxable importations. The GST or the federal part of the HST is calculated on the Canadian dollar value of the goods, including duty and excise tax. It is collected at the time of importation at the same time as the duty and excise tax.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Владелец или импортёр официального учёта (importer of record) обязан уплатить GST/HST на импортируемые товары; зарегистрированный плательщик, который вызвал ввоз товаров, может заявить входной налоговый кредит (ITC).",
+        "en": "The owner or importer of record must pay the GST/HST on imported goods; a GST/HST-registered importer can claim an input tax credit for the tax paid."
+      },
+      "quote": "The owner or importer of record is responsible for paying the GST/HST on imported goods. If you are registered for the GST/HST and you are the importer (the person who caused the goods to be imported into Canada), you can claim an input tax credit (ITC) for the tax you paid on the imported goods, as long as you meet the requirement for claiming ITCs.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Товары стоимостью 20 канадских долларов или менее, отправленные почтой или курьером на адрес в Канаде, не облагаются налогом, кроме предписанных товаров (подакцизные товары; книги, газеты, журналы, если продавец обязан был зарегистрироваться на GST/HST, но не сделал этого; товары, купленные у канадского розничного продавца и отправленные покупателю из-за рубежа).",
+        "en": "Goods valued at $20 or less sent by mail or courier to an address in Canada are non-taxable importations, except prescribed goods such as excisable goods, certain publications where the vendor failed to register, and goods bought from a Canadian retailer but shipped from outside Canada."
+      },
+      "quote": "goods valued at $20 or less sent to a person by mail or courier at an address in Canada, except for the following prescribed goods: \n excisable goods (such as beer, tobacco, and wine)\n books, newspapers, magazines, periodicals and similar publications if the vendor was required to register for the GST/HST but did not do so\n goods bought from a retailer in Canada and mailed or transported from outside Canada directly to the purchaser",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Не облагается налогом ввоз товаров исключительно для обслуживания, капитального ремонта или починки, если владение или пользователь товаров не меняются в Канаде и товары вывозятся сразу после завершения услуг.",
+        "en": "Goods imported solely for maintenance, overhaul or repairs are non-taxable importations, provided ownership or the user does not change while in Canada and the goods are exported as soon as the services are completed."
+      },
+      "quote": "goods imported for the sole purpose of maintenance, overhaul, or repairs, but only if the ownership or person using these goods does not change while in Canada and the goods are exported as soon as the services are completed",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Компания, оказывающая услуги переработки для нерезидентов, должна подать письменное заявление на получение импортного сертификата (import certificate), чтобы ввозить товары без уплаты налога.",
+        "en": "A manufacturing service company must apply in writing for an import certificate in order to import goods on a non-taxable basis."
+      },
+      "quote": "the manufacturing service company must apply in writing for an import certificate to be able to import goods on a non-taxable basis",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Когда резидент участвующей провинции ввозит некоммерческий товар, помимо федеральной части HST в большинстве случаев на границе взимается и провинциальная часть HST, независимо от пункта ввоза; исключения — автомобили, подлежащие регистрации в участвующей провинции, и мобильные/плавучие дома, использовавшиеся в Канаде.",
+        "en": "When a resident of a participating province imports a non-commercial good, the provincial part of the HST generally applies at the border in addition to the federal part, with exceptions for motor vehicles registered in a participating province and mobile or floating homes used in Canada."
+      },
+      "quote": "When a resident of a participating province imports a non-commercial good, in addition to the federal part of the HST, in most cases, the provincial part of the HST applies at the border, regardless of the point of entry into Canada or customs clearance.\n Exceptions are motor vehicles that must be registered in a participating province and mobile homes or floating homes that an individual used or occupied in Canada.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Зарегистрированный плательщик GST/HST должен самостоятельно начислить провинциальную часть HST при ввозе коммерческого товара в участвующую провинцию и указать сумму в строке 405 декларации GST/HST; незарегистрированные лица используют форму GST489.",
+        "en": "A GST/HST registrant must self-assess the provincial part of the HST when a commercial good is imported into a participating province and report it on line 405 of the GST/HST return; non-registrants use Form GST489."
+      },
+      "quote": "If you are registered for the GST/HST, the provincial part of the HST is payable by you when a commercial good is imported into a participating province. Enter this amount on line 405 of your GST/HST return.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При покупке услуг или нематериального имущества у незарегистрированного нерезидента за пределами Канады покупатель обязан самостоятельно начислить GST или федеральную часть HST, если приобретение используется менее чем на 90% в коммерческой деятельности (100% для финансовых учреждений).",
+        "en": "If you buy services or intangible personal property from an unregistered non-resident outside Canada, you must self-assess the GST or the federal part of the HST if they are used less than 90% in your commercial activities (100% for a financial institution)."
+      },
+      "quote": "If you buy services (such as architectural services for a building in Canada) or intangible personal property (IPP) (such as the right to use a patent in Canada) from an unregistered non-resident person outside Canada, you have to self-assess the GST or the federal part of the HST if you bought them for use less than 90% in your commercial activities (100% in the case of a financial institution).",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Незарегистрированные на GST/HST лица уплачивают налог по импортированным услугам и нематериальному имуществу с помощью формы GST59; налог подлежит уплате до конца месяца, следующего за календарным месяцем, в котором была произведена или наступила оплата.",
+        "en": "Persons not registered for the GST/HST remit tax on imported services or IPP using Form GST59, and the tax is due by the end of the month after the calendar month the service or IPP was paid for or became payable."
+      },
+      "quote": "If you are not registered for the GST/HST, you still have to pay tax on imported services or IPP. To remit the tax, use Form GST59, GST/HST Return for Imported Taxable Supplies, Qualifying Consideration, and Internal and External Changes. The tax is due by the end of the month after the calendar month that the service or IPP was paid for or became payable.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Товары, поставленные в Канаде и затем экспортированные, могут облагаться по нулевой ставке при выполнении условий: покупатель не потребитель, товары не подакцизные, покупатель вывозит их в разумно кратчайший срок, не использует и не перерабатывает их в Канаде, а поставщик хранит доказательства экспорта.",
+        "en": "Goods supplied in Canada and then exported can be zero-rated if conditions are met: they are not excisable, the purchaser is not a consumer, exports them as soon as reasonable, does not use or further process them in Canada, and the supplier keeps satisfactory evidence of export."
+      },
+      "quote": "1. If the purchaser takes delivery of the goods in Canada and all of the following conditions are met:\n the goods are not excisable goods, such as beer and tobacco\n the purchaser is not a consumer (a consumer is usually an individual who is buying the goods for their personal use)\n after you deliver the goods, the purchaser exports them as soon as is reasonable\n the purchaser does not buy the goods to consume, use, or supply in Canada before exporting them",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Покупатель, зарегистрированный на GST/HST, может получить разрешение на выдачу поставщику экспортного сертификата, чтобы поставка товаров облагалась по нулевой ставке.",
+        "en": "A purchaser registered for the GST/HST can apply for authorization to issue an export certificate to the supplier so that the goods are zero-rated."
+      },
+      "quote": "3. A purchaser who is registered for the GST/HST can apply for authorization to issue an export certificate to the supplier to make the goods zero-rated.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export_support",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Покупатель-нерезидент (кроме потребителя) может подать заявление на возврат налога по квалифицируемым вывезенным товарам (кроме подакцизных товаров, вина и бензина), если товары вывезены из Канады в течение 60 дней с даты поставки; используется форма GST189.",
+        "en": "A non-resident purchaser (other than a consumer) can claim a rebate of tax paid on qualifying goods exported from Canada, provided the goods are exported within 60 days of delivery, using Form GST189."
+      },
+      "quote": "A non-resident purchaser (other than a consumer) can apply for a rebate to recover the tax paid on qualifying goods (other than excisable goods, wine, and gasoline) exported from Canada. To qualify for this rebate, the non-resident purchaser has to export the goods from Canada within 60 days of delivery, and meet other conditions.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Действительный сертификат прямой отгрузки (drop-shipment certificate) должен содержать имя и регистрационный номер грузополучателя, заявление о принятии физического владения товарами, о цели их приобретения и о принятии ответственности за уплату GST/HST.",
+        "en": "A valid drop-shipment certificate must contain the consignee's name and registration number, and statements that the consignee has or will take physical possession of the goods, the purpose of acquisition, and that it assumes liability for any GST/HST payable."
+      },
+      "quote": "A valid drop-shipment certificate must contain all of the following information:\n the consignee's name and registration number\n a statement saying that: \n the consignee has taken or will take physical possession of the goods\n the goods are acquired for the purpose of performing commercial services on them or they are for the recipient's consumption, use, or supply\n the consignee assumes liability to pay or remit any GST/HST that may become payable",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export_support",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Программа Export Distribution Centre Program позволяет соответствующим экспортоориентированным компаниям использовать сертификат EDCP для приобретения или ввоза большинства запасов и товаров клиентов без уплаты GST/HST.",
+        "en": "The Export Distribution Centre Program lets eligible export-oriented businesses use an EDCP certificate to acquire or import most inventory and customers' goods without paying the GST/HST."
+      },
+      "quote": "The Export Distribution Centre Program (EDCP) permits eligible export-oriented businesses that do not manufacture or produce goods and that add limited value to goods during their processing or distribution activities to use an EDCP certificate to acquire or import the following items without having to pay the GST/HST:",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export_support",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для участия в EDCP нужно быть плательщиком GST/HST, вести исключительно (90% и более) коммерческую деятельность, иметь долю экспортной выручки 90% и более, не осуществлять существенного изменения имущества и добавлять к товарам клиентов не более 10% стоимости за неосновные услуги либо не более 20% совокупно.",
+        "en": "EDCP eligibility requires GST/HST registration, at least 90% commercial activity, an export revenue percentage of 90% or more, no substantial alteration of property, and added value of 10% or less from non-basic services (or 20% or less in total)."
+      },
+      "quote": "You are a GST/HST registrant\n You are engaged exclusively (90% or more) in commercial activities\n It can reasonably be expected that during the fiscal year when the authorization is in effect, you will meet all of the following criteria: \n Your export revenue percentage will be 90% or more\n You will not engage in substantial alteration of property\n The value you add to your customers' goods from providing non-basic services will be 10% or less, or the total value you add to your customers' goods will be 20% or less",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Разрешение на участие в EDCP запрашивается по форме GST528, действует три года (если не отозвано) и продлевается подачей формы GST528 не позднее чем за три месяца до истечения срока.",
+        "en": "EDCP authorization is applied for with Form GST528, is valid for three years unless revoked, and is renewed by filing Form GST528 at least three months before expiry."
+      },
+      "quote": "If you are eligible, you can apply for EDCP authorization by using Form GST528, Authorization To Use an Export Distribution Centre Certificate.\n The EDCP authorization is valid for three years, unless it is revoked. It can be renewed by sending Form GST528 at least three months before the expiry date of your existing authorization.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "export_support",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Программа Exporters of Processing Services (EOPS) даёт освобождение от GST/HST при ввозе товаров исключительно для оказания услуг по их обработке для нерезидента; товары должны быть вывезены без потребления или использования в Канаде.",
+        "en": "The Exporters of Processing Services Program gives GST/HST relief for goods imported only to have services performed on them for a non-resident, provided the goods (or their processed products) are exported without being consumed or used in Canada."
+      },
+      "quote": "The Exporters of Processing Services Program (EOPS) provides GST/HST relief to eligible businesses that will export certain goods they imported or acquired in Canada.\n This relief is limited to goods that were imported only to have services performed on them. These services must be supplied by a GST/HST registrant to a non-resident person.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export_support",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для EOPS требуется, чтобы переработчик был зарегистрированным плательщиком GST/HST, подавшим заявку до ввоза товаров, не был тесно связан с нерезидентом-владельцем, а вывоз товаров или продуктов переработки состоялся в течение четырёх лет со дня их таможенного оформления по статье 32 Закона о таможне.",
+        "en": "EOPS requires the processor to be a GST/HST registrant authorized before importing, not closely related to the non-resident owner, and the export must occur within four years of the day the goods are accounted for under section 32 of the Customs Act."
+      },
+      "quote": "the exportation of the imported goods or processed products occurs within four years of the day the goods are accounted for under section 32 of the Customs Act",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Чтобы получить одновременно освобождение от GST/HST по EOPS и освобождение от пошлин, подаётся форма K90 (Duties Relief Application) в местный офис CBSA; разрешение EOPS на освобождение от GST/HST действует три года.",
+        "en": "To obtain both EOPS GST/HST relief and duty relief, Form K90, Duties Relief Application, is filed with the local CBSA office; the EOPS authorization for GST/HST relief is valid for three years."
+      },
+      "quote": "To apply for both GST/HST relief through EOPS and relief on duties, fill out Form K90, Duties Relief Application and send it to your local Canada Borders Services Agency (CBSA) office.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Нерезидент, ведущий бизнес в Канаде, может быть обязан зарегистрироваться для GST/HST: начислять, собирать и перечислять налог с облагаемых поставок в Канаде, регулярно подавать декларации и получать право на входные налоговые кредиты.",
+        "en": "A non-resident doing business in Canada may need to register for the GST/HST, which means charging, collecting and remitting tax on taxable supplies made in Canada, filing returns regularly, and being able to claim input tax credits."
+      },
+      "quote": "If you are a non-resident doing business in Canada, you may need to register for the GST/HST. This means that:\n you may need to charge, collect, and remit the GST/HST on your taxable supplies of property and services you make in Canada\n you may need to file GST/HST returns on a regular basis\n you may be able to claim input tax credits to recover the GST/HST paid or payable on your purchases and operating expenses",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "export",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Правила прямой отгрузки (drop-shipment) позволяют незарегистрированному нерезиденту приобретать в Канаде товары или услуги в отношении товаров без налога, если товары в итоге экспортируются или остаются в Канаде исключительно для коммерческой деятельности зарегистрированного плательщика GST/HST.",
+        "en": "The drop-shipment rules allow an unregistered non-resident to acquire goods (or services in respect of goods) in Canada tax-free if the goods are ultimately exported or kept in Canada exclusively for the commercial activities of a GST/HST registrant."
+      },
+      "quote": "The drop-shipment rules allow an unregistered non-resident person to acquire in Canada goods (or services in respect of the goods) on a tax-free basis, provided the goods are ultimately exported or are retained in Canada exclusively for consumption, use, or supply in the course of commercial activities of a GST/HST registrant.",
+      "quote_lang": "en",
+      "has_number": false
+    }
+  ],
+  "dropped": 0
+}

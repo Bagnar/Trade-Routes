@@ -1,0 +1,88 @@
+{
+  "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html",
+  "source_id": "ca-cbsa",
+  "fetched_at": "2026-09-12T11:43:29+00:00",
+  "content_hash": "2b3e364d3041107ee05724cb4f4259d01e98130e4d431be35c348489733f6b9e",
+  "topic": "customs_tariff,import_procedures,carm,parcels,trade_remedies,forced_labour",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Канадское Агентство пограничной службы (CBSA) публикует Таможенный тариф издания 2026 года (T2026) по главам, с датой вступления в силу 1 января 2026 года.",
+        "en": "The CBSA publishes the Customs Tariff in its 2026 edition (T2026) chapter by chapter, with an effective date of 2026-01-01."
+      },
+      "quote": "Customs Tariff chapter-by-chapter (T2026)",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Тарифный пакет включает Закон о таможенном тарифе, Общие правила интерпретации Гармонизированной системы и Административные руководства.",
+        "en": "The tariff package includes the Customs Tariff Act, the General Rules for the Interpretation of the Harmonized System and Administrative Guidelines."
+      },
+      "quote": "General Rules for the Interpretation of the Harmonized System",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельный документ тарифа — «Список стран и применимых тарифных режимов» — определяет, какой тарифный режим применяется к товарам из каждой страны.",
+        "en": "A separate tariff document, the List of Countries and Applicable Tariff Treatments, sets out which tariff treatment applies to goods from each country."
+      },
+      "quote": "List of Countries and Applicable Tariff Treatments",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "98"
+      ],
+      "statement": {
+        "ru": "Глава 98 Таможенного тарифа Канады содержит специальные классификационные положения некоммерческого характера, включая положения о льготах (relief) и запретительные положения.",
+        "en": "Chapter 98 of Canada's Customs Tariff contains special classification provisions for non-commercial goods, including relief provisions and prohibition provisions."
+      },
+      "quote": "Chapter 98 - Special classification provisions – non-commercial \n Relief provisions\n Prohibition provisions",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [
+        "99"
+      ],
+      "statement": {
+        "ru": "Глава 99 Таможенного тарифа Канады содержит специальные классификационные положения для коммерческих товаров.",
+        "en": "Chapter 99 of Canada's Customs Tariff contains special classification provisions for commercial goods."
+      },
+      "quote": "Chapter 99 - Special classification provisions – commercial",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "regime",
+      "country": "CA",
+      "hs_scope": [
+        "77"
+      ],
+      "statement": {
+        "ru": "Глава 77 зарезервирована для возможного будущего использования в Гармонизированной системе и не содержит товарных позиций.",
+        "en": "Chapter 77 is reserved for possible future use in the Harmonized System and contains no headings."
+      },
+      "quote": "Chapter 77 - (Reserved for possible future use in the Harmonized System)",
+      "quote_lang": "en",
+      "has_number": true
+    }
+  ],
+  "dropped": 0
+}

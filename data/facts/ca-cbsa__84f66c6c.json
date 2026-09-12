@@ -1,0 +1,154 @@
+{
+  "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html",
+  "source_id": "ca-cbsa",
+  "fetched_at": "2026-09-12T11:44:14+00:00",
+  "content_hash": "f7986a9ebdaf453e74b2778e4e9754a02f5aa2e53967d18bdc0362db71f636c5",
+  "topic": "customs_tariff,import_procedures,carm,parcels,trade_remedies,forced_labour",
+  "facts": [
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Вся международная почта, поступающая в Канаду, подлежит проверке CBSA, которая решает, допускается ли товар и подлежат ли уплате пошлины и/или налоги.",
+        "en": "All international mail entering Canada is subject to CBSA review; the CBSA decides whether goods may enter and whether duty and/or taxes apply."
+      },
+      "quote": "All international mail coming into Canada is subject to review by the Canada Border Services Agency (CBSA). The CBSA determines whether the goods may enter Canada and if any duty and/or taxes apply.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Ставки пошлин устанавливаются Министерством финансов Канады и существенно различаются в зависимости от торгового соглашения.",
+        "en": "Duty rates are set by the Department of Finance Canada and can vary significantly from one trade agreement to another."
+      },
+      "quote": "Duty is a tariff payable on an item imported to Canada. Rates of duty are established by the Department of Finance Canada and can vary significantly from one trade agreement to another.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Большинство импортируемых товаров также облагается федеральным GST и провинциальным налогом PST либо гармонизированным налогом HST в отдельных провинциях.",
+        "en": "Most imported goods are also subject to the federal GST and Provincial Sales Tax (PST) or, in some provinces and territories, the Harmonized Sales Tax (HST)."
+      },
+      "quote": "Most imported goods are also subject to the federal Goods and Services Tax (GST) and Provincial Sales Tax (PST) or, in certain provinces and territories, the Harmonized Sales Tax (HST).",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "По Postal Imports Remission Order почтовое отправление стоимостью CAN$20 или меньше освобождается от пошлин и налогов; при стоимости выше CAN$20 пошлина, GST/HST и PST уплачиваются с полной стоимости товара.",
+        "en": "Under the Postal Imports Remission Order, a mailed item worth CAN$20 or less is free of duty and tax; if worth more than CAN$20, duty, GST/HST and any PST are payable on the item's full value."
+      },
+      "quote": "Under the provisions of the Postal Imports Remission Order, if someone mails you an item worth CAN$20 or less, there is no duty or tax payable. If the item is worth more than CAN$20, you must pay the applicable duty, the GST or HST, and any PST on the item's full value.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Освобождение на CAN$20 не распространяется на табак, книги, периодику, журналы, алкогольные напитки и товары, заказанные через канадский почтовый ящик или канадского посредника.",
+        "en": "The CAN$20 exemption does not apply to tobacco, books, periodicals, magazines, alcoholic beverages, and goods ordered through a Canadian post office box or Canadian intermediary."
+      },
+      "quote": "Items that do not qualify for the CAN$20 exemption include the following:\n tobacco;\n books;\n periodicals;\n magazines;\n alcoholic beverages; and\n goods ordered through a Canadian post office box or a Canadian intermediary.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Подарок по почте стоимостью CAN$60 или меньше не облагается пошлиной и налогом; при большей стоимости пошлины и налоги взимаются с суммы свыше CAN$60 (например, с CAN$140 при подарке в CAN$200).",
+        "en": "A gift received by mail worth CAN$60 or less is duty- and tax-free; above that, duty and taxes apply to the amount over CAN$60 (e.g. CAN$140 on a CAN$200 gift)."
+      },
+      "quote": "If you receive an imported gift by mail that is worth CAN$60 or less, you will not have to pay duty and/or tax on it.\n If the gift is worth more than CAN$60, you will have to pay any applicable duty and/or taxes on any amount over CAN$60. \n For example, if a relative sends you a gift worth CAN$200, you must pay any applicable duty, GST or HST and/or PST on CAN$140.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Чтобы отправление считалось подарком, его должен прислать лично друг или родственник, приложив открытку или иное уведомление о том, что это подарок.",
+        "en": "To qualify as a gift, a friend or relative must send the item personally and include a card or other notice stating it is a gift."
+      },
+      "quote": "For an item to qualify as a \"gift\", a friend or relative must send it to you personally and include a card or other notice indicating that it is a gift.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Льгота для подарков в CAN$60 не применяется к табаку, алкоголю, рекламным материалам и вещам, отправленным бизнесом, и не может суммироваться с освобождением на CAN$20.",
+        "en": "The CAN$60 gift exemption excludes tobacco, alcoholic beverages, advertising material and items sent by a business, and cannot be combined with the CAN$20 exemption."
+      },
+      "quote": "Items that do not qualify for the CAN$60 gift exemption include the following:\n tobacco;\n alcoholic beverages;\n advertising material; and\n items sent by a business.\n As well, the CAN$60 gift exemption cannot be combined with the CAN$20 exemption that is available on most items valued at CAN$20 or less.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "documents",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Товары, отправленные домой во время поездки за границу, нужно задекларировать по возвращении на форме E24 и сохранить её копию; они учитываются в лимитах личного освобождения путешественника.",
+        "en": "Goods mailed home while travelling abroad must be declared on Form E24 upon return, a copy must be kept to claim them, and they count against traveller personal exemption limits."
+      },
+      "quote": "On arriving back in Canada, you must declare these goods on Form E24, Personal Exemption Customs Declaration. \n You must keep a copy of the form to claim the goods. Otherwise, you may have to pay duty and/or taxes on them. Goods mailed home are subject to the traveller personal exemption limits.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Иммигранты в Канаду не платят пошлины и налоги за личные вещи; если налог всё же начислен при поступлении вещей по почте, начисление можно оспорить.",
+        "en": "People immigrating to Canada pay no duty or taxes on personal possessions; if duty/taxes are mistakenly assessed on such goods arriving by mail, the assessment can be disputed."
+      },
+      "quote": "If you are immigrating to Canada, you do not pay duty and/or taxes on the personal possessions you bring with you.\n However, when these goods arrive in Canada by mail, the CBSA may mistakenly assess duty and/or taxes on them. If this happens, you can dispute the duty and/or taxes assessed.",
+      "quote_lang": "en",
+      "has_number": false
+    },
+    {
+      "block": "import",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 8 сентября 2026 года Канада вводит сюртаксы (ответные пошлины) на определённые товары из США; CBSA выпустила руководство по их применению на границе.",
+        "en": "Starting September 8, 2026, Canada imposes surtaxes (counter tariffs) on certain goods from the United States, and the CBSA has published guidance on how they apply at the border."
+      },
+      "quote": "Starting September 8, 2026 : Surtaxes (counter tariffs) on certain U.S. goods\n In response to the U.S. tariffs on Canadian goods, the Government of Canada is imposing surtaxes (counter tariffs) on certain goods from the United States: List of products from the United States subject to counter tariffs\n The CBSA has published guidance for importers on how the surtaxes apply at the border.",
+      "quote_lang": "en",
+      "has_number": true
+    },
+    {
+      "block": "cost",
+      "country": "CA",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 14 декабря 2024 по 15 февраля 2025 CBSA применяла временное освобождение от GST/HST для отдельных товаров, ввозимых по каналам путешественников, почты, курьерских отправлений низкой стоимости (CLVS) и коммерческому.",
+        "en": "Between December 14, 2024 and February 15, 2025 the CBSA administered a temporary GST/HST exemption on goods imported via the traveller, postal, Courier Low Value Shipment and commercial streams."
+      },
+      "quote": "Between December 14, 2024 and February 15, 2025 : GST/HST break on select goods\n The CBSA will administer a temporary GST/HST exemption on goods imported via the traveller, postal, Courier Low Value Shipment and commercial streams.",
+      "quote_lang": "en",
+      "has_number": true
+    }
+  ],
+  "dropped": 0
+}
