@@ -52,10 +52,11 @@ ISO3 = {
 def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
     """Extracts {hs6: simple-average MFN rate} from a WITS TRAINS SDMX-ML response.
 
-    The generic SDMX layout is <Series><SeriesKey><Value id="PRODUCTCODE" value="610910"/>...<Value id="TARIFFTYPE"
-    value="MFN"/></SeriesKey><Obs><ObsDimension value="2023"/><ObsValue value="18"/></Obs></Series>, with the
-    indicator name in a Value id="INDICATOR" (we keep "AHS-SMPL-AVRG"/"MFN-SMPL-AVRG": simple average). Namespaces
-    vary between versions, so tags are matched by local name."""
+    WITS answers in the SDMX 2.1 *structure-specific* layout (seen 2026-09-12): dimensions are attributes of
+    <Series PRODUCTCODE="010121" REPORTER="124" ...> and the observation carries the rest:
+    <Obs TIME_PERIOD="2023" OBS_VALUE="0" TARIFFTYPE="MFN" OBS_VALUE_MEASURE="SimpleAverage" .../>.
+    The *generic* layout (<SeriesKey><Value id=... value=.../></SeriesKey><Obs><ObsValue value=.../></Obs>) is
+    handled too. Only the simple average of the MFN (or AHS) rate is kept; namespaces are ignored (local names)."""
     rates: dict[str, float] = {}
     year: int | None = None
 
@@ -66,28 +67,36 @@ def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
     for series in root.iter():
         if local(series.tag) != "Series":
             continue
-        key: dict[str, str] = {}
+        key: dict[str, str] = {k.upper(): v for k, v in series.attrib.items()}
         for el in series.iter():
             if local(el.tag) == "Value" and el.get("id"):
                 key[el.get("id", "").upper()] = el.get("value", "")
         product = key.get("PRODUCTCODE", "")
-        indicator = key.get("INDICATOR", "").upper()
-        tariff_type = key.get("TARIFFTYPE", "").upper()
         if not re.fullmatch(r"\d{6}", product):
-            continue
-        if indicator and "SMPL-AVRG" not in indicator and "SIMPLE" not in indicator:
-            continue
-        if tariff_type and tariff_type not in ("MFN", "AHS"):
             continue
         for obs in series.iter():
             if local(obs.tag) != "Obs":
                 continue
-            value = None
+            attrs = {**key, **{k.upper(): v for k, v in obs.attrib.items()}}
+            value = attrs.get("OBS_VALUE")
             for el in obs.iter():
                 if local(el.tag) == "ObsValue":
                     value = el.get("value")
                 if local(el.tag) == "ObsDimension" and el.get("value", "").isdigit():
-                    year = int(el.get("value", "0"))
+                    attrs["TIME_PERIOD"] = el.get("value", "")
+                if local(el.tag) == "Value" and el.get("id"):
+                    attrs[el.get("id", "").upper()] = el.get("value", "")
+            indicator = attrs.get("INDICATOR", "").upper()
+            measure = attrs.get("OBS_VALUE_MEASURE", "").replace(" ", "").upper()
+            tariff_type = attrs.get("TARIFFTYPE", "").upper()
+            if indicator and "SMPL-AVRG" not in indicator and "SIMPLE" not in indicator:
+                continue
+            if measure and "SIMPLEAVERAGE" not in measure:
+                continue
+            if tariff_type and tariff_type not in ("MFN", "AHS"):
+                continue
+            if str(attrs.get("TIME_PERIOD", "")).isdigit():
+                year = int(attrs["TIME_PERIOD"])
             if value not in (None, "", "NaN"):
                 try:
                     rates[product] = float(value)
@@ -145,11 +154,11 @@ def probe(iso2: str) -> None:
 
 
 def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> Path | None:
-    reporters = [c for c in (M49.get(iso2.upper()), ISO3.get(iso2.upper())) if c]
+    reporters = [M49[iso2.upper()]] if iso2.upper() in M49 else [c for c in (ISO3.get(iso2.upper()),) if c]  # WITS accepts M49 only
     if not reporters:
         print(f"skip {iso2}: no reporter code mapping yet")
         return None
-    years = [year] if year else [date.today().year - 1, date.today().year - 2, date.today().year - 3]
+    years = [year] if year else [date.today().year - n for n in range(1, 9)]  # TRAINS lags: RU/IR had nothing for 2023
     for y in years:
         for reporter in reporters:
             url = WITS_URL.format(reporter=reporter, year=y)

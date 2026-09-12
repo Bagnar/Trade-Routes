@@ -50,7 +50,7 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
     for code, country in (doc.get("countries") or {}).items():
         for entry in country.get("sources", []):
             add(entry, code)
-    for section in ("sanctions_authorities", "international", "logistics_indices"):
+    for section in ("sanctions_authorities", "export_control_regimes", "international", "logistics_indices"):
         for entry in doc.get(section) or []:
             add(entry, None)
     return sources

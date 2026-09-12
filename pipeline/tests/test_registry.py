@@ -24,4 +24,4 @@ def test_blogs_brokers_and_lookalikes_are_refused():
 def test_registry_loads_all_sections():
     sources = registry.load_sources()
     ids = {s.id for s in sources}
-    assert {"ca-cbsa", "cn-mofcom", "ru-fts", "ir-irica", "sanc-us-ofac", "un-comtrade"} <= ids
+    assert {"ca-cbsa", "cn-mofcom", "ru-fts", "ir-irica", "sanc-us-ofac", "un-comtrade", "wassenaar", "us-bis"} <= ids

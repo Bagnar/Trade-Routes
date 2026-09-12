@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FACTS_DIR = ROOT / "data" / "facts"
 MODEL = os.environ.get("PIPELINE_MODEL", "claude-opus-5")
 
-BLOCKS = ("regime", "export", "export_support", "import", "cost", "logistics", "documents", "sanctions", "supply")
+BLOCKS = ("regime", "export", "export_support", "export_control", "import", "cost", "logistics", "documents", "sanctions", "supply")
 
 SYSTEM = """You extract facts for an encyclopedia of international trade rules. You will receive the text of ONE
 official government page (customs, ministry, tax or sanctions authority, statistics office).
@@ -46,6 +46,7 @@ Hard rules:
 1. Every fact needs a quote copied character-for-character from the page. Do not fix typos, do not translate the quote.
 2. Never state a rate, threshold, date or amount that is not inside the quote.
 3. Do not include advice on avoiding or circumventing sanctions, controls or checks. Describe restrictions as they are.
+   Use block "export_control" for export licensing, dual-use and strategic goods lists (drones, encryption, machine tools).
 4. Skip navigation, disclaimers, contact details and anything that is not a rule, procedure, rate, program or restriction.
 5. If the page contains no usable facts, return {"facts": []}.
 """ % ", ".join(f'"{b}"' for b in BLOCKS)

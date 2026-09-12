@@ -45,6 +45,7 @@ export function CorridorPage({
     { id: page.compare.id, title: "Куда ещё везти" },
     { id: page.regime.id, number: page.regime.number, title: "Режим торговли" },
     { id: page.export.id, number: page.export.number, title: page.export.title },
+    ...(page.exportControl ? [{ id: page.exportControl.id, number: page.exportControl.number, title: "Экспортный контроль" }] : []),
     { id: page.import.id, number: page.import.number, title: page.import.title },
     { id: page.cost.id, number: page.cost.number, title: "Сколько платить" },
     { id: page.logistics.id, number: page.logistics.number, title: page.logistics.title },
@@ -82,6 +83,7 @@ export function CorridorPage({
           <CompareTable compare={page.compare} />
           <Section section={page.regime} mode={mode} />
           <Section section={page.export} mode={mode} />
+          {page.exportControl && <Section section={page.exportControl} mode={mode} />}
           <Section section={page.import} mode={mode} />
           <CostCalculator calc={page.cost} mode={mode} />
           <Section section={page.logistics} mode={mode} />

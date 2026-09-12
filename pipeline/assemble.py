@@ -93,6 +93,7 @@ BLOCK_TO_SECTION = {
     "sanctions": "regime",
     "export": "export",
     "export_support": "export",
+    "export_control": "exportControl",
     "import": "import",
     "cost": "import",
     "documents": "import",
@@ -142,7 +143,7 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
     """Returns the page with sourced lines merged in. Idempotent: previously assembled lines are replaced."""
     fr, to = page["corridor"]["from"]["code"], page["corridor"]["to"]["code"]
     hs6 = page["product"]["hs6"]
-    by_section: dict[str, list[dict]] = {"regime": [], "export": [], "import": [], "logistics": []}
+    by_section: dict[str, list[dict]] = {"regime": [], "export": [], "exportControl": [], "import": [], "logistics": []}
     for fact in facts:
         country = fact.get("country", "")
         if not scope_matches(fact.get("hs_scope", []), hs6):
@@ -157,13 +158,19 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
         section = BLOCK_TO_SECTION.get(fact["block"])
         if section is None:
             continue
+        if section in ("export", "exportControl") and country not in (fr, to, ""):
+            continue
         if section == "export" and country not in (fr, ""):
             continue
         if section == "import" and country not in (to, ""):
             continue
         by_section[section].append(to_page_fact(fact))
 
-    for section in ("regime", "export", "import", "logistics"):
+    page.setdefault("exportControl", {
+        "id": "s2b", "title": f"Экспортный контроль и двойное назначение", "lead": "Лицензии на вывоз, списки товаров двойного назначения и стратегических товаров обеих стран показываются как есть. Проверка принадлежности товара к спискам — по национальному коду у брокера.",
+        "facts": [{"text": "Контрольные списки для этой группы не проверены.", "stamp": {"status": "none", "source": "источник не перечитан", "label": "не собрано — статус not_found"}}],
+    })
+    for section in ("regime", "export", "exportControl", "import", "logistics"):
         block = page[section]
         block["facts"] = by_section[section] + strip_assembled(block["facts"])
 
@@ -176,7 +183,7 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
 
     # Sources table: one row per distinct source URL used above.
     urls: dict[str, dict] = {}
-    for section in ("regime", "export", "import", "logistics"):
+    for section in ("regime", "export", "exportControl", "import", "logistics"):
         for f in page[section]["facts"]:
             if f.get("_assembled") == ASSEMBLED and f["stamp"].get("url"):
                 urls.setdefault(f["stamp"]["url"], {"source": f["stamp"]["source"], "checked": f["stamp"]["label"].split("проверено ")[-1]})

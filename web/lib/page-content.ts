@@ -226,6 +226,8 @@ export interface PageContent {
   compare: { id: string; title: string; lead: string; rows: CompareRow[] };
   regime: Section;
   export: Section;
+  /** Export control and dual-use lists (drones, electronics, machine tools, chemicals): shown as they are. */
+  exportControl?: Section;
   import: Section;
   cost: Calculator;
   logistics: Section;

@@ -50,6 +50,7 @@ countries:
         status: to_verify
         urls: 
           - { url: "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/sanctions/current-actuelles.aspx?lang=eng", topic: sanctions }
+          - { url: "https://www.international.gc.ca/trade-commerce/controls-controles/export-exportations/index.aspx?lang=eng", topic: export_control }
       - id: ca-cfia
         agency: Canadian Food Inspection Agency
         domain: inspection.canada.ca
@@ -346,6 +347,54 @@ sanctions_authorities:
     urls: 
       - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-russia", topic: sanctions }
       - { url: "https://www.gov.uk/government/collections/uk-sanctions-on-iran", topic: sanctions }
+
+# Export-control regimes (dual-use and strategic goods): multilateral regimes and the national authorities
+# that publish control lists. Facts from these pages go to the `export_control` block of a corridor page.
+# Lists are shown as-is; the site never decides whether a specific item is controlled (principle 6).
+export_control_regimes:
+  - id: wassenaar
+    jurisdiction: INT
+    agency: Wassenaar Arrangement — dual-use goods and technologies control lists
+    domain: wassenaar.org
+    topics: [export_control]
+    priority: 1
+    status: to_verify
+    urls:
+      - { url: "https://www.wassenaar.org/control-lists/", topic: export_control }
+  - id: eu-dual-use
+    jurisdiction: EU
+    agency: European Commission DG TRADE — Regulation (EU) 2021/821 dual-use export controls
+    domain: policy.trade.ec.europa.eu
+    topics: [export_control]
+    priority: 1
+    status: to_verify
+    urls:
+      - { url: "https://policy.trade.ec.europa.eu/help-exporters-and-importers/exporting-dual-use-items_en", topic: export_control }
+  - id: us-bis
+    jurisdiction: US
+    agency: Bureau of Industry and Security (BIS) — Export Administration Regulations, Commerce Control List
+    domain: bis.gov
+    topics: [export_control]
+    priority: 1
+    status: to_verify
+    urls:
+      - { url: "https://www.bis.gov/regulations", topic: export_control }
+  - id: cn-mofcom-export-control
+    jurisdiction: CN
+    agency: 商务部 (MOFCOM) — Export Control Law, dual-use items export control list
+    domain: exportcontrol.mofcom.gov.cn
+    topics: [export_control]
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: ru-fstec
+    jurisdiction: RU
+    agency: ФСТЭК России — экспортный контроль, контрольные списки
+    domain: fstec.ru
+    topics: [export_control]
+    priority: 1
+    status: to_verify
+    urls: []
 
 international:
   - id: wto-ttd
