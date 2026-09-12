@@ -1,0 +1,118 @@
+{
+  "url": "https://tax.gov.ae/en/",
+  "source_id": "ae-tax",
+  "fetched_at": "2026-09-12T14:03:31+00:00",
+  "content_hash": "fc2f564cb8cddf94d7396b30956ea4a1e4bdb86ad1f30646c17d168a3bc1ef87",
+  "topic": "vat_import,excise",
+  "facts": [
+    {
+      "block": "cost",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В ОАЭ НДС взимается по ставке 5%, что отражено в официальном калькуляторе НДС Федерального налогового управления.",
+        "en": "The UAE applies VAT at a rate of 5%, as reflected in the Federal Tax Authority's official VAT calculator."
+      },
+      "quote": "VAT 5% (AED)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Федеральное налоговое управление объявило окончательный срок подачи декларации по акцизному налогу — 15-09-2026.",
+        "en": "The Federal Tax Authority announced 15-09-2026 as the final deadline for filing the Excise return."
+      },
+      "quote": "15-09-2026 \n Final deadline for filing Excise return",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Окончательный срок подачи декларации по НДС объявлен на 28-09-2026.",
+        "en": "The final deadline for filing VAT returns is announced as 28-09-2026."
+      },
+      "quote": "28-09-2026 \n Final deadline for filing VAT returns",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "AE",
+      "hs_scope": [
+        "24"
+      ],
+      "statement": {
+        "ru": "Федеральное налоговое управление сообщает об изменениях акцизной цены табачных изделий и жидкостей для электронных курительных устройств и приспособлений.",
+        "en": "The Federal Tax Authority announces key changes to the excise price of tobacco products and of liquids used in electronic smoking devices and tools."
+      },
+      "quote": "Key Changes to the Excise Price of Tobacco Products\n and Liquids Used in Electronic Smoking Devices and Tools",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "AE",
+      "hs_scope": [
+        "2202"
+      ],
+      "statement": {
+        "ru": "Готовится переход к многоуровневой объёмной (tiered-volumetric) модели акцизного налога на сладкие напитки, с соответствующими изменениями законодательства.",
+        "en": "The UAE is transitioning to a tiered-volumetric model for Excise Tax on sweetened drinks, with related legislative updates announced by the FTA."
+      },
+      "quote": "We invite you to attend an awareness session on the transition to a tiered-volumetric model for Excise Tax on sweetened drinks, where key anticipated legislative updates and upcoming changes will be highlighted.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Через платформу EmaraTax доступна услуга «декларация об утрате и порче», позволяющая сообщать об акцизных товарах, утраченных или испорченных внутри обозначенной (designated) зоны.",
+        "en": "A \"loss and damage declaration\" service on the EmaraTax platform allows reporting of excise goods lost or damaged inside a designated zone."
+      },
+      "quote": "خدمة “إقرار الفقدان والتلف” تمكّنك من الإبلاغ عن السلع الانتقائية التي فقدت أو تلفت داخل المنطقة المحددة بخطوات بسيطة عبر منصة إمارات تاكس.",
+      "quote_lang": "ar",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Граждане ОАЭ могут подать заявление на возврат НДС при строительстве нового жилья через приложение Maskan.",
+        "en": "UAE nationals can apply for a VAT refund for building a new residence through the Maskan App."
+      },
+      "quote": "Apply for VAT Refund for Building a New Residence through the Maskan App.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Система возврата НДС туристам в ОАЭ распространена на покупки в электронной торговле внутри страны.",
+        "en": "The UAE tourist VAT refund scheme has been extended to cover e-commerce shopping purchases made within the country."
+      },
+      "quote": "بسطت الهيئة الاتحادية للضرائب تجربة استرداد ضريبة القيمة المضافة للسياح عبر إتاحة الاسترداد لمشتريات التسوق الإلكتروني داخل دولة الإمارات في خدمة تُعد الأولى من نوعها عالمياً.",
+      "quote_lang": "ar",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

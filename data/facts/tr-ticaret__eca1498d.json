@@ -1,0 +1,140 @@
+{
+  "url": "https://ticaret.gov.tr/ihracat",
+  "source_id": "tr-ticaret",
+  "fetched_at": "2026-09-12T14:00:27+00:00",
+  "content_hash": "45797b8205218aea0d79df622facf186aa27367ea8f355f10cec2787c3ba69a0",
+  "topic": "export_procedures,supply_regions,supplier_directory",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство торговли Турции реализует государственную помощь (господдержку), направленную на экспорт, и отдельные меры поддержки электронной торговли (э-экспорта).",
+        "en": "Turkey's Ministry of Trade operates state aid programmes for exports and separate support programmes for e-exports."
+      },
+      "quote": "İhracat Destekleri\n Bakanlığımız tarafından yürütülmekte olan ihracata yönelik devlet yardımlarına ilişkin bilgiye ulaşabilirsiniz.\n E-İhracat Destekleri\n Bakanlığımız tarafından yürütülmekte olan e-ihracata yönelik devlet yardımlarına ilişkin bilgiye ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Заявки на экспортную поддержку, сельскохозяйственные возвратные выплаты, режим переработки внутри страны, режим переработки вне страны и освобождение от налогов, сборов и пошлин подаются онлайн через Систему управления поддержкой (DYS), где также отслеживаются статус заявки и суммы поддержки.",
+        "en": "Applications for export supports, agricultural refund supports, the inward processing regime, the outward processing regime and tax/duty/fee exemption are submitted online through the Support Management System (DYS), which also tracks application status and support amounts."
+      },
+      "quote": "Destek Yönetim Sistemine giriş yaparak İhracat Destekleri, Tarımsal İade Destekleri, Dahilde İşleme Rejimi, Hariçte İşleme Rejimi ve Vergi-Resim-Harç İstisna Uygulamalarına yönelik başvuruları çevrimiçi ortamda iletebilir, başvuruların süreçlerini ve destek tutarlarını sistem üzerinden takip edebilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Действующее законодательство Турции по экспорту включает режим экспорта, режим переработки внутри страны, режим переработки вне страны и освобождение от налогов, сборов и пошлин.",
+        "en": "Turkey's applicable export legislation comprises the export regime, the inward processing regime, the outward processing regime and the tax, duty and fee exemption rules."
+      },
+      "quote": "En güncel haliyle ihracat rejimi, dahilde işleme rejimi, hariçte işleme rejimi ile vergi resim ve harç istisnası mevzuatlarına ilişkin detaylı bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При экспорте сельскохозяйственной продукции проводится контроль торгового качества; предусмотрены также классификация фирм и сортировка прессованного хлопка.",
+        "en": "Exports of agricultural products are subject to commercial quality inspection, together with firm classification procedures and the grading of baled cotton."
+      },
+      "quote": "Tarım ürünlerinin ticari kalite denetimleri, firma sınıflandırma işlemleri ile preseli pamukların tasnifi konusunda ayrıntılı bilgiye ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Публикуются списки зарубежных выставок, поддерживаемых при национальном и индивидуальном участии, а также законодательство о поддержке зарубежных выставок и сведения об организаторах.",
+        "en": "Lists of foreign fairs supported under national and individual participation are published, along with the foreign fair support legislation and information on fair organisers."
+      },
+      "quote": "Yurt dışında düzenlenecek milli katılım ve bireysel katılımda desteklenen fuarların listeleri, yurt dışı fuar destek mevzuatı ve yurt dışı fuar organizatörlerine ait bilgiye ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Стратегия дальних стран Турции подготовлена на основе 11-го Плана развития, Основного плана экспорта, среднесрочной программы, Годовой программы Президента и Стратегического плана Министерства торговли.",
+        "en": "Turkey's Distant Countries Strategy was prepared on the basis of the 11th Development Plan, the Export Master Plan, the Medium Term Programme, the Presidency Annual Programme and the Ministry's Strategic Plan."
+      },
+      "quote": "Uzak Ülkeler Stratejisi; 11. Kalkınma Planı, İhracat Ana Planı, OVP, Cumhurbaşkanlığı Yıllık Programı ve Bakanlığımızın Stratejik Planı rehber edinilmek suretiyle hazırlanmıştır.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство публикует Бюллетень внешних запросов, содержащий поступающие из-за рубежа коммерческие запросы, информацию о выставках и тендерах.",
+        "en": "The Ministry publishes a Foreign Demands Bulletin containing commercial requests, fair and tender information received from abroad."
+      },
+      "quote": "Yurtdışından alınan ticari talep, fuar, ihale bilgilerini içeren Dış Talepler Bültenine ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство предоставляет информацию о целевых странах, практике выхода на рынки и барьерах доступа на рынки.",
+        "en": "The Ministry provides information on target countries, market entry practices and market access barriers."
+      },
+      "quote": "Hedef ülkeler, pazara giriş uygulamaları ve pazara giriş engellerine ilişkin bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для информирования деловых кругов Министерство торговли проводит обучающие программы по экспортным процедурам и государственной поддержке.",
+        "en": "To inform business circles, the Ministry of Trade runs training programmes on export processes and state supports."
+      },
+      "quote": "İş çevrelerini bilgilendirmek amacıyla düzenlenen Ticaret Bakanlığı İhracat Süreçleri ve Devlet Destekleri Eğitim Programlarına ilişkin bilgiye buradan ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Таможенные и внешнеторговые операции в Турции администрируются региональными управлениями (Bölge Müdürlükleri), включая управления в Стамбуле, Измире, Мерсине, Коджаэли, Газиантепе, Эдирне и других регионах.",
+        "en": "Customs and foreign trade operations in Turkey are administered by regional directorates, including those in Istanbul, Izmir, Mersin, Kocaeli, Gaziantep, Edirne and other regions."
+      },
+      "quote": "Ege Güm. ve Dış Tic. Bölge Müd. (İzmir)\n Fırat Güm. ve Dış Tic. Bölge Müd. (Malatya)\n GAP Güm. ve Dış Tic. Bölge Müd. (Gaziantep)",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

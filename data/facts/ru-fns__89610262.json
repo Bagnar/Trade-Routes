@@ -1,0 +1,296 @@
+{
+  "url": "https://www.nalog.gov.ru/rn77/taxation/taxes/nds/",
+  "source_id": "ru-fns",
+  "fetched_at": "2026-09-12T13:57:29+00:00",
+  "content_hash": "238c68fbf49c3bd12eb46dd8852e4834000923464b433081f945ec127b512806",
+  "topic": "export_vat",
+  "facts": [
+    {
+      "block": "export",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "НДС по ставке 0% применяется при реализации товаров, вывезенных в таможенной процедуре экспорта, товаров под процедурой свободной таможенной зоны, услуг международной перевозки и ряда других операций.",
+        "en": "A 0% VAT rate applies to goods exported under the customs export procedure, goods placed under the free customs zone procedure, international transport services and certain other transactions."
+      },
+      "quote": "Ставка НДС в размере 0% применяется при реализации товаров, вывезенных в таможенной процедуре экспорта, а также товаров, помещенных под таможенную процедуру свободной таможенной зоны, услуг по международной перевозке и некоторых\n других операций ( п. 1 ст. 164\n НК РФ).",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Плательщики на УСН, применяющие специальные пониженные ставки НДС, вправе использовать ставку 0% только по отдельным операциям из перечня п. 1 ст. 164 НК РФ.",
+        "en": "Simplified-regime (USN) taxpayers that use the special reduced VAT rates may apply the 0% rate only to certain transactions from the list in art. 164(1) of the Tax Code."
+      },
+      "quote": "Плательщики на УСН, которые применяют специальные пониженные ставки НДС, используют ставку 0% только по отдельным операциям из перечня п. 1 ст. 164 НК РФ;",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При экспорте сырьевых товаров со ставкой 0% «входной» НДС принимается к вычету на последнее число квартала, в котором подтверждено право на ставку — документы нужно собрать в течение 180 календарных дней с даты помещения товаров под таможенный режим экспорта.",
+        "en": "For exports of commodity (raw material) goods at the 0% rate, input VAT is deducted on the last day of the quarter in which the right to the rate is confirmed; the document package must be collected within 180 calendar days from placing the goods under the export customs regime."
+      },
+      "quote": "на последнее число квартала, в котором подтверждено право на применение указанной ставки НДС (в течение 180 календарных дней с даты помещения товаров под таможенный режим экспорта, собран необходимый пакет документов);",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Если подтверждающие экспорт документы не собраны в 180-дневный срок, вычет заявляется на последнее число квартала истечения срока, а с суммы неподтвержденного экспорта нужно исчислить НДС в бюджет.",
+        "en": "If the supporting export documents are not collected within the 180-day period, the deduction falls on the last day of the quarter in which the period expired, and VAT must be charged to the budget on the unconfirmed export amount."
+      },
+      "quote": "на последнее число квартала, в котором истекли указанные 180 календарных дней, если подтверждающие документы не собраны в срок. При этом с суммы неподтвержденного экспорта необходимо исчислить НДС в бюджет.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Перечень сырьевых товаров установлен постановлением Правительства РФ от 18.04.2018 № 466; экспортеры несырьевых товаров заявляют вычеты НДС в общие сроки.",
+        "en": "The list of commodity (raw material) goods is set by Government Decree No. 466 of 18.04.2018; exporters of non-commodity goods claim VAT deductions under the general rules."
+      },
+      "quote": "Перечень сырьевых товаров установлен постановлением Правительства Российской Федерации от 18.04.2018 № 466).\n Экспортеры несырьевых товаров заявляют вычеты в общие сроки.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Разделы 4-6 декларации по НДС заполняются при осуществлении деятельности, облагаемой по ставке 0 процентов.",
+        "en": "Sections 4-6 of the VAT return are completed when carrying out activities taxed at the 0 percent rate."
+      },
+      "quote": "Разделы 4-6 заполняется в случае осуществления деятельности облагаемой по ставке НДС 0 процентов.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Общая ставка НДС в России составляет 22% и применяется во всех случаях, кроме специально предусмотренных.",
+        "en": "The standard Russian VAT rate is 22% and applies in all other cases."
+      },
+      "quote": "Ставка НДС 22% применяется во всех остальных случаях (\n п.3 ст. 164 НК\n РФ). Сумма НДС определяется как произведение налоговой базы и ставки налога",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Ставка НДС 10% применяется при реализации продовольственных товаров, товаров для детей, периодических печатных изданий и книжной продукции, медицинских товаров по перечням, утвержденным Правительством РФ.",
+        "en": "A 10% VAT rate applies to sales of food products, children's goods, periodicals and books, and medical goods included in lists approved by the Government."
+      },
+      "quote": "По ставке НДС 10% налогообложение производится в случаях реализации продовольственных товаров, товаров для детей, периодических печатных изданий и книжной продукции, медицинских товаров. (см. перечень, утвержденный Правительством\n РФ)",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "С 01.01.2025 налогоплательщики УСН могут применять специальную ставку НДС 5%, если доходы за 2024 год или в течение 2025 года составили от 60 млн до 250 млн рублей.",
+        "en": "From 01.01.2025 USN taxpayers may apply a special 5% VAT rate if income for 2024 or during 2025 was between RUB 60 million and RUB 250 million."
+      },
+      "quote": "Ставка НДС в размере 5% применяется с 01.01.2025, в случае, если доходы за 2024 год либо в течение 2025 года составили от 60 млн руб. до 250 млн рублей.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Специальная ставка НДС 7% применяется с 01.01.2025, если доходы за 2024 год или в течение 2025 года составили от 250 млн до 450 млн рублей; предельный порог индексируется на коэффициент-дефлятор (1,090 для доходов 2026 года).",
+        "en": "The special 7% VAT rate applies from 01.01.2025 where income for 2024 or during 2025 was between RUB 250 million and RUB 450 million; the ceiling is indexed by a deflator (1.090 for 2026 income)."
+      },
+      "quote": "Ставка НДС в размере 7% применяется с 01.01.2025, в случае, если доходы за 2024 год либо в течение 2025 года составили от 250 млн руб. до 450 млн рублей.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Организации и предприниматели с выручкой не более 2 млн рублей за 3 предшествующих календарных месяца могут подать уведомление и получить освобождение от обязанностей плательщика НДС на год.",
+        "en": "Companies and entrepreneurs whose revenue over the 3 preceding consecutive calendar months did not exceed RUB 2 million may notify the tax authority and be exempted from VAT obligations for a year."
+      },
+      "quote": "Организации и предприниматели, у которых за 3 предшествующих последовательных календарных месяца сумма выручки от реализации товаров (работ, услуг) не превысила в совокупности 2 миллиона рублей могут подать уведомление и получить освобождение от исполнения\n обязанностей плательщика НДС на год.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Плательщики ЕСХН с доходом от реализации не выше 60 млн рублей за предшествующий год могут получить освобождение от обязанностей плательщика НДС по уведомлению.",
+        "en": "Agricultural tax (ESKhN) payers with sales income not exceeding RUB 60 million in the previous year may obtain exemption from VAT obligations by notification."
+      },
+      "quote": "Организации и предприниматели, применяющие единый сельскохозяйственный налог (ЕСХН), у которых за предшествующий год сумма дохода от реализации товаров (работ, услуг) не превысила 60 миллионов рублей, могут подать уведомление и получить освобождение от исполнения обязанностей плательщика НДС.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Плательщики УСН автоматически освобождаются от НДС без уведомления: с 01.01.2026 при доходах за 2025 год до 20 млн руб., с 01.01.2027 — до 15 млн руб., с 01.01.2028 — до 10 млн руб.",
+        "en": "USN taxpayers are automatically exempt from VAT without notification: from 01.01.2026 with 2025 income up to RUB 20 million, from 01.01.2027 up to RUB 15 million, from 01.01.2028 up to RUB 10 million."
+      },
+      "quote": "с 01.01.2026 при сумме доходов за 2025 год до 20 млн руб. (включительно);\n с 01.01.2027 при сумме доходов за 2026 год до 15 млн руб. (включительно);\n с 01.01.2028 при сумме доходов за 2027 год до 10 млн руб. (включительно).",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Объектом обложения НДС является, в частности, ввоз товаров на территорию РФ (импорт); плательщиками «ввозного» НДС признаются лица, уплачивающие налог при ввозе товаров.",
+        "en": "Importation of goods into Russia is a VAT taxable object; payers of 'import' VAT are those who pay the tax when bringing goods into the country."
+      },
+      "quote": "налогоплательщики «ввозного» НДС\n т.е. НДС, уплачиваемого при ввозе товаров на территорию РФ",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "К вычету принимается НДС, уплаченный при ввозе товаров в таможенных процедурах выпуска для внутреннего потребления, временного ввоза и переработки вне таможенной территории, а также при ввозе товаров из государств — членов Таможенного союза.",
+        "en": "VAT paid on importation under the customs procedures of release for domestic consumption, temporary import and processing outside the customs territory, as well as on goods imported from Customs Union member states, is deductible."
+      },
+      "quote": "уплачены при ввозе товаров на территорию Российской Федерации в таможенных процедурах выпуска для внутреннего потребления, временного ввоза и переработки вне таможенной территории;\n уплачены при ввозе на территорию Российской Федерации товаров, с территории государств - членов Таможенного союза (п. 2 ст. 171 НК РФ);",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Возмещению подлежит часть «входного» НДС, превышающая исчисленный налог; возмещение обычно производится после камеральной проверки, длящейся 2 месяца, которая может быть продлена до трех месяцев при признаках нарушений.",
+        "en": "The portion of input VAT exceeding the VAT charged is refundable; the refund is normally made after a desk audit lasting 2 months, extendable to three months if signs of violations appear."
+      },
+      "quote": "Возмещение НДС, как правило, производится после окончания камеральной проверки, которая продолжается 2 месяца.\n В случае выявления признаков, указывающих на возможные нарушения, срок камеральной налоговой проверки может быть продлен до трех месяцев.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При заявительном порядке возмещения НДС налогоплательщик подает декларацию, банковскую гарантию и заявление, и деньги возвращаются за 7 дней до проведения камеральной проверки; уплатившие за предыдущие 3 года не менее 2 млрд руб. налогов могут не представлять банковскую гарантию.",
+        "en": "Under the accelerated refund procedure the taxpayer files the return, a bank guarantee and an application, and money is returned within 7 days before the desk audit; taxpayers who paid at least RUB 2 billion of taxes over the previous 3 years need no bank guarantee."
+      },
+      "quote": "Деньги возвращаются налогоплательщику\n за 7 дней, после чего проводится камеральная проверка.\n Исключение! налогоплательщики, уплатившие за предыдущие 3 года не менее 2 млрд. руб. налогов могут не представлять банковскую гарантию (пп.1 п.2 ст. 176.1 НК РФ).",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Декларация по НДС представляется в налоговый орган по месту учета не позднее 25-го числа месяца, следующего за истекшим налоговым периодом, и только в электронном виде; бумажная декларация не считается представленной.",
+        "en": "The VAT return must be filed with the tax office of registration no later than the 25th day of the month following the tax period, and only electronically; a paper return is deemed not filed."
+      },
+      "quote": "Налоговая декларация по НДС представляется налогоплательщиком (налоговым агентом) в налоговые органы по месту своего учета в качестве налогоплательщика НДС в срок не позднее 25-го числа месяца, следующего за истекшим налоговым периодом.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "НДС уплачивается по итогам каждого налогового периода равными долями не позднее 28-го числа каждого из трех месяцев, следующих за истекшим кварталом.",
+        "en": "VAT is paid for each tax period in equal instalments no later than the 28th day of each of the three months following the expired quarter."
+      },
+      "quote": "Уплата НДС производится по итогам каждого налогового периода равными долями не позднее 28-го числа каждого из трех месяцев, следующих за истекшим налоговым периодом.",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Принять «входной» НДС к вычету можно только после принятия товаров (работ, услуг) к учету при наличии первичных документов и счета-фактуры; вычеты прошлых периодов заявляются в течение трех лет с момента принятия к учету.",
+        "en": "Input VAT may be deducted only after the goods/services are recorded in the accounts and when primary documents and an invoice (schet-faktura) are held; deductions for past periods may be claimed within three years of recording."
+      },
+      "quote": "Принять к вычету \"входной\" НДС можно только после того, когда товары (работы, услуги) приняты к учету и имеются соответствующие первичные документы и счет-фактура.",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Обязанности налогового агента по НДС возникают, в частности, при покупке в РФ товаров, работ или услуг у иностранных лиц, не состоящих на налоговом учете, и при продаже в РФ по договорам комиссии товаров, принадлежащих таким иностранным лицам.",
+        "en": "VAT withholding-agent duties arise, among others, when buying goods, works or services in Russia from foreign persons not registered for tax, and when selling in Russia under commission agreements goods belonging to such foreign persons."
+      },
+      "quote": "купили на территории РФ товары, работы или услуги у иностранных лиц, не состоящих на налоговом учете (п. \n 1-2 ст. 161 НК РФ);",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агенты и комиссионеры при электронной торговле товарами во взаимной торговле внутри ЕАЭС признаются налоговыми агентами по НДС, если местом реализации признается территория России.",
+        "en": "Agents and commission agents in e-commerce in mutual trade within the EAEU act as VAT tax agents where the place of supply is deemed to be Russia."
+      },
+      "quote": "выступаете агентом, комиссионером при осуществлении электронной торговли товарами во взаимной торговле внутри ЕАЭС (в случае, если местом реализации признается территория Российской Федерации).",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

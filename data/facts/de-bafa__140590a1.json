@@ -1,0 +1,153 @@
+{
+  "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html",
+  "source_id": "de-bafa",
+  "fetched_at": "2026-09-12T14:03:38+00:00",
+  "content_hash": "3b15c8b5c0c86dac1ea68a2b61efcde3b39d86fe588333c8f918d8a33aa9dab2",
+  "topic": "export_control,dual_use,sanctions",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспортный контроль в Германии рассматривается как инструмент предотвращения и реагирования на риски внешней и политики безопасности; ответственным ведомством является BAFA (Федеральное ведомство по экономике и экспортному контролю).",
+        "en": "Germany treats export control as an indispensable instrument to prevent and respond to foreign and security policy risks; the competent authority is BAFA (Federal Office for Economic Affairs and Export Control)."
+      },
+      "quote": "Exportkontrolle ist ein unverzichtbares Instrument, um außen- und sicherheitspolitischen Risiken vorzubeugen bzw. hierauf zu reagieren.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "BAFA проверяет, требует ли вывоз товара разрешения и может ли оно быть выдано, поддерживает следственные органы и участвует в международных органах экспортного контроля.",
+        "en": "BAFA's tasks range from examining whether the export of a good requires a licence and can be licensed, to supporting investigating authorities and working within international export control bodies."
+      },
+      "quote": "Die Bandbreite der Aufgaben des BAFA reicht von der Prüfung, ob die Ausfuhr eines Gutes genehmigungspflichtig und -fähig ist, über die Unterstützung von Ermittlungs-behörden bis hin zur Arbeit im Rahmen internationaler Exportkontrollgremien.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для экспортных проектов предусмотрены разные виды разрешений: индивидуальное разрешение (Einzelgenehmigung), генеральное/сборное разрешение (Sammelgenehmigung) и общее разрешение (Allgemeine Genehmigung).",
+        "en": "Several licence types may be relevant for an export project, among them the individual licence, the global (collective) licence and the general licence."
+      },
+      "quote": "Hier erhalten Sie einen Überblick über sämtliche Genehmigungsarten, die für Ihr Ausfuhrvorhaben relevant sein könnten - unter anderen die Einzelgenehmigung, die Sammelgenehmigung und die Allgemeine Genehmigung.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При подаче заявки требуются, в частности, назначение ответственного за экспорт лица (Ausfuhrverantwortlicher), работа через портал заявок ELAN-K2, документы о конечном использовании и номер EORI.",
+        "en": "Applications involve the designated export control officer (Ausfuhrverantwortlicher), use of the ELAN-K2 application portal, end-use documents, an EORI number and the option of certification."
+      },
+      "quote": "Hier finden Sie Informationen zum Ausfuhrverantwortlichen, zum Umgang mit dem Antragsportal ELAN-K2, zu Endverbleibsdokumenten, zur EORI-Nummer und zur Möglichkeit der Zertifizierung.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Подконтрольные товары определяются списками: приложениями к Регламенту ЕС о товарах двойного назначения, национальным экспортным списком (Ausfuhrliste) и перечнем перекодировки (Umschlüsselungsverzeichnis).",
+        "en": "Controlled items are defined by goods lists: the annexes to the EC Dual-use Regulation, the national export list (Ausfuhrliste) and the correlation list (Umschlüsselungsverzeichnis)."
+      },
+      "quote": "Hier finden Sie Informationen zu den Anhängen der EG-Dual-use-Verordnung, zur Ausfuhrliste und zum Umschlüsselungsverzeichnis",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Страновые эмбарго — международные экономические санкции, которые ограничивают свободу внешнеэкономической деятельности в отношении определённых стран.",
+        "en": "Country embargoes are international economic sanctions that restrict the freedom of foreign trade with certain countries."
+      },
+      "quote": "Embargos sind internationale Wirtschaftssanktionen. Sie beschränken die Freiheit im Außenwirtschaftsverkehr gegenüber bestimmten Ländern.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо страновых эмбарго действуют меры, ограничивающие внешнеэкономические операции с определёнными организациями, предприятиями и частными лицами.",
+        "en": "Beyond country embargoes, further measures restrict foreign trade dealings with specific organisations, companies and private individuals."
+      },
+      "quote": "Embargos sind internationale Wirtschaftssanktionen. Sie beschränken die Freiheit im Außenwirtschaftsverkehr gegenüber bestimmten Organisationen, Unternehmen und Privatpersonen.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Правовую основу экспортного контроля образуют различные акты — от Регламента ЕС о противодействии пыткам (Анти-пыточный регламент) до Директивы об оборонной продукции.",
+        "en": "The legal bases relevant for export projects range from the Anti-Torture Regulation to the Defence Products (Defence-related Goods) Directive."
+      },
+      "quote": "Hier sind die für die Ausfuhrvorhaben relevanten Rechtsgrundlagen aufgeführt - von der Anti-Folter-Verordnung bis hin zur Verteidigungsgüterrichtlinie.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Европейская комиссия начала процесс оценки Регламента (ЕС) 2021/821 о товарах двойного назначения, предусмотренный ст. 26(4); опросы проводятся до 11 сентября 2026 года.",
+        "en": "The European Commission has launched the evaluation process for Regulation (EU) 2021/821 (EU Dual-Use Regulation) foreseen in Article 26(4); the consultation surveys run until 11 September 2026."
+      },
+      "quote": "Wie in den vergangenen Monaten bereits angekündigt, hat die EU-Kommission den in Art. 26 Abs. 4 der Verordnung (EU) 2021/821 (EU-Dual-Use-VO) vorgesehenen Prozess zur Evaluation gestartet.",
+      "quote_lang": "de",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельные разделы экспортного контроля BAFA охватывают Конвенцию о химическом оружии, контроль боевого оружия, радионуклиды, безопасность спутниковых данных и охрану морских судов.",
+        "en": "BAFA's export control area also covers the Chemical Weapons Convention, war weapons control, radionuclides, satellite data security and maritime vessel security."
+      },
+      "quote": "Chemiewaffenübereinkommen\n Einfuhr\n HNS-Übereinkommen 2010\n Kriegswaffenkontrolle\n EU-Methanverordnung\n Outreach-Projekte\n Radionuklide\n Satellitendatensicherheit\n Seeschiffbewachung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для научных учреждений действуют отдельные правила экспортного контроля: информация адресована профессорам, научным сотрудникам и представителям университетов и внеуниверситетских исследовательских организаций.",
+        "en": "Dedicated export control guidance exists for academia, addressed to professors, researchers and other representatives of universities and non-university research institutions dealing with research projects."
+      },
+      "quote": "Diese Informationen richten sich an Sie als Professorin oder Professor, Wissenschaftlerin oder Wissenschaftler, wissenschaftliche Mitarbeiterin oder Mitarbeiter oder sonstige Vertreterin oder Vertreter einer Universität oder außeruniversitären Forschungseinrichtung, wenn Sie sich mit Fragestellungen rund um das Thema Exportkontrolle und Forschungsvorhaben beschäftigen.",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

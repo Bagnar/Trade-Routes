@@ -1,0 +1,101 @@
+{
+  "url": "https://ticaret.gov.tr/ithalat",
+  "source_id": "tr-ticaret",
+  "fetched_at": "2026-09-12T14:00:29+00:00",
+  "content_hash": "6dbc310b5248a375457e0bd1cf99f8faf32ce4a8dbac39a8932aa476a315e454",
+  "topic": "export_procedures,supply_regions,supplier_directory",
+  "facts": [
+    {
+      "block": "import",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импортное законодательство Турции формируется Министерством торговли и состоит прежде всего из Решения о режиме импорта (İthalat Rejimi Kararı) и коммюнике по импорту.",
+        "en": "Turkey's import legislation is prepared by the Ministry of Trade and consists primarily of the Import Regime Decision (İthalat Rejimi Kararı) and import communiqués."
+      },
+      "quote": "İthalat Rejimi Kararı ve İthalat Tebliğleri başta olmak üzere Bakanlığımızca hazırlanan İthalat Mevzuatı'nın en güncel haline ilişkin detaylı bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Действуют механизмы приостановки таможенных пошлин (askıya alma) и тарифных квот на импорт товаров.",
+        "en": "Turkey operates duty suspension (askıya alma) and tariff quota mechanisms for imports."
+      },
+      "quote": "Askıya Alma ve Tarife Kontenjanı\n Askıya Alma ve Tarife Kontenjanlarına ilişkin detaylı bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импорт бывших в употреблении или восстановленных товаров в Турцию требует разрешения; порядок подачи заявок установлен соответствующим законодательством.",
+        "en": "Import of used or renovated (refurbished) goods into Turkey requires a permit, with legislation and application procedures set out by the Ministry."
+      },
+      "quote": "Kullanılmış veya Yenileştirilmiş Eşya İthalatı\n Kullanılmış veya Yenileştirilmiş Eşya İzinleri hakkında mevzuat ve başvuru yöntemleri hakkında bilgilere buradan ulaşabilirisiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Заявления на импортные документы подаются электронно через систему İthalatBİS (İthalat Belge İşlemleri).",
+        "en": "Applications for import documents are filed electronically through the İthalatBİS (import document transactions) e-application system."
+      },
+      "quote": "İthalat Belge İşlemleri (İthalatBİS) E-Başvuru",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Квоты и тарифные квоты, распределяемые непосредственно таможенными администрациями по принципу очередности деклараций (BSGTY), можно проверить через систему запроса квот.",
+        "en": "Quotas and tariff quotas allocated directly by customs administrations on a declaration-order basis (BSGTY) can be checked through the quota query system."
+      },
+      "quote": "Doğrudan Gümrük İdarelerince BSGTY( Beyannamesi Sırasına Göre Tahsis Yönetimi) ne göre dağıtılan Kota ve Tarife Kontenjanı kapsamında mevcut duruma ilişkin sorgulama yapılabilir.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство торговли Турции выдает импортный сертификат (İthal Şehadetnamesi) и сертификат конечного использования (Nihai Kullanım Sertifikası).",
+        "en": "The Turkish Ministry of Trade issues the Import Certificate (İthal Şehadetnamesi) and the End-Use Certificate (Nihai Kullanım Sertifikası)."
+      },
+      "quote": "İthal Şehadetnamesi ve Nihai Kullanım Sertifikası\n İthal Şehadetnamesine ilişkin mevzuat ve bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для государственного (публичного) импорта действуют отдельные нормы, информация о которых публикуется Главным управлением импорта.",
+        "en": "Separate legislation applies to public-sector imports (kamu ithalatı), published by the Directorate General of Imports."
+      },
+      "quote": "Kamu İthalatı\n Kamu ithalatına ilişkin mevzuat ve bilgilere ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 1
+}

@@ -1,0 +1,140 @@
+{
+  "url": "https://kazakhexport.kz/",
+  "source_id": "kz-kazakhexport",
+  "fetched_at": "2026-09-12T14:00:44+00:00",
+  "content_hash": "f04bfa5a69ac27793ef1b783a073183e674966770d287f79e009fdf393a953a1",
+  "topic": "export_support,export_insurance",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Чтобы получить поддержку АО «Экспортно-кредитное агентство Казахстана», экспортеру нужно подать заявку по нужной услуге, после чего агентство предоставляет консультацию.",
+        "en": "To obtain support from the Export Credit Agency of Kazakhstan, an exporter must first apply for the required service, after which the agency provides consultation."
+      },
+      "quote": "Бұл өте оңай! Ең алдымен, қажет қызмет бойынша өтініш білдіру керек. Әрі қарай көмек бізден: кеңес беріледі, сондай-ақ сізді қызықтыратын кез келген сұраққа жауап береміз",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство принимает на себя риск неплатежа иностранного покупателя, страхуя казахстанского экспортера.",
+        "en": "The agency assumes the risk of non-payment by the foreign buyer, insuring the Kazakh exporter."
+      },
+      "quote": "Шетелдік сатып алушының төлем жасамау қаупін жауапкершілікке алу",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство поддерживает экспорт на условиях отсрочки платежа и помогает выходить на новые рынки в защищенных условиях.",
+        "en": "The agency supports exports on deferred payment terms and helps entering new markets under protected conditions."
+      },
+      "quote": "Жаңа нарыққа қауіпсіз жағдайда шығу стратегиясы \n Төлемді кейінге қалдыру шартындағы экспорт",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство бесплатно проверяет надежность иностранного покупателя по запросу экспортера.",
+        "en": "The agency checks the reliability of a foreign buyer free of charge at the exporter's request."
+      },
+      "quote": "Шетелдік сатып алушының сенімді/сенімді емес екенін тегін тексеріп беру",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство защищает казахстанские инвестиции за рубежом от политических рисков.",
+        "en": "The agency protects Kazakh investments abroad against political risks."
+      },
+      "quote": "Шетелдегі қазақстандық инвестицияларды саяси сын-қатерден қорғау",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство финансирует иностранного импортера, приобретающего казахстанские товары, работы или услуги.",
+        "en": "The agency finances the foreign importer that buys Kazakh goods, works or services."
+      },
+      "quote": "Қазақстандық тауарларды/жұмыстарды/қызметтерді сатып алатын шетелдік импорттаушыны қаржыландыру",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "При нехватке залога агентство помогает экспортеру получить банковское финансирование для пополнения оборотного капитала и инвестиций, а также улучшает условия кредитования экспортера и импортера.",
+        "en": "Where collateral is insufficient, the agency helps the exporter obtain bank financing for working capital and investment, and improves credit terms for the exporter and importer."
+      },
+      "quote": "Кепіл тапшы жағдайда айналым капиталы мен инвестицияны толықтыру үшін банктен қаржы алу \n Қазақстандық тауарларды/жұмыстарды/қызметтерді сатып алатын шетелдік импорттаушыны қаржыландыру",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство проводит бесплатные онлайн-семинары о финансировании и государственной поддержке экспорта.",
+        "en": "The agency runs free online seminars on financing and state export support."
+      },
+      "quote": "Тегін онлайн-семинарларға қосылып, қаржыландыру мен экспортты қолдау туралы толық ақпарат алыңыз.",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Агентство ведет Каталог экспортеров для продвижения казахстанских несырьевых товаров, работ и услуг на внешние рынки; каталог издан на трех языках — английском, китайском и русском.",
+        "en": "The agency maintains an Exporters' Catalogue to promote Kazakh non-resource goods, works and services on foreign markets; it is published in three languages — English, Chinese and Russian."
+      },
+      "quote": "Каталогтың мақсаты - қазақстандық шикізаттық емес тауарларды, жұмыстар мен қызметтерді шетелдік нарықтарға ілгерілету. Осыған байланысты Каталог үш тілде жарық көрді: ағылшын, қытай, орыс тілдері.",
+      "quote_lang": "kk",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для экспортеров агентство публикует инструменты поддержки, тарифы, оценку рисков, порядок действий при наступлении страхового случая и список компаний, нанесших ущерб экспортерам.",
+        "en": "For exporters the agency publishes support instruments, tariffs, risk assessment, the procedure in case of an insured event and a list of companies that have caused damage to exporters."
+      },
+      "quote": "Қолдау құралдары \n Сын-қатерді бағалау \n Сақтандыру жағдайында қайтпек керек? \n Экспорттаушыларға залал келтірген компаниялар тізімі \n Тарифтер",
+      "quote_lang": "kk",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

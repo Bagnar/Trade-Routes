@@ -1,0 +1,49 @@
+{
+  "url": "https://www.zoll.de/EN/Businesses/businesses_node.html",
+  "source_id": "de-zoll",
+  "fetched_at": "2026-09-12T14:03:37+00:00",
+  "content_hash": "420103fb23353c68623af28c65ea6ed880f217e22747bb97afdd2991ea8ef300",
+  "topic": "customs,import_procedures,export_procedures,vat_import,parcels",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Внутри Европейского союза перемещение товаров, как правило, не ограничено, однако при пересечении внешних границ ЕС необходимо соблюдать таможенные правила.",
+        "en": "Movement of goods inside the European Union is generally unrestricted, but when goods cross the EU's external frontiers certain customs regulations must be observed."
+      },
+      "quote": "Generally, there are no restrictions to the movement of goods within the European Union. However, where goods cross the European Union frontiers certain customs regulations must be observed.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Авиационный налог в Германии взимается с коммерческих пассажирских рейсов, собирается таможенной администрацией и поступает в федеральный бюджет.",
+        "en": "German aviation tax is levied on commercial passenger flights, is collected by the customs administration and flows into the federal budget."
+      },
+      "quote": "Aviation tax is levied on commercial passenger flights and is a transport tax regulated by federal law. It is collected by the customs administration and flows into the federal budget as revenue.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Немецкая таможня предоставляет специальные онлайн-сервисы для бизнеса: Customs Portal, регистрацию уполномоченного экономического оператора (AEO), системы EORI и консультацию TARIC.",
+        "en": "German customs offers special online applications for businesses, including the Customs Portal, Authorised Economic Operator (AEO), Economic Operator Systems (EORI) and TARIC consultation."
+      },
+      "quote": "Special online applications\n Authorised Economic Operator (AEO)\n Customs Portal\n Economic Operator Systems (EORI)\n Notificaton portal minimum wage\n SEED on Europa\n TARIC Consultation",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

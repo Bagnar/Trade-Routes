@@ -1,0 +1,49 @@
+{
+  "url": "https://icp.gov.ae/en/",
+  "source_id": "ae-fca",
+  "fetched_at": "2026-09-12T14:03:10+00:00",
+  "content_hash": "62900c7a5d574cdb8ef92febea2b5a4163e549732eae2ce5ec6f3054d4278c95",
+  "topic": "customs,customs_tariff,import_procedures",
+  "facts": [
+    {
+      "block": "documents",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ОАЭ выдают электронную карту предприятия (establishment card), содержащую данные зарегистрированной организации: торговое наименование, номер лицензии, партнёров и вид деятельности; услуга доступна через платформу ICP.",
+        "en": "The UAE issues an electronic establishment card containing the registered entity's data such as trade name, licence number, partners and type of activity; the service is available through the ICP platform."
+      },
+      "quote": "This service allows the issuance of the electronic establishment card, which includes the registered establishment data such as trade name, license number, partners, and type of activity.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Карта предприятия подлежит продлению, а также может быть изменена или аннулирована; изменения и аннулирование распространяются на государственные структуры, частные компании и предприятия в свободных зонах.",
+        "en": "The establishment card must be renewed and can also be amended or cancelled; amendment and cancellation cover government entities, private sector companies and free zone establishments."
+      },
+      "quote": "This service allows the amendment of establishment card data for government entities, private sector companies, and free zone establishments, to make changes such as modifying the trade name, transfer of ownership, or adding/removing a partner.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "AE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Официальные услуги и информация Федерального органа по идентификации, гражданству, таможне и безопасности портов (ICP) должны получаться только через официальные каналы — платформу Smart Services Platform и приложение UAEICP.",
+        "en": "Services and information of the Federal Authority for Identity, Citizenship, Customs & Port Security (ICP) should be obtained only through official authorised channels: the Smart Services Platform and the UAEICP smart app."
+      },
+      "quote": "To safeguard your data, ICP emphasises the importance of obtaining services and information solely through official and authorised channels, including the (Smart Services Platform) and the (UAEICP) smart app.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

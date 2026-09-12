@@ -1,0 +1,75 @@
+{
+  "url": "https://www.sinosure.com.cn/en/",
+  "source_id": "cn-sinosure",
+  "fetched_at": "2026-09-12T13:47:38+00:00",
+  "content_hash": "2c5b0f5111f25f7b50310586ea2b57ea62d8de203b8cfc008c7f3e325d0056a5",
+  "topic": "export_credit_insurance,support_programs",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Китайская корпорация страхования экспорта и кредитов (SINOSURE) предлагает экспортёрам и инвесторам страхование экспортных кредитов на средний и долгий срок, страхование зарубежных инвестиций, краткосрочное страхование кредитов, а также гарантии и поручительства.",
+        "en": "China Export & Credit Insurance Corporation (SINOSURE) offers medium/long-term export credit insurance, overseas investment insurance, short-term credit insurance, and bonds & guarantees."
+      },
+      "quote": "M／LT Export Credit Insurance\n Overseas Investment Insurance\n ST Credit Insurance\n Bond & Guarantee",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Деятельность SINOSURE включает направления поддержки инициативы «Один пояс, один путь», продукции «Сделано в Китае», малого бизнеса, возрождения села и зелёного устойчивого развития.",
+        "en": "SINOSURE's stated support directions include the Belt and Road Initiative, \"Made in China\" products, small business, rural revitalization and green and sustainable development."
+      },
+      "quote": "Supporting the Belt and Road Initiative\n--> \n Supporting “Made in China”\n--> \n Supporting Small Business\n--> \n CONTIBUTING TO RURAL REVITALIZATION\n SUPPORTING GREEN AND SUSTAINABLE DEVELOPMENT",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "SINOSURE запустила новый цифровой кредитный продукт — SINOSURE Globeseek.",
+        "en": "SINOSURE has launched a new digital credit product called SINOSURE Globeseek."
+      },
+      "quote": "SINOSURE Launches a New Digital Credit Product — SINOSURE Globeseek",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "SINOSURE публикует индекс экспортных рисков для малых и средних предприятий Китая: доклад по индексу за 2026 год был официально представлен на мероприятии по инклюзивному финансированию в Пекине 25 июня.",
+        "en": "SINOSURE publishes an export risk index for Chinese small and medium-sized enterprises; the 2026 report was officially released at an inclusive finance event held in Beijing on June 25."
+      },
+      "quote": "2026 China Small and Medium-sized Enterprises Export Risk Index Report Officially Released \n 　　On June 25, SINOSURE held a themedevent called 2026 Inclusive Finance Services Season in Beijing, ...",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "SINOSURE заключила меморандумы о взаимопонимании со страховщиком экспортных кредитов ОАЭ (ECI) и Эксимбанком Малайзии, а также соглашение о всестороннем сотрудничестве с банком Bohai.",
+        "en": "SINOSURE has signed MOUs with the UAE's export credit insurer ECI and Malaysia's Eximbank, as well as a comprehensive cooperation agreement with Bohai Bank."
+      },
+      "quote": "SINOSURE Signs MOUs Respectively with UAE's ECI and Malaysia's Eximbank",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

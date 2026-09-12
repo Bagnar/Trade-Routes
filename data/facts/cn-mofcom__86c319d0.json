@@ -1,0 +1,53 @@
+{
+  "url": "http://english.mofcom.gov.cn/",
+  "source_id": "cn-mofcom",
+  "fetched_at": "2026-09-12T13:47:33+00:00",
+  "content_hash": "9dafaceeedd3c345472d39b20fe2b795b2f85ce7edcf110315ee069beb67efcc",
+  "topic": "export_licences,export_controls,trade_policy",
+  "facts": [
+    {
+      "block": "cost",
+      "country": "FR",
+      "hs_scope": [
+        "61",
+        "62",
+        "63"
+      ],
+      "statement": {
+        "ru": "Французский закон против ультрабыстрой моды вступил в силу 1 сентября 2026 года и вводит экологические сборы (штрафы) для подпадающих под него текстильных товаров.",
+        "en": "France's Anti-Ultra-Fast Fashion Law entered into force on 1 September 2026, imposing environment-related fines on applicable textile products."
+      },
+      "quote": "France’s Anti-Ultra-Fast Fashion Law officially came into effect on September 1, 2026, imposing environment-related fines on applicable textile products.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Китай заявил о резком несогласии и решительном противодействии применению Францией «штрафных» сборов в рамках закона против ультрабыстрой моды, затрагивающего платформы кросс-бордерной электронной торговли.",
+        "en": "China has stated strong dissatisfaction and firm opposition to France's enforcement of the so-called \"penalty\" charges under the Anti-Ultra-Fast Fashion Law, which affects cross-border e-commerce platforms."
+      },
+      "quote": "China has noted that the French government has started enforcing the so-called “penalty” charges under the Anti-Ultra-Fast Fashion Law. China expresses strong dissatisfaction and firm opposition...",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "CN",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Китай и Новая Зеландия подписали протокол о модернизации соглашения о свободной торговле.",
+        "en": "China and New Zealand signed a protocol upgrading their free trade agreement."
+      },
+      "quote": "China and New Zealand signed FTA upgrade protocol",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://kgd.gov.kz/ru/section/tamozhennoe-administrirovanie",
+  "source_id": "kz-kgd",
+  "fetched_at": "2026-09-12T14:00:34+00:00",
+  "content_hash": "aeb727c4d35c7013ed7a0e8dc07926a994a12d76ef565ada481184e1362ffc37",
+  "topic": "customs,import_procedures,vat_import,export_procedures",
+  "facts": [
+    {
+      "block": "logistics",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "На автомобильном пункте пропуска «Достык» при выезде из Республики Казахстан действует временная схема организации пропуска автотранспорта с использованием автоматизированной системы электронной очереди.",
+        "en": "At the Dostyk road border crossing, a temporary scheme for processing vehicles leaving Kazakhstan operates using an automated electronic queue system."
+      },
+      "quote": "Временная схема организации пропуска автомобильных транспортных средств при выезде из Республики Казахстан на автомобильном пункте пропуска «Достык» с использованием автоматизированной системы электронной очереди",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "KZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Комитет государственных доходов публикует методические рекомендации к правилам оборудования транспортных средств для перевозки товаров под таможенными пломбами.",
+        "en": "The State Revenue Committee publishes methodological recommendations on the rules for equipping vehicles used to carry goods under customs seals."
+      },
+      "quote": "Методические рекомендации к правилам оборудования транспортных средств для перевозки товаров под таможенными пломбами",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

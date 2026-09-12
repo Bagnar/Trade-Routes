@@ -1,0 +1,127 @@
+{
+  "url": "https://www.bis.gov/licensing",
+  "source_id": "us-bis",
+  "fetched_at": "2026-09-12T14:07:00+00:00",
+  "content_hash": "81bbbb3a686d60f078769f1287bef6c9076da6c393a4db6510dcaf2f17499f22",
+  "topic": "export_control,dual_use",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспорт, реэкспорт и передача внутри страны товаров, подпадающих под Экспортные административные правила (EAR, 15 CFR части 730-774), могут требовать лицензии BIS; в отдельных случаях правила распространяются и на деятельность граждан и лиц США, не связанную с подконтрольными товарами.",
+        "en": "A licence from BIS may be required for export, reexport or in-country transfer transactions involving items subject to the Export Administration Regulations (EAR), 15 CFR parts 730-774, and in limited situations for certain U.S. persons' activities unrelated to items subject to the EAR."
+      },
+      "quote": "This section provides guidance for determining whether a license is required for export, reexport, or transfer (in-country) transactions involving items subject to the Export Administration Regulations (EAR), 15 CFR parts 730-774, (or, in limited situations, certain U.S. persons’ activities that may be unrelated to items subject to the EAR) and a link to the Simplified Network Application Process Redesign (SNAP-R) portal to apply for licenses or request a commodity classification from BIS.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспортёр должен определить классификационный номер экспортного контроля (ECCN) для своего товара; если товар не указан в Контрольном списке Министерства торговли, он обозначается как EAR99.",
+        "en": "Exporters must determine the Export Control Classification Number (ECCN) for their item; an item not specified on the Commerce Control List is designated 'EAR99'."
+      },
+      "quote": "Determine the Export Control Classification Number (ECCN) (if applicable) for your item. The item may alternatively be designated as “EAR99” (subject to the EAR but not specified on the Commerce Control List).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лицензионные заявки подаются через портал SNAP-R (Simplified Network Application Process Redesign), где также можно запросить классификацию товара.",
+        "en": "Licence applications are submitted through the Simplified Network Application Process Redesign (SNAP-R) portal, which is also used to request a commodity classification."
+      },
+      "quote": "Submit your license application through the Simplified Network Application Process Redesign (SNAP-R).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Статус поданной экспортной лицензионной заявки отслеживается через систему STELA (System for Tracking Export License).",
+        "en": "The status of a submitted export licence application can be monitored with the System for Tracking Export License (STELA)."
+      },
+      "quote": "Monitor the status of your export license application with System for Tracking Export License (STELA).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Исключения из лицензирования, описанные в части 740 EAR, позволяют экспортировать или реэкспортировать подпадающие под EAR товары при соблюдении установленных условий без лицензии.",
+        "en": "A licence exception under part 740 of the EAR authorises export or reexport of items subject to the EAR that would otherwise require a licence, under stated conditions."
+      },
+      "quote": "A license exception is an authorization described in part 740 of the EAR that allows you to export or reexport, under stated conditions, items subject to the EAR that otherwise would require a license.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лицензионные требования зависят от страны назначения: используются Commerce Country Chart и Country Groups.",
+        "en": "Licence requirements depend on destination, using the Commerce Country Chart and Country Groups."
+      },
+      "quote": "Access the Commerce Country Chart, County Groups, and explore export control resources for specific countries.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Лицензионные требования также могут возникать из контроля конечного пользователя и конечного использования, а также из контроля определённой деятельности лиц США, не связанной с товарами, подпадающими под EAR.",
+        "en": "Licence requirements may also arise from end-user and end-use controls, or from controls on certain activities of U.S. persons that may not involve items subject to the EAR."
+      },
+      "quote": "Access guidance to determine license requirements based on end user and end use of items subject to the EAR or in connection with certain activities of U.S. persons that may not involve items subject to the EAR.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "BIS использует формы BIS-711 (Заявление конечного получателя), BIS-647P (Сертификат подтверждения поставки) и BIS-645P (Международный импортный сертификат).",
+        "en": "BIS documentation includes Form BIS-711 (Statement of Ultimate Consignee), BIS-647P (Delivery Verification Certificate) and BIS-645P (International Import Certificate)."
+      },
+      "quote": "Explore guidance on completing and submitting Forms BIS-711 (Statement of Ultimate Consignee), BIS-647P (Delivery Verification Certificate), and BIS-645P (International Import Certificate).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Помимо EAR, BIS администрирует Правила Конвенции о химическом оружии (CWCR).",
+        "en": "In addition to the EAR, BIS administers the Chemical Weapons Convention Regulations (CWCR)."
+      },
+      "quote": "Export Administration Regulations (EAR)Chemical Weapons Convention Regulations (CWCR)Federal Register Notices",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

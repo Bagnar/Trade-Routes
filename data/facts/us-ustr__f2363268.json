@@ -1,0 +1,205 @@
+{
+  "url": "https://ustr.gov/issue-areas/enforcement/section-301-investigations",
+  "source_id": "us-ustr",
+  "fetched_at": "2026-09-12T14:07:01+00:00",
+  "content_hash": "47e3f065969c0d80147b47842e51c4a2d2618a563a6ba81f7033cecf70e6174d",
+  "topic": "trade_policy,trade_agreements,additional_tariffs",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "USTR ведёт расследования по Разделу 301 в рамках направления «Правоприменение» (Enforcement); на странице перечислены открытые и завершённые расследования.",
+        "en": "USTR conducts Section 301 investigations under its Enforcement trade topic, and publishes a list of the investigations it has initiated."
+      },
+      "quote": "Trade Topics\n Enforcement\n Section 301 Investigations",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследование по Разделу 301 в отношении Германии — о систематически заниженной оплате инновационных фармацевтических продуктов — начато 18 июня 2026 года.",
+        "en": "A Section 301 investigation into Germany's persistent underpayment for innovative pharmaceutical products was initiated on June 18, 2026."
+      },
+      "quote": "Section 301 – Germany’s Persistent Underpayment for Innovative Pharmaceutical Products (initiated on June 18, 2026)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследование по Разделу 301 о практике Вьетнама в области защиты и правоприменения интеллектуальной собственности начато 29 мая 2026 года.",
+        "en": "A Section 301 investigation into Vietnam's acts, policies and practices related to intellectual property protection and enforcement was initiated on May 29, 2026."
+      },
+      "quote": "Section 301 – Vietnam’s Acts, Policies, and Practices Related to Intellectual Property Protection and Enforcement (initiated on May 29, 2026)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "12 марта 2026 года начато расследование по Разделу 301 о непринятии и неэффективном применении запрета на ввоз товаров, произведённых с использованием принудительного труда.",
+        "en": "On March 12, 2026 USTR initiated a Section 301 investigation into the failure to impose and effectively enforce a prohibition on the importation of goods produced with forced labor."
+      },
+      "quote": "Section 301 – Failure to Impose and Effectively Enforce a Prohibition on the Importation of Goods Produced with Forced Labor (initiated March 12, 2026)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "11 марта 2026 года начато расследование по Разделу 301 о структурных избыточных мощностях и производстве в обрабатывающих секторах.",
+        "en": "On March 11, 2026 USTR initiated a Section 301 investigation into structural excess capacity and production in manufacturing sectors."
+      },
+      "quote": "Section 301 – Structural Excess Capacity and Production in Manufacturing Sectors (initiated March 11, 2026)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "24 октября 2025 года начато расследование по Разделу 301 о выполнении Китаем обязательств по соглашению «первой фазы».",
+        "en": "A Section 301 investigation into China's implementation of commitments under the Phase One Agreement was initiated October 24, 2025."
+      },
+      "quote": "Section 301 – China’s Implementation of Commitments Under the Phase One Agreement (initiated October 24, 2025)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "15 июля 2025 года начато расследование по Разделу 301 в отношении Бразилии: цифровая торговля и электронные платежи, преференциальные тарифы, борьба с коррупцией, интеллектуальная собственность, доступ на рынок этанола и незаконная вырубка лесов.",
+        "en": "On July 15, 2025 USTR initiated a Section 301 investigation into Brazil covering digital trade and electronic payment services, unfair preferential tariffs, anti-corruption enforcement, intellectual property, ethanol market access and illegal deforestation."
+      },
+      "quote": "Section 301 – Brazil’s Acts, Policies, and Practices Related to Digital Trade and Electronic Payment Services; Unfair, Preferential Tariffs; Anti-Corruption Enforcement; Intellectual Property Protection; Ethanol Market Access; and Illegal Deforestation; Hearing; and Request for Public Comments) (initiated July 15, 2025)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "23 декабря 2024 года начато расследование по Разделу 301 о действиях Китая, направленных на доминирование в полупроводниковой отрасли.",
+        "en": "A Section 301 investigation into China's targeting of the semiconductor industry for dominance was initiated December 23, 2024."
+      },
+      "quote": "Section 301 – China’s Targeting of the Semiconductor Industry for Dominance (initiated December 23, 2024)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "10 декабря 2024 года начато расследование по Разделу 301 в отношении Никарагуа — по вопросам трудовых прав, прав человека и верховенства права.",
+        "en": "A Section 301 investigation into Nicaragua's labor rights, human rights and rule of law was initiated December 10, 2024."
+      },
+      "quote": "Section 301 – Nicaragua Labor Rights, Human Rights, and Rule of Law (initiated December 10, 2024)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "17 апреля 2024 года начато расследование по Разделу 301 о действиях Китая, направленных на доминирование в морском, логистическом и судостроительном секторах.",
+        "en": "A Section 301 investigation into China's targeting the maritime, logistics, and shipbuilding sectors for dominance was initiated April 17, 2024."
+      },
+      "quote": "Section 301 – China’s Targeting the Maritime, Logistics, and Shipbuilding Sectors for Dominance (initiated April 17, 2024)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследования по Разделу 301 в отношении валютной политики Вьетнама и вьетнамской древесины были начаты 2 октября 2020 года.",
+        "en": "The Section 301 investigations on Vietnam's currency practices and on Vietnam timber were both initiated October 2, 2020."
+      },
+      "quote": "Section 301 – Vietnam Currency (initiated October 2, 2020)\nSection 301 – Vietnam Timber (initiated October 2, 2020)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследования по Разделу 301 в отношении налогов на цифровые услуги в 11 юрисдикциях были начаты 10 июля 2019 года и 5 июня 2020 года.",
+        "en": "Section 301 investigations of digital services taxes in 11 jurisdictions were initiated July 10, 2019 and June 5, 2020."
+      },
+      "quote": "Section 301 – Digital Services Taxes in 11 Jurisdictions (initiated July 10, 2019 and June 5, 2020)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследование по Разделу 301 по спору о крупных гражданских самолётах с ЕС начато 12 апреля 2019 года.",
+        "en": "The Section 301 investigation on the EU Large Civil Aircraft dispute was initiated April 12, 2019."
+      },
+      "quote": "Section 301 – EU Large Civil Aircraft Dispute (initiated April 12, 2019)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследование по Разделу 301 о политике и практике Китая по принудительной передаче технологий начато 24 августа 2017 года; расследование по Разделу 301 по говядине в ЕС начато 25 марта 1999 года.",
+        "en": "The Section 301 investigation into China's forced technology transfer policies and practices was initiated August 24, 2017, and the EU Beef investigation was initiated March 25, 1999."
+      },
+      "quote": "Section 301 – China’s Forced Technology Transfer Policies and Practices (initiated August 24, 2017)\n Section 301 – EU Beef (initiated March 25, 1999)",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Расследование по Разделу 301 о незаконном фентаниле из Китая отозвано; по петициям в отношении сезонной и скоропортящейся сельхозпродукции и практик Кореи в отношении Coupang даты инициирования не указаны.",
+        "en": "The Section 301 investigation on China illicit fentanyl is listed as withdrawn, while the Seasonal and Perishable Agricultural Products and Korea/Coupang matters are listed as petitions without initiation dates."
+      },
+      "quote": "Section 301 – China Illicit Fentanyl (Withdrawn)\n Section 301 – Seasonal and Perishable Agricultural Products (Petition)",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

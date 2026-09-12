@@ -1,0 +1,88 @@
+{
+  "url": "https://www.trade.gov/export-solutions",
+  "source_id": "us-ita",
+  "fetched_at": "2026-09-12T14:07:00+00:00",
+  "content_hash": "8482b9115cec7042e440343e323d3a1bee7fb91c1a92395a41158864a9c3e93e",
+  "topic": "export_support,trade_remedies,market_info",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Служба коммерческой поддержки США (U.S. Commercial Service) в составе Международной торговой администрации предоставляет американским компаниям информацию и инструменты для выхода на зарубежные рынки, где находятся 97% мировых покупателей.",
+        "en": "The International Trade Administration's U.S. Commercial Service provides U.S. companies with information and tools to reach the 97% of global customers located outside the United States."
+      },
+      "quote": "The International Trade Administration’s U.S. Commercial Service provides information and tools to help you reach the 97% of global customers that are outside of the United States.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Начинающие экспортёры могут следовать «Export Solutions Roadmap» — трёхэтапному маршруту для работы с иностранными покупателями, либо использовать раздел Exporter Resources.",
+        "en": "New exporters can follow the Export Solutions Roadmap, a three-phased journey for working with foreign buyers, or browse the Exporter Resources page."
+      },
+      "quote": "Start exporting by visiting the Export Solutions Roadmap or browse all of our topics on our Exporter Resources page.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Программа Export Solutions Roadmap организована как трёхэтапный путь к успеху с иностранными покупателями.",
+        "en": "The Export Solutions Roadmap is structured as a 3-phased journey for success with foreign buyers."
+      },
+      "quote": "Start here and follow the Export Solutions Roadmap, a 3-phased journey for success with foreign buyers.",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Чатбот не даёт ответов по конкретному товару компании или конкретному зарубежному рынку; его знания ограничены публичной информацией страниц Export Solutions на Trade.gov.",
+        "en": "The chatbot cannot provide responses specific to a company's product or a specific foreign market; its knowledge is limited to public information on the Export Solutions pages of Trade.gov."
+      },
+      "quote": "The Chatbot’s knowledge is limited to the public information on the Export Solutions web pages of Trade.gov, which covers a wide range of topics on exporting. While it cannot provide responses specific to a company’s product or a specific foreign market, its reference pages will guide you to other relevant government resources and market research.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Международная торговая администрация Минторга США управляет порталом trade.gov, обеспечивая доступ к информации о продвижении торговли и инвестиций, повышении конкурентоспособности американской промышленности и соблюдении торговых законов и соглашений.",
+        "en": "The International Trade Administration of the U.S. Department of Commerce manages the trade.gov site to provide information on promoting trade and investment, strengthening U.S. industry competitiveness, and ensuring fair trade and compliance with trade laws and agreements."
+      },
+      "quote": "The International Trade Administration, U.S. Department of Commerce, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ITA ведёт разделы по разрешению торговых проблем, включая устранение иностранных торговых барьеров, антидемпинговые и компенсационные пошлины США, поддержку при иностранных AD/CVD и защитных расследованиях, борьбу с несправедливыми иностранными субсидиями и защиту интеллектуальной собственности.",
+        "en": "ITA maintains trade problem resolution services covering foreign trade barriers, U.S. antidumping and countervailing duties, foreign AD/CVD or safeguard investigations, unfair foreign subsidies and intellectual property protection."
+      },
+      "quote": "Resolve a Trade Problem\n Overview\n Resolve a Foreign Trade Barrier\n U.S. Antidumping & Countervailing Duties\n Facing a Foreign AD/CVD or Safeguard Investigation\n Fight Unfair Foreign Trade Subsidies\n Industry Monitoring & Analysis\n Protect Your Intellectual Property",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 1
+}

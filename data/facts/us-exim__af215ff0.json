@@ -1,0 +1,101 @@
+{
+  "url": "https://www.exim.gov/",
+  "source_id": "us-exim",
+  "fetched_at": "2026-09-12T14:07:02+00:00",
+  "content_hash": "71ddfb7d419dc6ea26fb7e580def9bc802ddbe30598cbec96d89a0625632bab5",
+  "topic": "export_support,export_insurance",
+  "facts": [
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "EXIM — официальное экспортно-кредитное агентство США; оно предоставляет финансовые решения американским компаниям, конкурирующим на внешних рынках, и восполняет пробелы в частном финансировании.",
+        "en": "EXIM is the official export credit agency of the United States, providing financing solutions to U.S. companies competing abroad and filling gaps in private sector financing."
+      },
+      "quote": "The EXIM Bank is the official export credit agency of the United States. Our mission is to support American job creation, prosperity and security through exporting. We accomplish this by unlocking financing solutions for U.S. companies competing around the globe. We help level the playing field and fill gaps in private sector financing.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Продуктовая линейка EXIM включает страхование экспортных кредитов, финансирование оборотного капитала, гарантии по кредитам, проектное и структурное финансирование, гарантии по финансовому лизингу и прямые кредиты.",
+        "en": "EXIM's product line includes export credit insurance, working capital, loan guarantees, project and structured finance, finance lease guarantees and direct loans."
+      },
+      "quote": "Export Credit Insurance\n Working Capital\n Loan Guarantee\n Project & Structured Finance\n Finance Lease Guarantee\n Direct Loan",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Доступность поддержки EXIM по странам определяется Country Limitation Schedule (CLS), публикуемым банком.",
+        "en": "Where EXIM support is available by country is determined by EXIM's published Country Limitation Schedule (CLS)."
+      },
+      "quote": "Where Can I Export?\n Check EXIM's Country Limitation Schedule (CLS)",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "EXIM ведёт программу China & Transformational Exports Program (CTEP), направленную на конкуренцию с китайским экспортным финансированием.",
+        "en": "EXIM operates the China & Transformational Exports Program (CTEP)."
+      },
+      "quote": "China & Transformational Exports Program (CTEP)",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Приоритетными направлениями EXIM являются малый бизнес, Африка к югу от Сахары, конкуренция с Китаем и передовые технологии.",
+        "en": "EXIM's key priorities are small businesses, Sub-Saharan Africa, competing with China and frontiers of technology."
+      },
+      "quote": "Key Priorities\n Image\n Small Businesses\n Image\n Sub-Saharan Africa\n Image\n Competing with China\n Image\n Frontiers of Technology",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "EXIM публикует служебные материалы для заявителей: формы заявок, кредитные стандарты, ставки платы за риск (exposure fees) и коммерческие справочные процентные ставки (CIRR).",
+        "en": "EXIM publishes applicant resources including applications and forms, credit standards, exposure fees and commercial interest reference rates."
+      },
+      "quote": "Applications & Forms\n Country Limitation Schedule\n Credit Standards\n Exposure Fees\n Electronic Compliance Program\n Claims\n Commercial Interest Reference Rates",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В сентябре EXIM подписал финансирование на 280 млн долларов для производственного объекта CesiumAstro в Техасе в поддержку рабочих мест в коммерческом космосе.",
+        "en": "EXIM signed $280 million in financing for CesiumAstro's Texas manufacturing facility, supporting new jobs in commercial space."
+      },
+      "quote": "EXIM Signs $280 Million Financing for CesiumAstro’s Texas Manufacturing Facility, Supporting New Jobs in Commercial Space",
+      "quote_lang": "en",
+      "has_number": true,
+      "targets": []
+    }
+  ],
+  "dropped": 1
+}

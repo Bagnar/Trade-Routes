@@ -1,0 +1,88 @@
+{
+  "url": "https://www.fda.gov/industry/import-program-food-and-drug-administration-fda",
+  "source_id": "us-fda",
+  "fetched_at": "2026-09-12T14:07:01+00:00",
+  "content_hash": "b1cc69a00a14928a09e26dccc78eaad0dab7b48511eca11e1001c6aa736bf14a",
+  "topic": "product_requirements,food_import_requirements,cosmetics",
+  "facts": [
+    {
+      "block": "import",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Все продукты, регулируемые FDA (включая продукты питания, лекарства, косметику), должны соответствовать одним и тем же требованиям независимо от того, импортированы они или произведены в США.",
+        "en": "All FDA-regulated products, including food, drugs and cosmetics, must meet the same requirements whether they are imported or produced domestically in the U.S."
+      },
+      "quote": "All products regulated by the Food and Drug Administration must meet the same requirements, whether imported from abroad or produced domestically.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импортируемые товары, регулируемые FDA, проходят электронный скрининг до ввоза на территорию США.",
+        "en": "Imported FDA-regulated products are electronically screened before they are allowed to enter the United States."
+      },
+      "quote": "Imported FDA-regulated products are electronically screened before they enter the U.S.",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Импортёр должен подать запись (entry) в FDA с требуемыми данными; FDA использует электронные системы импорта для проверки и валидации данных записи.",
+        "en": "Importers must file an entry with the FDA containing the required data, and FDA uses electronic import systems to review and validate entry data."
+      },
+      "quote": "Entry Submission Process\nInformation you need to file an entry with the FDA",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для продуктов питания действуют требования предварительного уведомления (prior notice), подаваемого через Prior Notice System Interface (PNSI).",
+        "en": "Food imports are subject to prior notice requirements, submitted through the Prior Notice System Interface (PNSI)."
+      },
+      "quote": "Prior Notice Questions: Prior Notice Team Contact the Division of Targeting and Analysis (DTA) for questions about prior notice requirements, compliance, and the Prior Notice System Interface (PNSI).",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "FDA публикует импортные предупреждения (Import Alerts) по стране, продукту и номеру, а также может отказать в ввозе с последующим уничтожением или реэкспортом товара.",
+        "en": "FDA issues Import Alerts listed by country, product and number, and may refuse entry, leading to destruction or exportation of the goods."
+      },
+      "quote": "Import Refusals\nNext steps, destruction, exportation, list of FDA refusals",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "US",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Статус импортной записи, ориентировочную дату завершения лабораторных испытаний, подачу документов и место осмотра FDA можно отслеживать и оформлять через систему ITACS.",
+        "en": "Entry status, estimated lab completion date, electronic document submission, the location for FDA examination and Notices of FDA Action are handled through the ITACS system."
+      },
+      "quote": "Check entry status, estimated lab completion date, submit documents electronically, provide location for FDA examination, and retrieve Notices of FDA Action in ITACS",
+      "quote_lang": "en",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

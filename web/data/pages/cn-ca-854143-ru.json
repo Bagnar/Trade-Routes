@@ -33,10 +33,10 @@
   "lang": "ru",
   "isDemo": true,
   "status": {
-    "sourcesTotal": 6,
+    "sourcesTotal": 10,
     "sourcesMissing": 0,
     "lastChecked": "2026-09-12",
-    "text": "На странице 45 строк из официальных источников с дословной цитатой (6 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
+    "text": "На странице 63 строк из официальных источников с дословной цитатой (10 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
   },
   "summary": {
     "id": "s0",
@@ -99,8 +99,8 @@
     "id": "sv",
     "title": "Выгодно и что мешает",
     "lead": "Оценка появится после сборки страницы конвейером. Балл без основания не показывается.",
-    "total": 9,
-    "of": 10,
+    "total": 13,
+    "of": 15,
     "verdict": "выгодно по проверенным частям",
     "verdictStatus": "ok",
     "explanation": "Пошлины, препятствия и господдержка считаются по правилам из структурированных данных (таблица ставок, база РТС ВТО, страницы санкционных программ, собранные факты). Спрос и логистика — ориентир; часть без данных балла не получает, итог считается из оценённых частей.",
@@ -117,8 +117,8 @@
       },
       {
         "name": "Господдержка",
-        "score": null,
-        "basis": "программы поддержки экспортёра не собраны из источников"
+        "score": 4,
+        "basis": "5 строк о программах поддержки из официальных источников"
       },
       {
         "name": "Спрос",
@@ -159,9 +159,9 @@
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "в проверенных программах нет",
-        "support": "не собрано",
+        "support": "5 стр.",
         "score": {
-          "text": "9 из 10",
+          "text": "13 из 15",
           "status": "ok"
         }
       },
@@ -170,9 +170,9 @@
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "в проверенных программах нет",
-        "support": "не собрано",
+        "support": "5 стр.",
         "score": {
-          "text": "9 из 10",
+          "text": "13 из 15",
           "status": "ok"
         }
       },
@@ -181,10 +181,10 @@
         "duty": "ставка не загружена",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: US",
-        "support": "не собрано",
+        "support": "5 стр.",
         "score": {
-          "text": "2 из 5",
-          "status": "warn"
+          "text": "6 из 10",
+          "status": "mid"
         }
       },
       {
@@ -192,10 +192,10 @@
         "duty": "ставка не загружена",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: UK, US",
-        "support": "не собрано",
+        "support": "5 стр.",
         "score": {
-          "text": "2 из 5",
-          "status": "warn"
+          "text": "6 из 10",
+          "status": "mid"
         }
       }
     ]
@@ -347,6 +347,76 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "text": "Китай заявил о резком несогласии и решительном противодействии применению Францией «штрафных» сборов в рамках закона против ультрабыстрой моды, затрагивающего платформы кросс-бордерной электронной торговли.",
+        "quote": "China has noted that the French government has started enforcing the so-called “penalty” charges under the Anti-Ultra-Fast Fashion Law. China expresses strong dissatisfaction and firm opposition...",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "english.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://english.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Китай и Новая Зеландия подписали протокол о модернизации соглашения о свободной торговле.",
+        "quote": "China and New Zealand signed FTA upgrade protocol",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "english.mofcom.gov.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "http://english.mofcom.gov.cn/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Департамент торговой политики ЕЭК формирует право Союза в области определения и подтверждения непреференциального и преференциального происхождения товаров во внешней торговле с третьими странами.",
+        "quote": "формирование права Союза в области определения и подтверждения непреференциального и преференциального происхождения товаров в рамках внешней торговли с третьими странами.",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Заключение и имплементация преференциальных и непреференциальных торговых соглашений ЕАЭС с третьими странами относится к задачам Департамента торговой политики ЕЭК.",
+        "quote": "заключение и имплементация преференциальных и непреференциальных торговых соглашений с третьими странами;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Для переговоров по пересмотру тарифных обязательств Кыргызской Республики и Республики Армения в ВТО в связи с присоединением к Договору о ЕАЭС от 29 мая 2014 года сформированы переговорные делегации (распоряжения Совета ЕЭК № 8 и № 9 от 30.03.2023).",
+        "quote": "Распоряжение Совета ЕЭК № 9 О внесении изменений в состав переговорной делегации для участия в переговорах по пересмотру тарифных обязательств Кыргызской Республики во Всемирной торговой организации в связи с присоединением Кыргызской Республики к Договору о Евразийском экономическом союзе от 29 мая 2014 года",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Общий преференциальный тариф Канады (GPT) на Китай не распространяется с 1 января 2015 года — льготной ставки для китайских товаров нет.",
         "stamp": {
           "status": "ok",
@@ -378,6 +448,118 @@
     "number": 2,
     "title": "Вывоз из Китая",
     "facts": [
+      {
+        "text": "Китайская корпорация страхования экспорта и кредитов (SINOSURE) предлагает экспортёрам и инвесторам страхование экспортных кредитов на средний и долгий срок, страхование зарубежных инвестиций, краткосрочное страхование кредитов, а также гарантии и поручительства.",
+        "quote": "M／LT Export Credit Insurance\n Overseas Investment Insurance\n ST Credit Insurance\n Bond & Guarantee",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "sinosure.com.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.sinosure.com.cn/en/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Деятельность SINOSURE включает направления поддержки инициативы «Один пояс, один путь», продукции «Сделано в Китае», малого бизнеса, возрождения села и зелёного устойчивого развития.",
+        "quote": "Supporting the Belt and Road Initiative\n--> \n Supporting “Made in China”\n--> \n Supporting Small Business\n--> \n CONTIBUTING TO RURAL REVITALIZATION\n SUPPORTING GREEN AND SUSTAINABLE DEVELOPMENT",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "sinosure.com.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.sinosure.com.cn/en/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "SINOSURE запустила новый цифровой кредитный продукт — SINOSURE Globeseek.",
+        "quote": "SINOSURE Launches a New Digital Credit Product — SINOSURE Globeseek",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "sinosure.com.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.sinosure.com.cn/en/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "SINOSURE публикует индекс экспортных рисков для малых и средних предприятий Китая: доклад по индексу за 2026 год был официально представлен на мероприятии по инклюзивному финансированию в Пекине 25 июня.",
+        "quote": "2026 China Small and Medium-sized Enterprises Export Risk Index Report Officially Released \n 　　On June 25, SINOSURE held a themedevent called 2026 Inclusive Finance Services Season in Beijing, ...",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "sinosure.com.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.sinosure.com.cn/en/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "SINOSURE заключила меморандумы о взаимопонимании со страховщиком экспортных кредитов ОАЭ (ECI) и Эксимбанком Малайзии, а также соглашение о всестороннем сотрудничестве с банком Bohai.",
+        "quote": "SINOSURE Signs MOUs Respectively with UAE's ECI and Malaysia's Eximbank",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "sinosure.com.cn",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.sinosure.com.cn/en/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Департамент вырабатывает предложения по мерам поддержки экспорта товаров государств-членов ЕАЭС на рынки третьих стран, включая создание и функционирование Евразийской перестраховочной компании.",
+        "quote": "выработка предложений по мерам поддержки экспорта товаров государств-членов на рынки третьих стран, включая создание и функционирование Евразийской перестраховочной компании;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Рекомендация Коллегии ЕЭК № 25 от 26.10.2021 касается применения мер поддержки экспорта в части совместных мероприятий, информационной поддержки и продвижения товаров государств – членов ЕАЭС на рынки третьих стран.",
+        "quote": "Рекомендация Коллегии ЕЭК № 25 О применении мер поддержки экспорта в части реализации совместных мероприятий, информационной поддержки и продвижения товаров государств – членов Евразийского экономического союза на рынки третьих стран",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "ЕЭК содействует доступу на рынки третьих стран, в том числе устраняя технические барьеры в торговле, и ведёт мониторинг ограничительных мер, применяемых к товарам государств-членов.",
+        "quote": "содействие при доступе на рынки третьих сторон, в том числе посредством устранения технических барьеров в торговле, и осуществление мониторинга ограничительных мер;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
       {
         "text": "Экспортная лицензия: требуется ли для этой группы — источник не перечитан.",
         "stamp": {
@@ -937,6 +1119,48 @@
         "_assembled": "assembled by pipeline/assemble.py"
       },
       {
+        "text": "Единая система тарифных преференций Союза (преференции развивающимся и наименее развитым странам) администрируется Департаментом торговой политики ЕЭК.",
+        "quote": "администрирование единой системы тарифных преференций Союза;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "В рамках преференциальных торговых соглашений ЕАЭС внедряются электронные системы сертификации и верификации происхождения товаров для упрощения процедур торговли.",
+        "quote": "упрощение процедур торговли, в том числе посредством внедрения электронных систем сертификации и верификации происхождения товаров в рамках преференциальных торговых соглашений;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "ЕЭК публикует требования к информации об органах, уполномоченных выдавать сертификаты о происхождении товара формы «А».",
+        "quote": "ТРЕБОВАНИЯ к информации об органах, уполномоченных на выдачу сертификатов о происхождении товара формы \"А\"",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Код товара: HS 8541.43 — солнечные панели. Национальный код и ставку подтверждают брокер или предварительное решение таможни.",
         "stamp": {
           "status": "note",
@@ -986,6 +1210,20 @@
     "number": 5,
     "title": "Как везти",
     "facts": [
+      {
+        "text": "Департамент содействует цифровизации железнодорожных грузовых перевозок между государствами ЕАЭС и с третьими странами и проекту ускоренных экспортных поставок сельскохозяйственных и продовольственных товаров «Евразийский агроэкспресс».",
+        "quote": "содействие реализации проектов по цифровизации железнодорожных грузовых перевозок между государствами – членами ЕАЭС и с третьими странами, и по ускоренным экспортным поставкам сельскохозяйственных и продовольственных товаров «Евразийский агроэкспресс»;",
+        "quoteLang": "ru",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "eec.eaeunion.org",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://eec.eaeunion.org/comission/department/dotp/"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
       {
         "text": "Маршруты, сроки и ориентир стоимости для этой группы не собраны.",
         "stamp": {
@@ -1058,6 +1296,46 @@
       },
       {
         "source": "canada.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "english.mofcom.gov.cn",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "eec.eaeunion.org",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "sinosure.com.cn",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "bafa.de",
         "confirms": "цитата проверена",
         "checked": "12 сен 2026",
         "status": {
@@ -1190,6 +1468,20 @@
     "title": "Экспортный контроль и двойное назначение",
     "lead": "Лицензии на вывоз, списки товаров двойного назначения и стратегических товаров обеих стран показываются как есть. Проверка принадлежности товара к спискам — по национальному коду у брокера.",
     "facts": [
+      {
+        "text": "Европейская комиссия начала процесс оценки Регламента (ЕС) 2021/821 о товарах двойного назначения, предусмотренный ст. 26(4); опросы проводятся до 11 сентября 2026 года.",
+        "quote": "Wie in den vergangenen Monaten bereits angekündigt, hat die EU-Kommission den in Art. 26 Abs. 4 der Verordnung (EU) 2021/821 (EU-Dual-Use-VO) vorgesehenen Prozess zur Evaluation gestartet.",
+        "quoteLang": "de",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "bafa.de",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
       {
         "text": "Контрольные списки для этой группы не проверены.",
         "stamp": {

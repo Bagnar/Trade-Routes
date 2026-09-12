@@ -1,0 +1,49 @@
+{
+  "url": "https://lex.uz/ru/",
+  "source_id": "uz-lex",
+  "fetched_at": "2026-09-12T14:00:47+00:00",
+  "content_hash": "8e766ce169a850727e302fe6a9a8123a57782f63860e7cac8e4cd02f5a2f577b",
+  "topic": "laws",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "UZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Официальные нормативно-правовые акты Узбекистана публикуются в Национальной базе данных законодательства, которую ведёт государственное учреждение «Национальный правовой информационный центр «Адолат» при Министерстве юстиции Республики Узбекистан.",
+        "en": "Uzbekistan's official legal acts are published in the National Database of Legislation, maintained by the state institution 'Adolat' National Legal Information Centre under the Ministry of Justice of the Republic of Uzbekistan."
+      },
+      "quote": "Национальная база данных законодательства Республики Узбекистан",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "UZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В классификаторе отраслей законодательства Узбекистана выделен отдельный раздел «Внешнеэкономическая деятельность. Таможенное дело», в котором сгруппированы акты по внешней торговле и таможне.",
+        "en": "The Uzbek classifier of branches of legislation contains a separate section 'Foreign economic activity. Customs affairs', grouping acts on foreign trade and customs."
+      },
+      "quote": "Внешнеэкономическая деятельность. Таможенное дело",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "UZ",
+      "hs_scope": [],
+      "statement": {
+        "ru": "База позволяет искать акты по статусу: действующий, утративший силу или не действующий, а также по датам вступления в силу и утраты силы.",
+        "en": "The database allows searching acts by status — in force, repealed or not in force — as well as by dates of entry into force and of loss of force."
+      },
+      "quote": "Статус акта \n Все Действующий Утративший силу Не действующий \n Дата вступления в силу",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

@@ -1,0 +1,39 @@
+{
+  "url": "https://fsvps.gov.ru/export/",
+  "source_id": "ru-fsvps",
+  "fetched_at": "2026-09-12T13:57:31+00:00",
+  "content_hash": "4b9cd3815cee20bc4957599ce9646ddb28055ca548b70fa06c02e065c6b57834",
+  "topic": "sps_certificates",
+  "facts": [
+    {
+      "block": "documents",
+      "country": "RU",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Россельхознадзор публикует по стране-получателю (Абхазия) информацию о вывозе продукции с территории России: ветеринарные требования, формы ветеринарных сертификатов, список российских предприятий-экспортёров и ограничения на вывоз.",
+        "en": "Rosselkhoznadzor publishes, per destination country (Abkhazia), information on shipping products out of Russia: veterinary requirements, veterinary certificate forms, the list of approved Russian establishments and export restrictions."
+      },
+      "quote": "Информация, касающаяся вывоза продукции с территории Российской Федерации.\n В области ветеринарии\n Список российских предприятий\n Ограничения на вывоз",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "RU",
+      "hs_scope": [
+        "10",
+        "11"
+      ],
+      "statement": {
+        "ru": "Для экспорта зерна и зернопродуктов в Абхазию Россельхознадзор публикует фитосанитарные требования к подкарантинной продукции, а также требования в сфере качества и безопасности зерна.",
+        "en": "For exports of grain and grain products to Abkhazia, Rosselkhoznadzor publishes the phytosanitary requirements for regulated products as well as grain quality and safety requirements."
+      },
+      "quote": "Фитосанитарные требования к подкарантинной продукции и требования в сфере качества и безопасности зерна\n Фитосанитарные требования, предъявляемые к зерну и зернопродуктам, ввозимым на территорию Республики Абхазия.",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

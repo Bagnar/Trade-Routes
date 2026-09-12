@@ -1,0 +1,140 @@
+{
+  "url": "https://eec.eaeunion.org/comission/department/dotp/",
+  "source_id": "eaeu-eec",
+  "fetched_at": "2026-09-12T13:57:34+00:00",
+  "content_hash": "645ce63dd00c844df21413d0216f8040ecadd080f26687a3b0e086664b6e26a3",
+  "topic": "tariff_rates,trade_agreements,rules_of_origin",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Департамент торговой политики ЕЭК формирует право Союза в области определения и подтверждения непреференциального и преференциального происхождения товаров во внешней торговле с третьими странами.",
+        "en": "The EEC Trade Policy Department develops Union law on the determination and confirmation of non-preferential and preferential origin of goods in external trade with third countries."
+      },
+      "quote": "формирование права Союза в области определения и подтверждения непреференциального и преференциального происхождения товаров в рамках внешней торговли с третьими странами.",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Заключение и имплементация преференциальных и непреференциальных торговых соглашений ЕАЭС с третьими странами относится к задачам Департамента торговой политики ЕЭК.",
+        "en": "Concluding and implementing preferential and non-preferential trade agreements of the EAEU with third countries is a task of the EEC Trade Policy Department."
+      },
+      "quote": "заключение и имплементация преференциальных и непреференциальных торговых соглашений с третьими странами;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Единая система тарифных преференций Союза (преференции развивающимся и наименее развитым странам) администрируется Департаментом торговой политики ЕЭК.",
+        "en": "The Union's unified system of tariff preferences (preferences for developing and least developed countries) is administered by the EEC Trade Policy Department."
+      },
+      "quote": "администрирование единой системы тарифных преференций Союза;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "В рамках преференциальных торговых соглашений ЕАЭС внедряются электронные системы сертификации и верификации происхождения товаров для упрощения процедур торговли.",
+        "en": "Electronic systems for certification and verification of the origin of goods are being introduced under the EAEU's preferential trade agreements to facilitate trade procedures."
+      },
+      "quote": "упрощение процедур торговли, в том числе посредством внедрения электронных систем сертификации и верификации происхождения товаров в рамках преференциальных торговых соглашений;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ЕЭК публикует требования к информации об органах, уполномоченных выдавать сертификаты о происхождении товара формы «А».",
+        "en": "The EEC publishes requirements for information on the bodies authorised to issue certificates of origin of Form \"A\"."
+      },
+      "quote": "ТРЕБОВАНИЯ к информации об органах, уполномоченных на выдачу сертификатов о происхождении товара формы \"А\"",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Департамент вырабатывает предложения по мерам поддержки экспорта товаров государств-членов ЕАЭС на рынки третьих стран, включая создание и функционирование Евразийской перестраховочной компании.",
+        "en": "The Department prepares proposals on measures to support exports of EAEU member states' goods to third-country markets, including the establishment and operation of the Eurasian Reinsurance Company."
+      },
+      "quote": "выработка предложений по мерам поддержки экспорта товаров государств-членов на рынки третьих стран, включая создание и функционирование Евразийской перестраховочной компании;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_support",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Рекомендация Коллегии ЕЭК № 25 от 26.10.2021 касается применения мер поддержки экспорта в части совместных мероприятий, информационной поддержки и продвижения товаров государств – членов ЕАЭС на рынки третьих стран.",
+        "en": "EEC Board Recommendation No. 25 of 26.10.2021 concerns export support measures involving joint events, information support and promotion of EAEU member states' goods on third-country markets."
+      },
+      "quote": "Рекомендация Коллегии ЕЭК № 25 О применении мер поддержки экспорта в части реализации совместных мероприятий, информационной поддержки и продвижения товаров государств – членов Евразийского экономического союза на рынки третьих стран",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Департамент содействует цифровизации железнодорожных грузовых перевозок между государствами ЕАЭС и с третьими странами и проекту ускоренных экспортных поставок сельскохозяйственных и продовольственных товаров «Евразийский агроэкспресс».",
+        "en": "The Department supports digitalisation of rail freight between EAEU states and with third countries and the 'Eurasian Agroexpress' project for accelerated export shipments of agricultural and food goods."
+      },
+      "quote": "содействие реализации проектов по цифровизации железнодорожных грузовых перевозок между государствами – членами ЕАЭС и с третьими странами, и по ускоренным экспортным поставкам сельскохозяйственных и продовольственных товаров «Евразийский агроэкспресс»;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "ЕЭК содействует доступу на рынки третьих стран, в том числе устраняя технические барьеры в торговле, и ведёт мониторинг ограничительных мер, применяемых к товарам государств-членов.",
+        "en": "The EEC facilitates access to third-country markets, including by removing technical barriers to trade, and monitors restrictive measures applied to member states' goods."
+      },
+      "quote": "содействие при доступе на рынки третьих сторон, в том числе посредством устранения технических барьеров в торговле, и осуществление мониторинга ограничительных мер;",
+      "quote_lang": "ru",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для переговоров по пересмотру тарифных обязательств Кыргызской Республики и Республики Армения в ВТО в связи с присоединением к Договору о ЕАЭС от 29 мая 2014 года сформированы переговорные делегации (распоряжения Совета ЕЭК № 8 и № 9 от 30.03.2023).",
+        "en": "Negotiating delegations were formed for talks on revising the WTO tariff commitments of the Kyrgyz Republic and the Republic of Armenia following their accession to the EAEU Treaty of 29 May 2014 (EEC Council Orders No. 8 and No. 9 of 30.03.2023)."
+      },
+      "quote": "Распоряжение Совета ЕЭК № 9 О внесении изменений в состав переговорной делегации для участия в переговорах по пересмотру тарифных обязательств Кыргызской Республики во Всемирной торговой организации в связи с присоединением Кыргызской Республики к Договору о Евразийском экономическом союзе от 29 мая 2014 года",
+      "quote_lang": "ru",
+      "has_number": true,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

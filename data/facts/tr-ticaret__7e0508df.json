@@ -1,0 +1,75 @@
+{
+  "url": "https://ticaret.gov.tr/gumruk-islemleri",
+  "source_id": "tr-ticaret",
+  "fetched_at": "2026-09-12T14:00:30+00:00",
+  "content_hash": "005357e65e403b7667b135b41b9bd6495dda24978ddf0b060d094a70a5b22889",
+  "topic": "export_procedures,supply_regions,supplier_directory",
+  "facts": [
+    {
+      "block": "logistics",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство торговли Турции публикует список таможенных органов и пограничных пропускных пунктов, а также перечень таможенных органов, уполномоченных выдавать свидетельство о допущении транспортного средства, и информацию о применении специализированных (профильных) таможен.",
+        "en": "The Turkish Ministry of Trade publishes the list of customs administrations and border gates, the customs offices authorised to issue vehicle approval certificates, and information on the specialised (ihtisas) customs offices scheme."
+      },
+      "quote": "Gümrük idareleri listesi ve hudut kapılarına, taşıt onay belgesi vermeye yetkili gümrük idarelerine ve ihtisas gümrükleri uygulamasına buradan ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Турция применяет статус уполномоченного обязанного лица (Yetkilendirilmiş Yükümlü Statüsü), который предоставляет его владельцам упрощения при таможенных операциях.",
+        "en": "Türkiye operates an Authorised Obligor (Authorised Economic Operator) Status which grants holders facilitations in customs procedures."
+      },
+      "quote": "Yetkilendirilmiş Yükümlü Statüsü Ve Sağladığı Kolaylıklar",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Министерство торговли публикует перечень документов, используемых в таможенных органах и при таможенных операциях.",
+        "en": "The Ministry of Trade publishes the set of documents used by customs administrations in customs procedures."
+      },
+      "quote": "Gümrük İdarelerinde Kullanılan Belgeler\n Gümrük işlemlerinde kullanılan belgelere buradan ulaşabilirsiniz.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Электронные руководства по таможенным режимам и процедурам на платформе E-Bilgilendirme подготовлены только в информационных целях и не имеют обязательной юридической силы.",
+        "en": "The electronic guides on customs regimes and procedures on the E-Information platform are prepared for information purposes only and are not binding."
+      },
+      "quote": "Gümrük rejimlerine ve gümrük uygulamalarına ilişkin yol gösterici elektronik kılavuzlara buradan ulaşılabilmektedir. Yalnızca bilgilendirme amacıyla hazırlanmış olup bağlayıcı nitelikte değildir.",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "TR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Таможенные и внешнеторговые операции в Турции организованы через региональные управления, включая управления в Анталье, Текирдаге, Хатае, Ване, Трабзоне, Коджаэли, Измире, Малатье, Газиантепе, Агры, Ширнаке, Стамбуле, Артвине, Мерсине, Анкаре, Самсуне, Эдирне и Бурсе.",
+        "en": "Turkish customs and foreign trade operations are organised through regional directorates, including those based in Antalya, Tekirdağ, Hatay, Van, Trabzon, Kocaeli, İzmir, Malatya, Gaziantep, Ağrı, Şırnak, İstanbul, Artvin, Mersin, Ankara, Samsun, Edirne and Bursa."
+      },
+      "quote": "Batı Akdeniz Güm. ve Dış Tic. Bölge Müd. (Antalya)\n Batı Marmara Güm. ve Dış Tic. Bölge Müd. (Tekirdağ)\n Doğu Akdeniz Güm. ve Dış Tic. Bölge Müd. (Hatay)",
+      "quote_lang": "tr",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}
