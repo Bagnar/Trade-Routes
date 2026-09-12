@@ -45,3 +45,15 @@ def test_unreachable_source_becomes_unavailable(tmp_path):
     result = monitor.run([folder], today=date(2026, 9, 12), fetcher=fetcher)
     stamp = json.loads((folder / "p.json").read_text(encoding="utf8"))["regime"]["facts"][0]["stamp"]
     assert result.unavailable == 1 and stamp["status"] == "none" and "недоступен" in stamp["label"]
+
+
+def test_rate_facts_are_not_quote_checked(tmp_path):
+    import json
+    from datetime import date
+
+    page = {"summary": {"facts": [{"key": "Пошлина", "text": "18%", "rate_ref": "CA:610910:import_mfn", "quote": "610910 18", "stamp": {"status": "ok", "source": "wits.worldbank.org", "label": "таблица ставок", "url": "https://wits.worldbank.org/x"}}]}}
+    (tmp_path / "p.json").write_text(json.dumps(page), encoding="utf8")
+    fetched = []
+    result = monitor.run([tmp_path], date(2026, 9, 12), fetcher=lambda url: fetched.append(url) or "")
+    assert result.rates_layer == 1 and result.changed == 0 and fetched == []
+    assert json.loads((tmp_path / "p.json").read_text(encoding="utf8"))["summary"]["facts"][0]["stamp"]["status"] == "ok"

@@ -53,6 +53,7 @@ class Result:
     changed: int = 0
     unavailable: int = 0
     skipped_no_quote: int = 0
+    rates_layer: int = 0  # numbers from data/rates: refreshed by reference-data.yml, not by quote checks
     lines: list[str] = field(default_factory=list)
 
 
@@ -86,6 +87,9 @@ def run(page_dirs: Iterable[Path] = PAGE_DIRS, today: date | None = None, fetche
             dirty = False
             for fact in iter_facts(doc):
                 quote, url = fact.get("quote"), fact["stamp"].get("url")
+                if fact.get("rate_ref"):  # structured rate: its source is a table snapshot, not a quotable page
+                    result.rates_layer += 1
+                    continue
                 if not quote or not url:
                     result.skipped_no_quote += 1
                     continue
@@ -121,6 +125,7 @@ def write_report(result: Result, today: date | None = None, path: Path = REPORT)
         f"- источник изменился, требует проверки: {result.changed}",
         f"- источник недоступен: {result.unavailable}",
         f"- фактов без цитаты (не проверяются и не публикуются как «проверено»): {result.skipped_no_quote}",
+        f"- ставок из таблицы rates (обновляются загрузчиком reference-data.yml, не цитатами): {result.rates_layer}",
         "",
     ]
     if result.lines:
