@@ -203,7 +203,7 @@
         "to": "Иран — эта страница",
         "here": true,
         "duty": "10%",
-        "agreement": "не проверено",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: UK, US",
         "support": "не собрано",
         "score": {
@@ -214,7 +214,7 @@
       {
         "to": "Китай",
         "duty": "33%",
-        "agreement": "не проверено",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: UK, US",
         "support": "не собрано",
         "score": {
@@ -225,7 +225,7 @@
       {
         "to": "Канада",
         "duty": "38.25%",
-        "agreement": "не проверено",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: UK, US",
         "support": "не собрано",
         "score": {
@@ -236,7 +236,7 @@
       {
         "to": "Турция",
         "duty": "45%",
-        "agreement": "не проверено",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: UK, US",
         "support": "не собрано",
         "score": {
