@@ -1,0 +1,5650 @@
+{
+"source": "WTO RTA-IS",
+"url": "https://rtais.wto.org/UI/PublicAllRTAList.aspx",
+"export": "https://rtais.wto.org/UI/ExportAllRTAList.aspx",
+"fetched_at": "2026-09-12T13:09:07+00:00",
+"in_force_reported": 388,
+"agreements": [
+{
+"name": "ASEAN Trade in Services Agreement (ATISA)",
+"type": "EIA",
+"in_force": "",
+"status": "In force for at least one Party",
+"members": [
+"BN",
+"MM",
+"KH",
+"ID",
+"LA",
+"MY",
+"PH",
+"SG",
+"VN",
+"TH"
+]
+},
+{
+"name": "EU - CARIFORUM States",
+"type": "FTA & EIA",
+"in_force": "39811",
+"status": "In force for at least one Party",
+"members": [
+"AG",
+"BS",
+"BB",
+"BZ",
+"DM",
+"DO",
+"GD",
+"GY",
+"HT",
+"JM",
+"KN",
+"LC",
+"VC",
+"SR",
+"TT",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "Pacific Agreement on Closer Economic Relations Plus (PACER Plus)",
+"type": "FTA & EIA",
+"in_force": "44178",
+"status": "In force for at least one Party",
+"members": [
+"AU",
+"SB",
+"CK",
+"KI",
+"NR",
+"VU",
+"NZ",
+"NU",
+"TO",
+"TV",
+"WS"
+]
+},
+{
+"name": "Pacific Alliance - Singapore",
+"type": "FTA & EIA",
+"in_force": "45780",
+"status": "In force for at least one Party",
+"members": [
+"SG",
+"CL",
+"CO",
+"MX",
+"PE"
+]
+},
+{
+"name": "Southern African Development Community (SADC)",
+"type": "FTA & EIA",
+"in_force": "36770",
+"status": "In force for at least one Party",
+"members": [
+"AO",
+"BW",
+"KM",
+"CD",
+"LS",
+"MG",
+"MW",
+"MU",
+"MZ",
+"NA",
+"SC",
+"ZA",
+"ZW",
+"SZ",
+"TZ",
+"ZM"
+]
+},
+{
+"name": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan",
+"type": "EIA",
+"in_force": "",
+"status": "In force for at least one Party",
+"members": [
+"AM",
+"BY",
+"KZ",
+"KG",
+"RU",
+"TJ",
+"UZ"
+]
+},
+{
+"name": "African Continental Free Trade Area (AfCFTA)",
+"type": "FTA",
+"in_force": "43615",
+"status": "In Force",
+"members": [
+"DZ",
+"AO",
+"BW",
+"BI",
+"CM",
+"CV",
+"CF",
+"TD",
+"KM",
+"CG",
+"CD",
+"GQ",
+"ET",
+"DJ",
+"GA",
+"GH",
+"GN",
+"CI",
+"KE",
+"LS",
+"LR",
+"MW",
+"ML",
+"MR",
+"MU",
+"MA",
+"MZ",
+"NA",
+"NE",
+"NG",
+"GW",
+"RW",
+"SN",
+"SC",
+"SL",
+"ZA",
+"ZW",
+"EH",
+"SZ",
+"TG",
+"TN",
+"UG",
+"EG",
+"TZ",
+"BF",
+"ZM"
+]
+},
+{
+"name": "Agadir Agreement",
+"type": "FTA",
+"in_force": "39168",
+"status": "In Force",
+"members": [
+"JO",
+"MA",
+"TN",
+"EG"
+]
+},
+{
+"name": "Andean Community (CAN)",
+"type": "CU",
+"in_force": "32288",
+"status": "In Force",
+"members": [
+"BO",
+"CO",
+"EC",
+"PE",
+"VE"
+]
+},
+{
+"name": "APTA - Accession of China",
+"type": "PSA",
+"in_force": "37257",
+"status": "In Force",
+"members": [
+"BD",
+"LK",
+"CN",
+"IN",
+"KR",
+"LA"
+]
+},
+{
+"name": "Argentina - Mexico",
+"type": "PSA",
+"in_force": "31778",
+"status": "In Force",
+"members": [
+"AR",
+"MX"
+]
+},
+{
+"name": "Armenia - Kazakhstan",
+"type": "FTA",
+"in_force": "37259",
+"status": "In Force",
+"members": [
+"AM",
+"KZ"
+]
+},
+{
+"name": "Armenia - Moldova, Republic of",
+"type": "FTA",
+"in_force": "35054",
+"status": "In Force",
+"members": [
+"AM",
+"MD"
+]
+},
+{
+"name": "Armenia - Turkmenistan",
+"type": "FTA",
+"in_force": "35253",
+"status": "In Force",
+"members": [
+"AM",
+"TM"
+]
+},
+{
+"name": "Armenia - Ukraine",
+"type": "FTA",
+"in_force": "35417",
+"status": "In Force",
+"members": [
+"AM",
+"UA"
+]
+},
+{
+"name": "ASEAN - Australia - New Zealand",
+"type": "FTA & EIA",
+"in_force": "40179",
+"status": "In Force",
+"members": [
+"AU",
+"NZ"
+]
+},
+{
+"name": "ASEAN Free Trade Area (AFTA)",
+"type": "FTA & EIA",
+"in_force": "40315",
+"status": "In Force",
+"members": [
+"BN",
+"MM",
+"KH",
+"ID",
+"LA",
+"MY",
+"PH",
+"SG",
+"VN",
+"TH"
+]
+},
+{
+"name": "Asia Pacific Trade Agreement (APTA)",
+"type": "PSA & EIA",
+"in_force": "27928",
+"status": "In Force",
+"members": [
+"BD",
+"LK",
+"CN",
+"IN",
+"KR",
+"LA"
+]
+},
+{
+"name": "Australia - Chile",
+"type": "FTA & EIA",
+"in_force": "39878",
+"status": "In Force",
+"members": [
+"AU",
+"CL"
+]
+},
+{
+"name": "Australia - China",
+"type": "FTA & EIA",
+"in_force": "42358",
+"status": "In Force",
+"members": [
+"AU",
+"CN"
+]
+},
+{
+"name": "Australia - New Zealand Closer Economic Relations Trade Agreement (ANZCERTA)",
+"type": "FTA & EIA",
+"in_force": "30317",
+"status": "In Force",
+"members": [
+"AU",
+"NZ"
+]
+},
+{
+"name": "Australia - Papua New Guinea (PATCRA)",
+"type": "FTA",
+"in_force": "28157",
+"status": "In Force",
+"members": [
+"AU",
+"PG"
+]
+},
+{
+"name": "Australia - United Arab Emirates",
+"type": "FTA & EIA",
+"in_force": "45931",
+"status": "In Force",
+"members": [
+"AU",
+"AE"
+]
+},
+{
+"name": "Brazil - Mexico",
+"type": "PSA",
+"in_force": "37743",
+"status": "In Force",
+"members": [
+"BR",
+"MX"
+]
+},
+{
+"name": "Brunei Darussalam - Japan",
+"type": "FTA & EIA",
+"in_force": "39660",
+"status": "In Force",
+"members": [
+"BN",
+"JP"
+]
+},
+{
+"name": "CACM - Accession of Panama",
+"type": "CU",
+"in_force": "41400",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"GT",
+"HN",
+"NI",
+"PA"
+]
+},
+{
+"name": "Canada - Chile",
+"type": "FTA & EIA",
+"in_force": "35616",
+"status": "In Force",
+"members": [
+"CA",
+"CL"
+]
+},
+{
+"name": "Canada - Colombia",
+"type": "FTA & EIA",
+"in_force": "40770",
+"status": "In Force",
+"members": [
+"CA",
+"CO"
+]
+},
+{
+"name": "Canada - Costa Rica",
+"type": "FTA",
+"in_force": "37561",
+"status": "In Force",
+"members": [
+"CA",
+"CR"
+]
+},
+{
+"name": "Canada - Honduras",
+"type": "FTA & EIA",
+"in_force": "41913",
+"status": "In Force",
+"members": [
+"CA",
+"HN"
+]
+},
+{
+"name": "Canada - Israel",
+"type": "FTA",
+"in_force": "35431",
+"status": "In Force",
+"members": [
+"CA",
+"IL"
+]
+},
+{
+"name": "Canada - Jordan",
+"type": "FTA",
+"in_force": "41183",
+"status": "In Force",
+"members": [
+"CA",
+"JO"
+]
+},
+{
+"name": "Canada - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "42005",
+"status": "In Force",
+"members": [
+"CA",
+"KR"
+]
+},
+{
+"name": "Canada - Panama",
+"type": "FTA & EIA",
+"in_force": "41365",
+"status": "In Force",
+"members": [
+"CA",
+"PA"
+]
+},
+{
+"name": "Canada - Peru",
+"type": "FTA & EIA",
+"in_force": "40026",
+"status": "In Force",
+"members": [
+"CA",
+"PE"
+]
+},
+{
+"name": "Canada - Ukraine",
+"type": "FTA & EIA",
+"in_force": "45474",
+"status": "In Force",
+"members": [
+"CA",
+"UA"
+]
+},
+{
+"name": "Caribbean Community and Common Market (CARICOM)",
+"type": "CU & EIA",
+"in_force": "26877",
+"status": "In Force",
+"members": [
+"AG",
+"BS",
+"BB",
+"BZ",
+"DM",
+"GD",
+"GY",
+"HT",
+"JM",
+"MS",
+"KN",
+"LC",
+"VC",
+"SR",
+"TT"
+]
+},
+{
+"name": "Central American Common Market (CACM)",
+"type": "CU",
+"in_force": "22436",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"GT",
+"HN",
+"NI",
+"PA"
+]
+},
+{
+"name": "Central European Free Trade Agreement (CEFTA) 2006",
+"type": "FTA",
+"in_force": "39203",
+"status": "In Force",
+"members": [
+"AL",
+"BA",
+"MD",
+"MK",
+"RS",
+"ME"
+]
+},
+{
+"name": "Chile - China",
+"type": "FTA & EIA",
+"in_force": "38991",
+"status": "In Force",
+"members": [
+"CL",
+"CN"
+]
+},
+{
+"name": "Chile - Colombia",
+"type": "FTA & EIA",
+"in_force": "39941",
+"status": "In Force",
+"members": [
+"CL",
+"CO"
+]
+},
+{
+"name": "Chile - Costa Rica (Chile - Central America)",
+"type": "FTA & EIA",
+"in_force": "37302",
+"status": "In Force",
+"members": [
+"CL",
+"CR"
+]
+},
+{
+"name": "Chile - El Salvador (Chile - Central America)",
+"type": "FTA & EIA",
+"in_force": "37408",
+"status": "In Force",
+"members": [
+"CL",
+"SV"
+]
+},
+{
+"name": "Chile - Guatemala (Chile - Central America)",
+"type": "FTA & EIA",
+"in_force": "40260",
+"status": "In Force",
+"members": [
+"CL",
+"GT"
+]
+},
+{
+"name": "Chile - Honduras (Chile - Central America)",
+"type": "FTA & EIA",
+"in_force": "39648",
+"status": "In Force",
+"members": [
+"CL",
+"HN"
+]
+},
+{
+"name": "Chile - India",
+"type": "PSA",
+"in_force": "39311",
+"status": "In Force",
+"members": [
+"CL",
+"IN"
+]
+},
+{
+"name": "Chile - Indonesia",
+"type": "FTA",
+"in_force": "43687",
+"status": "In Force",
+"members": [
+"CL",
+"ID"
+]
+},
+{
+"name": "Chile - Japan",
+"type": "FTA & EIA",
+"in_force": "39328",
+"status": "In Force",
+"members": [
+"CL",
+"JP"
+]
+},
+{
+"name": "Chile - Malaysia",
+"type": "FTA",
+"in_force": "40964",
+"status": "In Force",
+"members": [
+"CL",
+"MY"
+]
+},
+{
+"name": "Chile - Mexico",
+"type": "FTA & EIA",
+"in_force": "36373",
+"status": "In Force",
+"members": [
+"CL",
+"MX"
+]
+},
+{
+"name": "Chile - Nicaragua (Chile - Central America)",
+"type": "FTA & EIA",
+"in_force": "41201",
+"status": "In Force",
+"members": [
+"CL",
+"NI"
+]
+},
+{
+"name": "Chile - Thailand",
+"type": "FTA & EIA",
+"in_force": "42313",
+"status": "In Force",
+"members": [
+"CL",
+"TH"
+]
+},
+{
+"name": "Chile - Viet Nam",
+"type": "FTA",
+"in_force": "41640",
+"status": "In Force",
+"members": [
+"CL",
+"VN"
+]
+},
+{
+"name": "China - Belarus",
+"type": "EIA",
+"in_force": "",
+"status": "In Force",
+"members": [
+"BY",
+"CN"
+]
+},
+{
+"name": "China - Cambodia",
+"type": "FTA & EIA",
+"in_force": "44562",
+"status": "In Force",
+"members": [
+"KH",
+"CN"
+]
+},
+{
+"name": "China - Congo",
+"type": "FTA",
+"in_force": "46113",
+"status": "In Force",
+"members": [
+"CN",
+"CG"
+]
+},
+{
+"name": "China - Costa Rica",
+"type": "FTA & EIA",
+"in_force": "40756",
+"status": "In Force",
+"members": [
+"CN",
+"CR"
+]
+},
+{
+"name": "China - Ecuador",
+"type": "FTA",
+"in_force": "45413",
+"status": "In Force",
+"members": [
+"CN",
+"EC"
+]
+},
+{
+"name": "China - Georgia",
+"type": "FTA & EIA",
+"in_force": "43101",
+"status": "In Force",
+"members": [
+"CN",
+"GE"
+]
+},
+{
+"name": "China - Hong Kong, China",
+"type": "FTA & EIA",
+"in_force": "37801",
+"status": "In Force",
+"members": [
+"CN",
+"HK"
+]
+},
+{
+"name": "China - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "42358",
+"status": "In Force",
+"members": [
+"CN",
+"KR"
+]
+},
+{
+"name": "China - Macao, China",
+"type": "FTA & EIA",
+"in_force": "37911",
+"status": "In Force",
+"members": [
+"CN",
+"MO"
+]
+},
+{
+"name": "China - Maldives",
+"type": "FTA & EIA",
+"in_force": "45658",
+"status": "In Force",
+"members": [
+"CN",
+"MV"
+]
+},
+{
+"name": "China - Mauritius",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CN",
+"MU"
+]
+},
+{
+"name": "China - New Zealand",
+"type": "FTA & EIA",
+"in_force": "39722",
+"status": "In Force",
+"members": [
+"CN",
+"NZ"
+]
+},
+{
+"name": "China - Nicaragua",
+"type": "FTA & EIA",
+"in_force": "45292",
+"status": "In Force",
+"members": [
+"CN",
+"NI"
+]
+},
+{
+"name": "China - Serbia",
+"type": "FTA",
+"in_force": "45474",
+"status": "In Force",
+"members": [
+"CN",
+"RS"
+]
+},
+{
+"name": "China - Singapore",
+"type": "FTA & EIA",
+"in_force": "39814",
+"status": "In Force",
+"members": [
+"CN",
+"SG"
+]
+},
+{
+"name": "Colombia - Israel",
+"type": "FTA & EIA",
+"in_force": "44054",
+"status": "In Force",
+"members": [
+"CO",
+"IL"
+]
+},
+{
+"name": "Colombia - Mexico",
+"type": "FTA & EIA",
+"in_force": "34700",
+"status": "In Force",
+"members": [
+"CO",
+"MX"
+]
+},
+{
+"name": "Colombia - Northern Triangle (El Salvador, Guatemala, Honduras)",
+"type": "FTA & EIA",
+"in_force": "40129",
+"status": "In Force",
+"members": [
+"CO",
+"SV",
+"GT",
+"HN"
+]
+},
+{
+"name": "COMESA - Accession of Egypt",
+"type": "CU",
+"in_force": "36208",
+"status": "In Force",
+"members": [
+"BI",
+"KM",
+"CD",
+"ET",
+"ER",
+"DJ",
+"KE",
+"LY",
+"MG",
+"MW",
+"MU",
+"RW",
+"SC",
+"ZW",
+"SD",
+"SZ",
+"UG",
+"EG",
+"ZM"
+]
+},
+{
+"name": "COMESA - Accession of Seychelles",
+"type": "CU",
+"in_force": "39944",
+"status": "In Force",
+"members": [
+"BI",
+"KM",
+"CD",
+"ET",
+"ER",
+"DJ",
+"KE",
+"LY",
+"MG",
+"MW",
+"MU",
+"RW",
+"SC",
+"SO",
+"ZW",
+"SD",
+"SZ",
+"TN",
+"UG",
+"EG",
+"ZM"
+]
+},
+{
+"name": "COMESA - Accession of Tunisia",
+"type": "CU",
+"in_force": "43635",
+"status": "In Force",
+"members": [
+"BI",
+"KM",
+"CD",
+"ET",
+"ER",
+"DJ",
+"KE",
+"LY",
+"MG",
+"MW",
+"MU",
+"RW",
+"SC",
+"SO",
+"ZW",
+"SD",
+"SZ",
+"TN",
+"UG",
+"EG",
+"ZM"
+]
+},
+{
+"name": "Common Market for Eastern and Southern Africa (COMESA)",
+"type": "CU",
+"in_force": "34676",
+"status": "In Force",
+"members": [
+"AO",
+"BI",
+"KM",
+"CD",
+"ET",
+"ER",
+"KE",
+"LS",
+"MW",
+"MU",
+"RW",
+"SC",
+"ZW",
+"SD",
+"SZ",
+"TN",
+"UG",
+"EG",
+"TZ",
+"ZM"
+]
+},
+{
+"name": "Commonwealth of Independent States (CIS)",
+"type": "FTA",
+"in_force": "34698",
+"status": "In Force",
+"members": [
+"AZ",
+"AM",
+"BY",
+"GE",
+"KZ",
+"KG",
+"MD",
+"TJ",
+"TM",
+"UA",
+"UZ"
+]
+},
+{
+"name": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
+"type": "FTA & EIA",
+"in_force": "43464",
+"status": "In Force",
+"members": [
+"AU",
+"BN",
+"CA",
+"CL",
+"JP",
+"MY",
+"MX",
+"NZ",
+"PE",
+"SG",
+"VN",
+"GB"
+]
+},
+{
+"name": "Costa Rica - Colombia",
+"type": "FTA & EIA",
+"in_force": "42583",
+"status": "In Force",
+"members": [
+"CO",
+"CR"
+]
+},
+{
+"name": "Costa Rica - Peru",
+"type": "FTA & EIA",
+"in_force": "41426",
+"status": "In Force",
+"members": [
+"CR",
+"PE"
+]
+},
+{
+"name": "Costa Rica - Singapore",
+"type": "FTA & EIA",
+"in_force": "41456",
+"status": "In Force",
+"members": [
+"CR",
+"SG"
+]
+},
+{
+"name": "CPTPP - Accession of the United Kingdom",
+"type": "FTA & EIA",
+"in_force": "45641",
+"status": "In Force",
+"members": [
+"AU",
+"BN",
+"CA",
+"CL",
+"JP",
+"MY",
+"MX",
+"NZ",
+"PE",
+"SG",
+"VN",
+"GB"
+]
+},
+{
+"name": "Dominican Republic - Central America",
+"type": "FTA & EIA",
+"in_force": "37168",
+"status": "In Force",
+"members": [
+"CR",
+"DO",
+"SV",
+"GT",
+"HN",
+"NI"
+]
+},
+{
+"name": "Dominican Republic - Central America - United States Free Trade Agreement (CAFTA-DR)",
+"type": "FTA & EIA",
+"in_force": "38777",
+"status": "In Force",
+"members": [
+"CR",
+"DO",
+"SV",
+"GT",
+"HN",
+"NI",
+"US"
+]
+},
+{
+"name": "EAC - Accession of Burundi and Rwanda",
+"type": "CU",
+"in_force": "39264",
+"status": "In Force",
+"members": [
+"BI",
+"KE",
+"RW",
+"UG",
+"TZ"
+]
+},
+{
+"name": "EAEU - Accession of Armenia",
+"type": "CU & EIA",
+"in_force": "42006",
+"status": "In Force",
+"members": [
+"AM",
+"BY",
+"KZ",
+"RU"
+]
+},
+{
+"name": "EAEU - Accession of the Kyrgyz Republic",
+"type": "CU & EIA",
+"in_force": "42228",
+"status": "In Force",
+"members": [
+"AM",
+"BY",
+"KZ",
+"KG",
+"RU"
+]
+},
+{
+"name": "East African Community (EAC)",
+"type": "CU & EIA",
+"in_force": "36714",
+"status": "In Force",
+"members": [
+"BI",
+"KE",
+"RW",
+"UG",
+"TZ"
+]
+},
+{
+"name": "EC (10) Enlargement",
+"type": "CU",
+"in_force": "29587",
+"status": "In Force",
+"members": [
+"BE",
+"DK",
+"FR",
+"DE",
+"GR",
+"IE",
+"IT",
+"LU",
+"NL"
+]
+},
+{
+"name": "EC (12) Enlargement",
+"type": "CU",
+"in_force": "31413",
+"status": "In Force",
+"members": [
+"BE",
+"DK",
+"FR",
+"DE",
+"GR",
+"IE",
+"IT",
+"LU",
+"NL",
+"PT",
+"ES"
+]
+},
+{
+"name": "EC (15) Enlargement",
+"type": "CU & EIA",
+"in_force": "34700",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"DK",
+"FI",
+"FR",
+"DE",
+"GR",
+"IE",
+"IT",
+"LU",
+"NL",
+"PT",
+"ES",
+"SE"
+]
+},
+{
+"name": "EC (25) Enlargement",
+"type": "CU & EIA",
+"in_force": "38108",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EC (27) Enlargement",
+"type": "CU & EIA",
+"in_force": "39083",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"BG",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EC (9) Enlargement",
+"type": "CU",
+"in_force": "26665",
+"status": "In Force",
+"members": [
+"BE",
+"DK",
+"FR",
+"DE",
+"IE",
+"IT",
+"LU",
+"NL"
+]
+},
+{
+"name": "Economic and Monetary Community of Central Africa (CEMAC)",
+"type": "CU",
+"in_force": "36335",
+"status": "In Force",
+"members": [
+"CM",
+"CF",
+"TD",
+"CG",
+"GQ",
+"GA"
+]
+},
+{
+"name": "Economic Community of West African States (ECOWAS)",
+"type": "CU",
+"in_force": "34934",
+"status": "In Force",
+"members": [
+"CV",
+"BJ",
+"GH",
+"GN",
+"CI",
+"LR",
+"ML",
+"NE",
+"NG",
+"GW",
+"SN",
+"SL",
+"TG",
+"BF"
+]
+},
+{
+"name": "Economic Cooperation Organization (ECO)",
+"type": "PSA",
+"in_force": "33651",
+"status": "In Force",
+"members": [
+"IR",
+"PK",
+"TR"
+]
+},
+{
+"name": "Ecuador - Mexico",
+"type": "PSA",
+"in_force": "30437",
+"status": "In Force",
+"members": [
+"EC",
+"MX"
+]
+},
+{
+"name": "EFTA - Accession of Iceland",
+"type": "FTA",
+"in_force": "25628",
+"status": "In Force",
+"members": [
+"IS",
+"LI",
+"NO",
+"CH"
+]
+},
+{
+"name": "EFTA - Central America (Costa Rica and Panama)",
+"type": "FTA & EIA",
+"in_force": "41870",
+"status": "In Force",
+"members": [
+"CR",
+"PA"
+]
+},
+{
+"name": "Egypt - Türkiye",
+"type": "FTA",
+"in_force": "39142",
+"status": "In Force",
+"members": [
+"TR",
+"EG"
+]
+},
+{
+"name": "El Salvador - Cuba",
+"type": "PSA",
+"in_force": "41122",
+"status": "In Force",
+"members": [
+"CU",
+"SV"
+]
+},
+{
+"name": "El Salvador - Ecuador",
+"type": "PSA",
+"in_force": "43055",
+"status": "In Force",
+"members": [
+"EC",
+"SV"
+]
+},
+{
+"name": "EU - Albania",
+"type": "FTA & EIA",
+"in_force": "39052",
+"status": "In Force",
+"members": [
+"AL",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Algeria",
+"type": "FTA",
+"in_force": "38596",
+"status": "In Force",
+"members": [
+"DZ",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Andorra",
+"type": "CU",
+"in_force": "33420",
+"status": "In Force",
+"members": [
+"AD",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Armenia",
+"type": "EIA",
+"in_force": "",
+"status": "In Force",
+"members": [
+"AM",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Bosnia and Herzegovina",
+"type": "FTA & EIA",
+"in_force": "39630",
+"status": "In Force",
+"members": [
+"BA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Cameroon",
+"type": "FTA",
+"in_force": "41855",
+"status": "In Force",
+"members": [
+"CM",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Canada",
+"type": "FTA & EIA",
+"in_force": "42999",
+"status": "In Force",
+"members": [
+"CA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Central America",
+"type": "FTA & EIA",
+"in_force": "41487",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"GT",
+"HN",
+"NI",
+"PA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Chile",
+"type": "FTA & EIA",
+"in_force": "45689",
+"status": "In Force",
+"members": [
+"CL",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Colombia and Peru - Accession of Ecuador",
+"type": "FTA & EIA",
+"in_force": "42736",
+"status": "In Force",
+"members": [
+"CO",
+"EC",
+"PE",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Colombia, Ecuador and Peru",
+"type": "FTA & EIA",
+"in_force": "41334",
+"status": "In Force",
+"members": [
+"CO",
+"EC",
+"PE",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Côte d'Ivoire",
+"type": "FTA",
+"in_force": "42616",
+"status": "In Force",
+"members": [
+"CI",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Eastern and Southern Africa States",
+"type": "FTA",
+"in_force": "41043",
+"status": "In Force",
+"members": [
+"KM",
+"MG",
+"MU",
+"SC",
+"ZW",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Eastern and Southern Africa States - Accession of Comoros",
+"type": "FTA",
+"in_force": "43503",
+"status": "In Force",
+"members": [
+"KM",
+"MG",
+"MU",
+"SC",
+"ZW",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Egypt",
+"type": "FTA",
+"in_force": "38139",
+"status": "In Force",
+"members": [
+"EG",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Faroe Islands",
+"type": "FTA",
+"in_force": "35431",
+"status": "In Force",
+"members": [
+"FO",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Georgia",
+"type": "FTA & EIA",
+"in_force": "41883",
+"status": "In Force",
+"members": [
+"GE",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Ghana",
+"type": "FTA",
+"in_force": "42719",
+"status": "In Force",
+"members": [
+"GH",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Iceland",
+"type": "FTA",
+"in_force": "26755",
+"status": "In Force",
+"members": [
+"IS",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Israel",
+"type": "FTA",
+"in_force": "36678",
+"status": "In Force",
+"members": [
+"IL",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Japan",
+"type": "FTA & EIA",
+"in_force": "43497",
+"status": "In Force",
+"members": [
+"JP",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Jordan",
+"type": "FTA",
+"in_force": "37377",
+"status": "In Force",
+"members": [
+"JO",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Kenya",
+"type": "FTA",
+"in_force": "45474",
+"status": "In Force",
+"members": [
+"KE",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "40725",
+"status": "In Force",
+"members": [
+"KR",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Lebanon",
+"type": "FTA",
+"in_force": "37681",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Mexico",
+"type": "FTA & EIA",
+"in_force": "36708",
+"status": "In Force",
+"members": [
+"MX",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Moldova, Republic of",
+"type": "FTA & EIA",
+"in_force": "41883",
+"status": "In Force",
+"members": [
+"MD",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Montenegro",
+"type": "FTA & EIA",
+"in_force": "39448",
+"status": "In Force",
+"members": [
+"ME",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Morocco",
+"type": "FTA",
+"in_force": "36586",
+"status": "In Force",
+"members": [
+"MA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - New Zealand",
+"type": "FTA & EIA",
+"in_force": "45413",
+"status": "In Force",
+"members": [
+"NZ",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - North Macedonia",
+"type": "FTA & EIA",
+"in_force": "37043",
+"status": "In Force",
+"members": [
+"MK",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Norway",
+"type": "FTA",
+"in_force": "26846",
+"status": "In Force",
+"members": [
+"NO",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU – Overseas Countries and Territories (OCT)",
+"type": "FTA",
+"in_force": "25934",
+"status": "In Force",
+"members": [
+"BM",
+"IO",
+"KY",
+"GS",
+"PF",
+"TF",
+"GL",
+"MS",
+"NL",
+"NC",
+"PN",
+"AI",
+"PM",
+"TC",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Pacific States",
+"type": "FTA",
+"in_force": "40167",
+"status": "In Force",
+"members": [
+"SB",
+"FJ",
+"PG",
+"WS",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Pacific States - Accession of Samoa",
+"type": "FTA",
+"in_force": "43465",
+"status": "In Force",
+"members": [
+"FJ",
+"PG",
+"WS",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Pacific States - Accession of Solomon Islands",
+"type": "FTA",
+"in_force": "43968",
+"status": "In Force",
+"members": [
+"SB",
+"FJ",
+"PG",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Palestine",
+"type": "FTA",
+"in_force": "35612",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - SADC",
+"type": "FTA",
+"in_force": "42653",
+"status": "In Force",
+"members": [
+"BW",
+"LS",
+"MZ",
+"NA",
+"ZA",
+"SZ",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - San Marino",
+"type": "CU",
+"in_force": "37347",
+"status": "In Force",
+"members": [
+"SM",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Serbia",
+"type": "FTA & EIA",
+"in_force": "40210",
+"status": "In Force",
+"members": [
+"RS",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Singapore",
+"type": "FTA & EIA",
+"in_force": "43790",
+"status": "In Force",
+"members": [
+"SG",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - South Africa",
+"type": "FTA",
+"in_force": "36526",
+"status": "In Force",
+"members": [
+"ZA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Switzerland - Liechtenstein",
+"type": "FTA",
+"in_force": "26665",
+"status": "In Force",
+"members": [
+"LI",
+"CH",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Syrian Arab Republic",
+"type": "FTA",
+"in_force": "28307",
+"status": "In Force",
+"members": [
+"SY",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Tunisia",
+"type": "FTA",
+"in_force": "35855",
+"status": "In Force",
+"members": [
+"TN",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Türkiye",
+"type": "CU",
+"in_force": "35065",
+"status": "In Force",
+"members": [
+"TR",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Ukraine",
+"type": "FTA & EIA",
+"in_force": "41752",
+"status": "In Force",
+"members": [
+"UA",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - United Kingdom",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"GB",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "44044",
+"status": "In Force",
+"members": [
+"VN",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU (28) Enlargement",
+"type": "CU & EIA",
+"in_force": "41456",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "EU Treaty",
+"type": "CU & EIA",
+"in_force": "21186",
+"status": "In Force",
+"members": [
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "Eurasian Economic Union (EAEU)",
+"type": "CU & EIA",
+"in_force": "42005",
+"status": "In Force",
+"members": [
+"AM",
+"BY",
+"KZ",
+"KG",
+"RU"
+]
+},
+{
+"name": "European Economic Area (EEA)",
+"type": "EIA",
+"in_force": "",
+"status": "In Force",
+"members": [
+"IS",
+"LI",
+"NO",
+"AT",
+"BE",
+"BG",
+"HR",
+"CY",
+"CZ",
+"DK",
+"EE",
+"FI",
+"FR",
+"DE",
+"GR",
+"HU",
+"IE",
+"IT",
+"LV",
+"LT",
+"LU",
+"MT",
+"NL",
+"PL",
+"PT",
+"RO",
+"SK",
+"SI",
+"ES",
+"SE"
+]
+},
+{
+"name": "European Free Trade Association (EFTA)",
+"type": "FTA & EIA",
+"in_force": "22039",
+"status": "In Force",
+"members": [
+"IS",
+"LI",
+"NO",
+"CH"
+]
+},
+{
+"name": "Faroe Islands - Norway",
+"type": "FTA",
+"in_force": "34151",
+"status": "In Force",
+"members": [
+"FO",
+"NO"
+]
+},
+{
+"name": "Faroe Islands - Switzerland - Liechtenstein",
+"type": "FTA",
+"in_force": "34759",
+"status": "In Force",
+"members": [
+"FO",
+"LI",
+"CH"
+]
+},
+{
+"name": "Georgia - Armenia",
+"type": "FTA",
+"in_force": "36110",
+"status": "In Force",
+"members": [
+"AM",
+"GE"
+]
+},
+{
+"name": "Georgia - Azerbaijan",
+"type": "FTA",
+"in_force": "35256",
+"status": "In Force",
+"members": [
+"AZ",
+"GE"
+]
+},
+{
+"name": "Georgia - Kazakhstan",
+"type": "FTA",
+"in_force": "36357",
+"status": "In Force",
+"members": [
+"GE",
+"KZ"
+]
+},
+{
+"name": "Georgia - Russian Federation",
+"type": "FTA",
+"in_force": "34464",
+"status": "In Force",
+"members": [
+"GE",
+"RU"
+]
+},
+{
+"name": "Georgia - Turkmenistan",
+"type": "FTA",
+"in_force": "36526",
+"status": "In Force",
+"members": [
+"GE",
+"TM"
+]
+},
+{
+"name": "Georgia - Ukraine",
+"type": "FTA",
+"in_force": "35220",
+"status": "In Force",
+"members": [
+"GE",
+"UA"
+]
+},
+{
+"name": "Global System of Trade Preferences among Developing Countries (GSTP)",
+"type": "PSA",
+"in_force": "32617",
+"status": "In Force",
+"members": [
+"DZ",
+"AR",
+"BD",
+"BO",
+"BR",
+"MM",
+"CM",
+"LK",
+"CL",
+"CO",
+"CU",
+"BJ",
+"EC",
+"GH",
+"GN",
+"GY",
+"IN",
+"ID",
+"IR",
+"IQ",
+"KP",
+"KR",
+"LY",
+"MY",
+"MX",
+"MA",
+"MZ",
+"NI",
+"NG",
+"PK",
+"PE",
+"PH",
+"SG",
+"VN",
+"ZW",
+"SD",
+"TH",
+"TT",
+"TN",
+"EG",
+"TZ",
+"VE"
+]
+},
+{
+"name": "GUAM",
+"type": "FTA & EIA",
+"in_force": "37965",
+"status": "In Force",
+"members": [
+"AZ",
+"GE",
+"MD",
+"UA"
+]
+},
+{
+"name": "Guatemala - Chinese Taipei",
+"type": "FTA & EIA",
+"in_force": "38899",
+"status": "In Force",
+"members": [
+"TW",
+"GT"
+]
+},
+{
+"name": "Gulf Cooperation Council (GCC)",
+"type": "CU",
+"in_force": "37622",
+"status": "In Force",
+"members": [
+"BH",
+"KW",
+"OM",
+"QA",
+"SA",
+"AE"
+]
+},
+{
+"name": "Hong Kong, China - Australia",
+"type": "FTA & EIA",
+"in_force": "43847",
+"status": "In Force",
+"members": [
+"AU",
+"HK"
+]
+},
+{
+"name": "Hong Kong, China - Chile",
+"type": "FTA & EIA",
+"in_force": "41921",
+"status": "In Force",
+"members": [
+"CL",
+"HK"
+]
+},
+{
+"name": "Hong Kong, China - Georgia",
+"type": "FTA & EIA",
+"in_force": "43509",
+"status": "In Force",
+"members": [
+"GE",
+"HK"
+]
+},
+{
+"name": "Hong Kong, China - Macao, China",
+"type": "FTA & EIA",
+"in_force": "43035",
+"status": "In Force",
+"members": [
+"HK",
+"MO"
+]
+},
+{
+"name": "Hong Kong, China - New Zealand",
+"type": "FTA & EIA",
+"in_force": "40544",
+"status": "In Force",
+"members": [
+"HK",
+"NZ"
+]
+},
+{
+"name": "Hong Kong, China - Peru",
+"type": "FTA & EIA",
+"in_force": "46266",
+"status": "In Force",
+"members": [
+"HK",
+"PE"
+]
+},
+{
+"name": "Iceland - China",
+"type": "FTA & EIA",
+"in_force": "41821",
+"status": "In Force",
+"members": [
+"CN",
+"IS"
+]
+},
+{
+"name": "Iceland - Faroe Islands",
+"type": "FTA & EIA",
+"in_force": "39022",
+"status": "In Force",
+"members": [
+"FO",
+"IS"
+]
+},
+{
+"name": "India - Afghanistan",
+"type": "PSA",
+"in_force": "37754",
+"status": "In Force",
+"members": [
+"AF",
+"IN"
+]
+},
+{
+"name": "India - Australia",
+"type": "FTA & EIA",
+"in_force": "44924",
+"status": "In Force",
+"members": [
+"AU",
+"IN"
+]
+},
+{
+"name": "India - Bhutan",
+"type": "PSA",
+"in_force": "38927",
+"status": "In Force",
+"members": [
+"BT",
+"IN"
+]
+},
+{
+"name": "India - Japan",
+"type": "FTA & EIA",
+"in_force": "40756",
+"status": "In Force",
+"members": [
+"IN",
+"JP"
+]
+},
+{
+"name": "India - Malaysia",
+"type": "FTA & EIA",
+"in_force": "40725",
+"status": "In Force",
+"members": [
+"IN",
+"MY"
+]
+},
+{
+"name": "India - Mauritius",
+"type": "FTA & EIA",
+"in_force": "44287",
+"status": "In Force",
+"members": [
+"IN",
+"MU"
+]
+},
+{
+"name": "India - Nepal",
+"type": "PSA",
+"in_force": "40113",
+"status": "In Force",
+"members": [
+"IN",
+"NP"
+]
+},
+{
+"name": "India - Singapore",
+"type": "FTA & EIA",
+"in_force": "38565",
+"status": "In Force",
+"members": [
+"IN",
+"SG"
+]
+},
+{
+"name": "India - Sri Lanka",
+"type": "FTA",
+"in_force": "36586",
+"status": "In Force",
+"members": [
+"LK",
+"IN"
+]
+},
+{
+"name": "India - Thailand",
+"type": "PSA",
+"in_force": "38231",
+"status": "In Force",
+"members": [
+"IN",
+"TH"
+]
+},
+{
+"name": "India - United Arab Emirates",
+"type": "FTA & EIA",
+"in_force": "44682",
+"status": "In Force",
+"members": [
+"IN",
+"AE"
+]
+},
+{
+"name": "Indonesia - Australia",
+"type": "FTA & EIA",
+"in_force": "44017",
+"status": "In Force",
+"members": [
+"AU",
+"ID"
+]
+},
+{
+"name": "Indonesia - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "44927",
+"status": "In Force",
+"members": [
+"ID",
+"KR"
+]
+},
+{
+"name": "Indonesia - Pakistan",
+"type": "PSA",
+"in_force": "41518",
+"status": "In Force",
+"members": [
+"ID",
+"PK"
+]
+},
+{
+"name": "Israel - Mexico",
+"type": "FTA",
+"in_force": "36708",
+"status": "In Force",
+"members": [
+"IL",
+"MX"
+]
+},
+{
+"name": "Israel - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "45613",
+"status": "In Force",
+"members": [
+"IL",
+"VN"
+]
+},
+{
+"name": "Japan - Australia",
+"type": "FTA & EIA",
+"in_force": "42019",
+"status": "In Force",
+"members": [
+"AU",
+"JP"
+]
+},
+{
+"name": "Japan - Indonesia",
+"type": "FTA & EIA",
+"in_force": "39630",
+"status": "In Force",
+"members": [
+"ID",
+"JP"
+]
+},
+{
+"name": "Japan - Malaysia",
+"type": "FTA & EIA",
+"in_force": "38911",
+"status": "In Force",
+"members": [
+"JP",
+"MY"
+]
+},
+{
+"name": "Japan - Mexico",
+"type": "FTA & EIA",
+"in_force": "38443",
+"status": "In Force",
+"members": [
+"JP",
+"MX"
+]
+},
+{
+"name": "Japan - Mongolia",
+"type": "FTA & EIA",
+"in_force": "42528",
+"status": "In Force",
+"members": [
+"JP",
+"MN"
+]
+},
+{
+"name": "Japan - Peru",
+"type": "FTA & EIA",
+"in_force": "40969",
+"status": "In Force",
+"members": [
+"JP",
+"PE"
+]
+},
+{
+"name": "Japan - Philippines",
+"type": "FTA & EIA",
+"in_force": "39793",
+"status": "In Force",
+"members": [
+"JP",
+"PH"
+]
+},
+{
+"name": "Japan - Singapore",
+"type": "FTA & EIA",
+"in_force": "37590",
+"status": "In Force",
+"members": [
+"JP",
+"SG"
+]
+},
+{
+"name": "Japan - Switzerland",
+"type": "FTA & EIA",
+"in_force": "40057",
+"status": "In Force",
+"members": [
+"JP",
+"CH"
+]
+},
+{
+"name": "Japan - Thailand",
+"type": "FTA & EIA",
+"in_force": "39387",
+"status": "In Force",
+"members": [
+"JP",
+"TH"
+]
+},
+{
+"name": "Japan - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "40087",
+"status": "In Force",
+"members": [
+"JP",
+"VN"
+]
+},
+{
+"name": "Jordan - Singapore",
+"type": "FTA & EIA",
+"in_force": "38586",
+"status": "In Force",
+"members": [
+"JO",
+"SG"
+]
+},
+{
+"name": "Kazakhstan - Azerbaijan",
+"type": "FTA",
+"in_force": "36361",
+"status": "In Force",
+"members": [
+"AZ",
+"KZ"
+]
+},
+{
+"name": "Kazakhstan - Serbia",
+"type": "FTA",
+"in_force": "40918",
+"status": "In Force",
+"members": [
+"KZ",
+"RS"
+]
+},
+{
+"name": "Kazakhstan - Uzbekistan",
+"type": "FTA",
+"in_force": "35931",
+"status": "In Force",
+"members": [
+"KZ",
+"UZ"
+]
+},
+{
+"name": "Korea, Republic of - Australia",
+"type": "FTA & EIA",
+"in_force": "41985",
+"status": "In Force",
+"members": [
+"AU",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - Cambodia",
+"type": "FTA",
+"in_force": "44896",
+"status": "In Force",
+"members": [
+"KH",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - Central America",
+"type": "FTA & EIA",
+"in_force": "43739",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"HN",
+"KR",
+"NI",
+"PA"
+]
+},
+{
+"name": "Korea, Republic of - Chile",
+"type": "FTA & EIA",
+"in_force": "38078",
+"status": "In Force",
+"members": [
+"CL",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - Colombia",
+"type": "FTA & EIA",
+"in_force": "42566",
+"status": "In Force",
+"members": [
+"CO",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - India",
+"type": "FTA & EIA",
+"in_force": "40179",
+"status": "In Force",
+"members": [
+"IN",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - Israel",
+"type": "FTA & EIA",
+"in_force": "44896",
+"status": "In Force",
+"members": [
+"IL",
+"KR"
+]
+},
+{
+"name": "Korea, Republic of - New Zealand",
+"type": "FTA & EIA",
+"in_force": "42358",
+"status": "In Force",
+"members": [
+"KR",
+"NZ"
+]
+},
+{
+"name": "Korea, Republic of - Singapore",
+"type": "FTA & EIA",
+"in_force": "38778",
+"status": "In Force",
+"members": [
+"KR",
+"SG"
+]
+},
+{
+"name": "Korea, Republic of - Türkiye",
+"type": "FTA & EIA",
+"in_force": "41395",
+"status": "In Force",
+"members": [
+"KR",
+"TR"
+]
+},
+{
+"name": "Korea, Republic of - United States",
+"type": "FTA & EIA",
+"in_force": "40983",
+"status": "In Force",
+"members": [
+"KR",
+"US"
+]
+},
+{
+"name": "Korea, Republic of - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "42358",
+"status": "In Force",
+"members": [
+"KR",
+"VN"
+]
+},
+{
+"name": "Kyrgyz Republic - Armenia",
+"type": "FTA",
+"in_force": "34999",
+"status": "In Force",
+"members": [
+"AM",
+"KG"
+]
+},
+{
+"name": "Kyrgyz Republic - Azerbaijan",
+"type": "FTA",
+"in_force": "38804",
+"status": "In Force",
+"members": [
+"AZ",
+"KG"
+]
+},
+{
+"name": "Kyrgyz Republic - Kazakhstan",
+"type": "FTA",
+"in_force": "35014",
+"status": "In Force",
+"members": [
+"KZ",
+"KG"
+]
+},
+{
+"name": "Kyrgyz Republic - Moldova, Republic of",
+"type": "FTA",
+"in_force": "35390",
+"status": "In Force",
+"members": [
+"KG",
+"MD"
+]
+},
+{
+"name": "Kyrgyz Republic - Ukraine",
+"type": "FTA",
+"in_force": "35814",
+"status": "In Force",
+"members": [
+"KG",
+"UA"
+]
+},
+{
+"name": "Kyrgyz Republic - Uzbekistan",
+"type": "FTA",
+"in_force": "35874",
+"status": "In Force",
+"members": [
+"KG",
+"UZ"
+]
+},
+{
+"name": "LAIA - Accession of Cuba",
+"type": "PSA",
+"in_force": "36398",
+"status": "In Force",
+"members": [
+"AR",
+"BO",
+"BR",
+"CL",
+"CO",
+"CU",
+"EC",
+"MX",
+"PY",
+"PE",
+"UY",
+"VE"
+]
+},
+{
+"name": "Lao People's Democratic Republic - Thailand",
+"type": "PSA",
+"in_force": "33409",
+"status": "In Force",
+"members": [
+"LA",
+"TH"
+]
+},
+{
+"name": "Latin American Integration Association (LAIA)",
+"type": "PSA",
+"in_force": "29663",
+"status": "In Force",
+"members": [
+"AR",
+"BO",
+"BR",
+"CL",
+"CO",
+"CU",
+"EC",
+"MX",
+"PY",
+"PE",
+"UY",
+"VE"
+]
+},
+{
+"name": "Malaysia - Australia",
+"type": "FTA & EIA",
+"in_force": "41275",
+"status": "In Force",
+"members": [
+"AU",
+"MY"
+]
+},
+{
+"name": "Mauritius - Pakistan",
+"type": "PSA",
+"in_force": "39416",
+"status": "In Force",
+"members": [
+"MU",
+"PK"
+]
+},
+{
+"name": "Melanesian Spearhead Group (MSG)",
+"type": "PSA",
+"in_force": "34335",
+"status": "In Force",
+"members": [
+"SB",
+"FJ",
+"VU",
+"PG"
+]
+},
+{
+"name": "Mexico - Bolivia, Plurinational State of",
+"type": "PSA",
+"in_force": "40336",
+"status": "In Force",
+"members": [
+"BO",
+"MX"
+]
+},
+{
+"name": "Mexico - Central America",
+"type": "FTA & EIA",
+"in_force": "41153",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"GT",
+"HN",
+"MX",
+"NI"
+]
+},
+{
+"name": "Mexico - Cuba",
+"type": "PSA",
+"in_force": "36950",
+"status": "In Force",
+"members": [
+"CU",
+"MX"
+]
+},
+{
+"name": "Mexico - Panama",
+"type": "FTA & EIA",
+"in_force": "42186",
+"status": "In Force",
+"members": [
+"MX",
+"PA"
+]
+},
+{
+"name": "Mexico - Paraguay",
+"type": "PSA",
+"in_force": "30682",
+"status": "In Force",
+"members": [
+"MX",
+"PY"
+]
+},
+{
+"name": "Mexico - Uruguay",
+"type": "FTA & EIA",
+"in_force": "38183",
+"status": "In Force",
+"members": [
+"MX",
+"UY"
+]
+},
+{
+"name": "Moldova, Republic of - Azerbaijan",
+"type": "FTA",
+"in_force": "35171",
+"status": "In Force",
+"members": [
+"AZ",
+"MD"
+]
+},
+{
+"name": "Morocco - United Arab Emirates",
+"type": "FTA",
+"in_force": "37811",
+"status": "In Force",
+"members": [
+"MA",
+"AE"
+]
+},
+{
+"name": "Mozambique - Indonesia",
+"type": "FTA",
+"in_force": "44718",
+"status": "In Force",
+"members": [
+"ID",
+"MZ"
+]
+},
+{
+"name": "Namibia - Zimbabwe",
+"type": "FTA",
+"in_force": "34089",
+"status": "In Force",
+"members": [
+"NA",
+"ZW"
+]
+},
+{
+"name": "New Zealand - Chinese Taipei",
+"type": "FTA & EIA",
+"in_force": "41609",
+"status": "In Force",
+"members": [
+"TW",
+"NZ"
+]
+},
+{
+"name": "New Zealand - Malaysia",
+"type": "FTA & EIA",
+"in_force": "40391",
+"status": "In Force",
+"members": [
+"MY",
+"NZ"
+]
+},
+{
+"name": "New Zealand - Singapore",
+"type": "FTA & EIA",
+"in_force": "36892",
+"status": "In Force",
+"members": [
+"NZ",
+"SG"
+]
+},
+{
+"name": "New Zealand - United Arab Emirates",
+"type": "FTA & EIA",
+"in_force": "45897",
+"status": "In Force",
+"members": [
+"NZ",
+"AE"
+]
+},
+{
+"name": "Pacific Alliance",
+"type": "FTA & EIA",
+"in_force": "42491",
+"status": "In Force",
+"members": [
+"CL",
+"CO",
+"MX",
+"PE"
+]
+},
+{
+"name": "Pacific Island Countries Trade Agreement (PICTA)",
+"type": "FTA",
+"in_force": "37724",
+"status": "In Force",
+"members": [
+"SB",
+"CK",
+"FJ",
+"KI",
+"NR",
+"VU",
+"NU",
+"FM",
+"PG",
+"TO",
+"TV",
+"WS"
+]
+},
+{
+"name": "Pakistan - China",
+"type": "FTA & EIA",
+"in_force": "39264",
+"status": "In Force",
+"members": [
+"CN",
+"PK"
+]
+},
+{
+"name": "Pakistan - Malaysia",
+"type": "FTA & EIA",
+"in_force": "39448",
+"status": "In Force",
+"members": [
+"MY",
+"PK"
+]
+},
+{
+"name": "Pakistan - Sri Lanka",
+"type": "FTA",
+"in_force": "38515",
+"status": "In Force",
+"members": [
+"LK",
+"PK"
+]
+},
+{
+"name": "Panama - Chile",
+"type": "FTA & EIA",
+"in_force": "39514",
+"status": "In Force",
+"members": [
+"CL",
+"PA"
+]
+},
+{
+"name": "Panama - Chinese Taipei",
+"type": "FTA & EIA",
+"in_force": "37987",
+"status": "In Force",
+"members": [
+"TW",
+"PA"
+]
+},
+{
+"name": "Panama - Costa Rica (Panama - Central America)",
+"type": "FTA & EIA",
+"in_force": "39775",
+"status": "In Force",
+"members": [
+"CR",
+"PA"
+]
+},
+{
+"name": "Panama - Dominican Republic",
+"type": "PSA",
+"in_force": "31936",
+"status": "In Force",
+"members": [
+"DO",
+"PA"
+]
+},
+{
+"name": "Panama - El Salvador (Panama - Central America)",
+"type": "FTA & EIA",
+"in_force": "37722",
+"status": "In Force",
+"members": [
+"SV",
+"PA"
+]
+},
+{
+"name": "Panama - Guatemala (Panama - Central America)",
+"type": "FTA & EIA",
+"in_force": "39984",
+"status": "In Force",
+"members": [
+"GT",
+"PA"
+]
+},
+{
+"name": "Panama - Honduras (Panama - Central America)",
+"type": "FTA & EIA",
+"in_force": "39822",
+"status": "In Force",
+"members": [
+"HN",
+"PA"
+]
+},
+{
+"name": "Panama - Nicaragua (Panama - Central America)",
+"type": "FTA & EIA",
+"in_force": "40138",
+"status": "In Force",
+"members": [
+"NI",
+"PA"
+]
+},
+{
+"name": "Panama - Peru",
+"type": "FTA & EIA",
+"in_force": "41030",
+"status": "In Force",
+"members": [
+"PA",
+"PE"
+]
+},
+{
+"name": "Panama - Singapore",
+"type": "FTA & EIA",
+"in_force": "38922",
+"status": "In Force",
+"members": [
+"PA",
+"SG"
+]
+},
+{
+"name": "Pan-Arab Free Trade Area (PAFTA)",
+"type": "FTA",
+"in_force": "35796",
+"status": "In Force",
+"members": [
+"BH",
+"IQ",
+"JO",
+"KW",
+"LY",
+"MA",
+"OM",
+"QA",
+"SA",
+"SD",
+"SY",
+"AE",
+"TN",
+"EG",
+"YE"
+]
+},
+{
+"name": "Peru - Australia",
+"type": "FTA & EIA",
+"in_force": "43872",
+"status": "In Force",
+"members": [
+"AU",
+"PE"
+]
+},
+{
+"name": "Peru - Chile",
+"type": "FTA & EIA",
+"in_force": "39873",
+"status": "In Force",
+"members": [
+"CL",
+"PE"
+]
+},
+{
+"name": "Peru - China",
+"type": "FTA & EIA",
+"in_force": "40238",
+"status": "In Force",
+"members": [
+"CN",
+"PE"
+]
+},
+{
+"name": "Peru - Honduras",
+"type": "FTA & EIA",
+"in_force": "42736",
+"status": "In Force",
+"members": [
+"HN",
+"PE"
+]
+},
+{
+"name": "Peru - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "40756",
+"status": "In Force",
+"members": [
+"KR",
+"PE"
+]
+},
+{
+"name": "Peru - Mexico",
+"type": "FTA & EIA",
+"in_force": "40940",
+"status": "In Force",
+"members": [
+"MX",
+"PE"
+]
+},
+{
+"name": "Peru - Singapore",
+"type": "FTA & EIA",
+"in_force": "40026",
+"status": "In Force",
+"members": [
+"PE",
+"SG"
+]
+},
+{
+"name": "Protocol on Trade Negotiations (PTN)",
+"type": "PSA",
+"in_force": "26706",
+"status": "In Force",
+"members": [
+"BD",
+"BR",
+"CL",
+"IL",
+"KR",
+"MX",
+"PK",
+"PY",
+"PE",
+"PH",
+"TN",
+"TR",
+"EG",
+"UY",
+"RS"
+]
+},
+{
+"name": "Russian Federation - Azerbaijan",
+"type": "FTA",
+"in_force": "34017",
+"status": "In Force",
+"members": [
+"AZ",
+"RU"
+]
+},
+{
+"name": "Russian Federation - Serbia",
+"type": "FTA",
+"in_force": "38871",
+"status": "In Force",
+"members": [
+"RU",
+"RS"
+]
+},
+{
+"name": "Russian Federation - Turkmenistan",
+"type": "FTA",
+"in_force": "34065",
+"status": "In Force",
+"members": [
+"RU",
+"TM"
+]
+},
+{
+"name": "Russian Federation - Uzbekistan",
+"type": "FTA",
+"in_force": "34053",
+"status": "In Force",
+"members": [
+"RU",
+"UZ"
+]
+},
+{
+"name": "SADC - Accession of Seychelles",
+"type": "FTA",
+"in_force": "42149",
+"status": "In Force",
+"members": [
+"BW",
+"LS",
+"MG",
+"MW",
+"MU",
+"MZ",
+"NA",
+"SC",
+"ZA",
+"ZW",
+"SZ",
+"TZ",
+"ZM"
+]
+},
+{
+"name": "SAFTA - Accession of Afghanistan",
+"type": "FTA",
+"in_force": "40762",
+"status": "In Force",
+"members": [
+"AF",
+"BD",
+"BT",
+"LK",
+"IN",
+"MV",
+"NP",
+"PK"
+]
+},
+{
+"name": "Singapore - Australia",
+"type": "FTA & EIA",
+"in_force": "37830",
+"status": "In Force",
+"members": [
+"AU",
+"SG"
+]
+},
+{
+"name": "Singapore - Chinese Taipei",
+"type": "FTA & EIA",
+"in_force": "41748",
+"status": "In Force",
+"members": [
+"TW",
+"SG"
+]
+},
+{
+"name": "South Asian Free Trade Agreement (SAFTA)",
+"type": "FTA",
+"in_force": "38718",
+"status": "In Force",
+"members": [
+"AF",
+"BD",
+"BT",
+"LK",
+"IN",
+"MV",
+"NP",
+"PK"
+]
+},
+{
+"name": "South Asian Preferential Trade Arrangement (SAPTA)",
+"type": "PSA",
+"in_force": "35040",
+"status": "In Force",
+"members": [
+"BD",
+"BT",
+"LK",
+"IN",
+"MV",
+"NP",
+"PK"
+]
+},
+{
+"name": "Southern African Customs Union (SACU)",
+"type": "CU",
+"in_force": "38183",
+"status": "In Force",
+"members": [
+"BW",
+"LS",
+"NA",
+"ZA",
+"SZ"
+]
+},
+{
+"name": "Southern Common Market (MERCOSUR)",
+"type": "CU & EIA",
+"in_force": "33571",
+"status": "In Force",
+"members": [
+"AR",
+"BR",
+"PY",
+"UY"
+]
+},
+{
+"name": "Switzerland - China",
+"type": "FTA & EIA",
+"in_force": "41821",
+"status": "In Force",
+"members": [
+"CN",
+"CH"
+]
+},
+{
+"name": "Thailand - Australia",
+"type": "FTA & EIA",
+"in_force": "38353",
+"status": "In Force",
+"members": [
+"AU",
+"TH"
+]
+},
+{
+"name": "Thailand - New Zealand",
+"type": "FTA & EIA",
+"in_force": "38534",
+"status": "In Force",
+"members": [
+"NZ",
+"TH"
+]
+},
+{
+"name": "Trans-Pacific Strategic Economic Partnership",
+"type": "FTA & EIA",
+"in_force": "38865",
+"status": "In Force",
+"members": [
+"BN",
+"CL",
+"NZ",
+"SG"
+]
+},
+{
+"name": "Treaty on a Free Trade Area between members of the Commonwealth of Independent States (CIS)",
+"type": "FTA",
+"in_force": "41172",
+"status": "In Force",
+"members": [
+"AM",
+"BY",
+"KZ",
+"KG",
+"MD",
+"RU",
+"TJ",
+"UA"
+]
+},
+{
+"name": "Türkiye - Albania",
+"type": "FTA",
+"in_force": "39569",
+"status": "In Force",
+"members": [
+"AL",
+"TR"
+]
+},
+{
+"name": "Türkiye - Bosnia and Herzegovina",
+"type": "FTA & EIA",
+"in_force": "44409",
+"status": "In Force",
+"members": [
+"BA",
+"TR"
+]
+},
+{
+"name": "Türkiye - Chile",
+"type": "FTA",
+"in_force": "40603",
+"status": "In Force",
+"members": [
+"CL",
+"TR"
+]
+},
+{
+"name": "Türkiye - Faroe Islands",
+"type": "FTA",
+"in_force": "43009",
+"status": "In Force",
+"members": [
+"FO",
+"TR"
+]
+},
+{
+"name": "Türkiye - Georgia",
+"type": "FTA",
+"in_force": "39753",
+"status": "In Force",
+"members": [
+"GE",
+"TR"
+]
+},
+{
+"name": "Türkiye - Israel",
+"type": "FTA",
+"in_force": "35551",
+"status": "In Force",
+"members": [
+"IL",
+"TR"
+]
+},
+{
+"name": "Türkiye - Malaysia",
+"type": "FTA",
+"in_force": "42217",
+"status": "In Force",
+"members": [
+"MY",
+"TR"
+]
+},
+{
+"name": "Türkiye - Mauritius",
+"type": "FTA",
+"in_force": "41426",
+"status": "In Force",
+"members": [
+"MU",
+"TR"
+]
+},
+{
+"name": "Türkiye - Moldova, Republic of",
+"type": "FTA",
+"in_force": "42675",
+"status": "In Force",
+"members": [
+"MD",
+"TR"
+]
+},
+{
+"name": "Türkiye - Montenegro",
+"type": "FTA & EIA",
+"in_force": "40238",
+"status": "In Force",
+"members": [
+"TR",
+"ME"
+]
+},
+{
+"name": "Türkiye - Morocco",
+"type": "FTA",
+"in_force": "38718",
+"status": "In Force",
+"members": [
+"MA",
+"TR"
+]
+},
+{
+"name": "Türkiye - North Macedonia",
+"type": "FTA",
+"in_force": "36770",
+"status": "In Force",
+"members": [
+"TR",
+"MK"
+]
+},
+{
+"name": "Türkiye - Serbia",
+"type": "FTA & EIA",
+"in_force": "40422",
+"status": "In Force",
+"members": [
+"TR",
+"RS"
+]
+},
+{
+"name": "Türkiye - Singapore",
+"type": "FTA & EIA",
+"in_force": "43009",
+"status": "In Force",
+"members": [
+"SG",
+"TR"
+]
+},
+{
+"name": "Türkiye - Syrian Arab Republic",
+"type": "FTA",
+"in_force": "39083",
+"status": "In Force",
+"members": [
+"SY",
+"TR"
+]
+},
+{
+"name": "Türkiye - Tunisia",
+"type": "FTA",
+"in_force": "38534",
+"status": "In Force",
+"members": [
+"TN",
+"TR"
+]
+},
+{
+"name": "Türkiye - United Arab Emirates",
+"type": "FTA & EIA",
+"in_force": "45170",
+"status": "In Force",
+"members": [
+"AE",
+"TR"
+]
+},
+{
+"name": "Türkiye - Venezuela, Bolivarian Republic of",
+"type": "FTA",
+"in_force": "44064",
+"status": "In Force",
+"members": [
+"TR",
+"VE"
+]
+},
+{
+"name": "Ukraine - Azerbaijan",
+"type": "FTA",
+"in_force": "35310",
+"status": "In Force",
+"members": [
+"AZ",
+"UA"
+]
+},
+{
+"name": "Ukraine - Belarus",
+"type": "FTA",
+"in_force": "39032",
+"status": "In Force",
+"members": [
+"BY",
+"UA"
+]
+},
+{
+"name": "Ukraine - Israel",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"IL",
+"UA"
+]
+},
+{
+"name": "Ukraine - Kazakhstan",
+"type": "FTA",
+"in_force": "36087",
+"status": "In Force",
+"members": [
+"KZ",
+"UA"
+]
+},
+{
+"name": "Ukraine - Moldova, Republic of",
+"type": "FTA",
+"in_force": "38491",
+"status": "In Force",
+"members": [
+"MD",
+"UA"
+]
+},
+{
+"name": "Ukraine - Montenegro",
+"type": "FTA & EIA",
+"in_force": "41275",
+"status": "In Force",
+"members": [
+"UA",
+"ME"
+]
+},
+{
+"name": "Ukraine - North Macedonia",
+"type": "FTA",
+"in_force": "37077",
+"status": "In Force",
+"members": [
+"UA",
+"MK"
+]
+},
+{
+"name": "Ukraine - Tajikistan",
+"type": "FTA",
+"in_force": "37448",
+"status": "In Force",
+"members": [
+"TJ",
+"UA"
+]
+},
+{
+"name": "Ukraine - Turkmenistan",
+"type": "FTA",
+"in_force": "35007",
+"status": "In Force",
+"members": [
+"TM",
+"UA"
+]
+},
+{
+"name": "Ukraine - United Arab Emirates",
+"type": "FTA & EIA",
+"in_force": "46204",
+"status": "In Force",
+"members": [
+"AE",
+"UA"
+]
+},
+{
+"name": "Ukraine - Uzbekistan",
+"type": "FTA",
+"in_force": "35065",
+"status": "In Force",
+"members": [
+"UA",
+"UZ"
+]
+},
+{
+"name": "United Arab Emirates - Indonesia",
+"type": "FTA & EIA",
+"in_force": "45170",
+"status": "In Force",
+"members": [
+"ID",
+"AE"
+]
+},
+{
+"name": "United Kingdom - Albania",
+"type": "FTA & EIA",
+"in_force": "44319",
+"status": "In Force",
+"members": [
+"AL",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Australia",
+"type": "FTA & EIA",
+"in_force": "45077",
+"status": "In Force",
+"members": [
+"AU",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Cameroon",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CM",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Canada",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CA",
+"GB"
+]
+},
+{
+"name": "United Kingdom - CARIFORUM States",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"AG",
+"BS",
+"BB",
+"BZ",
+"DM",
+"DO",
+"GD",
+"GY",
+"HT",
+"JM",
+"KN",
+"LC",
+"VC",
+"SR",
+"TT",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Central America",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CR",
+"SV",
+"GT",
+"HN",
+"NI",
+"PA",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Chile",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CL",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Colombia, Ecuador and Peru",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CO",
+"EC",
+"PE",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Côte d'Ivoire",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"CI",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Eastern and Southern Africa States",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"MU",
+"SC",
+"ZW",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Egypt",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"EG",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Faroe Islands",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"FO",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Georgia",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"GE",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Ghana",
+"type": "FTA",
+"in_force": "44260",
+"status": "In Force",
+"members": [
+"GH",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Iceland, Liechtenstein and Norway",
+"type": "FTA & EIA",
+"in_force": "44531",
+"status": "In Force",
+"members": [
+"IS",
+"LI",
+"NO",
+"GB"
+]
+},
+{
+"name": "United Kingdom - India",
+"type": "FTA & EIA",
+"in_force": "46218",
+"status": "In Force",
+"members": [
+"IN",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Israel",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"IL",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Japan",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"JP",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Jordan",
+"type": "FTA",
+"in_force": "44317",
+"status": "In Force",
+"members": [
+"JO",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Kenya",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"KE",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"KR",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Mexico",
+"type": "FTA & EIA",
+"in_force": "44348",
+"status": "In Force",
+"members": [
+"MX",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Moldova, Republic of",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"MD",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Morocco",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"MA",
+"GB"
+]
+},
+{
+"name": "United Kingdom - New Zealand",
+"type": "FTA & EIA",
+"in_force": "45077",
+"status": "In Force",
+"members": [
+"NZ",
+"GB"
+]
+},
+{
+"name": "United Kingdom - North Macedonia",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"MK",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Pacific States",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"SB",
+"FJ",
+"PG",
+"GB",
+"WS"
+]
+},
+{
+"name": "United Kingdom - Pacific States - Accession of Samoa",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"FJ",
+"PG",
+"GB",
+"WS"
+]
+},
+{
+"name": "United Kingdom - Pacific States - Accession of Solomon Islands",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"SB",
+"FJ",
+"PG",
+"GB"
+]
+},
+{
+"name": "United Kingdom - SACU and Mozambique",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"MZ",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Serbia",
+"type": "FTA & EIA",
+"in_force": "44336",
+"status": "In Force",
+"members": [
+"GB",
+"RS"
+]
+},
+{
+"name": "United Kingdom - Singapore",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"SG",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Switzerland - Liechtenstein",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"LI",
+"CH",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Tunisia",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"TN",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Türkiye",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"TR",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Ukraine",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"UA",
+"GB"
+]
+},
+{
+"name": "United Kingdom - Viet Nam",
+"type": "FTA & EIA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"VN",
+"GB"
+]
+},
+{
+"name": "United States - Australia",
+"type": "FTA & EIA",
+"in_force": "38353",
+"status": "In Force",
+"members": [
+"AU",
+"US"
+]
+},
+{
+"name": "United States - Bahrain",
+"type": "FTA & EIA",
+"in_force": "38930",
+"status": "In Force",
+"members": [
+"BH",
+"US"
+]
+},
+{
+"name": "United States - Chile",
+"type": "FTA & EIA",
+"in_force": "37987",
+"status": "In Force",
+"members": [
+"CL",
+"US"
+]
+},
+{
+"name": "United States - Colombia",
+"type": "FTA & EIA",
+"in_force": "41044",
+"status": "In Force",
+"members": [
+"CO",
+"US"
+]
+},
+{
+"name": "United States - Israel",
+"type": "FTA",
+"in_force": "31278",
+"status": "In Force",
+"members": [
+"IL",
+"US"
+]
+},
+{
+"name": "United States - Jordan",
+"type": "FTA & EIA",
+"in_force": "37242",
+"status": "In Force",
+"members": [
+"JO",
+"US"
+]
+},
+{
+"name": "United States - Morocco",
+"type": "FTA & EIA",
+"in_force": "38718",
+"status": "In Force",
+"members": [
+"MA",
+"US"
+]
+},
+{
+"name": "United States - Oman",
+"type": "FTA & EIA",
+"in_force": "39814",
+"status": "In Force",
+"members": [
+"OM",
+"US"
+]
+},
+{
+"name": "United States - Panama",
+"type": "FTA & EIA",
+"in_force": "41213",
+"status": "In Force",
+"members": [
+"PA",
+"US"
+]
+},
+{
+"name": "United States - Peru",
+"type": "FTA & EIA",
+"in_force": "39845",
+"status": "In Force",
+"members": [
+"PE",
+"US"
+]
+},
+{
+"name": "United States - Singapore",
+"type": "FTA & EIA",
+"in_force": "37987",
+"status": "In Force",
+"members": [
+"SG",
+"US"
+]
+},
+{
+"name": "United States-Mexico-Canada Agreement (USMCA/CUSMA/T-MEC)",
+"type": "FTA & EIA",
+"in_force": "44013",
+"status": "In Force",
+"members": [
+"CA",
+"MX",
+"US"
+]
+},
+{
+"name": "West African Economic and Monetary Union (WAEMU)",
+"type": "CU",
+"in_force": "36526",
+"status": "In Force",
+"members": [
+"BJ",
+"CI",
+"ML",
+"NE",
+"GW",
+"SN",
+"TG",
+"BF"
+]
+}
+]
+}
