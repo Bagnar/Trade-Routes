@@ -49,4 +49,4 @@ jobs:
           git add -A data/hs6.json
           test -f data/agreements.json && git add -A data/agreements.json
           test -d data/rates && git add -A data/rates
-          if git diff --cached --quiet; then echo "no changes"; else git commit -m "Reference data: $(date -u +%F)"; git push; fi
+          if git diff --cached --quiet; then echo "no changes"; else git commit -m "Reference data: $(date -u +%F)"; git pull --rebase origin "$GITHUB_REF_NAME" && git push; fi

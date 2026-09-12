@@ -65,5 +65,5 @@ jobs:
             echo "no changes"
           else
             git commit -m "Daily source check: $(date -u +%F)"
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push
           fi
