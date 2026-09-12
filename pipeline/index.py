@@ -67,14 +67,16 @@ def obstacles_part(fr: str, to: str, hs6: str, facts: list[dict], programs: list
     fetched = fetched_urls(facts)
     seen = [p for p in programs if p["url"] in fetched]
     hitting = sorted({p["authority"] for p in seen if set(p["targets"]) & {fr, to}})
-    banned = any(
-        assemble.to_page_fact(f)["ban"] and (assemble.sanction_targets(f) & {fr, to}) and assemble.scope_matches(f.get("hs_scope", []), hs6)
-        for f in facts if f.get("block") == "sanctions"
-    )
+    # A prohibition zeroes the score only when the source names this product group (non-empty hs_scope that
+    # matches). Country-wide sanctions wording without a product scope is an obstacle, not a product ban
+    # (docs/concept.md, section 5: "санкции на страны при разрешённом товаре — препятствие, не запрет").
+    ban_facts = [f for f in facts if f.get("block") == "sanctions" and assemble.to_page_fact(f)["ban"] and (assemble.sanction_targets(f) & {fr, to})]
+    banned = any(f.get("hs_scope") and assemble.scope_matches(f["hs_scope"], hs6) for f in ban_facts)
     if banned:
-        return 0, "источник называет запрет для этой пары (см. блок «Режим»): оценка обнулена", "запрет", True
-    if hitting:
-        return 2, f"санкционные режимы {', '.join(hitting)} действуют в отношении одной из стран пары — препятствие (расчёты, логистика), не запрет товара", "есть: " + ", ".join(hitting), False
+        return 0, "источник называет запрет для этой пары «страна — товар» (см. блок «Режим»): оценка обнулена", "запрет", True
+    if hitting or ban_facts:
+        who = ", ".join(hitting) if hitting else "третьих стран"
+        return 2, f"санкционные режимы {who} действуют в отношении одной из стран пары — препятствие (расчёты, логистика, отдельные товарные запреты); запрет именно этой группы источники не называют", "есть: " + (", ".join(hitting) if hitting else "см. режим"), False
     if seen:
         return 4, f"проверенные страницы санкционных программ ({len(seen)}) не называют страны пары; полный список режимов не проверен", "в проверенных программах нет", False
     return None, "санкционные режимы для пары не проверены", "не проверено", False

@@ -107,7 +107,7 @@ export default async function Home() {
               </article>
             ) : null,
           )}
-          <RequestCorridorCard />
+          <RequestCorridorCard countries={countryList()} />
         </div>
       </section>
 

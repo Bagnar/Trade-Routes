@@ -3,7 +3,7 @@ import json
 from pipeline import index
 
 FACTS = [
-    {"block": "sanctions", "country": "US", "targets": ["IR"], "hs_scope": [], "statement": {"ru": "Запрещён ввоз ковров из Ирана."}, "quote": "x", "url": "https://ofac.treasury.gov/iran", "source_id": "sanc-us-ofac", "fetched_at": "2026-09-10T00:00:00Z"},
+    {"block": "sanctions", "country": "US", "targets": ["IR"], "hs_scope": ["5701"], "statement": {"ru": "Запрещён ввоз ковров из Ирана."}, "quote": "x", "url": "https://ofac.treasury.gov/iran", "source_id": "sanc-us-ofac", "fetched_at": "2026-09-10T00:00:00Z"},
     {"block": "sanctions", "country": "US", "targets": ["RU"], "hs_scope": [], "statement": {"ru": "Ограничены расчёты."}, "quote": "x", "url": "https://ofac.treasury.gov/russia", "source_id": "sanc-us-ofac", "fetched_at": "2026-09-10T00:00:00Z"},
     {"block": "export_support", "country": "RU", "hs_scope": ["10"], "statement": {"ru": "Компенсация перевозки зерна."}, "quote": "x", "url": "https://mcx.gov.ru/x", "source_id": "ru-mcx", "fetched_at": "2026-09-10T00:00:00Z"},
 ]
@@ -57,3 +57,10 @@ def test_compare_rows_put_this_page_and_sort_by_score(tmp_path, monkeypatch):
     rows = index.compare_rows("CN", "CA", "610910", facts=[])
     assert [r["to"] for r in rows] == ["Турция", "Канада — эта страница"]
     assert rows[1]["here"] is True and rows[0]["score"]["text"] == "5 из 5"
+
+
+def test_country_wide_ban_wording_without_product_scope_is_an_obstacle_not_a_ban(tmp_path, monkeypatch):
+    monkeypatch.setattr(index.rates, "RATES_DIR", tmp_path)
+    gold = {"block": "sanctions", "country": "US", "targets": ["RU"], "hs_scope": [], "statement": {"ru": "США запретили импорт золота российского происхождения."}, "quote": "x", "url": "https://ofac.treasury.gov/russia", "source_id": "sanc-us-ofac", "fetched_at": "2026-09-10T00:00:00Z"}
+    c = index.compute("CN", "RU", "610910", facts=[gold], programs=PROGRAMS, agreements_doc=None)
+    assert c["banned"] is False and c["parts"][1]["score"] == 2

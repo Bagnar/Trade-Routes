@@ -159,6 +159,39 @@
           "text": "4 из 5",
           "status": "ok"
         }
+      },
+      {
+        "to": "Турция",
+        "duty": "ставка не загружена",
+        "agreement": "не проверено",
+        "sanctions": "в проверенных программах нет",
+        "support": "не собрано",
+        "score": {
+          "text": "4 из 5",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Россия",
+        "duty": "8.78947%",
+        "agreement": "не проверено",
+        "sanctions": "есть: UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "5 из 10",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Иран",
+        "duty": "24%",
+        "agreement": "не проверено",
+        "sanctions": "есть: US",
+        "support": "не собрано",
+        "score": {
+          "text": "3 из 10",
+          "status": "warn"
+        }
       }
     ]
   },

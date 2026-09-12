@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { CountryRef, Mode } from "@/lib/page-content";
+import { requestCorridorUrl } from "@/lib/routes";
+import { REPO_URL } from "@/lib/site";
 import { ProductSearch, type ProductPick } from "./ProductSearch";
 
 export interface OpenPage {
@@ -48,16 +50,28 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
     const toName = countries.find((c) => c.code === to)?.to ?? to;
     const corridor = corridors.find((c) => c.from === from && c.to === to);
     if (!corridor) {
+      const url = requestCorridorUrl(REPO_URL, { product: pick ? `${pick.label}, ${pick.code}` : product, from, to, mode });
       setMiss(
-        `Коридор «${fromName} → ${toName}» ещё не открыт. Страница соберётся из официальных источников по запросу; нажмите «Запросить коридор» в карточке ниже.`,
+        <>
+          Коридор «{fromName} → {toName}» ещё не открыт. Страница соберётся из официальных источников по запросу:{" "}
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            запросить коридор
+          </a>{" "}
+          (откроется форма запроса на GitHub, страница-заготовка появится после ближайшей сборки).
+        </>,
       );
       return;
     }
     const page = findPage(corridor);
     if (!page) {
+      const url = requestCorridorUrl(REPO_URL, { product: pick ? `${pick.label}, ${pick.code}` : product, from, to, mode });
       setMiss(
         <>
-          Для «{product || "этого товара"}» в коридоре «{fromName} → {toName}» страница ещё не собрана. Открыты:{" "}
+          Для «{product || "этого товара"}» в коридоре «{fromName} → {toName}» страница ещё не собрана —{" "}
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            запросить её
+          </a>
+          . Открыты:{" "}
           {corridor.pages.map((p, i) => (
             <span key={p.hs6}>
               {i > 0 && ", "}
@@ -135,31 +149,53 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
   );
 }
 
-/** "Следующий коридор — ваш": request form. Stage 0: nothing is stored yet, and the card says so. */
-export function RequestCorridorCard() {
-  const [sent, setSent] = useState(false);
+/**
+ * "Следующий коридор — ваш": the request goes to a prefilled GitHub issue; the pipeline reads the queue and
+ * creates a blank page that the daily assembler fills from official sources (docs/expansion-plan.md, 1.9).
+ */
+export function RequestCorridorCard({ countries }: { countries: CountryRef[] }) {
+  const [product, setProduct] = useState("");
+  const [pick, setPick] = useState<ProductPick | null>(null);
+  const [from, setFrom] = useState(countries[0]?.code ?? "");
+  const [to, setTo] = useState(countries[1]?.code ?? "");
+  const url = requestCorridorUrl(REPO_URL, { product: pick ? `${pick.label}, ${pick.code}` : product, from, to });
   return (
     <article className="card soon">
       <p className="route">Следующий коридор — ваш</p>
       <p className="prod">
-        новые коридоры открываются по запросам: страница собирается из источников, когда её спросили
+        новые коридоры открываются по запросам: страница-заготовка создаётся из очереди запросов, а ежедневная
+        проверка наполняет её фактами из официальных источников
       </p>
-      <input placeholder="товар, откуда, куда" aria-label="Запрос коридора" />
-      <input placeholder="email — сообщим, когда откроем" aria-label="Email" type="email" />
+      <ProductSearch
+        id="req-product"
+        placeholder="товар или код HS"
+        value={product}
+        onPick={(p, text) => {
+          setPick(p);
+          setProduct(text);
+        }}
+      />
+      <p style={{ margin: "6px 0 0" }}>
+        <select className="country" aria-label="Откуда" value={from} onChange={(e) => setFrom(e.target.value)}>
+          {countries.map((c) => (
+            <option key={c.code} value={c.code}>
+              {c.from}
+            </option>
+          ))}
+        </select>{" "}
+        <select className="country" aria-label="Куда" value={to} onChange={(e) => setTo(e.target.value)}>
+          {countries.map((c) => (
+            <option key={c.code} value={c.code}>
+              {c.to}
+            </option>
+          ))}
+        </select>
+      </p>
       <p className="open">
-        {sent ? (
-          "Запрос принят (демо: заявки пока не сохраняются)"
-        ) : (
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
-          >
-            Запросить коридор
-          </a>
-        )}
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          Запросить коридор
+        </a>{" "}
+        <span className="hint">— откроется форма на GitHub (нужен аккаунт GitHub)</span>
       </p>
     </article>
   );

@@ -29,3 +29,38 @@ def test_between_is_none_when_not_loaded_and_empty_when_no_match():
 
 def test_unknown_names_are_dropped_not_guessed():
     assert agreements.names_to_iso2("Atlantis; Canada") == ["CA"]
+
+
+def test_members_from_rta_name_when_no_signatories_column():
+    rows = [
+        ["RTA Name", "Coverage", "Type", "Date of signature", "Date of entry into force", "Status"],
+        ["Moldova, Republic of - Azerbaijan", "Goods", "FTA", "26-May-1995", "16-Apr-1996", "In Force"],
+        ["EAEU - Iran", "Goods", "FTA", "25-Dec-2023", "15-May-2025", "In Force"],
+        ["Pacific Alliance - Singapore", "Goods & Services", "FTA & EIA", "26-Jan-2022", "03-May-2025", "In force for at least one Party"],
+        ["Atlantis - Mu", "Goods", "FTA", "", "", "In Force"],
+    ]
+    found = agreements.rows_to_agreements(rows)
+    assert [a["name"] for a in found] == ["Moldova, Republic of - Azerbaijan", "EAEU - Iran", "Pacific Alliance - Singapore"]
+    assert found[0]["members"] == ["MD", "AZ"] and found[0]["in_force"] == "1996-04-16"
+    assert {"RU", "IR"} <= set(found[1]["members"]) and {"CL", "SG"} <= set(found[2]["members"])
+
+
+def test_csv_export_is_parsed():
+    csv_text = "RTA Name;Coverage;Type;Status;Date of entry into force\nCanada - Ukraine;Goods & Services;FTA;In Force;01-Aug-2017\n"
+    rows = agreements.parse_csv_rows(csv_text)
+    assert agreements.rows_to_agreements(rows)[0]["members"] == ["CA", "UA"]
+
+
+def test_xlsx_export_is_parsed(tmp_path):
+    import io
+    import zipfile
+
+    shared = "<sst xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><si><t>RTA Name</t></si><si><t>Status</t></si><si><t>Canada - Ukraine</t></si><si><t>In Force</t></si></sst>"
+    sheet = "<worksheet xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\"><sheetData><row r=\"1\"><c r=\"A1\" t=\"s\"><v>0</v></c><c r=\"B1\" t=\"s\"><v>1</v></c></row><row r=\"2\"><c r=\"A2\" t=\"s\"><v>2</v></c><c r=\"B2\" t=\"s\"><v>3</v></c></row></sheetData></worksheet>"
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("xl/sharedStrings.xml", shared)
+        z.writestr("xl/worksheets/sheet1.xml", sheet)
+    rows = agreements.parse_xlsx_rows(buf.getvalue())
+    assert rows == [["RTA Name", "Status"], ["Canada - Ukraine", "In Force"]]
+    assert agreements.rows_to_agreements(rows)[0]["members"] == ["CA", "UA"]

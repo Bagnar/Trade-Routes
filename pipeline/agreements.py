@@ -31,6 +31,16 @@ EU_MEMBERS = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", 
 EFTA_MEMBERS = ["CH", "NO", "IS", "LI"]
 EAEU_MEMBERS = ["RU", "BY", "KZ", "AM", "KG"]
 GCC_MEMBERS = ["SA", "AE", "QA", "KW", "OM", "BH"]
+ASEAN = ["BN", "KH", "ID", "LA", "MY", "MM", "PH", "SG", "TH", "VN"]
+CPTPP = ["AU", "BN", "CA", "CL", "JP", "MY", "MX", "NZ", "PE", "SG", "VN", "GB"]
+RCEP = ASEAN + ["AU", "CN", "JP", "KR", "NZ"]
+MERCOSUR = ["AR", "BR", "PY", "UY"]
+PACIFIC_ALLIANCE = ["CL", "CO", "MX", "PE"]
+SACU = ["BW", "LS", "NA", "ZA", "SZ"]
+USMCA = ["US", "MX", "CA"]
+CIS_FTA = ["AM", "BY", "KZ", "KG", "MD", "RU", "TJ", "UZ"]
+ANDEAN = ["BO", "CO", "EC", "PE"]
+CACM = ["CR", "SV", "GT", "HN", "NI"]
 
 # Names as RTA-IS writes them -> ISO2 (or a group). Everything not listed here falls back to data/countries.json.
 ALIASES: dict[str, list[str]] = {
@@ -46,6 +56,14 @@ ALIASES: dict[str, list[str]] = {
     "cote d'ivoire": ["CI"], "côte d'ivoire": ["CI"], "cabo verde": ["CV"], "eswatini": ["SZ"], "timor-leste": ["TL"],
     "democratic republic of the congo": ["CD"], "congo, democratic republic of the": ["CD"], "congo": ["CG"], "china": ["CN"],
     "japan": ["JP"], "canada": ["CA"], "australia": ["AU"], "new zealand": ["NZ"], "india": ["IN"], "mexico": ["MX"],
+    "asean": ASEAN, "association of south east asian nations": ASEAN, "cptpp": CPTPP,
+    "comprehensive and progressive agreement for trans-pacific partnership": CPTPP, "rcep": RCEP,
+    "regional comprehensive economic partnership": RCEP, "mercosur": MERCOSUR, "southern common market": MERCOSUR,
+    "pacific alliance": PACIFIC_ALLIANCE, "sacu": SACU, "southern african customs union": SACU, "usmca": USMCA, "cusma": USMCA,
+    "united states - mexico - canada agreement": USMCA, "north american free trade agreement": USMCA, "nafta": USMCA,
+    "cis": CIS_FTA, "commonwealth of independent states": CIS_FTA, "treaty on a free trade area between members of the cis": CIS_FTA,
+    "andean community": ANDEAN, "can": ANDEAN, "central american common market": CACM, "cacm": CACM,
+    "eu - efta": EU_MEMBERS + EFTA_MEMBERS, "european economic area": EU_MEMBERS + ["NO", "IS", "LI"], "eea": EU_MEMBERS + ["NO", "IS", "LI"],
 }
 
 
@@ -67,7 +85,7 @@ def names_to_iso2(text: str, index: dict[str, list[str]] | None = None) -> list[
         name = raw.strip().strip(".").lower()
         if not name:
             continue
-        codes = index.get(name) or index.get(name.replace(" (the)", ""))
+        codes = index.get(name) or index.get(name.replace(" (the)", "")) or index.get(name.split(",")[0].strip())
         for code in codes or []:
             if code not in out:
                 out.append(code)
@@ -120,58 +138,192 @@ def _iso_date(text: str) -> str:
     return m.group(1) if m else text.strip()
 
 
+def rows_to_agreements(table: list[list[str]], index: dict[str, list[str]] | None = None) -> list[dict]:
+    """One record per agreement in force from a table whose first row is the header ('RTA Name', 'Status', ...).
+    Members come from the signatories column when present, else from the parties in the RTA name
+    ('Moldova, Republic of - Azerbaijan', 'EAEU - Iran'); unknown names are dropped, never guessed."""
+    index = index or _country_index()
+    if not table:
+        return []
+    header = [h.lower() for h in table[0]]
+    if not any("rta name" in h for h in header):
+        return []
+
+    def col(*needles: str) -> int | None:
+        for i, h in enumerate(header):
+            if all(n in h for n in needles):
+                return i
+        return None
+
+    c_name, c_type, c_status = col("rta name"), col("type"), col("status")
+    c_force = col("entry into force") if col("entry into force") is not None else col("force")
+    c_members = col("current", "signator") if col("current", "signator") is not None else col("signator")
+    out: list[dict] = []
+    for row in table[1:]:
+        if c_name is None or len(row) <= c_name:
+            continue
+        status = row[c_status].lower() if c_status is not None and c_status < len(row) else "in force"
+        if "force" not in status:
+            continue
+        name = row[c_name]
+        if c_members is not None and c_members < len(row) and row[c_members].strip():
+            members = names_to_iso2(row[c_members], index)
+        else:
+            members = names_to_iso2(name.replace(" - ", ";").replace(" – ", ";"), index)
+        if len(members) < 2:
+            continue
+        out.append({
+            "name": name,
+            "type": row[c_type] if c_type is not None and c_type < len(row) else "",
+            "in_force": _iso_date(row[c_force]) if c_force is not None and c_force < len(row) else "",
+            "status": row[c_status] if c_status is not None and c_status < len(row) else "In Force",
+            "members": members,
+        })
+    return out
+
+
 def parse_rtais(html: str) -> list[dict]:
-    """Finds the RTA table by its header ('RTA Name', '... signatories') and returns one record per agreement."""
+    """Finds the RTA table(s) in an HTML page by the 'RTA Name' header."""
     parser = _Tables()
     parser.feed(html)
     index = _country_index()
     out: list[dict] = []
     for table in parser.tables:
-        if not table:
-            continue
-        header = [h.lower() for h in table[0]]
-        if not any("rta name" in h for h in header) or not any("signator" in h for h in header):
-            continue
-
-        def col(*needles: str) -> int | None:
-            for i, h in enumerate(header):
-                if all(n in h for n in needles):
-                    return i
-            return None
-
-        c_name, c_type, c_status = col("rta name"), col("type"), col("status")
-        c_force = col("entry into force") if col("entry into force") is not None else col("force")
-        c_members = col("current", "signator") if col("current", "signator") is not None else col("signator")
-        for row in table[1:]:
-            if c_name is None or c_members is None or len(row) <= max(c_name, c_members):
-                continue
-            status = row[c_status].lower() if c_status is not None and c_status < len(row) else "in force"
-            if "force" not in status:
-                continue
-            members = names_to_iso2(row[c_members], index)
-            if len(members) < 2:
-                continue
-            out.append({
-                "name": row[c_name],
-                "type": row[c_type] if c_type is not None and c_type < len(row) else "",
-                "in_force": _iso_date(row[c_force]) if c_force is not None and c_force < len(row) else "",
-                "members": members,
-            })
+        out.extend(rows_to_agreements(table, index))
     return out
 
 
+def parse_xlsx_rows(data: bytes) -> list[list[str]]:
+    """Rows of the first sheet of an .xlsx file (zip of XML) — no third-party dependency."""
+    import io
+    import zipfile
+    from xml.etree import ElementTree
+
+    ns = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        shared: list[str] = []
+        if "xl/sharedStrings.xml" in z.namelist():
+            for si in ElementTree.fromstring(z.read("xl/sharedStrings.xml")).findall("m:si", ns):
+                shared.append("".join(t.text or "" for t in si.iter("{%s}t" % ns["m"])))
+        sheets = sorted(n for n in z.namelist() if n.startswith("xl/worksheets/sheet") and n.endswith(".xml"))
+        if not sheets:
+            return []
+        root = ElementTree.fromstring(z.read(sheets[0]))
+    rows: list[list[str]] = []
+    for row in root.iter("{%s}row" % ns["m"]):
+        cells: dict[int, str] = {}
+        for c in row.findall("m:c", ns):
+            ref = re.match(r"([A-Z]+)", c.get("r", "A"))
+            col_idx = 0
+            for ch in (ref.group(1) if ref else "A"):
+                col_idx = col_idx * 26 + (ord(ch) - 64)
+            v = c.find("m:v", ns)
+            is_ = c.find("m:is", ns)
+            if c.get("t") == "s" and v is not None and v.text and v.text.isdigit() and int(v.text) < len(shared):
+                text = shared[int(v.text)]
+            elif is_ is not None:
+                text = "".join(t.text or "" for t in is_.iter("{%s}t" % ns["m"]))
+            else:
+                text = v.text or "" if v is not None else ""
+            cells[col_idx] = re.sub(r"\s+", " ", text).strip()
+        if cells:
+            width = max(cells)
+            rows.append([cells.get(i, "") for i in range(1, width + 1)])
+    return rows
+
+
+def parse_csv_rows(text: str) -> list[list[str]]:
+    import csv
+    import io
+
+    sample = text[:2000]
+    delimiter = ";" if sample.count(";") > sample.count(",") else ("\t" if sample.count("\t") > sample.count(",") else ",")
+    return [[re.sub(r"\s+", " ", c).strip() for c in row] for row in csv.reader(io.StringIO(text), delimiter=delimiter)]
+
+
+def parse_export(snap) -> list[dict]:
+    """Agreements from whatever the RTA-IS export returns: an HTML table, an .xlsx workbook or a CSV/TSV file."""
+    if snap.content[:2] == b"PK":
+        return rows_to_agreements(parse_xlsx_rows(snap.content))
+    if "<table" in snap.html.lower():
+        return parse_rtais(snap.html)
+    return rows_to_agreements(parse_csv_rows(snap.html))
+
+
+def _links(html: str) -> list[tuple[str, str]]:
+    out = []
+    for m in re.finditer(r"<a\b([^>]*)>(.*?)</a>", html, re.I | re.S):
+        href = re.search(r"href\s*=\s*[\"']([^\"']+)", m.group(1), re.I)
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(2))).strip()
+        if href:
+            out.append((href.group(1), text))
+    return out
+
+
+def _postback(page_html: str, url: str, target: str) -> "fetch.Snapshot":
+    """ASP.NET postback: re-submits the page form with __EVENTTARGET (the export button). Whitelist enforced."""
+    import httpx
+    from datetime import datetime, timezone
+
+    from . import registry
+
+    if not registry.is_allowed(url):
+        raise fetch.NotWhitelisted(url)
+    form: dict[str, str] = {}
+    for m in re.finditer(r"<input\b([^>]*)>", page_html, re.I):
+        attrs = dict(re.findall(r"(\w+)\s*=\s*[\"']([^\"']*)", m.group(1)))
+        if attrs.get("type", "").lower() in ("hidden", "text", "") and attrs.get("name"):
+            form[attrs["name"]] = attrs.get("value", "")
+    form["__EVENTTARGET"] = target
+    form["__EVENTARGUMENT"] = ""
+    with httpx.Client(follow_redirects=True, headers={"User-Agent": fetch.USER_AGENT}, timeout=300.0) as client:
+        r = client.post(url, data=form)
+    text = fetch.html_to_text(r.text) if "html" in r.headers.get("content-type", "") else ""
+    return fetch.Snapshot(url=url, fetched_at=datetime.now(timezone.utc).isoformat(timespec="seconds"), http_status=r.status_code, content_hash="", text=text, path=None, html=r.text if "PK" != r.content[:2] else "", content=r.content)
+
+
 def build(out: Path = AGREEMENTS_FILE) -> Path | None:
+    """Loads the complete list of RTAs in force. The list page shows 20 rows per page, so the full set comes from the
+    site's "Export all RTAs" link (a file or an ASP.NET postback); a partial list is never written."""
     snap = fetch.fetch_url(RTAIS_URL, save=False, timeout=180.0)
     if snap.http_status != 200:
         print(f"skip agreements: HTTP {snap.http_status} from {RTAIS_URL}")
         return None
-    agreements = parse_rtais(snap.text)
+    total = re.search(r"Result\(s\) found \((\d+)\)", snap.text)
+    expected = int(total.group(1)) if total else None
+    from urllib.parse import urljoin
+
+    candidates = [(href, text) for href, text in _links(snap.html) if "export" in text.lower()]
+    agreements: list[dict] = []
+    used = RTAIS_URL
+    for href, text in candidates:
+        try:
+            if href.lower().startswith("javascript:"):
+                m = re.search(r"__doPostBack\('([^']+)'", href)
+                if not m:
+                    continue
+                exp = _postback(snap.html, RTAIS_URL, m.group(1))
+                used = f"{RTAIS_URL} (postback {m.group(1)})"
+            else:
+                used = urljoin(RTAIS_URL, href)
+                exp = fetch.fetch_url(used, save=False, timeout=300.0)
+            if exp.http_status != 200:
+                print(f"export {text!r}: HTTP {exp.http_status}")
+                continue
+            agreements = parse_export(exp)
+            print(f"export {text!r} -> {len(agreements)} agreements in force ({len(exp.content)} bytes)")
+            if agreements:
+                break
+        except Exception as exc:  # diagnostics only; the next candidate is tried
+            print(f"export {text!r} failed: {exc.__class__.__name__}: {str(exc)[:200]}")
     if not agreements:
-        print(f"skip agreements: no RTA table recognised in {len(snap.text)} chars from {RTAIS_URL}")
-        print(snap.text[:1500])
+        print(f"skip agreements: no complete list obtained. Links on the page: {[(h[:80], t[:40]) for h, t in _links(snap.html) if t][:40]}")
+        return None
+    if expected and len(agreements) < expected * 0.8:
+        print(f"skip agreements: export has {len(agreements)} rows, the page reports {expected} in force — refusing a partial list")
         return None
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps({"source": "WTO RTA-IS", "url": RTAIS_URL, "fetched_at": snap.fetched_at, "agreements": agreements}, ensure_ascii=False, indent=0) + "\n", encoding="utf8")
+    out.write_text(json.dumps({"source": "WTO RTA-IS", "url": RTAIS_URL, "export": used, "fetched_at": snap.fetched_at, "in_force_reported": expected, "agreements": agreements}, ensure_ascii=False, indent=0) + "\n", encoding="utf8")
     print(f"ok   {len(agreements)} agreements in force -> {out}")
     return out
 

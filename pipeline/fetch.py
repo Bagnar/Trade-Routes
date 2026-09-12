@@ -37,6 +37,8 @@ class Snapshot:
     content_hash: str
     text: str
     path: Path | None
+    html: str = ""       # raw response body (HTML or other text) — for table/link parsers
+    content: bytes = b""  # raw bytes — for binary exports (xlsx)
 
 
 def html_to_text(raw: str) -> str:
@@ -103,4 +105,4 @@ def fetch_url(url: str, *, save: bool = True, retries: int = 3, timeout: float =
         meta = {"url": url, "fetched_at": fetched_at, "http_status": response.status_code, "content_hash": content_hash}
         (folder / f"{stem}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf8")
         path = folder / f"{stem}.html"
-    return Snapshot(url=url, fetched_at=fetched_at, http_status=response.status_code, content_hash=content_hash, text=text, path=path)
+    return Snapshot(url=url, fetched_at=fetched_at, http_status=response.status_code, content_hash=content_hash, text=text, path=path, html=response.text, content=response.content)

@@ -1,0 +1,47 @@
+name: Запрос коридора
+description: Попросить страницу «Везу [товар] из [страны] в [страну]». Конвейер соберёт её из официальных источников.
+title: "Коридор: "
+labels: [corridor-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Заявка попадает в очередь: конвейер создаёт страницу-заготовку, а ежедневная проверка наполняет её фактами
+        из официальных источников по мере их извлечения. Ничего не выдумывается: пока источника нет, строка так и говорит.
+  - type: input
+    id: product
+    attributes:
+      label: Товар
+      description: Название и, если знаете, код HS-6 (например, «дроны, 880622»)
+      placeholder: дроны, 880622
+    validations:
+      required: true
+  - type: input
+    id: from
+    attributes:
+      label: Откуда (страна или код ISO)
+      placeholder: CN
+    validations:
+      required: true
+  - type: input
+    id: to
+    attributes:
+      label: Куда (страна или код ISO)
+      placeholder: KZ
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Режим
+      options:
+        - коммерческая партия
+        - посылки покупателям
+        - оба
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Что важно узнать
+      description: Необязательно. Что именно вы хотите увидеть на странице.

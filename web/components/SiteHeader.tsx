@@ -59,9 +59,9 @@ export function SiteFooter({ sanctionsPolicy }: { sanctionsPolicy?: boolean }) {
     <footer>
       <div className="in">
         <span>Условия использования</span>
-        <span>Как собираются страницы</span>
+        <Link href="/facts">Как собираются страницы</Link>
         {sanctionsPolicy && <span>Санкционная политика сайта</span>}
-        <span>Источники по странам</span>
+        <Link href="/country">Источники по странам</Link>
       </div>
     </footer>
   );
