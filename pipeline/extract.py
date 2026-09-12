@@ -39,7 +39,8 @@ Return ONLY a JSON object: {"facts": [ ... ]}. Each fact:
    "statement": {"ru": "...", "en": "..."},   // plain-language restatement, one or two sentences
    "quote": "...",                              // VERBATIM fragment copied from the page text, 1-3 sentences
    "quote_lang": "en" | "fr" | "zh" | "ru" | "fa" | ...,
-   "has_number": true|false}                    // true if the statement contains a rate, threshold or amount
+   "has_number": true|false,                    // true if the statement contains a rate, threshold or amount
+   "targets": ["IR"]}                           // sanctions facts only: ISO codes of the countries the measure targets
 
 Hard rules:
 1. Every fact needs a quote copied character-for-character from the page. Do not fix typos, do not translate the quote.
@@ -112,6 +113,7 @@ def accept_facts(candidates: list[dict], page_text: str) -> tuple[list[dict], in
                 "quote": quote,
                 "quote_lang": str(fact.get("quote_lang", "")),
                 "has_number": bool(fact.get("has_number", False)),
+                "targets": [str(t)[:2].upper() for t in (fact.get("targets") or []) if str(t).strip()],
             }
         )
     return kept, dropped

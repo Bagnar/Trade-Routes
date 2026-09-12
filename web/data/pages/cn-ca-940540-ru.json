@@ -33,10 +33,10 @@
   "lang": "ru",
   "isDemo": true,
   "status": {
-    "sourcesTotal": 0,
+    "sourcesTotal": 5,
     "sourcesMissing": 0,
-    "lastChecked": "",
-    "text": "Страница-заготовка для группы HS 9405.40: конвейер ещё не перечитывал источники. Строки о паре стран взяты из демо коридора Китай → Канада; всё, что зависит от товара, помечено «не собрано». Это не юридическая консультация."
+    "lastChecked": "2026-09-12",
+    "text": "На странице 44 строк из официальных источников с дословной цитатой (5 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
   },
   "summary": {
     "id": "s0",
@@ -156,6 +156,146 @@
     "lead": "Здесь то, что зависит не от товара, а от пары стран.",
     "facts": [
       {
+        "text": "Запрет на импорт товаров, произведенных полностью или частично принудительным трудом, введен в Канаде Законом об имплементации Соглашения Канада–США–Мексика (CUSMA).",
+        "quote": "1. This Memorandum has been updated to include information on Canada’s import prohibition on goods mined, manufactured or produced wholly or in part by forced labour as established by the Canada–United States–Mexico Agreement Implementation Act.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Канадское Агентство пограничной службы (CBSA) публикует Таможенный тариф издания 2026 года (T2026) по главам, с датой вступления в силу 1 января 2026 года.",
+        "quote": "Customs Tariff chapter-by-chapter (T2026)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Тарифный пакет включает Закон о таможенном тарифе, Общие правила интерпретации Гармонизированной системы и Административные руководства.",
+        "quote": "General Rules for the Interpretation of the Harmonized System",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Отдельный документ тарифа — «Список стран и применимых тарифных режимов» — определяет, какой тарифный режим применяется к товарам из каждой страны.",
+        "quote": "List of Countries and Applicable Tariff Treatments",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Управление пограничной службы Канады (CBSA) начисляет и взимает пошлины и налоги на коммерческие товары, ввозимые в Канаду, через систему CARM (CBSA Assessment and Revenue Management).",
+        "quote": "The Canada Border Services Agency (CBSA) assesses and collects duties and taxes on commercial goods imported into Canada using the CBSA Assessment and Revenue Management (CARM) system.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Регистрация бизнеса в портале CARM начинается с выбора основного пользователя: роль business account manager автоматически присваивается тому, кто регистрирует бизнес-счёт.",
+        "quote": "Before you register to the CARM Client Portal, decide who in your business will be the primary user that runs the business’s account. The business account manager role is automatically assigned to the user that registers the business account in CARM.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Вход в портал CARM осуществляется через GCKey (имя пользователя и пароль) либо через партнёра Interac Sign-in; при каждом входе нужно использовать тот же способ, что и при регистрации.",
+        "quote": "Choose one of the 2 sign-in options available and create a username and password. Every time you sign in moving forward you must use the same option that you used when registering.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Сотрудники запрашивают доступ к бизнес-счёту работодателя в портале CARM, указав 9-значный бизнес-номер работодателя и причину запроса; доступ делегирует business account manager.",
+        "quote": "Enter your employer’s 9-digit business number and click Search\n Enter a reason for requesting access",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "В системе CARM используется автоматизация на основе правил (алгоритмы) для начисления пошлин и налогов и выявления проблем.",
+        "quote": "See how rule-based automation, or algorithms, in the CARM system are used to assess duties and taxes and to identify issues.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Нерезидент, ведущий бизнес в Канаде, может быть обязан зарегистрироваться для GST/HST: начислять, собирать и перечислять налог с облагаемых поставок в Канаде, регулярно подавать декларации и получать право на входные налоговые кредиты.",
+        "quote": "If you are a non-resident doing business in Canada, you may need to register for the GST/HST. This means that:\n you may need to charge, collect, and remit the GST/HST on your taxable supplies of property and services you make in Canada\n you may need to file GST/HST returns on a regular basis\n you may be able to claim input tax credits to recover the GST/HST paid or payable on your purchases and operating expenses",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Общий преференциальный тариф Канады (GPT) на Китай не распространяется с 1 января 2015 года — льготной ставки для китайских товаров нет.",
         "stamp": {
           "status": "ok",
@@ -270,6 +410,482 @@
     "title": "Ввоз в Канаду",
     "facts": [
       {
+        "text": "Товары, добытые, изготовленные или произведенные полностью или частично принудительным трудом, запрещены к ввозу в Канаду по тарифной позиции 9897.00.00 Таможенного тарифа.",
+        "quote": "1. Goods that are mined, manufactured or produced wholly or in part by forced labour are prohibited from entering Canada pursuant to tariff item No. 9897.00.00 of the Customs Tariff.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Товары, изготовленные или произведенные полностью или частично трудом заключенных, также запрещены к ввозу по тарифной позиции 9897.00.00.",
+        "quote": "2. Goods manufactured or produced wholly or in part by prison labour are prohibited from entering Canada pursuant to tariff item No. 9897.00.00 of the Customs Tariff.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Ввоз товаров, классифицируемых по тарифным позициям 9897.00.00, 9898.00.00 или 9899.00.00, запрещен согласно статье 136(1) Таможенного тарифа.",
+        "quote": "Section 136. (1) The importation of goods of tariff item No. 9897.00.00, 9898.00.00 or 9899.00.00 is prohibited.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Товары, произведенные трудом заключенных, исключаются из действия позиции 9897.00.00, если ввозятся исключительно для личного пользования, а не для продажи или коммерческого/профессионального использования — нерезидентом Канады или резидентом, декларирующим их при возвращении в Канаду.",
+        "quote": "1. Tariff item 9897.00.00 of the Customs Tariff is amended to exclude goods manufactured or produced wholly or in part by prison labour, on the condition that the goods are imported solely for personal use and not for sale or for any business or occupational use, by:\n (a) a non-resident of Canada or\n (b) a resident of Canada, reporting the goods at the time of his or her return to Canada",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Получив уведомление по подразделу 59(2) Таможенного закона, лицо может запросить пересмотр классификации по статье 60; товары, отнесенные к позиции 9897.00.00, также могут быть вывезены согласно экспортному законодательству или оставлены (abandoned) по статье 36 Таможенного закона.",
+        "quote": "4. A person who receives a notice under subsection 59(2) of the Customs Act may seek review of the determination or re-determination of tariff classification under section 60 of the Customs Act. Goods classified under tariff item No. 9897.00.00 may also be exported in accordance with applicable export law, or abandoned in accordance with section 36 of the Customs Act.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Глава 98 Таможенного тарифа Канады содержит специальные классификационные положения некоммерческого характера, включая положения о льготах (relief) и запретительные положения.",
+        "quote": "Chapter 98 - Special classification provisions – non-commercial \n Relief provisions\n Prohibition provisions",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Глава 99 Таможенного тарифа Канады содержит специальные классификационные положения для коммерческих товаров.",
+        "quote": "Chapter 99 - Special classification provisions – commercial",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Вся международная почта, поступающая в Канаду, подлежит проверке CBSA, которая решает, допускается ли товар и подлежат ли уплате пошлины и/или налоги.",
+        "quote": "All international mail coming into Canada is subject to review by the Canada Border Services Agency (CBSA). The CBSA determines whether the goods may enter Canada and if any duty and/or taxes apply.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Ставки пошлин устанавливаются Министерством финансов Канады и существенно различаются в зависимости от торгового соглашения.",
+        "quote": "Duty is a tariff payable on an item imported to Canada. Rates of duty are established by the Department of Finance Canada and can vary significantly from one trade agreement to another.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Большинство импортируемых товаров также облагается федеральным GST и провинциальным налогом PST либо гармонизированным налогом HST в отдельных провинциях.",
+        "quote": "Most imported goods are also subject to the federal Goods and Services Tax (GST) and Provincial Sales Tax (PST) or, in certain provinces and territories, the Harmonized Sales Tax (HST).",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "По Postal Imports Remission Order почтовое отправление стоимостью CAN$20 или меньше освобождается от пошлин и налогов; при стоимости выше CAN$20 пошлина, GST/HST и PST уплачиваются с полной стоимости товара.",
+        "quote": "Under the provisions of the Postal Imports Remission Order, if someone mails you an item worth CAN$20 or less, there is no duty or tax payable. If the item is worth more than CAN$20, you must pay the applicable duty, the GST or HST, and any PST on the item's full value.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Освобождение на CAN$20 не распространяется на табак, книги, периодику, журналы, алкогольные напитки и товары, заказанные через канадский почтовый ящик или канадского посредника.",
+        "quote": "Items that do not qualify for the CAN$20 exemption include the following:\n tobacco;\n books;\n periodicals;\n magazines;\n alcoholic beverages; and\n goods ordered through a Canadian post office box or a Canadian intermediary.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Подарок по почте стоимостью CAN$60 или меньше не облагается пошлиной и налогом; при большей стоимости пошлины и налоги взимаются с суммы свыше CAN$60 (например, с CAN$140 при подарке в CAN$200).",
+        "quote": "If you receive an imported gift by mail that is worth CAN$60 or less, you will not have to pay duty and/or tax on it.\n If the gift is worth more than CAN$60, you will have to pay any applicable duty and/or taxes on any amount over CAN$60. \n For example, if a relative sends you a gift worth CAN$200, you must pay any applicable duty, GST or HST and/or PST on CAN$140.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Чтобы отправление считалось подарком, его должен прислать лично друг или родственник, приложив открытку или иное уведомление о том, что это подарок.",
+        "quote": "For an item to qualify as a \"gift\", a friend or relative must send it to you personally and include a card or other notice indicating that it is a gift.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Льгота для подарков в CAN$60 не применяется к табаку, алкоголю, рекламным материалам и вещам, отправленным бизнесом, и не может суммироваться с освобождением на CAN$20.",
+        "quote": "Items that do not qualify for the CAN$60 gift exemption include the following:\n tobacco;\n alcoholic beverages;\n advertising material; and\n items sent by a business.\n As well, the CAN$60 gift exemption cannot be combined with the CAN$20 exemption that is available on most items valued at CAN$20 or less.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Товары, отправленные домой во время поездки за границу, нужно задекларировать по возвращении на форме E24 и сохранить её копию; они учитываются в лимитах личного освобождения путешественника.",
+        "quote": "On arriving back in Canada, you must declare these goods on Form E24, Personal Exemption Customs Declaration. \n You must keep a copy of the form to claim the goods. Otherwise, you may have to pay duty and/or taxes on them. Goods mailed home are subject to the traveller personal exemption limits.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Иммигранты в Канаду не платят пошлины и налоги за личные вещи; если налог всё же начислен при поступлении вещей по почте, начисление можно оспорить.",
+        "quote": "If you are immigrating to Canada, you do not pay duty and/or taxes on the personal possessions you bring with you.\n However, when these goods arrive in Canada by mail, the CBSA may mistakenly assess duty and/or taxes on them. If this happens, you can dispute the duty and/or taxes assessed.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 8 сентября 2026 года Канада вводит сюртаксы (ответные пошлины) на определённые товары из США; CBSA выпустила руководство по их применению на границе.",
+        "quote": "Starting September 8, 2026 : Surtaxes (counter tariffs) on certain U.S. goods\n In response to the U.S. tariffs on Canadian goods, the Government of Canada is imposing surtaxes (counter tariffs) on certain goods from the United States: List of products from the United States subject to counter tariffs\n The CBSA has published guidance for importers on how the surtaxes apply at the border.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 14 декабря 2024 по 15 февраля 2025 CBSA применяла временное освобождение от GST/HST для отдельных товаров, ввозимых по каналам путешественников, почты, курьерских отправлений низкой стоимости (CLVS) и коммерческому.",
+        "quote": "Between December 14, 2024 and February 15, 2025 : GST/HST break on select goods\n The CBSA will administer a temporary GST/HST exemption on goods imported via the traveller, postal, Courier Low Value Shipment and commercial streams.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Перед ввозом или вывозом товаров необходимо иметь бизнес-номер и программный счёт импорта-экспорта (RM).",
+        "quote": "You need a business number and an import-export program (RM) account before you import or export goods.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Чтобы получать товары до уплаты пошлин, импортёр должен записаться в подпрограмму Release Prior to Payment (RPP) и внести требуемое финансовое обеспечение.",
+        "quote": "Enrol in the Release Prior to Payment (RPP) sub-program and post the required financial security.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "cbsa-asfc.gc.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.cbsa-asfc.gc.ca/services/carm-gcra/menu-eng.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Товары, ввозимые в Канаду, облагаются GST или федеральной частью HST, за исключением товаров, отнесённых к необлагаемому импорту; налог исчисляется от стоимости товаров в канадских долларах, включая пошлину и акциз, и взимается в момент импорта одновременно с пошлиной и акцизом.",
+        "quote": "Goods you import into Canada are subject to the GST or the federal part of the HST, except for items specified as non-taxable importations. The GST or the federal part of the HST is calculated on the Canadian dollar value of the goods, including duty and excise tax. It is collected at the time of importation at the same time as the duty and excise tax.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Владелец или импортёр официального учёта (importer of record) обязан уплатить GST/HST на импортируемые товары; зарегистрированный плательщик, который вызвал ввоз товаров, может заявить входной налоговый кредит (ITC).",
+        "quote": "The owner or importer of record is responsible for paying the GST/HST on imported goods. If you are registered for the GST/HST and you are the importer (the person who caused the goods to be imported into Canada), you can claim an input tax credit (ITC) for the tax you paid on the imported goods, as long as you meet the requirement for claiming ITCs.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Товары стоимостью 20 канадских долларов или менее, отправленные почтой или курьером на адрес в Канаде, не облагаются налогом, кроме предписанных товаров (подакцизные товары; книги, газеты, журналы, если продавец обязан был зарегистрироваться на GST/HST, но не сделал этого; товары, купленные у канадского розничного продавца и отправленные покупателю из-за рубежа).",
+        "quote": "goods valued at $20 or less sent to a person by mail or courier at an address in Canada, except for the following prescribed goods: \n excisable goods (such as beer, tobacco, and wine)\n books, newspapers, magazines, periodicals and similar publications if the vendor was required to register for the GST/HST but did not do so\n goods bought from a retailer in Canada and mailed or transported from outside Canada directly to the purchaser",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Не облагается налогом ввоз товаров исключительно для обслуживания, капитального ремонта или починки, если владение или пользователь товаров не меняются в Канаде и товары вывозятся сразу после завершения услуг.",
+        "quote": "goods imported for the sole purpose of maintenance, overhaul, or repairs, but only if the ownership or person using these goods does not change while in Canada and the goods are exported as soon as the services are completed",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Компания, оказывающая услуги переработки для нерезидентов, должна подать письменное заявление на получение импортного сертификата (import certificate), чтобы ввозить товары без уплаты налога.",
+        "quote": "the manufacturing service company must apply in writing for an import certificate to be able to import goods on a non-taxable basis",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Когда резидент участвующей провинции ввозит некоммерческий товар, помимо федеральной части HST в большинстве случаев на границе взимается и провинциальная часть HST, независимо от пункта ввоза; исключения — автомобили, подлежащие регистрации в участвующей провинции, и мобильные/плавучие дома, использовавшиеся в Канаде.",
+        "quote": "When a resident of a participating province imports a non-commercial good, in addition to the federal part of the HST, in most cases, the provincial part of the HST applies at the border, regardless of the point of entry into Canada or customs clearance.\n Exceptions are motor vehicles that must be registered in a participating province and mobile homes or floating homes that an individual used or occupied in Canada.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Зарегистрированный плательщик GST/HST должен самостоятельно начислить провинциальную часть HST при ввозе коммерческого товара в участвующую провинцию и указать сумму в строке 405 декларации GST/HST; незарегистрированные лица используют форму GST489.",
+        "quote": "If you are registered for the GST/HST, the provincial part of the HST is payable by you when a commercial good is imported into a participating province. Enter this amount on line 405 of your GST/HST return.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "При покупке услуг или нематериального имущества у незарегистрированного нерезидента за пределами Канады покупатель обязан самостоятельно начислить GST или федеральную часть HST, если приобретение используется менее чем на 90% в коммерческой деятельности (100% для финансовых учреждений).",
+        "quote": "If you buy services (such as architectural services for a building in Canada) or intangible personal property (IPP) (such as the right to use a patent in Canada) from an unregistered non-resident person outside Canada, you have to self-assess the GST or the federal part of the HST if you bought them for use less than 90% in your commercial activities (100% in the case of a financial institution).",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Незарегистрированные на GST/HST лица уплачивают налог по импортированным услугам и нематериальному имуществу с помощью формы GST59; налог подлежит уплате до конца месяца, следующего за календарным месяцем, в котором была произведена или наступила оплата.",
+        "quote": "If you are not registered for the GST/HST, you still have to pay tax on imported services or IPP. To remit the tax, use Form GST59, GST/HST Return for Imported Taxable Supplies, Qualifying Consideration, and Internal and External Changes. The tax is due by the end of the month after the calendar month that the service or IPP was paid for or became payable.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Покупатель, зарегистрированный на GST/HST, может получить разрешение на выдачу поставщику экспортного сертификата, чтобы поставка товаров облагалась по нулевой ставке.",
+        "quote": "3. A purchaser who is registered for the GST/HST can apply for authorization to issue an export certificate to the supplier to make the goods zero-rated.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Действительный сертификат прямой отгрузки (drop-shipment certificate) должен содержать имя и регистрационный номер грузополучателя, заявление о принятии физического владения товарами, о цели их приобретения и о принятии ответственности за уплату GST/HST.",
+        "quote": "A valid drop-shipment certificate must contain all of the following information:\n the consignee's name and registration number\n a statement saying that: \n the consignee has taken or will take physical possession of the goods\n the goods are acquired for the purpose of performing commercial services on them or they are for the recipient's consumption, use, or supply\n the consignee assumes liability to pay or remit any GST/HST that may become payable",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Разрешение на участие в EDCP запрашивается по форме GST528, действует три года (если не отозвано) и продлевается подачей формы GST528 не позднее чем за три месяца до истечения срока.",
+        "quote": "If you are eligible, you can apply for EDCP authorization by using Form GST528, Authorization To Use an Export Distribution Centre Certificate.\n The EDCP authorization is valid for three years, unless it is revoked. It can be renewed by sending Form GST528 at least three months before the expiry date of your existing authorization.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Чтобы получить одновременно освобождение от GST/HST по EOPS и освобождение от пошлин, подаётся форма K90 (Duties Relief Application) в местный офис CBSA; разрешение EOPS на освобождение от GST/HST действует три года.",
+        "quote": "To apply for both GST/HST relief through EOPS and relief on duties, fill out Form K90, Duties Relief Application and send it to your local Canada Borders Services Agency (CBSA) office.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "canada.ca",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-imports-exports.html"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "text": "Код товара: HS 9405.40 — светильники электрические. Национальный код и ставку подтверждают брокер или предварительное решение таможни.",
         "stamp": {
           "status": "note",
@@ -359,6 +975,56 @@
     "title": "Источники и проверка",
     "lead": "Источники для этой группы ещё не перечитывались. Ниже — источники демо коридора, на которые опираются строки о паре стран.",
     "rows": [
+      {
+        "source": "cbsa-asfc.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "cbsa-asfc.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "cbsa-asfc.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "canada.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "cbsa-asfc.gc.ca",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
       {
         "source": "cbsa-asfc.gc.ca",
         "confirms": "тариф: GPT, позиция 9897.00.00",
@@ -456,5 +1122,6 @@
     "reverseLabel": "Обратное направление: из Канады в Китай",
     "followSample": null
   },
-  "_generated": "generated by scripts/scaffold_demo_pages.py"
+  "_generated": "generated by scripts/scaffold_demo_pages.py",
+  "_assembled": "assembled by pipeline/assemble.py"
 }

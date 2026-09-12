@@ -59,7 +59,14 @@ export function CorridorPage({
       </SiteHeader>
 
       <StatusBand status={page.status} />
-      {page.isDemo && (
+      {page.isDemo && page.status.sourcesTotal > 0 && (
+        <DemoBand>
+          <strong>Смешанная страница.</strong> Строки с зелёной печатью и ссылкой взяты из официальных источников с
+          дословной цитатой и проверяются ежедневно. Строки с пометкой «демо» или «не собрано» конвейер ещё не
+          заполнил.
+        </DemoBand>
+      )}
+      {page.isDemo && page.status.sourcesTotal === 0 && (
         <DemoBand>
           <strong>Демо-данные.</strong> Цифры и формулировки иллюстративные и не проверены — в продукте каждую строку
           заполнит конвейер из источников.

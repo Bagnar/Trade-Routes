@@ -33,10 +33,10 @@
   "lang": "ru",
   "isDemo": true,
   "status": {
-    "sourcesTotal": 0,
+    "sourcesTotal": 3,
     "sourcesMissing": 0,
-    "lastChecked": "",
-    "text": "Страница-заготовка для группы HS 3901.10: конвейер ещё не перечитывал источники. Строки о паре стран взяты из демо коридора Россия → Иран; всё, что зависит от товара, помечено «не собрано». Это не юридическая консультация."
+    "lastChecked": "2026-09-12",
+    "text": "На странице 22 строк из официальных источников с дословной цитатой (3 источников), проверено 12 сен 2026. Остальные строки помечены как демо или «не собрано». Это не юридическая консультация: код товара и ставки подтвердите у таможенного брокера."
   },
   "sanctions": {
     "tag": "Санкционный коридор",
@@ -159,6 +159,314 @@
     "title": "Режим торговли между Россией и Ираном",
     "lead": "Здесь то, что зависит не от товара, а от пары стран — и от третьих стран, чьи санкции действуют на обе.",
     "facts": [
+      {
+        "text": "Режим санкций Великобритании в отношении России направлен на то, чтобы побудить Россию прекратить действия, дестабилизирующие Украину, и содействовать выплате компенсации за ущерб, причинённый Украине с 24 февраля 2022 года.",
+        "quote": "encouraging Russia to cease actions destabilising Ukraine or undermining or threatening the territorial integrity, sovereignty or independence of Ukraine",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "gov.uk",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.gov.uk/government/collections/uk-sanctions-on-russia"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Опубликовано руководство для неброитанских компаний, работающих за пределами Великобритании, объясняющее применение британских санкций и практические шаги по управлению санкционными рисками.",
+        "quote": "Guidance to help non-UK businesses understand UK sanctions and how they may impact on their business operations outside the UK. Includes practical steps for businesses to manage sanctions risks and increase compliance.",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "gov.uk",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://www.gov.uk/government/collections/uk-sanctions-on-russia"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "OFAC выдает генеральные лицензии, которые разрешают операции с Ираном, в остальном запрещенные; все лица США могут пользоваться ими без подачи заявления на специальную лицензию.",
+        "quote": "OFAC issues general licenses in order to authorize activities that would otherwise be prohibited with regard to Iran. General licenses allow all U.S. persons to engage in the activity described in the general license without needing to apply for a specific license.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "ofac.treasury.gov",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Отдельные операции с Ираном возможны при наличии специальной лицензии OFAC, за которой подается заявление онлайн.",
+        "quote": "Apply for an OFAC License Online - Authorization from OFAC to engage in a transaction that otherwise would be prohibited",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Указ 13599 блокирует имущество правительства Ирана и иранских финансовых учреждений (в силе с 6 февраля 2012 года).",
+        "quote": "13599 - Blocking Property of the Government of Iran and Iranian Financial Institutions (Effective Date - February 06, 2012)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Указ 13871 вводит санкции в отношении секторов черной металлургии, стали, алюминия и меди Ирана.",
+        "quote": "13871 - Imposing Sanctions with Respect to the Iron, Steel, Aluminum, and Copper Sectors of Iran",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Определением по разделу 1(a)(i) указа 13902 санкции распространены на нефтяной и нефтехимический секторы экономики Ирана с 11 октября 2024 года.",
+        "quote": "Determination Pursuant to Section 1(a)(i) of Executive Order 13902 - Petroleum and Petrochemical Sectors of the Iranian Economy (Effective October 11, 2024)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Определением по указу 13902 санкции распространены на авиационный, цифровых активов, золотодобывающий, судоходный и технологический секторы экономики Ирана с 24 августа 2026 года.",
+        "quote": "Determination Pursuant to Section 1(a)(1) of Executive Order 13902 - Aviation, Digital Asset, Gold, Shipping, and Technology Sectors of the Iranian Economy (Effective August 24, 2026)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Определением по указу 13902 санкции распространены на финансовый сектор экономики Ирана с 8 октября 2020 года.",
+        "quote": "Determination Pursuant to Section 1(a)(i) of Executive Order 13902 - Financial Sector of the Iranian Economy (Effective October 08, 2020)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральная лицензия 8A разрешает определенные гуманитарные торговые операции с участием Центрального банка Ирана или Иранской национальной нефтяной компании.",
+        "quote": "Iran General License 8A - Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company (October 26, 2020)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральная лицензия E разрешает определенные услуги в поддержку деятельности неправительственных организаций в Иране.",
+        "quote": "Iran General License E - Authorizing Certain Services in Support of Nongovernmental Organizations' Activities in Iran (September 10, 2023)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральные лицензии F (спорт) и G (академические обмены и образовательные услуги) приостановлены с 24 августа 2026 года.",
+        "quote": "Iran General License G - Related to Academic Exchanges and the Exportation or Importation of Certain Educational Services - Suspended as of August 24, 2026",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральная лицензия J-1, разрешавшая реэкспорт некоторых гражданских воздушных судов в Иран с временной остановкой, приостановлена с 8 сентября 2026 года.",
+        "quote": "Iran General License J-1 - Authorizing the Reexportation of Certain Civil Aircraft to Iran on Temporary Sojourn and Related Transactions - Suspended as of September 08, 2026",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральная лицензия DD разрешает сворачивание ранее разрешенных операций в сфере гражданской авиации и иных сделок по Правилам иранских транзакций и санкций (8 сентября 2026 года).",
+        "quote": "Iran General License DD - Authorizing the Wind Down of Certain Civil Aviation-Related and Other Transactions Previously Authorized Under the Iranian Transactions and Sanctions Regulations (September 08, 2026)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Санкции в отношении Ирана, снятые или приостановленные в рамках СВПД, были вновь введены; OFAC опубликовал соответствующее уведомление от 4 ноября 2018 года.",
+        "quote": "Notice on the Re-imposition of the Sanctions on Iran that had Been Lifted or Waived Under the JCPOA (November 04, 2018)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "OFAC опубликовало руководство по применению политики ценового потолка для сырой нефти и нефтепродуктов российского происхождения (обновлено 20 декабря 2023 года).",
+        "quote": "OFAC Guidance on Implementation of the Price Cap Policy for Crude Oil and Petroleum Products of Russian Federation Origin (Updated on December 20, 2023)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 27 февраля 2025 года действует определение по Указу 14071, запрещающее оказание нефтяных услуг (petroleum services).",
+        "quote": "Determination Pursuant to Section 1(a)(ii) of Executive Order 14071 (Effective February 27, 2025) - Prohibition on Petroleum Services",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "ofac.treasury.gov",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "С 12 сентября 2024 года запрещено оказание отдельных ИТ-услуг и услуг по программному обеспечению лицам в России.",
+        "quote": "Determination Pursuant to Section 1 (a)(ii) of Executive Order 14071 (Effective September 12, 2024) - Prohibition on Certain Information Technology and Software Services",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "ofac.treasury.gov",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Четыре директивы OFAC запрещают операции с суверенным долгом России, корреспондентские счета отдельных иностранных финансовых учреждений, новые долговые и долевые инструменты ряда российских компаний и операции с Центробанком, ФНБ и Минфином России.",
+        "quote": "Directive 2 - Prohibitions Related to Correspondent or Payable-Through Accounts and Processing of Transactions Involving Certain Foreign Financial Institutions (February 24, 2022)\n Directive 3 - Prohibitions Related to New Debt and Equity of Certain Russia-related Entities (February 24, 2022)\n Directive 4 - Prohibitions Related to Transactions Involving the Central Bank of the Russian Federation, the National Wealth Fund of the Russian Federation, and the Ministry of Finance of the Russian Federation (May 19, 2023)",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "ofac.treasury.gov",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Генеральная лицензия 6D разрешает операции, связанные с сельскохозяйственными товарами, лекарствами, медицинскими изделиями, запасными частями и обновлениями ПО, а также с COVID-19 и клиническими исследованиями.",
+        "quote": "Russia-related General License 6D - Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials (June 12, 2024)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "Отдельные операции, запрещённые санкциями, могут быть разрешены специальной лицензией OFAC, заявку на которую подают онлайн.",
+        "quote": "Certain activities related to the Russian Harmful Foreign Activities Sanctions may be allowed if they are licensed by OFAC. Visit the link below to apply for an OFAC license.",
+        "quoteLang": "en",
+        "ban": true,
+        "stamp": {
+          "status": "ban",
+          "source": "ofac.treasury.gov",
+          "label": "запрет, проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "text": "OFAC предупреждает о санкционных рисках для иностранных финансовых учреждений, подключающихся к российской Системе передачи финансовых сообщений (СПФС).",
+        "quote": "OFAC Alert: Sanctions Risk for Foreign Financial Institutions that Join Russian Financial Messaging System, System for Transfer of Financial Messages (November 21, 2024)",
+        "quoteLang": "en",
+        "ban": false,
+        "stamp": {
+          "status": "ok",
+          "source": "ofac.treasury.gov",
+          "label": "проверено 12 сен 2026",
+          "verifiedAt": "2026-09-12",
+          "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
       {
         "ban": true,
         "text": "Если контрагент, его банк или судно включены в санкционный список, сделка запрещена для всех сторон, подпадающих под соответствующую юрисдикцию. Проверьте списки до подписания контракта и повторно перед каждой отгрузкой.",
@@ -346,6 +654,36 @@
     "lead": "Источники для этой группы ещё не перечитывались. Ниже — источники демо коридора, на которые опираются строки о паре стран.",
     "rows": [
       {
+        "source": "gov.uk",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "ofac.treasury.gov",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
+        "source": "ofac.treasury.gov",
+        "confirms": "цитата проверена",
+        "checked": "12 сен 2026",
+        "status": {
+          "text": "актуально",
+          "kind": "ok"
+        },
+        "_assembled": "assembled by pipeline/assemble.py"
+      },
+      {
         "source": "eurasiancommission.org",
         "confirms": "соглашение ЕАЭС–Иран, тарифное приложение",
         "checked": "6 сен 2026",
@@ -442,5 +780,6 @@
     "reverseLabel": "Обратное направление: из Ирана в Россию",
     "followSample": null
   },
-  "_generated": "generated by scripts/scaffold_demo_pages.py"
+  "_generated": "generated by scripts/scaffold_demo_pages.py",
+  "_assembled": "assembled by pipeline/assemble.py"
 }

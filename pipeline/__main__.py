@@ -41,6 +41,10 @@ def main(argv=None):
         from . import rates
 
         return rates.main(argv if argv is not None else __import__("sys").argv[2:])
+    if args.command == "assemble":
+        from . import assemble
+
+        return assemble.main()
     if args.command == "reference":
         from . import reference
 
