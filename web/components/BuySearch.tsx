@@ -37,7 +37,7 @@ export function BuySearch({ countries, options }: { countries: CountryRef[]; opt
     setMiss(
       inCountry.length ? (
         <>
-          Для «{product || "этого товара"}» в {loc} страница ещё не собрана. Открыты:{" "}
+          Для «{product || "этого товара"}» {loc} страница ещё не собрана. Открыты:{" "}
           {inCountry.map((o, i) => (
             <span key={o.href}>
               {i > 0 && ", "}
@@ -49,7 +49,7 @@ export function BuySearch({ countries, options }: { countries: CountryRef[]; opt
           .
         </>
       ) : (
-        `Для страны «${loc}» слой «где купить» ещё не собран. Страница собирается из официальной статистики и реестров по запросу.`
+        `Слой «где купить» ${loc} ещё не собран. Страница собирается из официальной статистики и реестров по запросу.`
       ),
     );
   }
@@ -74,7 +74,6 @@ export function BuySearch({ countries, options }: { countries: CountryRef[]; opt
             </option>
           ))}
         </datalist>{" "}
-        в{" "}
         <select className="country" aria-label="Страна" value={country} onChange={(e) => setCountry(e.target.value)}>
           {countries.map((c) => (
             <option key={c.code} value={c.code}>

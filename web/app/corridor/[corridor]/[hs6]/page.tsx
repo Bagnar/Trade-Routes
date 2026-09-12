@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { corridor, hs6 } = await params;
   const page = await getPage(corridor, hs6);
   if (!page) return { title: "Коридор не найден" };
-  const title = `${page.product.name[0].toUpperCase()}${page.product.name.slice(1)} из ${page.corridor.from.from} в ${page.corridor.to.to} — страница коридора`;
+  const title = `${page.product.name[0].toUpperCase()}${page.product.name.slice(1)} ${page.corridor.from.from} ${page.corridor.to.to} — страница коридора`;
   return { title };
 }
 
@@ -41,7 +41,7 @@ export default async function Page({
   const supplyLink = supply
     ? {
         href: supplyHref(supply.country.code, supply.hs),
-        label: `Где купить ${supply.product.name} в ${supply.country.loc ?? supply.country.name}`,
+        label: `Где купить ${supply.product.name} ${supply.country.loc ?? supply.country.name}`,
         note: `Регионы и кластеры производства (${supply.regionCount}), официальные реестры и выставки.`,
       }
     : undefined;

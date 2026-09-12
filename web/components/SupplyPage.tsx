@@ -30,7 +30,6 @@ export function SupplyPage({ page }: { page: SupplyContent }) {
             </option>
             <option disabled>другие группы…</option>
           </select>{" "}
-          в{" "}
           <select className="country" aria-label="Страна" defaultValue={page.country.code}>
             <option value={page.country.code}>{page.country.loc ?? page.country.name}</option>
             <option disabled>другие…</option>

@@ -40,7 +40,7 @@ NOT_LOADED = {"status": "none", "source": "таблица rates", "label": "ст
 # Words that mark a template line as product-specific (wheat / grain / cotton T-shirts) — such lines are never reused.
 PRODUCT_WORDS = ("пшениц", "зерн", "хлопк", "футболк", "одежд", "трикотаж", "продовольств", "сельскохоз", "апк", "6109", "1001", "фитосанитар", "лиценз", "перечн", "ставка", "пошлин", "квот", "текстил", "воспламеня")
 
-LOC = {"CN": "Китае", "CA": "Канаде", "RU": "России", "IR": "Иране", "TR": "Турции"}
+LOC = {"CN": "в Китае", "CA": "в Канаде", "RU": "в России", "IR": "в Иране", "TR": "в Турции"}
 
 
 def generic(facts: list[dict]) -> list[dict]:
@@ -78,7 +78,7 @@ def product_specific_summary(country_to: str, prod: str) -> list[dict]:
     return [
         {"key": "Пошлина при ввозе", "text": "Ставка для этой группы не загружена: слой ставок ещё не заполнил таблицу rates", "stamp": NOT_LOADED},
         {"key": "Лицензия на экспорт", "text": "Требуется ли лицензия для этой группы — источник не перечитан", "stamp": NOT_FOUND},
-        {"key": "Разрешения и стандарты", "text": f"Требования {country_to} к этой группе не собраны", "stamp": NOT_FOUND},
+        {"key": "Разрешения и стандарты", "text": f"Требования при ввозе {country_to} к этой группе не собраны", "stamp": NOT_FOUND},
         {"key": "Санкции по товару", "text": "Товарная группа по санкционным перечням не проверена", "stamp": NOT_FOUND},
     ]
 
@@ -136,7 +136,7 @@ def scaffold_page(tpl: dict, corridor: dict, group: dict) -> dict:
     }
     page["compare"] = {
         "id": "sw",
-        "title": f"Куда ещё везти {prod} из {fr['from']}",
+        "title": f"Куда ещё везти {prod} {fr['from']}",
         "lead": "Индексный слой для этой группы не собран.",
         "rows": [],
     }
@@ -185,7 +185,7 @@ def scaffold_page(tpl: dict, corridor: dict, group: dict) -> dict:
         {"title": g["title"], "items": [i for i in g["items"] if not any(w in i.lower() for w in PRODUCT_WORDS)]}
         for g in tpl["documents"]["groups"] if g["title"].startswith("На вывоз")
     ]
-    docs.append({"title": f"На ввоз в {to['to']}", "items": ["Список для этой группы появится после сборки"]})
+    docs.append({"title": f"На ввоз {to['to']}", "items": ["Список для этой группы появится после сборки"]})
     page["documents"]["groups"] = docs
 
     page["sources"]["lead"] = "Источники для этой группы ещё не перечитывались. Ниже — источники демо коридора, на которые опираются строки о паре стран."
@@ -205,7 +205,7 @@ def scaffold_supply(tpl: dict, country: dict, hs4: str, name: str, corridor_id: 
         "sourcesTotal": 0,
         "sourcesMissing": 0,
         "lastChecked": "",
-        "text": f"Страница-заготовка слоя «Где купить» для группы HS {hs4} в {loc}: регионы и показатели не собраны, источники не перечитывались. Не рекомендация поставщиков.",
+        "text": f"Страница-заготовка слоя «Где купить» для группы HS {hs4} {loc}: регионы и показатели не собраны, источники не перечитывались. Не рекомендация поставщиков.",
     }
     page["summary"]["facts"] = [
         {"key": "Главные регионы", "text": "Регионы производства этой группы не собраны", "stamp": NOT_FOUND},
@@ -262,7 +262,7 @@ def main() -> None:
                 {"source": "exportcenter.ru", "confirms": "поддержка экспортёров", "checked": "—", "status": {"text": "не перечитан", "kind": "warn"}},
             ]
             ru_supply_tpl = stpl
-        stpl["corridors"]["title"] = f"Куда везти из {country['from']}"
+        stpl["corridors"]["title"] = f"Куда везти {country['from']}"
         stpl["corridors"]["lead"] = "Страницы коридоров вывоза этой группы."
 
         by_hs4: dict[str, tuple[str, list[str]]] = {}

@@ -4,7 +4,7 @@ import { BuySearch, type BuyOption } from "@/components/BuySearch";
 import { RequestCorridorCard, SearchForm, type OpenCorridor } from "@/components/SearchForm";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { listCorridors } from "@/lib/corridors";
-import { COUNTRIES } from "@/lib/countries";
+import { countryList } from "@/lib/countries";
 import { getPage, listPages } from "@/lib/pages";
 import { pageHref, supplyHref } from "@/lib/routes";
 import { listSupplyPages } from "@/lib/supply";
@@ -69,7 +69,7 @@ export default async function Home() {
           Пошлины и налоги с обеих сторон границы, документы, санкции, господдержка и субсидии за маршрут — из
           официальных источников, с датой проверки у каждой строки. И оценка: выгодно ли, и куда выгоднее.
         </p>
-        <SearchForm countries={Object.values(COUNTRIES)} corridors={open} />
+        <SearchForm countries={countryList()} corridors={open} />
       </section>
 
       <section className="section">
@@ -117,14 +117,14 @@ export default async function Home() {
           Второй вход: в каких провинциях и кластерах страны производят товар и через какие официальные реестры и
           выставки искать поставщика. Только регионы и государственные источники, без списков компаний.
         </p>
-        <BuySearch countries={Object.values(COUNTRIES)} options={buyOptions} />
+        <BuySearch countries={countryList()} options={buyOptions} />
         <div className="cards" style={{ marginTop: 18 }}>
           {supplyPages
             .filter((p) => p.lang === "ru")
             .map((p) => (
               <article className="card" key={`${p.country.code}-${p.hs}`}>
                 <p className="route">
-                  {p.product.name[0].toUpperCase() + p.product.name.slice(1)} в {p.country.loc ?? p.country.name}
+                  {p.product.name[0].toUpperCase() + p.product.name.slice(1)} {p.country.loc ?? p.country.name}
                 </p>
                 <p className="prod">
                   {p.product.hsLabel}; регионов: {p.regionCount} — {p.topRegions.join(", ")}

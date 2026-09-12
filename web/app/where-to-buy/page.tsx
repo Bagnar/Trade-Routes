@@ -3,7 +3,7 @@ import Link from "next/link";
 import { DemoBand } from "@/components/Bands";
 import { BuySearch, type BuyOption } from "@/components/BuySearch";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
-import { COUNTRIES } from "@/lib/countries";
+import { countryList } from "@/lib/countries";
 import { supplyHref } from "@/lib/routes";
 import { listSupplyPages } from "@/lib/supply";
 
@@ -34,7 +34,7 @@ export default async function WhereToBuy() {
           В каких провинциях и кластерах страны производят товар и через какие официальные реестры, выставки и
           агентства искать поставщика. Только регионы и государственные источники — без списков компаний.
         </p>
-        <BuySearch countries={Object.values(COUNTRIES)} options={options} />
+        <BuySearch countries={countryList()} options={options} />
       </section>
       <section className="section">
         <h2>Открытые страницы</h2>
@@ -42,7 +42,7 @@ export default async function WhereToBuy() {
           {pages.map((p) => (
             <article className="card" key={`${p.country.code}-${p.hs}`}>
               <p className="route">
-                {p.product.name[0].toUpperCase() + p.product.name.slice(1)} в {p.country.loc ?? p.country.name}
+                {p.product.name[0].toUpperCase() + p.product.name.slice(1)} {p.country.loc ?? p.country.name}
               </p>
               <p className="prod">
                 {p.product.hsLabel}; регионов: {p.regionCount} — {p.topRegions.join(", ")}

@@ -183,11 +183,11 @@ export interface CountryRef {
   code: string;
   /** Nominative: "Канада". */
   name: string;
-  /** "из Китая" — genitive. */
+  /** Full phrase with preposition: "из Китая", "с Кубы". */
   from: string;
-  /** "в Канаду" — accusative. */
+  /** Full phrase with preposition: "в Канаду", "на Кубу". */
   to: string;
-  /** "в Китае" — prepositional, used by the "where to buy" query. */
+  /** Full phrase with preposition: "в Китае", "на Кубе"; used by the "where to buy" query. */
   loc?: string;
 }
 

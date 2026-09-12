@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const page = await getSupplyPage(country, hs);
   if (!page) return { title: "Страница не найдена" };
   const name = page.product.name[0].toUpperCase() + page.product.name.slice(1);
-  return { title: `${name} в ${page.country.loc ?? page.country.name} — где купить` };
+  return { title: `${name} ${page.country.loc ?? page.country.name} — где купить` };
 }
 
 export default async function Page({ params }: { params: Promise<Params> }) {

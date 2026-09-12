@@ -45,12 +45,10 @@ export function QuerySentence({
         ))}
         <option disabled>другие группы…</option>
       </select>{" "}
-      из{" "}
       <select className="country" aria-label="Откуда" value={corridor.from.code} onChange={() => router.push("/")}>
         <option value={corridor.from.code}>{corridor.from.from}</option>
         <option value="">другие…</option>
       </select>{" "}
-      в{" "}
       <select className="country" aria-label="Куда" value={corridor.to.code} onChange={() => router.push("/")}>
         <option value={corridor.to.code}>{corridor.to.to}</option>
         <option value="">другие…</option>

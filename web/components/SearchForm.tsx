@@ -49,7 +49,7 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
     const corridor = corridors.find((c) => c.from === from && c.to === to);
     if (!corridor) {
       setMiss(
-        `Коридор «${fromName} → ${toName}» ещё не открыт. Страница соберётся из официальных источников по запросу; оставьте email в карточке ниже, и мы сообщим, когда она будет готова.`,
+        `Коридор «${fromName} → ${toName}» ещё не открыт. Страница соберётся из официальных источников по запросу; нажмите «Запросить коридор» в карточке ниже.`,
       );
       return;
     }
@@ -95,7 +95,6 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
             </option>
           ))}
         </datalist>{" "}
-        из{" "}
         <select className="country" aria-label="Откуда" value={from} onChange={(e) => setFrom(e.target.value)}>
           {countries.map((c) => (
             <option key={c.code} value={c.code}>
@@ -103,7 +102,6 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
             </option>
           ))}
         </select>{" "}
-        в{" "}
         <select className="country" aria-label="Куда" value={to} onChange={(e) => setTo(e.target.value)}>
           {countries.map((c) => (
             <option key={c.code} value={c.code}>
