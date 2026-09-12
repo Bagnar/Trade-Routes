@@ -98,10 +98,13 @@ def agreement_text(fr: str, to: str, doc: dict | None) -> str:
     return "; ".join(a["name"] for a in found[:2]) + (" (+)" if len(found) > 2 else "")
 
 
-def compute(fr: str, to: str, hs6: str, facts: list[dict] | None = None, programs: list[dict] | None = None, agreements_doc: dict | None = None) -> dict:
+_UNSET: dict = {}  # sentinel: "load from disk"; an explicit None means "agreements database not loaded"
+
+
+def compute(fr: str, to: str, hs6: str, facts: list[dict] | None = None, programs: list[dict] | None = None, agreements_doc: dict | None = _UNSET) -> dict:
     facts = assemble.load_facts() if facts is None else facts
     programs = sanction_programs() if programs is None else programs
-    agreements_doc = agreements.load() if agreements_doc is None else agreements_doc
+    agreements_doc = agreements.load() if agreements_doc is _UNSET else agreements_doc
     d_score, d_basis, d_short = duty_part(to, hs6)
     o_score, o_basis, o_short, banned = obstacles_part(fr, to, hs6, facts, programs)
     s_score, s_basis, s_short = support_part(fr, hs6, facts)

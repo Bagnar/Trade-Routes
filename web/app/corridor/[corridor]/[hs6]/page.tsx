@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CorridorPage } from "@/components/CorridorPage";
-import type { Mode } from "@/lib/page-content";
 import { getPage, listPages } from "@/lib/pages";
 import { supplyHref } from "@/lib/routes";
 import { findSupplyFor } from "@/lib/supply";
@@ -21,15 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return { title };
 }
 
-export default async function Page({
-  params,
-  searchParams,
-}: {
-  params: Promise<Params>;
-  searchParams: Promise<{ mode?: string }>;
-}) {
+export default async function Page({ params }: { params: Promise<Params> }) {
   const { corridor, hs6 } = await params;
-  const { mode } = await searchParams;
   const page = await getPage(corridor, hs6);
   if (!page) notFound();
 
@@ -46,6 +38,6 @@ export default async function Page({
       }
     : undefined;
 
-  const initialMode: Mode = mode === "parcel" ? "parcel" : "b2b";
-  return <CorridorPage page={page} siblings={siblings} initialMode={initialMode} supplyLink={supplyLink} />;
+  // The shipment mode (?mode=parcel) is read on the client: the page is static HTML (output: "export").
+  return <CorridorPage page={page} siblings={siblings} supplyLink={supplyLink} />;
 }

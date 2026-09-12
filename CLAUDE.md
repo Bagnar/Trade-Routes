@@ -52,6 +52,13 @@
     #   модель вызывается только для изменившихся страниц; лимит вызовов за запуск PIPELINE_MAX_PAGES (40); модель PIPELINE_MODEL
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка
     python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
+    python -m pipeline reference                                              # data/hs6.json из UN Comtrade H6 (сеть: reference-data.yml)
+    python -m pipeline rates --wits CA,CN                                     # data/rates/{ISO2}.json — MFN по HS-6 из WITS/TRAINS (сеть)
+    python -m pipeline agreements                                             # data/agreements.json — РТС в силе из WTO RTA-IS (сеть); --between RU IR
+    python -m pipeline index --from CN --to CA --hs6 610910                   # оценка из пяти частей и «куда ещё» из индексного слоя (без сети)
+    python -m pipeline assemble                                               # факты + ставки + индекс → web/data/pages (daily-check.yml)
+    python -m pipeline requests --sync --apply                                # очередь запросов коридоров из issues → data/requests.json, пустые страницы
+    cd web && NEXT_PUBLIC_BASE_PATH=/Trade-Routes npm run build               # статический сайт в web/out (pages.yml публикует на GitHub Pages)
 
 Шаблон страницы коридора как структура данных — `web/lib/page-content.ts` (`PageContent`); конвейер `assemble` выдаёт ровно эту форму. Шаблон страницы «где купить» — `web/lib/supply-content.ts` (`SupplyContent`), модуль `pipeline/supply.py`, таблицы `supply_regions` и `supply_pages`.
 
@@ -61,4 +68,6 @@
 
 ## Текущий этап
 
-Расширение по `docs/expansion-plan.md` (все страны и товары) поверх этапа 1 из `docs/plan.md`: конвейер на первом коридоре. Сделаны реестр, загрузчик, извлечение с проверкой цитат, валидаторы с тестами, монитор и ежедневный workflow; впереди слой ставок и сборщик страниц из `data/facts`.
+Раздел 1 плана расширения (`docs/expansion-plan.md`) выполнен: страны (1.1), номенклатура HS-6 и поиск (1.2), ставки MFN из WITS (1.3), соглашения ВТО и санкционные программы в индексе (1.4), сборщик (1.5), оценка и «куда ещё» по правилам (1.6), блок экспортного контроля (1.7), страницы «законы и органы» (1.8), очередь запросов через GitHub issues (1.9), черновики реестров KZ/UZ/AE/DE/US/IN/VN/BR/EU (1.10), статический сайт на GitHub Pages (1.11). Следующий шаг — раздел 2 (то, что требует денег: извлечение фактов по всем реестрам, переводы) и раздел 3 (ручная проверка реестров основателем).
+
+Что по-прежнему честно «не собрано»: спрос и логистика в оценке (статистика не подключена), русские тексты HS-6 (нужен официальный файл ТН ВЭД, `HS_RU_SOURCE_URL`), URL страниц в черновых реестрах (пустые до проверки).

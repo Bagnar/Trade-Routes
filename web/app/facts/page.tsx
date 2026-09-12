@@ -4,8 +4,7 @@ import { country } from "@/lib/countries";
 import { BLOCK_LABELS, listFactsFiles } from "@/lib/facts";
 
 export const metadata: Metadata = { title: "Извлечённые факты" };
-// Read data/facts at request time so a fresh daily commit shows up without a rebuild.
-export const dynamic = "force-dynamic";
+// Static export: data/facts is read at build time; the daily Pages workflow rebuilds after each source check.
 
 function ruDate(iso: string): string {
   const d = new Date(iso);

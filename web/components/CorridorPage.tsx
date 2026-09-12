@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Mode, PageContent } from "@/lib/page-content";
 import { DemoBand, SanctionsBand, StatusBand } from "./Bands";
 import { CompareTable } from "./CompareTable";
@@ -21,15 +21,19 @@ import { Summary } from "./Summary";
 export function CorridorPage({
   page,
   siblings,
-  initialMode,
   supplyLink,
 }: {
   page: PageContent;
   siblings: SiblingPage[];
-  initialMode: Mode;
   supplyLink?: SupplyLink;
 }) {
-  const [mode, setModeState] = useState<Mode>(page.corridor.modes.includes(initialMode) ? initialMode : "b2b");
+  const [mode, setModeState] = useState<Mode>("b2b");
+
+  // Static export: the mode comes from the URL (?mode=parcel) after hydration, not from the server.
+  useEffect(() => {
+    const wanted = new URL(window.location.href).searchParams.get("mode");
+    if (wanted === "parcel" && page.corridor.modes.includes("parcel")) setModeState("parcel");
+  }, [page.corridor.modes]);
 
   function setMode(next: Mode) {
     setModeState(next);

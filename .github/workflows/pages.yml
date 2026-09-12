@@ -1,0 +1,60 @@
+name: Publish site
+
+# Free hosting (docs/expansion-plan.md, 1.11): builds the static site (web/out) from the repository data and
+# publishes it to GitHub Pages. Runs on every push of this branch, daily after the source check and the
+# corridor-request queue (both commit before 06:00 UTC), and on demand.
+#
+# One-time setup by the repository owner: Settings -> Pages -> Source: "GitHub Actions". The site is then served
+# at https://<owner>.github.io/<repo>/ ; NEXT_PUBLIC_BASE_PATH below must equal "/<repo>". With a custom domain
+# set NEXT_PUBLIC_BASE_PATH to "" (repository variable SITE_BASE_PATH).
+
+on:
+  push:
+    branches: [claude/blissful-pasteur-jmgvns, main]
+    paths-ignore: ["docs/**", "mockups/**", "*.md"]
+  schedule:
+    - cron: "30 6 * * *"   # daily 06:30 UTC, after daily-check (05:17) and corridor-requests (05:45)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - name: Build static site
+        working-directory: web
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.SITE_BASE_PATH != '' && vars.SITE_BASE_PATH || format('/{0}', github.event.repository.name) }}
+          NEXT_PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          npm run build
+          touch out/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
