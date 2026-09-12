@@ -19,6 +19,7 @@ Next.js 16 + TypeScript (App Router). Структура и стиль — из 
 - `lib/calc.ts` — калькулятор «сколько платить»: выражения из JSON (`mul`, `add`, `div`, `if`, `mode`), без `eval`; ставки приходят из содержимого страницы, не из кода.
 - `app/page.tsx` — стартовая: фраза-запрос, маршрутизация в открытые коридоры, карточки, «как собираются страницы».
 - `app/corridor/[corridor]/[hs6]/page.tsx` — страница коридора; `?mode=parcel` включает режим посылок.
+- `app/facts/page.tsx` — все факты, извлечённые конвейером (`data/facts/*.json` в корне репозитория): утверждение, дословная цитата, ссылка на источник, дата снимка.
 - `app/where-to-buy/page.tsx` и `app/where-to-buy/[country]/[hs]/page.tsx` — слой «Где купить» (`docs/where-to-buy.md`): регионы и кластеры производства, официальные реестры и выставки, что проверить, ссылки на коридоры. Тип содержимого — `lib/supply-content.ts`, хранилище — `lib/supply.ts` (фикстуры в `data/supply/`, все `isDemo: true`). На странице коридора в боковой панели появляется ссылка «Где производят», если для страны вывоза и группы есть такая страница.
 
 Компоненты (`components/`): `QuerySentence`, `Bands` (StatusBand, DemoBand, SanctionsBand), `SourceStamp`, `FactRow`, `Section`, `Summary`, `RatingCard` (+ `ProsCons`), `CompareTable`, `CostCalculator`, `DocumentChecklist`, `SourcesTable`, `Rail` (оглавление, легенда, `FollowPanel`, `ReportError`), `SiteHeader`/`SiteFooter`, `SearchForm`, `CorridorPage`, `SupplyPage`, `BuySearch`.
