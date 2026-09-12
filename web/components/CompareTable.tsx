@@ -19,6 +19,11 @@ export function CompareTable({ compare }: { compare: PageContent["compare"] }) {
             </tr>
           </thead>
           <tbody>
+            {compare.rows.length === 0 && (
+              <tr>
+                <td colSpan={6}>Направления появятся, когда индексный слой посчитает оценку для этой группы.</td>
+              </tr>
+            )}
             {compare.rows.map((row) => (
               <tr key={row.to} className={row.here ? "here" : undefined}>
                 <td>{row.to}</td>

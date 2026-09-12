@@ -228,8 +228,10 @@ export interface PageContent {
   rail: {
     disclaimer: string;
     reverseLabel?: string;
-    followSample?: string;
+    followSample?: string | null;
   };
+  /** Marker written by scripts/scaffold_demo_pages.py; absent on hand-written pages. */
+  _generated?: string;
 }
 
 export interface PageMeta {

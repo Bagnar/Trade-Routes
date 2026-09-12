@@ -172,7 +172,7 @@ export function Rail({
           <p>{supplyLink.note}</p>
         </div>
       )}
-      {!hideFollow && <FollowPanel sample={rail.followSample} />}
+      {!hideFollow && <FollowPanel sample={rail.followSample ?? undefined} />}
       <ReportError />
       <div className="rail-block">
         <p style={{ marginTop: 0 }}>{rail.disclaimer}</p>

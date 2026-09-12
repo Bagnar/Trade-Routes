@@ -47,6 +47,7 @@
     python -m venv .venv && . .venv/bin/activate && pip install -e ".[dev]"   # конвейер
     python -m pipeline fetch --corridor cn-ca --hs6 610910                     # пока отвечает «не реализовано», код 2
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», тоже заглушка
+    python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
 
 Шаблон страницы коридора как структура данных — `web/lib/page-content.ts` (`PageContent`); конвейер `assemble` выдаёт ровно эту форму. Шаблон страницы «где купить» — `web/lib/supply-content.ts` (`SupplyContent`), модуль `pipeline/supply.py`, таблицы `supply_regions` и `supply_pages`.
 

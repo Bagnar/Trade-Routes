@@ -44,6 +44,8 @@ export interface SupplyContent {
   corridors: { id: string; number: number; title: string; lead: string; links: LinkRow[] };
   sources: { id: string; number: number; title: string; lead: string; rows: SourceRow[] };
   rail: { disclaimer: string };
+  /** Marker written by scripts/scaffold_demo_pages.py; absent on hand-written pages. */
+  _generated?: string;
 }
 
 export interface SupplyMeta {

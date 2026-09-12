@@ -20,6 +20,9 @@ export function CostCalculator({ calc, mode }: { calc: Calculator; mode: Mode })
     <>
       <SectionHeading id={calc.id} number={calc.number} title={calc.title} />
       <p className="lead">{calc.lead}</p>
+      {calc.lines.length === 0 ? (
+        <p className="hint">{calc.note}</p>
+      ) : (
       <div className="calc">
         {calc.inputs
           .filter((input) => visibleInMode(input.modes, mode))
@@ -93,6 +96,7 @@ export function CostCalculator({ calc, mode }: { calc: Calculator; mode: Mode })
           {calc.note}
         </p>
       </div>
+      )}
     </>
   );
 }

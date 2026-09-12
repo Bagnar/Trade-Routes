@@ -3,6 +3,7 @@ import { visibleInMode } from "@/lib/text";
 
 /** Five-part score card. A part without a basis shows no score (docs/concept.md, section 5). */
 export function RatingCard({ rating }: { rating: PageContent["rating"] }) {
+  const noBasis = rating.parts.every((p) => p.score === null);
   return (
     <>
       <h2 id={rating.id}>{rating.title}</h2>
@@ -10,7 +11,7 @@ export function RatingCard({ rating }: { rating: PageContent["rating"] }) {
       <div className="rating">
         <div className="rating-head">
           <div className="rating-total">
-            <span className="big">{rating.total}</span>
+            <span className="big">{noBasis ? "—" : rating.total}</span>
             <span className="of">из {rating.of}</span>
           </div>
           <div className="rating-verdict">
