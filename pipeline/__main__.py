@@ -6,7 +6,7 @@ import sys
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor", "supply"):
+    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor", "supply", "reference"):
         p = sub.add_parser(name)
         p.add_argument("--corridor")
         p.add_argument("--country")
@@ -16,7 +16,7 @@ def main(argv=None):
         p.add_argument("--topic", help="extract: topic hint passed to the model")
         p.add_argument("--registry", action="store_true", help="extract: every URL listed in data/sources.yaml")
         p.add_argument("--force", action="store_true", help="extract: re-run the model even if the page is unchanged")
-    args = parser.parse_args(argv)
+    args, _unknown = parser.parse_known_args(argv)
 
     if args.command == "fetch":
         from . import fetch
@@ -37,6 +37,14 @@ def main(argv=None):
             parser.error("extract needs --url or --registry")
         print(extract.extract_url(args.url, args.topic, force=args.force) or "unchanged since last extraction — no model call")
         return 0
+    if args.command == "rates":
+        from . import rates
+
+        return rates.main(argv if argv is not None else __import__("sys").argv[2:])
+    if args.command == "reference":
+        from . import reference
+
+        return reference.main()
     if args.command == "validate":
         from . import validate
 

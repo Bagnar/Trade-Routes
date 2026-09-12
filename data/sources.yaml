@@ -369,6 +369,21 @@ international:
     priority: 1
     status: to_verify
     urls: []
+  - id: wb-wits
+    agency: World Bank WITS (World Integrated Trade Solution) — UNCTAD TRAINS tariff data, MFN applied rates by HS-6
+    domain: wits.worldbank.org
+    topics: [tariff_rates, trade_stats]
+    priority: 1
+    status: to_verify
+    urls: []
+  - id: un-comtrade-api
+    agency: UN Comtrade API — reference lists (HS nomenclature) and data files
+    domain: comtradeapi.un.org
+    topics: [nomenclature, trade_stats]
+    priority: 1
+    status: to_verify
+    urls:
+      - { url: "https://comtradeapi.un.org/files/v1/app/reference/H6.json", topic: nomenclature }
 
 logistics_indices:
   - id: fbx
