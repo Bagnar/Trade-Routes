@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { PageContent } from "@/lib/page-content";
 
@@ -139,12 +140,39 @@ export function ReportError() {
   );
 }
 
-export function Rail({ toc, rail }: { toc: TocItem[]; rail: PageContent["rail"] }) {
+export interface SupplyLink {
+  href: string;
+  label: string;
+  note: string;
+}
+
+export function Rail({
+  toc,
+  rail,
+  hideFollow,
+  supplyLink,
+}: {
+  toc: TocItem[];
+  rail: PageContent["rail"];
+  /** The "where to buy" page has no per-corridor subscription yet. */
+  hideFollow?: boolean;
+  /** Link to the "where to buy" page for the export country and product group, when one exists. */
+  supplyLink?: SupplyLink;
+}) {
   return (
     <aside className="rail">
       <Toc items={toc} />
       <Legend />
-      <FollowPanel sample={rail.followSample} />
+      {supplyLink && (
+        <div className="rail-block">
+          <h4>Где производят</h4>
+          <p style={{ marginTop: 0 }}>
+            <Link href={supplyLink.href}>{supplyLink.label}</Link>
+          </p>
+          <p>{supplyLink.note}</p>
+        </div>
+      )}
+      {!hideFollow && <FollowPanel sample={rail.followSample} />}
       <ReportError />
       <div className="rail-block">
         <p style={{ marginTop: 0 }}>{rail.disclaimer}</p>

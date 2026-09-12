@@ -181,6 +181,8 @@ export interface CountryRef {
   from: string;
   /** "в Канаду" — accusative. */
   to: string;
+  /** "в Китае" — prepositional, used by the "where to buy" query. */
+  loc?: string;
 }
 
 export interface PageContent {

@@ -153,6 +153,47 @@ CREATE TABLE programs (
   is_demo       BOOLEAN NOT NULL DEFAULT FALSE
 );
 
+-- "Where to buy" layer (docs/where-to-buy.md): regions and clusters where a product group is made, and official
+-- ways to find suppliers. Regions and official registries only — never individual companies.
+CREATE TYPE supply_kind AS ENUM ('cluster', 'industrial_zone', 'production_stat', 'registry', 'trade_fair', 'agency');
+
+CREATE TABLE supply_regions (
+  id            BIGSERIAL PRIMARY KEY,
+  country       CHAR(2) NOT NULL REFERENCES countries(code),
+  region_code   TEXT,                                -- ISO 3166-2 where available, e.g. 'CN-SD', 'TR-16'
+  region_name   JSONB NOT NULL,                      -- {"ru": "Шаньдун", "en": "Shandong", ...}
+  hs_scope      TEXT[] NOT NULL,                     -- HS prefixes covered: '{8432,8433}' or '{6109}'
+  kind          supply_kind NOT NULL,
+  title         JSONB NOT NULL,                      -- what is made / what the registry or fair is
+  summary       JSONB,
+  indicator     TEXT,                                -- 'output_share' | 'enterprises' | 'export_value' ...
+  value         NUMERIC,                             -- from statistics tables only; NULL = not loaded
+  unit          TEXT,
+  period        TEXT,
+  quote         TEXT NOT NULL CHECK (length(quote) > 0),
+  quote_lang    TEXT NOT NULL,
+  source_url_id BIGINT NOT NULL REFERENCES source_urls(id),
+  snapshot_id   BIGINT NOT NULL REFERENCES snapshots(id),
+  status        fact_status NOT NULL DEFAULT 'verified',
+  verified_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  is_demo       BOOLEAN NOT NULL DEFAULT FALSE
+);
+CREATE INDEX ON supply_regions (country, kind);
+
+-- Cached "where to buy" pages, one per (country, HS prefix, language); mirrors `pages`.
+CREATE TABLE supply_pages (
+  id            BIGSERIAL PRIMARY KEY,
+  country       CHAR(2) NOT NULL REFERENCES countries(code),
+  hs            TEXT NOT NULL,                       -- HS-4 or HS-6 prefix
+  lang          TEXT NOT NULL,
+  content       JSONB NOT NULL,
+  sources_total INT NOT NULL DEFAULT 0,
+  sources_missing INT NOT NULL DEFAULT 0,
+  status        page_status NOT NULL DEFAULT 'generating',
+  generated_at  TIMESTAMPTZ,
+  UNIQUE (country, hs, lang)
+);
+
 -- Demand signal (estimate only).
 CREATE TABLE trade_stats (
   id          BIGSERIAL PRIMARY KEY,

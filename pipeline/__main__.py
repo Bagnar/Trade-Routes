@@ -6,14 +6,15 @@ import sys
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor"):
+    for name in ("fetch", "extract", "rates", "validate", "assemble", "index", "monitor", "supply"):
         p = sub.add_parser(name)
         p.add_argument("--corridor")
         p.add_argument("--country")
         p.add_argument("--hs6")
         p.add_argument("--lang", default="ru")
     args = parser.parse_args(argv)
-    print(f"[pipeline] '{args.command}' is not implemented yet — see docs/plan.md, stage 1.", file=sys.stderr)
+    stage = "stage 1" if args.command != "supply" else "stages 1–2 (docs/where-to-buy.md)"
+    print(f"[pipeline] '{args.command}' is not implemented yet — see docs/plan.md, {stage}.", file=sys.stderr)
     return 2
 
 

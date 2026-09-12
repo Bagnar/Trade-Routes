@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { CorridorPage } from "@/components/CorridorPage";
 import type { Mode } from "@/lib/page-content";
 import { getPage, listPages } from "@/lib/pages";
+import { supplyHref } from "@/lib/routes";
+import { findSupplyFor } from "@/lib/supply";
 
 type Params = { corridor: string; hs6: string };
 
@@ -35,6 +37,15 @@ export default async function Page({
     .filter((p) => p.corridorId === corridor && p.lang === page.lang)
     .map((p) => ({ hs6: p.hs6, name: p.product.name, hsLabel: p.product.hsLabel }));
 
+  const supply = await findSupplyFor(page.corridor.from.code, hs6, page.lang);
+  const supplyLink = supply
+    ? {
+        href: supplyHref(supply.country.code, supply.hs),
+        label: `Где купить ${supply.product.name} в ${supply.country.loc ?? supply.country.name}`,
+        note: `Регионы и кластеры производства (${supply.regionCount}), официальные реестры и выставки.`,
+      }
+    : undefined;
+
   const initialMode: Mode = mode === "parcel" ? "parcel" : "b2b";
-  return <CorridorPage page={page} siblings={siblings} initialMode={initialMode} />;
+  return <CorridorPage page={page} siblings={siblings} initialMode={initialMode} supplyLink={supplyLink} />;
 }

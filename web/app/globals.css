@@ -241,3 +241,11 @@ footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap
   .search{padding:16px} .search .query{font-size:20px} .query input.product{font-size:19px}
   .section{padding-left:18px; padding-right:18px}
 }
+
+/* ---------- additions beyond the mockups: "where to buy" layer ---------- */
+.regions td:first-child{white-space:normal}
+.regions .code{display:block; font-family:var(--sans); font-size:12px; color:var(--muted)}
+.regions .stamp{min-width:140px}
+.links li{display:block; padding:8px 0}
+.links .dim{color:var(--muted)}
+.section .lead{font-family:var(--sans); font-size:15px; margin:0 0 14px}

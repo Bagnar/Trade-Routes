@@ -7,7 +7,7 @@ import { CompareTable } from "./CompareTable";
 import { CostCalculator } from "./CostCalculator";
 import { DocumentChecklist } from "./DocumentChecklist";
 import { QuerySentence, type SiblingPage } from "./QuerySentence";
-import { Rail, type TocItem } from "./Rail";
+import { Rail, type SupplyLink, type TocItem } from "./Rail";
 import { ProsCons, RatingCard } from "./RatingCard";
 import { Section } from "./Section";
 import { SiteFooter, SiteHeader } from "./SiteHeader";
@@ -22,10 +22,12 @@ export function CorridorPage({
   page,
   siblings,
   initialMode,
+  supplyLink,
 }: {
   page: PageContent;
   siblings: SiblingPage[];
   initialMode: Mode;
+  supplyLink?: SupplyLink;
 }) {
   const [mode, setModeState] = useState<Mode>(page.corridor.modes.includes(initialMode) ? initialMode : "b2b");
 
@@ -79,7 +81,7 @@ export function CorridorPage({
           <DocumentChecklist documents={page.documents} mode={mode} />
           <SourcesTable sources={page.sources} />
         </main>
-        <Rail toc={toc} rail={page.rail} />
+        <Rail toc={toc} rail={page.rail} supplyLink={supplyLink} />
       </div>
 
       <SiteFooter sanctionsPolicy={Boolean(page.sanctions)} />

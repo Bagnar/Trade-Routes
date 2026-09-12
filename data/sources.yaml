@@ -118,6 +118,27 @@ countries:
         priority: 2
         status: to_verify
         urls: []
+      - id: cn-nbs
+        agency: National Bureau of Statistics — regional industrial output
+        domain: stats.gov.cn
+        topics: [regional_output, supply_regions]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: cn-miit
+        agency: Ministry of Industry and Information Technology — industrial clusters and zones
+        domain: miit.gov.cn
+        topics: [industrial_clusters, supply_regions]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: cn-cantonfair
+        agency: China Import and Export Fair (Canton Fair) — organised by China Foreign Trade Centre under MOFCOM
+        domain: cantonfair.org.cn
+        topics: [trade_fairs, supplier_directory]
+        priority: 2
+        status: to_verify
+        urls: []
 
   RU:
     name: { ru: Россия, en: Russia }
@@ -179,6 +200,13 @@ countries:
         priority: 2
         status: to_verify
         urls: []
+      - id: ru-rosstat
+        agency: Federal State Statistics Service (Rosstat) — regional output
+        domain: rosstat.gov.ru
+        topics: [regional_output, supply_regions]
+        priority: 1
+        status: to_verify
+        urls: []
       - id: ru-tpprf
         agency: ТПП РФ — сертификаты происхождения
         domain: tpprf.ru
@@ -234,6 +262,47 @@ countries:
         topics: [standards, conformity]
         priority: 2
         status: unstable
+        urls: []
+
+  # Турция — только для слоя «Где купить» (коридоров с Турцией в MVP нет). Записи не проверены.
+  TR:
+    name: { ru: Турция, en: Türkiye, tr: Türkiye }
+    languages: [tr, en]
+    sources:
+      - id: tr-ticaret
+        agency: Ministry of Trade (Ticaret Bakanlığı) — export promotion, exporter regions
+        domain: ticaret.gov.tr
+        topics: [export_procedures, supply_regions, supplier_directory]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: tr-tuik
+        agency: Turkish Statistical Institute (TÜİK) — regional output and exports by province
+        domain: tuik.gov.tr
+        topics: [trade_stats, regional_output, supply_regions]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: tr-sanayi
+        agency: Ministry of Industry and Technology — organised industrial zones (OSB) registry, clusters
+        domain: sanayi.gov.tr
+        topics: [industrial_zones, industrial_clusters, supply_regions]
+        priority: 1
+        status: to_verify
+        urls: []
+      - id: tr-invest
+        agency: Investment Office of the Presidency — sector and region profiles
+        domain: invest.gov.tr
+        topics: [supply_regions]
+        priority: 2
+        status: to_verify
+        urls: []
+      - id: tr-tim
+        agency: Turkish Exporters Assembly (TİM) — statutory body under Law 5910; confirm official status before use
+        domain: tim.org.tr
+        topics: [supplier_directory, trade_stats]
+        priority: 3
+        status: to_verify
         urls: []
 
 sanctions_authorities:

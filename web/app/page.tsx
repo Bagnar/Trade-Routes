@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { DemoBand } from "@/components/Bands";
+import { BuySearch, type BuyOption } from "@/components/BuySearch";
 import { RequestCorridorCard, SearchForm, type OpenCorridor } from "@/components/SearchForm";
 import { SiteFooter, SiteHeader } from "@/components/SiteHeader";
 import { listCorridors } from "@/lib/corridors";
 import { COUNTRIES } from "@/lib/countries";
 import { getPage, listPages } from "@/lib/pages";
-import { pageHref } from "@/lib/routes";
+import { pageHref, supplyHref } from "@/lib/routes";
+import { listSupplyPages } from "@/lib/supply";
 import type { VerdictItem } from "@/lib/page-content";
 
 /** Picks the three lines the corridor card shows: one benefit, one prohibition/sanction, one obstacle. */
@@ -17,7 +19,16 @@ function cardLines(pros: VerdictItem[], cons: VerdictItem[]): VerdictItem[] {
 }
 
 export default async function Home() {
-  const [corridors, pages] = await Promise.all([listCorridors(), listPages()]);
+  const [corridors, pages, supplyPages] = await Promise.all([listCorridors(), listPages(), listSupplyPages()]);
+  const buyOptions: BuyOption[] = supplyPages
+    .filter((p) => p.lang === "ru")
+    .map((p) => ({
+      country: p.country.code,
+      hs: p.hs,
+      name: p.product.name,
+      hsLabel: p.product.hsLabel,
+      href: supplyHref(p.country.code, p.hs),
+    }));
   const ruPages = pages.filter((p) => p.lang === "ru");
 
   const open: OpenCorridor[] = corridors
@@ -98,6 +109,35 @@ export default async function Home() {
           )}
           <RequestCorridorCard />
         </div>
+      </section>
+
+      <section className="section">
+        <h2>Где купить: регионы производства</h2>
+        <p className="lead">
+          Второй вход: в каких провинциях и кластерах страны производят товар и через какие официальные реестры и
+          выставки искать поставщика. Только регионы и государственные источники, без списков компаний.
+        </p>
+        <BuySearch countries={Object.values(COUNTRIES)} options={buyOptions} />
+        <div className="cards" style={{ marginTop: 18 }}>
+          {supplyPages
+            .filter((p) => p.lang === "ru")
+            .map((p) => (
+              <article className="card" key={`${p.country.code}-${p.hs}`}>
+                <p className="route">
+                  {p.product.name[0].toUpperCase() + p.product.name.slice(1)} в {p.country.loc ?? p.country.name}
+                </p>
+                <p className="prod">
+                  {p.product.hsLabel}; регионов: {p.regionCount} — {p.topRegions.join(", ")}
+                </p>
+                <p className="open">
+                  <Link href={supplyHref(p.country.code, p.hs)}>Открыть страницу</Link>
+                </p>
+              </article>
+            ))}
+        </div>
+        <p className="who">
+          Все страницы «где купить» — <Link href="/where-to-buy">отдельным списком</Link>.
+        </p>
       </section>
 
       <section className="section">
