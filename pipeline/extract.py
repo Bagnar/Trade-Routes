@@ -8,7 +8,9 @@ Output: data/facts/<source-id>__<sha1(url)[:8]>.json
   {"url", "source_id", "fetched_at", "content_hash", "topic", "facts": [...], "dropped": n}
   fact = {"block", "country", "hs_scope", "statement": {"ru", "en"}, "quote", "quote_lang", "has_number"}
 
-Requires ANTHROPIC_API_KEY (or an `ant auth login` profile). Model: claude-opus-5 unless PIPELINE_MODEL is set.
+Requires ANTHROPIC_API_KEY (or an `ant auth login` profile). Model: claude-opus-5 unless PIPELINE_MODEL is set
+(claude-sonnet-5 is the cheaper option). Cost guards: unchanged pages are never re-sent to the model; at most
+PIPELINE_MAX_PAGES (default 40) model calls per run; a credit/billing error stops the run.
 """
 from __future__ import annotations
 
@@ -115,15 +117,33 @@ def accept_facts(candidates: list[dict], page_text: str) -> tuple[list[dict], in
     return kept, dropped
 
 
-def extract_url(url: str, topic: str | None = None, client=None, out_dir: Path = FACTS_DIR) -> Path:
+def facts_path(source_id: str, url: str, out_dir: Path = FACTS_DIR) -> Path:
+    return out_dir / f"{source_id}__{hashlib.sha1(url.encode('utf8')).hexdigest()[:8]}.json"
+
+
+def unchanged_since_last_extract(path: Path, content_hash: str) -> bool:
+    """True when a facts file for this URL exists and was built from a page with the same content hash."""
+    if not path.exists():
+        return False
+    try:
+        return json.loads(path.read_text(encoding="utf8")).get("content_hash") == content_hash
+    except (OSError, json.JSONDecodeError):
+        return False
+
+
+def extract_url(url: str, topic: str | None = None, client=None, out_dir: Path = FACTS_DIR, force: bool = False) -> Path | None:
+    """Fetches the page and extracts facts. Returns None when the page has not changed since the last extraction
+    (no model call, no cost) — the daily job therefore pays only for pages that actually changed."""
     source = registry.find_source(url)
     if source is None:
         raise fetch.NotWhitelisted(url)
     snapshot = fetch.fetch_url(url)
+    out = facts_path(source.id, url, out_dir)
+    if not force and unchanged_since_last_extract(out, snapshot.content_hash):
+        return None
     candidates = propose_facts(snapshot.text, url, topic, client)
     facts, dropped = accept_facts(candidates, snapshot.text)
     out_dir.mkdir(parents=True, exist_ok=True)
-    out = out_dir / f"{source.id}__{hashlib.sha1(url.encode('utf8')).hexdigest()[:8]}.json"
     out.write_text(
         json.dumps(
             {
@@ -144,19 +164,39 @@ def extract_url(url: str, topic: str | None = None, client=None, out_dir: Path =
     return out
 
 
-def extract_registry(country: str | None = None, out_dir: Path = FACTS_DIR) -> list[Path]:
-    """Extracts from every URL listed under `urls` in data/sources.yaml (optionally one country)."""
-    written = []
+MAX_PAGES = int(os.environ.get("PIPELINE_MAX_PAGES", "40"))
+
+
+def extract_registry(country: str | None = None, out_dir: Path = FACTS_DIR, max_pages: int = MAX_PAGES, force: bool = False) -> list[Path]:
+    """Extracts from every URL listed under `urls` in data/sources.yaml (optionally one country).
+
+    Cost guard: unchanged pages are skipped without a model call, and at most `max_pages` model calls happen per
+    run (PIPELINE_MAX_PAGES, default 40). Stops on a billing/credit error instead of retrying every URL."""
+    written: list[Path] = []
     client = _client()
+    calls = 0
     for source in registry.load_sources():
         if country and source.country != country.upper():
             continue
         for url in source.urls:
             if not url:
                 continue
+            if calls >= max_pages:
+                print(f"stop: reached PIPELINE_MAX_PAGES={max_pages}; remaining URLs wait for the next run")
+                return written
             try:
-                written.append(extract_url(url, topic=",".join(source.topics), client=client, out_dir=out_dir))
-                print(f"ok   {source.id}: {url}")
+                result = extract_url(url, topic=",".join(source.topics), client=client, out_dir=out_dir, force=force)
             except Exception as exc:  # keep going: an unreachable source is a status, not a stop
-                print(f"skip {source.id}: {url} ({exc.__class__.__name__}: {exc})")
+                message = str(exc)
+                print(f"skip {source.id}: {url} ({exc.__class__.__name__}: {message[:160]})")
+                if "credit balance" in message or "billing" in message.lower():
+                    print("stop: the API account has no credits — nothing else will succeed this run")
+                    return written
+                continue
+            if result is None:
+                print(f"same {source.id}: {url} (unchanged since last extraction, no model call)")
+                continue
+            calls += 1
+            written.append(result)
+            print(f"ok   {source.id}: {url}")
     return written

@@ -49,6 +49,7 @@
     python -m pipeline monitor                                                # перечитать источники, проверить цитаты (без LLM)
     python -m pipeline validate                                               # валидаторы; тесты: python -m pytest pipeline/tests
     python -m pipeline extract --registry                                     # факты с цитатами из urls реестра, нужен ANTHROPIC_API_KEY
+    #   модель вызывается только для изменившихся страниц; лимит вызовов за запуск PIPELINE_MAX_PAGES (40); модель PIPELINE_MODEL
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка
     python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
 

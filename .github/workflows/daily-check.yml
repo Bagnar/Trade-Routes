@@ -39,6 +39,8 @@ jobs:
         if: ${{ env.ANTHROPIC_API_KEY != '' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PIPELINE_MODEL: ${{ vars.PIPELINE_MODEL || 'claude-opus-5' }}   # repository variable; claude-sonnet-5 is cheaper
+          PIPELINE_MAX_PAGES: ${{ vars.PIPELINE_MAX_PAGES || '40' }}      # hard cap on model calls per run
         run: python -m pipeline extract --registry
 
       - name: Validate pages

@@ -15,6 +15,7 @@ def main(argv=None):
         p.add_argument("--url", help="fetch/extract: one page from the whitelist")
         p.add_argument("--topic", help="extract: topic hint passed to the model")
         p.add_argument("--registry", action="store_true", help="extract: every URL listed in data/sources.yaml")
+        p.add_argument("--force", action="store_true", help="extract: re-run the model even if the page is unchanged")
     args = parser.parse_args(argv)
 
     if args.command == "fetch":
@@ -29,12 +30,12 @@ def main(argv=None):
         from . import extract
 
         if args.registry:
-            paths = extract.extract_registry(args.country)
+            paths = extract.extract_registry(args.country, force=args.force)
             print(f"{len(paths)} file(s) written to data/facts")
             return 0
         if not args.url:
             parser.error("extract needs --url or --registry")
-        print(extract.extract_url(args.url, args.topic))
+        print(extract.extract_url(args.url, args.topic, force=args.force) or "unchanged since last extraction — no model call")
         return 0
     if args.command == "validate":
         from . import validate
