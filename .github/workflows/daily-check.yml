@@ -1,0 +1,60 @@
+name: Daily source check
+
+# The site's "AI re-check" (docs/concept.md, section 6.4). Runs from GitHub, where official sites are reachable:
+#  1. monitor  — re-reads every source behind a published fact and checks the quote is still there (no LLM);
+#  2. extract  — optional: if ANTHROPIC_API_KEY is set as a repository secret, extracts new facts from every URL
+#                listed under `urls` in data/sources.yaml into data/facts (each fact carries a verbatim quote);
+#  3. validate — whitelist, quotes, numbers, sanctions wording;
+#  4. commits stamp changes, the report and new facts back to the branch that ran the workflow.
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # daily 05:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e ".[dev]"
+
+      - name: Re-check quotes behind published facts
+        id: monitor
+        run: |
+          set +e
+          python -m pipeline monitor
+          code=$?
+          set -e
+          echo "exit=$code" >> "$GITHUB_OUTPUT"
+          test "$code" -eq 0 -o "$code" -eq 3
+
+      - name: Extract facts from registry URLs (only when an API key is configured)
+        if: ${{ env.ANTHROPIC_API_KEY != '' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m pipeline extract --registry
+
+      - name: Validate pages
+        run: python -m pipeline validate
+
+      - name: Tests
+        run: python -m pytest -q pipeline/tests
+
+      - name: Commit changes
+        run: |
+          git config user.name "trade-rules-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A web/data data/monitor-report.md data/facts || true
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "Daily source check: $(date -u +%F)"
+            git push
+          fi

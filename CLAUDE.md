@@ -45,12 +45,19 @@
     cd web && npm run typecheck && npm run lint && npm run build   # то же гоняет CI (.github/workflows/ci.yml)
 
     python -m venv .venv && . .venv/bin/activate && pip install -e ".[dev]"   # конвейер
-    python -m pipeline fetch --corridor cn-ca --hs6 610910                     # пока отвечает «не реализовано», код 2
-    python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», тоже заглушка
+    python -m pipeline fetch --url <url из белого списка>                      # снимок в ./snapshots (хеш, дата)
+    python -m pipeline monitor                                                # перечитать источники, проверить цитаты (без LLM)
+    python -m pipeline validate                                               # валидаторы; тесты: python -m pytest pipeline/tests
+    python -m pipeline extract --registry                                     # факты с цитатами из urls реестра, нужен ANTHROPIC_API_KEY
+    python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка
     python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
 
 Шаблон страницы коридора как структура данных — `web/lib/page-content.ts` (`PageContent`); конвейер `assemble` выдаёт ровно эту форму. Шаблон страницы «где купить» — `web/lib/supply-content.ts` (`SupplyContent`), модуль `pipeline/supply.py`, таблицы `supply_regions` и `supply_pages`.
 
+## Сеть
+
+Из облачной сессии Claude Code официальные сайты (gc.ca, canada.ca, gov.cn, gov.ru, eaeunion.org, treasury.gov и др.) закрыты сетевой политикой: загрузчик и WebFetch получают 403 от egress-прокси. Не обходить. Реальные снимки и извлечение фактов запускаются из GitHub Actions (`daily-check.yml`) или с компьютера основателя.
+
 ## Текущий этап
 
-Этап 0 из `docs/plan.md`: реестр источников, товарные группы, схема базы, каркас конвейера и веба.
+Этап 1 из `docs/plan.md`: конвейер на первом коридоре. Сделаны реестр, загрузчик, извлечение с проверкой цитат, валидаторы с тестами, монитор и ежедневный workflow; впереди слой ставок и сборщик страниц из `data/facts`.

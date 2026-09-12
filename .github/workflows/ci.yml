@@ -27,15 +27,16 @@ jobs:
           NEXT_TELEMETRY_DISABLED: "1"
 
   pipeline:
-    name: pipeline (syntax, entry point)
+    name: pipeline (tests, validators)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: python -m compileall -q pipeline
-      - run: python -m pipeline fetch --corridor cn-ca --hs6 610910 || test $? -eq 2
+      - run: pip install -e ".[dev]"
+      - run: python -m pytest -q pipeline/tests
+      - run: python -m pipeline validate
 
   schema:
     name: db/schema.sql applies on PostgreSQL 16

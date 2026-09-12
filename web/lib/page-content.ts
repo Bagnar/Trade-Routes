@@ -42,6 +42,12 @@ export interface Fact {
   key?: string;
   text: ModeText;
   stamp: Stamp;
+  /** Verbatim fragment of the source page the statement rests on. Required for status "ok"; checked daily by the monitor. */
+  quote?: string;
+  /** Language of the quote ("en", "zh", "ru", "fa"). */
+  quoteLang?: string;
+  /** Reference into the rates table when the statement carries a number (duty, VAT): "CA:610910:import_mfn". */
+  rate_ref?: string;
   /** Red dot before the text (prohibition). */
   ban?: boolean;
   /** Show only in these modes; absent = both. */

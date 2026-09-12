@@ -23,4 +23,15 @@
 | `monitor.py` | перечитывание источников, сравнение снимков, пересборка, уведомления | без изменений — без писем |
 | `supply.py` | слой «Где купить»: регионы и кластеры, официальные реестры и выставки, показатели из статистики; страницы `supply_pages` | только регионы и официальные реестры, никаких компаний; числа только из статистических таблиц |
 
-Реализация — этап 1 плана. Файлы ниже содержат только сигнатуры и описание.
+Реализовано (этап 1, первая часть): `registry.py`, `fetch.py`, `extract.py`, `validate.py` (с тестами в `tests/`), `monitor.py`.
+Заглушки: `rates.py`, `assemble.py`, `index.py`, `supply.py`.
+
+    python -m pipeline fetch    --url https://www.cbsa-asfc.gc.ca/publications/dm-md/d9/d9-1-6-eng.html
+    python -m pipeline extract  --url <url из белого списка> --topic forced_labour   # нужен ANTHROPIC_API_KEY
+    python -m pipeline extract  --registry [--country CA]                             # все urls из data/sources.yaml → data/facts
+    python -m pipeline validate                                                        # белый список, цитаты, числа, формулировки
+    python -m pipeline monitor                                                         # перечитать источники, проверить цитаты, data/monitor-report.md
+    python -m pytest pipeline/tests
+
+Ежедневный запуск — `.github/workflows/daily-check.yml` (monitor → extract при наличии ключа → validate → коммит).
+Из-под GitHub Actions официальные сайты доступны; из облачной сессии Claude Code они закрыты сетевой политикой.

@@ -12,7 +12,39 @@ def main(argv=None):
         p.add_argument("--country")
         p.add_argument("--hs6")
         p.add_argument("--lang", default="ru")
+        p.add_argument("--url", help="fetch/extract: one page from the whitelist")
+        p.add_argument("--topic", help="extract: topic hint passed to the model")
+        p.add_argument("--registry", action="store_true", help="extract: every URL listed in data/sources.yaml")
     args = parser.parse_args(argv)
+
+    if args.command == "fetch":
+        from . import fetch
+
+        if not args.url:
+            parser.error("fetch needs --url")
+        snap = fetch.fetch_url(args.url)
+        print(f"{snap.http_status} {snap.url} hash={snap.content_hash[:12]} saved={snap.path}")
+        return 0
+    if args.command == "extract":
+        from . import extract
+
+        if args.registry:
+            paths = extract.extract_registry(args.country)
+            print(f"{len(paths)} file(s) written to data/facts")
+            return 0
+        if not args.url:
+            parser.error("extract needs --url or --registry")
+        print(extract.extract_url(args.url, args.topic))
+        return 0
+    if args.command == "validate":
+        from . import validate
+
+        return validate.main()
+    if args.command == "monitor":
+        from . import monitor
+
+        return monitor.main()
+
     stage = "stage 1" if args.command != "supply" else "stages 1–2 (docs/where-to-buy.md)"
     print(f"[pipeline] '{args.command}' is not implemented yet — see docs/plan.md, {stage}.", file=sys.stderr)
     return 2
