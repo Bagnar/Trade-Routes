@@ -584,7 +584,7 @@ international:
     priority: 1
     status: to_verify
     urls:
-      - { url: "https://comtradeapi.un.org/files/v1/app/reference/H6.json", topic: nomenclature }
+      - { url: "https://comtradeapi.un.org/files/v1/app/reference/H6.json", topic: nomenclature, extract: false }   # data file for pipeline/reference.py, not a page for the extractor
 
 logistics_indices:
   - id: fbx

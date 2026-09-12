@@ -43,7 +43,8 @@ def load_sources(path: Path = SOURCES_FILE) -> list[Source]:
                 priority=int(entry.get("priority", 2)),
                 status=entry.get("status", "to_verify"),
                 path_prefix=entry.get("path_prefix"),
-                urls=tuple(u if isinstance(u, str) else u.get("url", "") for u in entry.get("urls", []) or []),
+                # `extract: false` marks machine-readable data files read by dedicated loaders, not by the extractor
+                urls=tuple(u if isinstance(u, str) else u.get("url", "") for u in entry.get("urls", []) or [] if isinstance(u, str) or u.get("extract", True)),
             )
         )
 

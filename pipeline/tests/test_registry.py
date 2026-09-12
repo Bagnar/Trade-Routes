@@ -25,3 +25,9 @@ def test_registry_loads_all_sections():
     sources = registry.load_sources()
     ids = {s.id for s in sources}
     assert {"ca-cbsa", "cn-mofcom", "ru-fts", "ir-irica", "sanc-us-ofac", "un-comtrade", "wassenaar", "us-bis"} <= ids
+
+
+def test_data_files_are_not_extractor_pages():
+    urls = [u for s in registry.load_sources() for u in s.urls]
+    assert not any(u.endswith("H6.json") for u in urls)  # reference file: extract: false
+    assert registry.is_allowed("https://comtradeapi.un.org/files/v1/app/reference/H6.json")  # still whitelisted for the loader
