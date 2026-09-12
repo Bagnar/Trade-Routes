@@ -19,8 +19,8 @@ jobs:
   recheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
@@ -51,7 +51,8 @@ jobs:
         run: |
           git config user.name "trade-rules-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A web/data data/monitor-report.md data/facts || true
+          git add -A web/data data/monitor-report.md
+          test -d data/facts && git add -A data/facts
           if git diff --cached --quiet; then
             echo "no changes"
           else
