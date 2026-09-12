@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import type { Mode, PageContent } from "@/lib/page-content";
 import { DemoBand, SanctionsBand, StatusBand } from "./Bands";
 import { CompareTable } from "./CompareTable";
@@ -13,6 +13,15 @@ import { Section } from "./Section";
 import { SiteFooter, SiteHeader } from "./SiteHeader";
 import { SourcesTable } from "./SourcesTable";
 import { Summary } from "./Summary";
+
+function subscribeToUrl(onChange: () => void): () => void {
+  window.addEventListener("popstate", onChange);
+  return () => window.removeEventListener("popstate", onChange);
+}
+
+function readUrlMode(): string | null {
+  return new URL(window.location.href).searchParams.get("mode");
+}
 
 /**
  * Corridor page in the block order of docs/concept.md, section 4. Holds the one piece of client state that
@@ -27,16 +36,14 @@ export function CorridorPage({
   siblings: SiblingPage[];
   supplyLink?: SupplyLink;
 }) {
-  const [mode, setModeState] = useState<Mode>("b2b");
-
-  // Static export: the mode comes from the URL (?mode=parcel) after hydration, not from the server.
-  useEffect(() => {
-    const wanted = new URL(window.location.href).searchParams.get("mode");
-    if (wanted === "parcel" && page.corridor.modes.includes("parcel")) setModeState("parcel");
-  }, [page.corridor.modes]);
+  // Static export: the mode comes from the URL (?mode=parcel) on the client; the server snapshot is "b2b" so the
+  // pre-rendered HTML hydrates without a mismatch and the client value applies right after.
+  const urlMode = useSyncExternalStore(subscribeToUrl, readUrlMode, () => null);
+  const [override, setOverride] = useState<Mode | null>(null);
+  const mode: Mode = override ?? (urlMode === "parcel" && page.corridor.modes.includes("parcel") ? "parcel" : "b2b");
 
   function setMode(next: Mode) {
-    setModeState(next);
+    setOverride(next);
     const url = new URL(window.location.href);
     if (next === "b2b") url.searchParams.delete("mode");
     else url.searchParams.set("mode", next);

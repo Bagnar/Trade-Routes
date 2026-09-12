@@ -15,6 +15,8 @@ PROGRAMS = [
 
 def test_parts_without_data_have_no_score(tmp_path, monkeypatch):
     monkeypatch.setattr(index.rates, "RATES_DIR", tmp_path)
+    # even with data/agreements.json on disk (the reference-data runner has it), an explicit None means "not loaded"
+    monkeypatch.setattr(index.agreements, "load", lambda path=None: {"agreements": [{"name": "x", "members": ["CN", "CA"]}]})
     c = index.compute("CN", "CA", "610910", facts=[], programs=[], agreements_doc=None)
     assert all(p["score"] is None for p in c["parts"])
     assert c["of"] == 0 and c["verdict"].startswith("не рассчитано")

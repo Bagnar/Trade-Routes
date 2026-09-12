@@ -90,8 +90,10 @@ def support_part(fr: str, hs6: str, facts: list[dict]) -> tuple[int | None, str,
 
 
 def agreement_text(fr: str, to: str, doc: dict | None) -> str:
+    if doc is None:  # database not loaded: never "no agreement", only "not checked"
+        return "не проверено"
     found = agreements.between(fr, to, doc)
-    if found is None:
+    if not found and found is not None and not doc.get("agreements"):
         return "не проверено"
     if not found:
         return "нет в базе РТС ВТО"
