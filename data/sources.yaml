@@ -91,35 +91,40 @@ countries:
         topics: [export_licences, export_controls, trade_policy]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "http://english.mofcom.gov.cn/", topic: trade_policy }
       - id: cn-gacc
         agency: General Administration of Customs (GACC)
         domain: customs.gov.cn
         topics: [export_declaration, customs_procedures, single_window]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "http://english.customs.gov.cn/", topic: customs_procedures }
       - id: cn-sta
         agency: State Taxation Administration
         domain: chinatax.gov.cn
         topics: [export_vat_rebate]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.chinatax.gov.cn/", topic: export_vat_rebate }
       - id: cn-sinosure
         agency: China Export & Credit Insurance Corporation (Sinosure)
         domain: sinosure.com.cn
         topics: [export_credit_insurance, support_programs]
         priority: 2
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.sinosure.com.cn/en/", topic: export_credit_insurance }
       - id: cn-ccpit
         agency: China Council for the Promotion of International Trade (CCPIT)
         domain: ccpit.org
         topics: [certificate_of_origin]
         priority: 2
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.ccpit.org/", topic: certificate_of_origin }
       - id: cn-customs-stats
         agency: GACC — trade statistics
         domain: customs.gov.cn
@@ -159,49 +164,56 @@ countries:
         topics: [export_declaration, customs_procedures, export_duties]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://customs.gov.ru/uchastnikam-ved", topic: customs_procedures }
       - id: ru-minpromtorg
         agency: Минпромторг
         domain: minpromtorg.gov.ru
         topics: [support_programs, industrial_export]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://minpromtorg.gov.ru/", topic: support_programs }
       - id: ru-mcx
         agency: Минсельхоз — экспортные пошлины на зерно, поддержка АПК
         domain: mcx.gov.ru
         topics: [export_duties_agri, support_programs_agri]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://mcx.gov.ru/activity/state-support/measures/", topic: support_programs_agri }
       - id: ru-rec
         agency: Российский экспортный центр (РЭЦ)
         domain: exportcenter.ru
         topics: [support_programs, transport_compensation, export_services]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.exportcenter.ru/services/", topic: support_programs }
       - id: ru-exiar
         agency: ЭКСАР — страхование экспорта
         domain: exiar.ru
         topics: [export_credit_insurance]
         priority: 2
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.exiar.ru/", topic: export_credit_insurance }
       - id: ru-fns
         agency: ФНС — НДС при экспорте
         domain: nalog.gov.ru
         topics: [export_vat]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.nalog.gov.ru/rn77/taxation/taxes/nds/", topic: export_vat }
       - id: ru-fsvps
         agency: Россельхознадзор — фитосанитарные и ветеринарные сертификаты
         domain: fsvps.gov.ru
         topics: [sps_certificates]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://fsvps.gov.ru/export/", topic: sps_certificates }
       - id: ru-government
         agency: Правительство России — постановления о квотах и пошлинах
         domain: government.ru
@@ -222,7 +234,8 @@ countries:
         topics: [certificate_of_origin]
         priority: 2
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://tpprf.ru/ru/services/sertifikatsiya/", topic: certificate_of_origin }
       - id: eaeu-eec
         agency: Евразийская экономическая комиссия — тариф ЕАЭС, соглашения о свободной торговле
         domain: eec.eaeunion.org
@@ -230,7 +243,8 @@ countries:
         topics: [tariff_rates, trade_agreements, rules_of_origin]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://eec.eaeunion.org/comission/department/dotp/", topic: tariff_rates }
 
   IR:
     name: { ru: Иран, en: Iran, fa: ایران }
@@ -243,35 +257,40 @@ countries:
         topics: [import_procedures, tariff_rates]
         priority: 1
         status: unstable
-        urls: []
+        urls:
+          - { url: "https://irica.ir/", topic: import_procedures }
       - id: ir-tpo
         agency: Trade Promotion Organization of Iran
         domain: tpo.ir
         topics: [trade_policy, import_regulations, support_programs]
         priority: 1
         status: unstable
-        urls: []
+        urls:
+          - { url: "https://tpo.ir/", topic: trade_policy }
       - id: ir-mimt
         agency: Ministry of Industry, Mine and Trade
         domain: mimt.ir
         topics: [import_permits, order_registration]
         priority: 1
         status: unstable
-        urls: []
+        urls:
+          - { url: "https://mimt.ir/", topic: import_permits }
       - id: ir-cbi
         agency: Central Bank of Iran — currency allocation for imports
         domain: cbi.ir
         topics: [currency_rules]
         priority: 2
         status: unstable
-        urls: []
+        urls:
+          - { url: "https://www.cbi.ir/", topic: currency_rules }
       - id: ir-isiri
         agency: Iranian National Standards Organization
         domain: isiri.gov.ir
         topics: [standards, conformity]
         priority: 2
         status: unstable
-        urls: []
+        urls:
+          - { url: "https://www.isiri.gov.ir/", topic: standards }
 
   # Турция — только для слоя «Где купить» (коридоров с Турцией в MVP нет). Записи не проверены.
   TR:
@@ -284,7 +303,10 @@ countries:
         topics: [export_procedures, supply_regions, supplier_directory]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://ticaret.gov.tr/ihracat", topic: export_procedures }
+          - { url: "https://ticaret.gov.tr/ithalat", topic: import_procedures }
+          - { url: "https://ticaret.gov.tr/gumruk-islemleri", topic: customs_procedures }
       - id: tr-tuik
         agency: Turkish Statistical Institute (TÜİK) — regional output and exports by province
         domain: tuik.gov.tr
@@ -298,14 +320,16 @@ countries:
         topics: [industrial_zones, industrial_clusters, supply_regions]
         priority: 1
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.sanayi.gov.tr/", topic: industrial_zones }
       - id: tr-invest
         agency: Investment Office of the Presidency — sector and region profiles
         domain: invest.gov.tr
         topics: [supply_regions]
         priority: 2
         status: to_verify
-        urls: []
+        urls:
+          - { url: "https://www.invest.gov.tr/", topic: supply_regions }
       - id: tr-tim
         agency: Turkish Exporters Assembly (TİM) — statutory body under Law 5910; confirm official status before use
         domain: tim.org.tr
@@ -321,81 +345,81 @@ countries:
     name: { ru: Казахстан, en: Kazakhstan }
     languages: [kk, ru]
     sources:
-      - { id: kz-kgd, agency: Комитет государственных доходов Минфина РК (таможня, налоги), domain: kgd.gov.kz, topics: [customs, import_procedures, vat_import, export_procedures], priority: 1, status: to_verify, urls: [] }
+      - { id: kz-kgd, agency: Комитет государственных доходов Минфина РК (таможня, налоги), domain: kgd.gov.kz, topics: [customs, import_procedures, vat_import, export_procedures], priority: 1, status: to_verify, urls: [{ url: "https://kgd.gov.kz/ru/section/tamozhennoe-administrirovanie", topic: customs }] }
       - { id: kz-eec, agency: Евразийская экономическая комиссия — ЕТТ ЕАЭС, техрегламенты, единые меры, domain: eaeunion.org, topics: [customs_tariff, technical_regulations, non_tariff_measures], priority: 1, status: to_verify, urls: [] }
-      - { id: kz-adilet, agency: Информационно-правовая система «Әділет» — законы и НПА РК, domain: adilet.zan.kz, topics: [laws], priority: 1, status: to_verify, urls: [] }
-      - { id: kz-mti, agency: Министерство торговли и интеграции РК, domain: gov.kz, path_prefix: /memleket/entities/mti, topics: [trade_policy, export_support, trade_agreements], priority: 1, status: to_verify, urls: [] }
-      - { id: kz-qaztrade, agency: QazTrade — центр развития торговой политики (господдержка экспорта), domain: qaztrade.org.kz, topics: [export_support], priority: 2, status: to_verify, urls: [] }
-      - { id: kz-kazakhexport, agency: KazakhExport — экспортное страхование (государственная компания), domain: kazakhexport.kz, topics: [export_support, export_insurance], priority: 2, status: to_verify, urls: [] }
+      - { id: kz-adilet, agency: Информационно-правовая система «Әділет» — законы и НПА РК, domain: adilet.zan.kz, topics: [laws], priority: 1, status: to_verify, urls: [{ url: "https://adilet.zan.kz/rus/docs/K1700000123", topic: laws }] }
+      - { id: kz-mti, agency: Министерство торговли и интеграции РК, domain: gov.kz, path_prefix: /memleket/entities/mti, topics: [trade_policy, export_support, trade_agreements], priority: 1, status: to_verify, urls: [{ url: "https://www.gov.kz/memleket/entities/mti?lang=ru", topic: trade_policy }] }
+      - { id: kz-qaztrade, agency: QazTrade — центр развития торговой политики (господдержка экспорта), domain: qaztrade.org.kz, topics: [export_support], priority: 2, status: to_verify, urls: [{ url: "https://qaztrade.org.kz/", topic: export_support }] }
+      - { id: kz-kazakhexport, agency: KazakhExport — экспортное страхование (государственная компания), domain: kazakhexport.kz, topics: [export_support, export_insurance], priority: 2, status: to_verify, urls: [{ url: "https://kazakhexport.kz/", topic: export_insurance }] }
       - { id: kz-stat, agency: Бюро национальной статистики АСПиР РК, domain: stat.gov.kz, topics: [trade_stats, regions], priority: 2, status: to_verify, urls: [] }
 
   UZ:
     name: { ru: Узбекистан, en: Uzbekistan }
     languages: [uz, ru]
     sources:
-      - { id: uz-customs, agency: Таможенный комитет Республики Узбекистан, domain: customs.uz, topics: [customs, customs_tariff, import_procedures, export_procedures], priority: 1, status: to_verify, urls: [] }
-      - { id: uz-lex, agency: Национальная база данных законодательства Lex.uz, domain: lex.uz, topics: [laws], priority: 1, status: to_verify, urls: [] }
-      - { id: uz-mift, agency: Министерство инвестиций, промышленности и торговли, domain: mift.uz, topics: [trade_policy, export_support, licensing], priority: 1, status: to_verify, urls: [] }
-      - { id: uz-export, agency: Агентство по продвижению экспорта при МИПТ, domain: export.uz, topics: [export_support], priority: 2, status: to_verify, urls: [] }
-      - { id: uz-tax, agency: Налоговый комитет — НДС и акцизы при ввозе, domain: soliq.uz, topics: [vat_import, excise], priority: 1, status: to_verify, urls: [] }
+      - { id: uz-customs, agency: Таможенный комитет Республики Узбекистан, domain: customs.uz, topics: [customs, customs_tariff, import_procedures, export_procedures], priority: 1, status: to_verify, urls: [{ url: "https://customs.uz/ru", topic: customs }] }
+      - { id: uz-lex, agency: Национальная база данных законодательства Lex.uz, domain: lex.uz, topics: [laws], priority: 1, status: to_verify, urls: [{ url: "https://lex.uz/ru/", topic: laws }] }
+      - { id: uz-mift, agency: Министерство инвестиций, промышленности и торговли, domain: mift.uz, topics: [trade_policy, export_support, licensing], priority: 1, status: to_verify, urls: [{ url: "https://mift.uz/ru", topic: trade_policy }] }
+      - { id: uz-export, agency: Агентство по продвижению экспорта при МИПТ, domain: export.uz, topics: [export_support], priority: 2, status: to_verify, urls: [{ url: "https://export.uz/", topic: export_support }] }
+      - { id: uz-tax, agency: Налоговый комитет — НДС и акцизы при ввозе, domain: soliq.uz, topics: [vat_import, excise], priority: 1, status: to_verify, urls: [{ url: "https://soliq.uz/", topic: vat_import }] }
       - { id: uz-stat, agency: Агентство статистики при Президенте, domain: stat.uz, topics: [trade_stats, regions], priority: 2, status: to_verify, urls: [] }
 
   AE:
     name: { ru: ОАЭ, en: United Arab Emirates }
     languages: [ar, en]
     sources:
-      - { id: ae-fca, agency: Federal Customs Authority (Federal Authority for Identity, Citizenship, Customs and Port Security), domain: icp.gov.ae, topics: [customs, customs_tariff, import_procedures], priority: 1, status: to_verify, urls: [] }
-      - { id: ae-moec, agency: Ministry of Economy — trade policy, agreements (CEPA), domain: moec.gov.ae, topics: [trade_policy, trade_agreements, licensing], priority: 1, status: to_verify, urls: [] }
-      - { id: ae-tax, agency: Federal Tax Authority — VAT and excise on imports, domain: tax.gov.ae, topics: [vat_import, excise], priority: 1, status: to_verify, urls: [] }
-      - { id: ae-dubai-customs, agency: Dubai Customs, domain: dubaicustoms.gov.ae, topics: [customs, import_procedures, free_zones], priority: 2, status: to_verify, urls: [] }
-      - { id: ae-legislation, agency: UAE Legislation (official legal portal), domain: uaelegislation.gov.ae, topics: [laws], priority: 1, status: to_verify, urls: [] }
+      - { id: ae-fca, agency: Federal Customs Authority (Federal Authority for Identity, Citizenship, Customs and Port Security), domain: icp.gov.ae, topics: [customs, customs_tariff, import_procedures], priority: 1, status: to_verify, urls: [{ url: "https://icp.gov.ae/en/", topic: customs }] }
+      - { id: ae-moec, agency: Ministry of Economy — trade policy, agreements (CEPA), domain: moec.gov.ae, topics: [trade_policy, trade_agreements, licensing], priority: 1, status: to_verify, urls: [{ url: "https://www.moec.gov.ae/en/cepa", topic: trade_agreements }] }
+      - { id: ae-tax, agency: Federal Tax Authority — VAT and excise on imports, domain: tax.gov.ae, topics: [vat_import, excise], priority: 1, status: to_verify, urls: [{ url: "https://tax.gov.ae/en/", topic: vat_import }] }
+      - { id: ae-dubai-customs, agency: Dubai Customs, domain: dubaicustoms.gov.ae, topics: [customs, import_procedures, free_zones], priority: 2, status: to_verify, urls: [{ url: "https://www.dubaicustoms.gov.ae/en/", topic: customs }] }
+      - { id: ae-legislation, agency: UAE Legislation (official legal portal), domain: uaelegislation.gov.ae, topics: [laws], priority: 1, status: to_verify, urls: [{ url: "https://uaelegislation.gov.ae/en", topic: laws }] }
       - { id: ae-moiat, agency: Ministry of Industry and Advanced Technology — standards, conformity (ECAS), domain: moiat.gov.ae, topics: [standards, conformity], priority: 2, status: to_verify, urls: [] }
 
   DE:
     name: { ru: Германия, en: Germany }
     languages: [de, en]
     sources:
-      - { id: de-zoll, agency: Zoll — Generalzolldirektion (таможня Германии), domain: zoll.de, topics: [customs, import_procedures, export_procedures, vat_import, parcels], priority: 1, status: to_verify, urls: [] }
-      - { id: de-bafa, agency: BAFA — Bundesamt für Wirtschaft und Ausfuhrkontrolle (экспортный контроль), domain: bafa.de, topics: [export_control, dual_use, sanctions], priority: 1, status: to_verify, urls: [] }
+      - { id: de-zoll, agency: Zoll — Generalzolldirektion (таможня Германии), domain: zoll.de, topics: [customs, import_procedures, export_procedures, vat_import, parcels], priority: 1, status: to_verify, urls: [{ url: "https://www.zoll.de/EN/Businesses/businesses_node.html", topic: customs }] }
+      - { id: de-bafa, agency: BAFA — Bundesamt für Wirtschaft und Ausfuhrkontrolle (экспортный контроль), domain: bafa.de, topics: [export_control, dual_use, sanctions], priority: 1, status: to_verify, urls: [{ url: "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html", topic: export_control }] }
       - { id: de-bmwk, agency: Федеральное министерство экономики (внешнеэкономическая политика), domain: bmwk.de, topics: [trade_policy, export_support], priority: 2, status: to_verify, urls: [] }
-      - { id: de-gtai, agency: Germany Trade & Invest (федеральное агентство), domain: gtai.de, topics: [export_support, market_info], priority: 2, status: to_verify, urls: [] }
-      - { id: de-gesetze, agency: Gesetze im Internet — федеральные законы (BMJ), domain: gesetze-im-internet.de, topics: [laws], priority: 1, status: to_verify, urls: [] }
+      - { id: de-gtai, agency: Germany Trade & Invest (федеральное агентство), domain: gtai.de, topics: [export_support, market_info], priority: 2, status: to_verify, urls: [{ url: "https://www.gtai.de/en/", topic: market_info }] }
+      - { id: de-gesetze, agency: Gesetze im Internet — федеральные законы (BMJ), domain: gesetze-im-internet.de, topics: [laws], priority: 1, status: to_verify, urls: [{ url: "https://www.gesetze-im-internet.de/awg_2013/", topic: laws }, { url: "https://www.gesetze-im-internet.de/awv_2013/", topic: laws }] }
       - { id: de-destatis, agency: Statistisches Bundesamt (Destatis), domain: destatis.de, topics: [trade_stats, regions], priority: 2, status: to_verify, urls: [] }
 
   US:
     name: { ru: США, en: United States }
     languages: [en]
     sources:
-      - { id: us-cbp, agency: U.S. Customs and Border Protection, domain: cbp.gov, topics: [customs, import_procedures, parcels, de_minimis, forced_labour], priority: 1, status: to_verify, urls: [] }
+      - { id: us-cbp, agency: U.S. Customs and Border Protection, domain: cbp.gov, topics: [customs, import_procedures, parcels, de_minimis, forced_labour], priority: 1, status: to_verify, urls: [{ url: "https://www.cbp.gov/trade/basic-import-export", topic: import_procedures }, { url: "https://www.cbp.gov/trade/forced-labor", topic: forced_labour }] }
       - { id: us-hts, agency: U.S. International Trade Commission — Harmonized Tariff Schedule, domain: usitc.gov, topics: [customs_tariff, trade_remedies], priority: 1, status: to_verify, urls: [] }
-      - { id: us-hts-search, agency: HTS search (USITC), domain: hts.usitc.gov, topics: [customs_tariff], priority: 1, status: to_verify, urls: [] }
-      - { id: us-ita, agency: International Trade Administration (trade.gov) — export guides, AD/CVD, domain: trade.gov, topics: [export_support, trade_remedies, market_info], priority: 1, status: to_verify, urls: [] }
-      - { id: us-bis, agency: Bureau of Industry and Security — export controls (EAR, CCL), domain: bis.gov, topics: [export_control, dual_use], priority: 1, status: to_verify, urls: [] }
-      - { id: us-ustr, agency: Office of the U.S. Trade Representative — Section 301, agreements, domain: ustr.gov, topics: [trade_policy, trade_agreements, additional_tariffs], priority: 1, status: to_verify, urls: [] }
+      - { id: us-hts-search, agency: HTS search (USITC), domain: hts.usitc.gov, topics: [customs_tariff], priority: 1, status: to_verify, urls: [{ url: "https://hts.usitc.gov/", topic: customs_tariff }] }
+      - { id: us-ita, agency: International Trade Administration (trade.gov) — export guides, AD/CVD, domain: trade.gov, topics: [export_support, trade_remedies, market_info], priority: 1, status: to_verify, urls: [{ url: "https://www.trade.gov/export-solutions", topic: export_support }] }
+      - { id: us-bis, agency: Bureau of Industry and Security — export controls (EAR, CCL), domain: bis.gov, topics: [export_control, dual_use], priority: 1, status: to_verify, urls: [{ url: "https://www.bis.gov/licensing", topic: export_control }] }
+      - { id: us-ustr, agency: Office of the U.S. Trade Representative — Section 301, agreements, domain: ustr.gov, topics: [trade_policy, trade_agreements, additional_tariffs], priority: 1, status: to_verify, urls: [{ url: "https://ustr.gov/issue-areas/enforcement/section-301-investigations", topic: additional_tariffs }] }
       - { id: us-federal-register, agency: Federal Register — official notices (tariff actions, rules), domain: federalregister.gov, topics: [laws, additional_tariffs], priority: 1, status: to_verify, urls: [] }
-      - { id: us-fda, agency: Food and Drug Administration — food, cosmetics, devices import, domain: fda.gov, topics: [product_requirements, food_import_requirements, cosmetics], priority: 1, status: to_verify, urls: [] }
-      - { id: us-cpsc, agency: Consumer Product Safety Commission — toys, consumer goods, domain: cpsc.gov, topics: [product_safety, toys], priority: 1, status: to_verify, urls: [] }
-      - { id: us-exim, agency: Export-Import Bank of the United States, domain: exim.gov, topics: [export_support, export_insurance], priority: 2, status: to_verify, urls: [] }
+      - { id: us-fda, agency: Food and Drug Administration — food, cosmetics, devices import, domain: fda.gov, topics: [product_requirements, food_import_requirements, cosmetics], priority: 1, status: to_verify, urls: [{ url: "https://www.fda.gov/industry/import-program-food-and-drug-administration-fda", topic: product_requirements }] }
+      - { id: us-cpsc, agency: Consumer Product Safety Commission — toys, consumer goods, domain: cpsc.gov, topics: [product_safety, toys], priority: 1, status: to_verify, urls: [{ url: "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Toy-Safety", topic: toys }] }
+      - { id: us-exim, agency: Export-Import Bank of the United States, domain: exim.gov, topics: [export_support, export_insurance], priority: 2, status: to_verify, urls: [{ url: "https://www.exim.gov/", topic: export_support }] }
 
   IN:
     name: { ru: Индия, en: India }
     languages: [en, hi]
     sources:
-      - { id: in-cbic, agency: Central Board of Indirect Taxes and Customs, domain: cbic.gov.in, topics: [customs, customs_tariff, import_procedures, gst_import], priority: 1, status: to_verify, urls: [] }
+      - { id: in-cbic, agency: Central Board of Indirect Taxes and Customs, domain: cbic.gov.in, topics: [customs, customs_tariff, import_procedures, gst_import], priority: 1, status: to_verify, urls: [{ url: "https://www.cbic.gov.in/", topic: customs }] }
       - { id: in-icegate, agency: ICEGATE — customs e-filing portal (CBIC), domain: icegate.gov.in, topics: [customs, import_procedures], priority: 2, status: to_verify, urls: [] }
-      - { id: in-dgft, agency: Directorate General of Foreign Trade — Foreign Trade Policy, IEC, licensing, domain: dgft.gov.in, topics: [trade_policy, licensing, export_procedures, export_support], priority: 1, status: to_verify, urls: [] }
+      - { id: in-dgft, agency: Directorate General of Foreign Trade — Foreign Trade Policy, IEC, licensing, domain: dgft.gov.in, topics: [trade_policy, licensing, export_procedures, export_support], priority: 1, status: to_verify, urls: [{ url: "https://www.dgft.gov.in/CP/?opt=ft-policy", topic: trade_policy }, { url: "https://www.dgft.gov.in/CP/?opt=IEC", topic: licensing }] }
       - { id: in-commerce, agency: Ministry of Commerce and Industry, domain: commerce.gov.in, topics: [trade_policy, trade_agreements], priority: 1, status: to_verify, urls: [] }
-      - { id: in-trade-portal, agency: Indian Trade Portal (DGFT/FIEO) — tariffs and agreements by HS, domain: indiantradeportal.in, topics: [customs_tariff, trade_agreements], priority: 2, status: to_verify, urls: [] }
-      - { id: in-bis, agency: Bureau of Indian Standards — mandatory certification, domain: bis.gov.in, topics: [standards, conformity], priority: 1, status: to_verify, urls: [] }
-      - { id: in-fssai, agency: Food Safety and Standards Authority of India, domain: fssai.gov.in, topics: [food_import_requirements], priority: 1, status: to_verify, urls: [] }
+      - { id: in-trade-portal, agency: Indian Trade Portal (DGFT/FIEO) — tariffs and agreements by HS, domain: indiantradeportal.in, topics: [customs_tariff, trade_agreements], priority: 2, status: to_verify, urls: [{ url: "https://www.indiantradeportal.in/", topic: customs_tariff }] }
+      - { id: in-bis, agency: Bureau of Indian Standards — mandatory certification, domain: bis.gov.in, topics: [standards, conformity], priority: 1, status: to_verify, urls: [{ url: "https://www.bis.gov.in/product-certification/", topic: conformity }] }
+      - { id: in-fssai, agency: Food Safety and Standards Authority of India, domain: fssai.gov.in, topics: [food_import_requirements], priority: 1, status: to_verify, urls: [{ url: "https://fssai.gov.in/cms/imports.php", topic: food_import_requirements }] }
 
   VN:
     name: { ru: Вьетнам, en: Viet Nam }
     languages: [vi, en]
     sources:
-      - { id: vn-customs, agency: General Department of Viet Nam Customs (Tổng cục Hải quan), domain: customs.gov.vn, topics: [customs, customs_tariff, import_procedures, export_procedures], priority: 1, status: to_verify, urls: [] }
-      - { id: vn-moit, agency: Ministry of Industry and Trade (Bộ Công Thương), domain: moit.gov.vn, topics: [trade_policy, trade_agreements, licensing, trade_remedies], priority: 1, status: to_verify, urls: [] }
-      - { id: vn-mof, agency: Ministry of Finance — tariff schedules, taxes, domain: mof.gov.vn, topics: [customs_tariff, vat_import], priority: 1, status: to_verify, urls: [] }
+      - { id: vn-customs, agency: General Department of Viet Nam Customs (Tổng cục Hải quan), domain: customs.gov.vn, topics: [customs, customs_tariff, import_procedures, export_procedures], priority: 1, status: to_verify, urls: [{ url: "https://www.customs.gov.vn/", topic: customs }] }
+      - { id: vn-moit, agency: Ministry of Industry and Trade (Bộ Công Thương), domain: moit.gov.vn, topics: [trade_policy, trade_agreements, licensing, trade_remedies], priority: 1, status: to_verify, urls: [{ url: "https://moit.gov.vn/", topic: trade_policy }] }
+      - { id: vn-mof, agency: Ministry of Finance — tariff schedules, taxes, domain: mof.gov.vn, topics: [customs_tariff, vat_import], priority: 1, status: to_verify, urls: [{ url: "https://mof.gov.vn/", topic: customs_tariff }] }
       - { id: vn-vbpl, agency: National legal database (Cơ sở dữ liệu quốc gia về văn bản pháp luật), domain: vbpl.vn, topics: [laws], priority: 1, status: to_verify, urls: [] }
       - { id: vn-gso, agency: General Statistics Office (Cục Thống kê), domain: gso.gov.vn, topics: [trade_stats, regions], priority: 2, status: to_verify, urls: [] }
 
@@ -403,12 +427,12 @@ countries:
     name: { ru: Бразилия, en: Brazil }
     languages: [pt]
     sources:
-      - { id: br-receita, agency: Receita Federal — aduana (таможня), domain: gov.br, path_prefix: /receitafederal, topics: [customs, import_procedures, parcels], priority: 1, status: to_verify, urls: [] }
-      - { id: br-mdic, agency: Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC), domain: gov.br, path_prefix: /mdic, topics: [trade_policy, trade_agreements, trade_remedies, licensing], priority: 1, status: to_verify, urls: [] }
-      - { id: br-siscomex, agency: Portal Único Siscomex — процедуры ввоза и вывоза, domain: portalunico.siscomex.gov.br, topics: [import_procedures, export_procedures], priority: 1, status: to_verify, urls: [] }
+      - { id: br-receita, agency: Receita Federal — aduana (таможня), domain: gov.br, path_prefix: /receitafederal, topics: [customs, import_procedures, parcels], priority: 1, status: to_verify, urls: [{ url: "https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior", topic: customs }] }
+      - { id: br-mdic, agency: Ministério do Desenvolvimento, Indústria, Comércio e Serviços (MDIC), domain: gov.br, path_prefix: /mdic, topics: [trade_policy, trade_agreements, trade_remedies, licensing], priority: 1, status: to_verify, urls: [{ url: "https://www.gov.br/mdic/pt-br/assuntos/comercio-exterior", topic: trade_policy }] }
+      - { id: br-siscomex, agency: Portal Único Siscomex — процедуры ввоза и вывоза, domain: portalunico.siscomex.gov.br, topics: [import_procedures, export_procedures], priority: 1, status: to_verify, urls: [{ url: "https://portalunico.siscomex.gov.br/", topic: import_procedures }] }
       - { id: br-planalto, agency: Presidência da República — законодательство (Planalto), domain: planalto.gov.br, topics: [laws], priority: 1, status: to_verify, urls: [] }
-      - { id: br-anvisa, agency: ANVISA — санитарный надзор (продукты, косметика, лекарства), domain: gov.br, path_prefix: /anvisa, topics: [product_requirements, cosmetics, food_import_requirements], priority: 1, status: to_verify, urls: [] }
-      - { id: br-apex, agency: ApexBrasil — агентство продвижения экспорта, domain: apexbrasil.com.br, topics: [export_support], priority: 2, status: to_verify, urls: [] }
+      - { id: br-anvisa, agency: ANVISA — санитарный надзор (продукты, косметика, лекарства), domain: gov.br, path_prefix: /anvisa, topics: [product_requirements, cosmetics, food_import_requirements], priority: 1, status: to_verify, urls: [{ url: "https://www.gov.br/anvisa/pt-br/assuntos/importacao-e-exportacao", topic: product_requirements }] }
+      - { id: br-apex, agency: ApexBrasil — агентство продвижения экспорта, domain: apexbrasil.com.br, topics: [export_support], priority: 2, status: to_verify, urls: [{ url: "https://apexbrasil.com.br/", topic: export_support }] }
       - { id: br-ibge, agency: IBGE — статистика, domain: ibge.gov.br, topics: [trade_stats, regions], priority: 2, status: to_verify, urls: [] }
 
 # Наднациональные юрисдикции: источники применяются ко всем странам-членам (страница страны показывает их вместе с национальными).
@@ -417,8 +441,8 @@ blocs:
     name: { ru: Европейский союз, en: European Union }
     members: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE]
     sources:
-      - { id: eu-taxud, agency: European Commission DG TAXUD — TARIC, Union Customs Code, domain: taxation-customs.ec.europa.eu, topics: [customs_tariff, customs, import_procedures], priority: 1, status: to_verify, urls: [] }
-      - { id: eu-access2markets, agency: Access2Markets (DG TRADE) — tariffs, rules of origin, procedures by product, domain: trade.ec.europa.eu, topics: [customs_tariff, rules_of_origin, import_procedures, trade_agreements], priority: 1, status: to_verify, urls: [] }
+      - { id: eu-taxud, agency: European Commission DG TAXUD — TARIC, Union Customs Code, domain: taxation-customs.ec.europa.eu, topics: [customs_tariff, customs, import_procedures], priority: 1, status: to_verify, urls: [{ url: "https://taxation-customs.ec.europa.eu/customs-4_en", topic: customs }] }
+      - { id: eu-access2markets, agency: Access2Markets (DG TRADE) — tariffs, rules of origin, procedures by product, domain: trade.ec.europa.eu, topics: [customs_tariff, rules_of_origin, import_procedures, trade_agreements], priority: 1, status: to_verify, urls: [{ url: "https://trade.ec.europa.eu/access-to-markets/en/home", topic: customs_tariff }] }
       - { id: eu-eur-lex, agency: EUR-Lex — законодательство ЕС, domain: eur-lex.europa.eu, topics: [laws], priority: 1, status: to_verify, urls: [] }
       - { id: eu-trade-policy, agency: DG TRADE — trade policy, dual-use, trade defence, domain: policy.trade.ec.europa.eu, topics: [trade_policy, export_control, trade_remedies], priority: 1, status: to_verify, urls: [] }
       - { id: eu-sanctions-map, agency: EU Sanctions Map, domain: sanctionsmap.eu, topics: [sanctions], priority: 1, status: to_verify, urls: [] }
@@ -506,7 +530,8 @@ export_control_regimes:
     topics: [export_control]
     priority: 1
     status: to_verify
-    urls: []
+    urls:
+      - { url: "http://exportcontrol.mofcom.gov.cn/", topic: export_control }
   - id: ru-fstec
     jurisdiction: RU
     agency: ФСТЭК России — экспортный контроль, контрольные списки
