@@ -196,6 +196,9 @@ def probe_ru(url: str = ETT_PAGE) -> None:
     files = find_ett_files(snap.html, url)
     for href, text in files[:40]:
         print(f"  link: {href}  [{text[:80]}]")
+    if not any(h.lower().split("?")[0].endswith((".xlsx", ".xls", ".zip", ".csv")) for h, _t in files):
+        probe_ru_pdf(files)
+        return
     for href, text in files:
         if not href.lower().split("?")[0].endswith((".xlsx", ".xls", ".zip", ".csv")):
             continue
@@ -225,11 +228,92 @@ def load_hs_ru(url: str) -> dict[str, str]:
     if snap.content[:2] == b"PK" or snap.content[:4] == b"\xd0\xcf\x11\xe0":
         return parse_ett_rows(rows_from_file(snap))
     if "<" in snap.html[:100]:
-        for href, _text in find_ett_files(snap.html, url):
+        files = find_ett_files(snap.html, url)
+        for href, _text in files:
             if href.lower().split("?")[0].endswith((".xlsx", ".xls", ".zip", ".csv")):
                 fsnap = fetch.fetch_url(href, save=False, timeout=300.0)
                 names = parse_ett_rows(rows_from_file(fsnap))
                 if len(names) > 1000:
                     return names
-        return {}
+        return load_hs_ru_pdfs(url)
     return parse_ru_tnved(snap.text)
+
+
+# ---------------------------------------------------------------- ЕТТ as chapter PDFs (the page's actual format)
+
+CHAPTER_PDF = re.compile(r"ru\.(\d{2})_\d{4}[^/]*\.pdf$", re.I)
+CODE_LINE = re.compile(r"^(\d{4})(?:\s(\d{2})(?:\s(\d{3})(?:\s(\d))?)?)?\s+(.*)$")
+
+
+def chapter_pdfs(files: list[tuple[str, str]]) -> dict[str, str]:
+    """{chapter '01'..'97': url} from the links found on the ЕТТ page (one PDF per HS chapter)."""
+    out: dict[str, str] = {}
+    for href, _text in files:
+        m = CHAPTER_PDF.search(href.split("?")[0])
+        if m and m.group(1) not in out:
+            out[m.group(1)] = href
+    return out
+
+
+def pdf_lines(content: bytes) -> list[str]:
+    from io import BytesIO
+
+    from pypdf import PdfReader
+
+    lines: list[str] = []
+    for page in PdfReader(BytesIO(content)).pages:
+        text = page.extract_text() or ""
+        lines += [re.sub(r"\s+", " ", ln).strip() for ln in text.splitlines()]
+    return [ln for ln in lines if ln]
+
+
+def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
+    """{hs6: '<4-digit heading>: <sub-name>'} from the text lines of a chapter PDF. A code line starts with the
+    ТН ВЭД code ('6109 10 000 0' / '6109 10' / '6109') followed by the name; a following line without a code
+    continues the name; a trailing unit/rate column (e.g. 'шт 10' or '10') is stripped."""
+    rows: list[tuple[str, str]] = []
+    for ln in lines:
+        m = CODE_LINE.match(ln)
+        if m and (m.group(2) or len(ln.split()) > 1) and not re.match(r"^\d{4}\s+\d{4}\b", ln):
+            code = "".join(g for g in m.groups()[:4] if g)
+            rows.append((code, m.group(5)))
+        elif rows and not re.match(r"^(Код|ТН ВЭД|Наименование|Доп\.|Ставка|Группа|\d+\s*$)", ln):
+            rows[-1] = (rows[-1][0], rows[-1][1] + " " + ln)
+    cleaned: list[list[str]] = []
+    for code, name in rows:
+        name = re.sub(r"\s+(шт|кг|л|м|м2|м3|пар|кар|тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|г|т|см3|кВт|ГВт)?\s*[\d,.]+\s*%?(\s*,?\s*но не менее.*)?$", "", name).strip()
+        cleaned.append([code[:4] + (" " + code[4:6] if len(code) > 4 else "") + (" " + code[6:9] if len(code) > 6 else "") + (" " + code[9:] if len(code) > 9 else ""), name])
+    return parse_ett_rows(cleaned)
+
+
+def probe_ru_pdf(files: list[tuple[str, str]], chapters: tuple[str, ...] = ("61", "88")) -> None:
+    pdfs = chapter_pdfs(files)
+    print(f"chapter PDFs found: {len(pdfs)}")
+    for ch in chapters:
+        url = pdfs.get(ch)
+        if not url:
+            print(f"chapter {ch}: no link")
+            continue
+        snap = fetch.fetch_url(url, save=False, timeout=300.0)
+        lines = pdf_lines(snap.content)
+        print(f"--- chapter {ch}: HTTP {snap.http_status}, {len(snap.content)} bytes, {len(lines)} text lines")
+        for ln in lines[:70]:
+            print("    ", ln[:110])
+        names = parse_ett_pdf_lines(lines)
+        print(f"    parsed HS-6 names: {len(names)}; sample: {list(names.items())[:6]}")
+
+
+def load_hs_ru_pdfs(page_url: str = ETT_PAGE) -> dict[str, str]:
+    """Russian HS-6 names from all chapter PDFs linked on the ЕТТ page."""
+    snap = fetch.fetch_url(page_url, save=False, timeout=180.0)
+    pdfs = chapter_pdfs(find_ett_files(snap.html, page_url))
+    names: dict[str, str] = {}
+    for ch, url in sorted(pdfs.items()):
+        try:
+            fsnap = fetch.fetch_url(url, save=False, timeout=300.0)
+            got = parse_ett_pdf_lines(pdf_lines(fsnap.content))
+            print(f"chapter {ch}: {len(got)} HS-6 names")
+            names.update(got)
+        except Exception as exc:
+            print(f"chapter {ch}: {exc.__class__.__name__}: {str(exc)[:120]}")
+    return names
