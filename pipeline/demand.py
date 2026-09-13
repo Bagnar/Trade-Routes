@@ -15,11 +15,19 @@ from datetime import date
 
 from . import fetch, rates
 
-# WITS "tradestats-trade" datasource: import/export values by reporter, partner, product (HS-6), year.
-WITS_AVAILABILITY = "https://wits.worldbank.org/API/V1/wits/datasource/tradestats-trade/dataavailability/country/{reporter}/year/all?format=JSON"
-WITS_SAMPLE = "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-trade/reporter/{reporter}/year/{year}/partner/wld/product/{hs6}/indicator/MPRT-TRD-VL"
-# UN Comtrade public data-availability endpoint (no subscription key): annual (A) goods (C) data by HS.
+# WITS "tradestats-trade" datasource (trade indicators). URL shapes are probed: WITS uses ISO3 for this datasource.
+WITS_AVAILABILITY_SHAPES = (
+    "https://wits.worldbank.org/API/V1/wits/datasource/tradestats-trade/dataavailability/country/{iso3}/year/{year}?format=JSON",
+    "https://wits.worldbank.org/API/V1/wits/datasource/tradestats-trade/dataavailability/country/{iso3}/year/all?format=JSON",
+    "https://wits.worldbank.org/API/V1/wits/datasource/tradestats-trade/dataavailability/country/{m49}/year/{year}?format=JSON",
+)
+WITS_SAMPLE_SHAPES = (
+    "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-trade/reporter/{iso3}/year/{year}/partner/wld/product/610910/indicator/MPRT-TRD-VL",
+    "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-trade/reporter/{iso3}/year/{year}/partner/wld/product/all/indicator/MPRT-TRD-VL?format=JSON",
+)
+# UN Comtrade public endpoints (no subscription key): data availability and a preview of the data itself.
 COMTRADE_AVAILABILITY = "https://comtradeapi.un.org/public/v1/getDA/C/A/HS?reporterCode={m49}"
+COMTRADE_PREVIEW = "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode={m49}&period={year}&partnerCode=0&cmdCode=610910&flowCode=M"
 
 
 def _years(text: str) -> list[int]:
@@ -28,45 +36,55 @@ def _years(text: str) -> list[int]:
     return sorted(found)
 
 
+def _try(label: str, url: str, timeout: float = 120.0) -> tuple[int | None, str]:
+    try:
+        snap = fetch.fetch_url(url, save=False, timeout=timeout)
+        body = (snap.html or snap.text).replace("\n", " ")
+        print(f"{label}: HTTP {snap.http_status} {len(body)} chars :: {url}\n    {body[:500]}")
+        return snap.http_status, body
+    except Exception as exc:
+        print(f"{label}: {exc.__class__.__name__}: {str(exc)[:160]} :: {url}")
+        return None, ""
+
+
 def probe(iso2_list: list[str]) -> list[dict]:
-    """Prints, per country, the latest year in WITS and in UN Comtrade, plus a sample WITS value request."""
+    """Prints, per country, which years UN Comtrade has (public endpoint), whether its key-less preview returns
+    HS-6 import values, and which WITS URL shapes answer at all."""
     today = date.today().year
     rows: list[dict] = []
     for iso2 in iso2_list:
-        m49 = rates.M49.get(iso2.upper())
-        row = {"country": iso2.upper(), "wits_latest": None, "comtrade_latest": None, "wits_years": [], "comtrade_years": [], "sample": ""}
+        m49, iso3 = rates.M49.get(iso2.upper()), rates.ISO3.get(iso2.upper())
+        row = {"country": iso2.upper(), "comtrade_latest": None, "preview": "", "wits": ""}
         if not m49:
-            print(f"{iso2}: no M49 code mapping")
             rows.append(row)
             continue
-        for key, url in (("wits", WITS_AVAILABILITY.format(reporter=m49)), ("comtrade", COMTRADE_AVAILABILITY.format(m49=int(m49)))):
-            try:
-                snap = fetch.fetch_url(url, save=False, timeout=120.0)
-                body = snap.html or snap.text
-                years = [y for y in _years(body) if y <= today]
-                row[f"{key}_years"] = years
-                row[f"{key}_latest"] = years[-1] if years else None
-                print(f"{iso2} {key}: HTTP {snap.http_status}, years {years[:3]}…{years[-3:] if years else ''} ({len(years)}) :: {body[:200].replace(chr(10), ' ')}")
-            except Exception as exc:
-                print(f"{iso2} {key}: {exc.__class__.__name__}: {str(exc)[:160]}")
-        if row["wits_latest"]:
-            url = WITS_SAMPLE.format(reporter=m49, year=row["wits_latest"], hs6="610910")
-            try:
-                snap = fetch.fetch_url(url, save=False, timeout=180.0)
-                body = snap.html or snap.text
-                row["sample"] = f"HTTP {snap.http_status}, {len(body)} chars"
-                print(f"{iso2} sample {url}\n    {body[:600].replace(chr(10), ' ')}")
-            except Exception as exc:
-                row["sample"] = f"{exc.__class__.__name__}"
-                print(f"{iso2} sample: {exc.__class__.__name__}: {str(exc)[:160]}")
+        status, body = _try(f"{iso2} comtrade availability", COMTRADE_AVAILABILITY.format(m49=int(m49)))
+        years = [y for y in _years(body) if y <= today]
+        row["comtrade_latest"] = years[-1] if years else None
+        if years:
+            # the newest annual dataset can be partial; test the newest and the one before it
+            for y in (years[-1], years[-2] if len(years) > 1 else years[-1]):
+                status, body = _try(f"{iso2} comtrade preview {y}", COMTRADE_PREVIEW.format(m49=int(m49), year=y))
+                m = re.search(r'"primaryValue":\s*([0-9.eE+]+)', body)
+                if status == 200 and m:
+                    row["preview"] = f"{y}: 610910 imports {float(m.group(1)):,.0f} USD"
+                    break
+                row["preview"] = f"{y}: no value ({status})"
+        for shape in WITS_AVAILABILITY_SHAPES:
+            status, body = _try(f"{iso2} wits availability", shape.format(iso3=iso3, m49=m49, year=today - 2))
+            if status == 200 and "error" not in body[:200].lower():
+                row["wits"] = f"availability ok: {shape.split('/country/')[1][:30]}"
+                break
+        for shape in WITS_SAMPLE_SHAPES:
+            status, body = _try(f"{iso2} wits sample", shape.format(iso3=iso3, m49=m49, year=today - 2), timeout=180.0)
+            if status == 200 and "error" not in body[:200].lower():
+                row["wits"] += f"; sample ok ({len(body)} chars)"
+                break
         rows.append(row)
-    print("\n| country | WITS latest | Comtrade latest | lag | verdict |")
-    print("|---|---|---|---|---|")
+    print("\n| country | Comtrade latest year | Comtrade key-less preview (610910 imports) | WITS |")
+    print("|---|---|---|---|")
     for r in rows:
-        w, c = r["wits_latest"], r["comtrade_latest"]
-        lag = (c - w) if (w and c) else None
-        verdict = "no data" if not w else ("fresh" if (today - w) <= 2 and (lag is None or lag <= 1) else "stale: use Comtrade key" if lag and lag > 1 else "old (>2 years)")
-        print(f"| {r['country']} | {w} | {c} | {lag} | {verdict} |")
+        print(f"| {r['country']} | {r['comtrade_latest']} | {r['preview']} | {r['wits'] or 'no usable reply'} |")
     return rows
 
 
