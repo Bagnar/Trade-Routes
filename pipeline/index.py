@@ -105,7 +105,7 @@ def demand_part(to: str, hs6: str) -> tuple[int | None, str]:
         elif d["growth_pct"] <= -10:
             score -= 1
     score = max(1, min(5, score))
-    growth = f", {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} г." if d["growth_pct"] is not None else ""
+    growth = f", {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} года" if d["growth_pct"] is not None else ""
     kind = f" (зеркальные данные {d['partners']} партнёров, неполные)" if d["kind"] == "mirror" else ""
     return score, f"ввоз {demand.usd_text(d['value'])} в {d['latest_year']} году{growth}{kind} — UN Comtrade, ориентир"
 

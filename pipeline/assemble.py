@@ -184,7 +184,7 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
     summary = [f for f in summary if f.get("key") != "Спрос"]
     d = demand.get_demand(to, hs6)
     if d and not d["stale"]:
-        growth = f", изменение {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} г." if d["growth_pct"] is not None else ""
+        growth = f", изменение {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} года" if d["growth_pct"] is not None else ""
         kind = " Зеркальные данные партнёров, неполные." if d["kind"] == "mirror" else ""
         summary.append({
             "key": "Спрос",
