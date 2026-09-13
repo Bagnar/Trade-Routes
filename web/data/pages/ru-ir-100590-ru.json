@@ -180,17 +180,6 @@
         }
       },
       {
-        "to": "США",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
         "to": "Бразилия",
         "duty": "8%",
         "agreement": "нет в базе РТС ВТО",
@@ -236,6 +225,17 @@
         }
       },
       {
+        "to": "США",
+        "duty": "≈0.46%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 10",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Узбекистан",
         "duty": "0%",
         "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; Russian Federation - Uzbekistan",
@@ -259,13 +259,13 @@
       },
       {
         "to": "Вьетнам",
-        "duty": "11.3333%",
+        "duty": "11.33%",
         "agreement": "EAEU - Viet Nam",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
-          "text": "4 из 10",
-          "status": "warn"
+          "text": "7 из 15",
+          "status": "mid"
         }
       },
       {

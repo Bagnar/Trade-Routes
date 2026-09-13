@@ -224,6 +224,17 @@
         }
       },
       {
+        "to": "Вьетнам",
+        "duty": "2.54%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Германия",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
@@ -236,7 +247,7 @@
       },
       {
         "to": "Китай",
-        "duty": "0.452381%",
+        "duty": "0.45%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
@@ -247,23 +258,12 @@
       },
       {
         "to": "Бразилия",
-        "duty": "10.6061%",
+        "duty": "10.61%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "9 из 15",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Вьетнам",
-        "duty": "2.53571%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "6 из 10",
           "status": "mid"
         }
       },

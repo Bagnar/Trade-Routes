@@ -169,17 +169,6 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "0%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
         "to": "США",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
@@ -188,6 +177,17 @@
         "score": {
           "text": "7 из 10",
           "status": "ok"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "0%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
         }
       },
       {

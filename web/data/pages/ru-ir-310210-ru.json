@@ -213,6 +213,17 @@
         }
       },
       {
+        "to": "Вьетнам",
+        "duty": "6%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Иран — эта страница",
         "here": true,
         "duty": "5%",
@@ -265,17 +276,6 @@
         "support": "не собрано",
         "score": {
           "text": "8 из 15",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Вьетнам",
-        "duty": "6%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "5 из 10",
           "status": "mid"
         }
       },

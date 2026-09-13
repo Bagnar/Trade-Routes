@@ -256,9 +256,9 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "12.5%",
-        "agreement": "ASEAN - China",
+        "to": "Индия",
+        "duty": "20%",
+        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
@@ -267,13 +267,13 @@
         }
       },
       {
-        "to": "Индия",
-        "duty": "20%",
-        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
+        "to": "Вьетнам",
+        "duty": "12.5%",
+        "agreement": "ASEAN - China",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
-          "text": "10 из 15",
+          "text": "12 из 20",
           "status": "mid"
         }
       },

@@ -133,8 +133,8 @@ export function domainOf(url: string): string {
 }
 
 export function fmt(v: number): string {
-  // Python's `:g`: up to 6 significant digits, no trailing zeros.
-  return String(Number(v.toPrecision(6)));
+  // Two decimals, no trailing zeros (the pipeline rounds the same way: WITS averages carry float noise).
+  return String(Number(v.toFixed(2)));
 }
 
 export function usdText(value: number): string {
@@ -238,7 +238,7 @@ type Part = [number | null, string, string];
 function dutyPart(data: CorridorData, to: string, hs6: string): Part {
   const rate = getRate(data, to, hs6);
   if (!rate) return [null, "ставка MFN для этой страны не загружена в таблицу ставок", "ставка не загружена"];
-  const v = rate.value;
+  const v = Number(rate.value.toFixed(2));
   const score = v === 0 ? 5 : v <= 5 ? 4 : v <= 10 ? 3 : v <= 20 ? 2 : v <= 35 ? 1 : 0;
   if (rate.estimated) {
     return [score, `пошлина MFN ≈${fmt(v)}% — адвалорный эквивалент специфической или комбинированной ставки (оценка WITS/TRAINS, ${rate.year} год); точная формула — в национальном тарифе и у брокера`, `≈${fmt(v)}%`];

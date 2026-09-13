@@ -169,19 +169,8 @@
         }
       },
       {
-        "to": "США",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
         "to": "Германия",
-        "duty": "5.33333%",
+        "duty": "5.33%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
@@ -202,9 +191,9 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "5%",
-        "agreement": "EAEU - Viet Nam",
+        "to": "США",
+        "duty": "≈4.69%",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
@@ -213,8 +202,19 @@
         }
       },
       {
+        "to": "Вьетнам",
+        "duty": "5%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "8 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Казахстан",
-        "duty": "15%",
+        "duty": "≈15%",
         "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; EAEU - Accession of Armenia (+)",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",

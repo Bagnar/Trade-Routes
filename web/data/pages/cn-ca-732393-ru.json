@@ -190,17 +190,6 @@
         }
       },
       {
-        "to": "Узбекистан",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "17 из 20",
-          "status": "ok"
-        }
-      },
-      {
         "to": "ОАЭ",
         "duty": "5%",
         "agreement": "нет в базе РТС ВТО",
@@ -245,6 +234,17 @@
         }
       },
       {
+        "to": "Узбекистан",
+        "duty": "≈20%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "14 из 20",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Индия",
         "duty": "20%",
         "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
@@ -273,7 +273,7 @@
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
-          "text": "9 из 15",
+          "text": "11 из 20",
           "status": "mid"
         }
       },

@@ -217,12 +217,23 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
             except Exception as exc:
                 print(f"warn {iso2} {y}: ad valorem equivalents not loaded: {exc.__class__.__name__}: {str(exc)[:120]}")
                 ave = {}
+            unavailable: list[str] = []
             if ave:
                 for hs6 in specific:
                     if hs6 in ave:
                         rates[hs6] = ave[hs6]
+                    else:  # no equivalent for this group: the reported 0 would be misleading, so no rate at all
+                        rates.pop(hs6, None)
+                        unavailable.append(hs6)
+                specific = [h for h in specific if h in ave]
             else:
-                print(f"warn {iso2} {y}: no aveestimated data; {len(specific)} groups with specific duties keep the reported (partial) average")
+                # No ad valorem equivalents at all (seen for AE 2023): groups with specific duties are dropped rather
+                # than shown as 0% — the page then says "ставка не загружена" (principle 4: never fill a gap).
+                for hs6 in specific:
+                    rates.pop(hs6, None)
+                unavailable = specific
+                specific = []
+                print(f"warn {iso2} {y}: no aveestimated data; {len(unavailable)} groups with specific duties left without a rate")
             out_dir.mkdir(parents=True, exist_ok=True)
             out = out_dir / f"{iso2.upper()}.json"
             out.write_text(
@@ -236,7 +247,8 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
                         "fetched_at": snap.fetched_at,
                         "kind": "import_mfn",
                         "unit": "percent",
-                        "specific": specific if ave else [],
+                        "specific": specific,
+                        "unavailable": sorted(unavailable),
                         "rates": dict(sorted(rates.items())),
                     },
                     ensure_ascii=False,
@@ -245,7 +257,7 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
                 + "\n",
                 encoding="utf8",
             )
-            print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y}, {len(specific) if ave else 0} ad valorem equivalents -> {out}")
+            print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y}, {len(specific)} ad valorem equivalents, {len(unavailable)} without a rate -> {out}")
             return out
     return None
 

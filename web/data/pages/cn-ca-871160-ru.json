@@ -245,6 +245,17 @@
         }
       },
       {
+        "to": "Вьетнам",
+        "duty": "55%",
+        "agreement": "ASEAN - China",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "12 из 20",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Иран",
         "duty": "7.5%",
         "agreement": "нет в базе РТС ВТО",
@@ -274,17 +285,6 @@
         "support": "5 стр.",
         "score": {
           "text": "11 из 20",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Вьетнам",
-        "duty": "55%",
-        "agreement": "ASEAN - China",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "8 из 15",
           "status": "mid"
         }
       },

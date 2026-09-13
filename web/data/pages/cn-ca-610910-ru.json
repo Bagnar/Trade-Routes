@@ -215,28 +215,6 @@
     "lead": "Те же пять частей для соседних рынков, отсортированы по оценке. Спрос и логистика в ней — ориентир, а не проверенный факт.",
     "rows": [
       {
-        "to": "Индия",
-        "duty": "0%",
-        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "13 из 15",
-          "status": "ok"
-        }
-      },
-      {
-        "to": "Узбекистан",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "17 из 20",
-          "status": "ok"
-        }
-      },
-      {
         "to": "ОАЭ",
         "duty": "5%",
         "agreement": "нет в базе РТС ВТО",
@@ -244,17 +222,6 @@
         "support": "5 стр.",
         "score": {
           "text": "16 из 20",
-          "status": "ok"
-        }
-      },
-      {
-        "to": "Казахстан",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "15 из 20",
           "status": "ok"
         }
       },
@@ -293,9 +260,20 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "20%",
-        "agreement": "ASEAN - China",
+        "to": "Узбекистан",
+        "duty": "≈20%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "14 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Индия",
+        "duty": "≈20%",
+        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
@@ -315,10 +293,21 @@
         }
       },
       {
-        "to": "Россия",
-        "duty": "0%",
+        "to": "Вьетнам",
+        "duty": "20%",
+        "agreement": "ASEAN - China",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "13 из 20",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Казахстан",
+        "duty": "≈9.66%",
         "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
+        "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
           "text": "13 из 20",
@@ -333,6 +322,17 @@
         "support": "5 стр.",
         "score": {
           "text": "13 из 20",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Россия",
+        "duty": "≈13.54%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "5 стр.",
+        "score": {
+          "text": "10 из 20",
           "status": "mid"
         }
       },

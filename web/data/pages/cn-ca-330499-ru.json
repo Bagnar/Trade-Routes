@@ -211,17 +211,6 @@
         }
       },
       {
-        "to": "Узбекистан",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "в проверенных программах нет",
-        "support": "5 стр.",
-        "score": {
-          "text": "17 из 20",
-          "status": "ok"
-        }
-      },
-      {
         "to": "Канада — эта страница",
         "here": true,
         "duty": "3.25%",
@@ -230,6 +219,17 @@
         "support": "5 стр.",
         "score": {
           "text": "16 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "15.33%",
+        "agreement": "ASEAN - China",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "15 из 20",
           "status": "ok"
         }
       },
@@ -256,9 +256,9 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "15.3333%",
-        "agreement": "ASEAN - China",
+        "to": "Индия",
+        "duty": "20%",
+        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
@@ -267,13 +267,13 @@
         }
       },
       {
-        "to": "Индия",
-        "duty": "20%",
-        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
+        "to": "Узбекистан",
+        "duty": "≈30%",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
-          "text": "10 из 15",
+          "text": "13 из 20",
           "status": "mid"
         }
       },

@@ -225,7 +225,7 @@
       },
       {
         "to": "Турция",
-        "duty": "1.81818%",
+        "duty": "1.82%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
@@ -268,6 +268,17 @@
         }
       },
       {
+        "to": "Вьетнам",
+        "duty": "21.67%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "7 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Иран — эта страница",
         "here": true,
         "duty": "20%",
@@ -276,17 +287,6 @@
         "support": "не собрано",
         "score": {
           "text": "4 из 10",
-          "status": "warn"
-        }
-      },
-      {
-        "to": "Вьетнам",
-        "duty": "21.6667%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "3 из 10",
           "status": "warn"
         }
       }

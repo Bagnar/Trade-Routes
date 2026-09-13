@@ -109,7 +109,7 @@ def rate_fact(country_to: str, hs6: str) -> dict | None:
     rate = rates.get_rate(country_to, hs6)
     if rate is None:
         return None
-    value = rate["value"]
+    value = round(float(rate["value"]), 2)
     if rate.get("estimated"):
         text = f"Пошлина при ввозе по режиму наибольшего благоприятствования: около {value:g}% — адвалорный эквивалент специфической или комбинированной ставки (оценка WITS/TRAINS, простая средняя по группе HS-6, данные за {rate['year']} год). Точная формула ставки — в национальном тарифе; подстрока и льготы — у брокера."
     else:

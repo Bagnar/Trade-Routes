@@ -200,6 +200,17 @@
     "lead": "Те же пять частей для других рынков, отсортированы по оценке. Спрос и логистика в ней — ориентир, а не проверенный факт.",
     "rows": [
       {
+        "to": "Вьетнам",
+        "duty": "0%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "11 из 15",
+          "status": "ok"
+        }
+      },
+      {
         "to": "ОАЭ",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
@@ -211,41 +222,8 @@
         }
       },
       {
-        "to": "Вьетнам",
-        "duty": "0%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
-        "to": "США",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
         "to": "Бразилия",
         "duty": "10%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "10 из 15",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Германия",
-        "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
@@ -262,6 +240,17 @@
         "support": "не собрано",
         "score": {
           "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "≈1%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 10",
           "status": "mid"
         }
       },
@@ -286,6 +275,17 @@
         "score": {
           "text": "5 из 10",
           "status": "mid"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "≈29.43%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 15",
+          "status": "warn"
         }
       },
       {

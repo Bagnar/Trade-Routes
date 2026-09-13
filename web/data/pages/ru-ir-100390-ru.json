@@ -158,6 +158,17 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Вьетнам",
+        "duty": "0%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Китай",
         "duty": "3%",
         "agreement": "нет в базе РТС ВТО",
@@ -165,17 +176,6 @@
         "support": "не собрано",
         "score": {
           "text": "11 из 15",
-          "status": "ok"
-        }
-      },
-      {
-        "to": "Вьетнам",
-        "duty": "0%",
-        "agreement": "EAEU - Viet Nam",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
           "status": "ok"
         }
       },
@@ -188,28 +188,6 @@
         "score": {
           "text": "7 из 10",
           "status": "ok"
-        }
-      },
-      {
-        "to": "США",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "7 из 10",
-          "status": "ok"
-        }
-      },
-      {
-        "to": "Германия",
-        "duty": "0%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "10 из 15",
-          "status": "mid"
         }
       },
       {
@@ -258,6 +236,17 @@
         }
       },
       {
+        "to": "США",
+        "duty": "≈0.38%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 10",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Казахстан",
         "duty": "5%",
         "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; EAEU - Accession of Armenia (+)",
@@ -270,13 +259,24 @@
       },
       {
         "to": "Канада",
-        "duty": "28.875%",
+        "duty": "28.88%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
           "text": "7 из 15",
           "status": "mid"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "≈30.55%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 15",
+          "status": "warn"
         }
       },
       {
