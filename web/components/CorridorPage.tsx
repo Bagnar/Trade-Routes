@@ -31,10 +31,13 @@ export function CorridorPage({
   page,
   siblings,
   supplyLink,
+  notice,
 }: {
   page: PageContent;
   siblings: SiblingPage[];
   supplyLink?: SupplyLink;
+  /** Optional band under the status line (the browser-assembled page uses it for "make this page permanent"). */
+  notice?: React.ReactNode;
 }) {
   // Static export: the mode comes from the URL (?mode=parcel) on the client; the server snapshot is "b2b" so the
   // pre-rendered HTML hydrates without a mismatch and the client value applies right after.
@@ -71,6 +74,7 @@ export function CorridorPage({
       </SiteHeader>
 
       <StatusBand status={page.status} />
+      {notice && <DemoBand>{notice}</DemoBand>}
       {page.isDemo && page.status.sourcesTotal > 0 && (
         <DemoBand>
           <strong>Смешанная страница.</strong> Строки с зелёной печатью и ссылкой взяты из официальных источников с

@@ -68,7 +68,18 @@ export function AssembledCorridor() {
 
   if (current.kind === "ready") {
     const page = current.page;
-    return <CorridorPage page={page} siblings={[{ hs6: page.product.hs6, name: page.product.name, hsLabel: page.product.hsLabel }]} />;
+    const requestUrl = requestCorridorUrl(REPO_URL, { product: `${page.product.name}, ${page.product.hs6}`, from: page.corridor.from.code, to: page.corridor.to.code });
+    const notice = (
+      <>
+        <strong>Страница собрана в браузере</strong> из данных, которые конвейер уже загрузил. Чтобы она стала постоянной,
+        а конвейер догрузил статистику спроса и перечитал источники именно для этой пары,{" "}
+        <a href={requestUrl} target="_blank" rel="noopener noreferrer">
+          запросите коридор
+        </a>{" "}
+        (форма на GitHub; заготовка появится после ближайшей сборки).
+      </>
+    );
+    return <CorridorPage page={page} siblings={[{ hs6: page.product.hs6, name: page.product.name, hsLabel: page.product.hsLabel }]} notice={notice} />;
   }
 
   return (
