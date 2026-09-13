@@ -291,7 +291,9 @@ def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
         if any(low.startswith(h) for h in HEADER_FRAGMENTS) or re.fullmatch(r"\d{1,3}", ln):
             continue
         m = CODE_LINE.match(ln)
-        if m and (m.group(2) or " " in ln) and not re.match(r"^\d{4}\s+\d{4}\b", ln):
+        # a real code line names its position: the name starts with a dash or a capital letter; a continuation
+        # line that merely begins with a code reference ("3005 или 3006), состоящие...") starts in lower case
+        if m and (m.group(2) or " " in ln) and not re.match(r"^\d{4}\s+\d{4}\b", ln) and re.match(r"^[–—\-\s]*[A-ZА-ЯЁ(\"«]", m.group(5)):
             code = "".join(g for g in m.groups()[:4] if g)
             rows.append((code, m.group(5).strip()))
         elif rows and not rows[-1][1].rstrip().endswith(":"):
@@ -299,6 +301,7 @@ def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
     cleaned: list[list[str]] = []
     for code, name in rows:
         name = UNIT_RATE.sub("", name).strip()
+        name = re.sub(r"[\s–—\-:;,]+$", "", name)  # trailing dash/colon fragments left by line breaks
         spaced = code[:4] + (" " + code[4:6] if len(code) > 4 else "") + (" " + code[6:9] if len(code) > 6 else "") + (" " + code[9:] if len(code) > 9 else "")
         cleaned.append([spaced, name])
     return parse_ett_rows(cleaned)
