@@ -293,7 +293,7 @@ def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
         m = CODE_LINE.match(ln)
         # a real code line names its position: the name starts with a dash or a capital letter; a continuation
         # line that merely begins with a code reference ("3005 или 3006), состоящие...") starts in lower case
-        if m and (m.group(2) or " " in ln) and not re.match(r"^\d{4}\s+\d{4}\b", ln) and re.match(r"^[–—\-\s]*[A-ZА-ЯЁ(\"«]", m.group(5)):
+        if m and (m.group(2) or " " in ln) and not re.match(r"^\d{4}\s+\d{4}\b", ln) and re.match(r"^(?:[–—\-]|[A-ZА-ЯЁ(\"«])", m.group(5).strip()):
             code = "".join(g for g in m.groups()[:4] if g)
             rows.append((code, m.group(5).strip()))
         elif rows and not rows[-1][1].rstrip().endswith(":"):
