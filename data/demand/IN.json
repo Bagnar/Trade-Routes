@@ -1,0 +1,55 @@
+{
+ "country": "IN",
+ "source": "UN Comtrade (public API, no key)",
+ "series": {
+  "071340": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:11:05+00:00"
+  },
+  "100199": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:12:01+00:00"
+  },
+  "100390": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:12:53+00:00"
+  },
+  "100590": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:13:47+00:00"
+  },
+  "151211": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:14:41+00:00"
+  },
+  "230630": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:15:32+00:00"
+  },
+  "300490": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:16:24+00:00"
+  },
+  "310210": {
+   "years": {},
+   "kind": "none",
+   "partners": 0,
+   "fetched_at": "2026-09-13T13:17:19+00:00"
+  }
+ },
+ "fetched_at": "2026-09-13T13:17:39+00:00"
+}
