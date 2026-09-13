@@ -169,6 +169,17 @@
         }
       },
       {
+        "to": "Турция",
+        "duty": "6.5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Китай",
         "duty": "6.5%",
         "agreement": "нет в базе РТС ВТО",
@@ -184,17 +195,6 @@
         "here": true,
         "duty": "7.5%",
         "agreement": "EAEU - Iran",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "5 из 10",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Турция",
-        "duty": "6.5%",
-        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {

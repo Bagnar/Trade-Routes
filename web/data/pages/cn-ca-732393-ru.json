@@ -179,24 +179,24 @@
         }
       },
       {
-        "to": "Россия",
-        "duty": "9%",
-        "agreement": "нет в базе РТС ВТО",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "5 стр.",
-        "score": {
-          "text": "9 из 15",
-          "status": "mid"
-        }
-      },
-      {
         "to": "Турция",
         "duty": "28.2%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
-          "text": "9 из 15",
+          "text": "13 из 20",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Россия",
+        "duty": "9%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "5 стр.",
+        "score": {
+          "text": "11 из 20",
           "status": "mid"
         }
       },

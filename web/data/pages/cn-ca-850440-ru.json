@@ -185,7 +185,7 @@
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
         "score": {
-          "text": "12 из 15",
+          "text": "17 из 20",
           "status": "ok"
         }
       },
@@ -196,8 +196,8 @@
         "sanctions": "есть: CA, EU, UK, US",
         "support": "5 стр.",
         "score": {
-          "text": "11 из 15",
-          "status": "ok"
+          "text": "13 из 20",
+          "status": "mid"
         }
       },
       {
