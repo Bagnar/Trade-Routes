@@ -125,6 +125,17 @@ def probe(iso2: str) -> None:
             print(f"HTTP {snap.http_status}  {url}\n    {body}")
         except Exception as exc:
             print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
+    # Specific and compound duties ("10%, но не менее 1,75 евро за 1 кг"): does "reported" show 0 while
+    # "aveestimated" carries the ad-valorem equivalent? Compared on a few products with such duties.
+    for product in ("610910", "020130", "040610", "220421"):
+        for datatype in ("reported", "aveestimated"):
+            url = WITS_URL.format(reporter=m49, year=year).replace("/product/all/", f"/product/{product}/").replace("/datatype/reported", f"/datatype/{datatype}")
+            try:
+                snap = fetch.fetch_url(url, save=False, timeout=120.0)
+                obs = re.findall(r"<Obs\b[^>]*>", snap.text)[:3]
+                print(f"HTTP {snap.http_status}  {url}\n    {' | '.join(o[:220] for o in obs) if obs else snap.text.replace(chr(10), ' ')[:300]}")
+            except Exception as exc:
+                print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
     # Structure of a successful reply: first bytes plus the distinct element names and Value ids seen.
     for y in (year, year - 1):
         url = WITS_URL.format(reporter=m49, year=y)

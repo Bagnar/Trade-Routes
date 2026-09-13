@@ -24,6 +24,9 @@ on:
       demand_probe:
         description: "Diagnostics: ISO2 codes to check trade-statistics freshness for (WITS vs UN Comtrade), empty = off"
         default: ""
+      agreements_probe:
+        description: "Diagnostics: print raw RTA-IS export rows containing this text (e.g. ASEAN), empty = off"
+        default: ""
 
 permissions:
   contents: write
@@ -52,8 +55,11 @@ jobs:
       - name: Probe trade-statistics freshness (diagnostics)
         if: ${{ github.event.inputs.demand_probe != '' }}
         run: python -m pipeline demand --probe "${{ github.event.inputs.demand_probe }}"
+      - name: Probe the RTA-IS export (diagnostics)
+        if: ${{ github.event.inputs.agreements_probe != '' }}
+        run: python -m pipeline agreements --probe "${{ github.event.inputs.agreements_probe }}"
       - name: MFN rates by HS-6
-        if: ${{ github.event.inputs.rates_reporters != '' }}
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.rates_reporters != '' }}
         run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR,KZ,UZ,AE,DE,US,IN,VN,BR' }}"
       - name: Trade agreements in force (WTO RTA-IS)
         run: python -m pipeline agreements

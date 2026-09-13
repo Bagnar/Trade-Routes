@@ -274,6 +274,54 @@ def parse_csv_rows(text: str) -> list[list[str]]:
     return [[re.sub(r"\s+", " ", c).strip() for c in row] for row in csv.reader(io.StringIO(text), delimiter=delimiter)]
 
 
+def export_rows(snap) -> list[list[str]]:
+    """Raw table rows (header first) of whatever the RTA-IS export returns — for diagnostics."""
+    if snap.content[:2] == b"PK":
+        return parse_xlsx_rows(snap.content)
+    if "<table" in snap.html.lower():
+        parser = _Tables()
+        parser.feed(snap.html)
+        return [row for table in parser.tables if table and any("rta name" in h.lower() for h in table[0]) for row in table]
+    return parse_csv_rows(snap.html)
+
+
+def probe(needle: str) -> None:
+    """Diagnostics: prints the raw export rows whose name contains `needle` and how names_to_iso2 resolves them
+    (why an agreement such as "ASEAN - China" may be missing from data/agreements.json)."""
+    from urllib.parse import urljoin
+
+    snap = fetch.fetch_url(RTAIS_URL, save=False, timeout=180.0)
+    print(f"list page: HTTP {snap.http_status}")
+    index = _country_index()
+    for href, text in _links(snap.html):
+        if "export" not in text.lower():
+            continue
+        try:
+            if href.lower().startswith("javascript:"):
+                m = re.search(r"__doPostBack\('([^']+)'", href)
+                if not m:
+                    continue
+                exp = _postback(snap.html, RTAIS_URL, m.group(1))
+            else:
+                exp = fetch.fetch_url(urljoin(RTAIS_URL, href), save=False, timeout=300.0)
+        except Exception as exc:
+            print(f"export {text!r} failed: {exc.__class__.__name__}: {str(exc)[:200]}")
+            continue
+        rows = export_rows(exp)
+        print(f"export {text!r}: HTTP {exp.http_status}, {len(rows)} rows; header: {rows[0] if rows else None}")
+        hits = 0
+        for row in rows[1:]:
+            if any(needle.lower() in c.lower() for c in row):
+                hits += 1
+                print("ROW:", [c[:120] for c in row])
+                for c in row:
+                    if ";" in c or " - " in c:
+                        print("    resolves ->", names_to_iso2(c, index))
+        print(f"{hits} rows contain {needle!r}")
+        if rows:
+            break
+
+
 def parse_export(snap) -> list[dict]:
     """Agreements from whatever the RTA-IS export returns: an HTML table, an .xlsx workbook or a CSV/TSV file."""
     if snap.content[:2] == b"PK":
@@ -384,7 +432,11 @@ def main(argv=None) -> int:
 
     parser = argparse.ArgumentParser(prog="pipeline agreements")
     parser.add_argument("--between", nargs=2, metavar=("A", "B"), help="print agreements between two ISO2 codes")
+    parser.add_argument("--probe", help="diagnostics: print raw export rows containing this text and how they resolve")
     args, _ = parser.parse_known_args(argv)
+    if args.probe:
+        probe(args.probe)
+        return 0
     if args.between:
         found = between(*args.between)
         print("not loaded (run without --between from GitHub Actions)" if found is None else json.dumps(found, ensure_ascii=False, indent=1))
