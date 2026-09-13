@@ -74,3 +74,15 @@ def test_rta_is_name_forms():
     assert n("Colombia and Peru") == ["CO", "PE"]
     assert n("Costa Rica (Chile") == ["CR"] and n("Central European Free Trade Agreement (CEFTA) 2006")[:1] == ["AL"]
     assert n("Accession of the United Kingdom") == ["GB"]
+
+
+def test_bloc_party_named_as_free_trade_area_resolves():
+    table = [
+        ["RTA ID", "RTA Name", "Type", "Status", "Date of Entry into Force (G)", "Current signatories"],
+        ["42", "ASEAN - China", "FTA & EIA", "In Force", "38353", "China; ASEAN Free Trade Area (AFTA)"],
+        ["437", "ASEAN - Australia - New Zealand", "FTA & EIA", "In Force", "40179", "Australia; New Zealand; ASEAN Free Trade Area (AFTA)"],
+    ]
+    out = agreements.rows_to_agreements(table)
+    assert [a["name"] for a in out] == ["ASEAN - China", "ASEAN - Australia - New Zealand"]
+    assert "CN" in out[0]["members"] and "VN" in out[0]["members"] and "TH" in out[0]["members"]
+    assert {"AU", "NZ", "VN"} <= set(out[1]["members"])

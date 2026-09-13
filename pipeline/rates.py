@@ -129,13 +129,20 @@ def probe(iso2: str) -> None:
     # "aveestimated" carries the ad-valorem equivalent? Compared on a few products with such duties.
     for product in ("610910", "020130", "040610", "220421"):
         for datatype in ("reported", "aveestimated"):
-            url = WITS_URL.format(reporter=m49, year=year).replace("/product/all/", f"/product/{product}/").replace("/datatype/reported", f"/datatype/{datatype}")
-            try:
-                snap = fetch.fetch_url(url, save=False, timeout=120.0)
+            for y in range(year, year - 5, -1):  # the latest year TRAINS has for this reporter
+                url = WITS_URL.format(reporter=m49, year=y).replace("/product/all/", f"/product/{product}/").replace("/datatype/reported", f"/datatype/{datatype}")
+                try:
+                    snap = fetch.fetch_url(url, save=False, timeout=120.0)
+                except Exception as exc:
+                    print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
+                    break
+                if snap.http_status != 200:
+                    continue
                 obs = re.findall(r"<Obs\b[^>]*>", snap.text)[:3]
-                print(f"HTTP {snap.http_status}  {url}\n    {' | '.join(o[:220] for o in obs) if obs else snap.text.replace(chr(10), ' ')[:300]}")
-            except Exception as exc:
-                print(f"ERR  {url}\n    {exc.__class__.__name__}: {str(exc)[:200]}")
+                print(f"HTTP {snap.http_status}  {url}\n    {' | '.join(o[:260] for o in obs) if obs else snap.text.replace(chr(10), ' ')[:300]}")
+                break
+            else:
+                print(f"no data for product {product} datatype {datatype} in {year - 4}..{year}")
     # Structure of a successful reply: first bytes plus the distinct element names and Value ids seen.
     for y in (year, year - 1):
         url = WITS_URL.format(reporter=m49, year=y)

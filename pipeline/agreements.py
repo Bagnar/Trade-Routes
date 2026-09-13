@@ -67,7 +67,8 @@ ALIASES: dict[str, list[str]] = {
     "cote d'ivoire": ["CI"], "côte d'ivoire": ["CI"], "cabo verde": ["CV"], "eswatini": ["SZ"], "timor-leste": ["TL"],
     "democratic republic of the congo": ["CD"], "congo, democratic republic of the": ["CD"], "congo": ["CG"], "china": ["CN"],
     "japan": ["JP"], "canada": ["CA"], "australia": ["AU"], "new zealand": ["NZ"], "india": ["IN"], "mexico": ["MX"],
-    "asean": ASEAN, "association of south east asian nations": ASEAN, "cptpp": CPTPP,
+    "asean": ASEAN, "association of south east asian nations": ASEAN, "association of southeast asian nations": ASEAN,
+    "asean free trade area": ASEAN, "afta": ASEAN, "cptpp": CPTPP,
     "comprehensive and progressive agreement for trans-pacific partnership": CPTPP, "rcep": RCEP,
     "regional comprehensive economic partnership": RCEP, "mercosur": MERCOSUR, "southern common market": MERCOSUR,
     "pacific alliance": PACIFIC_ALLIANCE, "sacu": SACU, "southern african customs union": SACU, "usmca": USMCA, "cusma": USMCA,
@@ -199,10 +200,11 @@ def rows_to_agreements(table: list[list[str]], index: dict[str, list[str]] | Non
         if "force" not in status:
             continue
         name = row[c_name]
-        if c_members is not None and c_members < len(row) and row[c_members].strip():
-            members = names_to_iso2(row[c_members], index)
-        else:
-            members = names_to_iso2(name.replace(" - ", ";").replace(" – ", ";"), index)
+        members = names_to_iso2(row[c_members], index) if c_members is not None and c_members < len(row) and row[c_members].strip() else []
+        if len(members) < 2:  # a party written as a bloc the signatories column names differently: fall back to the name
+            for code in names_to_iso2(name.replace(" - ", ";").replace(" – ", ";"), index):
+                if code not in members:
+                    members.append(code)
         if len(members) < 2:
             continue
         out.append({
