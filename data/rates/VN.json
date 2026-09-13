@@ -3,7 +3,7 @@
 "source": "World Bank WITS / UNCTAD TRAINS",
 "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/704/partner/000/product/all/year/2023/datatype/reported",
 "year": 2023,
-"fetched_at": "2026-09-13T13:33:44+00:00",
+"fetched_at": "2026-09-13T14:12:35+00:00",
 "kind": "import_mfn",
 "unit": "percent",
 "rates": {

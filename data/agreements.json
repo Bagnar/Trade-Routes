@@ -2,7 +2,7 @@
 "source": "WTO RTA-IS",
 "url": "https://rtais.wto.org/UI/PublicAllRTAList.aspx",
 "export": "https://rtais.wto.org/UI/ExportAllRTAList.aspx",
-"fetched_at": "2026-09-13T13:33:48+00:00",
+"fetched_at": "2026-09-13T14:12:43+00:00",
 "in_force_reported": 388,
 "agreements": [
 {
@@ -295,7 +295,112 @@
 "status": "In Force",
 "members": [
 "AU",
-"NZ"
+"NZ",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
+]
+},
+{
+"name": "ASEAN - China",
+"type": "FTA & EIA",
+"in_force": "38353",
+"status": "In Force",
+"members": [
+"CN",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
+]
+},
+{
+"name": "ASEAN - Hong Kong, China",
+"type": "FTA & EIA",
+"in_force": "43627",
+"status": "In Force",
+"members": [
+"HK",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
+]
+},
+{
+"name": "ASEAN - India",
+"type": "FTA & EIA",
+"in_force": "40179",
+"status": "In Force",
+"members": [
+"IN",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
+]
+},
+{
+"name": "ASEAN - Japan",
+"type": "FTA & EIA",
+"in_force": "39783",
+"status": "In Force",
+"members": [
+"JP",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
+]
+},
+{
+"name": "ASEAN - Korea, Republic of",
+"type": "FTA & EIA",
+"in_force": "40179",
+"status": "In Force",
+"members": [
+"KR",
+"BN",
+"KH",
+"ID",
+"LA",
+"MY",
+"MM",
+"PH",
+"SG",
+"TH",
+"VN"
 ]
 },
 {
@@ -5856,6 +5961,16 @@
 "members": [
 "KR",
 "GB"
+]
+},
+{
+"name": "United Kingdom - Lebanon",
+"type": "FTA",
+"in_force": "44197",
+"status": "In Force",
+"members": [
+"GB",
+"LB"
 ]
 },
 {
