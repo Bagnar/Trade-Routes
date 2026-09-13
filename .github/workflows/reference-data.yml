@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
-      - name: Tests (before any loader: a failing test must not discard loaded data)
+      - name: Tests first, so a failing test never discards loaded data
         run: python -m pytest -q pipeline/tests
       - name: HS-6 nomenclature
         run: python -m pipeline reference

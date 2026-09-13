@@ -25,7 +25,7 @@ jobs:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
 
-      - name: Tests (before the paid step: a failing test must not discard extracted facts)
+      - name: Tests first, so a failing test never discards extracted facts
         run: python -m pytest -q pipeline/tests
 
       - name: Re-check quotes behind published facts
