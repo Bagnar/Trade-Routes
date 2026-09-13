@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from datetime import date
 
 from . import fetch, rates
@@ -62,14 +63,15 @@ def probe(iso2_list: list[str]) -> list[dict]:
         years = [y for y in _years(body) if y <= today]
         row["comtrade_latest"] = years[-1] if years else None
         if years:
-            # the newest annual dataset can be partial; test the newest and the one before it
-            for y in (years[-1], years[-2] if len(years) > 1 else years[-1]):
+            # the newest annual dataset can be partial; test the three newest years, pacing the key-less
+            # endpoint (it answers 429 "try again in 2 seconds" when called faster than that)
+            found = []
+            for y in years[-1:-4:-1]:
+                time.sleep(3)
                 status, body = _try(f"{iso2} comtrade preview {y}", COMTRADE_PREVIEW.format(m49=int(m49), year=y))
                 m = re.search(r'"primaryValue":\s*([0-9.eE+]+)', body)
-                if status == 200 and m:
-                    row["preview"] = f"{y}: 610910 imports {float(m.group(1)):,.0f} USD"
-                    break
-                row["preview"] = f"{y}: no value ({status})"
+                found.append(f"{y}: {float(m.group(1)):,.0f} USD" if (status == 200 and m) else f"{y}: no value ({status}, {body[:40]!r})")
+            row["preview"] = "; ".join(found)
         for shape in WITS_AVAILABILITY_SHAPES:
             status, body = _try(f"{iso2} wits availability", shape.format(iso3=iso3, m49=m49, year=today - 2))
             if status == 200 and "error" not in body[:200].lower():
