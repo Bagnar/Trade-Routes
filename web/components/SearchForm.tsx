@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { CountryRef, Mode } from "@/lib/page-content";
-import { requestCorridorUrl } from "@/lib/routes";
+import { assembledHref, requestCorridorUrl } from "@/lib/routes";
 import { REPO_URL } from "@/lib/site";
 import { ProductSearch, type ProductPick } from "./ProductSearch";
 
@@ -49,39 +48,29 @@ export function SearchForm({ countries, corridors }: { countries: CountryRef[]; 
     const fromName = countries.find((c) => c.code === from)?.from ?? from;
     const toName = countries.find((c) => c.code === to)?.to ?? to;
     const corridor = corridors.find((c) => c.from === from && c.to === to);
-    if (!corridor) {
-      const url = requestCorridorUrl(REPO_URL, { product: pick ? `${pick.label}, ${pick.code}` : product, from, to, mode });
-      setMiss(
-        <>
-          Коридор «{fromName} → {toName}» ещё не открыт. Страница соберётся из официальных источников по запросу:{" "}
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            запросить коридор
-          </a>{" "}
-          (откроется форма запроса на GitHub, страница-заготовка появится после ближайшей сборки).
-        </>,
-      );
-      return;
-    }
-    const page = findPage(corridor);
+    const page = corridor ? findPage(corridor) : undefined;
     if (!page) {
+      // No prebuilt page: assemble one in the browser from the structured data when the HS-6 code is known.
+      const code = pick ? pick.code : product.replace(/\D/g, "").slice(0, 6);
+      if (from !== to && /^\d{6}$/.test(code)) {
+        setMiss(null);
+        router.push(`${assembledHref(from, to, code, mode)}${anchor}`);
+        return;
+      }
       const url = requestCorridorUrl(REPO_URL, { product: pick ? `${pick.label}, ${pick.code}` : product, from, to, mode });
       setMiss(
-        <>
-          Для «{product || "этого товара"}» в коридоре «{fromName} → {toName}» страница ещё не собрана —{" "}
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            запросить её
-          </a>
-          . Открыты:{" "}
-          {corridor.pages.map((p, i) => (
-            <span key={p.hs6}>
-              {i > 0 && ", "}
-              <Link href={p.href}>
-                {p.name} ({p.hsLabel})
-              </Link>
-            </span>
-          ))}
-          .
-        </>,
+        from === to ? (
+          <>Выберите две разные страны: откуда везёте и куда.</>
+        ) : (
+          <>
+            Чтобы собрать страницу «{fromName} → {toName}», выберите товар из подсказок (нужен код HS-6) или введите шестизначный код.
+            Если группа не находится —{" "}
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              запросите коридор
+            </a>{" "}
+            (откроется форма на GitHub).
+          </>
+        ),
       );
       return;
     }

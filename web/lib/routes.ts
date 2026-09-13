@@ -11,6 +11,13 @@ export function countryHref(code: string): string {
   return `/country/${code.toLowerCase()}`;
 }
 
+/** Corridor assembled in the browser for any pair and any HS-6 group (docs/concept.md, decision 15). */
+export function assembledHref(from: string, to: string, hs6: string, mode?: "b2b" | "parcel"): string {
+  const params = new URLSearchParams({ from: from.toUpperCase(), to: to.toUpperCase(), hs6 });
+  if (mode === "parcel") params.set("mode", "parcel");
+  return `/c/?${params.toString()}`;
+}
+
 /**
  * "Запросить коридор": a prefilled GitHub issue (template .github/ISSUE_TEMPLATE/corridor-request.yml).
  * No server of our own: the issue is the queue, `python -m pipeline requests` reads it (docs/expansion-plan.md, 1.9).

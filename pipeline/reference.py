@@ -73,6 +73,21 @@ def build_hs6(out: Path = HS6_FILE) -> Path:
     return out
 
 
+def clean_hs6_ru(path: Path = HS6_FILE) -> int:
+    """Applies clean_ru_name to the Russian names already stored in data/hs6.json; returns the number changed."""
+    rows = json.loads(path.read_text(encoding="utf8"))
+    changed = 0
+    for r in rows:
+        if r.get("ru"):
+            cleaned = clean_ru_name(r["ru"])
+            if cleaned != r["ru"]:
+                r["ru"] = cleaned
+                changed += 1
+    path.write_text(json.dumps(rows, ensure_ascii=False, indent=0) + "\n", encoding="utf8")
+    print(f"{changed} Russian names cleaned in {path}")
+    return changed
+
+
 def parse_ru_tnved(text: str) -> dict[str, str]:
     """Best-effort parser for a plain-text/CSV EAEU TN VED export: lines '6109 10 000 0;Футболки...' or '610910;...'."""
     out: dict[str, str] = {}
@@ -89,9 +104,13 @@ def main(argv=None) -> int:
 
     parser = argparse.ArgumentParser(prog="pipeline reference")
     parser.add_argument("--probe-ru", nargs="?", const=ETT_PAGE, help="diagnostics: files linked from the ЕТТ page and first rows")
+    parser.add_argument("--clean-ru", action="store_true", help="re-clean Russian names already in data/hs6.json (no network)")
     args, _ = parser.parse_known_args(argv)
     if args.probe_ru:
         probe_ru(args.probe_ru)
+        return 0
+    if args.clean_ru:
+        clean_hs6_ru()
         return 0
     build_hs6()
     return 0
@@ -270,6 +289,28 @@ def pdf_lines(content: bytes) -> list[str]:
 HEADER_FRAGMENTS = ("код", "тн вэд", "наименование позиции", "доп.", "ед.", "изм.", "ставка ввозной", "таможенной", "пошлины",
                     "(в процентах", "от таможенной", "стоимости либо", "в евро, либо", "в долларах сша)", "группа ")
 UNIT_RATE = re.compile(r"\s+(?:(?:шт|кг|л|м|м2|м3|пар|кар|г|т|см3|квт|гвт|тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|1000 квт\.ч|ci/l|kw)\s+)?[\d,.]+\s*%?(?:\d+\))?(?:\s*,?\s*но не менее.*)?$", re.I)
+# The unit and rate columns of a row ("шт 10", "кг 0,2 евро за 1 кг", "– 5", "кг 90% с/в", "10, но не менее 0,5 евро
+# за 1 кг") followed by the end of the name or by a merged next row ("– прочие"): everything from there on is cut.
+_UNIT = r"(?:тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|1000 квт\.ч|шт|кг|л|м|м2|м3|пар|кар|г|т|см3|квт|гвт|ci/l|kw)"
+_RATE = r"\d[\d,.]*\s*%?(?:\d+[A-ZА-Я]?\))?(?:\s*с/в(?:\s*\d[\d,.]*)?)?(?:\d+[A-ZА-Я]?\))?(?:\s*(?:плюс\s+\d[\d,.]*\s*)?(?:евро|долл\.? сша|долларов сша)\s+за\s+[\d,.]+\s*\S+)?(?:\s*,?\s*но не менее[^–]*?)?"
+# after the rate: the end, a merged next row ("– прочие"), a merged section heading ("II. ДРАГОЦЕННЫЕ…") or "[6503]"
+RATE_CUT = re.compile(rf"\s+(?:{_UNIT}\s+|–\s+){_RATE}(?=\s*(?:–|\[|[IVX]+\.|$))", re.I)
+GLUED_FOOTNOTE = re.compile(r"(?<=[а-яёa-z)])\d{1,2}\)(?=:|$)", re.I)
+# the same columns inside a "<heading>: <sub-name>" name (a heading row parsed before this cleaner existed)
+RATE_INSIDE = re.compile(rf"\s+(?:{_UNIT}\s+|–\s+){_RATE}(?=\s*:)", re.I)
+TRAILING_UNIT = re.compile(r"\s+(?:тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|шт|м2|м3|пар|кар|см3)$", re.I)
+
+
+def clean_ru_name(name: str) -> str:
+    """Strips the unit/rate columns (and any next row merged after them) from a name taken from a ЕТТ PDF row."""
+    name = GLUED_FOOTNOTE.sub("", RATE_INSIDE.sub("", name))
+    m = RATE_CUT.search(name)
+    if m:
+        name = name[: m.start()]
+    name = UNIT_RATE.sub("", name).strip()
+    name = TRAILING_UNIT.sub("", name)
+    name = GLUED_FOOTNOTE.sub("", name)
+    return re.sub(r"[\s–—\-:;,]+$", "", name).strip()  # trailing dash/colon fragments left by line breaks
 
 
 def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
@@ -300,8 +341,7 @@ def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
             rows[-1] = (rows[-1][0], (rows[-1][1] + " " + ln).strip())
     cleaned: list[list[str]] = []
     for code, name in rows:
-        name = UNIT_RATE.sub("", name).strip()
-        name = re.sub(r"[\s–—\-:;,]+$", "", name)  # trailing dash/colon fragments left by line breaks
+        name = clean_ru_name(name)
         spaced = code[:4] + (" " + code[4:6] if len(code) > 4 else "") + (" " + code[6:9] if len(code) > 6 else "") + (" " + code[9:] if len(code) > 9 else "")
         cleaned.append([spaced, name])
     return parse_ett_rows(cleaned)

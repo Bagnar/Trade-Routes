@@ -14,7 +14,7 @@ on:
     inputs:
       rates_reporters:
         description: "ISO codes of importers to load MFN rates for (comma-separated), empty = skip"
-        default: "CA,CN,RU,IR,TR"
+        default: "CA,CN,RU,IR,TR,KZ,UZ,AE,DE,US,IN,VN,BR"
       probe:
         description: "Diagnostics: ISO2 of one country to probe WITS URL shapes for (empty = off)"
         default: ""
@@ -54,7 +54,7 @@ jobs:
         run: python -m pipeline demand --probe "${{ github.event.inputs.demand_probe }}"
       - name: MFN rates by HS-6
         if: ${{ github.event.inputs.rates_reporters != '' }}
-        run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR' }}"
+        run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR,KZ,UZ,AE,DE,US,IN,VN,BR' }}"
       - name: Trade agreements in force (WTO RTA-IS)
         run: python -m pipeline agreements
       - name: Import statistics for the site's pairs (UN Comtrade public API, no key)

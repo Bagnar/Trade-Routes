@@ -56,6 +56,7 @@
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка
     python scripts/scaffold_demo_pages.py     # заготовки страниц для всех групп из data/corridors.yaml (демо, без выдуманных фактов)
     python -m pipeline reference                                              # data/hs6.json из UN Comtrade H6 (сеть: reference-data.yml)
+    python -m pipeline reference --clean-ru                                   # убрать хвосты колонок ставок из русских названий в data/hs6.json (без сети)
     python -m pipeline rates --wits CA,CN                                     # data/rates/{ISO2}.json — MFN по HS-6 из WITS/TRAINS (сеть)
     python -m pipeline agreements                                             # data/agreements.json — РТС в силе из WTO RTA-IS (сеть); --between RU IR
     python -m pipeline index --from CN --to CA --hs6 610910                   # оценка из пяти частей и «куда ещё» из индексного слоя (без сети)
@@ -64,6 +65,8 @@
     python -m pipeline assemble                                               # факты + ставки + индекс → web/data/pages (daily-check.yml)
     python -m pipeline requests --sync --apply                                # очередь запросов коридоров из issues → data/requests.json, пустые страницы
     cd web && NEXT_PUBLIC_BASE_PATH=/Trade-Routes npm run build               # статический сайт в web/out (pages.yml публикует на GitHub Pages)
+
+Любая пара стран и любая группа HS-6 собираются в браузере: `/c/?from=CN&to=RU&hs6=610910` (`web/lib/assemble-client.ts` — порт правил `index.py`/`assemble.py`; данные для браузера выносит `web/scripts/copy-data.mjs` в `public/data`). Готовые страницы `web/data/pages` остаются главным входом.
 
 Шаблон страницы коридора как структура данных — `web/lib/page-content.ts` (`PageContent`); конвейер `assemble` выдаёт ровно эту форму. Шаблон страницы «где купить» — `web/lib/supply-content.ts` (`SupplyContent`), модуль `pipeline/supply.py`, таблицы `supply_regions` и `supply_pages`.
 
