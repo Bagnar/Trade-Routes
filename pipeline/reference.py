@@ -62,7 +62,7 @@ def build_hs6(out: Path = HS6_FILE) -> Path:
         for r in json.loads(out.read_text(encoding="utf8")):
             if r.get("ru"):
                 existing[r["code"]] = r["ru"]
-    ru_url = os.environ.get("HS_RU_SOURCE_URL")
+    ru_url = os.environ.get("HS_RU_SOURCE_URL") or ETT_PAGE  # founder-confirmed official page, 13 September 2026
     if ru_url:
         ru = load_hs_ru(ru_url)
         print(f"Russian names from {ru_url}: {len(ru)}")
@@ -267,22 +267,40 @@ def pdf_lines(content: bytes) -> list[str]:
     return [ln for ln in lines if ln]
 
 
+HEADER_FRAGMENTS = ("код", "тн вэд", "наименование позиции", "доп.", "ед.", "изм.", "ставка ввозной", "таможенной", "пошлины",
+                    "(в процентах", "от таможенной", "стоимости либо", "в евро, либо", "в долларах сша)", "группа ")
+UNIT_RATE = re.compile(r"\s+(?:(?:шт|кг|л|м|м2|м3|пар|кар|г|т|см3|квт|гвт|тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|1000 квт\.ч|ci/l|kw)\s+)?[\d,.]+\s*%?(?:\d+\))?(?:\s*,?\s*но не менее.*)?$", re.I)
+
+
 def parse_ett_pdf_lines(lines: list[str]) -> dict[str, str]:
-    """{hs6: '<4-digit heading>: <sub-name>'} from the text lines of a chapter PDF. A code line starts with the
-    ТН ВЭД code ('6109 10 000 0' / '6109 10' / '6109') followed by the name; a following line without a code
-    continues the name; a trailing unit/rate column (e.g. 'шт 10' or '10') is stripped."""
+    """{hs6: '<4-digit heading>: <sub-name>'} from the text lines of a chapter PDF.
+
+    The table starts after the header ('Код ТН ВЭД … Наименование позиции'); a code line starts with the ТН ВЭД
+    code ('6109 10 000 0' / '8801 00 100' / '6109 10' / '6109') followed by the name; a following line without a
+    code continues the name unless the name already ends with ':' (a heading whose children follow); repeated
+    page headers and page numbers are ignored; the trailing unit/rate columns are stripped."""
     rows: list[tuple[str, str]] = []
-    for ln in lines:
+    started = False
+    for raw in lines:
+        ln = raw.lstrip("+ ").strip()
+        low = ln.lower()
+        if not started:
+            if low.startswith("код") or "наименование позиции" in low:
+                started = True
+            continue
+        if any(low.startswith(h) for h in HEADER_FRAGMENTS) or re.fullmatch(r"\d{1,3}", ln):
+            continue
         m = CODE_LINE.match(ln)
-        if m and (m.group(2) or len(ln.split()) > 1) and not re.match(r"^\d{4}\s+\d{4}\b", ln):
+        if m and (m.group(2) or " " in ln) and not re.match(r"^\d{4}\s+\d{4}\b", ln):
             code = "".join(g for g in m.groups()[:4] if g)
-            rows.append((code, m.group(5)))
-        elif rows and not re.match(r"^(Код|ТН ВЭД|Наименование|Доп\.|Ставка|Группа|\d+\s*$)", ln):
-            rows[-1] = (rows[-1][0], rows[-1][1] + " " + ln)
+            rows.append((code, m.group(5).strip()))
+        elif rows and not rows[-1][1].rstrip().endswith(":"):
+            rows[-1] = (rows[-1][0], (rows[-1][1] + " " + ln).strip())
     cleaned: list[list[str]] = []
     for code, name in rows:
-        name = re.sub(r"\s+(шт|кг|л|м|м2|м3|пар|кар|тыс\. шт|100 шт|1000 шт|1000 л|1000 м3|г|т|см3|кВт|ГВт)?\s*[\d,.]+\s*%?(\s*,?\s*но не менее.*)?$", "", name).strip()
-        cleaned.append([code[:4] + (" " + code[4:6] if len(code) > 4 else "") + (" " + code[6:9] if len(code) > 6 else "") + (" " + code[9:] if len(code) > 9 else ""), name])
+        name = UNIT_RATE.sub("", name).strip()
+        spaced = code[:4] + (" " + code[4:6] if len(code) > 4 else "") + (" " + code[6:9] if len(code) > 6 else "") + (" " + code[9:] if len(code) > 9 else "")
+        cleaned.append([spaced, name])
     return parse_ett_rows(cleaned)
 
 
