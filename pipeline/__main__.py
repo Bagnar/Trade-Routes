@@ -65,7 +65,7 @@ def main(argv=None):
     if args.command == "reference":
         from . import reference
 
-        return reference.main()
+        return reference.main(argv if argv is not None else sys.argv[2:])
     if args.command == "validate":
         from . import validate
 

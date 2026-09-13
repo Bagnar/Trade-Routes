@@ -42,6 +42,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ vars.SITE_BASE_PATH != '' && vars.SITE_BASE_PATH || format('/{0}', github.event.repository.name) }}
           NEXT_PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          NEXT_PUBLIC_LAUNCHED: ${{ vars.SITE_LAUNCHED || 'false' }}   # 'true' after the public launch: lets search engines index
         run: |
           npm run build
           touch out/.nojekyll

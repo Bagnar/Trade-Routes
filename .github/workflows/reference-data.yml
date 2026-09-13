@@ -18,6 +18,9 @@ on:
       probe:
         description: "Diagnostics: ISO2 of one country to probe WITS URL shapes for (empty = off)"
         default: ""
+      hs_ru_probe:
+        description: "Diagnostics: probe the ЕТТ ЕАЭС page for the tariff spreadsheet (true/false)"
+        default: "false"
       demand_probe:
         description: "Diagnostics: ISO2 codes to check trade-statistics freshness for (WITS vs UN Comtrade), empty = off"
         default: ""
@@ -36,7 +39,12 @@ jobs:
       - run: pip install -e ".[dev]"
       - name: Tests first, so a failing test never discards loaded data
         run: python -m pytest -q pipeline/tests
+      - name: Probe the ЕТТ ЕАЭС page (diagnostics)
+        if: ${{ github.event.inputs.hs_ru_probe == 'true' }}
+        run: python -m pipeline reference --probe-ru
       - name: HS-6 nomenclature
+        env:
+          HS_RU_SOURCE_URL: ${{ vars.HS_RU_SOURCE_URL }}   # ЕТТ page or its spreadsheet; empty = English names only
         run: python -m pipeline reference
       - name: Probe WITS endpoint (diagnostics)
         if: ${{ github.event.inputs.probe != '' }}

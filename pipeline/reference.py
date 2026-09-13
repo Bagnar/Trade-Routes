@@ -2,9 +2,10 @@
 
 Sources (all in data/sources.yaml, section `international`):
   - HS-6 English texts: UN Comtrade reference list H6 (comtradeapi.un.org/files/v1/app/reference/H6.json).
-  - HS-6 Russian texts: an optional machine-readable EAEU TN VED file (env HS_RU_SOURCE_URL, eaeunion.org) —
-    left empty until the founder confirms a stable official download; search then falls back to English texts
-    plus the hand-maintained Russian keyword hints in data/hs_synonyms_ru.json.
+  - HS-6 Russian texts: the Единый таможенный тариф ЕАЭС (ЕТТ) published by the Eurasian Economic Commission at
+    https://eec.eaeunion.org/comission/department/catr/ett/ (founder-confirmed official page, 13 September 2026).
+    HS_RU_SOURCE_URL points at that page or directly at its spreadsheet; `--probe-ru` lists the files the page
+    links to and shows the first rows so the parser can be matched to the real layout.
 
 Output: data/hs6.json  [{"code": "610910", "en": "...", "ru": "..."}], sorted by code.
 Rule this module must never break: nomenclature texts come from the official files only — never typed in by hand
@@ -63,8 +64,9 @@ def build_hs6(out: Path = HS6_FILE) -> Path:
                 existing[r["code"]] = r["ru"]
     ru_url = os.environ.get("HS_RU_SOURCE_URL")
     if ru_url:
-        snap = fetch.fetch_url(ru_url, save=False)
-        existing.update(parse_ru_tnved(snap.text))
+        ru = load_hs_ru(ru_url)
+        print(f"Russian names from {ru_url}: {len(ru)}")
+        existing.update(ru)
     rows = merge_ru(rows, existing)
     out.write_text(json.dumps(rows, ensure_ascii=False, indent=0) + "\n", encoding="utf8")
     print(f"{len(rows)} HS-6 codes -> {out} ({sum(1 for r in rows if r['ru'])} with Russian text)")
@@ -83,5 +85,151 @@ def parse_ru_tnved(text: str) -> dict[str, str]:
 
 
 def main(argv=None) -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser(prog="pipeline reference")
+    parser.add_argument("--probe-ru", nargs="?", const=ETT_PAGE, help="diagnostics: files linked from the ЕТТ page and first rows")
+    args, _ = parser.parse_known_args(argv)
+    if args.probe_ru:
+        probe_ru(args.probe_ru)
+        return 0
     build_hs6()
     return 0
+
+
+# ---------------------------------------------------------------- ЕТТ ЕАЭС (Russian names) — probe and parser
+
+ETT_PAGE = "https://eec.eaeunion.org/comission/department/catr/ett/"
+FILE_EXT = (".xlsx", ".xls", ".zip", ".csv", ".docx", ".pdf")
+
+
+def _links(html: str) -> list[tuple[str, str]]:
+    out = []
+    for m in re.finditer(r"<a\b([^>]*)>(.*?)</a>", html, re.I | re.S):
+        href = re.search(r"href\s*=\s*[\"']([^\"']+)", m.group(1), re.I)
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(2))).strip()
+        if href:
+            out.append((href.group(1), text))
+    return out
+
+
+def find_ett_files(html: str, base: str = ETT_PAGE) -> list[tuple[str, str]]:
+    """Links on the ЕТТ page that look like the tariff table: spreadsheet/zip files or ЕТТ/ТН ВЭД wording."""
+    from urllib.parse import urljoin
+
+    out = []
+    for href, text in _links(html):
+        low = (href + " " + text).lower()
+        if href.lower().split("?")[0].endswith(FILE_EXT) or any(k in low for k in ("етт", "тн вэд", "таможенный тариф", "tnved")):
+            out.append((urljoin(base, href), text))
+    return out
+
+
+def _cell_code(text: str) -> str:
+    digits = re.sub(r"\D", "", text or "")
+    return digits if 4 <= len(digits) <= 10 and re.fullmatch(r"[\d\s]+", (text or "").strip()) else ""
+
+
+def parse_ett_rows(rows: list[list[str]]) -> dict[str, str]:
+    """{hs6: Russian name} from the ЕТТ table rows: a code column (4/6/10-digit ТН ВЭД codes with spaces) and a
+    name column with dash-prefixed sub-names. The 6-digit name is '<4-digit heading>: <sub-name>'; when the table
+    has no 6-digit row the first 10-digit row under that HS-6 supplies the sub-name."""
+    names: dict[str, str] = {}
+    heading4 = ""
+    for row in rows:
+        cells = [c.strip() for c in row if c is not None]
+        if len(cells) < 2:
+            continue
+        code = next((_cell_code(c) for c in cells[:3] if _cell_code(c)), "")
+        if not code:
+            continue
+        name = next((c for c in cells if c and not _cell_code(c) and len(c) > 1), "").strip()
+        clean = re.sub(r"^[\s\-–—]+", "", name).strip(" :;")
+        if len(code) == 4:
+            heading4 = clean
+            continue
+        hs6 = code[:6]
+        if hs6 in names and len(code) == 10:
+            continue
+        if not clean:
+            continue
+        full = f"{heading4}: {clean}" if heading4 and clean.lower() != heading4.lower() else clean
+        if len(code) == 6 or hs6 not in names:
+            names[hs6] = full
+    return names
+
+
+def rows_from_file(snap) -> list[list[str]]:
+    """Rows from an xlsx (zip of XML, parsed without third-party packages), xls (xlrd if installed), csv or zip."""
+    import io
+    import zipfile
+
+    from .agreements import parse_csv_rows, parse_xlsx_rows
+
+    content = snap.content
+    if content[:2] == b"PK":
+        with zipfile.ZipFile(io.BytesIO(content)) as z:
+            names = z.namelist()
+            if "xl/workbook.xml" in names:
+                return parse_xlsx_rows(content)
+            inner = [n for n in names if n.lower().endswith((".xlsx", ".xls", ".csv"))]
+            if inner:
+                data = z.read(inner[0])
+                return rows_from_file(type(snap)(url=inner[0], fetched_at=snap.fetched_at, http_status=200, content_hash="", text="", path=None, html=data.decode("utf8", "ignore") if inner[0].lower().endswith(".csv") else "", content=data))
+    if content[:8] == b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1":  # legacy .xls
+        try:
+            import xlrd  # optional dependency
+
+            book = xlrd.open_workbook(file_contents=content)
+            sheet = book.sheet_by_index(0)
+            return [[str(sheet.cell_value(r, c)) for c in range(sheet.ncols)] for r in range(sheet.nrows)]
+        except ImportError:
+            print("xls file: install xlrd to parse it")
+            return []
+    return parse_csv_rows(snap.html or snap.text)
+
+
+def probe_ru(url: str = ETT_PAGE) -> None:
+    """Diagnostics: files linked from the ЕТТ page and the first rows of the first spreadsheet found."""
+    snap = fetch.fetch_url(url, save=False, timeout=180.0)
+    print(f"HTTP {snap.http_status} {len(snap.html)} chars :: {url}")
+    files = find_ett_files(snap.html, url)
+    for href, text in files[:40]:
+        print(f"  link: {href}  [{text[:80]}]")
+    for href, text in files:
+        if not href.lower().split("?")[0].endswith((".xlsx", ".xls", ".zip", ".csv")):
+            continue
+        try:
+            fsnap = fetch.fetch_url(href, save=False, timeout=300.0)
+        except Exception as exc:
+            print(f"  {href}: {exc.__class__.__name__}: {str(exc)[:120]}")
+            continue
+        print(f"--- {href}: HTTP {fsnap.http_status}, {len(fsnap.content)} bytes, starts {fsnap.content[:4]!r}")
+        rows = rows_from_file(fsnap)
+        print(f"    rows: {len(rows)}")
+        shown = 0
+        for row in rows:
+            if any(c.strip() for c in row):
+                print("    ", [c[:40] for c in row[:6]])
+                shown += 1
+            if shown >= 40:
+                break
+        names = parse_ett_rows(rows)
+        print(f"    parsed HS-6 names: {len(names)}; sample: {list(names.items())[:5]}")
+        break
+
+
+def load_hs_ru(url: str) -> dict[str, str]:
+    """Russian HS-6 names from the ЕТТ page (finds the spreadsheet) or from a direct file URL."""
+    snap = fetch.fetch_url(url, save=False, timeout=300.0)
+    if snap.content[:2] == b"PK" or snap.content[:4] == b"\xd0\xcf\x11\xe0":
+        return parse_ett_rows(rows_from_file(snap))
+    if "<" in snap.html[:100]:
+        for href, _text in find_ett_files(snap.html, url):
+            if href.lower().split("?")[0].endswith((".xlsx", ".xls", ".zip", ".csv")):
+                fsnap = fetch.fetch_url(href, save=False, timeout=300.0)
+                names = parse_ett_rows(rows_from_file(fsnap))
+                if len(names) > 1000:
+                    return names
+        return {}
+    return parse_ru_tnved(snap.text)

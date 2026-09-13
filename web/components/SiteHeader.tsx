@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Lang } from "@/lib/page-content";
 import { LANG_LABELS, SITE_NAME } from "@/lib/site";
+import { FeedbackLink } from "./FeedbackLink";
 
 /** Language switch. Only the current language is enabled until the assembler produces other languages. */
 export function LangSwitch({ languages, current }: { languages: Lang[]; current: Lang }) {
@@ -62,6 +63,7 @@ export function SiteFooter({ sanctionsPolicy }: { sanctionsPolicy?: boolean }) {
         <Link href="/facts">Как собираются страницы</Link>
         {sanctionsPolicy && <span>Санкционная политика сайта</span>}
         <Link href="/country">Источники по странам</Link>
+        <FeedbackLink />
       </div>
     </footer>
   );

@@ -1,0 +1,32 @@
+name: Замечание к странице
+description: Неточность, устаревшая норма, спорная формулировка — с адресом страницы. Для юриста и первых читателей.
+title: "Замечание: "
+labels: [feedback]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Адрес страницы
+      placeholder: https://…/corridor/cn-ca/610910/
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Что не так
+      description: Какая строка, в чём ошибка или риск, как должно быть.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Официальный источник, подтверждающий правку (ссылка)
+      description: Необязательно, но ускоряет исправление: строка попадёт на сайт только с цитатой из официальной страницы.
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Серьёзность
+      options:
+        - опечатка или формулировка
+        - устаревшая или неверная норма
+        - юридический риск, снять со страницы
