@@ -25,6 +25,9 @@ jobs:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
 
+      - name: Tests (before the paid step: a failing test must not discard extracted facts)
+        run: python -m pytest -q pipeline/tests
+
       - name: Re-check quotes behind published facts
         id: monitor
         run: |
@@ -55,9 +58,6 @@ jobs:
 
       - name: Validate pages
         run: python -m pipeline validate
-
-      - name: Tests
-        run: python -m pytest -q pipeline/tests
 
       - name: Commit changes
         run: |

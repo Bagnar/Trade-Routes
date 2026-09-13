@@ -1,6 +1,14 @@
 import json
 
+import pytest
+
 from pipeline import index
+
+
+@pytest.fixture(autouse=True)
+def no_demand_on_disk(tmp_path, monkeypatch):
+    # tests must not depend on data/demand/*.json loaded by the workflows
+    monkeypatch.setattr(index.demand, "DEMAND_DIR", tmp_path / "demand")
 
 FACTS = [
     {"block": "sanctions", "country": "US", "targets": ["IR"], "hs_scope": ["5701"], "statement": {"ru": "Запрещён ввоз ковров из Ирана."}, "quote": "x", "url": "https://ofac.treasury.gov/iran", "source_id": "sanc-us-ofac", "fetched_at": "2026-09-10T00:00:00Z"},

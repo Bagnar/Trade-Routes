@@ -9,6 +9,7 @@ from pipeline import assemble
 def no_rates_on_disk(tmp_path, monkeypatch):
     # tests must not depend on data/rates/*.json loaded by the reference-data workflow
     monkeypatch.setattr(assemble.rates, "RATES_DIR", tmp_path)
+    monkeypatch.setattr(assemble.demand, "DEMAND_DIR", tmp_path / "demand")
 
 
 FACTS = [
