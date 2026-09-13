@@ -1,6 +1,7 @@
-/** Brand and domain are not chosen yet (docs/concept.md, section 15); the placeholder matches the mockups. */
-export const SITE_NAME = "[название сайта]";
-export const SITE_TITLE = "Правила торговли между странами — одной страницей";
+/** Name chosen by the founder on 13 September 2026 (docs/concept.md, decision 14); the domain follows the name. */
+export const SITE_NAME = "TradeRoutes";
+export const SITE_TAGLINE = "правила торговли между странами";
+export const SITE_TITLE = "TradeRoutes — правила торговли между странами одной страницей";
 
 export const LANG_LABELS: Record<string, string> = { ru: "RU", en: "EN", zh: "中文", fa: "فارسی" };
 

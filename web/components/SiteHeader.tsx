@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Lang } from "@/lib/page-content";
-import { LANG_LABELS, SITE_NAME } from "@/lib/site";
+import { LANG_LABELS, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
+import { LogoMark } from "./Logo";
 import { FeedbackLink } from "./FeedbackLink";
 
 /** Language switch. Only the current language is enabled until the assembler produces other languages. */
@@ -39,13 +40,11 @@ export function SiteHeader({
       <div className="top-inner">
         <div className="top-row">
           <div className="brand">
-            {linkHome ? (
-              <>
-                <Link href="/">{SITE_NAME}</Link> — все коридоры
-              </>
-            ) : (
-              SITE_NAME
-            )}
+            <Link href="/" className="brand-link" aria-label={`${SITE_NAME} — на главную`}>
+              <LogoMark />
+              <span className="brand-name">{SITE_NAME}</span>
+            </Link>
+            <span className="brand-tag">{linkHome ? "все коридоры" : SITE_TAGLINE}</span>
           </div>
           <LangSwitch languages={languages} current={current} />
         </div>

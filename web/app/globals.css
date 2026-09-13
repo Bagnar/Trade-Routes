@@ -191,8 +191,30 @@ footer .in{max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; gap
 .notice{border:1.5px solid var(--ok); background:var(--ok-bg); border-radius:6px; padding:10px 12px; margin-top:10px}
 .notice p{margin:0 0 6px !important; color:var(--ink) !important}
 .notice .sample{background:#fff; border:1px dashed #9CC9B0; border-radius:4px; padding:8px 10px; font-size:13px; color:var(--ink-soft) !important; margin:0 !important}
-.brand a{color:var(--muted); text-decoration:none}
-.brand a:hover{text-decoration:underline}
+.brand{display:flex; align-items:center; gap:12px}
+.brand-link{display:inline-flex; align-items:center; gap:8px; color:var(--ink); text-decoration:none}
+.brand-link:hover .brand-name{text-decoration:underline}
+.brand-name{font-family:var(--sans); font-size:15px; font-weight:600; letter-spacing:.01em; color:var(--ink)}
+.brand-tag{font-family:var(--sans); font-size:13px; color:var(--muted)}
+@media (max-width:600px){.brand-tag{display:none}}
+
+/* ---------- home: stats band, "what you get", honest limits ---------- */
+.stats{display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:14px; margin:0 auto; max-width:1180px; padding:0 28px 8px}
+.stats div{border-top:2px solid var(--ink); padding-top:10px}
+.stats b{display:block; font-family:var(--sans); font-size:26px; font-weight:600; line-height:1.1}
+.stats span{font-family:var(--sans); font-size:13px; color:var(--ink-soft)}
+.get{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; margin-top:14px}
+.get article{border:1.5px solid var(--rule); border-radius:8px; background:var(--paper); padding:16px 18px}
+.get h3{margin:0 0 8px; font-style:normal; font-size:18px}
+.get p{margin:0 0 10px; font-size:15.5px; color:var(--ink-soft)}
+.get .ex{font-size:15px; margin:0; padding:10px 12px; border-left:4px solid var(--ok); background:var(--ok-bg); border-radius:0 4px 4px 0}
+.get .ex.warn{border-color:#D9B44A; background:var(--warn-bg)}
+.get .ex.ban{border-color:var(--ban); background:var(--ban-bg)}
+.get .ex.note{border-color:var(--rule); background:var(--none-bg); border-left-style:dashed}
+.honest{list-style:none; padding:0; margin:10px 0 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:10px 24px}
+.honest li{font-family:var(--sans); font-size:14.5px; color:var(--ink-soft); padding-left:18px; position:relative}
+.honest li::before{content:"—"; position:absolute; left:0; color:var(--muted)}
+@media (max-width:900px){.stats{padding:0 18px 8px}}
 
 /* ---------- sanctions band ---------- */
 .sanctions{background:var(--ban-bg); border-bottom:1px solid #E3A9A5}
