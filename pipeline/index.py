@@ -59,6 +59,8 @@ def duty_part(country_to: str, hs6: str) -> tuple[int | None, str, str]:
         return None, "ставка MFN для этой страны не загружена в таблицу ставок", "ставка не загружена"
     v = float(rate["value"])
     score = 5 if v == 0 else 4 if v <= 5 else 3 if v <= 10 else 2 if v <= 20 else 1 if v <= 35 else 0
+    if rate.get("estimated"):
+        return score, f"пошлина MFN ≈{v:g}% — адвалорный эквивалент специфической или комбинированной ставки (оценка WITS/TRAINS, {rate['year']} год); точная формула — в национальном тарифе и у брокера", f"≈{v:g}%"
     return score, f"пошлина MFN {v:g}% (WITS/TRAINS, {rate['year']} год); преференции и национальная подстрока — у брокера", f"{v:g}%"
 
 

@@ -26,7 +26,7 @@
 {
 "name": "EU - CARIFORUM States",
 "type": "FTA & EIA",
-"in_force": "39811",
+"in_force": "2008-12-29",
 "status": "In force for at least one Party",
 "members": [
 "AG",
@@ -76,7 +76,7 @@
 {
 "name": "Pacific Agreement on Closer Economic Relations Plus (PACER Plus)",
 "type": "FTA & EIA",
-"in_force": "44178",
+"in_force": "2020-12-13",
 "status": "In force for at least one Party",
 "members": [
 "AU",
@@ -95,7 +95,7 @@
 {
 "name": "Pacific Alliance - Singapore",
 "type": "FTA & EIA",
-"in_force": "45780",
+"in_force": "2025-05-03",
 "status": "In force for at least one Party",
 "members": [
 "SG",
@@ -108,7 +108,7 @@
 {
 "name": "Southern African Development Community (SADC)",
 "type": "FTA & EIA",
-"in_force": "36770",
+"in_force": "2000-09-01",
 "status": "In force for at least one Party",
 "members": [
 "AO",
@@ -147,7 +147,7 @@
 {
 "name": "African Continental Free Trade Area (AfCFTA)",
 "type": "FTA",
-"in_force": "43615",
+"in_force": "2019-05-30",
 "status": "In Force",
 "members": [
 "DZ",
@@ -202,7 +202,7 @@
 {
 "name": "Agadir Agreement",
 "type": "FTA",
-"in_force": "39168",
+"in_force": "2007-03-27",
 "status": "In Force",
 "members": [
 "JO",
@@ -214,7 +214,7 @@
 {
 "name": "Andean Community (CAN)",
 "type": "CU",
-"in_force": "32288",
+"in_force": "1988-05-25",
 "status": "In Force",
 "members": [
 "BO",
@@ -227,7 +227,7 @@
 {
 "name": "APTA - Accession of China",
 "type": "PSA",
-"in_force": "37257",
+"in_force": "2002-01-01",
 "status": "In Force",
 "members": [
 "BD",
@@ -241,7 +241,7 @@
 {
 "name": "Argentina - Mexico",
 "type": "PSA",
-"in_force": "31778",
+"in_force": "1987-01-01",
 "status": "In Force",
 "members": [
 "AR",
@@ -251,7 +251,7 @@
 {
 "name": "Armenia - Kazakhstan",
 "type": "FTA",
-"in_force": "37259",
+"in_force": "2002-01-03",
 "status": "In Force",
 "members": [
 "AM",
@@ -261,7 +261,7 @@
 {
 "name": "Armenia - Moldova, Republic of",
 "type": "FTA",
-"in_force": "35054",
+"in_force": "1995-12-21",
 "status": "In Force",
 "members": [
 "AM",
@@ -271,7 +271,7 @@
 {
 "name": "Armenia - Turkmenistan",
 "type": "FTA",
-"in_force": "35253",
+"in_force": "1996-07-07",
 "status": "In Force",
 "members": [
 "AM",
@@ -281,7 +281,7 @@
 {
 "name": "Armenia - Ukraine",
 "type": "FTA",
-"in_force": "35417",
+"in_force": "1996-12-18",
 "status": "In Force",
 "members": [
 "AM",
@@ -291,7 +291,7 @@
 {
 "name": "ASEAN - Australia - New Zealand",
 "type": "FTA & EIA",
-"in_force": "40179",
+"in_force": "2010-01-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -311,7 +311,7 @@
 {
 "name": "ASEAN - China",
 "type": "FTA & EIA",
-"in_force": "38353",
+"in_force": "2005-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -330,7 +330,7 @@
 {
 "name": "ASEAN - Hong Kong, China",
 "type": "FTA & EIA",
-"in_force": "43627",
+"in_force": "2019-06-11",
 "status": "In Force",
 "members": [
 "HK",
@@ -349,7 +349,7 @@
 {
 "name": "ASEAN - India",
 "type": "FTA & EIA",
-"in_force": "40179",
+"in_force": "2010-01-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -368,7 +368,7 @@
 {
 "name": "ASEAN - Japan",
 "type": "FTA & EIA",
-"in_force": "39783",
+"in_force": "2008-12-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -387,7 +387,7 @@
 {
 "name": "ASEAN - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "40179",
+"in_force": "2010-01-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -406,7 +406,7 @@
 {
 "name": "ASEAN Free Trade Area (AFTA)",
 "type": "FTA & EIA",
-"in_force": "40315",
+"in_force": "2010-05-17",
 "status": "In Force",
 "members": [
 "BN",
@@ -424,7 +424,7 @@
 {
 "name": "Asia Pacific Trade Agreement (APTA)",
 "type": "PSA & EIA",
-"in_force": "27928",
+"in_force": "1976-06-17",
 "status": "In Force",
 "members": [
 "BD",
@@ -438,7 +438,7 @@
 {
 "name": "Australia - Chile",
 "type": "FTA & EIA",
-"in_force": "39878",
+"in_force": "2009-03-06",
 "status": "In Force",
 "members": [
 "AU",
@@ -448,7 +448,7 @@
 {
 "name": "Australia - China",
 "type": "FTA & EIA",
-"in_force": "42358",
+"in_force": "2015-12-20",
 "status": "In Force",
 "members": [
 "AU",
@@ -458,7 +458,7 @@
 {
 "name": "Australia - New Zealand Closer Economic Relations Trade Agreement (ANZCERTA)",
 "type": "FTA & EIA",
-"in_force": "30317",
+"in_force": "1983-01-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -468,7 +468,7 @@
 {
 "name": "Australia - Papua New Guinea (PATCRA)",
 "type": "FTA",
-"in_force": "28157",
+"in_force": "1977-02-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -478,7 +478,7 @@
 {
 "name": "Australia - United Arab Emirates",
 "type": "FTA & EIA",
-"in_force": "45931",
+"in_force": "2025-10-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -488,7 +488,7 @@
 {
 "name": "Brazil - Mexico",
 "type": "PSA",
-"in_force": "37743",
+"in_force": "2003-05-02",
 "status": "In Force",
 "members": [
 "BR",
@@ -498,7 +498,7 @@
 {
 "name": "Brunei Darussalam - Japan",
 "type": "FTA & EIA",
-"in_force": "39660",
+"in_force": "2008-07-31",
 "status": "In Force",
 "members": [
 "BN",
@@ -508,7 +508,7 @@
 {
 "name": "CACM - Accession of Panama",
 "type": "CU",
-"in_force": "41400",
+"in_force": "2013-05-06",
 "status": "In Force",
 "members": [
 "CR",
@@ -522,7 +522,7 @@
 {
 "name": "Canada - Chile",
 "type": "FTA & EIA",
-"in_force": "35616",
+"in_force": "1997-07-05",
 "status": "In Force",
 "members": [
 "CA",
@@ -532,7 +532,7 @@
 {
 "name": "Canada - Colombia",
 "type": "FTA & EIA",
-"in_force": "40770",
+"in_force": "2011-08-15",
 "status": "In Force",
 "members": [
 "CA",
@@ -542,7 +542,7 @@
 {
 "name": "Canada - Costa Rica",
 "type": "FTA",
-"in_force": "37561",
+"in_force": "2002-11-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -552,7 +552,7 @@
 {
 "name": "Canada - Honduras",
 "type": "FTA & EIA",
-"in_force": "41913",
+"in_force": "2014-10-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -562,7 +562,7 @@
 {
 "name": "Canada - Israel",
 "type": "FTA",
-"in_force": "35431",
+"in_force": "1997-01-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -572,7 +572,7 @@
 {
 "name": "Canada - Jordan",
 "type": "FTA",
-"in_force": "41183",
+"in_force": "2012-10-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -582,7 +582,7 @@
 {
 "name": "Canada - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "42005",
+"in_force": "2015-01-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -592,7 +592,7 @@
 {
 "name": "Canada - Panama",
 "type": "FTA & EIA",
-"in_force": "41365",
+"in_force": "2013-04-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -602,7 +602,7 @@
 {
 "name": "Canada - Peru",
 "type": "FTA & EIA",
-"in_force": "40026",
+"in_force": "2009-08-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -612,7 +612,7 @@
 {
 "name": "Canada - Ukraine",
 "type": "FTA & EIA",
-"in_force": "45474",
+"in_force": "2024-07-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -622,7 +622,7 @@
 {
 "name": "Caribbean Community and Common Market (CARICOM)",
 "type": "CU & EIA",
-"in_force": "26877",
+"in_force": "1973-08-01",
 "status": "In Force",
 "members": [
 "AG",
@@ -645,7 +645,7 @@
 {
 "name": "Central American Common Market (CACM)",
 "type": "CU",
-"in_force": "22436",
+"in_force": "1961-06-04",
 "status": "In Force",
 "members": [
 "CR",
@@ -659,7 +659,7 @@
 {
 "name": "Central European Free Trade Agreement (CEFTA) 2006",
 "type": "FTA",
-"in_force": "39203",
+"in_force": "2007-05-01",
 "status": "In Force",
 "members": [
 "AL",
@@ -673,7 +673,7 @@
 {
 "name": "Chile - China",
 "type": "FTA & EIA",
-"in_force": "38991",
+"in_force": "2006-10-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -683,7 +683,7 @@
 {
 "name": "Chile - Colombia",
 "type": "FTA & EIA",
-"in_force": "39941",
+"in_force": "2009-05-08",
 "status": "In Force",
 "members": [
 "CL",
@@ -693,7 +693,7 @@
 {
 "name": "Chile - Costa Rica (Chile - Central America)",
 "type": "FTA & EIA",
-"in_force": "37302",
+"in_force": "2002-02-15",
 "status": "In Force",
 "members": [
 "CL",
@@ -703,7 +703,7 @@
 {
 "name": "Chile - El Salvador (Chile - Central America)",
 "type": "FTA & EIA",
-"in_force": "37408",
+"in_force": "2002-06-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -713,7 +713,7 @@
 {
 "name": "Chile - Guatemala (Chile - Central America)",
 "type": "FTA & EIA",
-"in_force": "40260",
+"in_force": "2010-03-23",
 "status": "In Force",
 "members": [
 "CL",
@@ -723,7 +723,7 @@
 {
 "name": "Chile - Honduras (Chile - Central America)",
 "type": "FTA & EIA",
-"in_force": "39648",
+"in_force": "2008-07-19",
 "status": "In Force",
 "members": [
 "CL",
@@ -733,7 +733,7 @@
 {
 "name": "Chile - India",
 "type": "PSA",
-"in_force": "39311",
+"in_force": "2007-08-17",
 "status": "In Force",
 "members": [
 "CL",
@@ -743,7 +743,7 @@
 {
 "name": "Chile - Indonesia",
 "type": "FTA",
-"in_force": "43687",
+"in_force": "2019-08-10",
 "status": "In Force",
 "members": [
 "CL",
@@ -753,7 +753,7 @@
 {
 "name": "Chile - Japan",
 "type": "FTA & EIA",
-"in_force": "39328",
+"in_force": "2007-09-03",
 "status": "In Force",
 "members": [
 "CL",
@@ -763,7 +763,7 @@
 {
 "name": "Chile - Malaysia",
 "type": "FTA",
-"in_force": "40964",
+"in_force": "2012-02-25",
 "status": "In Force",
 "members": [
 "CL",
@@ -773,7 +773,7 @@
 {
 "name": "Chile - Mexico",
 "type": "FTA & EIA",
-"in_force": "36373",
+"in_force": "1999-08-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -783,7 +783,7 @@
 {
 "name": "Chile - Nicaragua (Chile - Central America)",
 "type": "FTA & EIA",
-"in_force": "41201",
+"in_force": "2012-10-19",
 "status": "In Force",
 "members": [
 "CL",
@@ -793,7 +793,7 @@
 {
 "name": "Chile - Thailand",
 "type": "FTA & EIA",
-"in_force": "42313",
+"in_force": "2015-11-05",
 "status": "In Force",
 "members": [
 "CL",
@@ -803,7 +803,7 @@
 {
 "name": "Chile - Viet Nam",
 "type": "FTA",
-"in_force": "41640",
+"in_force": "2014-01-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -823,7 +823,7 @@
 {
 "name": "China - Cambodia",
 "type": "FTA & EIA",
-"in_force": "44562",
+"in_force": "2022-01-01",
 "status": "In Force",
 "members": [
 "KH",
@@ -833,7 +833,7 @@
 {
 "name": "China - Congo",
 "type": "FTA",
-"in_force": "46113",
+"in_force": "2026-04-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -843,7 +843,7 @@
 {
 "name": "China - Costa Rica",
 "type": "FTA & EIA",
-"in_force": "40756",
+"in_force": "2011-08-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -853,7 +853,7 @@
 {
 "name": "China - Ecuador",
 "type": "FTA",
-"in_force": "45413",
+"in_force": "2024-05-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -863,7 +863,7 @@
 {
 "name": "China - Georgia",
 "type": "FTA & EIA",
-"in_force": "43101",
+"in_force": "2018-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -873,7 +873,7 @@
 {
 "name": "China - Hong Kong, China",
 "type": "FTA & EIA",
-"in_force": "37801",
+"in_force": "2003-06-29",
 "status": "In Force",
 "members": [
 "CN",
@@ -883,7 +883,7 @@
 {
 "name": "China - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "42358",
+"in_force": "2015-12-20",
 "status": "In Force",
 "members": [
 "CN",
@@ -893,7 +893,7 @@
 {
 "name": "China - Macao, China",
 "type": "FTA & EIA",
-"in_force": "37911",
+"in_force": "2003-10-17",
 "status": "In Force",
 "members": [
 "CN",
@@ -903,7 +903,7 @@
 {
 "name": "China - Maldives",
 "type": "FTA & EIA",
-"in_force": "45658",
+"in_force": "2025-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -913,7 +913,7 @@
 {
 "name": "China - Mauritius",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -923,7 +923,7 @@
 {
 "name": "China - New Zealand",
 "type": "FTA & EIA",
-"in_force": "39722",
+"in_force": "2008-10-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -933,7 +933,7 @@
 {
 "name": "China - Nicaragua",
 "type": "FTA & EIA",
-"in_force": "45292",
+"in_force": "2024-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -943,7 +943,7 @@
 {
 "name": "China - Serbia",
 "type": "FTA",
-"in_force": "45474",
+"in_force": "2024-07-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -953,7 +953,7 @@
 {
 "name": "China - Singapore",
 "type": "FTA & EIA",
-"in_force": "39814",
+"in_force": "2009-01-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -963,7 +963,7 @@
 {
 "name": "Colombia - Israel",
 "type": "FTA & EIA",
-"in_force": "44054",
+"in_force": "2020-08-11",
 "status": "In Force",
 "members": [
 "CO",
@@ -973,7 +973,7 @@
 {
 "name": "Colombia - Mexico",
 "type": "FTA & EIA",
-"in_force": "34700",
+"in_force": "1995-01-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -983,7 +983,7 @@
 {
 "name": "Colombia - Northern Triangle (El Salvador, Guatemala, Honduras)",
 "type": "FTA & EIA",
-"in_force": "40129",
+"in_force": "2009-11-12",
 "status": "In Force",
 "members": [
 "CO",
@@ -995,7 +995,7 @@
 {
 "name": "COMESA - Accession of Egypt",
 "type": "CU",
-"in_force": "36208",
+"in_force": "1999-02-17",
 "status": "In Force",
 "members": [
 "BI",
@@ -1022,7 +1022,7 @@
 {
 "name": "COMESA - Accession of Seychelles",
 "type": "CU",
-"in_force": "39944",
+"in_force": "2009-05-11",
 "status": "In Force",
 "members": [
 "BI",
@@ -1051,7 +1051,7 @@
 {
 "name": "COMESA - Accession of Tunisia",
 "type": "CU",
-"in_force": "43635",
+"in_force": "2019-06-19",
 "status": "In Force",
 "members": [
 "BI",
@@ -1080,7 +1080,7 @@
 {
 "name": "Common Market for Eastern and Southern Africa (COMESA)",
 "type": "CU",
-"in_force": "34676",
+"in_force": "1994-12-08",
 "status": "In Force",
 "members": [
 "AO",
@@ -1108,7 +1108,7 @@
 {
 "name": "Commonwealth of Independent States (CIS)",
 "type": "FTA",
-"in_force": "34698",
+"in_force": "1994-12-30",
 "status": "In Force",
 "members": [
 "AZ",
@@ -1127,7 +1127,7 @@
 {
 "name": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",
 "type": "FTA & EIA",
-"in_force": "43464",
+"in_force": "2018-12-30",
 "status": "In Force",
 "members": [
 "AU",
@@ -1147,7 +1147,7 @@
 {
 "name": "Costa Rica - Colombia",
 "type": "FTA & EIA",
-"in_force": "42583",
+"in_force": "2016-08-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -1157,7 +1157,7 @@
 {
 "name": "Costa Rica - Peru",
 "type": "FTA & EIA",
-"in_force": "41426",
+"in_force": "2013-06-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -1167,7 +1167,7 @@
 {
 "name": "Costa Rica - Singapore",
 "type": "FTA & EIA",
-"in_force": "41456",
+"in_force": "2013-07-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -1177,7 +1177,7 @@
 {
 "name": "CPTPP - Accession of the United Kingdom",
 "type": "FTA & EIA",
-"in_force": "45641",
+"in_force": "2024-12-15",
 "status": "In Force",
 "members": [
 "AU",
@@ -1197,7 +1197,7 @@
 {
 "name": "Dominican Republic - Central America",
 "type": "FTA & EIA",
-"in_force": "37168",
+"in_force": "2001-10-04",
 "status": "In Force",
 "members": [
 "CR",
@@ -1211,7 +1211,7 @@
 {
 "name": "Dominican Republic - Central America - United States Free Trade Agreement (CAFTA-DR)",
 "type": "FTA & EIA",
-"in_force": "38777",
+"in_force": "2006-03-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -1226,7 +1226,7 @@
 {
 "name": "EAC - Accession of Burundi and Rwanda",
 "type": "CU",
-"in_force": "39264",
+"in_force": "2007-07-01",
 "status": "In Force",
 "members": [
 "BI",
@@ -1239,7 +1239,7 @@
 {
 "name": "EAEU - Accession of Armenia",
 "type": "CU & EIA",
-"in_force": "42006",
+"in_force": "2015-01-02",
 "status": "In Force",
 "members": [
 "AM",
@@ -1251,7 +1251,7 @@
 {
 "name": "EAEU - Accession of the Kyrgyz Republic",
 "type": "CU & EIA",
-"in_force": "42228",
+"in_force": "2015-08-12",
 "status": "In Force",
 "members": [
 "AM",
@@ -1264,7 +1264,7 @@
 {
 "name": "EAEU - Iran",
 "type": "FTA",
-"in_force": "45792",
+"in_force": "2025-05-15",
 "status": "In Force",
 "members": [
 "IR",
@@ -1278,7 +1278,7 @@
 {
 "name": "EAEU - Serbia",
 "type": "FTA",
-"in_force": "44387",
+"in_force": "2021-07-10",
 "status": "In Force",
 "members": [
 "RS",
@@ -1292,7 +1292,7 @@
 {
 "name": "EAEU - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "42648",
+"in_force": "2016-10-05",
 "status": "In Force",
 "members": [
 "VN",
@@ -1306,7 +1306,7 @@
 {
 "name": "East African Community (EAC)",
 "type": "CU & EIA",
-"in_force": "36714",
+"in_force": "2000-07-07",
 "status": "In Force",
 "members": [
 "BI",
@@ -1319,7 +1319,7 @@
 {
 "name": "EC (10) Enlargement",
 "type": "CU",
-"in_force": "29587",
+"in_force": "1981-01-01",
 "status": "In Force",
 "members": [
 "BE",
@@ -1336,7 +1336,7 @@
 {
 "name": "EC (12) Enlargement",
 "type": "CU",
-"in_force": "31413",
+"in_force": "1986-01-01",
 "status": "In Force",
 "members": [
 "BE",
@@ -1355,7 +1355,7 @@
 {
 "name": "EC (15) Enlargement",
 "type": "CU & EIA",
-"in_force": "34700",
+"in_force": "1995-01-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -1377,7 +1377,7 @@
 {
 "name": "EC (25) Enlargement",
 "type": "CU & EIA",
-"in_force": "38108",
+"in_force": "2004-05-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -1408,7 +1408,7 @@
 {
 "name": "EC (27) Enlargement",
 "type": "CU & EIA",
-"in_force": "39083",
+"in_force": "2007-01-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -1441,7 +1441,7 @@
 {
 "name": "EC (9) Enlargement",
 "type": "CU",
-"in_force": "26665",
+"in_force": "1973-01-01",
 "status": "In Force",
 "members": [
 "BE",
@@ -1457,7 +1457,7 @@
 {
 "name": "Economic and Monetary Community of Central Africa (CEMAC)",
 "type": "CU",
-"in_force": "36335",
+"in_force": "1999-06-24",
 "status": "In Force",
 "members": [
 "CM",
@@ -1471,7 +1471,7 @@
 {
 "name": "Economic Community of West African States (ECOWAS)",
 "type": "CU",
-"in_force": "34934",
+"in_force": "1995-08-23",
 "status": "In Force",
 "members": [
 "CV",
@@ -1494,7 +1494,7 @@
 {
 "name": "Economic Cooperation Organization (ECO)",
 "type": "PSA",
-"in_force": "33651",
+"in_force": "1992-02-17",
 "status": "In Force",
 "members": [
 "IR",
@@ -1505,7 +1505,7 @@
 {
 "name": "Ecuador - Mexico",
 "type": "PSA",
-"in_force": "30437",
+"in_force": "1983-05-01",
 "status": "In Force",
 "members": [
 "EC",
@@ -1515,7 +1515,7 @@
 {
 "name": "EFTA - Accession of Iceland",
 "type": "FTA",
-"in_force": "25628",
+"in_force": "1970-03-01",
 "status": "In Force",
 "members": [
 "IS",
@@ -1527,7 +1527,7 @@
 {
 "name": "EFTA - Albania",
 "type": "FTA",
-"in_force": "40483",
+"in_force": "2010-11-01",
 "status": "In Force",
 "members": [
 "AL",
@@ -1540,7 +1540,7 @@
 {
 "name": "EFTA - Bosnia and Herzegovina",
 "type": "FTA",
-"in_force": "42005",
+"in_force": "2015-01-01",
 "status": "In Force",
 "members": [
 "BA",
@@ -1553,7 +1553,7 @@
 {
 "name": "EFTA - Canada",
 "type": "FTA",
-"in_force": "39995",
+"in_force": "2009-07-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -1566,7 +1566,7 @@
 {
 "name": "EFTA - Central America (Costa Rica and Panama)",
 "type": "FTA & EIA",
-"in_force": "41870",
+"in_force": "2014-08-19",
 "status": "In Force",
 "members": [
 "CR",
@@ -1580,7 +1580,7 @@
 {
 "name": "EFTA - Chile",
 "type": "FTA & EIA",
-"in_force": "38322",
+"in_force": "2004-12-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -1593,7 +1593,7 @@
 {
 "name": "EFTA - Colombia",
 "type": "FTA & EIA",
-"in_force": "40725",
+"in_force": "2011-07-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -1606,7 +1606,7 @@
 {
 "name": "EFTA - Ecuador",
 "type": "FTA & EIA",
-"in_force": "44136",
+"in_force": "2020-11-01",
 "status": "In Force",
 "members": [
 "EC",
@@ -1619,7 +1619,7 @@
 {
 "name": "EFTA - Egypt",
 "type": "FTA",
-"in_force": "39295",
+"in_force": "2007-08-01",
 "status": "In Force",
 "members": [
 "EG",
@@ -1632,7 +1632,7 @@
 {
 "name": "EFTA - GCC",
 "type": "FTA & EIA",
-"in_force": "41821",
+"in_force": "2014-07-01",
 "status": "In Force",
 "members": [
 "CH",
@@ -1650,7 +1650,7 @@
 {
 "name": "EFTA - Georgia",
 "type": "FTA & EIA",
-"in_force": "42979",
+"in_force": "2017-09-01",
 "status": "In Force",
 "members": [
 "GE",
@@ -1663,7 +1663,7 @@
 {
 "name": "EFTA - Hong Kong, China",
 "type": "FTA & EIA",
-"in_force": "41183",
+"in_force": "2012-10-01",
 "status": "In Force",
 "members": [
 "HK",
@@ -1676,7 +1676,7 @@
 {
 "name": "EFTA - India",
 "type": "FTA & EIA",
-"in_force": "45931",
+"in_force": "2025-10-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -1689,7 +1689,7 @@
 {
 "name": "EFTA - Indonesia",
 "type": "FTA & EIA",
-"in_force": "44501",
+"in_force": "2021-11-01",
 "status": "In Force",
 "members": [
 "ID",
@@ -1702,7 +1702,7 @@
 {
 "name": "EFTA - Israel",
 "type": "FTA",
-"in_force": "33970",
+"in_force": "1993-01-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -1715,7 +1715,7 @@
 {
 "name": "EFTA - Jordan",
 "type": "FTA",
-"in_force": "37500",
+"in_force": "2002-09-01",
 "status": "In Force",
 "members": [
 "JO",
@@ -1728,7 +1728,7 @@
 {
 "name": "EFTA - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "38961",
+"in_force": "2006-09-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -1741,7 +1741,7 @@
 {
 "name": "EFTA - Lebanon",
 "type": "FTA",
-"in_force": "39083",
+"in_force": "2007-01-01",
 "status": "In Force",
 "members": [
 "CH",
@@ -1753,7 +1753,7 @@
 {
 "name": "EFTA - Mexico",
 "type": "FTA & EIA",
-"in_force": "37073",
+"in_force": "2001-07-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -1766,7 +1766,7 @@
 {
 "name": "EFTA - Moldova, Republic of",
 "type": "FTA & EIA",
-"in_force": "45536",
+"in_force": "2024-09-01",
 "status": "In Force",
 "members": [
 "MD",
@@ -1779,7 +1779,7 @@
 {
 "name": "EFTA - Montenegro",
 "type": "FTA",
-"in_force": "41153",
+"in_force": "2012-09-01",
 "status": "In Force",
 "members": [
 "ME",
@@ -1792,7 +1792,7 @@
 {
 "name": "EFTA - Morocco",
 "type": "FTA",
-"in_force": "36495",
+"in_force": "1999-12-01",
 "status": "In Force",
 "members": [
 "MA",
@@ -1805,7 +1805,7 @@
 {
 "name": "EFTA - North Macedonia",
 "type": "FTA",
-"in_force": "37377",
+"in_force": "2002-05-01",
 "status": "In Force",
 "members": [
 "MK",
@@ -1818,7 +1818,7 @@
 {
 "name": "EFTA - Palestine",
 "type": "FTA",
-"in_force": "36342",
+"in_force": "1999-07-01",
 "status": "In Force",
 "members": [
 "CH",
@@ -1830,7 +1830,7 @@
 {
 "name": "EFTA - Peru",
 "type": "FTA",
-"in_force": "40725",
+"in_force": "2011-07-01",
 "status": "In Force",
 "members": [
 "PE",
@@ -1843,7 +1843,7 @@
 {
 "name": "EFTA - Philippines",
 "type": "FTA & EIA",
-"in_force": "43252",
+"in_force": "2018-06-01",
 "status": "In Force",
 "members": [
 "PH",
@@ -1856,7 +1856,7 @@
 {
 "name": "EFTA - SACU",
 "type": "FTA",
-"in_force": "39569",
+"in_force": "2008-05-01",
 "status": "In Force",
 "members": [
 "CH",
@@ -1873,7 +1873,7 @@
 {
 "name": "EFTA - Serbia",
 "type": "FTA",
-"in_force": "40452",
+"in_force": "2010-10-01",
 "status": "In Force",
 "members": [
 "RS",
@@ -1886,7 +1886,7 @@
 {
 "name": "EFTA - Singapore",
 "type": "FTA & EIA",
-"in_force": "37622",
+"in_force": "2003-01-01",
 "status": "In Force",
 "members": [
 "SG",
@@ -1899,7 +1899,7 @@
 {
 "name": "EFTA - Tunisia",
 "type": "FTA",
-"in_force": "38504",
+"in_force": "2005-06-01",
 "status": "In Force",
 "members": [
 "TN",
@@ -1912,7 +1912,7 @@
 {
 "name": "EFTA - Türkiye",
 "type": "FTA & EIA",
-"in_force": "44470",
+"in_force": "2021-10-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -1925,7 +1925,7 @@
 {
 "name": "EFTA - Ukraine",
 "type": "FTA & EIA",
-"in_force": "41061",
+"in_force": "2012-06-01",
 "status": "In Force",
 "members": [
 "UA",
@@ -1938,7 +1938,7 @@
 {
 "name": "Egypt - Türkiye",
 "type": "FTA",
-"in_force": "39142",
+"in_force": "2007-03-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -1948,7 +1948,7 @@
 {
 "name": "El Salvador - Cuba",
 "type": "PSA",
-"in_force": "41122",
+"in_force": "2012-08-01",
 "status": "In Force",
 "members": [
 "CU",
@@ -1958,7 +1958,7 @@
 {
 "name": "El Salvador - Ecuador",
 "type": "PSA",
-"in_force": "43055",
+"in_force": "2017-11-16",
 "status": "In Force",
 "members": [
 "EC",
@@ -1968,7 +1968,7 @@
 {
 "name": "EU - Albania",
 "type": "FTA & EIA",
-"in_force": "39052",
+"in_force": "2006-12-01",
 "status": "In Force",
 "members": [
 "AL",
@@ -2004,7 +2004,7 @@
 {
 "name": "EU - Algeria",
 "type": "FTA",
-"in_force": "38596",
+"in_force": "2005-09-01",
 "status": "In Force",
 "members": [
 "DZ",
@@ -2040,7 +2040,7 @@
 {
 "name": "EU - Andorra",
 "type": "CU",
-"in_force": "33420",
+"in_force": "1991-07-01",
 "status": "In Force",
 "members": [
 "AD",
@@ -2112,7 +2112,7 @@
 {
 "name": "EU - Bosnia and Herzegovina",
 "type": "FTA & EIA",
-"in_force": "39630",
+"in_force": "2008-07-01",
 "status": "In Force",
 "members": [
 "BA",
@@ -2148,7 +2148,7 @@
 {
 "name": "EU - Cameroon",
 "type": "FTA",
-"in_force": "41855",
+"in_force": "2014-08-04",
 "status": "In Force",
 "members": [
 "CM",
@@ -2184,7 +2184,7 @@
 {
 "name": "EU - Canada",
 "type": "FTA & EIA",
-"in_force": "42999",
+"in_force": "2017-09-21",
 "status": "In Force",
 "members": [
 "CA",
@@ -2220,7 +2220,7 @@
 {
 "name": "EU - Central America",
 "type": "FTA & EIA",
-"in_force": "41487",
+"in_force": "2013-08-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -2261,7 +2261,7 @@
 {
 "name": "EU - Chile",
 "type": "FTA & EIA",
-"in_force": "45689",
+"in_force": "2025-02-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -2297,7 +2297,7 @@
 {
 "name": "EU - Colombia and Peru - Accession of Ecuador",
 "type": "FTA & EIA",
-"in_force": "42736",
+"in_force": "2017-01-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -2335,7 +2335,7 @@
 {
 "name": "EU - Colombia, Ecuador and Peru",
 "type": "FTA & EIA",
-"in_force": "41334",
+"in_force": "2013-03-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -2373,7 +2373,7 @@
 {
 "name": "EU - Côte d'Ivoire",
 "type": "FTA",
-"in_force": "42616",
+"in_force": "2016-09-03",
 "status": "In Force",
 "members": [
 "CI",
@@ -2409,7 +2409,7 @@
 {
 "name": "EU - Eastern and Southern Africa States",
 "type": "FTA",
-"in_force": "41043",
+"in_force": "2012-05-14",
 "status": "In Force",
 "members": [
 "KM",
@@ -2449,7 +2449,7 @@
 {
 "name": "EU - Eastern and Southern Africa States - Accession of Comoros",
 "type": "FTA",
-"in_force": "43503",
+"in_force": "2019-02-07",
 "status": "In Force",
 "members": [
 "KM",
@@ -2489,7 +2489,7 @@
 {
 "name": "EU - Egypt",
 "type": "FTA",
-"in_force": "38139",
+"in_force": "2004-06-01",
 "status": "In Force",
 "members": [
 "EG",
@@ -2525,7 +2525,7 @@
 {
 "name": "EU - Faroe Islands",
 "type": "FTA",
-"in_force": "35431",
+"in_force": "1997-01-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -2561,7 +2561,7 @@
 {
 "name": "EU - Georgia",
 "type": "FTA & EIA",
-"in_force": "41883",
+"in_force": "2014-09-01",
 "status": "In Force",
 "members": [
 "GE",
@@ -2597,7 +2597,7 @@
 {
 "name": "EU - Ghana",
 "type": "FTA",
-"in_force": "42719",
+"in_force": "2016-12-15",
 "status": "In Force",
 "members": [
 "GH",
@@ -2633,7 +2633,7 @@
 {
 "name": "EU - Iceland",
 "type": "FTA",
-"in_force": "26755",
+"in_force": "1973-04-01",
 "status": "In Force",
 "members": [
 "IS",
@@ -2669,7 +2669,7 @@
 {
 "name": "EU - Israel",
 "type": "FTA",
-"in_force": "36678",
+"in_force": "2000-06-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -2705,7 +2705,7 @@
 {
 "name": "EU - Japan",
 "type": "FTA & EIA",
-"in_force": "43497",
+"in_force": "2019-02-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -2741,7 +2741,7 @@
 {
 "name": "EU - Jordan",
 "type": "FTA",
-"in_force": "37377",
+"in_force": "2002-05-01",
 "status": "In Force",
 "members": [
 "JO",
@@ -2777,7 +2777,7 @@
 {
 "name": "EU - Kenya",
 "type": "FTA",
-"in_force": "45474",
+"in_force": "2024-07-01",
 "status": "In Force",
 "members": [
 "KE",
@@ -2813,7 +2813,7 @@
 {
 "name": "EU - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "40725",
+"in_force": "2011-07-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -2849,7 +2849,7 @@
 {
 "name": "EU - Lebanon",
 "type": "FTA",
-"in_force": "37681",
+"in_force": "2003-03-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -2884,7 +2884,7 @@
 {
 "name": "EU - Mexico",
 "type": "FTA & EIA",
-"in_force": "36708",
+"in_force": "2000-07-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -2920,7 +2920,7 @@
 {
 "name": "EU - Moldova, Republic of",
 "type": "FTA & EIA",
-"in_force": "41883",
+"in_force": "2014-09-01",
 "status": "In Force",
 "members": [
 "MD",
@@ -2956,7 +2956,7 @@
 {
 "name": "EU - Montenegro",
 "type": "FTA & EIA",
-"in_force": "39448",
+"in_force": "2008-01-01",
 "status": "In Force",
 "members": [
 "ME",
@@ -2992,7 +2992,7 @@
 {
 "name": "EU - Morocco",
 "type": "FTA",
-"in_force": "36586",
+"in_force": "2000-03-01",
 "status": "In Force",
 "members": [
 "MA",
@@ -3028,7 +3028,7 @@
 {
 "name": "EU - New Zealand",
 "type": "FTA & EIA",
-"in_force": "45413",
+"in_force": "2024-05-01",
 "status": "In Force",
 "members": [
 "NZ",
@@ -3064,7 +3064,7 @@
 {
 "name": "EU - North Macedonia",
 "type": "FTA & EIA",
-"in_force": "37043",
+"in_force": "2001-06-01",
 "status": "In Force",
 "members": [
 "MK",
@@ -3100,7 +3100,7 @@
 {
 "name": "EU - Norway",
 "type": "FTA",
-"in_force": "26846",
+"in_force": "1973-07-01",
 "status": "In Force",
 "members": [
 "NO",
@@ -3136,7 +3136,7 @@
 {
 "name": "EU – Overseas Countries and Territories (OCT)",
 "type": "FTA",
-"in_force": "25934",
+"in_force": "1971-01-01",
 "status": "In Force",
 "members": [
 "BM",
@@ -3185,7 +3185,7 @@
 {
 "name": "EU - Pacific States",
 "type": "FTA",
-"in_force": "40167",
+"in_force": "2009-12-20",
 "status": "In Force",
 "members": [
 "SB",
@@ -3224,7 +3224,7 @@
 {
 "name": "EU - Pacific States - Accession of Samoa",
 "type": "FTA",
-"in_force": "43465",
+"in_force": "2018-12-31",
 "status": "In Force",
 "members": [
 "FJ",
@@ -3262,7 +3262,7 @@
 {
 "name": "EU - Pacific States - Accession of Solomon Islands",
 "type": "FTA",
-"in_force": "43968",
+"in_force": "2020-05-17",
 "status": "In Force",
 "members": [
 "SB",
@@ -3300,7 +3300,7 @@
 {
 "name": "EU - Palestine",
 "type": "FTA",
-"in_force": "35612",
+"in_force": "1997-07-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -3335,7 +3335,7 @@
 {
 "name": "EU - SADC",
 "type": "FTA",
-"in_force": "42653",
+"in_force": "2016-10-10",
 "status": "In Force",
 "members": [
 "BW",
@@ -3376,7 +3376,7 @@
 {
 "name": "EU - San Marino",
 "type": "CU",
-"in_force": "37347",
+"in_force": "2002-04-01",
 "status": "In Force",
 "members": [
 "SM",
@@ -3412,7 +3412,7 @@
 {
 "name": "EU - Serbia",
 "type": "FTA & EIA",
-"in_force": "40210",
+"in_force": "2010-02-01",
 "status": "In Force",
 "members": [
 "RS",
@@ -3448,7 +3448,7 @@
 {
 "name": "EU - Singapore",
 "type": "FTA & EIA",
-"in_force": "43790",
+"in_force": "2019-11-21",
 "status": "In Force",
 "members": [
 "SG",
@@ -3484,7 +3484,7 @@
 {
 "name": "EU - South Africa",
 "type": "FTA",
-"in_force": "36526",
+"in_force": "2000-01-01",
 "status": "In Force",
 "members": [
 "ZA",
@@ -3520,7 +3520,7 @@
 {
 "name": "EU - Switzerland - Liechtenstein",
 "type": "FTA",
-"in_force": "26665",
+"in_force": "1973-01-01",
 "status": "In Force",
 "members": [
 "LI",
@@ -3557,7 +3557,7 @@
 {
 "name": "EU - Syrian Arab Republic",
 "type": "FTA",
-"in_force": "28307",
+"in_force": "1977-07-01",
 "status": "In Force",
 "members": [
 "SY",
@@ -3593,7 +3593,7 @@
 {
 "name": "EU - Tunisia",
 "type": "FTA",
-"in_force": "35855",
+"in_force": "1998-03-01",
 "status": "In Force",
 "members": [
 "TN",
@@ -3629,7 +3629,7 @@
 {
 "name": "EU - Türkiye",
 "type": "CU",
-"in_force": "35065",
+"in_force": "1996-01-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -3665,7 +3665,7 @@
 {
 "name": "EU - Ukraine",
 "type": "FTA & EIA",
-"in_force": "41752",
+"in_force": "2014-04-23",
 "status": "In Force",
 "members": [
 "UA",
@@ -3701,7 +3701,7 @@
 {
 "name": "EU - United Kingdom",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "GB",
@@ -3737,7 +3737,7 @@
 {
 "name": "EU - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "44044",
+"in_force": "2020-08-01",
 "status": "In Force",
 "members": [
 "VN",
@@ -3773,7 +3773,7 @@
 {
 "name": "EU (28) Enlargement",
 "type": "CU & EIA",
-"in_force": "41456",
+"in_force": "2013-07-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -3807,7 +3807,7 @@
 {
 "name": "EU Treaty",
 "type": "CU & EIA",
-"in_force": "21186",
+"in_force": "1958-01-01",
 "status": "In Force",
 "members": [
 "AT",
@@ -3841,7 +3841,7 @@
 {
 "name": "Eurasian Economic Union (EAEU)",
 "type": "CU & EIA",
-"in_force": "42005",
+"in_force": "2015-01-01",
 "status": "In Force",
 "members": [
 "AM",
@@ -3892,7 +3892,7 @@
 {
 "name": "European Free Trade Association (EFTA)",
 "type": "FTA & EIA",
-"in_force": "22039",
+"in_force": "1960-05-03",
 "status": "In Force",
 "members": [
 "IS",
@@ -3904,7 +3904,7 @@
 {
 "name": "Faroe Islands - Norway",
 "type": "FTA",
-"in_force": "34151",
+"in_force": "1993-07-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -3914,7 +3914,7 @@
 {
 "name": "Faroe Islands - Switzerland - Liechtenstein",
 "type": "FTA",
-"in_force": "34759",
+"in_force": "1995-03-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -3925,7 +3925,7 @@
 {
 "name": "GCC - Singapore",
 "type": "FTA & EIA",
-"in_force": "41518",
+"in_force": "2013-09-01",
 "status": "In Force",
 "members": [
 "SG",
@@ -3940,7 +3940,7 @@
 {
 "name": "Georgia - Armenia",
 "type": "FTA",
-"in_force": "36110",
+"in_force": "1998-11-11",
 "status": "In Force",
 "members": [
 "AM",
@@ -3950,7 +3950,7 @@
 {
 "name": "Georgia - Azerbaijan",
 "type": "FTA",
-"in_force": "35256",
+"in_force": "1996-07-10",
 "status": "In Force",
 "members": [
 "AZ",
@@ -3960,7 +3960,7 @@
 {
 "name": "Georgia - Kazakhstan",
 "type": "FTA",
-"in_force": "36357",
+"in_force": "1999-07-16",
 "status": "In Force",
 "members": [
 "GE",
@@ -3970,7 +3970,7 @@
 {
 "name": "Georgia - Russian Federation",
 "type": "FTA",
-"in_force": "34464",
+"in_force": "1994-05-10",
 "status": "In Force",
 "members": [
 "GE",
@@ -3980,7 +3980,7 @@
 {
 "name": "Georgia - Turkmenistan",
 "type": "FTA",
-"in_force": "36526",
+"in_force": "2000-01-01",
 "status": "In Force",
 "members": [
 "GE",
@@ -3990,7 +3990,7 @@
 {
 "name": "Georgia - Ukraine",
 "type": "FTA",
-"in_force": "35220",
+"in_force": "1996-06-04",
 "status": "In Force",
 "members": [
 "GE",
@@ -4000,7 +4000,7 @@
 {
 "name": "Global System of Trade Preferences among Developing Countries (GSTP)",
 "type": "PSA",
-"in_force": "32617",
+"in_force": "1989-04-19",
 "status": "In Force",
 "members": [
 "DZ",
@@ -4050,7 +4050,7 @@
 {
 "name": "GUAM",
 "type": "FTA & EIA",
-"in_force": "37965",
+"in_force": "2003-12-10",
 "status": "In Force",
 "members": [
 "AZ",
@@ -4062,7 +4062,7 @@
 {
 "name": "Guatemala - Chinese Taipei",
 "type": "FTA & EIA",
-"in_force": "38899",
+"in_force": "2006-07-01",
 "status": "In Force",
 "members": [
 "TW",
@@ -4072,7 +4072,7 @@
 {
 "name": "Gulf Cooperation Council (GCC)",
 "type": "CU",
-"in_force": "37622",
+"in_force": "2003-01-01",
 "status": "In Force",
 "members": [
 "BH",
@@ -4086,7 +4086,7 @@
 {
 "name": "Hong Kong, China - Australia",
 "type": "FTA & EIA",
-"in_force": "43847",
+"in_force": "2020-01-17",
 "status": "In Force",
 "members": [
 "AU",
@@ -4096,7 +4096,7 @@
 {
 "name": "Hong Kong, China - Chile",
 "type": "FTA & EIA",
-"in_force": "41921",
+"in_force": "2014-10-09",
 "status": "In Force",
 "members": [
 "CL",
@@ -4106,7 +4106,7 @@
 {
 "name": "Hong Kong, China - Georgia",
 "type": "FTA & EIA",
-"in_force": "43509",
+"in_force": "2019-02-13",
 "status": "In Force",
 "members": [
 "GE",
@@ -4116,7 +4116,7 @@
 {
 "name": "Hong Kong, China - Macao, China",
 "type": "FTA & EIA",
-"in_force": "43035",
+"in_force": "2017-10-27",
 "status": "In Force",
 "members": [
 "HK",
@@ -4126,7 +4126,7 @@
 {
 "name": "Hong Kong, China - New Zealand",
 "type": "FTA & EIA",
-"in_force": "40544",
+"in_force": "2011-01-01",
 "status": "In Force",
 "members": [
 "HK",
@@ -4136,7 +4136,7 @@
 {
 "name": "Hong Kong, China - Peru",
 "type": "FTA & EIA",
-"in_force": "46266",
+"in_force": "2026-09-01",
 "status": "In Force",
 "members": [
 "HK",
@@ -4146,7 +4146,7 @@
 {
 "name": "Iceland - China",
 "type": "FTA & EIA",
-"in_force": "41821",
+"in_force": "2014-07-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -4156,7 +4156,7 @@
 {
 "name": "Iceland - Faroe Islands",
 "type": "FTA & EIA",
-"in_force": "39022",
+"in_force": "2006-11-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -4166,7 +4166,7 @@
 {
 "name": "India - Afghanistan",
 "type": "PSA",
-"in_force": "37754",
+"in_force": "2003-05-13",
 "status": "In Force",
 "members": [
 "AF",
@@ -4176,7 +4176,7 @@
 {
 "name": "India - Australia",
 "type": "FTA & EIA",
-"in_force": "44924",
+"in_force": "2022-12-29",
 "status": "In Force",
 "members": [
 "AU",
@@ -4186,7 +4186,7 @@
 {
 "name": "India - Bhutan",
 "type": "PSA",
-"in_force": "38927",
+"in_force": "2006-07-29",
 "status": "In Force",
 "members": [
 "BT",
@@ -4196,7 +4196,7 @@
 {
 "name": "India - Japan",
 "type": "FTA & EIA",
-"in_force": "40756",
+"in_force": "2011-08-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4206,7 +4206,7 @@
 {
 "name": "India - Malaysia",
 "type": "FTA & EIA",
-"in_force": "40725",
+"in_force": "2011-07-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4216,7 +4216,7 @@
 {
 "name": "India - Mauritius",
 "type": "FTA & EIA",
-"in_force": "44287",
+"in_force": "2021-04-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4226,7 +4226,7 @@
 {
 "name": "India - Nepal",
 "type": "PSA",
-"in_force": "40113",
+"in_force": "2009-10-27",
 "status": "In Force",
 "members": [
 "IN",
@@ -4236,7 +4236,7 @@
 {
 "name": "India - Singapore",
 "type": "FTA & EIA",
-"in_force": "38565",
+"in_force": "2005-08-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4246,7 +4246,7 @@
 {
 "name": "India - Sri Lanka",
 "type": "FTA",
-"in_force": "36586",
+"in_force": "2000-03-01",
 "status": "In Force",
 "members": [
 "LK",
@@ -4256,7 +4256,7 @@
 {
 "name": "India - Thailand",
 "type": "PSA",
-"in_force": "38231",
+"in_force": "2004-09-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4266,7 +4266,7 @@
 {
 "name": "India - United Arab Emirates",
 "type": "FTA & EIA",
-"in_force": "44682",
+"in_force": "2022-05-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4276,7 +4276,7 @@
 {
 "name": "Indonesia - Australia",
 "type": "FTA & EIA",
-"in_force": "44017",
+"in_force": "2020-07-05",
 "status": "In Force",
 "members": [
 "AU",
@@ -4286,7 +4286,7 @@
 {
 "name": "Indonesia - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "44927",
+"in_force": "2023-01-01",
 "status": "In Force",
 "members": [
 "ID",
@@ -4296,7 +4296,7 @@
 {
 "name": "Indonesia - Pakistan",
 "type": "PSA",
-"in_force": "41518",
+"in_force": "2013-09-01",
 "status": "In Force",
 "members": [
 "ID",
@@ -4306,7 +4306,7 @@
 {
 "name": "Israel - Mexico",
 "type": "FTA",
-"in_force": "36708",
+"in_force": "2000-07-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -4316,7 +4316,7 @@
 {
 "name": "Israel - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "45613",
+"in_force": "2024-11-17",
 "status": "In Force",
 "members": [
 "IL",
@@ -4326,7 +4326,7 @@
 {
 "name": "Japan - Australia",
 "type": "FTA & EIA",
-"in_force": "42019",
+"in_force": "2015-01-15",
 "status": "In Force",
 "members": [
 "AU",
@@ -4336,7 +4336,7 @@
 {
 "name": "Japan - Indonesia",
 "type": "FTA & EIA",
-"in_force": "39630",
+"in_force": "2008-07-01",
 "status": "In Force",
 "members": [
 "ID",
@@ -4346,7 +4346,7 @@
 {
 "name": "Japan - Malaysia",
 "type": "FTA & EIA",
-"in_force": "38911",
+"in_force": "2006-07-13",
 "status": "In Force",
 "members": [
 "JP",
@@ -4356,7 +4356,7 @@
 {
 "name": "Japan - Mexico",
 "type": "FTA & EIA",
-"in_force": "38443",
+"in_force": "2005-04-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -4366,7 +4366,7 @@
 {
 "name": "Japan - Mongolia",
 "type": "FTA & EIA",
-"in_force": "42528",
+"in_force": "2016-06-07",
 "status": "In Force",
 "members": [
 "JP",
@@ -4376,7 +4376,7 @@
 {
 "name": "Japan - Peru",
 "type": "FTA & EIA",
-"in_force": "40969",
+"in_force": "2012-03-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -4386,7 +4386,7 @@
 {
 "name": "Japan - Philippines",
 "type": "FTA & EIA",
-"in_force": "39793",
+"in_force": "2008-12-11",
 "status": "In Force",
 "members": [
 "JP",
@@ -4396,7 +4396,7 @@
 {
 "name": "Japan - Singapore",
 "type": "FTA & EIA",
-"in_force": "37590",
+"in_force": "2002-11-30",
 "status": "In Force",
 "members": [
 "JP",
@@ -4406,7 +4406,7 @@
 {
 "name": "Japan - Switzerland",
 "type": "FTA & EIA",
-"in_force": "40057",
+"in_force": "2009-09-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -4416,7 +4416,7 @@
 {
 "name": "Japan - Thailand",
 "type": "FTA & EIA",
-"in_force": "39387",
+"in_force": "2007-11-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -4426,7 +4426,7 @@
 {
 "name": "Japan - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "40087",
+"in_force": "2009-10-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -4436,7 +4436,7 @@
 {
 "name": "Jordan - Singapore",
 "type": "FTA & EIA",
-"in_force": "38586",
+"in_force": "2005-08-22",
 "status": "In Force",
 "members": [
 "JO",
@@ -4446,7 +4446,7 @@
 {
 "name": "Kazakhstan - Azerbaijan",
 "type": "FTA",
-"in_force": "36361",
+"in_force": "1999-07-20",
 "status": "In Force",
 "members": [
 "AZ",
@@ -4456,7 +4456,7 @@
 {
 "name": "Kazakhstan - Serbia",
 "type": "FTA",
-"in_force": "40918",
+"in_force": "2012-01-10",
 "status": "In Force",
 "members": [
 "KZ",
@@ -4466,7 +4466,7 @@
 {
 "name": "Kazakhstan - Uzbekistan",
 "type": "FTA",
-"in_force": "35931",
+"in_force": "1998-05-16",
 "status": "In Force",
 "members": [
 "KZ",
@@ -4476,7 +4476,7 @@
 {
 "name": "Korea, Republic of - Australia",
 "type": "FTA & EIA",
-"in_force": "41985",
+"in_force": "2014-12-12",
 "status": "In Force",
 "members": [
 "AU",
@@ -4486,7 +4486,7 @@
 {
 "name": "Korea, Republic of - Cambodia",
 "type": "FTA",
-"in_force": "44896",
+"in_force": "2022-12-01",
 "status": "In Force",
 "members": [
 "KH",
@@ -4496,7 +4496,7 @@
 {
 "name": "Korea, Republic of - Central America",
 "type": "FTA & EIA",
-"in_force": "43739",
+"in_force": "2019-10-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -4510,7 +4510,7 @@
 {
 "name": "Korea, Republic of - Chile",
 "type": "FTA & EIA",
-"in_force": "38078",
+"in_force": "2004-04-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -4520,7 +4520,7 @@
 {
 "name": "Korea, Republic of - Colombia",
 "type": "FTA & EIA",
-"in_force": "42566",
+"in_force": "2016-07-15",
 "status": "In Force",
 "members": [
 "CO",
@@ -4530,7 +4530,7 @@
 {
 "name": "Korea, Republic of - India",
 "type": "FTA & EIA",
-"in_force": "40179",
+"in_force": "2010-01-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4540,7 +4540,7 @@
 {
 "name": "Korea, Republic of - Israel",
 "type": "FTA & EIA",
-"in_force": "44896",
+"in_force": "2022-12-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -4550,7 +4550,7 @@
 {
 "name": "Korea, Republic of - New Zealand",
 "type": "FTA & EIA",
-"in_force": "42358",
+"in_force": "2015-12-20",
 "status": "In Force",
 "members": [
 "KR",
@@ -4560,7 +4560,7 @@
 {
 "name": "Korea, Republic of - Singapore",
 "type": "FTA & EIA",
-"in_force": "38778",
+"in_force": "2006-03-02",
 "status": "In Force",
 "members": [
 "KR",
@@ -4570,7 +4570,7 @@
 {
 "name": "Korea, Republic of - Türkiye",
 "type": "FTA & EIA",
-"in_force": "41395",
+"in_force": "2013-05-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -4580,7 +4580,7 @@
 {
 "name": "Korea, Republic of - United States",
 "type": "FTA & EIA",
-"in_force": "40983",
+"in_force": "2012-03-15",
 "status": "In Force",
 "members": [
 "KR",
@@ -4590,7 +4590,7 @@
 {
 "name": "Korea, Republic of - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "42358",
+"in_force": "2015-12-20",
 "status": "In Force",
 "members": [
 "KR",
@@ -4600,7 +4600,7 @@
 {
 "name": "Kyrgyz Republic - Armenia",
 "type": "FTA",
-"in_force": "34999",
+"in_force": "1995-10-27",
 "status": "In Force",
 "members": [
 "AM",
@@ -4610,7 +4610,7 @@
 {
 "name": "Kyrgyz Republic - Azerbaijan",
 "type": "FTA",
-"in_force": "38804",
+"in_force": "2006-03-28",
 "status": "In Force",
 "members": [
 "AZ",
@@ -4620,7 +4620,7 @@
 {
 "name": "Kyrgyz Republic - Kazakhstan",
 "type": "FTA",
-"in_force": "35014",
+"in_force": "1995-11-11",
 "status": "In Force",
 "members": [
 "KZ",
@@ -4630,7 +4630,7 @@
 {
 "name": "Kyrgyz Republic - Moldova, Republic of",
 "type": "FTA",
-"in_force": "35390",
+"in_force": "1996-11-21",
 "status": "In Force",
 "members": [
 "KG",
@@ -4640,7 +4640,7 @@
 {
 "name": "Kyrgyz Republic - Ukraine",
 "type": "FTA",
-"in_force": "35814",
+"in_force": "1998-01-19",
 "status": "In Force",
 "members": [
 "KG",
@@ -4650,7 +4650,7 @@
 {
 "name": "Kyrgyz Republic - Uzbekistan",
 "type": "FTA",
-"in_force": "35874",
+"in_force": "1998-03-20",
 "status": "In Force",
 "members": [
 "KG",
@@ -4660,7 +4660,7 @@
 {
 "name": "LAIA - Accession of Cuba",
 "type": "PSA",
-"in_force": "36398",
+"in_force": "1999-08-26",
 "status": "In Force",
 "members": [
 "AR",
@@ -4680,7 +4680,7 @@
 {
 "name": "Lao People's Democratic Republic - Thailand",
 "type": "PSA",
-"in_force": "33409",
+"in_force": "1991-06-20",
 "status": "In Force",
 "members": [
 "LA",
@@ -4690,7 +4690,7 @@
 {
 "name": "Latin American Integration Association (LAIA)",
 "type": "PSA",
-"in_force": "29663",
+"in_force": "1981-03-18",
 "status": "In Force",
 "members": [
 "AR",
@@ -4710,7 +4710,7 @@
 {
 "name": "Malaysia - Australia",
 "type": "FTA & EIA",
-"in_force": "41275",
+"in_force": "2013-01-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -4720,7 +4720,7 @@
 {
 "name": "Mauritius - Pakistan",
 "type": "PSA",
-"in_force": "39416",
+"in_force": "2007-11-30",
 "status": "In Force",
 "members": [
 "MU",
@@ -4730,7 +4730,7 @@
 {
 "name": "Melanesian Spearhead Group (MSG)",
 "type": "PSA",
-"in_force": "34335",
+"in_force": "1994-01-01",
 "status": "In Force",
 "members": [
 "SB",
@@ -4742,7 +4742,7 @@
 {
 "name": "MERCOSUR - Egypt",
 "type": "FTA",
-"in_force": "42979",
+"in_force": "2017-09-01",
 "status": "In Force",
 "members": [
 "EG",
@@ -4755,7 +4755,7 @@
 {
 "name": "MERCOSUR - India",
 "type": "PSA",
-"in_force": "39965",
+"in_force": "2009-06-01",
 "status": "In Force",
 "members": [
 "IN",
@@ -4768,7 +4768,7 @@
 {
 "name": "MERCOSUR - Israel",
 "type": "FTA",
-"in_force": "40170",
+"in_force": "2009-12-23",
 "status": "In Force",
 "members": [
 "IL",
@@ -4781,7 +4781,7 @@
 {
 "name": "MERCOSUR - SACU",
 "type": "PSA",
-"in_force": "42461",
+"in_force": "2016-04-01",
 "status": "In Force",
 "members": [
 "AR",
@@ -4798,7 +4798,7 @@
 {
 "name": "Mexico - Bolivia, Plurinational State of",
 "type": "PSA",
-"in_force": "40336",
+"in_force": "2010-06-07",
 "status": "In Force",
 "members": [
 "BO",
@@ -4808,7 +4808,7 @@
 {
 "name": "Mexico - Central America",
 "type": "FTA & EIA",
-"in_force": "41153",
+"in_force": "2012-09-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -4822,7 +4822,7 @@
 {
 "name": "Mexico - Cuba",
 "type": "PSA",
-"in_force": "36950",
+"in_force": "2001-02-28",
 "status": "In Force",
 "members": [
 "CU",
@@ -4832,7 +4832,7 @@
 {
 "name": "Mexico - Panama",
 "type": "FTA & EIA",
-"in_force": "42186",
+"in_force": "2015-07-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -4842,7 +4842,7 @@
 {
 "name": "Mexico - Paraguay",
 "type": "PSA",
-"in_force": "30682",
+"in_force": "1984-01-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -4852,7 +4852,7 @@
 {
 "name": "Mexico - Uruguay",
 "type": "FTA & EIA",
-"in_force": "38183",
+"in_force": "2004-07-15",
 "status": "In Force",
 "members": [
 "MX",
@@ -4862,7 +4862,7 @@
 {
 "name": "Moldova, Republic of - Azerbaijan",
 "type": "FTA",
-"in_force": "35171",
+"in_force": "1996-04-16",
 "status": "In Force",
 "members": [
 "AZ",
@@ -4872,7 +4872,7 @@
 {
 "name": "Morocco - United Arab Emirates",
 "type": "FTA",
-"in_force": "37811",
+"in_force": "2003-07-09",
 "status": "In Force",
 "members": [
 "MA",
@@ -4882,7 +4882,7 @@
 {
 "name": "Mozambique - Indonesia",
 "type": "FTA",
-"in_force": "44718",
+"in_force": "2022-06-06",
 "status": "In Force",
 "members": [
 "ID",
@@ -4892,7 +4892,7 @@
 {
 "name": "Namibia - Zimbabwe",
 "type": "FTA",
-"in_force": "34089",
+"in_force": "1993-04-30",
 "status": "In Force",
 "members": [
 "NA",
@@ -4902,7 +4902,7 @@
 {
 "name": "New Zealand - Chinese Taipei",
 "type": "FTA & EIA",
-"in_force": "41609",
+"in_force": "2013-12-01",
 "status": "In Force",
 "members": [
 "TW",
@@ -4912,7 +4912,7 @@
 {
 "name": "New Zealand - Malaysia",
 "type": "FTA & EIA",
-"in_force": "40391",
+"in_force": "2010-08-01",
 "status": "In Force",
 "members": [
 "MY",
@@ -4922,7 +4922,7 @@
 {
 "name": "New Zealand - Singapore",
 "type": "FTA & EIA",
-"in_force": "36892",
+"in_force": "2001-01-01",
 "status": "In Force",
 "members": [
 "NZ",
@@ -4932,7 +4932,7 @@
 {
 "name": "New Zealand - United Arab Emirates",
 "type": "FTA & EIA",
-"in_force": "45897",
+"in_force": "2025-08-28",
 "status": "In Force",
 "members": [
 "NZ",
@@ -4942,7 +4942,7 @@
 {
 "name": "Pacific Alliance",
 "type": "FTA & EIA",
-"in_force": "42491",
+"in_force": "2016-05-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -4954,7 +4954,7 @@
 {
 "name": "Pacific Island Countries Trade Agreement (PICTA)",
 "type": "FTA",
-"in_force": "37724",
+"in_force": "2003-04-13",
 "status": "In Force",
 "members": [
 "SB",
@@ -4974,7 +4974,7 @@
 {
 "name": "Pakistan - China",
 "type": "FTA & EIA",
-"in_force": "39264",
+"in_force": "2007-07-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -4984,7 +4984,7 @@
 {
 "name": "Pakistan - Malaysia",
 "type": "FTA & EIA",
-"in_force": "39448",
+"in_force": "2008-01-01",
 "status": "In Force",
 "members": [
 "MY",
@@ -4994,7 +4994,7 @@
 {
 "name": "Pakistan - Sri Lanka",
 "type": "FTA",
-"in_force": "38515",
+"in_force": "2005-06-12",
 "status": "In Force",
 "members": [
 "LK",
@@ -5004,7 +5004,7 @@
 {
 "name": "Panama - Chile",
 "type": "FTA & EIA",
-"in_force": "39514",
+"in_force": "2008-03-07",
 "status": "In Force",
 "members": [
 "CL",
@@ -5014,7 +5014,7 @@
 {
 "name": "Panama - Chinese Taipei",
 "type": "FTA & EIA",
-"in_force": "37987",
+"in_force": "2004-01-01",
 "status": "In Force",
 "members": [
 "TW",
@@ -5024,7 +5024,7 @@
 {
 "name": "Panama - Costa Rica (Panama - Central America)",
 "type": "FTA & EIA",
-"in_force": "39775",
+"in_force": "2008-11-23",
 "status": "In Force",
 "members": [
 "CR",
@@ -5034,7 +5034,7 @@
 {
 "name": "Panama - Dominican Republic",
 "type": "PSA",
-"in_force": "31936",
+"in_force": "1987-06-08",
 "status": "In Force",
 "members": [
 "DO",
@@ -5044,7 +5044,7 @@
 {
 "name": "Panama - El Salvador (Panama - Central America)",
 "type": "FTA & EIA",
-"in_force": "37722",
+"in_force": "2003-04-11",
 "status": "In Force",
 "members": [
 "SV",
@@ -5054,7 +5054,7 @@
 {
 "name": "Panama - Guatemala (Panama - Central America)",
 "type": "FTA & EIA",
-"in_force": "39984",
+"in_force": "2009-06-20",
 "status": "In Force",
 "members": [
 "GT",
@@ -5064,7 +5064,7 @@
 {
 "name": "Panama - Honduras (Panama - Central America)",
 "type": "FTA & EIA",
-"in_force": "39822",
+"in_force": "2009-01-09",
 "status": "In Force",
 "members": [
 "HN",
@@ -5074,7 +5074,7 @@
 {
 "name": "Panama - Nicaragua (Panama - Central America)",
 "type": "FTA & EIA",
-"in_force": "40138",
+"in_force": "2009-11-21",
 "status": "In Force",
 "members": [
 "NI",
@@ -5084,7 +5084,7 @@
 {
 "name": "Panama - Peru",
 "type": "FTA & EIA",
-"in_force": "41030",
+"in_force": "2012-05-01",
 "status": "In Force",
 "members": [
 "PA",
@@ -5094,7 +5094,7 @@
 {
 "name": "Panama - Singapore",
 "type": "FTA & EIA",
-"in_force": "38922",
+"in_force": "2006-07-24",
 "status": "In Force",
 "members": [
 "PA",
@@ -5104,7 +5104,7 @@
 {
 "name": "Pan-Arab Free Trade Area (PAFTA)",
 "type": "FTA",
-"in_force": "35796",
+"in_force": "1998-01-01",
 "status": "In Force",
 "members": [
 "BH",
@@ -5127,7 +5127,7 @@
 {
 "name": "Peru - Australia",
 "type": "FTA & EIA",
-"in_force": "43872",
+"in_force": "2020-02-11",
 "status": "In Force",
 "members": [
 "AU",
@@ -5137,7 +5137,7 @@
 {
 "name": "Peru - Chile",
 "type": "FTA & EIA",
-"in_force": "39873",
+"in_force": "2009-03-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -5147,7 +5147,7 @@
 {
 "name": "Peru - China",
 "type": "FTA & EIA",
-"in_force": "40238",
+"in_force": "2010-03-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -5157,7 +5157,7 @@
 {
 "name": "Peru - Honduras",
 "type": "FTA & EIA",
-"in_force": "42736",
+"in_force": "2017-01-01",
 "status": "In Force",
 "members": [
 "HN",
@@ -5167,7 +5167,7 @@
 {
 "name": "Peru - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "40756",
+"in_force": "2011-08-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -5177,7 +5177,7 @@
 {
 "name": "Peru - Mexico",
 "type": "FTA & EIA",
-"in_force": "40940",
+"in_force": "2012-02-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -5187,7 +5187,7 @@
 {
 "name": "Peru - Singapore",
 "type": "FTA & EIA",
-"in_force": "40026",
+"in_force": "2009-08-01",
 "status": "In Force",
 "members": [
 "PE",
@@ -5197,7 +5197,7 @@
 {
 "name": "Protocol on Trade Negotiations (PTN)",
 "type": "PSA",
-"in_force": "26706",
+"in_force": "1973-02-11",
 "status": "In Force",
 "members": [
 "BD",
@@ -5220,7 +5220,7 @@
 {
 "name": "Russian Federation - Azerbaijan",
 "type": "FTA",
-"in_force": "34017",
+"in_force": "1993-02-17",
 "status": "In Force",
 "members": [
 "AZ",
@@ -5230,7 +5230,7 @@
 {
 "name": "Russian Federation - Serbia",
 "type": "FTA",
-"in_force": "38871",
+"in_force": "2006-06-03",
 "status": "In Force",
 "members": [
 "RU",
@@ -5240,7 +5240,7 @@
 {
 "name": "Russian Federation - Turkmenistan",
 "type": "FTA",
-"in_force": "34065",
+"in_force": "1993-04-06",
 "status": "In Force",
 "members": [
 "RU",
@@ -5250,7 +5250,7 @@
 {
 "name": "Russian Federation - Uzbekistan",
 "type": "FTA",
-"in_force": "34053",
+"in_force": "1993-03-25",
 "status": "In Force",
 "members": [
 "RU",
@@ -5260,7 +5260,7 @@
 {
 "name": "SADC - Accession of Seychelles",
 "type": "FTA",
-"in_force": "42149",
+"in_force": "2015-05-25",
 "status": "In Force",
 "members": [
 "BW",
@@ -5281,7 +5281,7 @@
 {
 "name": "SAFTA - Accession of Afghanistan",
 "type": "FTA",
-"in_force": "40762",
+"in_force": "2011-08-07",
 "status": "In Force",
 "members": [
 "AF",
@@ -5297,7 +5297,7 @@
 {
 "name": "Singapore - Australia",
 "type": "FTA & EIA",
-"in_force": "37830",
+"in_force": "2003-07-28",
 "status": "In Force",
 "members": [
 "AU",
@@ -5307,7 +5307,7 @@
 {
 "name": "Singapore - Chinese Taipei",
 "type": "FTA & EIA",
-"in_force": "41748",
+"in_force": "2014-04-19",
 "status": "In Force",
 "members": [
 "TW",
@@ -5317,7 +5317,7 @@
 {
 "name": "South Asian Free Trade Agreement (SAFTA)",
 "type": "FTA",
-"in_force": "38718",
+"in_force": "2006-01-01",
 "status": "In Force",
 "members": [
 "AF",
@@ -5333,7 +5333,7 @@
 {
 "name": "South Asian Preferential Trade Arrangement (SAPTA)",
 "type": "PSA",
-"in_force": "35040",
+"in_force": "1995-12-07",
 "status": "In Force",
 "members": [
 "BD",
@@ -5348,7 +5348,7 @@
 {
 "name": "Southern African Customs Union (SACU)",
 "type": "CU",
-"in_force": "38183",
+"in_force": "2004-07-15",
 "status": "In Force",
 "members": [
 "BW",
@@ -5361,7 +5361,7 @@
 {
 "name": "Southern Common Market (MERCOSUR)",
 "type": "CU & EIA",
-"in_force": "33571",
+"in_force": "1991-11-29",
 "status": "In Force",
 "members": [
 "AR",
@@ -5373,7 +5373,7 @@
 {
 "name": "Switzerland - China",
 "type": "FTA & EIA",
-"in_force": "41821",
+"in_force": "2014-07-01",
 "status": "In Force",
 "members": [
 "CN",
@@ -5383,7 +5383,7 @@
 {
 "name": "Thailand - Australia",
 "type": "FTA & EIA",
-"in_force": "38353",
+"in_force": "2005-01-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -5393,7 +5393,7 @@
 {
 "name": "Thailand - New Zealand",
 "type": "FTA & EIA",
-"in_force": "38534",
+"in_force": "2005-07-01",
 "status": "In Force",
 "members": [
 "NZ",
@@ -5403,7 +5403,7 @@
 {
 "name": "Trans-Pacific Strategic Economic Partnership",
 "type": "FTA & EIA",
-"in_force": "38865",
+"in_force": "2006-05-28",
 "status": "In Force",
 "members": [
 "BN",
@@ -5415,7 +5415,7 @@
 {
 "name": "Treaty on a Free Trade Area between members of the Commonwealth of Independent States (CIS)",
 "type": "FTA",
-"in_force": "41172",
+"in_force": "2012-09-20",
 "status": "In Force",
 "members": [
 "AM",
@@ -5431,7 +5431,7 @@
 {
 "name": "Türkiye - Albania",
 "type": "FTA",
-"in_force": "39569",
+"in_force": "2008-05-01",
 "status": "In Force",
 "members": [
 "AL",
@@ -5441,7 +5441,7 @@
 {
 "name": "Türkiye - Bosnia and Herzegovina",
 "type": "FTA & EIA",
-"in_force": "44409",
+"in_force": "2021-08-01",
 "status": "In Force",
 "members": [
 "BA",
@@ -5451,7 +5451,7 @@
 {
 "name": "Türkiye - Chile",
 "type": "FTA",
-"in_force": "40603",
+"in_force": "2011-03-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -5461,7 +5461,7 @@
 {
 "name": "Türkiye - Faroe Islands",
 "type": "FTA",
-"in_force": "43009",
+"in_force": "2017-10-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -5471,7 +5471,7 @@
 {
 "name": "Türkiye - Georgia",
 "type": "FTA",
-"in_force": "39753",
+"in_force": "2008-11-01",
 "status": "In Force",
 "members": [
 "GE",
@@ -5481,7 +5481,7 @@
 {
 "name": "Türkiye - Israel",
 "type": "FTA",
-"in_force": "35551",
+"in_force": "1997-05-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -5491,7 +5491,7 @@
 {
 "name": "Türkiye - Malaysia",
 "type": "FTA",
-"in_force": "42217",
+"in_force": "2015-08-01",
 "status": "In Force",
 "members": [
 "MY",
@@ -5501,7 +5501,7 @@
 {
 "name": "Türkiye - Mauritius",
 "type": "FTA",
-"in_force": "41426",
+"in_force": "2013-06-01",
 "status": "In Force",
 "members": [
 "MU",
@@ -5511,7 +5511,7 @@
 {
 "name": "Türkiye - Moldova, Republic of",
 "type": "FTA",
-"in_force": "42675",
+"in_force": "2016-11-01",
 "status": "In Force",
 "members": [
 "MD",
@@ -5521,7 +5521,7 @@
 {
 "name": "Türkiye - Montenegro",
 "type": "FTA & EIA",
-"in_force": "40238",
+"in_force": "2010-03-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -5531,7 +5531,7 @@
 {
 "name": "Türkiye - Morocco",
 "type": "FTA",
-"in_force": "38718",
+"in_force": "2006-01-01",
 "status": "In Force",
 "members": [
 "MA",
@@ -5541,7 +5541,7 @@
 {
 "name": "Türkiye - North Macedonia",
 "type": "FTA",
-"in_force": "36770",
+"in_force": "2000-09-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -5551,7 +5551,7 @@
 {
 "name": "Türkiye - Serbia",
 "type": "FTA & EIA",
-"in_force": "40422",
+"in_force": "2010-09-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -5561,7 +5561,7 @@
 {
 "name": "Türkiye - Singapore",
 "type": "FTA & EIA",
-"in_force": "43009",
+"in_force": "2017-10-01",
 "status": "In Force",
 "members": [
 "SG",
@@ -5571,7 +5571,7 @@
 {
 "name": "Türkiye - Syrian Arab Republic",
 "type": "FTA",
-"in_force": "39083",
+"in_force": "2007-01-01",
 "status": "In Force",
 "members": [
 "SY",
@@ -5581,7 +5581,7 @@
 {
 "name": "Türkiye - Tunisia",
 "type": "FTA",
-"in_force": "38534",
+"in_force": "2005-07-01",
 "status": "In Force",
 "members": [
 "TN",
@@ -5591,7 +5591,7 @@
 {
 "name": "Türkiye - United Arab Emirates",
 "type": "FTA & EIA",
-"in_force": "45170",
+"in_force": "2023-09-01",
 "status": "In Force",
 "members": [
 "AE",
@@ -5601,7 +5601,7 @@
 {
 "name": "Türkiye - Venezuela, Bolivarian Republic of",
 "type": "FTA",
-"in_force": "44064",
+"in_force": "2020-08-21",
 "status": "In Force",
 "members": [
 "TR",
@@ -5611,7 +5611,7 @@
 {
 "name": "Ukraine - Azerbaijan",
 "type": "FTA",
-"in_force": "35310",
+"in_force": "1996-09-02",
 "status": "In Force",
 "members": [
 "AZ",
@@ -5621,7 +5621,7 @@
 {
 "name": "Ukraine - Belarus",
 "type": "FTA",
-"in_force": "39032",
+"in_force": "2006-11-11",
 "status": "In Force",
 "members": [
 "BY",
@@ -5631,7 +5631,7 @@
 {
 "name": "Ukraine - Israel",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -5641,7 +5641,7 @@
 {
 "name": "Ukraine - Kazakhstan",
 "type": "FTA",
-"in_force": "36087",
+"in_force": "1998-10-19",
 "status": "In Force",
 "members": [
 "KZ",
@@ -5651,7 +5651,7 @@
 {
 "name": "Ukraine - Moldova, Republic of",
 "type": "FTA",
-"in_force": "38491",
+"in_force": "2005-05-19",
 "status": "In Force",
 "members": [
 "MD",
@@ -5661,7 +5661,7 @@
 {
 "name": "Ukraine - Montenegro",
 "type": "FTA & EIA",
-"in_force": "41275",
+"in_force": "2013-01-01",
 "status": "In Force",
 "members": [
 "UA",
@@ -5671,7 +5671,7 @@
 {
 "name": "Ukraine - North Macedonia",
 "type": "FTA",
-"in_force": "37077",
+"in_force": "2001-07-05",
 "status": "In Force",
 "members": [
 "UA",
@@ -5681,7 +5681,7 @@
 {
 "name": "Ukraine - Tajikistan",
 "type": "FTA",
-"in_force": "37448",
+"in_force": "2002-07-11",
 "status": "In Force",
 "members": [
 "TJ",
@@ -5691,7 +5691,7 @@
 {
 "name": "Ukraine - Turkmenistan",
 "type": "FTA",
-"in_force": "35007",
+"in_force": "1995-11-04",
 "status": "In Force",
 "members": [
 "TM",
@@ -5701,7 +5701,7 @@
 {
 "name": "Ukraine - United Arab Emirates",
 "type": "FTA & EIA",
-"in_force": "46204",
+"in_force": "2026-07-01",
 "status": "In Force",
 "members": [
 "AE",
@@ -5711,7 +5711,7 @@
 {
 "name": "Ukraine - Uzbekistan",
 "type": "FTA",
-"in_force": "35065",
+"in_force": "1996-01-01",
 "status": "In Force",
 "members": [
 "UA",
@@ -5721,7 +5721,7 @@
 {
 "name": "United Arab Emirates - Indonesia",
 "type": "FTA & EIA",
-"in_force": "45170",
+"in_force": "2023-09-01",
 "status": "In Force",
 "members": [
 "ID",
@@ -5731,7 +5731,7 @@
 {
 "name": "United Kingdom - Albania",
 "type": "FTA & EIA",
-"in_force": "44319",
+"in_force": "2021-05-03",
 "status": "In Force",
 "members": [
 "AL",
@@ -5741,7 +5741,7 @@
 {
 "name": "United Kingdom - Australia",
 "type": "FTA & EIA",
-"in_force": "45077",
+"in_force": "2023-05-31",
 "status": "In Force",
 "members": [
 "AU",
@@ -5751,7 +5751,7 @@
 {
 "name": "United Kingdom - Cameroon",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CM",
@@ -5761,7 +5761,7 @@
 {
 "name": "United Kingdom - Canada",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -5771,7 +5771,7 @@
 {
 "name": "United Kingdom - CARIFORUM States",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "AG",
@@ -5795,7 +5795,7 @@
 {
 "name": "United Kingdom - Central America",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CR",
@@ -5810,7 +5810,7 @@
 {
 "name": "United Kingdom - Chile",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -5820,7 +5820,7 @@
 {
 "name": "United Kingdom - Colombia, Ecuador and Peru",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CO",
@@ -5832,7 +5832,7 @@
 {
 "name": "United Kingdom - Côte d'Ivoire",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "CI",
@@ -5842,7 +5842,7 @@
 {
 "name": "United Kingdom - Eastern and Southern Africa States",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "MU",
@@ -5854,7 +5854,7 @@
 {
 "name": "United Kingdom - Egypt",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "EG",
@@ -5864,7 +5864,7 @@
 {
 "name": "United Kingdom - Faroe Islands",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "FO",
@@ -5874,7 +5874,7 @@
 {
 "name": "United Kingdom - Georgia",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "GE",
@@ -5884,7 +5884,7 @@
 {
 "name": "United Kingdom - Ghana",
 "type": "FTA",
-"in_force": "44260",
+"in_force": "2021-03-05",
 "status": "In Force",
 "members": [
 "GH",
@@ -5894,7 +5894,7 @@
 {
 "name": "United Kingdom - Iceland, Liechtenstein and Norway",
 "type": "FTA & EIA",
-"in_force": "44531",
+"in_force": "2021-12-01",
 "status": "In Force",
 "members": [
 "IS",
@@ -5906,7 +5906,7 @@
 {
 "name": "United Kingdom - India",
 "type": "FTA & EIA",
-"in_force": "46218",
+"in_force": "2026-07-15",
 "status": "In Force",
 "members": [
 "IN",
@@ -5916,7 +5916,7 @@
 {
 "name": "United Kingdom - Israel",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "IL",
@@ -5926,7 +5926,7 @@
 {
 "name": "United Kingdom - Japan",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "JP",
@@ -5936,7 +5936,7 @@
 {
 "name": "United Kingdom - Jordan",
 "type": "FTA",
-"in_force": "44317",
+"in_force": "2021-05-01",
 "status": "In Force",
 "members": [
 "JO",
@@ -5946,7 +5946,7 @@
 {
 "name": "United Kingdom - Kenya",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "KE",
@@ -5956,7 +5956,7 @@
 {
 "name": "United Kingdom - Korea, Republic of",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "KR",
@@ -5966,7 +5966,7 @@
 {
 "name": "United Kingdom - Lebanon",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "GB",
@@ -5976,7 +5976,7 @@
 {
 "name": "United Kingdom - Mexico",
 "type": "FTA & EIA",
-"in_force": "44348",
+"in_force": "2021-06-01",
 "status": "In Force",
 "members": [
 "MX",
@@ -5986,7 +5986,7 @@
 {
 "name": "United Kingdom - Moldova, Republic of",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "MD",
@@ -5996,7 +5996,7 @@
 {
 "name": "United Kingdom - Morocco",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "MA",
@@ -6006,7 +6006,7 @@
 {
 "name": "United Kingdom - New Zealand",
 "type": "FTA & EIA",
-"in_force": "45077",
+"in_force": "2023-05-31",
 "status": "In Force",
 "members": [
 "NZ",
@@ -6016,7 +6016,7 @@
 {
 "name": "United Kingdom - North Macedonia",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "MK",
@@ -6026,7 +6026,7 @@
 {
 "name": "United Kingdom - Pacific States",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "SB",
@@ -6039,7 +6039,7 @@
 {
 "name": "United Kingdom - Pacific States - Accession of Samoa",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "FJ",
@@ -6051,7 +6051,7 @@
 {
 "name": "United Kingdom - Pacific States - Accession of Solomon Islands",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "SB",
@@ -6063,7 +6063,7 @@
 {
 "name": "United Kingdom - SACU and Mozambique",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "MZ",
@@ -6078,7 +6078,7 @@
 {
 "name": "United Kingdom - Serbia",
 "type": "FTA & EIA",
-"in_force": "44336",
+"in_force": "2021-05-20",
 "status": "In Force",
 "members": [
 "GB",
@@ -6088,7 +6088,7 @@
 {
 "name": "United Kingdom - Singapore",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "SG",
@@ -6098,7 +6098,7 @@
 {
 "name": "United Kingdom - Switzerland - Liechtenstein",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "LI",
@@ -6109,7 +6109,7 @@
 {
 "name": "United Kingdom - Tunisia",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "TN",
@@ -6119,7 +6119,7 @@
 {
 "name": "United Kingdom - Türkiye",
 "type": "FTA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "TR",
@@ -6129,7 +6129,7 @@
 {
 "name": "United Kingdom - Ukraine",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "UA",
@@ -6139,7 +6139,7 @@
 {
 "name": "United Kingdom - Viet Nam",
 "type": "FTA & EIA",
-"in_force": "44197",
+"in_force": "2021-01-01",
 "status": "In Force",
 "members": [
 "VN",
@@ -6149,7 +6149,7 @@
 {
 "name": "United States - Australia",
 "type": "FTA & EIA",
-"in_force": "38353",
+"in_force": "2005-01-01",
 "status": "In Force",
 "members": [
 "AU",
@@ -6159,7 +6159,7 @@
 {
 "name": "United States - Bahrain",
 "type": "FTA & EIA",
-"in_force": "38930",
+"in_force": "2006-08-01",
 "status": "In Force",
 "members": [
 "BH",
@@ -6169,7 +6169,7 @@
 {
 "name": "United States - Chile",
 "type": "FTA & EIA",
-"in_force": "37987",
+"in_force": "2004-01-01",
 "status": "In Force",
 "members": [
 "CL",
@@ -6179,7 +6179,7 @@
 {
 "name": "United States - Colombia",
 "type": "FTA & EIA",
-"in_force": "41044",
+"in_force": "2012-05-15",
 "status": "In Force",
 "members": [
 "CO",
@@ -6189,7 +6189,7 @@
 {
 "name": "United States - Israel",
 "type": "FTA",
-"in_force": "31278",
+"in_force": "1985-08-19",
 "status": "In Force",
 "members": [
 "IL",
@@ -6199,7 +6199,7 @@
 {
 "name": "United States - Jordan",
 "type": "FTA & EIA",
-"in_force": "37242",
+"in_force": "2001-12-17",
 "status": "In Force",
 "members": [
 "JO",
@@ -6209,7 +6209,7 @@
 {
 "name": "United States - Morocco",
 "type": "FTA & EIA",
-"in_force": "38718",
+"in_force": "2006-01-01",
 "status": "In Force",
 "members": [
 "MA",
@@ -6219,7 +6219,7 @@
 {
 "name": "United States - Oman",
 "type": "FTA & EIA",
-"in_force": "39814",
+"in_force": "2009-01-01",
 "status": "In Force",
 "members": [
 "OM",
@@ -6229,7 +6229,7 @@
 {
 "name": "United States - Panama",
 "type": "FTA & EIA",
-"in_force": "41213",
+"in_force": "2012-10-31",
 "status": "In Force",
 "members": [
 "PA",
@@ -6239,7 +6239,7 @@
 {
 "name": "United States - Peru",
 "type": "FTA & EIA",
-"in_force": "39845",
+"in_force": "2009-02-01",
 "status": "In Force",
 "members": [
 "PE",
@@ -6249,7 +6249,7 @@
 {
 "name": "United States - Singapore",
 "type": "FTA & EIA",
-"in_force": "37987",
+"in_force": "2004-01-01",
 "status": "In Force",
 "members": [
 "SG",
@@ -6259,7 +6259,7 @@
 {
 "name": "United States-Mexico-Canada Agreement (USMCA/CUSMA/T-MEC)",
 "type": "FTA & EIA",
-"in_force": "44013",
+"in_force": "2020-07-01",
 "status": "In Force",
 "members": [
 "CA",
@@ -6270,7 +6270,7 @@
 {
 "name": "West African Economic and Monetary Union (WAEMU)",
 "type": "CU",
-"in_force": "36526",
+"in_force": "2000-01-01",
 "status": "In Force",
 "members": [
 "BJ",

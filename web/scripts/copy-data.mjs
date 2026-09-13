@@ -4,7 +4,7 @@
 //
 //   hs6.json, hs_synonyms_ru.json, countries.json      product search and country phrases (as before)
 //   hs6/{chapter}.json                                  the nomenclature split by chapter (cheap product lookup)
-//   rates/{chapter}.json                                {ISO2: {hs6: MFN %}} for every importer with a rates table
+//   rates/{chapter}.json                                {rates: {ISO2: {hs6: MFN %}}, specific: {ISO2: [hs6]}} per chapter
 //   demand.json                                         {ISO2: series} — UN Comtrade import statistics (ориентир)
 //   agreements.json                                     WTO RTA-IS agreements in force
 //   facts/{ISO2}.json, facts/_sanctions.json, facts/_any.json   extracted facts with quote, URL and snapshot date
@@ -61,10 +61,16 @@ for (const name of listJson(path.join(root, "rates"))) {
   const doc = readJson(path.join(root, "rates", name));
   if (!doc || !doc.rates) continue;
   const cc = name.slice(0, -5).toUpperCase();
-  ratesMeta[cc] = { year: doc.year, source: doc.source, url: doc.url, fetched_at: doc.fetched_at, kind: doc.kind, unit: doc.unit };
+  ratesMeta[cc] = { year: doc.year, source: doc.source, url: doc.url, url_ave: doc.url_ave ?? "", fetched_at: doc.fetched_at, kind: doc.kind, unit: doc.unit };
   for (const [code, value] of Object.entries(doc.rates)) {
     const ch = code.slice(0, 2);
-    ((ratesByChapter[ch] ??= {})[cc] ??= {})[code] = value;
+    const chapter = (ratesByChapter[ch] ??= { rates: {}, specific: {} });
+    (chapter.rates[cc] ??= {})[code] = value;
+  }
+  // groups whose value is WITS's ad valorem equivalent of a specific/compound duty (the page says so)
+  for (const code of doc.specific ?? []) {
+    const chapter = (ratesByChapter[code.slice(0, 2)] ??= { rates: {}, specific: {} });
+    (chapter.specific[cc] ??= []).push(code);
   }
 }
 for (const [ch, rows] of Object.entries(ratesByChapter)) writeJson(`rates/${ch}.json`, rows);

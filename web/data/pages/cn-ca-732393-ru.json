@@ -167,6 +167,17 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Германия",
+        "duty": "3.2%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "17 из 20",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Канада — эта страница",
         "here": true,
         "duty": "3.25%",
@@ -179,6 +190,72 @@
         }
       },
       {
+        "to": "Узбекистан",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "17 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "ОАЭ",
+        "duty": "5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "16 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "2%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Бразилия",
+        "duty": "18%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "14 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Казахстан",
+        "duty": "9%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "14 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Индия",
+        "duty": "20%",
+        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Турция",
         "duty": "28.2%",
         "agreement": "нет в базе РТС ВТО",
@@ -186,6 +263,17 @@
         "support": "5 стр.",
         "score": {
           "text": "13 из 20",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "30%",
+        "agreement": "ASEAN - China",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "9 из 15",
           "status": "mid"
         }
       },

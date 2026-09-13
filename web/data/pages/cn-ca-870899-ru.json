@@ -167,9 +167,31 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Казахстан",
+        "duty": "2%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "17 из 20",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Канада — эта страница",
         "here": true,
         "duty": "3.33333%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "17 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "ОАЭ",
+        "duty": "5%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "в проверенных программах нет",
         "support": "5 стр.",
@@ -187,6 +209,72 @@
         "score": {
           "text": "17 из 20",
           "status": "ok"
+        }
+      },
+      {
+        "to": "Бразилия",
+        "duty": "9%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "16 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "3.66667%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "16 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "0.769231%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Узбекистан",
+        "duty": "5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "15 из 20",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "15.2%",
+        "agreement": "ASEAN - China",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Индия",
+        "duty": "15%",
+        "agreement": "APTA - Accession of China; Asia Pacific Trade Agreement (APTA)",
+        "sanctions": "в проверенных программах нет",
+        "support": "5 стр.",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
         }
       },
       {

@@ -86,3 +86,9 @@ def test_bloc_party_named_as_free_trade_area_resolves():
     assert [a["name"] for a in out] == ["ASEAN - China", "ASEAN - Australia - New Zealand"]
     assert "CN" in out[0]["members"] and "VN" in out[0]["members"] and "TH" in out[0]["members"]
     assert {"AU", "NZ", "VN"} <= set(out[1]["members"])
+
+
+def test_excel_serial_dates_from_the_xlsx_export_become_iso():
+    assert agreements._iso_date("38353") == "2005-01-01"
+    assert agreements._iso_date("15-May-2025") == "2025-05-15"
+    assert agreements._iso_date("") == ""

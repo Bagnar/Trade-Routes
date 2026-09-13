@@ -24,6 +24,11 @@ from . import fetch
 ROOT = Path(__file__).resolve().parent.parent
 RATES_DIR = ROOT / "data" / "rates"
 WITS_URL = "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/{reporter}/partner/000/product/all/year/{year}/datatype/reported"
+# "reported" carries only ad valorem duties: tariff lines with a specific or compound duty ("10%, but not less than
+# 1.75 EUR/kg") count as NBR_NA_LINES and the simple average shows 0. "aveestimated" is WITS's ad valorem equivalent
+# for those lines (seen 2026-09-13: KZ 610910 reported 0 / NA lines 1, aveestimated 9.66). The loader takes the AVE
+# and records which HS-6 groups are estimates, so the page can say so.
+WITS_AVE_URL = WITS_URL.replace("/datatype/reported", "/datatype/aveestimated")
 WITS_AVAILABILITY = "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/{reporter}/year/{year}?format=JSON"
 
 # UN M49 numeric codes as used by WITS/UNCTAD TRAINS (Comtrade-style codes for FR/IT/CH/NO/BE).
@@ -50,7 +55,14 @@ ISO3 = {
 
 
 def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
-    """Extracts {hs6: simple-average MFN rate} from a WITS TRAINS SDMX-ML response.
+    """Extracts {hs6: simple-average MFN rate} from a WITS TRAINS SDMX-ML response (see parse_wits_sdmx_full)."""
+    rates, year, _ = parse_wits_sdmx_full(xml_text)
+    return rates, year
+
+
+def parse_wits_sdmx_full(xml_text: str) -> tuple[dict[str, float], int | None, dict[str, int]]:
+    """Extracts {hs6: simple-average MFN rate}, the year and {hs6: NBR_NA_LINES} (tariff lines whose duty is not
+    ad valorem and so is missing from the "reported" average) from a WITS TRAINS SDMX-ML response.
 
     WITS answers in the SDMX 2.1 *structure-specific* layout (seen 2026-09-12): dimensions are attributes of
     <Series PRODUCTCODE="010121" REPORTER="124" ...> and the observation carries the rest:
@@ -58,6 +70,7 @@ def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
     The *generic* layout (<SeriesKey><Value id=... value=.../></SeriesKey><Obs><ObsValue value=.../></Obs>) is
     handled too. Only the simple average of the MFN (or AHS) rate is kept; namespaces are ignored (local names)."""
     rates: dict[str, float] = {}
+    na_lines: dict[str, int] = {}
     year: int | None = None
 
     def local(tag: str) -> str:
@@ -102,7 +115,10 @@ def parse_wits_sdmx(xml_text: str) -> tuple[dict[str, float], int | None]:
                     rates[product] = float(value)
                 except ValueError:
                     pass
-    return rates, year
+                na = attrs.get("NBR_NA_LINES", "")
+                if str(na).isdigit() and int(na) > 0:
+                    na_lines[product] = int(na)
+    return rates, year, na_lines
 
 
 def probe(iso2: str) -> None:
@@ -188,10 +204,25 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
             if snap.http_status != 200 or "<" not in snap.text[:10]:
                 print(f"skip {iso2} {y} ({reporter}): HTTP {snap.http_status} {snap.text[:160]!r}")
                 continue
-            rates, data_year = parse_wits_sdmx(snap.text)
+            rates, data_year, na_lines = parse_wits_sdmx_full(snap.text)
             if not rates:
                 print(f"skip {iso2} {y} ({reporter}): no HS-6 MFN series in response")
                 continue
+            # Ad valorem equivalents for the groups whose lines carry specific/compound duties.
+            ave_url = WITS_AVE_URL.format(reporter=reporter, year=y)
+            specific = sorted(na_lines)
+            try:
+                ave_snap = fetch.fetch_url(ave_url, save=False, timeout=180.0)
+                ave, _, _ = parse_wits_sdmx_full(ave_snap.text) if ave_snap.http_status == 200 and "<" in ave_snap.text[:10] else ({}, None, {})
+            except Exception as exc:
+                print(f"warn {iso2} {y}: ad valorem equivalents not loaded: {exc.__class__.__name__}: {str(exc)[:120]}")
+                ave = {}
+            if ave:
+                for hs6 in specific:
+                    if hs6 in ave:
+                        rates[hs6] = ave[hs6]
+            else:
+                print(f"warn {iso2} {y}: no aveestimated data; {len(specific)} groups with specific duties keep the reported (partial) average")
             out_dir.mkdir(parents=True, exist_ok=True)
             out = out_dir / f"{iso2.upper()}.json"
             out.write_text(
@@ -200,10 +231,12 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
                         "country": iso2.upper(),
                         "source": "World Bank WITS / UNCTAD TRAINS",
                         "url": url,
+                        "url_ave": ave_url if ave else "",
                         "year": data_year or y,
                         "fetched_at": snap.fetched_at,
                         "kind": "import_mfn",
                         "unit": "percent",
+                        "specific": specific if ave else [],
                         "rates": dict(sorted(rates.items())),
                     },
                     ensure_ascii=False,
@@ -212,13 +245,14 @@ def load_wits(iso2: str, year: int | None = None, out_dir: Path = RATES_DIR) -> 
                 + "\n",
                 encoding="utf8",
             )
-            print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y} -> {out}")
+            print(f"ok   {iso2}: {len(rates)} HS-6 rates for {data_year or y}, {len(specific) if ave else 0} ad valorem equivalents -> {out}")
             return out
     return None
 
 
 def get_rate(country: str, hs6: str, rates_dir: Path | None = None) -> dict | None:
-    """Returns {"value", "year", "source", "url", "fetched_at"} for a country/HS-6 pair, or None when not loaded."""
+    """Returns {"value", "year", "source", "url", "fetched_at", "estimated"} for a country/HS-6 pair, or None when not
+    loaded. "estimated" = the value is WITS's ad valorem equivalent of a specific or compound duty."""
     path = (rates_dir or RATES_DIR) / f"{country.upper()}.json"
     if not path.exists():
         return None
@@ -226,7 +260,8 @@ def get_rate(country: str, hs6: str, rates_dir: Path | None = None) -> dict | No
     value = doc.get("rates", {}).get(hs6)
     if value is None:
         return None
-    return {"value": value, "year": doc.get("year"), "source": doc.get("source"), "url": doc.get("url"), "fetched_at": doc.get("fetched_at")}
+    estimated = hs6 in set(doc.get("specific", []))
+    return {"value": value, "year": doc.get("year"), "source": doc.get("source"), "url": (doc.get("url_ave") or doc.get("url")) if estimated else doc.get("url"), "fetched_at": doc.get("fetched_at"), "estimated": estimated}
 
 
 def main(argv=None) -> int:

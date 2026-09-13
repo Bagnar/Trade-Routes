@@ -158,6 +158,28 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Бразилия",
+        "duty": "3%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "11 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "11 из 15",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Канада",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
@@ -165,6 +187,28 @@
         "support": "не собрано",
         "score": {
           "text": "11 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Индия",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "7 из 10",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "7 из 10",
           "status": "ok"
         }
       },
@@ -181,6 +225,39 @@
         }
       },
       {
+        "to": "Казахстан",
+        "duty": "6.5%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; EAEU - Accession of Armenia (+)",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Узбекистан",
+        "duty": "10%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; Russian Federation - Uzbekistan",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "ОАЭ",
+        "duty": "5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "8 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Турция",
         "duty": "6.5%",
         "agreement": "нет в базе РТС ВТО",
@@ -188,6 +265,17 @@
         "support": "не собрано",
         "score": {
           "text": "8 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "6%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "5 из 10",
           "status": "mid"
         }
       },

@@ -158,7 +158,29 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Казахстан",
+        "duty": "0%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; EAEU - Accession of Armenia (+)",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Канада",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "ОАЭ",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
@@ -180,6 +202,39 @@
         }
       },
       {
+        "to": "Узбекистан",
+        "duty": "0%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; Russian Federation - Uzbekistan",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "12 из 15",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "7 из 10",
+          "status": "ok"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "0%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Китай",
         "duty": "0.452381%",
         "agreement": "нет в базе РТС ВТО",
@@ -187,6 +242,39 @@
         "support": "не собрано",
         "score": {
           "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Бразилия",
+        "duty": "10.6061%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Вьетнам",
+        "duty": "2.53571%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "6 из 10",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Индия",
+        "duty": "10%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "5 из 10",
           "status": "mid"
         }
       },

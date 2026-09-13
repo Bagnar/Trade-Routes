@@ -36,6 +36,8 @@ export interface RatesMeta {
   year: number;
   source: string;
   url: string;
+  /** URL of the "aveestimated" query, when ad valorem equivalents were loaded. */
+  url_ave?: string;
   fetched_at: string;
 }
 
@@ -74,8 +76,9 @@ export interface CorridorData {
   countries: Record<string, CountryRef>;
   /** Product entry from the nomenclature, when the code exists. */
   product: { code: string; en: string; ru: string } | null;
-  /** MFN rates of this HS-6's chapter: {ISO2: {hs6: percent}}. */
-  rates: Record<string, Record<string, number>>;
+  /** MFN rates of this HS-6's chapter: {ISO2: {hs6: percent}}, and per importer the groups whose value is WITS's
+   *  ad valorem equivalent of a specific or compound duty. */
+  rates: { rates: Record<string, Record<string, number>>; specific: Record<string, string[]> };
   demand: Record<string, { source: string; series: Record<string, DemandSeries> }>;
   /** null = the agreements database is not loaded (never "no agreement", only "not checked"). */
   agreements: { agreements: Agreement[] } | null;
@@ -183,13 +186,16 @@ export interface Rate {
   year: number;
   url: string;
   fetched_at: string;
+  /** The value is WITS's ad valorem equivalent of a specific or compound duty (pipeline/rates.py). */
+  estimated: boolean;
 }
 
 export function getRate(data: CorridorData, country: string, hs6: string): Rate | null {
   const meta = data.registry.rates[country];
-  const value = data.rates[country]?.[hs6];
+  const value = data.rates.rates[country]?.[hs6];
   if (!meta || value === undefined || value === null) return null;
-  return { value: Number(value), year: meta.year, url: meta.url, fetched_at: meta.fetched_at };
+  const estimated = (data.rates.specific[country] ?? []).includes(hs6);
+  return { value: Number(value), year: meta.year, url: estimated && meta.url_ave ? meta.url_ave : meta.url, fetched_at: meta.fetched_at, estimated };
 }
 
 export interface Demand {
@@ -234,6 +240,9 @@ function dutyPart(data: CorridorData, to: string, hs6: string): Part {
   if (!rate) return [null, "ставка MFN для этой страны не загружена в таблицу ставок", "ставка не загружена"];
   const v = rate.value;
   const score = v === 0 ? 5 : v <= 5 ? 4 : v <= 10 ? 3 : v <= 20 ? 2 : v <= 35 ? 1 : 0;
+  if (rate.estimated) {
+    return [score, `пошлина MFN ≈${fmt(v)}% — адвалорный эквивалент специфической или комбинированной ставки (оценка WITS/TRAINS, ${rate.year} год); точная формула — в национальном тарифе и у брокера`, `≈${fmt(v)}%`];
+  }
   return [score, `пошлина MFN ${fmt(v)}% (WITS/TRAINS, ${rate.year} год); преференции и национальная подстрока — у брокера`, `${fmt(v)}%`];
 }
 
@@ -393,7 +402,9 @@ function rateFact(data: CorridorData, to: string, hs6: string): Fact | null {
   const v = fmt(rate.value);
   return {
     key: "Пошлина при ввозе",
-    text: `Пошлина при ввозе по режиму наибольшего благоприятствования: ${v}% (простая средняя по группе HS-6, база WITS/TRAINS, данные за ${rate.year} год). Национальная подстрока и льготные ставки уточняются у брокера.`,
+    text: rate.estimated
+      ? `Пошлина при ввозе по режиму наибольшего благоприятствования: около ${v}% — адвалорный эквивалент специфической или комбинированной ставки (оценка WITS/TRAINS, простая средняя по группе HS-6, данные за ${rate.year} год). Точная формула ставки — в национальном тарифе; подстрока и льготы — у брокера.`
+      : `Пошлина при ввозе по режиму наибольшего благоприятствования: ${v}% (простая средняя по группе HS-6, база WITS/TRAINS, данные за ${rate.year} год). Национальная подстрока и льготные ставки уточняются у брокера.`,
     rate_ref: `${to}:${hs6}:import_mfn`,
     quote: `${hs6} ${v}`,
     stamp: { status: "ok", source: "wits.worldbank.org", label: `таблица ставок, снимок ${ruDate(rate.fetched_at)}`, verifiedAt: rate.fetched_at.slice(0, 10), url: rate.url },

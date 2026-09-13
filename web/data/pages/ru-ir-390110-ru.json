@@ -158,6 +158,17 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Вьетнам",
+        "duty": "0%",
+        "agreement": "EAEU - Viet Nam",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "7 из 10",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Канада",
         "duty": "0%",
         "agreement": "нет в базе РТС ВТО",
@@ -165,6 +176,61 @@
         "support": "не собрано",
         "score": {
           "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Узбекистан",
+        "duty": "5%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; Russian Federation - Uzbekistan",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "10 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Бразилия",
+        "duty": "14%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Германия",
+        "duty": "6.5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "Казахстан",
+        "duty": "3.25%",
+        "agreement": "Trade in Services Agreement between Armenia, Belarus, Kazakhstan, the Kyrgyz Republic, the Russian Federation, Tajikistan and Uzbekistan; EAEU - Accession of Armenia (+)",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "ОАЭ",
+        "duty": "5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "9 из 15",
           "status": "mid"
         }
       },
@@ -191,10 +257,32 @@
         }
       },
       {
+        "to": "Индия",
+        "duty": "7.5%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "5 из 10",
+          "status": "mid"
+        }
+      },
+      {
         "to": "Иран — эта страница",
         "here": true,
         "duty": "7.5%",
         "agreement": "EAEU - Iran",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "5 из 10",
+          "status": "mid"
+        }
+      },
+      {
+        "to": "США",
+        "duty": "6.5%",
+        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {

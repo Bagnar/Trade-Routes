@@ -169,7 +169,13 @@ def _iso_date(text: str) -> str:
     if m:
         return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
     m = re.match(r"^\s*(\d{4}-\d{2}-\d{2})", text)
-    return m.group(1) if m else text.strip()
+    if m:
+        return m.group(1)
+    if re.fullmatch(r"\s*\d{4,6}\s*", text):  # Excel serial date in the .xlsx export ("38353" = 2005-01-01)
+        from datetime import date, timedelta
+
+        return (date(1899, 12, 30) + timedelta(days=int(text))).isoformat()
+    return text.strip()
 
 
 def rows_to_agreements(table: list[list[str]], index: dict[str, list[str]] | None = None) -> list[dict]:

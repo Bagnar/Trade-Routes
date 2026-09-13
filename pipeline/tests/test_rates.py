@@ -45,3 +45,16 @@ def test_parse_wits_structure_specific_layout():
     rates_map, year = rates.parse_wits_sdmx(STRUCTURE_SPECIFIC)
     assert rates_map == {"010121": 0.0, "610910": 18.0}  # the PRF series is not an MFN rate
     assert year == 2023
+
+
+def test_parse_wits_full_reports_lines_with_non_ad_valorem_duties():
+    xml = STRUCTURE_SPECIFIC.replace('PRODUCTCODE="610910" PARTNER="000" REPORTER="124"><Obs TIME_PERIOD="2023" OBS_VALUE="18" TARIFFTYPE="MFN"', 'PRODUCTCODE="610910" PARTNER="000" REPORTER="124"><Obs TIME_PERIOD="2023" OBS_VALUE="0" NBR_NA_LINES="1" TARIFFTYPE="MFN"')
+    rates_map, year, na = rates.parse_wits_sdmx_full(xml)
+    assert rates_map["610910"] == 0.0 and na == {"610910": 1} and year == 2023
+
+
+def test_get_rate_marks_ad_valorem_equivalents(tmp_path):
+    (tmp_path / "KZ.json").write_text('{"country":"KZ","year":2023,"source":"WITS","url":"u","url_ave":"a","fetched_at":"t","specific":["610910"],"rates":{"610910":9.66,"010121":0}}', encoding="utf8")
+    r = rates.get_rate("KZ", "610910", tmp_path)
+    assert r["estimated"] is True and r["url"] == "a" and r["value"] == 9.66
+    assert rates.get_rate("KZ", "010121", tmp_path)["estimated"] is False
