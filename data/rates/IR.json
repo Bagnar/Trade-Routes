@@ -4,10 +4,11 @@
 "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/364/partner/000/product/all/year/2020/datatype/reported",
 "url_ave": "",
 "year": 2020,
-"fetched_at": "2026-09-13T14:48:39+00:00",
+"fetched_at": "2026-09-13T15:25:52+00:00",
 "kind": "import_mfn",
 "unit": "percent",
 "specific": [],
+"unavailable": [],
 "rates": {
 "010121": 5.0,
 "010129": 33.0,
