@@ -21,7 +21,7 @@ from pathlib import Path
 
 import yaml
 
-from . import agreements, assemble, rates
+from . import agreements, assemble, demand, rates
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "data" / "sources.yaml"
@@ -89,6 +89,27 @@ def support_part(fr: str, hs6: str, facts: list[dict]) -> tuple[int | None, str,
     return (3 if n <= 2 else 4), f"{n} строк о программах поддержки из официальных источников", f"{n} стр."
 
 
+def demand_part(to: str, hs6: str) -> tuple[int | None, str]:
+    """Always an "ориентир": scored only from data/demand, never "проверено"; no score when stale or absent."""
+    d = demand.get_demand(to, hs6)
+    if d is None:
+        return None, "торговая статистика для этой пары ещё не загружена (UN Comtrade) — ориентир появится после загрузки"
+    if d["stale"]:
+        return None, f"последние данные о ввозе за {d['latest_year']} год — старше {demand.STALE_YEARS} лет, балл не ставится (UN Comtrade, ориентир)"
+    score = 3
+    if d["value"] >= 100e6:
+        score += 1
+    if d["growth_pct"] is not None:
+        if d["growth_pct"] >= 10:
+            score += 1
+        elif d["growth_pct"] <= -10:
+            score -= 1
+    score = max(1, min(5, score))
+    growth = f", {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} г." if d["growth_pct"] is not None else ""
+    kind = f" (зеркальные данные {d['partners']} партнёров, неполные)" if d["kind"] == "mirror" else ""
+    return score, f"ввоз {demand.usd_text(d['value'])} в {d['latest_year']} году{growth}{kind} — UN Comtrade, ориентир"
+
+
 def agreement_text(fr: str, to: str, doc: dict | None) -> str:
     if doc is None:  # database not loaded: never "no agreement", only "not checked"
         return "не проверено"
@@ -110,11 +131,12 @@ def compute(fr: str, to: str, hs6: str, facts: list[dict] | None = None, program
     d_score, d_basis, d_short = duty_part(to, hs6)
     o_score, o_basis, o_short, banned = obstacles_part(fr, to, hs6, facts, programs)
     s_score, s_basis, s_short = support_part(fr, hs6, facts)
+    dm_score, dm_basis = demand_part(to, hs6)
     parts = [
         {"name": PART_NAMES[0], "score": d_score, "basis": d_basis},
         {"name": PART_NAMES[1], "score": o_score, "basis": o_basis},
         {"name": PART_NAMES[2], "score": s_score, "basis": s_basis},
-        {"name": PART_NAMES[3], "score": None, "basis": "торговая статистика не подключена — ориентир появится позже, статус «проверено» не получает никогда"},
+        {"name": PART_NAMES[3], "score": dm_score, "basis": dm_basis},
         {"name": PART_NAMES[4], "score": None, "basis": "индексы логистики не подключены — ориентир появится позже, статус «проверено» не получает никогда"},
     ]
     scored = [p for p in parts if p["score"] is not None]

@@ -20,7 +20,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Iterable
 
-from . import monitor, rates
+from . import demand, monitor, rates
 
 ROOT = Path(__file__).resolve().parent.parent
 FACTS_DIR = ROOT / "data" / "facts"
@@ -142,6 +142,7 @@ def sanction_targets(fact: dict) -> set[str]:
 def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
     """Returns the page with sourced lines merged in. Idempotent: previously assembled lines are replaced."""
     fr, to = page["corridor"]["from"]["code"], page["corridor"]["to"]["code"]
+    to_ref = page["corridor"]["to"]
     hs6 = page["product"]["hs6"]
     facts = list(facts)
     by_section: dict[str, list[dict]] = {"regime": [], "export": [], "exportControl": [], "import": [], "logistics": []}
@@ -180,6 +181,18 @@ def assemble_page(page: dict, facts: Iterable[dict]) -> dict:
     duty = rate_fact(to, hs6)
     if duty:
         summary = [duty] + [f for f in summary if f.get("key") != "Пошлина при ввозе"]
+    summary = [f for f in summary if f.get("key") != "Спрос"]
+    d = demand.get_demand(to, hs6)
+    if d and not d["stale"]:
+        growth = f", изменение {'+' if d['growth_pct'] >= 0 else ''}{d['growth_pct']}% за {d['span_years']} г." if d["growth_pct"] is not None else ""
+        kind = " Зеркальные данные партнёров, неполные." if d["kind"] == "mirror" else ""
+        summary.append({
+            "key": "Спрос",
+            "text": f"Ввоз этой группы {to_ref.get('to', to)}: {demand.usd_text(d['value'])} в {d['latest_year']} году{growth}.{kind} Это ориентир по торговой статистике, не проверенный факт.",
+            "stat_ref": f"comtrade:{to}:{hs6}:{d['latest_year']}",
+            "stamp": {"status": "note", "source": "comtradeplus.un.org", "label": f"ориентир, данные за {d['latest_year']} год, снимок {ru_date(d['fetched_at'])}", "verifiedAt": str(d["fetched_at"])[:10], "url": d["url"]},
+            "_assembled": ASSEMBLED,
+        })
     page["summary"]["facts"] = summary
 
     # Sources table: one row per distinct source URL used above.

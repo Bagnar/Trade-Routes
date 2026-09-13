@@ -80,7 +80,7 @@ def check_numbers(doc: dict, page: str) -> list[Violation]:
     out = []
     for fact in iter_facts(doc):
         text = _text(fact).lower()
-        if any(stem in text for stem in RATE_STEMS) and NUMBER.search(text) and not fact.get("rate_ref"):
+        if any(stem in text for stem in RATE_STEMS) and NUMBER.search(text) and not fact.get("rate_ref") and not fact.get("stat_ref"):
             out.append(Violation("numbers", page, f"процент без ссылки на таблицу rates: {text[:80]}"))
     return out
 

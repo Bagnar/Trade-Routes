@@ -5,14 +5,23 @@ used, `--probe` checks freshness: which years WITS has for a reporter, compared 
 reports as available (public data-availability endpoint, no key). The comparison decides whether WITS is
 fresh enough or the project needs a UN Comtrade API key.
 
+Loader (stage 2): the same public endpoint, paced (one call per ~3 s, retry after a 429), at most
+DEMAND_MAX_CALLS per run, results cached for 30 days in data/demand/{ISO2}.json. Reported imports first; for
+countries that do not report at HS-6 (Iran) a partial mirror — exports to that country reported by a fixed list of
+major partners — marked kind "mirror". Numbers on the site come only from these files, always with the data year,
+and only as "ориентир" (docs/concept.md, principle 8); a latest year older than STALE_YEARS gets no score.
+
 Run:  python -m pipeline demand --probe CA,CN,RU,IR,TR     (network: GitHub Actions, reference-data.yml)
+      python -m pipeline demand --load                     (pairs from web/data/pages and data/rates; --importers CA --hs6 610910)
 """
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
-from datetime import date
+from datetime import date, datetime, timezone
+from pathlib import Path
 
 from . import fetch, rates
 
@@ -118,8 +127,211 @@ def main(argv=None) -> int:
 
     parser = argparse.ArgumentParser(prog="pipeline demand")
     parser.add_argument("--probe", help="comma-separated ISO2 importers to check data freshness for")
+    parser.add_argument("--load", action="store_true", help="load import statistics for the site's pairs into data/demand")
+    parser.add_argument("--importers", help="--load: comma-separated ISO2 importers (default: from pages and rates)")
+    parser.add_argument("--hs6", help="--load: comma-separated HS-6 codes (default: from pages)")
     args, _ = parser.parse_known_args(argv)
-    if not args.probe:
-        parser.error("use --probe CA,CN,...")
-    probe([c.strip() for c in args.probe.split(",") if c.strip()])
-    return 0
+    if args.probe:
+        probe([c.strip() for c in args.probe.split(",") if c.strip()])
+        return 0
+    if args.load:
+        load([c.strip().upper() for c in args.importers.split(",")] if args.importers else None, [c.strip() for c in args.hs6.split(",")] if args.hs6 else None)
+        return 0
+    parser.error("use --probe CA,CN,... or --load")
+    return 2
+
+
+# ---------------------------------------------------------------- loader and reader
+
+ROOT = Path(__file__).resolve().parent.parent
+DEMAND_DIR = ROOT / "data" / "demand"
+PAGES_DIR = ROOT / "web" / "data" / "pages"
+COMTRADE_IMPORTS = "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode={m49}&period={year}&partnerCode=0&cmdCode={hs6}&flowCode=M"
+COMTRADE_EXPORTS_TO = "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode={reporter}&period={year}&partnerCode={m49}&cmdCode={hs6}&flowCode=X"
+COMTRADE_PAGE = "https://comtradeplus.un.org/TradeFlow?Frequency=A&Flows=M&CommodityCodes={hs6}&Reporters={m49}&Partners=0"
+MIRROR_PARTNERS = ("CN", "AE", "TR", "IN", "DE", "RU")  # partial mirror: major exporters, in this order
+MAX_CALLS = int(os.environ.get("DEMAND_MAX_CALLS", "400"))
+PACE_SECONDS = float(os.environ.get("DEMAND_PACE_SECONDS", "3"))
+CACHE_DAYS = 30
+STALE_YEARS = 3
+YEARS_BACK = 4      # query the four years before the current one ...
+KEEP_YEARS = 3      # ... and keep the three most recent that have a value
+
+
+class _Budget:
+    def __init__(self, max_calls: int = MAX_CALLS):
+        self.max_calls = max_calls
+        self.calls = 0
+        self.stopped: str | None = None
+
+    def call(self, url: str) -> str | None:
+        """One paced GET; None when the budget is spent or the endpoint keeps refusing."""
+        if self.stopped:
+            return None
+        if self.calls >= self.max_calls:
+            self.stopped = f"DEMAND_MAX_CALLS={self.max_calls} reached; the rest waits for the next run"
+            return None
+        for attempt in range(2):
+            time.sleep(PACE_SECONDS)
+            self.calls += 1
+            try:
+                snap = fetch.fetch_url(url, save=False, timeout=120.0)
+            except Exception as exc:
+                print(f"demand: {exc.__class__.__name__} for {url[:120]}")
+                return None
+            body = snap.html or snap.text
+            if snap.http_status == 429:
+                m = re.search(r"(\d+) seconds", body)
+                wait = int(m.group(1)) + 1 if m else 10
+                if "day" in body.lower() or wait > 120:
+                    self.stopped = f"UN Comtrade rate limit: {body[:100]}"
+                    return None
+                time.sleep(wait)
+                continue
+            if snap.http_status != 200:
+                return None
+            return body
+        return None
+
+
+def _load_file(iso2: str) -> dict:
+    path = DEMAND_DIR / f"{iso2.upper()}.json"
+    try:
+        return json.loads(path.read_text(encoding="utf8"))
+    except (OSError, json.JSONDecodeError):
+        return {"country": iso2.upper(), "source": "UN Comtrade (public API, no key)", "series": {}}
+
+
+def _save_file(doc: dict) -> None:
+    DEMAND_DIR.mkdir(parents=True, exist_ok=True)
+    (DEMAND_DIR / f"{doc['country']}.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+
+
+def _fresh(entry: dict | None, today: date) -> bool:
+    if not entry or not entry.get("fetched_at"):
+        return False
+    try:
+        fetched = datetime.fromisoformat(entry["fetched_at"]).date()
+    except ValueError:
+        return False
+    return (today - fetched).days < CACHE_DAYS
+
+
+def fetch_series(iso2: str, hs6: str, budget: _Budget, today: date | None = None) -> dict | None:
+    """Reported imports for the last years; a partial mirror when the country reports nothing at HS-6."""
+    today = today or date.today()
+    m49 = rates.M49.get(iso2.upper())
+    if not m49:
+        return None
+    years: dict[str, float] = {}
+    for y in range(today.year - 1, today.year - 1 - YEARS_BACK, -1):
+        body = budget.call(COMTRADE_IMPORTS.format(m49=int(m49), year=y, hs6=hs6))
+        if body is None and budget.stopped:
+            return None
+        v = total_value(body) if body else None
+        if v:
+            years[str(y)] = v
+        if len(years) >= KEEP_YEARS:
+            break
+    kind, partners = "reported", 0
+    if not years:
+        # partial mirror: exports to this country as reported by major partners, latest two years only
+        for y in range(today.year - 1, today.year - 3, -1):
+            total, n = 0.0, 0
+            for partner in MIRROR_PARTNERS:
+                pm49 = rates.M49.get(partner)
+                if not pm49 or partner == iso2.upper():
+                    continue
+                body = budget.call(COMTRADE_EXPORTS_TO.format(reporter=int(pm49), m49=int(m49), year=y, hs6=hs6))
+                if body is None and budget.stopped:
+                    return None
+                v = total_value(body) if body else None
+                if v:
+                    total += v
+                    n += 1
+            if n:
+                years[str(y)] = total
+                partners = max(partners, n)
+        kind = "mirror"
+        if not years:
+            return {"years": {}, "kind": "none", "partners": 0, "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+    return {"years": years, "kind": kind, "partners": partners, "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+
+
+def pairs_from_pages(pages_dir: Path = PAGES_DIR) -> tuple[list[str], list[str]]:
+    """Importers = every page's destination plus every country with a rates table; HS-6 = every page's group."""
+    importers, hs6s = set(), set()
+    for path in sorted(pages_dir.glob("*.json")):
+        try:
+            page = json.loads(path.read_text(encoding="utf8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        importers.add(page["corridor"]["to"]["code"])
+        hs6s.add(page["product"]["hs6"])
+    importers |= {p.stem.upper() for p in rates.RATES_DIR.glob("*.json")}
+    return sorted(importers), sorted(hs6s)
+
+
+def load(importers: list[str] | None = None, hs6s: list[str] | None = None, max_calls: int = MAX_CALLS, today: date | None = None) -> int:
+    today = today or date.today()
+    if importers is None or hs6s is None:
+        auto_importers, auto_hs6 = pairs_from_pages()
+        importers = importers or auto_importers
+        hs6s = hs6s or auto_hs6
+    budget = _Budget(max_calls)
+    updated = 0
+    for iso2 in importers:
+        doc = _load_file(iso2)
+        changed = False
+        for hs6 in hs6s:
+            if _fresh(doc["series"].get(hs6), today):
+                continue
+            series = fetch_series(iso2, hs6, budget, today)
+            if series is None:
+                break
+            doc["series"][hs6] = series
+            changed = True
+            updated += 1
+            print(f"demand {iso2} {hs6}: {series['kind']} {series['years']}")
+        if changed:
+            doc["fetched_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            _save_file(doc)
+        if budget.stopped:
+            break
+    print(f"demand: {updated} series updated, {budget.calls} calls" + (f"; stop: {budget.stopped}" if budget.stopped else ""))
+    return updated
+
+
+def get_demand(country: str, hs6: str, demand_dir: Path | None = None, today: date | None = None) -> dict | None:
+    """Reader for the index layer: {"latest_year", "value", "growth_pct", "span_years", "kind", "partners",
+    "stale", "fetched_at", "url"} or None when nothing is loaded for the pair."""
+    today = today or date.today()
+    path = (demand_dir or DEMAND_DIR) / f"{country.upper()}.json"
+    try:
+        doc = json.loads(path.read_text(encoding="utf8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    entry = doc.get("series", {}).get(hs6)
+    if not entry or not entry.get("years"):
+        return None
+    years = sorted((int(y), float(v)) for y, v in entry["years"].items())
+    latest_year, latest = years[-1]
+    first_year, first = years[0]
+    growth = round((latest / first - 1) * 100) if first and latest_year > first_year else None
+    m49 = rates.M49.get(country.upper(), "")
+    return {
+        "latest_year": latest_year, "value": latest, "growth_pct": growth, "span_years": latest_year - first_year,
+        "kind": entry.get("kind", "reported"), "partners": entry.get("partners", 0),
+        "stale": (today.year - latest_year) > STALE_YEARS, "fetched_at": entry.get("fetched_at", ""),
+        "url": COMTRADE_PAGE.format(hs6=hs6, m49=int(m49) if m49 else ""),
+    }
+
+
+def usd_text(value: float) -> str:
+    if value >= 1e9:
+        return f"{value / 1e9:.1f} млрд USD"
+    if value >= 1e6:
+        return f"{value / 1e6:.0f} млн USD"
+    if value >= 1e3:
+        return f"{value / 1e3:.0f} тыс. USD"
+    return f"{value:.0f} USD"

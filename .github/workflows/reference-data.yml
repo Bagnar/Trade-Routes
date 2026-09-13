@@ -4,6 +4,7 @@ name: Reference data
 #   data/hs6.json      — HS-6 nomenclature (UN Comtrade reference list H6)
 #   data/rates/*.json  — MFN applied tariffs by HS-6 per importer (World Bank WITS / UNCTAD TRAINS)
 #   data/agreements.json — regional trade agreements in force (WTO RTA-IS)
+#   data/demand/*.json  — import statistics by HS-6 per importer (UN Comtrade public API), 30-day cache
 # Runs monthly and on demand. Network is open here; it is closed in the Claude Code cloud session.
 
 on:
@@ -46,6 +47,10 @@ jobs:
         run: python -m pipeline rates --wits "${{ github.event.inputs.rates_reporters || 'CA,CN,RU,IR,TR' }}"
       - name: Trade agreements in force (WTO RTA-IS)
         run: python -m pipeline agreements
+      - name: Import statistics for the site's pairs (UN Comtrade public API, no key)
+        env:
+          DEMAND_MAX_CALLS: ${{ vars.DEMAND_MAX_CALLS || '400' }}
+        run: python -m pipeline demand --load
       - name: Tests
         run: python -m pytest -q pipeline/tests
       - name: Commit
@@ -55,4 +60,5 @@ jobs:
           git add -A data/hs6.json
           test -f data/agreements.json && git add -A data/agreements.json
           test -d data/rates && git add -A data/rates
+          test -d data/demand && git add -A data/demand
           if git diff --cached --quiet; then echo "no changes"; else git commit -m "Reference data: $(date -u +%F)"; git pull --rebase origin "$GITHUB_REF_NAME" && git push; fi

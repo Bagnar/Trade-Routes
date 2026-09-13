@@ -54,8 +54,8 @@
         "stamp": {
           "status": "ok",
           "source": "wits.worldbank.org",
-          "label": "таблица ставок, снимок 12 сен 2026",
-          "verifiedAt": "2026-09-12",
+          "label": "таблица ставок, снимок 13 сен 2026",
+          "verifiedAt": "2026-09-13",
           "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/364/partner/000/product/all/year/2020/datatype/reported"
         },
         "_assembled": "assembled by pipeline/assemble.py"
@@ -141,7 +141,7 @@
       {
         "name": "Спрос",
         "score": null,
-        "basis": "торговая статистика не подключена — ориентир появится позже, статус «проверено» не получает никогда"
+        "basis": "торговая статистика для этой пары ещё не загружена (UN Comtrade) — ориентир появится после загрузки"
       },
       {
         "name": "Логистика",
@@ -1916,7 +1916,7 @@
       {
         "source": "wits.worldbank.org",
         "confirms": "цитата проверена",
-        "checked": "12 сен 2026",
+        "checked": "13 сен 2026",
         "status": {
           "text": "актуально",
           "kind": "ok"

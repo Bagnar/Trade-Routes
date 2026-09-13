@@ -48,6 +48,8 @@ export interface Fact {
   quoteLang?: string;
   /** Reference into the rates table when the statement carries a number (duty, VAT): "CA:610910:import_mfn". */
   rate_ref?: string;
+  /** Reference into the trade-statistics store when the statement carries a statistic: "comtrade:CA:610910:2025". */
+  stat_ref?: string;
   /** Red dot before the text (prohibition). */
   ban?: boolean;
   /** Show only in these modes; absent = both. */
