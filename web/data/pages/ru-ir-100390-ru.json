@@ -127,7 +127,7 @@
       {
         "name": "Спрос",
         "score": null,
-        "basis": "торговая статистика для этой пары ещё не загружена (UN Comtrade) — ориентир появится после загрузки"
+        "basis": "последние данные о ввозе за 2022 год — старше 3 лет, балл не ставится (UN Comtrade, ориентир)"
       },
       {
         "name": "Логистика",
@@ -158,21 +158,21 @@
     "lead": "Индексный слой для этой группы не собран.",
     "rows": [
       {
+        "to": "Китай",
+        "duty": "3%",
+        "agreement": "нет в базе РТС ВТО",
+        "sanctions": "есть: CA, EU, UK, US",
+        "support": "не собрано",
+        "score": {
+          "text": "11 из 15",
+          "status": "ok"
+        }
+      },
+      {
         "to": "Иран — эта страница",
         "here": true,
         "duty": "5%",
         "agreement": "EAEU - Iran",
-        "sanctions": "есть: CA, EU, UK, US",
-        "support": "не собрано",
-        "score": {
-          "text": "6 из 10",
-          "status": "mid"
-        }
-      },
-      {
-        "to": "Китай",
-        "duty": "3%",
-        "agreement": "нет в базе РТС ВТО",
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
@@ -187,8 +187,8 @@
         "sanctions": "есть: CA, EU, UK, US",
         "support": "не собрано",
         "score": {
-          "text": "3 из 10",
-          "status": "warn"
+          "text": "7 из 15",
+          "status": "mid"
         }
       },
       {
