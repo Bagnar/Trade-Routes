@@ -1,8 +1,8 @@
 {
   "url": "https://www.invest.gov.tr/",
   "source_id": "tr-invest",
-  "fetched_at": "2026-09-12T14:34:28+00:00",
-  "content_hash": "56a307876a819cfe504d05713ac81740bec276e06e02c9816f0f39f42829b7b5",
+  "fetched_at": "2026-09-13T07:55:08+00:00",
+  "content_hash": "906c58becf28faf2834ce2e230ede9004c135fab410e2f65a527ce4fe5ee9cf9",
   "topic": "supply_regions",
   "facts": [
     {
@@ -10,8 +10,8 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Türkiye имеет соглашения о свободной торговле, обеспечивающие доступ к региональным рынкам общей ёмкостью около 1 млрд потребителей в дополнение к внутреннему рынку.",
-        "en": "Türkiye's free trade agreements give access to regional markets covering around 1 billion consumers, in addition to its own domestic market."
+        "ru": "Türkiye позиционирует себя как рынок с собственным крупным внутренним спросом и доступом через соглашения о свободной торговле (ССТ) к региональным рынкам с около 1 млрд потребителей.",
+        "en": "Türkiye presents itself as a sizeable domestic market combined with access, via free trade agreements, to regional markets of around 1 billion consumers."
       },
       "quote": "Sizeable domestic market, plus regional markets with FTAs allowing access to 1 billion consumers",
       "quote_lang": "en",
@@ -23,8 +23,8 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "В Türkiye действуют специальные инвестиционные зоны: организованные промышленные зоны, зоны технологического развития и свободные зоны, предоставляющие инвесторам инфраструктуру и льготы.",
-        "en": "Türkiye offers dedicated investment zones — organized industrial zones, technology development zones and free zones — providing infrastructure and advantages to investors."
+        "ru": "Türkiye предоставляет инвесторам специальные зоны с отдельной инфраструктурой и преимуществами: организованные промышленные зоны, зоны развития технологий и свободные зоны.",
+        "en": "Türkiye offers investors dedicated zones with special infrastructure and advantages: organized industrial zones, technology development zones and free zones."
       },
       "quote": "The dedicated infrastructure and advantages offered to investors by Türkiye’s organized industrial zones, technology development zones, and free zones.",
       "quote_lang": "en",
@@ -32,12 +32,12 @@
       "targets": []
     },
     {
-      "block": "export_support",
+      "block": "regime",
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Турецкая государственная схема стимулов дифференцирована по приоритетным направлениям, регионам, масштабу проекта, стратегическим секторам и типу инвестиций.",
-        "en": "The Turkish government's incentives scheme is structured by priority areas, regions, project scale, strategic sectors and type of investment."
+        "ru": "Система государственных стимулов Türkiye дифференцирована по приоритетным направлениям, регионам, масштабу проекта, стратегическим секторам и типу инвестиций.",
+        "en": "Türkiye's government incentives scheme is differentiated by priority areas, regions, project scale, strategic sectors and type of investment."
       },
       "quote": "Information about the Turkish government’s incentives scheme based on priority areas, regions, project scale, strategic sectors, and type of investments.",
       "quote_lang": "en",
@@ -50,7 +50,7 @@
       "hs_scope": [],
       "statement": {
         "ru": "Экспорт из свободных зон Türkiye достиг рекордных 7,7 млрд долларов США за первые семь месяцев 2026 года.",
-        "en": "Exports from Türkiye's free zones set a record of USD 7.7 billion in the first seven months of 2026."
+        "en": "Exports from Türkiye's free zones reached a record USD 7.7 billion in the first seven months of 2026."
       },
       "quote": "Türkiye’s Free Zones Set New Export Record with USD 7.7 Billion in First Seven Months of 2026",
       "quote_lang": "en",
@@ -62,8 +62,8 @@
       "country": "TR",
       "hs_scope": [],
       "statement": {
-        "ru": "Расположение Türkiye на стыке Европы, Азии и Ближнего Востока обеспечивает выход на рынки Восточной Европы, Центральной Азии, Ближнего Востока и Северной Африки.",
-        "en": "Located at the crossroads of Europe, Asia and the Middle East, Türkiye offers access to Eastern Europe, Central Asia, the Middle East and North Africa."
+        "ru": "Расположение Türkiye на стыке Европы, Азии и Ближнего Востока обеспечивает логистический доступ к рынкам Восточной Европы, Центральной Азии, Ближнего Востока и Северной Африки.",
+        "en": "Located at the crossroads of Europe, Asia and the Middle East, Türkiye provides logistics access to Eastern Europe, Central Asia, the Middle East and North Africa."
       },
       "quote": "Positioned at the crossroads of Europe, Asia and the Middle East, Türkiye offers seamless access to key regions including Eastern Europe, Central Asia, the Middle East and North Africa.",
       "quote_lang": "en",

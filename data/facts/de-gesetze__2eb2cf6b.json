@@ -1,0 +1,329 @@
+{
+  "url": "https://www.gesetze-im-internet.de/awv_2013/",
+  "source_id": "de-gesetze",
+  "fetched_at": "2026-09-13T07:58:17+00:00",
+  "content_hash": "16de34edc14a44fff03fc1253be663fb5bd76390474fa4fea3a64bdf3349a61f",
+  "topic": "laws",
+  "facts": [
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Немецкое Положение о внешней торговле (AWV) устанавливает требования о получении разрешения на вывоз товаров, включённых в часть I экспортного перечня (Ausfuhrliste).",
+        "en": "Germany's Foreign Trade and Payments Ordinance (AWV) sets licensing requirements for the export of goods listed in Part I of the export list (Ausfuhrliste)."
+      },
+      "quote": "§ 8 Genehmigungserfordernisse für die Ausfuhr von Gütern des Teils I der Ausfuhrliste",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Разрешение требуется также на вывоз товаров, имеющих определённое назначение (конечное использование), независимо от их включения в перечень.",
+        "en": "A licence is also required for the export of goods with a particular intended use (end-use based control)."
+      },
+      "quote": "§ 9 Genehmigungserfordernisse für die Ausfuhr von Gütern mit einem bestimmten Verwendungszweck",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельные разрешительные требования действуют для вывоза товаров части II экспортного перечня.",
+        "en": "Separate licensing requirements apply to the export of goods in Part II of the export list."
+      },
+      "quote": "§ 10 Genehmigungserfordernisse für die Ausfuhr von Gütern des Teils II der Ausfuhrliste",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV предусматривает разрешительный порядок для перемещения (Verbringung) товаров из Германии в другие государства ЕС, а также сертификацию по статье 9 Директивы 2009/43/ЕС.",
+        "en": "The AWV provides for licensing of transfers (Verbringung) of goods out of Germany within the EU and for certification under Article 9 of Directive 2009/43/EC."
+      },
+      "quote": "§ 11 Genehmigungserfordernisse für die Verbringung von Gütern",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Торговые и посреднические сделки (брокерская деятельность) с товарами части I раздела A экспортного перечня, в том числе совершаемые в третьей стране, подлежат разрешению.",
+        "en": "Trade and brokering transactions involving goods in Part I Section A of the export list, including those carried out in a third country, require a licence."
+      },
+      "quote": "§ 46 Genehmigungserfordernisse für Handels- und Vermittlungsgeschäfte über Güter des Teils I Abschnitt A der Ausfuhrliste",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Техническая поддержка, связанная с химическим, биологическим или ядерным оружием, требует разрешения согласно AWV.",
+        "en": "Technical assistance in connection with chemical, biological or nuclear weapons requires a licence under the AWV."
+      },
+      "quote": "§ 49 Genehmigungserfordernisse für technische Unterstützung im Zusammenhang mit chemischen oder biologischen Waffen oder Kernwaffen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Разрешение требуется на техническую поддержку, связанную с военным конечным использованием, а также на поддержку, связанную со строительством или эксплуатацией ядерных установок.",
+        "en": "A licence is required for technical assistance connected with a military end-use, and for assistance related to the construction or operation of nuclear facilities."
+      },
+      "quote": "§ 50 Genehmigungserfordernisse für technische Unterstützung im Zusammenhang mit einer militärischen Endverwendung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Отдельные разрешительные требования установлены для технической поддержки в отношении определённых товаров слежения за коммуникациями, перечисленных в Приложении I Регламента (ЕС) 2021/821.",
+        "en": "Separate licensing requirements apply to technical assistance relating to certain cyber-surveillance items listed in Annex I of Regulation (EU) 2021/821."
+      },
+      "quote": "§ 52a Genehmigungserfordernisse für technische Unterstützung im Zusammenhang mit bestimmten in Anhang I der Verordnung (EU) 2021/821 gelisteten Gütern der Kommunikationsüberwachung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Глава 8 AWV содержит ограничения против отдельных стран и лиц, включая запреты на экспорт и на торгово-посреднические сделки с товарами части I раздела A экспортного перечня.",
+        "en": "Chapter 8 of the AWV contains restrictions against certain countries and persons, including bans on exports and on trade and brokering transactions involving goods in Part I Section A of the export list."
+      },
+      "quote": "§ 74 Ausfuhrverbote von in Teil I Abschnitt A der Ausfuhrliste erfassten Gütern",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV предусматривает запреты на ввоз и перемещение товаров, включённых в часть I раздела A экспортного перечня, из определённых стран.",
+        "en": "The AWV imposes import and transfer bans on goods covered by Part I Section A of the export list coming from certain countries."
+      },
+      "quote": "§ 77 Einfuhrverbote von in Teil I Abschnitt A der Ausfuhrliste erfassten Gütern aus bestimmten Ländern",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для вывоза определённого оборудования установлены особые разрешительные требования.",
+        "en": "Special licensing requirements apply to the export of certain equipment."
+      },
+      "quote": "§ 78 Genehmigungserfordernisse für die Ausfuhr bestimmter Ausrüstung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Глава 3 AWV регулирует импорт: ограничения по использованию ввезённых товаров, импортные документы, импортную лицензию и упрощённые процедуры.",
+        "en": "Chapter 3 of the AWV governs imports: use restrictions on imported goods, import documents, import licences and simplified procedures."
+      },
+      "quote": "§ 29 Verwendungsbeschränkungen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV регулирует подтверждения по международным импортным сертификатам и свидетельствам о поступлении товара (Wareneingangsbescheinigung).",
+        "en": "The AWV regulates confirmations of International Import Certificates and Delivery Verification Certificates."
+      },
+      "quote": "§ 30 Bestätigungen über Internationale Einfuhrbescheinigungen und Wareneingangsbescheinigungen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Для импортной очистки предусмотрены сертификат о происхождении и декларация о происхождении товара.",
+        "en": "A certificate of origin and a declaration of origin are provided for in import clearance."
+      },
+      "quote": "§ 38 Ursprungszeugnis und Ursprungserklärung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV предусматривает механизм предварительного наблюдения за импортом и особый порядок таможенной очистки при таком наблюдении.",
+        "en": "The AWV provides for prior import surveillance and a specific import clearance procedure where such surveillance applies."
+      },
+      "quote": "§ 36 Vorherige Einfuhrüberwachung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "DE",
+      "hs_scope": [
+        "27"
+      ],
+      "statement": {
+        "ru": "При вывозе минерального масла (нефтепродуктов) и газа собираются отдельные статистические данные об экспорте.",
+        "en": "Separate export data are collected for exports of mineral oil and gas."
+      },
+      "quote": "§ 18 Erhebung von Ausfuhrdaten bei der Ausfuhr von Mineralöl und Gas",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export",
+      "country": "DE",
+      "hs_scope": [
+        "07",
+        "08"
+      ],
+      "statement": {
+        "ru": "AWV содержит отдельные процедурные правила для вывоза фруктов и овощей.",
+        "en": "The AWV contains separate procedural rules for the export of fruit and vegetables."
+      },
+      "quote": "§ 19 Ausfuhr von Obst und Gemüse",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "import",
+      "country": "DE",
+      "hs_scope": [
+        "06"
+      ],
+      "statement": {
+        "ru": "Для ввоза продукции садоводства действуют особые правила AWV.",
+        "en": "Special AWV rules apply to imports of horticultural products."
+      },
+      "quote": "§ 42 Einfuhr von Gartenbauerzeugnissen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV устанавливает ограничения при транзите товаров и специальную транзитную процедуру.",
+        "en": "The AWV sets restrictions on the transit of goods and lays down a transit procedure."
+      },
+      "quote": "§ 44 Beschränkungen bei der Durchfuhr von Gütern",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Экспортёры обязаны соблюдать требования об уведомлениях и бухгалтерском учёте, а также вести записи по разрешительным экспортным операциям.",
+        "en": "Exporters must comply with information and bookkeeping duties and keep records in respect of licensed exports."
+      },
+      "quote": "§ 22 Informations- und Buchführungspflichten",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Глава 6 AWV регулирует проверку приобретения предприятий иностранными инвесторами — межотраслевую и отраслевую, включая доли голосов, сертификат об отсутствии возражений, запрет или предписания.",
+        "en": "Chapter 6 of the AWV governs the screening of acquisitions of companies, both cross-sectoral and sector-specific, including voting-right thresholds, clearance certificates, prohibitions and orders."
+      },
+      "quote": "§ 55 Anwendungsbereich der sektorübergreifenden Prüfung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Глава 7 AWV устанавливает обязанности по отчётности в сфере движения капитала и платежей: об имуществе резидентов за рубежом и нерезидентов в Германии, о требованиях и обязательствах, о платежах, а также сроки и органы подачи отчётности.",
+        "en": "Chapter 7 of the AWV imposes reporting duties for capital and payment transactions: assets of residents abroad and of non-residents in Germany, claims and liabilities, payments, plus reporting deadlines and reporting offices."
+      },
+      "quote": "§ 67 Meldung von Zahlungen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWV запрещает подачу заявлений о бойкоте (Boykotterklärung) во внешнеэкономических операциях.",
+        "en": "The AWV addresses boycott declarations (Boykotterklärung) in foreign trade transactions."
+      },
+      "quote": "§ 7 Boykotterklärung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Нарушения AWV и правовых актов Европейского Союза квалифицируются как уголовные преступления или административные правонарушения.",
+        "en": "Breaches of the AWV and of European Union legal acts are treated as criminal offences or administrative offences."
+      },
+      "quote": "§ 82 Ordnungswidrigkeiten – Verstöße gegen Rechtsakte der Europäischen Union",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}

@@ -1,8 +1,8 @@
 {
   "url": "https://www.cbp.gov/trade/basic-import-export",
   "source_id": "us-cbp",
-  "fetched_at": "2026-09-12T14:40:59+00:00",
-  "content_hash": "d9f43c984facf35f345c269810ee629f0432783368b7adc0cc745bec1b81dc90",
+  "fetched_at": "2026-09-13T07:58:18+00:00",
+  "content_hash": "115ae7719fd24b342dea5db5b3fc0ec7427114cf24ee43cbdd6eb78ff7fc62fe",
   "topic": "customs,import_procedures,parcels,de_minimis,forced_labour",
   "facts": [],
   "dropped": 0

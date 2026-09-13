@@ -1,8 +1,8 @@
 {
   "url": "https://www.cbp.gov/trade/forced-labor",
   "source_id": "us-cbp",
-  "fetched_at": "2026-09-12T14:41:00+00:00",
-  "content_hash": "2deacc7a4cd5a5a611a11b37f02f3738f9dd94297ef0b0432815dc46d4f68862",
+  "fetched_at": "2026-09-13T07:58:18+00:00",
+  "content_hash": "3ac834961b5de6eb4d48c31745db055109891efa75ace9cdc8e451c35483e68b",
   "topic": "customs,import_procedures,parcels,de_minimis,forced_labour",
   "facts": [],
   "dropped": 0

@@ -23,6 +23,18 @@
    "facts": 139,
    "dropped": 2,
    "note": ""
+  },
+  {
+   "date": "2026-09-13",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 14,
+   "input_tokens": 56826,
+   "output_tokens": 23225,
+   "usd": 0.4324,
+   "facts": 70,
+   "dropped": 0,
+   "note": ""
   }
  ],
  "pending_batch": null

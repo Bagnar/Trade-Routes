@@ -1,8 +1,8 @@
 {
   "url": "https://moit.gov.vn/",
   "source_id": "vn-moit",
-  "fetched_at": "2026-09-12T14:41:17+00:00",
-  "content_hash": "c9855fd07b02acc332efb888e8e4f09a1409eb92c3fad59a5bce6b5ad50c3aec",
+  "fetched_at": "2026-09-13T07:58:35+00:00",
+  "content_hash": "075301781d0321c7e34af008e761be4aeb9068ab5c8f5fa20512c191a36c162f",
   "topic": "trade_policy,trade_agreements,licensing,trade_remedies",
   "facts": [
     {
@@ -12,8 +12,8 @@
         "72"
       ],
       "statement": {
-        "ru": "Министерство промышленности и торговли Вьетнама продлило срок подачи ответов на опросники для отечественных производителей и импортёров в рамках антидемпингового расследования в отношении отдельных видов предварительно напряжённой стальной арматуры (проволоки/прутков) происхождением из Китая.",
-        "en": "Viet Nam's Ministry of Industry and Trade has extended the deadline for domestic producers and importers to submit questionnaire responses in the anti-dumping investigation on certain prestressed steel bar products originating from the People's Republic of China."
+        "ru": "Министерство промышленности и торговли Вьетнама ведёт антидемпинговое расследование в отношении некоторых видов напряжённой стальной арматуры (прутков) происхождением из Китая и продлило срок подачи ответов на вопросник для отечественных производителей и импортёров.",
+        "en": "Viet Nam's Ministry of Industry and Trade is running an anti-dumping investigation on certain prestressed steel bar products originating from China and has extended the deadline for domestic producers and importers to file questionnaire responses."
       },
       "quote": "Gia hạn thời gian nộp bản trả lời câu hỏi cho nhà sản xuất trong nước, nhà nhập khẩu trong vụ việc điều tra áp dụng biện pháp chống bán phá giá đối với một số sản phẩm thanh thép dự ứng lực có xuất xứ từ Cộng hòa Nhân dân Trung Hoa",
       "quote_lang": "vi",
@@ -25,10 +25,10 @@
       "country": "VN",
       "hs_scope": [],
       "statement": {
-        "ru": "Циркуляр № 48/2026/TT-BCT от 05.09.2026 детализирует ряд статей Закона об управлении внешней торговлей и Декрета № 292/2026/NĐ-CP от 22.07.2026, устанавливающего меры по исполнению этого закона.",
-        "en": "Circular No. 48/2026/TT-BCT, issued on 05/09/2026, sets out details of several articles of the Law on Foreign Trade Management and of Decree No. 292/2026/ND-CP of 22 July 2026 implementing that law."
+        "ru": "Министерство промышленности и торговли издало Циркуляр № 48/2026/TT-BCT от 05.09.2026, детализирующий отдельные статьи Закона об управлении внешней торговлей и Декрета № 292/2026/NĐ-CP от 22 июля 2026 года.",
+        "en": "The Ministry of Industry and Trade issued Circular No. 48/2026/TT-BCT, dated 05/09/2026, detailing certain articles of the Law on Foreign Trade Management and Decree No. 292/2026/NĐ-CP of 22 July 2026."
       },
-      "quote": "Thông tư quy định chi tiết một số điều của Luật Quản lý ngoại thương và Nghị định số 292/2026/NĐ-CP ngày 22 tháng 7 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý ngoại thương.",
+      "quote": "Số:\n 48/2026/TT-BCT \nTên:\nThông tư quy định chi tiết một số điều của Luật Quản lý ngoại thương và Nghị định số 292/2026/NĐ-CP ngày 22 tháng 7 năm 2026 của Chính phủ quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Quản lý ngoại thương.\n Ngày ban hành:05/09/2026",
       "quote_lang": "vi",
       "has_number": true,
       "targets": []
@@ -38,8 +38,8 @@
       "country": "VN",
       "hs_scope": [],
       "statement": {
-        "ru": "Министерство промышленности и торговли Вьетнама готовит проект Стратегии экспорта и импорта товаров до 2030 года с видением до 2045 года.",
-        "en": "Viet Nam's Ministry of Industry and Trade is working on a draft Strategy for goods export and import up to 2030, with a vision to 2045."
+        "ru": "Министерство промышленности и торговли Вьетнама разрабатывает проект Стратегии экспорта и импорта товаров до 2030 года с перспективой до 2045 года.",
+        "en": "Viet Nam's Ministry of Industry and Trade is preparing a draft Strategy for goods exports and imports to 2030, with a vision to 2045."
       },
       "quote": "Bộ Công Thương họp về Dự thảo Chiến lược xuất nhập khẩu hàng hóa đến năm 2030, tầm nhìn 2045",
       "quote_lang": "vi",

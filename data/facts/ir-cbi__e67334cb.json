@@ -1,8 +1,8 @@
 {
   "url": "https://www.cbi.ir/",
   "source_id": "ir-cbi",
-  "fetched_at": "2026-09-12T14:00:09+00:00",
-  "content_hash": "bea7194ef59fdfda7d2e47f89852e038f3637c1e00bbc70c99deb05ecbeee401",
+  "fetched_at": "2026-09-13T07:54:47+00:00",
+  "content_hash": "f806302b849f498e81b0f4d1a6930ac3674f2f610857b68548fa92b9cd5f8a89",
   "topic": "currency_rules",
   "facts": [
     {
@@ -10,10 +10,10 @@
       "country": "IR",
       "hs_scope": [],
       "statement": {
-        "ru": "Центральный банк Исламской Республики Иран отвечает за сохранение внутренней и внешней стоимости национальной валюты, устанавливает правила валютных и риаловых операций и контролирует вывоз и ввоз иностранной валюты и национальных денежных знаков.",
-        "en": "The Central Bank of the Islamic Republic of Iran is responsible for preserving the internal and external value of the national currency, issuing the regulations governing foreign-exchange and rial transactions, and supervising the export and import of foreign currency and of the national currency."
+        "ru": "Центральный банк Исламской Республики Иран отвечает за регулирование валютных и риаловых операций, а также за надзор за вывозом и ввозом валюты и национальных денежных знаков.",
+        "en": "The Central Bank of the Islamic Republic of Iran is responsible for regulating foreign-exchange and rial transactions and for supervising the export and import of foreign currency and the national currency."
       },
-      "quote": "برخی از وظايف بانک مرکزی عبارتند از حفظ ارزش داخلی و خارجی پول ملی کشور، انتشار اسکناس و ضرب سکه‌های فلزی رايج کشور، تنظيم مقررات مربوط به معاملات ارزی و ريالی، نظارت بر صدور و ورود ارز و پول رايج کشور، تنظيم کننده نظام پولی و اعتباری کشور، نظارت بر بانک‌ها و مؤسسات اعتباری",
+      "quote": "برخی از وظايف بانک مرکزی عبارتند از حفظ ارزش داخلی و خارجی پول ملی کشور، انتشار اسکناس و ضرب سکه‌های فلزی رايج کشور، تنظيم مقررات مربوط به معاملات ارزی و ريالی، نظارت بر صدور و ورود ارز و پول رايج کشور",
       "quote_lang": "fa",
       "has_number": false,
       "targets": []
@@ -23,23 +23,10 @@
       "country": "IR",
       "hs_scope": [],
       "statement": {
-        "ru": "Денежная единица Ирана — риал; выпуск наличных денег (банкнот и монет) является монополией государства и передан исключительно Центральному банку Ирана.",
-        "en": "Iran's currency unit is the rial; the issuance of banknotes and coins is a state monopoly granted exclusively to the Central Bank of the Islamic Republic of Iran."
+        "ru": "Денежная единица Ирана — риал; право выпуска национальных денег принадлежит государству и передано исключительно Центральному банку Ирана.",
+        "en": "Iran's currency unit is the rial; the privilege of issuing the national currency belongs to the state and has been assigned exclusively to the Central Bank of Iran."
       },
       "quote": "واحد پول ايران ريال است و پول رايج کشور به صورت اسکناس و سکه‌های فلزی قابل انتشار است. براساس قانون پولی و بانکی کشور، امتياز انتشار پول رايج کشور در انحصار دولت است و اين امتياز، با رعايت مقررات اين قانون، منحصراً به بانک مرکزی جمهوری اسلامی ايران واگذار شده است",
-      "quote_lang": "fa",
-      "has_number": false,
-      "targets": []
-    },
-    {
-      "block": "regime",
-      "country": "IR",
-      "hs_scope": [],
-      "statement": {
-        "ru": "Согласно Закону о денежной системе и банковском деле, Центральный банк Ирана как регулятор денежно-кредитной системы обязан издавать соответствующие правила, включая валютные правила (мقررات ارزی).",
-        "en": "Under the Monetary and Banking Act, the Central Bank of Iran, as regulator of the country's monetary and credit system, is obliged to issue the relevant regulations, including the foreign-exchange regulations."
-      },
-      "quote": "براساس قانون پولی و بانکی کشور، بانک مرکزی جمهوری اسلامی ايران بعنوان تنظيم کننده نظام پولی و اعتباری کشور، موظف به تنظيم مقررات مربوطه است",
       "quote_lang": "fa",
       "has_number": false,
       "targets": []
@@ -49,8 +36,8 @@
       "country": "IR",
       "hs_scope": [],
       "statement": {
-        "ru": "Центральный банк Ирана объявил о двух новых способах выполнения экспортёрами валютного обязательства (возврата валютной выручки).",
-        "en": "The Central Bank of Iran announced two new methods for exporters to discharge their foreign-currency repatriation obligation."
+        "ru": "Центральный банк Ирана объявил о двух новых способах исполнения экспортёрами валютного обязательства (рафъ-е та'ахход-е арзи) по возврату экспортной выручки.",
+        "en": "The Central Bank of Iran announced two new methods for exporters to discharge their foreign-currency repatriation commitment (raf'-e ta'ahhod-e arzi)."
       },
       "quote": "دو روش جدید رفع تعهد ارزی برای صادرکنندگان",
       "quote_lang": "fa",
@@ -58,40 +45,14 @@
       "targets": []
     },
     {
-      "block": "regime",
+      "block": "export",
       "country": "IR",
       "hs_scope": [],
       "statement": {
-        "ru": "Дела нарушителей валютного регулирования передаются в судебные органы; борьба с такими нарушениями продолжается.",
-        "en": "Cases of violators of foreign-exchange rules are referred to the judicial authorities, and action against such violators continues."
+        "ru": "Дела нарушителей валютного режима (в том числе по валютным обязательствам) передаются в судебные органы; преследование нарушителей продолжается.",
+        "en": "Cases of violators of foreign-exchange rules are referred to judicial authorities, and enforcement action against currency-sector offenders continues."
       },
-      "quote": "برخورد با متخلفان حوزه ارزی ادامه دارد \n ارسال پرونده متخلفان ارزی به مراجع قضایی",
-      "quote_lang": "fa",
-      "has_number": false,
-      "targets": []
-    },
-    {
-      "block": "regime",
-      "country": "IR",
-      "hs_scope": [],
-      "statement": {
-        "ru": "Центральный банк публикует официальные курсы валют; на 21 шахривара 1405 года курс доллара США составлял 1 634 132 риала.",
-        "en": "The Central Bank publishes official exchange rates; as of 21 Shahrivar 1405 the US dollar rate was 1,634,132 rials."
-      },
-      "quote": "دلار آمريکا\n ۱,۶۳۴,۱۳۲",
-      "quote_lang": "fa",
-      "has_number": true,
-      "targets": []
-    },
-    {
-      "block": "regime",
-      "country": "IR",
-      "hs_scope": [],
-      "statement": {
-        "ru": "Руководитель Центрального банка Ирана вынес банкам серьёзное предупреждение о необходимости соблюдения требований по противодействию отмыванию денег.",
-        "en": "The Governor of the Central Bank of Iran issued a serious warning to banks on compliance with anti-money-laundering requirements."
-      },
-      "quote": "تذکر جدی رئیس‌کل درخصوص رعایت ضوابط مبارزه با پولشویی در بانک‌ها",
+      "quote": "برخورد با متخلفان حوزه ارزی ادامه دارد\n ارسال پرونده متخلفان ارزی به مراجع قضایی",
       "quote_lang": "fa",
       "has_number": false,
       "targets": []
@@ -101,12 +62,51 @@
       "country": "IR",
       "hs_scope": [],
       "statement": {
-        "ru": "На 19 шахривара 1405 года ставка межбанковского рынка составляла 24,00%, минимальная ставка операций репо — 23%, ставка регулируемого кредитования — 24%, ставка регулируемого депонирования — 17%.",
-        "en": "As of 19 Shahrivar 1405 the interbank market rate was 24.00%, the minimum repurchase-agreement rate 23%, the standing lending rate 24% and the standing deposit rate 17%."
+        "ru": "Центральный банк публикует официальные курсы валют: на 22 шахривара 1405 доллар США — 1 639 034 риала, евро — 1 901 074 риала, фунт стерлингов — 2 217 257 риалов.",
+        "en": "The Central Bank publishes official exchange rates: as of 22 Shahrivar 1405 the US dollar was 1,639,034 rials, the euro 1,901,074 rials and the British pound 2,217,257 rials."
       },
-      "quote": "نرخ سود\n ۱۹ شهریور ۱۴۰۵ \n نرخ\n بازار \n بین‌​بانکی\n %24.00 \n حداقل نرخ\n توافق \n بازخرید\n %23 \n نرخ\n اعتبارگیری \n قاعده‌​مند\n %24 \n نرخ\n سپرده‌گذاری \n قاعده‌مند \n %17",
+      "quote": "نرخ ارز\n ۲۲ شهریور ۱۴۰۵\n دلار آمريکا\n ۱,۶۳۹,۰۳۴\n پوند انگليس\n ۲,۲۱۷,۲۵۷",
       "quote_lang": "fa",
       "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "cost",
+      "country": "IR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Ставки Центрального банка Ирана на 19 шахривара 1405: межбанковская ставка 24,00%, минимальная ставка репо 23%, ставка регулируемого кредитования 24%, ставка регулируемого депонирования 17%.",
+        "en": "Central Bank of Iran rates as of 19 Shahrivar 1405: interbank market rate 24.00%, minimum repo rate 23%, standing lending facility 24%, standing deposit facility 17%."
+      },
+      "quote": "نرخ\n بازار \n بین‌​بانکی\n %24.00 \n حداقل نرخ\n توافق \n بازخرید\n %23 \n نرخ\n اعتبارگیری \n قاعده‌​مند\n %24 \n نرخ\n سپرده‌گذاری \n قاعده‌مند \n %17",
+      "quote_lang": "fa",
+      "has_number": true,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "IR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Центральный банк публикует свод валютных правил (мажмуэ-е мокаррарат-е арзи) и циркуляры, регулирующие валютные операции.",
+        "en": "The Central Bank publishes a compiled set of foreign-exchange regulations (majmu'e-ye moqarrarat-e arzi) and circulars governing currency operations."
+      },
+      "quote": "مجموعه مقررات ارزی\n بخشنامه ها",
+      "quote_lang": "fa",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "IR",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Банки Ирана обязаны соблюдать требования по противодействию отмыванию денег и финансированию терроризма под надзором Центрального банка; глава ЦБ дал банкам строгое указание об их соблюдении.",
+        "en": "Iranian banks must comply with anti-money-laundering and counter-terrorism-financing requirements supervised by the Central Bank; the Governor issued a firm instruction to banks on observing these rules."
+      },
+      "quote": "تذکر جدی رئیس‌کل درخصوص رعایت ضوابط مبارزه با پولشویی در بانک‌ها",
+      "quote_lang": "fa",
+      "has_number": false,
       "targets": []
     }
   ],

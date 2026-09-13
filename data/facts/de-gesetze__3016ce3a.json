@@ -1,0 +1,153 @@
+{
+  "url": "https://www.gesetze-im-internet.de/awg_2013/",
+  "source_id": "de-gesetze",
+  "fetched_at": "2026-09-13T07:58:16+00:00",
+  "content_hash": "92e9260ea20dca0debf283ac74483ede96882ae46ac533b328c19daacf45f3ab",
+  "topic": "laws",
+  "facts": [
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Внешнеэкономическая деятельность Германии регулируется Законом о внешнеэкономической деятельности (Außenwirtschaftsgesetz, AWG), часть 1 которого посвящена сделкам и действиям и начинается с § 1 «Принцип».",
+        "en": "German foreign trade is governed by the Foreign Trade and Payments Act (Außenwirtschaftsgesetz, AWG), whose Part 1 covers legal transactions and actions and opens with Section 1 'Principle'."
+      },
+      "quote": "Au�enwirtschaftsgesetz\n zur Gesamtausgabe der Norm im Format: HTML PDF XML EPUB \n Inhaltsübersicht \n Teil 1 \n Rechtsgeschäfte und Handlungen \n § 1 Grundsatz",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "§ 4 AWG предусматривает ограничения и обязанности к действию в целях защиты общественной безопасности и внешнеполитических интересов, а § 5 определяет предмет таких ограничений.",
+        "en": "Section 4 of the AWG provides for restrictions and obligations to act in order to protect public security and foreign policy interests, while Section 5 defines the subject matter of such restrictions."
+      },
+      "quote": "§ 4 Beschränkungen und Handlungspflichten zum Schutz der öffentlichen Sicherheit und der auswärtigen Interessen \n § 5 Gegenstand von Beschränkungen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "§ 5a AWG позволяет вводить временные ограничения для имплементации резолюций Совета Безопасности ООН.",
+        "en": "Section 5a of the AWG allows provisional restrictions to be imposed in order to implement UN Security Council resolutions."
+      },
+      "quote": "§ 5a Vorläufige Beschränkungen zur Umsetzung von Resolutionen des Sicherheitsrates der Vereinten Nationen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "sanctions",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWG предусматривает доверительное управление предприятиями при исполнении санкционных мер (§ 6a) и назначение управляющего долями с определёнными задачами, обязанностями, надзором и ответственностью (§§ 6b–6g).",
+        "en": "The AWG provides for trustee administration of companies in connection with the implementation of sanctions measures (Section 6a) and for the appointment of a share custodian with defined tasks, duties, supervision and liability (Sections 6b-6g)."
+      },
+      "quote": "§ 6a Treuhandverwaltung von Unternehmen anlässlich der Durchführung von Sanktionsmaßnahmen \n § 6b Bestellung und Aufgaben eines Anteilspflegers",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWG регулирует индивидуальное вмешательство (§ 6), в том числе в морском сообщении за пределами германского территориального моря (§ 7).",
+        "en": "The AWG regulates individual intervention (Section 6), including in maritime traffic outside the German territorial sea (Section 7)."
+      },
+      "quote": "§ 6 Einzeleingriff",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "documents",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWG регулирует выдачу разрешений (§ 8) и выдачу сертификатов (§ 9).",
+        "en": "The AWG governs the granting of licences (Section 8) and the issuing of certificates (Section 9)."
+      },
+      "quote": "§ 8 Erteilung von Genehmigungen \n § 9 Erteilung von Zertifikaten",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWG содержит процедурные и отчётные предписания (§ 11) и определяет компетенции по изданию административных актов, приёму уведомлений и исполнению экономических санкционных мер (§ 13).",
+        "en": "The AWG contains procedural and reporting rules (Section 11) and sets the competences for issuing administrative acts, receiving notifications and enforcing economic sanctions measures (Section 13)."
+      },
+      "quote": "§ 11 Verfahrens- und Meldevorschriften",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "§ 14a AWG устанавливает сроки для ограничений и обязанностей при приобретении отечественных предприятий (инвестиционный контроль).",
+        "en": "Section 14a of the AWG sets deadlines for restrictions and obligations to act in connection with the acquisition of domestic companies (investment screening)."
+      },
+      "quote": "§ 14a Fristen für Beschränkungen und Handlungspflichten beim Erwerb inländischer Unternehmen",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "export_control",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "Часть 3 AWG содержит уголовные нормы (§§ 17, 18), нормы о денежных штрафах (§ 19) и о конфискации (§ 20) за нарушения внешнеэкономического законодательства.",
+        "en": "Part 3 of the AWG contains criminal provisions (Sections 17 and 18), administrative fine provisions (Section 19) and confiscation rules (Section 20) for breaches of foreign trade law."
+      },
+      "quote": "Teil 3 \n Straf-, Bußgeld- und Überwachungsvorschriften \n § 17 Strafvorschriften \n § 18 Strafvorschriften \n § 19 Bußgeldvorschriften \n § 20 Einziehung",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "logistics",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "AWG наделяет таможенные органы задачами и полномочиями (§ 21) и предусматривает контроль грузового, почтового и пассажирского сообщения (§ 27).",
+        "en": "The AWG assigns tasks and powers to the customs authorities (Section 21) and provides for monitoring of freight, postal and passenger traffic (Section 27)."
+      },
+      "quote": "§ 21 Aufgaben und Befugnisse der Zollbehörden",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    },
+    {
+      "block": "regime",
+      "country": "DE",
+      "hs_scope": [],
+      "statement": {
+        "ru": "§ 30 AWG регулирует применение непосредственно действующих предписаний Европейского союза.",
+        "en": "Section 30 of the AWG governs the application of directly applicable provisions of the European Union."
+      },
+      "quote": "§ 30 Anwendung unmittelbar geltender Vorschriften der Europäischen Union",
+      "quote_lang": "de",
+      "has_number": false,
+      "targets": []
+    }
+  ],
+  "dropped": 0
+}
