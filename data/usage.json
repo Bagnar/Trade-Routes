@@ -37,5 +37,255 @@
    "note": ""
   }
  ],
- "pending_batch": null
+ "pending_batch": {
+  "id": "msgbatch_011g5J9MHLnED4a83nAqQ6rE",
+  "model": "claude-opus-5",
+  "submitted": "2026-09-16T10:22:00+00:00",
+  "pages": [
+   {
+    "custom_id": "cn-mofcom__86c319d0",
+    "file": "cn-mofcom__86c319d0.json",
+    "url": "http://english.mofcom.gov.cn/",
+    "source_id": "cn-mofcom",
+    "topic": "export_licences,export_controls,trade_policy",
+    "fetched_at": "2026-09-16T10:00:45+00:00",
+    "content_hash": "2854985d976d3e54027d85c38d61be0ed53f5e44932c16127cd922947403af79"
+   },
+   {
+    "custom_id": "cn-sta__24b32306",
+    "file": "cn-sta__24b32306.json",
+    "url": "https://www.chinatax.gov.cn/",
+    "source_id": "cn-sta",
+    "topic": "export_vat_rebate",
+    "fetched_at": "2026-09-16T10:00:49+00:00",
+    "content_hash": "99c0810cc24b9a57ab94b0fc26fbbfc2ad71b483abff1cf17ca5afbc3712a4a5"
+   },
+   {
+    "custom_id": "cn-ccpit__f5193ee8",
+    "file": "cn-ccpit__f5193ee8.json",
+    "url": "https://www.ccpit.org/",
+    "source_id": "cn-ccpit",
+    "topic": "certificate_of_origin",
+    "fetched_at": "2026-09-16T10:00:52+00:00",
+    "content_hash": "c60b16c16283931e97d1a9678b25b41527adcfe8eb79bc9635564ea5d7ec2e29"
+   },
+   {
+    "custom_id": "ru-tpprf__98bc4eca",
+    "file": "ru-tpprf__98bc4eca.json",
+    "url": "https://tpprf.ru/ru/services/sertifikatsiya/",
+    "source_id": "ru-tpprf",
+    "topic": "certificate_of_origin",
+    "fetched_at": "2026-09-16T10:10:41+00:00",
+    "content_hash": "8f4321008d928d36a1d275ab57b16f48b4b25a5332a69ab80da05ac7ebb27c90"
+   },
+   {
+    "custom_id": "ir-cbi__e67334cb",
+    "file": "ir-cbi__e67334cb.json",
+    "url": "https://www.cbi.ir/",
+    "source_id": "ir-cbi",
+    "topic": "currency_rules",
+    "fetched_at": "2026-09-16T10:13:18+00:00",
+    "content_hash": "eddd673f6cbbd9a88940e6f8bb48dd39fb87f88087d4f53e1802204c4e8007f7"
+   },
+   {
+    "custom_id": "tr-invest__872939ae",
+    "file": "tr-invest__872939ae.json",
+    "url": "https://www.invest.gov.tr/",
+    "source_id": "tr-invest",
+    "topic": "supply_regions",
+    "fetched_at": "2026-09-16T10:13:39+00:00",
+    "content_hash": "201ef2cdc9d6efb42667144715a443cacc2ffbbfeb86c87d5493d8c012acc73d"
+   },
+   {
+    "custom_id": "kz-kgd__8c7858bc",
+    "file": "kz-kgd__8c7858bc.json",
+    "url": "https://kgd.gov.kz/ru/section/tamozhennoe-administrirovanie",
+    "source_id": "kz-kgd",
+    "topic": "customs,import_procedures,vat_import,export_procedures",
+    "fetched_at": "2026-09-16T10:13:41+00:00",
+    "content_hash": "8a8e2dd7988f99fd6f48dcf3f358a49b924d35a1b3ca3d123f2d5bffd680072b"
+   },
+   {
+    "custom_id": "kz-adilet__dcaa5fc5",
+    "file": "kz-adilet__dcaa5fc5.json",
+    "url": "https://adilet.zan.kz/rus/docs/K1700000123",
+    "source_id": "kz-adilet",
+    "topic": "laws",
+    "fetched_at": "2026-09-16T10:14:27+00:00",
+    "content_hash": "04b8accf1f09d8e1a94b2a208b4f2567522469dfdd7bf6974e567575eff4ee8f"
+   },
+   {
+    "custom_id": "kz-qaztrade__fc9e51bd",
+    "file": "kz-qaztrade__fc9e51bd.json",
+    "url": "https://qaztrade.org.kz/",
+    "source_id": "kz-qaztrade",
+    "topic": "export_support",
+    "fetched_at": "2026-09-16T10:14:32+00:00",
+    "content_hash": "aae63e43c0060b7b1946799fb9c52092a1c7bc0900d7ee95e19c52b35c946619"
+   },
+   {
+    "custom_id": "uz-lex__8eb4c149",
+    "file": "uz-lex__8eb4c149.json",
+    "url": "https://lex.uz/ru/",
+    "source_id": "uz-lex",
+    "topic": "laws",
+    "fetched_at": "2026-09-16T10:15:10+00:00",
+    "content_hash": "93f4d840bb5020208c2703f3731e32350aa519ca2c55670a956a7a7d4531c781"
+   },
+   {
+    "custom_id": "ae-fca__c5f06b92",
+    "file": "ae-fca__c5f06b92.json",
+    "url": "https://icp.gov.ae/en/",
+    "source_id": "ae-fca",
+    "topic": "customs,customs_tariff,import_procedures",
+    "fetched_at": "2026-09-16T10:17:32+00:00",
+    "content_hash": "23ba38ec3fa5bdf8ba7e16acbe0ba8d7a55b9baf717b378c6cf8678d2299d751"
+   },
+   {
+    "custom_id": "ae-moec__aa93bcf9",
+    "file": "ae-moec__aa93bcf9.json",
+    "url": "https://www.moec.gov.ae/en/cepa",
+    "source_id": "ae-moec",
+    "topic": "trade_policy,trade_agreements,licensing",
+    "fetched_at": "2026-09-16T10:17:36+00:00",
+    "content_hash": "8e5224f84c9800150a5b316e3691805d2221a9e03bf32ec039845ca7b7dede93"
+   },
+   {
+    "custom_id": "ae-tax__e7e82958",
+    "file": "ae-tax__e7e82958.json",
+    "url": "https://tax.gov.ae/en/",
+    "source_id": "ae-tax",
+    "topic": "vat_import,excise",
+    "fetched_at": "2026-09-16T10:17:39+00:00",
+    "content_hash": "b8d3c7b29aa660876f373e2e062291ff267aa7afe2ab9f5cdc8ca0dcd35ac7a3"
+   },
+   {
+    "custom_id": "ae-legislation__2b067c25",
+    "file": "ae-legislation__2b067c25.json",
+    "url": "https://uaelegislation.gov.ae/en",
+    "source_id": "ae-legislation",
+    "topic": "laws",
+    "fetched_at": "2026-09-16T10:17:43+00:00",
+    "content_hash": "1c8239758d273bea5f95093a49e274b4e8cce6ef0adb45c5e46ce3a3a7061148"
+   },
+   {
+    "custom_id": "de-bafa__140590a1",
+    "file": "de-bafa__140590a1.json",
+    "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/ausfuhrkontrolle_node.html",
+    "source_id": "de-bafa",
+    "topic": "export_control,dual_use,sanctions",
+    "fetched_at": "2026-09-16T10:17:47+00:00",
+    "content_hash": "202b7d107870011fb4f1843b2993cffd6cd38623298649372229aef4f69abbd0"
+   },
+   {
+    "custom_id": "de-gtai__c9268872",
+    "file": "de-gtai__c9268872.json",
+    "url": "https://www.gtai.de/en/",
+    "source_id": "de-gtai",
+    "topic": "export_support,market_info",
+    "fetched_at": "2026-09-16T10:17:48+00:00",
+    "content_hash": "3272db45f846d3b725ea01d46f64f6a6be6afff6164d26bae3aa96e2c4cf55f2"
+   },
+   {
+    "custom_id": "us-cbp__15c2683a",
+    "file": "us-cbp__15c2683a.json",
+    "url": "https://www.cbp.gov/trade/basic-import-export",
+    "source_id": "us-cbp",
+    "topic": "customs,import_procedures,parcels,de_minimis,forced_labour",
+    "fetched_at": "2026-09-16T10:21:06+00:00",
+    "content_hash": "02ec7559c7b2c4a69270214ddcc38eeddf5ba57d5461a1fed994c0dfdabcf178"
+   },
+   {
+    "custom_id": "us-cbp__61466ef1",
+    "file": "us-cbp__61466ef1.json",
+    "url": "https://www.cbp.gov/trade/forced-labor",
+    "source_id": "us-cbp",
+    "topic": "customs,import_procedures,parcels,de_minimis,forced_labour",
+    "fetched_at": "2026-09-16T10:21:07+00:00",
+    "content_hash": "ddf5273250d9697b42331df138adfdf4830c72c9d28629a2e61981c198bbfb4c"
+   },
+   {
+    "custom_id": "in-dgft__98fc40b1",
+    "file": "in-dgft__98fc40b1.json",
+    "url": "https://www.dgft.gov.in/CP/?opt=ft-policy",
+    "source_id": "in-dgft",
+    "topic": "trade_policy,licensing,export_procedures,export_support",
+    "fetched_at": "2026-09-16T10:21:13+00:00",
+    "content_hash": "17e278647ad44525c23a29bbdfe3753a7a8f063c513c04d81fc1d9c22152cfec"
+   },
+   {
+    "custom_id": "in-dgft__ed3e8dbd",
+    "file": "in-dgft__ed3e8dbd.json",
+    "url": "https://www.dgft.gov.in/CP/?opt=IEC",
+    "source_id": "in-dgft",
+    "topic": "trade_policy,licensing,export_procedures,export_support",
+    "fetched_at": "2026-09-16T10:21:14+00:00",
+    "content_hash": "000211a506772354a46868925fefcf6ba58b10084099f52794f086ddadbe4863"
+   },
+   {
+    "custom_id": "vn-customs__6a90265c",
+    "file": "vn-customs__6a90265c.json",
+    "url": "https://www.customs.gov.vn/",
+    "source_id": "vn-customs",
+    "topic": "customs,customs_tariff,import_procedures,export_procedures",
+    "fetched_at": "2026-09-16T10:21:24+00:00",
+    "content_hash": "294f8fc9e4a944c3269654c166c98d961e3c2c28facae2a2ab48a6c4ed7c721b"
+   },
+   {
+    "custom_id": "vn-moit__fbfd18d2",
+    "file": "vn-moit__fbfd18d2.json",
+    "url": "https://moit.gov.vn/",
+    "source_id": "vn-moit",
+    "topic": "trade_policy,trade_agreements,licensing,trade_remedies",
+    "fetched_at": "2026-09-16T10:21:25+00:00",
+    "content_hash": "2958bb39ed5babced6f57d5258c0b9e6dc007ec982e1810246a5c1b2f1cb2bf7"
+   },
+   {
+    "custom_id": "eu-taxud__aa2e5820",
+    "file": "eu-taxud__aa2e5820.json",
+    "url": "https://taxation-customs.ec.europa.eu/customs-4_en",
+    "source_id": "eu-taxud",
+    "topic": "customs_tariff,customs,import_procedures",
+    "fetched_at": "2026-09-16T10:21:32+00:00",
+    "content_hash": "c7439e8e7f1513899b2f2abf7913674a75b26886aaf72ea15a4f427cf10b85ec"
+   },
+   {
+    "custom_id": "eu-access2markets__dc4fded8",
+    "file": "eu-access2markets__dc4fded8.json",
+    "url": "https://trade.ec.europa.eu/access-to-markets/en/home",
+    "source_id": "eu-access2markets",
+    "topic": "customs_tariff,rules_of_origin,import_procedures,trade_agreements",
+    "fetched_at": "2026-09-16T10:21:32+00:00",
+    "content_hash": "d35a445341585ae288d1fd0da2f57b3d21e5fc144a09fc0d1922de354040195a"
+   },
+   {
+    "custom_id": "sanc-us-ofac__02a6798c",
+    "file": "sanc-us-ofac__02a6798c.json",
+    "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+    "source_id": "sanc-us-ofac",
+    "topic": "",
+    "fetched_at": "2026-09-16T10:21:42+00:00",
+    "content_hash": "bd840c028ea2ef9d434d5bbce68b678ede98a83f096f4fcd4cace29d4596bc76"
+   },
+   {
+    "custom_id": "eu-dual-use__247ceecd",
+    "file": "eu-dual-use__247ceecd.json",
+    "url": "https://policy.trade.ec.europa.eu/help-exporters-and-importers/exporting-dual-use-items_en",
+    "source_id": "eu-dual-use",
+    "topic": "export_control",
+    "fetched_at": "2026-09-16T10:21:55+00:00",
+    "content_hash": "fd76f675d865b138f29e4361cf9c923751cd2addfc66c923c816c1ed18572450"
+   },
+   {
+    "custom_id": "cn-mofcom-export-control__c70a63a4",
+    "file": "cn-mofcom-export-control__c70a63a4.json",
+    "url": "http://exportcontrol.mofcom.gov.cn/",
+    "source_id": "cn-mofcom-export-control",
+    "topic": "export_control",
+    "fetched_at": "2026-09-16T10:22:00+00:00",
+    "content_hash": "2544b0fe28c911d7852c9dfbd3de34a9d838c285a4f742e50ca8a6d1c070019d"
+   }
+  ],
+  "estimate_usd": 1.8371
+ }
 }

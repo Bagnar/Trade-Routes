@@ -1,23 +1,83 @@
-# Проверка источников — 2026-09-13
+# Проверка источников — 2026-09-16
 
-- фактов с цитатой проверено: 2244
-- цитата на месте: 2232
-- источник изменился, требует проверки: 12
+- фактов с цитатой проверено: 2232
+- цитата на месте: 2160
+- источник изменился, требует проверки: 72
 - источник недоступен: 0
-- фактов без цитаты (не проверяются и не публикуются как «проверено»): 752
+- фактов без цитаты (не проверяются и не публикуются как «проверено»): 763
 - ставок из таблицы rates (обновляются загрузчиком reference-data.yml, не цитатами): 23
 
 ## Что изменилось
 
+- cn-ca-330499-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-330499-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-330499-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-610910-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-610910-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-610910-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-640399-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-640399-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-640399-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-732393-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-732393-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-732393-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-850440-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-850440-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-850440-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-851830-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-851830-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-851830-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-854143-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-854143-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-854143-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-870899-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-870899-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-870899-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-871160-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-871160-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-871160-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-940360-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-940360-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-940360-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-940540-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-940540-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-940540-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-950300-ru.json: changed — http://english.mofcom.gov.cn/
+- cn-ca-950300-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- cn-ca-950300-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-071340-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-071340-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-071340-ru.json: changed — https://www.cbi.ir/
+- ru-ir-100199-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-100199-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-100199-ru.json: changed — https://www.cbi.ir/
+- ru-ir-100390-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-100390-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-100390-ru.json: changed — https://www.cbi.ir/
+- ru-ir-100590-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-100590-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-100590-ru.json: changed — https://www.cbi.ir/
+- ru-ir-151211-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-151211-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-151211-ru.json: changed — https://www.cbi.ir/
+- ru-ir-230630-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-230630-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-230630-ru.json: changed — https://www.cbi.ir/
+- ru-ir-300490-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-300490-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-300490-ru.json: changed — https://www.cbi.ir/
+- ru-ir-310210-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-310210-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-310210-ru.json: changed — https://www.cbi.ir/
+- ru-ir-390110-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-390110-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-390110-ru.json: changed — https://www.cbi.ir/
+- ru-ir-440711-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-440711-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-440711-ru.json: changed — https://www.cbi.ir/
+- ru-ir-480256-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-480256-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-480256-ru.json: changed — https://www.cbi.ir/
+- ru-ir-720839-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
+- ru-ir-720839-ru.json: changed — https://taxation-customs.ec.europa.eu/customs-4_en
 - ru-ir-720839-ru.json: changed — https://www.cbi.ir/
