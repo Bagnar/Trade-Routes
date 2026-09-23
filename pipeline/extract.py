@@ -17,7 +17,12 @@ Spending guards (all enforced here, not in the workflow):
   - PIPELINE_MAX_USD (default 5) estimated spend per run, computed from the API's own token usage;
   - PIPELINE_MONTHLY_USD (default 15) per calendar month, tracked in the committed ledger data/usage.json;
   - PIPELINE_MAX_PAGE_CHARS (default 200000): a larger page is skipped with a note, never truncated silently;
+  - PIPELINE_MIN_DAYS_BETWEEN (default 30): a page that changed is re-read by the model at most once in that
+    many days — ministry home pages change daily (news), and re-extracting them every day cost ~2 $ a day in
+    September 2026 without adding facts;
   - a credit/billing error stops the run.
+The ledger is written to disk the moment a batch is submitted (before waiting for it), so a cancelled or failed
+run can never lose the record of a paid call.
 Batch mode (--batch, used by daily-check.yml) sends the pages through the Message Batches API at half price;
 a batch that is still processing when the run ends is remembered in the ledger and picked up next run.
 Every run writes data/extract-report.md (pages, tokens, dollars this run and this month).
@@ -46,6 +51,7 @@ MAX_USD = float(os.environ.get("PIPELINE_MAX_USD", "5"))
 MONTHLY_USD = float(os.environ.get("PIPELINE_MONTHLY_USD", "15"))
 MAX_PAGE_CHARS = int(os.environ.get("PIPELINE_MAX_PAGE_CHARS", "200000"))
 BATCH_WAIT_MIN = float(os.environ.get("PIPELINE_BATCH_WAIT_MIN", "45"))
+MIN_DAYS_BETWEEN = float(os.environ.get("PIPELINE_MIN_DAYS_BETWEEN", "30"))
 MAX_TOKENS = 16000
 
 # USD per 1M tokens (input, output), Anthropic API list prices as of 2026-09; batch requests cost half.
@@ -284,6 +290,28 @@ def unchanged_since_last_extract(path: Path, content_hash: str) -> bool:
         return False
 
 
+def days_since_extract(path: Path, today: datetime | None = None) -> float | None:
+    """Days since the facts file for this URL was written (its `fetched_at`); None when there is no file."""
+    if not path.exists():
+        return None
+    try:
+        stamp = json.loads(path.read_text(encoding="utf8")).get("fetched_at") or ""
+        then = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return None
+    if then.tzinfo is None:
+        then = then.replace(tzinfo=timezone.utc)
+    now = today or datetime.now(timezone.utc)
+    return (now - then).total_seconds() / 86400
+
+
+def in_cooldown(path: Path, min_days: float | None = None) -> tuple[bool, float]:
+    """True when the page was extracted less than `min_days` ago (guard PIPELINE_MIN_DAYS_BETWEEN)."""
+    min_days = MIN_DAYS_BETWEEN if min_days is None else min_days
+    days = days_since_extract(path)
+    return (days is not None and days < min_days), (days or 0.0)
+
+
 def write_facts(out: Path, url: str, source_id: str, fetched_at: str, content_hash: str, topic: str | None, facts: list[dict], dropped: int) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(
@@ -307,6 +335,10 @@ def extract_url(url: str, topic: str | None = None, client=None, out_dir: Path =
     snapshot = fetch.fetch_url(url)
     out = facts_path(source.id, url, out_dir)
     if not force and unchanged_since_last_extract(out, snapshot.content_hash):
+        return None
+    cooling, days = in_cooldown(out)
+    if not force and cooling:
+        print(f"cooldown {source.id}: {url} (extracted {days:.0f} days ago; a changed page is re-read only after {MIN_DAYS_BETWEEN:g} days)")
         return None
     if len(snapshot.text) > MAX_PAGE_CHARS:
         if spend is not None:
@@ -352,7 +384,7 @@ def extract_registry(country: str | None = None, out_dir: Path = FACTS_DIR, max_
     note = ""
     try:
         if batch:
-            written, note = _extract_batch(country, out_dir, max_pages, force, client, spend, ledger)
+            written, note = _extract_batch(country, out_dir, max_pages, force, client, spend, ledger, ledger_path)
         else:
             written, note = _extract_sync(country, out_dir, max_pages, force, client, spend)
     finally:
@@ -421,6 +453,7 @@ def _collect_batch(client, pending: dict, texts: dict[str, str], out_dir: Path, 
     for result in client.messages.batches.results(pending["id"]):
         page = pages.get(result.custom_id)
         if page is None:
+            print(f"batch item {result.custom_id}: not in the ledger's page list; skipped")
             continue
         kind = result.result.type
         if kind != "succeeded":
@@ -445,7 +478,7 @@ def _collect_batch(client, pending: dict, texts: dict[str, str], out_dir: Path, 
     return written
 
 
-def _extract_batch(country, out_dir, max_pages, force, client, spend: Spend, ledger: dict) -> tuple[list[Path], str]:
+def _extract_batch(country, out_dir, max_pages, force, client, spend: Spend, ledger: dict, ledger_path: Path = USAGE_FILE) -> tuple[list[Path], str]:
     written: list[Path] = []
     texts: dict[str, str] = {}
     # 1. A batch left over from the previous run comes first — its cost is already committed.
@@ -475,6 +508,10 @@ def _extract_batch(country, out_dir, max_pages, force, client, spend: Spend, led
         if not force and unchanged_since_last_extract(out, snap.content_hash):
             print(f"same {source.id}: {url} (unchanged, no model call)")
             continue
+        cooling, days = in_cooldown(out)
+        if not force and cooling:
+            print(f"cooldown {source.id}: {url} (extracted {days:.0f} days ago; a changed page is re-read only after {MIN_DAYS_BETWEEN:g} days)")
+            continue
         if len(snap.text) > MAX_PAGE_CHARS:
             spend.skipped_large.append(url)
             print(f"skip {source.id}: {url} is {len(snap.text)} chars > PIPELINE_MAX_PAGE_CHARS={MAX_PAGE_CHARS}")
@@ -498,6 +535,7 @@ def _extract_batch(country, out_dir, max_pages, force, client, spend: Spend, led
             return written, "stop: the API account has no credits — batch not submitted"
         raise
     ledger["pending_batch"] = {"id": batch.id, "model": spend.model, "submitted": datetime.now(timezone.utc).isoformat(timespec="seconds"), "pages": pages, "estimate_usd": round(estimate, 4)}
+    save_ledger(ledger, ledger_path)  # the paid call is on record before anything else can fail
     print(f"batch {batch.id}: {len(pages)} pages submitted, estimated {estimate:.2f} $ (half price)")
     if _wait_for_batch(client, batch.id, BATCH_WAIT_MIN):
         written += _collect_batch(client, ledger["pending_batch"], texts, out_dir, spend)

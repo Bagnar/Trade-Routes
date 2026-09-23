@@ -181,3 +181,45 @@ def test_batch_still_processing_is_remembered_and_collected_next_run(monkeypatch
     second = extract.extract_registry(out_dir=tmp_path, batch=True, client=client, ledger_path=tmp_path / "usage.json", report_path=tmp_path / "r.md")
     ledger = json.loads((tmp_path / "usage.json").read_text(encoding="utf8"))
     assert len(second) == 1 and ledger["pending_batch"] is None and ledger["runs"][0]["pages"] == 1
+
+
+def test_changed_page_inside_the_cooldown_is_not_sent_to_the_model(monkeypatch, tmp_path):
+    from datetime import datetime, timedelta, timezone
+
+    monkeypatch.setattr(extract.registry, "load_sources", lambda: [FakeSource(["https://a/1"])])
+    monkeypatch.setattr(extract.registry, "find_source", lambda url: FakeSource(["https://a/1"]))
+    monkeypatch.setattr(extract.fetch, "fetch_url", lambda url, **kw: SimpleNamespace(text="new text today", content_hash="h-new", fetched_at="2026-09-23T00:00:00+00:00"))
+    monkeypatch.setattr(extract, "_client", lambda: object())
+    called = []
+    monkeypatch.setattr(extract, "propose_facts", lambda *a, **k: called.append(1) or [])
+    out = extract.facts_path("x", "https://a/1", tmp_path)
+    five_days_ago = (datetime.now(timezone.utc) - timedelta(days=5)).isoformat(timespec="seconds")
+    out.write_text(json.dumps({"url": "https://a/1", "source_id": "x", "fetched_at": five_days_ago, "content_hash": "h-old", "facts": []}), encoding="utf8")
+    assert extract.in_cooldown(out, 30) == (True, pytest.approx(5, abs=0.1))
+    assert extract.in_cooldown(out, 3)[0] is False
+    # sync mode
+    assert extract.extract_url("https://a/1", out_dir=tmp_path, spend=extract.Spend()) is None and called == []
+    # batch mode: nothing submitted either
+    batches = FakeBatches("new text today")
+    client = SimpleNamespace(messages=SimpleNamespace(batches=batches))
+    written = extract.extract_registry(out_dir=tmp_path, batch=True, client=client, ledger_path=tmp_path / "usage.json", report_path=tmp_path / "r.md")
+    assert written == [] and batches.requests is None
+    # after the cool-down the changed page is read again
+    monkeypatch.setattr(extract, "MIN_DAYS_BETWEEN", 3)
+    written = extract.extract_registry(out_dir=tmp_path, batch=True, client=client, ledger_path=tmp_path / "usage.json", report_path=tmp_path / "r.md")
+    assert len(written) == 1 and len(batches.requests) == 1
+
+
+def test_ledger_records_a_submitted_batch_before_waiting_for_it(monkeypatch, tmp_path):
+    class BatchesThatDieAfterSubmit(FakeBatches):
+        def retrieve(self, batch_id):
+            raise RuntimeError("runner cancelled")
+
+    monkeypatch.setattr(extract.registry, "load_sources", lambda: [FakeSource(["https://a/1"])])
+    monkeypatch.setattr(extract.fetch, "fetch_url", lambda url, **kw: SimpleNamespace(text="text", content_hash="h1", fetched_at="2026-09-23T00:00:00+00:00"))
+    monkeypatch.setattr(extract.time, "sleep", lambda s: None)
+    client = SimpleNamespace(messages=SimpleNamespace(batches=BatchesThatDieAfterSubmit("text")))
+    with pytest.raises(RuntimeError):
+        extract.extract_registry(out_dir=tmp_path, batch=True, client=client, ledger_path=tmp_path / "usage.json", report_path=tmp_path / "r.md")
+    ledger = json.loads((tmp_path / "usage.json").read_text(encoding="utf8"))
+    assert ledger["pending_batch"]["id"] == "msgbatch_1" and ledger["pending_batch"]["pages"][0]["url"] == "https://a/1"

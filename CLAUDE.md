@@ -51,6 +51,8 @@
     python -m pipeline extract --registry                                     # факты с цитатами из urls реестра, нужен ANTHROPIC_API_KEY
     #   модель вызывается только для изменившихся страниц; лимиты: PIPELINE_MAX_PAGES (40 страниц за запуск),
     #   PIPELINE_MAX_USD (5 $ за запуск), PIPELINE_MONTHLY_USD (15 $ в месяц, книга учёта data/usage.json); модель PIPELINE_MODEL
+    #   PIPELINE_MIN_DAYS_BETWEEN (30): изменившаяся страница перечитывается моделью не чаще раза в 30 дней
+    #   боты коммитят через scripts/commit_push.sh (конфликты в сгенерированных файлах — в пользу свежего запуска)
     python -m pipeline extract --registry --batch                             # то же через пакетный API за полцены (так работает daily-check.yml)
     #   отчёт о тратах каждого запуска — data/extract-report.md
     python -m pipeline supply --country CN --hs6 843280                       # слой «Где купить», заглушка

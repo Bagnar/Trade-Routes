@@ -37,7 +37,4 @@ jobs:
           python -m pipeline validate
       - name: Commit
         run: |
-          git config user.name "trade-rules-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A data/requests.json web/data/pages
-          if git diff --cached --quiet; then echo "no changes"; else git commit -m "Corridor requests: $(date -u +%F)"; git pull --rebase origin "$GITHUB_REF_NAME" && git push; fi
+          scripts/commit_push.sh "Corridor requests: $(date -u +%F)" data/requests.json web/data/pages

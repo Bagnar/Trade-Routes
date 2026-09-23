@@ -49,6 +49,11 @@ jobs:
           PIPELINE_MONTHLY_USD: ${{ vars.PIPELINE_MONTHLY_USD || '15' }}  # per calendar month, ledger data/usage.json
         run: python -m pipeline extract --registry --batch
 
+      - name: Save the spend ledger and new facts first (runs even when a later step fails or the job is cancelled)
+        if: ${{ always() }}
+        run: |
+          scripts/commit_push.sh "Extraction ledger: $(date -u +%F)" data/usage.json data/extract-report.md data/facts
+
       - name: Import statistics for new pairs (UN Comtrade public API, cached 30 days)
         env:
           DEMAND_MAX_CALLS: ${{ vars.DEMAND_DAILY_MAX_CALLS || '120' }}
@@ -60,17 +65,6 @@ jobs:
       - name: Validate pages
         run: python -m pipeline validate
 
-      - name: Commit changes
+      - name: Commit changes (conflicts in generated files are resolved in favour of this run, see scripts/commit_push.sh)
         run: |
-          git config user.name "trade-rules-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A web/data data/monitor-report.md
-          test -f data/usage.json && git add -A data/usage.json data/extract-report.md
-          test -d data/facts && git add -A data/facts
-          test -d data/demand && git add -A data/demand
-          if git diff --cached --quiet; then
-            echo "no changes"
-          else
-            git commit -m "Daily source check: $(date -u +%F)"
-            git pull --rebase origin "$GITHUB_REF_NAME" && git push
-          fi
+          scripts/commit_push.sh "Daily source check: $(date -u +%F)" web/data data/monitor-report.md data/usage.json data/extract-report.md data/facts data/demand

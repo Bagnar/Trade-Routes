@@ -35,12 +35,110 @@
    "facts": 70,
    "dropped": 0,
    "note": ""
+  },
+  {
+   "date": "2026-09-16",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 27,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.8371,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_011g5J9MHLnED4a83nAqQ6rE",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-17",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 21,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.46,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_01MCUBs95tvJ8ak3jPk84cQo",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-18",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 25,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.79,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_01FE2xZYiEAby5Gcen9VLxR7",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-19",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 25,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.79,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_012182X23sY6hRcEkNr2WwZz",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-20",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 27,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.92,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_012ibhBQTKbPtNttmhRHWkda",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-21",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 27,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.92,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_011RtWvWmy9Qh2i9qp3Qstzy",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
+  },
+  {
+   "date": "2026-09-22",
+   "model": "claude-opus-5",
+   "batch": true,
+   "pages": 28,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "usd": 1.99,
+   "facts": 0,
+   "dropped": 0,
+   "estimated": true,
+   "batch_id": "msgbatch_018Vmi52JaXpbuUrCkGxDYm4",
+   "note": "reconstructed on 2026-09-23 from the GitHub Actions log: the run submitted this batch but failed to commit (rebase conflict), so the ledger never saw it; amount = estimate at submission, actual usage unknown"
   }
  ],
  "pending_batch": {
-  "id": "msgbatch_011g5J9MHLnED4a83nAqQ6rE",
+  "id": "msgbatch_018Vmi52JaXpbuUrCkGxDYm4",
   "model": "claude-opus-5",
-  "submitted": "2026-09-16T10:22:00+00:00",
+  "submitted": "2026-09-22T10:25:00+00:00",
   "pages": [
    {
     "custom_id": "cn-mofcom__86c319d0",
@@ -286,6 +384,7 @@
     "content_hash": "2544b0fe28c911d7852c9dfbd3de34a9d838c285a4f742e50ca8a6d1c070019d"
    }
   ],
-  "estimate_usd": 1.8371
+  "estimate_usd": 1.99,
+  "reconstructed": "page list copied from the 16 September batch (same URLs); results of unknown items are skipped"
  }
 }
