@@ -9,8 +9,9 @@ on:
   issues:
     types: [opened, edited, labeled]
   workflow_dispatch:
-  schedule:
-    - cron: "45 5 * * *"   # daily, after the source check
+  # PAUSED (23 September 2026, founder's instruction): no automatic runs until resumed. To resume, restore:
+  # schedule:
+  #    - cron: "45 5 * * *"   # daily, after the source check
 
 permissions:
   contents: write

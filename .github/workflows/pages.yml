@@ -12,8 +12,9 @@ on:
   push:
     branches: [claude/blissful-pasteur-jmgvns, main]
     paths-ignore: ["docs/**", "mockups/**", "*.md"]
-  schedule:
-    - cron: "30 6 * * *"   # daily 06:30 UTC, after daily-check (05:17) and corridor-requests (05:45)
+  # PAUSED (23 September 2026, founder's instruction): no automatic runs until resumed. To resume, restore:
+  # schedule:
+  #    - cron: "30 6 * * *"   # daily 06:30 UTC, after daily-check (05:17) and corridor-requests (05:45)
   workflow_dispatch:
 
 permissions:

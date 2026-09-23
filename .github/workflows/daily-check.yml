@@ -8,8 +8,9 @@ name: Daily source check
 #  4. commits stamp changes, the report and new facts back to the branch that ran the workflow.
 
 on:
-  schedule:
-    - cron: "17 5 * * *"   # daily 05:17 UTC
+  # PAUSED (23 September 2026, founder's instruction): no automatic runs until resumed. To resume, restore:
+  # schedule:
+  #    - cron: "17 5 * * *"   # daily 05:17 UTC
   workflow_dispatch:
 
 permissions:

@@ -8,8 +8,9 @@ name: Reference data
 # Runs monthly and on demand. Network is open here; it is closed in the Claude Code cloud session.
 
 on:
-  schedule:
-    - cron: "41 4 1 * *"   # 1st of each month, 04:41 UTC
+  # PAUSED (23 September 2026, founder's instruction): no automatic runs until resumed. To resume, restore:
+  # schedule:
+  #    - cron: "41 4 1 * *"   # 1st of each month, 04:41 UTC
   workflow_dispatch:
     inputs:
       rates_reporters:
